@@ -1,0 +1,98 @@
+project:
+  type: website
+  output-dir: docs
+  render: 
+    - pages/*.qmd
+    - slides/*.qmd
+    
+website:
+  title: "KI/GPT in der Hochschule"
+  site-url: https://virtuelleakademie.github.io/gpt-nano
+  repo-url: https://github.com/virtuelleakademie/gpt-nano
+  # repo-actions: [edit, issue]
+  favicon: /assets/robot.png
+  open-graph: true
+  search: 
+    location: navbar
+    type: overlay
+    # type: textbox
+  twitter-card:
+    creator: "@awellis"
+    card-style: summary_large_image
+
+  reader-mode: true
+  page-navigation: true
+  back-to-top-navigation: true
+  navbar:
+    # logo: /assets/robot.png
+    background: primary
+    left:
+      - text: "📚 Programm"
+        file: pages/index.qmd
+
+      - text: "🛠️ Resources"
+        menu: 
+          - text: "Ratgeber"
+            file: pages/resources.qmd
+          - text: "Tools"
+            file: pages/tools.qmd
+
+      - text: "🎓 Tutorials"
+        menu: 
+          - text: "Coming soon..."
+          #   file: pages/about.qmd
+          # - text: "How to think about GPT"
+          #   file: pages/thinking.qmd
+          # - text: "What can GPT do?"
+          # - text: "Ethical concerns"
+          # - text: "Legal concerns"
+
+      - text: "📺 Presentations"
+        menu: 
+          - text: "15. Juni, 2023: Informationsanlass Bibliotheksmitarbeitende KI/ChatGPT"
+            file: slides/informationsanlass-bibliotheksmitarbeitende-chatgpt.qmd
+          - text: "21. Juni, 2023: Qualitätszirkel Gesundheit"
+            file: slides/qualitaetszirkel-gesundheit.qmd
+          - text: "17. August, 2023: KI-Sprechstunde"
+            file: slides/sprechstunde.qmd
+
+    tools:
+      - icon: robot
+        text: Assistant
+        file: pages/assistant.qmd
+      - icon: lightbulb-fill
+        text: Knowledge Base
+        href: https://virtuelleakademie.notion.site/
+      # - icon: twitter
+      #   href: https://twitter.com
+      - icon: github
+        menu:
+          - text: Source Code
+            url:  https://github.com/virtuelleakademie/gpt-nano/
+          - text: Report a Bug
+            url:  https://github.com/virtuelleakademie/gpt-nano/issues
+
+page-footer:
+    right:
+    - icon: github
+      href: https://github.com/virtuelleakademie/gpt-nano/
+
+format:
+  html:
+    theme:
+      light:
+      - cosmo
+      - styles/theme-light.scss
+      dark:
+      - cosmo
+      - styles/theme-dark.scss
+    toc: true
+    link-external-newwindow: true
+
+execute:
+  cache: true
+  freeze: false
+  execute-dir: project
+
+editor:
+  render-on-save: true

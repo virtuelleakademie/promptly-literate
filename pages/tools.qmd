@@ -1,0 +1,20 @@
+---
+title: ""
+format: html
+---
+
+## AI Tools
+
+👉🏼 [The largest AI tools directory (updated daily)](https://www.futurepedia.io/)
+
+
+## Literatursuche
+
+👉🏼 [Elicit](https://www.elicit.org/)
+
+👉🏼 [Consensus](consensus.app)
+
+
+## Prompt Engineering
+
+👉🏼 [Prompting Guide](https://www.promptingguide.ai/)

@@ -1,0 +1,61 @@
+---
+title: "Virtuelle Akademie"
+about:
+  template: trestles
+  image: ../assets/robot.png
+  image-width: 12em
+  image-shape: rounded
+  links:
+    - icon: magic
+      text: Virtuelle Akademie
+      href: https://virtuelleakademie.ch/
+    - icon: lightbulb-fill
+      text: Knowledge Base
+      href: https://virtuelleakademie.notion.site/
+    - icon: mortarboard-fill
+      text: Weiterbildungsangebote
+      href: https://www.bfh.ch/de/ueber-die-bfh/service-beratung/virtuelle-akademie/
+    - icon: inbox-fill
+      text: Email
+      href: mailto:andrew.ellis@bfh.ch
+---
+
+## KI-Kurse der Virtuellen Akademie
+
+<!-- ### KI-basierte Schreibtools in der Lehre -->
+
+:::{.callout-note}
+## KI-basierte Schreibtools in der Lehre
+Künstliche Intelligenz (KI) hat das Potenzial, das Bildungswesen grundlegend zu verändern. In diesem Workshop werden wir die Rolle von KI in der Lehre erkunden, mit besonderem Fokus auf den Einsatz von KI-basierten Schreibtools.
+
+Inhalte:
+
+- Was ist künstliche Intelligenz? Wie funktionieren Tools wie ChatGPT? 
+- Wie kommuniziere ich mit KI-Schreibtools? Wie schreibe ich gute Prompts?  
+- Anwendungsbeispiele von KI in der Lehre 
+
+Nächste Termine:
+
+- 15.September 2023, 13-17 Uhr
+- 27.Oktober 2023, 13-17 Uhr
+
+👉🏼 [www.bfh.ch/de/weiterbildung/kurse/ki-schreibtools](https://www.bfh.ch/de/weiterbildung/kurse/ki-schreibtools/)
+:::
+
+:::{.callout-note}
+## KI-Sprechstunden
+Hast du Fragen zum Umgang mit Künstlicher Intelligenz (KI) in der Lehre? Dann schau vorbei oder logge dich ein. Ohne Anmeldung.
+
+Nächste Termine:
+
+- 17. August 2023, 16-18 Uhr
+- 3. November 2023, 15-17 Uhr
+
+👉🏼 [virtuelleakademie.ch/beratungen-coachings](https://virtuelleakademie.ch/beratungen-coachings/):
+:::
+
+
+<!-- ## Team
+Die Stärke der Virtuellen Akademie: Ein Team, in dem diverse Fähigkeiten zusammenkommen. Von Hochschuldidaktik über Lerntechnologien bis hin zu Visualisierungs- und Video-Expertise.
+
+👉🏼 [Team](https://virtuelleakademie.ch/ueber-uns/) -->

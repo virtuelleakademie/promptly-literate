@@ -1,0 +1,645 @@
+---
+title: "KI-Sprechstunde"
+author: "Andrew Ellis"
+date: last-modified
+date-format: "DD MMMM, YYYY"
+bibliography: ../bibliography.bib
+nocite: |
+  @broschinskiGrafikenErklaertFunktioniert2023
+format: 
+    revealjs:
+        # theme: moon
+        theme: default
+        title-slide-attributes:
+          data-background-image: ../assets/background-purple.png
+          # data-background-size: contain
+          data-background-opacity: "1"
+        # logo: ../assets/robot.png
+        footer: <a href="https://virtuelleakademie.github.io/gpt-nano">⤴️ KI/GPT in der Hochschule </a>
+        navigation-mode: vertical
+        progress: true
+        scrollable: true
+        slide-number: true
+        show-slide-number: all
+        controls-layout: bottom-right
+        controls-tutorial: true
+        preview-links: auto
+        chalkboard: true
+        from: markdown+emoji
+        code-fold: true
+        code-summary: "Show code"
+        code-tools: true
+        menu: 
+          sticky: true
+          keyboard: true
+          autoOpen: true
+          width: normal
+          numbers: true
+          markers: true
+
+# slide-level: 3
+# number-sections: true
+---
+
+```{r}
+#| warning: false
+#| message: false
+library(knitr)
+```
+
+
+##  Here’s What Happens When Your Lawyer Uses ChatGPT {background-color="#2e3440"}
+
+
+
+```{=html}
+<iframe width="780" height="500" src="https://simonwillison.net/2023/May/27/lawyer-chatgpt/" title="ChatGPT: US lawyer admits using AI for case research"></iframe>
+```
+
+
+
+## The Best Prompts For ChatGPT: The ultimate list {background-color="#2e3440"}
+
+```{=html}
+<iframe width="780" height="500" src="https://www.writingbeginner.com/best-prompts-for-chatgpt/" title="Best prompts for ChatGPT"></iframe>
+```
+
+
+
+# Inhalt {background-color="#b48ead"}
+
+1. Was ist künstliche Intelligenz?
+2. Was ist ChatGPT?
+3. Wie wurde ChatGPT trainiert?
+4. Energieverbrauch, Bias, Ethik
+5. Wie "denkt" ChatGPT?
+6. Zukünftige Verwendungen von LLMs
+7. Wissenschaftliches Arbeiten
+8. Case Study: Seminararbeit mit KI-Unterstützung
+
+<!-- ::: footer
+<a href="https://virtuelleakademie.github.io/gpt-nano">🏠 KI/GPT in der Hochschule</a>
+::: -->
+
+
+
+# Was ist künstliche Intelligenz? {background-color="#b48ead"}
+
+::: {.absolute top="0" left="100%"}
+::: {.sectionhead}
+1 [2 3 4 5 6 7 8]{style="opacity:0.25"}
+:::
+:::
+
+## Was ist Künstliche Intelligenz?
+
+
+```{r}
+#| fig-cap: "Quelle: [derbund.ch/so-funktioniert-kuenstliche-intelligenz-599276436215](https://www.derbund.ch/so-funktioniert-kuenstliche-intelligenz-599276436215)"
+include_graphics("../assets/images/was-ist-KI.png")
+```
+
+
+::: {.notes}
+Speaker notes go here.
+:::
+
+
+## Machine Learning
+
+- Regelbasierte Systeme müssen programmiert werden.
+- ML Modelle lernen implizit, d.h. ohne Regeln einprogrammiert zu bekommen.
+
+
+- Wichtige Begriffe:
+  - __Trainingsdaten:__ Modelle werden mit Daten gefüttert, und Parameter des Modells werden so eingestellt, dass das Modell möglichst "gut" ist.
+  - __Supervised learning:__ Aufgabe ist bekannt, z.B. Bilder - klassifizieren.
+  - __Unsupervised learning:__ Unbekannte Muster entdecken.
+  - __Reinforcement learning:__ Ziel ist vorgegeben, Modell lernt durch Feedback (Belohnung) wie Ziel erreicht werden kann.
+
+> We have to learn the bitter lesson that building in how we think we think does not work in the long run. We should stop trying to find simple ways to think about space, objects, multiple agents, or symmetries... instead we should build in only the meta-methods that can find and capture this arbitrary complexity. We want AI agents that can discover like we can, not which contain what we have discovered [@suttonBitterLesson2019].
+
+
+## Supervised learning
+
+```{r}
+knitr::include_graphics("../assets/images/cats-dogs.png")
+```
+__Bilder von Hunden und Katzen klassifizeren:__ Was sind die Merkmale, die Hunde von Katzen unterscheiden?
+
+
+
+
+## Reinforcement learning
+
+:::: {.columns}
+
+::: {.column width="50%"}
+```{r}
+knitr::include_graphics("../assets/images/cartpole.gif")
+```
+:::
+
+::: {.column width="50%"}
+
+```{r}
+knitr::include_graphics("../assets/images/RL-agent.png")
+```
+:::
+::::
+
+ 
+::: aside
+Beispiel für RL Model: [AlphaGo](https://www.deepmind.com/research/highlighted-research/alphago) ist das erste Computerprogramm, das einen professionellen (menschlichen) [Go](https://de.wikipedia.org/wiki/Go_(Spiel))-Spieler besiegt hat.
+:::
+
+::: {.notes}
+- Ein "Agent" lernt durch Feedback (Belohnung) wie ein Ziel erreicht werden kann.
+:::
+
+
+
+
+
+
+# Was ist ChatGPT? {background-color="#b48ead"}
+
+::: {.absolute top="0" left="100%"}
+::: {.sectionhead}
+[1]{style="opacity:0.25"} 2 [3 4 5 6 7 8]{style="opacity:0.25"}
+:::
+:::
+
+
+## Natural Language Processing 
+
+:::: {.columns}
+::: {.column width="50%"}
+
+- Speech recognition
+- Text-to-speech synthesis
+- Machine translation
+- Information extraction
+- Information retrieval
+- Question answering
+
+:::
+
+::: {.column width="50%"}
+- Sentiment analysis
+  - 😊 I love this movie!
+  - 😐 This movie is ok.
+  - 😠 This movie is terrible!
+  
+:::
+
+::::
+
+
+
+## Tokenization
+
+```{r}
+#| fig-cap: "Quelle: [State of ChatGPT](https://build.microsoft.com/en-US/sessions/db3f4859-cd30-4445-a0cd-553c3304f8e2?source=sessions)"
+knitr::include_graphics("../assets/images/karpathy-tokenization.png")
+```
+
+## Embeddings
+- Numerische Tokens werden in einem hochdimensionalen Vektorraum abgebildet.
+- Distanz zwischen Vektoren misst Ähnlichkeit zwischen Tokens.
+
+```{r}
+#| fig-cap: "Quelle: @wolframWhatChatGPTDoing2023"
+knitr::include_graphics("../assets/images/wolfram-embeddings.png")
+```
+
+```{r}
+#| fig-cap: "Quelle: [So funktioniert ChatGPT](https://www.golem.de/news/kuenstliche-intelligenz-so-funktioniert-chatgpt-2302-171644.html)"
+knitr::include_graphics("../assets/images/3_Wortgruppen_im_sem_Raum.png")
+```
+
+## ChatGPT
+
+Besteht aus 2 Modellen:
+
+
+- __Large language model (LLM):__ GPT-3.5 oder GPT-4 (generative pre-trained transformer): das eigentliche Sprachmodell
+
+- __Assistant:__ Ein für Dialoge spezialisiertes Modell
+
+
+## LLM
+
+Aufgabe eines LLMs: "auto-regressive next word prediction" (eigentlich "token prediction"):
+
+$$ P(w_{w+1} | w_1, w_2, ..., w_t) $$
+
+- Das nächste Wort wird vorhergesagt, basierend auf den vorherigen Worten. 
+- Diese vorherigen Wörter werden als "context" bezeichnet.
+
+```{r}
+knitr::include_graphics("../assets/images/word-probs.png")
+knitr::include_graphics("../assets/images/gpt-2-autoregression-2.gif")
+```
+
+## Assistant
+
+- LLM produziert Text, aber nicht menschliche Konversationen.
+- Weiteres Training ist erforderlich, damit das Modell lernt, wie ein Mensch "Konversationen" zu führen.
+
+
+
+
+
+# Wie wurde ChatGPT trainiert? {background-color="#b48ead"}
+
+::: {.absolute top="0" left="100%"}
+::: {.sectionhead}
+[1 2]{style="opacity:0.25"} 3 [4 5 6 7 8]{style="opacity:0.25"}
+:::
+:::
+
+## Zusammenfassung
+
+ChatGPT wurde in mehreren Schritten trainiert:
+
+1) Daten aus dem Internet werden gesammelt.
+2) Pre-training: LLM wird auf diesen Daten trainiert, das nächste Wort vorherzusagen.
+3) Reinforcement Learning from Human Feedback: Assistant wird trainiert, menschliche Konversationen zu führen.
+
+## Daten
+
+```{r}
+knitr::include_graphics("../assets/images/karpathy-training-data.png")
+```
+
+## Methoden
+
+```{r}
+knitr::include_graphics("../assets/images/karpathy-training-pipeline-1.png")
+```
+
+::: {.notes}
+We trained this model using Reinforcement Learning from Human Feedback (RLHF), using the same methods as InstructGPT, but with slight differences in the data collection setup. We trained an initial model using supervised fine-tuning: human AI trainers provided conversations in which they played both sides—the user and an AI assistant. We gave the trainers access to model-written suggestions to help them compose their responses. We mixed this new dialogue dataset with the InstructGPT dataset, which we transformed into a dialogue format.
+
+To create a reward model for reinforcement learning, we needed to collect comparison data, which consisted of two or more model responses ranked by quality. To collect this data, we took conversations that AI trainers had with the chatbot. We randomly selected a model-written message, sampled several alternative completions, and had AI trainers rank them. Using these reward models, we can fine-tune the model using Proximal Policy Optimization. We performed several iterations of this process.
+:::
+
+## Pre-training
+
+```{r}
+knitr::include_graphics("../assets/images/karpathy-pretraining-1.png")
+```
+
+## Pre-training
+
+```{r}  
+knitr::include_graphics("../assets/images/karpathy-training-process.png")
+```
+
+
+
+## Reinforcement Learning from Human Feedback (RLHF)
+
+Benutzt  Feedback vom Menschen um "schlechte" Outputs zu minimieren.
+
+
+```{r}
+#| fig-cap: "Quelle: [openai.com/blog/chatgpt](https://openai.com/blog/chatgpt)"
+knitr::include_graphics("../assets/images/RLHF.png")
+```
+
+
+ 
+
+# Energieverbrauch, Bias, Ethik {background-color="#b48ead"}
+
+::: {.absolute top="0" left="100%"}
+::: {.sectionhead}
+[1 2 3]{style="opacity:0.25"} 4 [5 6 7 8]{style="opacity:0.25"}
+:::
+:::
+
+## Zusammenfassung
+
+- ChatGPT hat einen hohen Energieverbrauch.
+- LLM lernt Vorurteile aus den Trainingsdaten.
+- Toxische Inhalte werden durch Billigarbeiter:innen moderiert.
+
+
+## Energieverbrauch
+
+- __Training:__ "What we do know is that training ChatGPT used $1.287$ GWh, roughly equivalent to the consumption of 120 US homes for a year." Quelle: [Heating up: how much energy does AI use?](https://techhq.com/2023/03/data-center-energy-usage-chatgpt/)
+
+- @pattersonCarbonEmissionsLarge2022 schätzen die Trainingskosten auf 502 Tonnen $\text{CO}_2$ (RLHF würde etwas mehr kosten, ca. 1% der ursprünglichen Kosten).
+
+- __Benutzung:__ 7 Tonnen $\text{CO}_2$ pro Tag (Ende Februar). Quelle: [How much energy does ChatGPT use?](https://xcorr.net/2023/04/08/how-much-energy-does-chatgpt-use/)
+  
+- Der Energieverbrauch von ChatGPT ist equivalent zu 400-800 US Haushalten. Das ist beträchtlich, im Vergleich zu z.B. Kryptowährungen eher gering.
+
+
+
+## Bias
+
+:::: {.columns}
+
+::: {.column width="50%"}
+```{=html}
+<iframe width="780" height="500" src="https://www.societybyte.swiss/2022/12/22/hi-chatgpt-hast-du-vorurteile/" title="Vorurteile"></iframe>
+```
+:::
+
+::: {.column width="50%"}
+
+- Da LLMs von Texten lernen, die von Menschen geschrieben wurden, können sie auch Vorurteile lernen.
+
+Quelle: [Hast du Vorurteile?](https://www.societybyte.swiss/2022/12/22/hi-chatgpt-hast-du-vorurteile/)
+:::
+
+::::
+
+## Ethik
+
+:::: {.columns}
+
+::: {.column width="50%"}
+```{=html}
+<iframe width="780" height="500" src="https://www.societybyte.swiss/2023/06/07/traumatische-klickarbeit-die-menschen-hinter-chatgpt/" title="Traumatische Klickarbeit"></iframe>
+```
+:::
+
+::: {.column width="50%"}
+- Auf Grund der grossen Menge von Trainingsdaten, die für Sprachmodelle benötigt werden, ist Qualitätskontrolle schwierig.
+- Diskriminierende oder beleidigende Aussagen werden von einem Chatbot generiert.
+- Solche Antworten können als unerwünscht markiert werden.
+- Toxische Inhalte wie körperliche und sexuelle Gewalt, Suizide und Tierquälerei, müssen beim Trainieren aus den Antworten gefiltert werden. Dabei mussten angestellte Arbeitskräfte für weniger als 2 Dollar die Stunde teils schockierende Inhalte lesen. 
+
+Quelle: [Traumatische Klickarbeit](https://www.societybyte.swiss/2023/06/07/traumatische-klickarbeit-die-menschen-hinter-chatgpt/)
+
+:::
+
+::::
+
+
+
+# Wie "denkt" ChatGPT? {background-color="#b48ead"}
+
+::: {.absolute top="0" left="100%"}
+::: {.sectionhead}
+[1 2 3 4]{style="opacity:0.25"} 5 [6 7 8]{style="opacity:0.25"}
+:::
+:::
+
+## Wie generiert ChatGPT Text?
+
+- LLM: Gegeben einer Input-Sequenz (Kontext) von Tokens (Wörter, Teile von Wörtern, Satzzeichen, Emojis, etc.), was sind die wahrscheinlichsten nächsten Tokens?
+- Auto-regressiv: Ein Token wird generiert, wird dem Kontext hinzugefügt.
+  
+![](../assets/images/autoregressive.png){width=600}
+<!-- ```{r}
+include_graphics("../assets/images/autoregressive.png")
+``` -->
+
+- Der neue Kontext wird verwendet, um das nächste Token zu generieren, etc.
+- __Wichtig:__ Jedes Token erhält gleich viel Zeit. Es gibt keine Tokens, die mehr oder weniger wichtig sind (Computation per Token ist konstant).
+- Weil jedes Token gleich gewichtet wird, kann es an jeder Stelle im Output zu "ungünstigen" Pfaden führen.
+
+## Prompt
+
+- Der ursprüngliche Kontext wird __Prompt__ (Eingabetext) genannt.
+- Dieser ist entscheidend für die Qualität der Antwort.
+
+:::{.callout-note}
+## Prompt Beispiel
+
+"Was ist 89322/1313?"
+
+vs. 
+
+"Was ist 89322/1313? Arbeite Schritt für Schritt."
+:::
+
+
+## Prompt
+
+```{r}
+include_graphics("../assets/images/karpathy-thought-mutliple-attempts.png")
+```
+
+## Role-Playing Simulator
+
+> We can think of an LLM as a non-deterministic simulator capable of role-playing an infinity of characters, or, to put it another way, capable of stochastically generating an infinity of simulacra. 
+
+Quelle: @shanahanRolePlayLargeLanguage2023
+
+- Bei jeder Interaktion mit ChatGPT wird ein Dialog neu simuliert.
+
+
+## Role-Playing Simulator
+
+![](../assets/images/simulator.png){width=800}
+
+
+## Role-Playing Simulator
+
+- Ein LLM ist keine Entität mit Handlungsabsichten, sondern ein Simulator von möglichen Konversationen.
+- ChatGPT hat kein Konzept von Wahrheit, sondern generiert Antworten, die plausibel sind.
+- Somit kann ChatGPT weder die Wahrheit sagen noch lügen - diese Konzepte sind für ein LLM vorerst irrelevant.
+  
+## Was kann ChatGPT? 
+
+```{r}
+include_graphics("../assets/images/chain-of-thought.png")
+```
+
+```{r}
+include_graphics("../assets/images/karpathy-chain-of-thought.png")
+```
+
+Weitere Beispiele: @bubeckSparksArtificialGeneral2023
+
+
+::: {.notes}
+Sehr viel, wenn richtig geprompted
+:::
+
+
+## Denkt ChatGPT?
+
+
+
+![](../assets/images/karpathy-human-vs-LLM-2.png)
+
+![](../assets/images/karpathy-human-vs-LLM-1.png)
+
+## System 1 vs System 2
+
+- [Thinking Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)
+- System 1: schnell, instinktiv, automatisch
+
+- System 2: langsam, deliberativ, anstrengend
+
+```{r}
+include_graphics("../assets/images/system-1-vs-system-2.png")
+```
+
+
+
+## Prompt Engineering
+
+- Qualität der Antwort hängt sehr von der Qualität des Prompts ab.
+- 2 Möglichkeiten, um die Qualität der Antworten zu verbessern:
+
+  - __Incrementelle Prompts:__ Schritt für Schritt durch die Konversation führen (dialogisches Prompting).
+  - __Mega-Prompts:__ Alle Informationen auf einmal geben.
+
+- Am besten selber ausprobieren.
+
+
+## Mega-Prompt
+
+1. Rolle: Wer oder was wird simuliert?
+2. Aufgabe: Was ist zu tun?
+3. Arbeitschritte: Was ist in welcher Reihenfolge zu tun?
+4. Kontext, Einschränkungen
+5. Ziel: Was soll am Ende herauskommen?
+6. Format: Wie soll das Ergebnis aussehen?
+
+:::{.callout-note}
+## Beispiel Hochschullehre: Feedback
+"I want you to act as a harsh critic. Criticize what I will write to you and show me where my argumentation is lacking. Start by asking me what text I want to have feedback on. Then ask me questions about my context to create the best feedback possible. If you feel you have all the context necessary, think step by step when creating your feedback" (Lenk-Ostendorf & Folgmann 2023)
+:::
+
+
+:::{.callout-tip}
+## Weitere Beispiele
+
+- OpenAI Discord Server [discord.com/invite/openai](discord.com/invite/openai)
+- [Prompting Guide](https://www.promptingguide.ai/)
+
+:::
+
+
+
+
+
+
+# Zukünftige Verwendungen von LLMs {background-color="#b48ead"}
+
+::: {.absolute top="0" left="100%"}
+::: {.sectionhead}
+[1 2 3 4 5]{style="opacity:0.25"} 6 [7 8]{style="opacity:0.25"}
+:::
+:::
+
+## Plug-ins
+
+![](../assets/images/karpathy-tools-plugins.png)
+
+
+## Retrieval-augmented LLMs
+
+![](../assets/images/karpathy-retrieval-augmented.png)
+
+
+## Retrieval-augmented LLMs
+
+Beispiel: 👉🏼 [Assistent der Virtuellen Akademie](https://virtuelleakademie.github.io/gpt-nano/pages/assistant.html) 
+
+```{=html}
+<iframe
+src="https://www.chatbase.co/chatbot-iframe/RDbFWW85cxcCd9PEwV-uy"
+width="100%"
+height="700"
+frameborder="0"
+></iframe>
+```
+
+
+# Wissenschaftliches Arbeiten {background-color="#b48ead"}
+
+::: {.absolute top="0" left="100%"}
+::: {.sectionhead}
+[1 2 3 4 5 6]{style="opacity:0.25"} 7 [8]{style="opacity:0.25"}
+:::
+:::
+
+## Haltung der BFH
+
+- Technologien sollen dort, wo sie den Lernprozess unterstützen und praxisrelevant sind, in die Lehre einbezogen werden. 
+- Studierende sollen lernen, Technologien kompetent einzusetzen und kritisch zu hinterfragen. Dies gilt uneingeschränkt auch für ChatGPT und andere gleichgerichtete Tools.
+
+## Zitieren
+
+- Es existieren noch keine Richtlinien für das Zitieren von ChatGPT oder anderen KI-basierte Schreibtools.
+- ChatGPT ist rein rechtlich keine zitierfähige Quelle und damit auch nicht zitierpflichtig [@fleckPruefungsrechtlicheFragenChatGPT2023].
+- Aus der Orientierungshilfe: "KI-basierte Schreibtools sind externe Quellen und müssen daher im Sinne der wissenschaftlichen Integrität immer, wie andere Quellen auch, zitiert werden, sofern ganze Textpassagen von ChatGPT benutzt werden. Falls mit dem Tool der eigene Text überarbeitet wurde, muss ChatGPT als verwendetes Hilfsmittel angeführt werden."
+  
+:::{.callout-note}
+## Möglicher Pauschalverweis
+  
+"Beim Verfassen der Arbeit habe ich das KI-gestützte Schreibwerkzeug ChatGPT zur Textoptimierung verwendet. Wörtlich aus dem Tool übernommene Passagen wurden im Text als persönliche Kommunikation zitiert."
+:::
+
+## Plagiate und Detektion
+
+- Texte von ChatGPT werden jedes Mal individuell erstellt. Es handelt sich nicht um Plagiate. 
+- Die klassischen Tools zur Aufdeckung von Plagiaten wie z.B. _TurnItIn_ funktionieren hier nicht.
+- Die BFH empfiehlt weiterhin, schriftliche Arbeiten mit der Plagiatserkennungssoftware Turnitin zu prüfen. 
+
+## Kompetenznachweise
+
+- Siehe [KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus](https://virtuelleakademie.notion.site/KI-in-der-Lehre-af068030108844c4834ef00824fd8da6?p=f671067195a94f2d8239931c09ae92ec&pm=s)
+- Beim Benutzen von KI-generierten Texten in Kompetenznachweisen ohne Deklaration oder Zitierung kann von einem Plagiat _im weiteren Sinne_ ausgegangen werden, welches das bisher etablierte Plagiatsverständnis im engeren Sinne erweitert.
+- __Open Book-Prüfungen:__ KI-Tools müssten explizit ausgeschlossen werden.
+- __Closed Book-Prüfungen:__ KI-Tools können durch Einsatz von Safe Exam-Browser und [Lernstick](https://www.bfh.ch/de/forschung/forschungsbereiche/lernstick/) ausgeschlossen werden.
+- __Schriftliche Arbeiten:__ KI-Tools durch pauschalen Hilfsmittelverweis am Ende der Arbeit deklarieren.
+- __Alternative oder ergänzende Prüfungsformen:__ praktische Prüfungen, mündliche Prüfungen, Präsentationen.
+
+## Rechtliche Aspekte
+
+- ChatGPT kann keine Urheberschaft und keine Autorenschaft beanspruchen, da dies nur natürliche Personen können.
+- Menschen können die Urheberschaft eines Textes beanspruchen, auch wenn sie auf Unterstützung durch ChatGPT zurückgegriffen haben – sofern sie eine wesentliche gestalterische Eigenleistung am Text erbracht haben.
+
+Quelle: @saldenDidaktischeUndRechtliche2023 
+
+
+## Datenschutz
+
+- Anonyme Nutzung von ChatGPT ist mit persönlichen Konto nicht möglich (über Handynummer identifizierbar).
+- Alle Eingaben und alle Antworten werden bei ChatGPT unverschlüsselt abgespeichert.
+- Daten liegen auf amerikanischen Servern und sind damit für amerikanische Ermittlungsbehörden grundsätzlich zugänglich.
+
+
+
+# Case Study: Seminararbeit mit KI-Unterstützung {background-color="#b48ead"}
+
+::: {.absolute top="0" left="100%"}
+::: {.sectionhead}
+[1 2 3 4 5 6 7]{style="opacity:0.25"} 8
+:::
+:::
+
+## Seminararbeit mit KI-Unterstützung
+
+Lehrperson: Kerstin Denecke, Technik und Informatik, Institut für Medizininformatik 
+
+1) __Elicit__ [Brainstorm research questions]: Idee für Forschungsfrage 
+2) __ChatGPT:__ Feedback zu Fragestellungen, Verbesserungsvorschläge
+3) __Elicit__ [Abstract summary]: Rechercheunterstützung
+4) __Consensus:__ Unterstützung für Belege in der Diskussion
+
+
+:::{.callout-note}
+## ChatGPT Prompt
+
+Verhalte dich wie eine wissenschaftliche Betreuungsperson in ihrer Sprechstunde. Du musst den aktuellen Stand meiner Hausarbeit überprüfen und kritisch beurteilen. Dazu evaluierst du meine Forschungsfrage und äusserst konstruktive Kritik in Bezug auf deren Stärken und Schwächen. Die Fragestellung lautet:
+
+"Wie binden Therapeuten Chatbots in die Behandlung ein?"
+
+:::
+
+# References {background-color="#2e3440"}
+
+::: {#refs}
+:::

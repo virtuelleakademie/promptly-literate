@@ -1,0 +1,67 @@
+---
+title: "The History of Artificial Intelligence"
+author: "Virtuelle Akademie"
+date: last-modified
+date-format: "DD MMMM, YYYY"
+format: 
+    revealjs:
+        theme: default
+        # logo: ../assets/robot.png
+        # footer: <a href="https://virtuelleakademie.github.io/gpt-nano">🏠 GPT is Not An Oracle</a>
+        navigation-mode: vertical
+        progress: true
+        scrollable: true
+        slide-number: true
+        show-slide-number: all
+        controls-layout: bottom-right
+        controls-tutorial: true
+        preview-links: auto
+        chalkboard: true
+        from: markdown+emoji
+        code-fold: true
+        code-summary: "Show code"
+        code-tools: true
+        menu: 
+          sticky: true
+          keyboard: true
+          autoOpen: true
+          width: normal
+          numbers: true
+          markers: true
+
+# slide-level: 3
+# number-sections: true
+---
+
+# Introduction
+
+Artificial Intelligence (AI) has become an integral part of our daily lives. From recommendation systems to voice assistants and self-driving cars, AI has transformed the way we interact with technology. But how did it all begin? Let's take a journey through the history of AI.
+
+
+# Early History
+
+The concept of AI dates back to antiquity, with stories of artificial beings endowed with intelligence or consciousness by master craftsmen. 
+
+In the 1940s and 1950s, the foundation for modern AI was laid with the invention of the programmable digital computer. This device, based on the theoretical work of Alan Turing and others, was designed to simulate human intelligence.
+
+The term "Artificial Intelligence" was coined by John McCarthy at the Dartmouth conference in 1956, marking the birth of AI as an independent discipline.
+
+```{mermaid}
+graph LR
+  A[Antiquity] -->|Stories of artificial beings| B[1940s and 1950s]
+  B --> |Invention of programmable digital computer| C[Dartmouth Conference 1956]
+  C --> |Birth of AI as an independent discipline| D[AI Today]
+```
+
+# AI Winter
+
+AI research faced significant challenges in the mid-1970s, leading to a period known as the "AI Winter." During this time, progress in AI slowed due to a lack of funding and skepticism about its potential.
+
+However, this period also led to the development of applied AI and practical, problem-oriented approaches.
+
+```{mermaid}
+graph LR
+  A[Mid-1970s] -->|Challenges in AI research| B[AI Winter]
+  B --> |Lack of funding and skepticism| C[Development of applied AI]
+  C --> |Practical, problem-oriented approaches| D[AI Today]
+```

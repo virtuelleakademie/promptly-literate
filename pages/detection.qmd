@@ -1,0 +1,7 @@
+---
+title: "Detection + Plagiarism"
+format: html
+---
+
+[Golem](https://www.golem.de/news/chatgpt-tool-erkennt-ki-texte-mit-99-prozentiger-wahrscheinlichkeit-2306-174788.html)
+

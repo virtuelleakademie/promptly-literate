@@ -1,0 +1,37 @@
+---
+title: "Contents"
+---
+
+## Ziele
+Ich bin an der Hochschulbibliothek der BFH verantwortlich für die Koordination der IK-Angebote. Wir und unsere Kolleg*innen an der Ausleihe haben vermehrt mit Studierenden zu tun, die eine «Recherche» mit ChatGPT durchführen oder auf andere Art damit arbeiten. Ich denke, für die Informationswissenschaft wird die KI einiges an Veränderungen mit sich bringen. Noch gibt es aber kaum Informationsanlässe für unsere Branche. Könntest du dir vorstellen, für unser Team IK eine Einführung ins Thema zu geben und Vor- und Nachteile aufzuzeigen?
+
+## Fragensammlung
+ 
+- Wie funktioniert ChatGPT genau? Welche anderen relevanten KI-Tools sollte man kennen?
+ 
+### Didaktik/Methodik:
+- Nützliche Unterstützung im Unterricht durch ChatGPT (zB Kahoot und Präsentationen erstellen) – kennst du Anleitungen, gute Vorgehensweisen?
+- Abschlussarbeiten und ChatGPT
+- Plagiate erkennen
+ 
+### Fragen aus dem Berufsfeld Information und Dokumentation:
+- Technische Einsatzmöglichkeiten von ChatGPT bei der Recherche oder in Discovery-Tools (Recherchetechnologien) in Zukunft
+- ChatGPT nutzen, um eine Recherche vorzubereiten? Thema einkreisen, Begriffe sammeln etc.
+- Literaturhinweise, die ChatGPT ausspielt 
+- Neue Aufgabe für I&D-Institutionen: KI-generiertes Wissen einordnen?
+- Urheberrecht: Wem gehört ein KI-Text?
+ 
+### Risiken
+- Risiken von ChatGPT: fachliche Unkorrektheit, Unwahrheit
+- Was können wir den Studierenden in unseren Workshops mitgeben?
+- Ethisch bedenkliche Hintergründe von ChatGPT: https://www.srf.ch/radio-srf-1/kuenstliche-intelligenz-traumatisiert-weil-sie-den-chat-roboter-trainieren-mussten
+ 
+## Beispiel
+> wir hatten mehrfach Studierende in den Bibliotheken, die mit ChatGPT «Literaturrecherchen» machten und dann mit langen Listen von Referenzen nicht existierender Bücher und Artikel daher kamen 😊 einige Kolleginnen an der Ausleihe haben dann, natürlich vergeblich, danach gesucht. Vielleicht kannst du etwas dazu sagen, wie solche falschen bibliographischen Angaben entstehen.
+
+
+## Future
+
+- be data-aware
+  - retrieval augmented generation
+- be agentic, i.e. allow and LLM to interact with its environment

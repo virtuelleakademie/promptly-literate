@@ -1,0 +1,17 @@
+---
+title: "Untitled"
+format: html
+execute:
+  cache: false
+---
+
+
+```{ojs}
+x
+```
+
+```{r}
+#| cache: false
+x = c(1,2,3,4)
+ojs_define(x)
+```
