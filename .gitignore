@@ -160,3 +160,5 @@ promptly-literate.Rproj
 .DS_Store
 
 /.quarto/
+
+/env/
