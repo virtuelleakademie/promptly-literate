@@ -7,8 +7,8 @@ project:
     
 website:
   title: "KI/GPT in der Hochschule"
-  site-url: https://virtuelleakademie.github.io/gpt-nano
-  repo-url: https://github.com/virtuelleakademie/gpt-nano
+  site-url: https://virtuelleakademie.github.io/promptly-literate
+  repo-url: https://github.com/virtuelleakademie/promptly-literate
   # repo-actions: [edit, issue]
   favicon: /assets/robot.png
   open-graph: true
@@ -37,24 +37,35 @@ website:
           - text: "Tools"
             file: pages/tools.qmd
 
+      - text: "📺 Slides"
+        menu: 
+          - text: "Part 1"
+            file: slides/informationsanlass-bibliotheksmitarbeitende-chatgpt.qmd
+
+
       - text: "🎓 Tutorials"
         menu: 
-          - text: "Coming soon..."
-          #   file: pages/about.qmd
-          # - text: "How to think about GPT"
-          #   file: pages/thinking.qmd
-          # - text: "What can GPT do?"
-          # - text: "Ethical concerns"
-          # - text: "Legal concerns"
+          - text: "Natural language processing"
+            file: pages/jupyter-demo.ipynb
+          - text: "How does an LLM work?"
+            file: pages/about.qmd
+          - text: "How to use LLMs: Prompting"
+            file: pages/about.qmd
+          - text: "Prompts for teaching and learning"
+            file: pages/about.qmd
 
-      - text: "📺 Presentations"
+
+      - text: "💼 Activities"
         menu: 
-          - text: "15. Juni, 2023: Informationsanlass Bibliotheksmitarbeitende KI/ChatGPT"
-            file: slides/informationsanlass-bibliotheksmitarbeitende-chatgpt.qmd
-          - text: "21. Juni, 2023: Qualitätszirkel Gesundheit"
-            file: slides/qualitaetszirkel-gesundheit.qmd
-          - text: "17. August, 2023: KI-Sprechstunde"
-            file: slides/sprechstunde.qmd
+          - text: "Exploring ChatGPT/Playground"
+            file: pages/about.qmd
+          - text: "Prompting: basics"
+            file: pages/about.qmd
+          - text: "Prompting: roles"
+            file: pages/about.qmd
+          - text: "Develop an Assistant"
+            file: pages/about.qmd
+
 
     tools:
       - icon: robot
@@ -68,14 +79,14 @@ website:
       - icon: github
         menu:
           - text: Source Code
-            url:  https://github.com/virtuelleakademie/gpt-nano/
+            url:  https://github.com/virtuelleakademie/promptly-literate/
           - text: Report a Bug
-            url:  https://github.com/virtuelleakademie/gpt-nano/issues
+            url:  https://github.com/virtuelleakademie/promptly-literate/issues
 
 page-footer:
     right:
     - icon: github
-      href: https://github.com/virtuelleakademie/gpt-nano/
+      href: https://github.com/virtuelleakademie/promptly-literate
 
 format:
   html:
