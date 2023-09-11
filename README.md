@@ -1,4 +1,4 @@
-# Becoming prompting literate
+# Becoming prompt literate
  
 Large Language Models in University Teaching
 
