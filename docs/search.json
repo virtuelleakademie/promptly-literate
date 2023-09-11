@@ -711,14 +711,21 @@
     "href": "pages/prompting.html",
     "title": "Prompt Design",
     "section": "",
-    "text": "Doc OpenAI’s GPT (generative pre-trained transformer) models have been trained to understand natural language and code. GPTs provide text outputs in response to their inputs. The inputs to GPTs are also referred to as “prompts”. Designing a prompt is essentially how you “program” a GPT model, usually by providing instructions or some examples of how to successfully complete a task.\nUsing GPTs, you can build applications to:\nDraft documents\nWrite computer code\nAnswer questions about a knowledge base\nAnalyze texts\nCreate conversational agents\nGive software a natural language interface\nTutor in a range of subjects\nTranslate languages\nSimulate characters for games\nand much more\nTo use a GPT model via the OpenAI API, you’ll send a request containing the inputs and your API key, and receive a response containing the model’s output. Our latest models, gpt-4 and gpt-3.5-turbo, are accessed through the chat completions API endpoint. Currently, only the older legacy models are available via the completions API endpoint."
+    "text": "Write clear and specific instructions\n\nUse delimiters\nASk for structured output\nCheck whether conditions are satisfied (assumptions)\nFew-shot prompting\n\nGive the model time to think"
+  },
+  {
+    "objectID": "pages/prompting.html#principles-of-prompting",
+    "href": "pages/prompting.html#principles-of-prompting",
+    "title": "Prompt Design",
+    "section": "",
+    "text": "Write clear and specific instructions\n\nUse delimiters\nASk for structured output\nCheck whether conditions are satisfied (assumptions)\nFew-shot prompting\n\nGive the model time to think"
   },
   {
     "objectID": "pages/prompting.html#openai-documentation",
     "href": "pages/prompting.html#openai-documentation",
     "title": "Prompt Design",
-    "section": "",
-    "text": "Doc OpenAI’s GPT (generative pre-trained transformer) models have been trained to understand natural language and code. GPTs provide text outputs in response to their inputs. The inputs to GPTs are also referred to as “prompts”. Designing a prompt is essentially how you “program” a GPT model, usually by providing instructions or some examples of how to successfully complete a task.\nUsing GPTs, you can build applications to:\nDraft documents\nWrite computer code\nAnswer questions about a knowledge base\nAnalyze texts\nCreate conversational agents\nGive software a natural language interface\nTutor in a range of subjects\nTranslate languages\nSimulate characters for games\nand much more\nTo use a GPT model via the OpenAI API, you’ll send a request containing the inputs and your API key, and receive a response containing the model’s output. Our latest models, gpt-4 and gpt-3.5-turbo, are accessed through the chat completions API endpoint. Currently, only the older legacy models are available via the completions API endpoint."
+    "section": "OpenAI Documentation",
+    "text": "OpenAI Documentation\nDoc OpenAI’s GPT (generative pre-trained transformer) models have been trained to understand natural language and code. GPTs provide text outputs in response to their inputs. The inputs to GPTs are also referred to as “prompts”. Designing a prompt is essentially how you “program” a GPT model, usually by providing instructions or some examples of how to successfully complete a task.\nUsing GPTs, you can build applications to:\nDraft documents\nWrite computer code\nAnswer questions about a knowledge base\nAnalyze texts\nCreate conversational agents\nGive software a natural language interface\nTutor in a range of subjects\nTranslate languages\nSimulate characters for games\nand much more\nTo use a GPT model via the OpenAI API, you’ll send a request containing the inputs and your API key, and receive a response containing the model’s output. Our latest models, gpt-4 and gpt-3.5-turbo, are accessed through the chat completions API endpoint. Currently, only the older legacy models are available via the completions API endpoint."
   },
   {
     "objectID": "pages/prompting.html#gpt-best-practices",

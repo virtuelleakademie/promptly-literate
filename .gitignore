@@ -152,9 +152,11 @@ cython_debug/
 #.idea/
 
 
-# R specific 
+# R specific
 .Rproj.user
 promptly-literate.Rproj
 
 # MacOS specific
 .DS_Store
+
+/.quarto/
