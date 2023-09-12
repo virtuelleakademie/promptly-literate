@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.358">
+  <meta name="generator" content="quarto-1.3.450">
 
   <meta name="author" content="Virtuelle Akademie">
   <title>KI/GPT in der Hochschule - Informationsanlass zu KI/ChatGPT für Bibliotheksmitarbeitende</title>
@@ -159,8 +159,7 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    padding-bottom: 0.5rem;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -328,7 +327,7 @@
   <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
   <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 <meta property="og:title" content="KI/GPT in der Hochschule - Informationsanlass zu KI/ChatGPT für Bibliotheksmitarbeitende">
-<meta property="og:site_name" content="KI/GPT in der Hochschule">
+<meta property="og:site-name" content="KI/GPT in der Hochschule">
 <meta name="twitter:title" content="KI/GPT in der Hochschule - Informationsanlass zu KI/ChatGPT für Bibliotheksmitarbeitende">
 <meta name="twitter:creator" content="@awellis">
 <meta name="twitter:card" content="summary_large_image">
@@ -1254,6 +1253,7 @@ That means that there are 4 blue golf balls.</code></pre>
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': true,
+'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -1553,9 +1553,10 @@ That means that there are 4 blue golf balls.</code></pre>
         // clear code selection
         e.clearSelection();
       });
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      function tippyHover(el, contentFn) {
         const config = {
           allowHTML: true,
+          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -1565,17 +1566,8 @@ That means that there are 4 blue golf balls.</code></pre>
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start',
+          placement: 'bottom-start'
         };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
