@@ -159,6 +159,9 @@ promptly-literate.Rproj
 # MacOS specific
 .DS_Store
 
-/.quarto/
-
 /env/
+
+# Quarto
+/.quarto/
+pages/*_cache/
+pages/*_files/
