@@ -1,10 +1,12 @@
 project:
   type: website
   output-dir: docs
-  render: 
+  render:
+    - pages/*.ipynb
     - pages/*.qmd
     - slides/*.qmd
-    
+    # - jupyter-demo.ipynb
+
 website:
   title: "KI/GPT in der Hochschule"
   site-url: https://virtuelleakademie.github.io/promptly-literate
@@ -12,7 +14,7 @@ website:
   # repo-actions: [edit, issue]
   favicon: /assets/robot.png
   open-graph: true
-  search: 
+  search:
     location: navbar
     type: overlay
     # type: textbox
@@ -30,24 +32,19 @@ website:
       - text: "📚 Programm"
         file: pages/index.qmd
 
-      - text: "🛠️ Resources"
-        menu: 
-          - text: "Ratgeber"
-            file: pages/resources.qmd
-          - text: "Tools"
-            file: pages/tools.qmd
-
       - text: "📺 Slides"
-        menu: 
+        menu:
           - text: "Part 1"
             file: slides/informationsanlass-bibliotheksmitarbeitende-chatgpt.qmd
 
 
       - text: "🎓 Tutorials"
-        menu: 
+        menu:
           - text: "Natural language processing"
-            file: pages/jupyter-demo.ipynb
+            href: pages/jupyter-demo.ipynb
           - text: "How does an LLM work?"
+            file: pages/about.qmd
+          - text: "ChatGPT vs Playground"
             file: pages/about.qmd
           - text: "How to use LLMs: Prompting"
             file: pages/about.qmd
@@ -56,7 +53,7 @@ website:
 
 
       - text: "💼 Activities"
-        menu: 
+        menu:
           - text: "Exploring ChatGPT/Playground"
             file: pages/about.qmd
           - text: "Prompting: basics"
@@ -66,6 +63,12 @@ website:
           - text: "Develop an Assistant"
             file: pages/about.qmd
 
+      - text: "🛠️ Resources"
+        menu:
+          - text: "Ratgeber"
+            file: pages/resources.qmd
+          - text: "Tools"
+            file: pages/tools.qmd
 
     tools:
       - icon: robot
@@ -73,7 +76,7 @@ website:
         file: pages/assistant.qmd
       - icon: lightbulb-fill
         text: Knowledge Base
-        href: https://virtuelleakademie.notion.site/
+        href: https://virtuelleakademie.ch/knowledge-base/
       # - icon: twitter
       #   href: https://twitter.com
       - icon: github
