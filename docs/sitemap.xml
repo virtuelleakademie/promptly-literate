@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/slides/workshop-slides-1.html</loc>
-    <lastmod>2023-09-13T11:44:49.616Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/slides/03-prompting-learning-teaching.html</loc>
+    <lastmod>2023-09-13T19:41:50.313Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/thinking.html</loc>
-    <lastmod>2023-09-11T19:55:57.394Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/slides/01-text-representation-generation.html</loc>
+    <lastmod>2023-09-13T14:25:21.655Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/prompting.html</loc>
-    <lastmod>2023-09-11T19:55:57.393Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/text-representation.html</loc>
+    <lastmod>2023-09-13T20:16:21.184Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/programme.html</loc>
+    <lastmod>2023-09-13T20:49:40.014Z</lastmod>
   </url>
   <url>
     <loc>https://virtuelleakademie.github.io/promptly-literate/pages/observable-1.html</loc>
@@ -21,39 +25,15 @@
     <lastmod>2023-09-11T19:55:57.392Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/detection.html</loc>
-    <lastmod>2023-09-11T19:55:57.394Z</lastmod>
-  </url>
-  <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/chatgpt.html</loc>
-    <lastmod>2023-09-11T19:55:57.393Z</lastmod>
-  </url>
-  <url>
     <loc>https://virtuelleakademie.github.io/promptly-literate/pages/assistant.html</loc>
     <lastmod>2023-09-11T19:55:57.391Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/text-representation.html</loc>
-    <lastmod>2023-09-13T11:56:57.082Z</lastmod>
-  </url>
-  <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/jupyter-demo.html</loc>
-    <lastmod>2023-09-13T11:53:46.623Z</lastmod>
-  </url>
-  <url>
     <loc>https://virtuelleakademie.github.io/promptly-literate/pages/about.html</loc>
-    <lastmod>2023-09-11T19:55:57.393Z</lastmod>
+    <lastmod>2023-09-13T14:34:23.459Z</lastmod>
   </url>
   <url>
     <loc>https://virtuelleakademie.github.io/promptly-literate/pages/beispiel-arbeit.html</loc>
-    <lastmod>2023-09-11T19:55:57.395Z</lastmod>
-  </url>
-  <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/contents.html</loc>
-    <lastmod>2023-09-11T19:55:57.392Z</lastmod>
-  </url>
-  <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/exercise.html</loc>
     <lastmod>2023-09-11T19:55:57.395Z</lastmod>
   </url>
   <url>
@@ -71,5 +51,9 @@
   <url>
     <loc>https://virtuelleakademie.github.io/promptly-literate/pages/tools.html</loc>
     <lastmod>2023-09-11T19:55:57.391Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/slides/02-prompting-techniques.html</loc>
+    <lastmod>2023-09-13T19:39:28.199Z</lastmod>
   </url>
 </urlset>

@@ -1,360 +1,668 @@
 [
   {
-    "objectID": "slides/workshop-slides-1.html#heres-what-happens-when-your-lawyer-uses-chatgpt",
-    "href": "slides/workshop-slides-1.html#heres-what-happens-when-your-lawyer-uses-chatgpt",
+    "objectID": "slides/03-prompting-learning-teaching.html#heres-what-happens-when-your-lawyer-uses-chatgpt",
+    "href": "slides/03-prompting-learning-teaching.html#heres-what-happens-when-your-lawyer-uses-chatgpt",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Here’s What Happens When Your Lawyer Uses ChatGPT",
     "text": "Here’s What Happens When Your Lawyer Uses ChatGPT"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#the-best-prompts-for-chatgpt-the-ultimate-list",
-    "href": "slides/workshop-slides-1.html#the-best-prompts-for-chatgpt-the-ultimate-list",
+    "objectID": "slides/03-prompting-learning-teaching.html#the-best-prompts-for-chatgpt-the-ultimate-list",
+    "href": "slides/03-prompting-learning-teaching.html#the-best-prompts-for-chatgpt-the-ultimate-list",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "The Best Prompts For ChatGPT: The ultimate list",
     "text": "The Best Prompts For ChatGPT: The ultimate list"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#was-ist-künstliche-intelligenz-1",
-    "href": "slides/workshop-slides-1.html#was-ist-künstliche-intelligenz-1",
+    "objectID": "slides/03-prompting-learning-teaching.html#was-ist-künstliche-intelligenz-1",
+    "href": "slides/03-prompting-learning-teaching.html#was-ist-künstliche-intelligenz-1",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Was ist Künstliche Intelligenz?",
     "text": "Was ist Künstliche Intelligenz?\n\nQuelle: derbund.ch/so-funktioniert-kuenstliche-intelligenz-599276436215\nSpeaker notes go here."
   },
   {
-    "objectID": "slides/workshop-slides-1.html#embed",
-    "href": "slides/workshop-slides-1.html#embed",
+    "objectID": "slides/03-prompting-learning-teaching.html#embed",
+    "href": "slides/03-prompting-learning-teaching.html#embed",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Embed",
     "text": "Embed"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#machine-learning",
-    "href": "slides/workshop-slides-1.html#machine-learning",
+    "objectID": "slides/03-prompting-learning-teaching.html#machine-learning",
+    "href": "slides/03-prompting-learning-teaching.html#machine-learning",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Machine Learning",
     "text": "Machine Learning\n\nRegelbasierte Systeme müssen programmiert werden.\nML Modelle lernen implizit, d.h. ohne Regeln einprogrammiert zu bekommen.\nWichtige Begriffe:\n\nTrainingsdaten: Modelle werden mit Daten gefüttert, und Parameter des Modells werden so eingestellt, dass das Modell möglichst “gut” ist.\nSupervised learning: Aufgabe ist bekannt, z.B. Bilder - klassifizieren.\nUnsupervised learning: Unbekannte Muster entdecken.\nReinforcement learning: Ziel ist vorgegeben, Modell lernt durch Feedback (Belohnung) wie Ziel erreicht werden kann.\n\n\n\nWe have to learn the bitter lesson that building in how we think we think does not work in the long run. We should stop trying to find simple ways to think about space, objects, multiple agents, or symmetries… instead we should build in only the meta-methods that can find and capture this arbitrary complexity. We want AI agents that can discover like we can, not which contain what we have discovered (Sutton 2019)."
   },
   {
-    "objectID": "slides/workshop-slides-1.html#supervised-learning",
-    "href": "slides/workshop-slides-1.html#supervised-learning",
+    "objectID": "slides/03-prompting-learning-teaching.html#supervised-learning",
+    "href": "slides/03-prompting-learning-teaching.html#supervised-learning",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Supervised learning",
     "text": "Supervised learning\n\nBilder von Hunden und Katzen klassifizeren: Was sind die Merkmale, die Hunde von Katzen unterscheiden?"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#reinforcement-learning",
-    "href": "slides/workshop-slides-1.html#reinforcement-learning",
+    "objectID": "slides/03-prompting-learning-teaching.html#reinforcement-learning",
+    "href": "slides/03-prompting-learning-teaching.html#reinforcement-learning",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Reinforcement learning",
     "text": "Reinforcement learning\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEin “Agent” lernt durch Feedback (Belohnung) wie ein Ziel erreicht werden kann.\n\n\n\nBeispiel für RL Model: AlphaGo ist das erste Computerprogramm, das einen professionellen (menschlichen) Go-Spieler besiegt hat."
   },
   {
-    "objectID": "slides/workshop-slides-1.html#natural-language-processing",
-    "href": "slides/workshop-slides-1.html#natural-language-processing",
+    "objectID": "slides/03-prompting-learning-teaching.html#natural-language-processing",
+    "href": "slides/03-prompting-learning-teaching.html#natural-language-processing",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Natural Language Processing",
     "text": "Natural Language Processing\n\n\n\nSpeech recognition\nText-to-speech synthesis\nMachine translation\nInformation extraction\nInformation retrieval\nQuestion answering\n\n\n\nSentiment analysis\n\n😊 I love this movie!\n😐 This movie is ok.\n😠 This movie is terrible!"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#tokenization",
-    "href": "slides/workshop-slides-1.html#tokenization",
+    "objectID": "slides/03-prompting-learning-teaching.html#tokenization",
+    "href": "slides/03-prompting-learning-teaching.html#tokenization",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Tokenization",
     "text": "Tokenization\n\nQuelle: State of ChatGPT"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#embeddings",
-    "href": "slides/workshop-slides-1.html#embeddings",
+    "objectID": "slides/03-prompting-learning-teaching.html#embeddings",
+    "href": "slides/03-prompting-learning-teaching.html#embeddings",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Embeddings",
     "text": "Embeddings\n\nNumerische Tokens werden in einem hochdimensionalen Vektorraum abgebildet.\nDistanz zwischen Vektoren misst Ähnlichkeit zwischen Tokens.\n\n\n\n\n\n\nQuelle: Wolfram (2023)\n\n\n\n\n\n\n\n\n\nQuelle: So funktioniert ChatGPT"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#chatgpt",
-    "href": "slides/workshop-slides-1.html#chatgpt",
+    "objectID": "slides/03-prompting-learning-teaching.html#chatgpt",
+    "href": "slides/03-prompting-learning-teaching.html#chatgpt",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "ChatGPT",
     "text": "ChatGPT\nBesteht aus 2 Modellen:\n\nLarge language model (LLM): GPT-3.5 oder GPT-4 (generative pre-trained transformer): das eigentliche Sprachmodell\nAssistant: Ein für Dialoge spezialisiertes Modell"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#llm",
-    "href": "slides/workshop-slides-1.html#llm",
+    "objectID": "slides/03-prompting-learning-teaching.html#llm",
+    "href": "slides/03-prompting-learning-teaching.html#llm",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "LLM",
     "text": "LLM\nAufgabe eines LLMs: “auto-regressive next word prediction” (eigentlich “token prediction”):\n\\[ P(w_{w+1} | w_1, w_2, ..., w_t) \\]\n\nDas nächste Wort wird vorhergesagt, basierend auf den vorherigen Worten.\nDiese vorherigen Wörter werden als “context” bezeichnet."
   },
   {
-    "objectID": "slides/workshop-slides-1.html#assistant",
-    "href": "slides/workshop-slides-1.html#assistant",
+    "objectID": "slides/03-prompting-learning-teaching.html#assistant",
+    "href": "slides/03-prompting-learning-teaching.html#assistant",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Assistant",
     "text": "Assistant\n\nLLM produziert Text, aber nicht menschliche Konversationen.\nWeiteres Training ist erforderlich, damit das Modell lernt, wie ein Mensch “Konversationen” zu führen."
   },
   {
-    "objectID": "slides/workshop-slides-1.html#zusammenfassung",
-    "href": "slides/workshop-slides-1.html#zusammenfassung",
+    "objectID": "slides/03-prompting-learning-teaching.html#zusammenfassung",
+    "href": "slides/03-prompting-learning-teaching.html#zusammenfassung",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Zusammenfassung",
     "text": "Zusammenfassung\nChatGPT wurde in mehreren Schritten trainiert:\n\nDaten aus dem Internet werden gesammelt.\nPre-training: LLM wird auf diesen Daten trainiert, das nächste Wort vorherzusagen.\nReinforcement Learning from Human Feedback: Assistant wird trainiert, menschliche Konversationen zu führen."
   },
   {
-    "objectID": "slides/workshop-slides-1.html#daten",
-    "href": "slides/workshop-slides-1.html#daten",
+    "objectID": "slides/03-prompting-learning-teaching.html#daten",
+    "href": "slides/03-prompting-learning-teaching.html#daten",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Daten",
     "text": "Daten"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#methoden",
-    "href": "slides/workshop-slides-1.html#methoden",
+    "objectID": "slides/03-prompting-learning-teaching.html#methoden",
+    "href": "slides/03-prompting-learning-teaching.html#methoden",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Methoden",
     "text": "Methoden\n\n\nWe trained this model using Reinforcement Learning from Human Feedback (RLHF), using the same methods as InstructGPT, but with slight differences in the data collection setup. We trained an initial model using supervised fine-tuning: human AI trainers provided conversations in which they played both sides—the user and an AI assistant. We gave the trainers access to model-written suggestions to help them compose their responses. We mixed this new dialogue dataset with the InstructGPT dataset, which we transformed into a dialogue format.\nTo create a reward model for reinforcement learning, we needed to collect comparison data, which consisted of two or more model responses ranked by quality. To collect this data, we took conversations that AI trainers had with the chatbot. We randomly selected a model-written message, sampled several alternative completions, and had AI trainers rank them. Using these reward models, we can fine-tune the model using Proximal Policy Optimization. We performed several iterations of this process."
   },
   {
-    "objectID": "slides/workshop-slides-1.html#pre-training",
-    "href": "slides/workshop-slides-1.html#pre-training",
+    "objectID": "slides/03-prompting-learning-teaching.html#pre-training",
+    "href": "slides/03-prompting-learning-teaching.html#pre-training",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Pre-training",
     "text": "Pre-training"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#pre-training-1",
-    "href": "slides/workshop-slides-1.html#pre-training-1",
+    "objectID": "slides/03-prompting-learning-teaching.html#pre-training-1",
+    "href": "slides/03-prompting-learning-teaching.html#pre-training-1",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Pre-training",
     "text": "Pre-training"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#reinforcement-learning-from-human-feedback-rlhf",
-    "href": "slides/workshop-slides-1.html#reinforcement-learning-from-human-feedback-rlhf",
+    "objectID": "slides/03-prompting-learning-teaching.html#reinforcement-learning-from-human-feedback-rlhf",
+    "href": "slides/03-prompting-learning-teaching.html#reinforcement-learning-from-human-feedback-rlhf",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Reinforcement Learning from Human Feedback (RLHF)",
     "text": "Reinforcement Learning from Human Feedback (RLHF)\nBenutzt Feedback vom Menschen um “schlechte” Outputs zu minimieren.\n\nQuelle: openai.com/blog/chatgpt"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#zusammenfassung-1",
-    "href": "slides/workshop-slides-1.html#zusammenfassung-1",
+    "objectID": "slides/03-prompting-learning-teaching.html#zusammenfassung-1",
+    "href": "slides/03-prompting-learning-teaching.html#zusammenfassung-1",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Zusammenfassung",
     "text": "Zusammenfassung\n\nChatGPT hat einen hohen Energieverbrauch.\nLLM lernt Vorurteile aus den Trainingsdaten.\nToxische Inhalte werden durch Billigarbeiter:innen moderiert."
   },
   {
-    "objectID": "slides/workshop-slides-1.html#energieverbrauch",
-    "href": "slides/workshop-slides-1.html#energieverbrauch",
+    "objectID": "slides/03-prompting-learning-teaching.html#energieverbrauch",
+    "href": "slides/03-prompting-learning-teaching.html#energieverbrauch",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Energieverbrauch",
     "text": "Energieverbrauch\n\nTraining: “What we do know is that training ChatGPT used \\(1.287\\) GWh, roughly equivalent to the consumption of 120 US homes for a year.” Quelle: Heating up: how much energy does AI use?\nPatterson et al. (2022) schätzen die Trainingskosten auf 502 Tonnen \\(\\text{CO}_2\\) (RLHF würde etwas mehr kosten, ca. 1% der ursprünglichen Kosten).\nBenutzung: 7 Tonnen \\(\\text{CO}_2\\) pro Tag (Ende Februar). Quelle: How much energy does ChatGPT use?\nDer Energieverbrauch von ChatGPT ist equivalent zu 400-800 US Haushalten. Das ist beträchtlich, im Vergleich zu z.B. Kryptowährungen eher gering."
   },
   {
-    "objectID": "slides/workshop-slides-1.html#bias",
-    "href": "slides/workshop-slides-1.html#bias",
+    "objectID": "slides/03-prompting-learning-teaching.html#bias",
+    "href": "slides/03-prompting-learning-teaching.html#bias",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Bias",
     "text": "Bias\n\n\n\n\n\nDa LLMs von Texten lernen, die von Menschen geschrieben wurden, können sie auch Vorurteile lernen.\n\nQuelle: Hast du Vorurteile?"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#ethik",
-    "href": "slides/workshop-slides-1.html#ethik",
+    "objectID": "slides/03-prompting-learning-teaching.html#ethik",
+    "href": "slides/03-prompting-learning-teaching.html#ethik",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Ethik",
     "text": "Ethik\n\n\n\n\n\nAuf Grund der grossen Menge von Trainingsdaten, die für Sprachmodelle benötigt werden, ist Qualitätskontrolle schwierig.\nDiskriminierende oder beleidigende Aussagen werden von einem Chatbot generiert.\nSolche Antworten können als unerwünscht markiert werden.\nToxische Inhalte wie körperliche und sexuelle Gewalt, Suizide und Tierquälerei, müssen beim Trainieren aus den Antworten gefiltert werden. Dabei mussten angestellte Arbeitskräfte für weniger als 2 Dollar die Stunde teils schockierende Inhalte lesen.\n\nQuelle: Traumatische Klickarbeit"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#wie-generiert-chatgpt-text",
-    "href": "slides/workshop-slides-1.html#wie-generiert-chatgpt-text",
+    "objectID": "slides/03-prompting-learning-teaching.html#wie-generiert-chatgpt-text",
+    "href": "slides/03-prompting-learning-teaching.html#wie-generiert-chatgpt-text",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Wie generiert ChatGPT Text?",
     "text": "Wie generiert ChatGPT Text?\n\nLLM: Gegeben einer Input-Sequenz (Kontext) von Tokens (Wörter, Teile von Wörtern, Satzzeichen, Emojis, etc.), was sind die wahrscheinlichsten nächsten Tokens?\nAuto-regressiv: Ein Token wird generiert, wird dem Kontext hinzugefügt.\n\n \n\nDer neue Kontext wird verwendet, um das nächste Token zu generieren, etc.\nWichtig: Jedes Token erhält gleich viel Zeit. Es gibt keine Tokens, die mehr oder weniger wichtig sind (Computation per Token ist konstant).\nWeil jedes Token gleich gewichtet wird, kann es an jeder Stelle im Output zu “ungünstigen” Pfaden führen."
   },
   {
-    "objectID": "slides/workshop-slides-1.html#prompt",
-    "href": "slides/workshop-slides-1.html#prompt",
+    "objectID": "slides/03-prompting-learning-teaching.html#prompt",
+    "href": "slides/03-prompting-learning-teaching.html#prompt",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Prompt",
     "text": "Prompt\n\nDer ursprüngliche Kontext wird Prompt (Eingabetext) genannt.\nDieser ist entscheidend für die Qualität der Antwort.\n\n\n\n\n\n\n\nPrompt Beispiel\n\n\n“Was ist 89322/1313?”\nvs. \n“Was ist 89322/1313? Arbeite Schritt für Schritt.”"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#prompt-1",
-    "href": "slides/workshop-slides-1.html#prompt-1",
+    "objectID": "slides/03-prompting-learning-teaching.html#prompt-1",
+    "href": "slides/03-prompting-learning-teaching.html#prompt-1",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Prompt",
     "text": "Prompt"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#role-playing-simulator",
-    "href": "slides/workshop-slides-1.html#role-playing-simulator",
+    "objectID": "slides/03-prompting-learning-teaching.html#role-playing-simulator",
+    "href": "slides/03-prompting-learning-teaching.html#role-playing-simulator",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Role-Playing Simulator",
     "text": "Role-Playing Simulator\n\nWe can think of an LLM as a non-deterministic simulator capable of role-playing an infinity of characters, or, to put it another way, capable of stochastically generating an infinity of simulacra.\n\nQuelle: Shanahan, McDonell, and Reynolds (2023)\n\nBei jeder Interaktion mit ChatGPT wird ein Dialog neu simuliert."
   },
   {
-    "objectID": "slides/workshop-slides-1.html#role-playing-simulator-1",
-    "href": "slides/workshop-slides-1.html#role-playing-simulator-1",
+    "objectID": "slides/03-prompting-learning-teaching.html#role-playing-simulator-1",
+    "href": "slides/03-prompting-learning-teaching.html#role-playing-simulator-1",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Role-Playing Simulator",
     "text": "Role-Playing Simulator"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#role-playing-simulator-2",
-    "href": "slides/workshop-slides-1.html#role-playing-simulator-2",
+    "objectID": "slides/03-prompting-learning-teaching.html#role-playing-simulator-2",
+    "href": "slides/03-prompting-learning-teaching.html#role-playing-simulator-2",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Role-Playing Simulator",
     "text": "Role-Playing Simulator\n\nEin LLM ist keine Entität mit Handlungsabsichten, sondern ein Simulator von möglichen Konversationen.\nChatGPT hat kein Konzept von Wahrheit, sondern generiert Antworten, die plausibel sind.\nSomit kann ChatGPT weder die Wahrheit sagen noch lügen - diese Konzepte sind für ein LLM vorerst irrelevant."
   },
   {
-    "objectID": "slides/workshop-slides-1.html#was-kann-chatgpt",
-    "href": "slides/workshop-slides-1.html#was-kann-chatgpt",
+    "objectID": "slides/03-prompting-learning-teaching.html#was-kann-chatgpt",
+    "href": "slides/03-prompting-learning-teaching.html#was-kann-chatgpt",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Was kann ChatGPT?",
     "text": "Was kann ChatGPT?\n\n\n\n\n\n\n\n\n\n\nWeitere Beispiele: Bubeck et al. (2023)\n\nSehr viel, wenn richtig geprompted"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#denkt-chatgpt",
-    "href": "slides/workshop-slides-1.html#denkt-chatgpt",
+    "objectID": "slides/03-prompting-learning-teaching.html#denkt-chatgpt",
+    "href": "slides/03-prompting-learning-teaching.html#denkt-chatgpt",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Denkt ChatGPT?",
     "text": "Denkt ChatGPT?"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#system-1-vs-system-2",
-    "href": "slides/workshop-slides-1.html#system-1-vs-system-2",
+    "objectID": "slides/03-prompting-learning-teaching.html#system-1-vs-system-2",
+    "href": "slides/03-prompting-learning-teaching.html#system-1-vs-system-2",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "System 1 vs System 2",
     "text": "System 1 vs System 2\n\nThinking Fast and Slow\nSystem 1: schnell, instinktiv, automatisch\nSystem 2: langsam, deliberativ, anstrengend"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#prompt-engineering",
-    "href": "slides/workshop-slides-1.html#prompt-engineering",
+    "objectID": "slides/03-prompting-learning-teaching.html#prompt-engineering",
+    "href": "slides/03-prompting-learning-teaching.html#prompt-engineering",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Prompt Engineering",
     "text": "Prompt Engineering\n\nQualität der Antwort hängt sehr von der Qualität des Prompts ab.\n2 Möglichkeiten, um die Qualität der Antworten zu verbessern:\n\nIncrementelle Prompts: Schritt für Schritt durch die Konversation führen (dialogisches Prompting).\nMega-Prompts: Alle Informationen auf einmal geben.\n\nAm besten selber ausprobieren."
   },
   {
-    "objectID": "slides/workshop-slides-1.html#mega-prompt",
-    "href": "slides/workshop-slides-1.html#mega-prompt",
+    "objectID": "slides/03-prompting-learning-teaching.html#mega-prompt",
+    "href": "slides/03-prompting-learning-teaching.html#mega-prompt",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Mega-Prompt",
     "text": "Mega-Prompt\n\nRolle: Wer oder was wird simuliert?\nAufgabe: Was ist zu tun?\nArbeitschritte: Was ist in welcher Reihenfolge zu tun?\nKontext, Einschränkungen\nZiel: Was soll am Ende herauskommen?\nFormat: Wie soll das Ergebnis aussehen?\n\n\n\n\n\n\n\nBeispiel Hochschullehre: Feedback\n\n\n“I want you to act as a harsh critic. Criticize what I will write to you and show me where my argumentation is lacking. Start by asking me what text I want to have feedback on. Then ask me questions about my context to create the best feedback possible. If you feel you have all the context necessary, think step by step when creating your feedback” (Lenk-Ostendorf & Folgmann 2023)\n\n\n\n\n\n\n\n\n\nWeitere Beispiele\n\n\n\nOpenAI Discord Server discord.com/invite/openai\nPrompting Guide"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#plug-ins",
-    "href": "slides/workshop-slides-1.html#plug-ins",
+    "objectID": "slides/03-prompting-learning-teaching.html#plug-ins",
+    "href": "slides/03-prompting-learning-teaching.html#plug-ins",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Plug-ins",
     "text": "Plug-ins"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#retrieval-augmented-llms",
-    "href": "slides/workshop-slides-1.html#retrieval-augmented-llms",
+    "objectID": "slides/03-prompting-learning-teaching.html#retrieval-augmented-llms",
+    "href": "slides/03-prompting-learning-teaching.html#retrieval-augmented-llms",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Retrieval-augmented LLMs",
     "text": "Retrieval-augmented LLMs"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#retrieval-augmented-llms-1",
-    "href": "slides/workshop-slides-1.html#retrieval-augmented-llms-1",
+    "objectID": "slides/03-prompting-learning-teaching.html#retrieval-augmented-llms-1",
+    "href": "slides/03-prompting-learning-teaching.html#retrieval-augmented-llms-1",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Retrieval-augmented LLMs",
     "text": "Retrieval-augmented LLMs\nBeispiel: 👉🏼 Assistent der Virtuellen Akademie"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#haltung-der-bfh",
-    "href": "slides/workshop-slides-1.html#haltung-der-bfh",
+    "objectID": "slides/03-prompting-learning-teaching.html#haltung-der-bfh",
+    "href": "slides/03-prompting-learning-teaching.html#haltung-der-bfh",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Haltung der BFH",
     "text": "Haltung der BFH\n\nTechnologien sollen dort, wo sie den Lernprozess unterstützen und praxisrelevant sind, in die Lehre einbezogen werden.\nStudierende sollen lernen, Technologien kompetent einzusetzen und kritisch zu hinterfragen. Dies gilt uneingeschränkt auch für ChatGPT und andere gleichgerichtete Tools."
   },
   {
-    "objectID": "slides/workshop-slides-1.html#zitieren",
-    "href": "slides/workshop-slides-1.html#zitieren",
+    "objectID": "slides/03-prompting-learning-teaching.html#zitieren",
+    "href": "slides/03-prompting-learning-teaching.html#zitieren",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Zitieren",
     "text": "Zitieren\n\nEs existieren noch keine Richtlinien für das Zitieren von ChatGPT oder anderen KI-basierte Schreibtools.\nChatGPT ist rein rechtlich keine zitierfähige Quelle und damit auch nicht zitierpflichtig (Fleck 2023).\nAus der Orientierungshilfe: “KI-basierte Schreibtools sind externe Quellen und müssen daher im Sinne der wissenschaftlichen Integrität immer, wie andere Quellen auch, zitiert werden, sofern ganze Textpassagen von ChatGPT benutzt werden. Falls mit dem Tool der eigene Text überarbeitet wurde, muss ChatGPT als verwendetes Hilfsmittel angeführt werden.”\n\n\n\n\n\n\n\nMöglicher Pauschalverweis\n\n\n“Beim Verfassen der Arbeit habe ich das KI-gestützte Schreibwerkzeug ChatGPT zur Textoptimierung verwendet. Wörtlich aus dem Tool übernommene Passagen wurden im Text als persönliche Kommunikation zitiert.”"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#plagiate-und-detektion",
-    "href": "slides/workshop-slides-1.html#plagiate-und-detektion",
+    "objectID": "slides/03-prompting-learning-teaching.html#plagiate-und-detektion",
+    "href": "slides/03-prompting-learning-teaching.html#plagiate-und-detektion",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Plagiate und Detektion",
     "text": "Plagiate und Detektion\n\nTexte von ChatGPT werden jedes Mal individuell erstellt. Es handelt sich nicht um Plagiate.\nDie klassischen Tools zur Aufdeckung von Plagiaten wie z.B. TurnItIn funktionieren hier nicht.\nDie BFH empfiehlt weiterhin, schriftliche Arbeiten mit der Plagiatserkennungssoftware Turnitin zu prüfen."
   },
   {
-    "objectID": "slides/workshop-slides-1.html#kompetenznachweise",
-    "href": "slides/workshop-slides-1.html#kompetenznachweise",
+    "objectID": "slides/03-prompting-learning-teaching.html#kompetenznachweise",
+    "href": "slides/03-prompting-learning-teaching.html#kompetenznachweise",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Kompetenznachweise",
     "text": "Kompetenznachweise\n\nSiehe KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus\nBeim Benutzen von KI-generierten Texten in Kompetenznachweisen ohne Deklaration oder Zitierung kann von einem Plagiat im weiteren Sinne ausgegangen werden, welches das bisher etablierte Plagiatsverständnis im engeren Sinne erweitert.\nOpen Book-Prüfungen: KI-Tools müssten explizit ausgeschlossen werden.\nClosed Book-Prüfungen: KI-Tools können durch Einsatz von Safe Exam-Browser und Lernstick ausgeschlossen werden.\nSchriftliche Arbeiten: KI-Tools durch pauschalen Hilfsmittelverweis am Ende der Arbeit deklarieren.\nAlternative oder ergänzende Prüfungsformen: praktische Prüfungen, mündliche Prüfungen, Präsentationen."
   },
   {
-    "objectID": "slides/workshop-slides-1.html#rechtliche-aspekte",
-    "href": "slides/workshop-slides-1.html#rechtliche-aspekte",
+    "objectID": "slides/03-prompting-learning-teaching.html#rechtliche-aspekte",
+    "href": "slides/03-prompting-learning-teaching.html#rechtliche-aspekte",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Rechtliche Aspekte",
     "text": "Rechtliche Aspekte\n\nChatGPT kann keine Urheberschaft und keine Autorenschaft beanspruchen, da dies nur natürliche Personen können.\nMenschen können die Urheberschaft eines Textes beanspruchen, auch wenn sie auf Unterstützung durch ChatGPT zurückgegriffen haben – sofern sie eine wesentliche gestalterische Eigenleistung am Text erbracht haben.\n\nQuelle: Salden (2023)"
   },
   {
-    "objectID": "slides/workshop-slides-1.html#datenschutz",
-    "href": "slides/workshop-slides-1.html#datenschutz",
+    "objectID": "slides/03-prompting-learning-teaching.html#datenschutz",
+    "href": "slides/03-prompting-learning-teaching.html#datenschutz",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Datenschutz",
     "text": "Datenschutz\n\nAnonyme Nutzung von ChatGPT ist mit persönlichen Konto nicht möglich (über Handynummer identifizierbar).\nAlle Eingaben und alle Antworten werden bei ChatGPT unverschlüsselt abgespeichert.\nDaten liegen auf amerikanischen Servern und sind damit für amerikanische Ermittlungsbehörden grundsätzlich zugänglich."
   },
   {
-    "objectID": "slides/workshop-slides-1.html#seminararbeit-mit-ki-unterstützung",
-    "href": "slides/workshop-slides-1.html#seminararbeit-mit-ki-unterstützung",
+    "objectID": "slides/03-prompting-learning-teaching.html#seminararbeit-mit-ki-unterstützung",
+    "href": "slides/03-prompting-learning-teaching.html#seminararbeit-mit-ki-unterstützung",
     "title": "Qualitätszirkel Departement Gesundheit",
     "section": "Seminararbeit mit KI-Unterstützung",
     "text": "Seminararbeit mit KI-Unterstützung\nLehrperson: Kerstin Denecke, Technik und Informatik, Institut für Medizininformatik\n\nElicit [Brainstorm research questions]: Idee für Forschungsfrage\nChatGPT: Feedback zu Fragestellungen, Verbesserungsvorschläge\nElicit [Abstract summary]: Rechercheunterstützung\nConsensus: Unterstützung für Belege in der Diskussion\n\n\n\n\n\n\n\nChatGPT Prompt\n\n\nVerhalte dich wie eine wissenschaftliche Betreuungsperson in ihrer Sprechstunde. Du musst den aktuellen Stand meiner Hausarbeit überprüfen und kritisch beurteilen. Dazu evaluierst du meine Forschungsfrage und äusserst konstruktive Kritik in Bezug auf deren Stärken und Schwächen. Die Fragestellung lautet:\n“Wie binden Therapeuten Chatbots in die Behandlung ein?”"
   },
   {
-    "objectID": "pages/thinking.html",
-    "href": "pages/thinking.html",
-    "title": "Thinking",
+    "objectID": "slides/01-text-representation-generation.html#heres-what-happens-when-your-lawyer-uses-chatgpt",
+    "href": "slides/01-text-representation-generation.html#heres-what-happens-when-your-lawyer-uses-chatgpt",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Here’s What Happens When Your Lawyer Uses ChatGPT",
+    "text": "Here’s What Happens When Your Lawyer Uses ChatGPT"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#the-best-prompts-for-chatgpt-the-ultimate-list",
+    "href": "slides/01-text-representation-generation.html#the-best-prompts-for-chatgpt-the-ultimate-list",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "The Best Prompts For ChatGPT: The ultimate list",
+    "text": "The Best Prompts For ChatGPT: The ultimate list"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#was-ist-künstliche-intelligenz-1",
+    "href": "slides/01-text-representation-generation.html#was-ist-künstliche-intelligenz-1",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Was ist Künstliche Intelligenz?",
+    "text": "Was ist Künstliche Intelligenz?\n\nQuelle: derbund.ch/so-funktioniert-kuenstliche-intelligenz-599276436215\nSpeaker notes go here."
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#embed",
+    "href": "slides/01-text-representation-generation.html#embed",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Embed",
+    "text": "Embed"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#machine-learning",
+    "href": "slides/01-text-representation-generation.html#machine-learning",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Machine Learning",
+    "text": "Machine Learning\n\nRegelbasierte Systeme müssen programmiert werden.\nML Modelle lernen implizit, d.h. ohne Regeln einprogrammiert zu bekommen.\nWichtige Begriffe:\n\nTrainingsdaten: Modelle werden mit Daten gefüttert, und Parameter des Modells werden so eingestellt, dass das Modell möglichst “gut” ist.\nSupervised learning: Aufgabe ist bekannt, z.B. Bilder - klassifizieren.\nUnsupervised learning: Unbekannte Muster entdecken.\nReinforcement learning: Ziel ist vorgegeben, Modell lernt durch Feedback (Belohnung) wie Ziel erreicht werden kann.\n\n\n\nWe have to learn the bitter lesson that building in how we think we think does not work in the long run. We should stop trying to find simple ways to think about space, objects, multiple agents, or symmetries… instead we should build in only the meta-methods that can find and capture this arbitrary complexity. We want AI agents that can discover like we can, not which contain what we have discovered (Sutton 2019)."
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#supervised-learning",
+    "href": "slides/01-text-representation-generation.html#supervised-learning",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Supervised learning",
+    "text": "Supervised learning\n\nBilder von Hunden und Katzen klassifizeren: Was sind die Merkmale, die Hunde von Katzen unterscheiden?"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#reinforcement-learning",
+    "href": "slides/01-text-representation-generation.html#reinforcement-learning",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Reinforcement learning",
+    "text": "Reinforcement learning\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEin “Agent” lernt durch Feedback (Belohnung) wie ein Ziel erreicht werden kann.\n\n\n\nBeispiel für RL Model: AlphaGo ist das erste Computerprogramm, das einen professionellen (menschlichen) Go-Spieler besiegt hat."
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#natural-language-processing",
+    "href": "slides/01-text-representation-generation.html#natural-language-processing",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Natural Language Processing",
+    "text": "Natural Language Processing\n\n\n\nSpeech recognition\nText-to-speech synthesis\nMachine translation\nInformation extraction\nInformation retrieval\nQuestion answering\n\n\n\nSentiment analysis\n\n😊 I love this movie!\n😐 This movie is ok.\n😠 This movie is terrible!"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#tokenization",
+    "href": "slides/01-text-representation-generation.html#tokenization",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Tokenization",
+    "text": "Tokenization\n\nQuelle: State of ChatGPT"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#embeddings",
+    "href": "slides/01-text-representation-generation.html#embeddings",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Embeddings",
+    "text": "Embeddings\n\nNumerische Tokens werden in einem hochdimensionalen Vektorraum abgebildet.\nDistanz zwischen Vektoren misst Ähnlichkeit zwischen Tokens.\n\n\n\n\n\n\nQuelle: Wolfram (2023)\n\n\n\n\n\n\n\n\n\nQuelle: So funktioniert ChatGPT"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#chatgpt",
+    "href": "slides/01-text-representation-generation.html#chatgpt",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "ChatGPT",
+    "text": "ChatGPT\nBesteht aus 2 Modellen:\n\nLarge language model (LLM): GPT-3.5 oder GPT-4 (generative pre-trained transformer): das eigentliche Sprachmodell\nAssistant: Ein für Dialoge spezialisiertes Modell"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#llm",
+    "href": "slides/01-text-representation-generation.html#llm",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "LLM",
+    "text": "LLM\nAufgabe eines LLMs: “auto-regressive next word prediction” (eigentlich “token prediction”):\n\\[ P(w_{w+1} | w_1, w_2, ..., w_t) \\]\n\nDas nächste Wort wird vorhergesagt, basierend auf den vorherigen Worten.\nDiese vorherigen Wörter werden als “context” bezeichnet."
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#assistant",
+    "href": "slides/01-text-representation-generation.html#assistant",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Assistant",
+    "text": "Assistant\n\nLLM produziert Text, aber nicht menschliche Konversationen.\nWeiteres Training ist erforderlich, damit das Modell lernt, wie ein Mensch “Konversationen” zu führen."
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#zusammenfassung",
+    "href": "slides/01-text-representation-generation.html#zusammenfassung",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Zusammenfassung",
+    "text": "Zusammenfassung\nChatGPT wurde in mehreren Schritten trainiert:\n\nDaten aus dem Internet werden gesammelt.\nPre-training: LLM wird auf diesen Daten trainiert, das nächste Wort vorherzusagen.\nReinforcement Learning from Human Feedback: Assistant wird trainiert, menschliche Konversationen zu führen."
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#daten",
+    "href": "slides/01-text-representation-generation.html#daten",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Daten",
+    "text": "Daten"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#methoden",
+    "href": "slides/01-text-representation-generation.html#methoden",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Methoden",
+    "text": "Methoden\n\n\nWe trained this model using Reinforcement Learning from Human Feedback (RLHF), using the same methods as InstructGPT, but with slight differences in the data collection setup. We trained an initial model using supervised fine-tuning: human AI trainers provided conversations in which they played both sides—the user and an AI assistant. We gave the trainers access to model-written suggestions to help them compose their responses. We mixed this new dialogue dataset with the InstructGPT dataset, which we transformed into a dialogue format.\nTo create a reward model for reinforcement learning, we needed to collect comparison data, which consisted of two or more model responses ranked by quality. To collect this data, we took conversations that AI trainers had with the chatbot. We randomly selected a model-written message, sampled several alternative completions, and had AI trainers rank them. Using these reward models, we can fine-tune the model using Proximal Policy Optimization. We performed several iterations of this process."
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#pre-training",
+    "href": "slides/01-text-representation-generation.html#pre-training",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Pre-training",
+    "text": "Pre-training"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#pre-training-1",
+    "href": "slides/01-text-representation-generation.html#pre-training-1",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Pre-training",
+    "text": "Pre-training"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#reinforcement-learning-from-human-feedback-rlhf",
+    "href": "slides/01-text-representation-generation.html#reinforcement-learning-from-human-feedback-rlhf",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Reinforcement Learning from Human Feedback (RLHF)",
+    "text": "Reinforcement Learning from Human Feedback (RLHF)\nBenutzt Feedback vom Menschen um “schlechte” Outputs zu minimieren.\n\nQuelle: openai.com/blog/chatgpt"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#zusammenfassung-1",
+    "href": "slides/01-text-representation-generation.html#zusammenfassung-1",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Zusammenfassung",
+    "text": "Zusammenfassung\n\nChatGPT hat einen hohen Energieverbrauch.\nLLM lernt Vorurteile aus den Trainingsdaten.\nToxische Inhalte werden durch Billigarbeiter:innen moderiert."
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#energieverbrauch",
+    "href": "slides/01-text-representation-generation.html#energieverbrauch",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Energieverbrauch",
+    "text": "Energieverbrauch\n\nTraining: “What we do know is that training ChatGPT used \\(1.287\\) GWh, roughly equivalent to the consumption of 120 US homes for a year.” Quelle: Heating up: how much energy does AI use?\nPatterson et al. (2022) schätzen die Trainingskosten auf 502 Tonnen \\(\\text{CO}_2\\) (RLHF würde etwas mehr kosten, ca. 1% der ursprünglichen Kosten).\nBenutzung: 7 Tonnen \\(\\text{CO}_2\\) pro Tag (Ende Februar). Quelle: How much energy does ChatGPT use?\nDer Energieverbrauch von ChatGPT ist equivalent zu 400-800 US Haushalten. Das ist beträchtlich, im Vergleich zu z.B. Kryptowährungen eher gering."
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#bias",
+    "href": "slides/01-text-representation-generation.html#bias",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Bias",
+    "text": "Bias\n\n\n\n\n\nDa LLMs von Texten lernen, die von Menschen geschrieben wurden, können sie auch Vorurteile lernen.\n\nQuelle: Hast du Vorurteile?"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#ethik",
+    "href": "slides/01-text-representation-generation.html#ethik",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Ethik",
+    "text": "Ethik\n\n\n\n\n\nAuf Grund der grossen Menge von Trainingsdaten, die für Sprachmodelle benötigt werden, ist Qualitätskontrolle schwierig.\nDiskriminierende oder beleidigende Aussagen werden von einem Chatbot generiert.\nSolche Antworten können als unerwünscht markiert werden.\nToxische Inhalte wie körperliche und sexuelle Gewalt, Suizide und Tierquälerei, müssen beim Trainieren aus den Antworten gefiltert werden. Dabei mussten angestellte Arbeitskräfte für weniger als 2 Dollar die Stunde teils schockierende Inhalte lesen.\n\nQuelle: Traumatische Klickarbeit"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#wie-generiert-chatgpt-text",
+    "href": "slides/01-text-representation-generation.html#wie-generiert-chatgpt-text",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Wie generiert ChatGPT Text?",
+    "text": "Wie generiert ChatGPT Text?\n\nLLM: Gegeben einer Input-Sequenz (Kontext) von Tokens (Wörter, Teile von Wörtern, Satzzeichen, Emojis, etc.), was sind die wahrscheinlichsten nächsten Tokens?\nAuto-regressiv: Ein Token wird generiert, wird dem Kontext hinzugefügt.\n\n \n\nDer neue Kontext wird verwendet, um das nächste Token zu generieren, etc.\nWichtig: Jedes Token erhält gleich viel Zeit. Es gibt keine Tokens, die mehr oder weniger wichtig sind (Computation per Token ist konstant).\nWeil jedes Token gleich gewichtet wird, kann es an jeder Stelle im Output zu “ungünstigen” Pfaden führen."
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#prompt",
+    "href": "slides/01-text-representation-generation.html#prompt",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Prompt",
+    "text": "Prompt\n\nDer ursprüngliche Kontext wird Prompt (Eingabetext) genannt.\nDieser ist entscheidend für die Qualität der Antwort.\n\n\n\n\n\n\n\nPrompt Beispiel\n\n\n“Was ist 89322/1313?”\nvs. \n“Was ist 89322/1313? Arbeite Schritt für Schritt.”"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#prompt-1",
+    "href": "slides/01-text-representation-generation.html#prompt-1",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Prompt",
+    "text": "Prompt"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#role-playing-simulator",
+    "href": "slides/01-text-representation-generation.html#role-playing-simulator",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Role-Playing Simulator",
+    "text": "Role-Playing Simulator\n\nWe can think of an LLM as a non-deterministic simulator capable of role-playing an infinity of characters, or, to put it another way, capable of stochastically generating an infinity of simulacra.\n\nQuelle: Shanahan, McDonell, and Reynolds (2023)\n\nBei jeder Interaktion mit ChatGPT wird ein Dialog neu simuliert."
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#role-playing-simulator-1",
+    "href": "slides/01-text-representation-generation.html#role-playing-simulator-1",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Role-Playing Simulator",
+    "text": "Role-Playing Simulator"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#role-playing-simulator-2",
+    "href": "slides/01-text-representation-generation.html#role-playing-simulator-2",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Role-Playing Simulator",
+    "text": "Role-Playing Simulator\n\nEin LLM ist keine Entität mit Handlungsabsichten, sondern ein Simulator von möglichen Konversationen.\nChatGPT hat kein Konzept von Wahrheit, sondern generiert Antworten, die plausibel sind.\nSomit kann ChatGPT weder die Wahrheit sagen noch lügen - diese Konzepte sind für ein LLM vorerst irrelevant."
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#was-kann-chatgpt",
+    "href": "slides/01-text-representation-generation.html#was-kann-chatgpt",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Was kann ChatGPT?",
+    "text": "Was kann ChatGPT?\n\n\n\n\n\n\n\n\n\n\nWeitere Beispiele: Bubeck et al. (2023)\n\nSehr viel, wenn richtig geprompted"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#denkt-chatgpt",
+    "href": "slides/01-text-representation-generation.html#denkt-chatgpt",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Denkt ChatGPT?",
+    "text": "Denkt ChatGPT?"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#system-1-vs-system-2",
+    "href": "slides/01-text-representation-generation.html#system-1-vs-system-2",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "System 1 vs System 2",
+    "text": "System 1 vs System 2\n\nThinking Fast and Slow\nSystem 1: schnell, instinktiv, automatisch\nSystem 2: langsam, deliberativ, anstrengend"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#prompt-engineering",
+    "href": "slides/01-text-representation-generation.html#prompt-engineering",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Prompt Engineering",
+    "text": "Prompt Engineering\n\nQualität der Antwort hängt sehr von der Qualität des Prompts ab.\n2 Möglichkeiten, um die Qualität der Antworten zu verbessern:\n\nIncrementelle Prompts: Schritt für Schritt durch die Konversation führen (dialogisches Prompting).\nMega-Prompts: Alle Informationen auf einmal geben.\n\nAm besten selber ausprobieren."
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#mega-prompt",
+    "href": "slides/01-text-representation-generation.html#mega-prompt",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Mega-Prompt",
+    "text": "Mega-Prompt\n\nRolle: Wer oder was wird simuliert?\nAufgabe: Was ist zu tun?\nArbeitschritte: Was ist in welcher Reihenfolge zu tun?\nKontext, Einschränkungen\nZiel: Was soll am Ende herauskommen?\nFormat: Wie soll das Ergebnis aussehen?\n\n\n\n\n\n\n\nBeispiel Hochschullehre: Feedback\n\n\n“I want you to act as a harsh critic. Criticize what I will write to you and show me where my argumentation is lacking. Start by asking me what text I want to have feedback on. Then ask me questions about my context to create the best feedback possible. If you feel you have all the context necessary, think step by step when creating your feedback” (Lenk-Ostendorf & Folgmann 2023)\n\n\n\n\n\n\n\n\n\nWeitere Beispiele\n\n\n\nOpenAI Discord Server discord.com/invite/openai\nPrompting Guide"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#plug-ins",
+    "href": "slides/01-text-representation-generation.html#plug-ins",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Plug-ins",
+    "text": "Plug-ins"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#retrieval-augmented-llms",
+    "href": "slides/01-text-representation-generation.html#retrieval-augmented-llms",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Retrieval-augmented LLMs",
+    "text": "Retrieval-augmented LLMs"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#retrieval-augmented-llms-1",
+    "href": "slides/01-text-representation-generation.html#retrieval-augmented-llms-1",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Retrieval-augmented LLMs",
+    "text": "Retrieval-augmented LLMs\nBeispiel: 👉🏼 Assistent der Virtuellen Akademie"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#haltung-der-bfh",
+    "href": "slides/01-text-representation-generation.html#haltung-der-bfh",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Haltung der BFH",
+    "text": "Haltung der BFH\n\nTechnologien sollen dort, wo sie den Lernprozess unterstützen und praxisrelevant sind, in die Lehre einbezogen werden.\nStudierende sollen lernen, Technologien kompetent einzusetzen und kritisch zu hinterfragen. Dies gilt uneingeschränkt auch für ChatGPT und andere gleichgerichtete Tools."
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#zitieren",
+    "href": "slides/01-text-representation-generation.html#zitieren",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Zitieren",
+    "text": "Zitieren\n\nEs existieren noch keine Richtlinien für das Zitieren von ChatGPT oder anderen KI-basierte Schreibtools.\nChatGPT ist rein rechtlich keine zitierfähige Quelle und damit auch nicht zitierpflichtig (Fleck 2023).\nAus der Orientierungshilfe: “KI-basierte Schreibtools sind externe Quellen und müssen daher im Sinne der wissenschaftlichen Integrität immer, wie andere Quellen auch, zitiert werden, sofern ganze Textpassagen von ChatGPT benutzt werden. Falls mit dem Tool der eigene Text überarbeitet wurde, muss ChatGPT als verwendetes Hilfsmittel angeführt werden.”\n\n\n\n\n\n\n\nMöglicher Pauschalverweis\n\n\n“Beim Verfassen der Arbeit habe ich das KI-gestützte Schreibwerkzeug ChatGPT zur Textoptimierung verwendet. Wörtlich aus dem Tool übernommene Passagen wurden im Text als persönliche Kommunikation zitiert.”"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#plagiate-und-detektion",
+    "href": "slides/01-text-representation-generation.html#plagiate-und-detektion",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Plagiate und Detektion",
+    "text": "Plagiate und Detektion\n\nTexte von ChatGPT werden jedes Mal individuell erstellt. Es handelt sich nicht um Plagiate.\nDie klassischen Tools zur Aufdeckung von Plagiaten wie z.B. TurnItIn funktionieren hier nicht.\nDie BFH empfiehlt weiterhin, schriftliche Arbeiten mit der Plagiatserkennungssoftware Turnitin zu prüfen."
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#kompetenznachweise",
+    "href": "slides/01-text-representation-generation.html#kompetenznachweise",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Kompetenznachweise",
+    "text": "Kompetenznachweise\n\nSiehe KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus\nBeim Benutzen von KI-generierten Texten in Kompetenznachweisen ohne Deklaration oder Zitierung kann von einem Plagiat im weiteren Sinne ausgegangen werden, welches das bisher etablierte Plagiatsverständnis im engeren Sinne erweitert.\nOpen Book-Prüfungen: KI-Tools müssten explizit ausgeschlossen werden.\nClosed Book-Prüfungen: KI-Tools können durch Einsatz von Safe Exam-Browser und Lernstick ausgeschlossen werden.\nSchriftliche Arbeiten: KI-Tools durch pauschalen Hilfsmittelverweis am Ende der Arbeit deklarieren.\nAlternative oder ergänzende Prüfungsformen: praktische Prüfungen, mündliche Prüfungen, Präsentationen."
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#rechtliche-aspekte",
+    "href": "slides/01-text-representation-generation.html#rechtliche-aspekte",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Rechtliche Aspekte",
+    "text": "Rechtliche Aspekte\n\nChatGPT kann keine Urheberschaft und keine Autorenschaft beanspruchen, da dies nur natürliche Personen können.\nMenschen können die Urheberschaft eines Textes beanspruchen, auch wenn sie auf Unterstützung durch ChatGPT zurückgegriffen haben – sofern sie eine wesentliche gestalterische Eigenleistung am Text erbracht haben.\n\nQuelle: Salden (2023)"
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#datenschutz",
+    "href": "slides/01-text-representation-generation.html#datenschutz",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Datenschutz",
+    "text": "Datenschutz\n\nAnonyme Nutzung von ChatGPT ist mit persönlichen Konto nicht möglich (über Handynummer identifizierbar).\nAlle Eingaben und alle Antworten werden bei ChatGPT unverschlüsselt abgespeichert.\nDaten liegen auf amerikanischen Servern und sind damit für amerikanische Ermittlungsbehörden grundsätzlich zugänglich."
+  },
+  {
+    "objectID": "slides/01-text-representation-generation.html#seminararbeit-mit-ki-unterstützung",
+    "href": "slides/01-text-representation-generation.html#seminararbeit-mit-ki-unterstützung",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Seminararbeit mit KI-Unterstützung",
+    "text": "Seminararbeit mit KI-Unterstützung\nLehrperson: Kerstin Denecke, Technik und Informatik, Institut für Medizininformatik\n\nElicit [Brainstorm research questions]: Idee für Forschungsfrage\nChatGPT: Feedback zu Fragestellungen, Verbesserungsvorschläge\nElicit [Abstract summary]: Rechercheunterstützung\nConsensus: Unterstützung für Belege in der Diskussion\n\n\n\n\n\n\n\nChatGPT Prompt\n\n\nVerhalte dich wie eine wissenschaftliche Betreuungsperson in ihrer Sprechstunde. Du musst den aktuellen Stand meiner Hausarbeit überprüfen und kritisch beurteilen. Dazu evaluierst du meine Forschungsfrage und äusserst konstruktive Kritik in Bezug auf deren Stärken und Schwächen. Die Fragestellung lautet:\n“Wie binden Therapeuten Chatbots in die Behandlung ein?”"
+  },
+  {
+    "objectID": "pages/text-representation.html",
+    "href": "pages/text-representation.html",
+    "title": "Text representation",
     "section": "",
-    "text": "https://thedecisionlab.com/reference-guide/philosophy/system-1-and-system-2-thinking\n\n\n\n\n Back to top"
+    "text": "import tiktoken\n\n\n\n\n Back to topReusehttps://creativecommons.org/licenses/by/4.0/CitationBibTeX citation:@online{ellis2023,\n  author = {Ellis, Andrew},\n  title = {Text Representation},\n  pages = {undefined},\n  date = {2023-09-13},\n  url = {https://virtuelleakademie.github.io/promptly-literate/pages/text-representation.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nEllis, Andrew. 2023. “Text Representation.” September 13,\n2023. https://virtuelleakademie.github.io/promptly-literate/pages/text-representation.html."
   },
   {
-    "objectID": "pages/prompting.html",
-    "href": "pages/prompting.html",
-    "title": "Prompt Design",
+    "objectID": "pages/programme.html",
+    "href": "pages/programme.html",
+    "title": "Program",
     "section": "",
-    "text": "Write clear and specific instructions\n\nUse delimiters\nASk for structured output\nCheck whether conditions are satisfied (assumptions)\nFew-shot prompting\n\nGive the model time to think"
+    "text": "Was sind Large Language Models (LLMs)?\nWie werden LLMs trainiert?\nWie generieren LLMs Texte?\nWas sind Ähnlichkeiten und Unterschiede zwischen LLMs und menschlichem Denken?\nWie können wir LLMs benutzen?\nWie können wir LLMs beschreiben, ohne sie zu anthropomorphisieren?"
   },
   {
-    "objectID": "pages/prompting.html#principles-of-prompting",
-    "href": "pages/prompting.html#principles-of-prompting",
-    "title": "Prompt Design",
+    "objectID": "pages/programme.html#inhalt",
+    "href": "pages/programme.html#inhalt",
+    "title": "Program",
     "section": "",
-    "text": "Write clear and specific instructions\n\nUse delimiters\nASk for structured output\nCheck whether conditions are satisfied (assumptions)\nFew-shot prompting\n\nGive the model time to think"
+    "text": "Was sind Large Language Models (LLMs)?\nWie werden LLMs trainiert?\nWie generieren LLMs Texte?\nWas sind Ähnlichkeiten und Unterschiede zwischen LLMs und menschlichem Denken?\nWie können wir LLMs benutzen?\nWie können wir LLMs beschreiben, ohne sie zu anthropomorphisieren?"
   },
   {
-    "objectID": "pages/prompting.html#openai-documentation",
-    "href": "pages/prompting.html#openai-documentation",
-    "title": "Prompt Design",
-    "section": "OpenAI Documentation",
-    "text": "OpenAI Documentation\nDoc OpenAI’s GPT (generative pre-trained transformer) models have been trained to understand natural language and code. GPTs provide text outputs in response to their inputs. The inputs to GPTs are also referred to as “prompts”. Designing a prompt is essentially how you “program” a GPT model, usually by providing instructions or some examples of how to successfully complete a task.\nUsing GPTs, you can build applications to:\nDraft documents\nWrite computer code\nAnswer questions about a knowledge base\nAnalyze texts\nCreate conversational agents\nGive software a natural language interface\nTutor in a range of subjects\nTranslate languages\nSimulate characters for games\nand much more\nTo use a GPT model via the OpenAI API, you’ll send a request containing the inputs and your API key, and receive a response containing the model’s output. Our latest models, gpt-4 and gpt-3.5-turbo, are accessed through the chat completions API endpoint. Currently, only the older legacy models are available via the completions API endpoint."
+    "objectID": "pages/programme.html#lernziele",
+    "href": "pages/programme.html#lernziele",
+    "title": "Program",
+    "section": "Lernziele",
+    "text": "Lernziele\n\n\n\n\n\n\nNach diesem Workshop:\n\n\n\n\nKannst du mit Anfragen von Studierenden in Bezug auf fachspezifische KI-generierte Texte umgehen.\nKannst du in eigenen Worten wiedergeben, wie KI-generierte Texte entstehen.\nHast du Kriterien, anhand derer du KI-Tools beurteilen kannst."
   },
   {
-    "objectID": "pages/prompting.html#gpt-best-practices",
-    "href": "pages/prompting.html#gpt-best-practices",
-    "title": "Prompt Design",
-    "section": "GPT best practices",
-    "text": "GPT best practices\nThis guide shares strategies and tactics for getting better results from GPTs. The methods described here can sometimes be deployed in combination for greater effect. We encourage experimentation to find the methods that work best for you.\nSome of the examples demonstrated here currently work only with our most capable model, gpt-4. If you don’t yet have access to gpt-4 consider joining the waitlist. In general, if you find that a GPT model fails at a task and a more capable model is available, it’s often worth trying again with the more capable model. Six strategies for getting better results Write clear instructions\nGPTs can’t read your mind. If outputs are too long, ask for brief replies. If outputs are too simple, ask for expert-level writing. If you dislike the format, demonstrate the format you’d like to see. The less GPTs have to guess at what you want, the more likely you’ll get it.\n\nTactics:\nInclude details in your query to get more relevant answers\nAsk the model to adopt a persona\nUse delimiters to clearly indicate distinct parts of the input\nSpecify the steps required to complete a task\nProvide examples\nSpecify the desired length of the output"
+    "objectID": "pages/programme.html#program",
+    "href": "pages/programme.html#program",
+    "title": "Program",
+    "section": "Program",
+    "text": "Program\n\n\n\n\nflowchart LR\n  A([\"Einleitung\n            5'\"]) \n  A -.-&gt; B([\"Reaktivationsrunde \n                      10'\"]) \n  B -.-&gt; C([\"Input: Wie funktioniert ChatGPT? \n                      30'\"])\n  C -.-&gt; D([\"Vertiefung: Lernziele 1 + 2 \n                      15'\"]) \n  C -.-&gt; E([\"Vertiefung: Lernziel 3 \n                        15'\"]) \n  D -.-&gt; F([\"Verankern \n                10'\"]) \n  E -.-&gt; F\n  F -.-&gt; G([\"Diskussion \n            15'\"])\n\n\n\n\n\n\nEinleitung [⏱️ 5’]: Einstieg in den Workshop\nReaktivationsrunde [⏱️ 10’]: In diesem Teil tauschen die Teilnehmenden sich über ihre Erfahrungen mit KI-generierten Texten aus.\nInput: Wie funktioniert ChatGPT? [⏱️ 30’]: Referat zum Thema künstliche Intelligenz und ChatGPT.\nVertiefung [⏱️ 30’]: In diesem Teil werden die oben genannten Lernziele vertieft (alleine, in Kleingruppen und im Plenum).\nVerankern [⏱️ 10’]: In diesem Teil werden Erfahrungen zusammengefasst und reflektiert.\nDiskussion [⏱️ 15’]: Am Ende des Workshops wird über die Erfahrungen und Erkenntnisse diskutiert."
   },
   {
-    "objectID": "pages/prompting.html#provide-reference-text",
-    "href": "pages/prompting.html#provide-reference-text",
-    "title": "Prompt Design",
-    "section": "Provide reference text",
-    "text": "Provide reference text\nGPTs can confidently invent fake answers, especially when asked about esoteric topics or for citations and URLs. In the same way that a sheet of notes can help a student do better on a test, providing reference text to GPTs can help in answering with fewer fabrications.\n\nTactics:\nInstruct the model to answer using a reference text\nInstruct the model to answer with citations from a reference text"
+    "objectID": "pages/programme.html#vorbereitung",
+    "href": "pages/programme.html#vorbereitung",
+    "title": "Program",
+    "section": "Vorbereitung",
+    "text": "Vorbereitung\nLöse folgende Aufgaben mit ChatGPT (oder Bing Chat):\n\nLasse ChatGPT ein Gedicht schreiben. Gebe Thema und Stil vor (z.B. “Hochschulbibliotheken und künstliche Intelligenz” im Stile des Sturm und Drang).\nLasse ChatGPT dir ein Konzept deines Fachbereichs in einem kurzen Textabschnitt vereinfachend erklären.\nBenutze ChatGPT, um zu einem Forschungsthema (z.B. “Was ist der Zusammenhang zwischen Sprache und Denken?”) eine Literaturrecherche durchzuführen. Lasse dir eine kommentierte Liste von wissenschaftlichen Publikationen geben.\nLasse ChatGPT ein paar Mathe-Aufgaben lösen (z.B. “Was ist 89322/1313?”)\nLöse mit ChatGPT eine praktische Aufgabe: “Hier haben wir ein Buch, 9 Eier (ohne Eierkarton), einen Laptop, eine Flasche und einen Nagel. Bitte sag mir, wie ich sie stabil übereinander stapeln kann.”"
   },
   {
-    "objectID": "pages/prompting.html#strategy-give-gpts-time-to-think",
-    "href": "pages/prompting.html#strategy-give-gpts-time-to-think",
-    "title": "Prompt Design",
-    "section": "Strategy: Give GPTs time to “think”",
-    "text": "Strategy: Give GPTs time to “think”"
+    "objectID": "pages/programme.html#leitung",
+    "href": "pages/programme.html#leitung",
+    "title": "Program",
+    "section": "Leitung",
+    "text": "Leitung\n\nAndrew Ellis: Andrew ist Data Scientist an der Virtuellen Akademie der Berner Fachhochschule. Sein Hintergrund ist in den Kognitionswissenschaften und er ist begeistert von der Schnittstelle zwischen Sprache, Denken und künstlicher Intelligenz.”"
   },
   {
     "objectID": "pages/observable-1.html",
@@ -406,55 +714,6 @@
     "text": "Leitung\n\nAndrew Ellis: Andrew ist Data Scientist an der Virtuellen Akademie der Berner Fachhochschule. Sein Hintergrund ist in den Kognitionswissenschaften und er ist begeistert von der Schnittstelle zwischen Sprache, Denken und künstlicher Intelligenz.”"
   },
   {
-    "objectID": "pages/detection.html",
-    "href": "pages/detection.html",
-    "title": "Detection + Plagiarism",
-    "section": "",
-    "text": "Golem\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "pages/chatgpt.html",
-    "href": "pages/chatgpt.html",
-    "title": "Prompt Design",
-    "section": "",
-    "text": "GPT-3"
-  },
-  {
-    "objectID": "pages/chatgpt.html#images",
-    "href": "pages/chatgpt.html#images",
-    "title": "Prompt Design",
-    "section": "",
-    "text": "GPT-3"
-  },
-  {
-    "objectID": "pages/chatgpt.html#openai-documentation",
-    "href": "pages/chatgpt.html#openai-documentation",
-    "title": "Prompt Design",
-    "section": "OpenAI Documentation",
-    "text": "OpenAI Documentation\nDoc OpenAI’s GPT (generative pre-trained transformer) models have been trained to understand natural language and code. GPTs provide text outputs in response to their inputs. The inputs to GPTs are also referred to as “prompts”. Designing a prompt is essentially how you “program” a GPT model, usually by providing instructions or some examples of how to successfully complete a task.\nUsing GPTs, you can build applications to:\nDraft documents\nWrite computer code\nAnswer questions about a knowledge base\nAnalyze texts\nCreate conversational agents\nGive software a natural language interface\nTutor in a range of subjects\nTranslate languages\nSimulate characters for games\nand much more\nTo use a GPT model via the OpenAI API, you’ll send a request containing the inputs and your API key, and receive a response containing the model’s output. Our latest models, gpt-4 and gpt-3.5-turbo, are accessed through the chat completions API endpoint. Currently, only the older legacy models are available via the completions API endpoint."
-  },
-  {
-    "objectID": "pages/chatgpt.html#gpt-best-practices",
-    "href": "pages/chatgpt.html#gpt-best-practices",
-    "title": "Prompt Design",
-    "section": "GPT best practices",
-    "text": "GPT best practices\nThis guide shares strategies and tactics for getting better results from GPTs. The methods described here can sometimes be deployed in combination for greater effect. We encourage experimentation to find the methods that work best for you.\nSome of the examples demonstrated here currently work only with our most capable model, gpt-4. If you don’t yet have access to gpt-4 consider joining the waitlist. In general, if you find that a GPT model fails at a task and a more capable model is available, it’s often worth trying again with the more capable model. Six strategies for getting better results Write clear instructions\nGPTs can’t read your mind. If outputs are too long, ask for brief replies. If outputs are too simple, ask for expert-level writing. If you dislike the format, demonstrate the format you’d like to see. The less GPTs have to guess at what you want, the more likely you’ll get it.\n\nTactics:\nInclude details in your query to get more relevant answers\nAsk the model to adopt a persona\nUse delimiters to clearly indicate distinct parts of the input\nSpecify the steps required to complete a task\nProvide examples\nSpecify the desired length of the output"
-  },
-  {
-    "objectID": "pages/chatgpt.html#provide-reference-text",
-    "href": "pages/chatgpt.html#provide-reference-text",
-    "title": "Prompt Design",
-    "section": "Provide reference text",
-    "text": "Provide reference text\nGPTs can confidently invent fake answers, especially when asked about esoteric topics or for citations and URLs. In the same way that a sheet of notes can help a student do better on a test, providing reference text to GPTs can help in answering with fewer fabrications.\n\nTactics:\nInstruct the model to answer using a reference text\nInstruct the model to answer with citations from a reference text"
-  },
-  {
-    "objectID": "pages/chatgpt.html#strategy-give-gpts-time-to-think",
-    "href": "pages/chatgpt.html#strategy-give-gpts-time-to-think",
-    "title": "Prompt Design",
-    "section": "Strategy: Give GPTs time to “think”",
-    "text": "Strategy: Give GPTs time to “think”"
-  },
-  {
     "objectID": "pages/assistant.html",
     "href": "pages/assistant.html",
     "title": "Assistent der Virtuellen Akademie",
@@ -462,88 +721,25 @@
     "text": "Back to top"
   },
   {
-    "objectID": "pages/text-representation.html",
-    "href": "pages/text-representation.html",
-    "title": "Introduction to Natural Language Processing",
-    "section": "",
-    "text": "Code\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\n\n\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\nFigure 1: ?(caption)\n\n\n\n\nThis is a demo of the Jupyter notebook.\n😊 Yay, it works! 🎉\nThi is an Observable plot."
-  },
-  {
-    "objectID": "pages/text-representation.html#natural-language-processing",
-    "href": "pages/text-representation.html#natural-language-processing",
-    "title": "Introduction to Natural Language Processing",
-    "section": "",
-    "text": "Code\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\n\n\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\nFigure 1: ?(caption)\n\n\n\n\nThis is a demo of the Jupyter notebook.\n😊 Yay, it works! 🎉\nThi is an Observable plot."
-  },
-  {
-    "objectID": "pages/jupyter-demo.html",
-    "href": "pages/jupyter-demo.html",
-    "title": "Jupyter Demo",
-    "section": "",
-    "text": "Code\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\n\n\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\nFigure 1: ?(caption)\n\n\n\n\nThis is a demo of the Jupyter notebook.\n😊 Yay, it works! 🎉\n\n\nCode\nfrom IPython.display import display\nfrom numpy import arange, sin, pi\nimport matplotlib.pyplot as plt\nfrom ipywidgets import interact\n\ndef myplot(xmax):\n    x = arange(0, xmax, 0.01)\n    y = sin(2*pi*x)\n    plt.plot(x, y)\n\ninteractive_plot = interact(myplot, xmax=(pi/2, 4*pi))\ndisplay(interactive_plot)\n\n\n\n\n\n&lt;function __main__.myplot(xmax)&gt;\n\n\n\n\nCode\nfrom ipyleaflet import Map, Marker, basemaps, basemap_to_tiles\nm = Map(\n  basemap=basemap_to_tiles(\n    basemaps.NASAGIBS.ModisTerraTrueColorCR, \"2017-04-08\"\n  ),\n  center=(52.204793, 360.121558),\n  zoom=4\n)\nm.add_layer(Marker(location=(52.204793, 360.121558)))\nm\n\n\n\n\n\n\n\nCode\nimport plotly.io as pio\npio.renderers.default = \"plotly_mimetype+notebook_connected\"\n\n\n\n\nCode\nimport plotly.express as px\nimport plotly.io as pio\ndf = px.data.iris()\nfig = px.scatter(df, x=\"sepal_width\", y=\"sepal_length\", \n                 color=\"species\", \n                 marginal_y=\"violin\", marginal_x=\"box\", \n                 trendline=\"ols\", template=\"simple_white\")\nfig.show()\n\n\n\n                                                \nFigure 2: ?(caption)\n\n\n\n\n\nCode\nfrom langchain.embeddings.openai import OpenAIEmbeddings\nembedding = OpenAIEmbeddings()\n\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\n\n\n\nCode\nsentences = [\n    \"Good morning, how are you?\",\n    \"I am doing well, how about you?\",\n    \"Hi, how are you doing today?\",\n    \"I'm feeling a bit under the weather today.\",\n    \"I like cupcakes.\",\n    \"The earth is the third planet from the sun.\",\n    \"The moon is a natural satellite of the earth.\",\n    \"Jupiter is the fifth planet from the Sun and the largest in the Solar System.\",\n    \"The cat is chasing the mouse.\",\n    \"zxciooi oi oidsfhdoi dsfds\",\n    \"aaaaa\",\n    \"The Large Plane Trees, also known as Road Menders at Saint-Rémy, is an oil-on-canvas painting by Vincent van Gogh.\"\n]\n\n\n\n\nCode\nembeddings = np.array([embedding.embed_query(sentence) for sentence in sentences])\n\n\n\n\nCode\nembeddings_df = pd.DataFrame(embeddings)\nembeddings_df.shape\n\n\n(12, 1536)\n\n\n\n\nCode\nnp.dot(embeddings[1], embeddings[-1])\n\n\n0.7056968424503798\n\n\n\n\nCode\ndot_product_matrix = np.dot(embeddings, embeddings.T)\n\n\n\n\nCode\ndf = pd.DataFrame(dot_product_matrix, columns=range(1, len(embeddings)+1))\ndf\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n\n\n\n\n0\n1.000000\n0.866157\n0.934613\n0.790115\n0.753864\n0.751600\n0.733146\n0.727596\n0.749823\n0.764065\n0.771019\n0.729796\n\n\n1\n0.866157\n1.000000\n0.882547\n0.803844\n0.767056\n0.732316\n0.719346\n0.712231\n0.746578\n0.757267\n0.763734\n0.705697\n\n\n2\n0.934613\n0.882547\n1.000000\n0.818802\n0.766354\n0.755566\n0.733812\n0.738534\n0.761324\n0.779546\n0.780639\n0.717477\n\n\n3\n0.790115\n0.803844\n0.818802\n1.000000\n0.771775\n0.743905\n0.726903\n0.721061\n0.749643\n0.746967\n0.761627\n0.722518\n\n\n4\n0.753864\n0.767056\n0.766354\n0.771775\n1.000000\n0.733837\n0.739998\n0.722617\n0.756084\n0.759729\n0.766358\n0.726434\n\n\n5\n0.751600\n0.732316\n0.755566\n0.743905\n0.733837\n1.000000\n0.865807\n0.888428\n0.768701\n0.737141\n0.758281\n0.763066\n\n\n6\n0.733146\n0.719346\n0.733812\n0.726903\n0.739998\n0.865807\n1.000000\n0.829250\n0.757261\n0.741160\n0.757634\n0.749691\n\n\n7\n0.727596\n0.712231\n0.738534\n0.721061\n0.722617\n0.888428\n0.829250\n1.000000\n0.748579\n0.725386\n0.745079\n0.752312\n\n\n8\n0.749823\n0.746578\n0.761324\n0.749643\n0.756084\n0.768701\n0.757261\n0.748579\n1.000000\n0.764749\n0.758694\n0.735413\n\n\n9\n0.764065\n0.757267\n0.779546\n0.746967\n0.759729\n0.737141\n0.741160\n0.725386\n0.764749\n1.000000\n0.833094\n0.725393\n\n\n10\n0.771019\n0.763734\n0.780639\n0.761627\n0.766358\n0.758281\n0.757634\n0.745079\n0.758694\n0.833094\n1.000000\n0.744457\n\n\n11\n0.729796\n0.705697\n0.717477\n0.722518\n0.726434\n0.763066\n0.749691\n0.752312\n0.735413\n0.725393\n0.744457\n1.000000\n\n\n\n\n\n\n\n\n\nCode\ndf['embedding_index'] = range(1,len(embeddings)+1)\ndf\n\n\n\n\n\n\n\n\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\nembedding_index\n\n\n\n\n0\n1.000000\n0.866157\n0.934613\n0.790115\n0.753864\n0.751600\n0.733146\n0.727596\n0.749823\n0.764065\n0.771019\n0.729796\n1\n\n\n1\n0.866157\n1.000000\n0.882547\n0.803844\n0.767056\n0.732316\n0.719346\n0.712231\n0.746578\n0.757267\n0.763734\n0.705697\n2\n\n\n2\n0.934613\n0.882547\n1.000000\n0.818802\n0.766354\n0.755566\n0.733812\n0.738534\n0.761324\n0.779546\n0.780639\n0.717477\n3\n\n\n3\n0.790115\n0.803844\n0.818802\n1.000000\n0.771775\n0.743905\n0.726903\n0.721061\n0.749643\n0.746967\n0.761627\n0.722518\n4\n\n\n4\n0.753864\n0.767056\n0.766354\n0.771775\n1.000000\n0.733837\n0.739998\n0.722617\n0.756084\n0.759729\n0.766358\n0.726434\n5\n\n\n5\n0.751600\n0.732316\n0.755566\n0.743905\n0.733837\n1.000000\n0.865807\n0.888428\n0.768701\n0.737141\n0.758281\n0.763066\n6\n\n\n6\n0.733146\n0.719346\n0.733812\n0.726903\n0.739998\n0.865807\n1.000000\n0.829250\n0.757261\n0.741160\n0.757634\n0.749691\n7\n\n\n7\n0.727596\n0.712231\n0.738534\n0.721061\n0.722617\n0.888428\n0.829250\n1.000000\n0.748579\n0.725386\n0.745079\n0.752312\n8\n\n\n8\n0.749823\n0.746578\n0.761324\n0.749643\n0.756084\n0.768701\n0.757261\n0.748579\n1.000000\n0.764749\n0.758694\n0.735413\n9\n\n\n9\n0.764065\n0.757267\n0.779546\n0.746967\n0.759729\n0.737141\n0.741160\n0.725386\n0.764749\n1.000000\n0.833094\n0.725393\n10\n\n\n10\n0.771019\n0.763734\n0.780639\n0.761627\n0.766358\n0.758281\n0.757634\n0.745079\n0.758694\n0.833094\n1.000000\n0.744457\n11\n\n\n11\n0.729796\n0.705697\n0.717477\n0.722518\n0.726434\n0.763066\n0.749691\n0.752312\n0.735413\n0.725393\n0.744457\n1.000000\n12\n\n\n\n\n\n\n\n\n\nCode\ndf = df.melt(id_vars=['embedding_index'], var_name='embedding_index_2', value_name='similarity')\n\n\n\nCode\nPlot.plot(\n    {\n        \"height\": 640,\n        \"padding\": 0.05,\n        \"grid\": True,\n        \"x\": {\"axis\": \"top\", \"label\": \"Embedding Index\"},\n        \"y\": {\"label\": \"Embedding Index\"},\n        \"color\": {\"type\": \"linear\", \"scheme\": \"PiYG\"},\n        \"marks\": [\n            Plot.cell(\n                df,\n                {\"x\": \"embedding_index\", \"y\": \"embedding_index_2\", \"fill\": \"similarity\", \"tip\": True},\n            ),\n            Plot.text(\n                df,\n                {\n                    \"x\": \"embedding_index\",\n                    \"y\": \"embedding_index_2\",\n                    \"text\": js(\"d =&gt; d.similarity.toFixed(2)\"),\n                    \"title\": \"title\"\n                },\n            ),\n        ],\n    }\n)\n\n\nThi is an Observable plot.\n\n\n\n Back to top"
-  },
-  {
     "objectID": "pages/about.html",
     "href": "pages/about.html",
     "title": "Virtuelle Akademie",
     "section": "",
-    "text": "KI-basierte Schreibtools in der Lehre\n\n\n\nKünstliche Intelligenz (KI) hat das Potenzial, das Bildungswesen grundlegend zu verändern. In diesem Workshop werden wir die Rolle von KI in der Lehre erkunden, mit besonderem Fokus auf den Einsatz von KI-basierten Schreibtools.\nInhalte:\n\nWas ist künstliche Intelligenz? Wie funktionieren Tools wie ChatGPT?\nWie kommuniziere ich mit KI-Schreibtools? Wie schreibe ich gute Prompts?\n\nAnwendungsbeispiele von KI in der Lehre\n\nNächste Termine:\n\n15.September 2023, 13-17 Uhr\n27.Oktober 2023, 13-17 Uhr\n\n👉🏼 www.bfh.ch/de/weiterbildung/kurse/ki-schreibtools\n\n\n\n\n\n\n\n\nKI-Sprechstunden\n\n\n\nHast du Fragen zum Umgang mit Künstlicher Intelligenz (KI) in der Lehre? Dann schau vorbei oder logge dich ein. Ohne Anmeldung.\nNächste Termine:\n\n\nAugust 2023, 16-18 Uhr\n\n\nNovember 2023, 15-17 Uhr\n\n\n👉🏼 virtuelleakademie.ch/beratungen-coachings:"
+    "text": "KI-basierte Schreibtools in der Lehre\n\n\n\nKünstliche Intelligenz (KI) hat das Potenzial, das Bildungswesen grundlegend zu verändern. In diesem Workshop werden wir die Rolle von KI in der Lehre erkunden, mit besonderem Fokus auf den Einsatz von KI-basierten Schreibtools.\nInhalte:\n\nWas ist künstliche Intelligenz? Wie funktionieren Tools wie ChatGPT?\nWie kommuniziere ich mit KI-Schreibtools? Wie schreibe ich gute Prompts?\n\nAnwendungsbeispiele von KI in der Lehre\n\nNächste Termine:\n\n15.September 2023, 13-17 Uhr\n27.Oktober 2023, 13-17 Uhr\n\n👉🏼 www.bfh.ch/de/weiterbildung/kurse/ki-schreibtools\n\n\n\n\n\n\n\n\nKI-Sprechstunden\n\n\n\nHast du Fragen zum Umgang mit Künstlicher Intelligenz (KI) in der Lehre? Dann schau vorbei oder logge dich ein. Ohne Anmeldung.\nNächste Termine:\n\n17. August 2023, 16-18 Uhr\n\nNovember 2023, 15-17 Uhr\n\n\n👉🏼 virtuelleakademie.ch/beratungen-coachings:"
   },
   {
     "objectID": "pages/about.html#ki-kurse-der-virtuellen-akademie",
     "href": "pages/about.html#ki-kurse-der-virtuellen-akademie",
     "title": "Virtuelle Akademie",
     "section": "",
-    "text": "KI-basierte Schreibtools in der Lehre\n\n\n\nKünstliche Intelligenz (KI) hat das Potenzial, das Bildungswesen grundlegend zu verändern. In diesem Workshop werden wir die Rolle von KI in der Lehre erkunden, mit besonderem Fokus auf den Einsatz von KI-basierten Schreibtools.\nInhalte:\n\nWas ist künstliche Intelligenz? Wie funktionieren Tools wie ChatGPT?\nWie kommuniziere ich mit KI-Schreibtools? Wie schreibe ich gute Prompts?\n\nAnwendungsbeispiele von KI in der Lehre\n\nNächste Termine:\n\n15.September 2023, 13-17 Uhr\n27.Oktober 2023, 13-17 Uhr\n\n👉🏼 www.bfh.ch/de/weiterbildung/kurse/ki-schreibtools\n\n\n\n\n\n\n\n\nKI-Sprechstunden\n\n\n\nHast du Fragen zum Umgang mit Künstlicher Intelligenz (KI) in der Lehre? Dann schau vorbei oder logge dich ein. Ohne Anmeldung.\nNächste Termine:\n\n\nAugust 2023, 16-18 Uhr\n\n\nNovember 2023, 15-17 Uhr\n\n\n👉🏼 virtuelleakademie.ch/beratungen-coachings:"
+    "text": "KI-basierte Schreibtools in der Lehre\n\n\n\nKünstliche Intelligenz (KI) hat das Potenzial, das Bildungswesen grundlegend zu verändern. In diesem Workshop werden wir die Rolle von KI in der Lehre erkunden, mit besonderem Fokus auf den Einsatz von KI-basierten Schreibtools.\nInhalte:\n\nWas ist künstliche Intelligenz? Wie funktionieren Tools wie ChatGPT?\nWie kommuniziere ich mit KI-Schreibtools? Wie schreibe ich gute Prompts?\n\nAnwendungsbeispiele von KI in der Lehre\n\nNächste Termine:\n\n15.September 2023, 13-17 Uhr\n27.Oktober 2023, 13-17 Uhr\n\n👉🏼 www.bfh.ch/de/weiterbildung/kurse/ki-schreibtools\n\n\n\n\n\n\n\n\nKI-Sprechstunden\n\n\n\nHast du Fragen zum Umgang mit Künstlicher Intelligenz (KI) in der Lehre? Dann schau vorbei oder logge dich ein. Ohne Anmeldung.\nNächste Termine:\n\n17. August 2023, 16-18 Uhr\n\nNovember 2023, 15-17 Uhr\n\n\n👉🏼 virtuelleakademie.ch/beratungen-coachings:"
   },
   {
     "objectID": "pages/beispiel-arbeit.html",
     "href": "pages/beispiel-arbeit.html",
-    "title": "KI/GPT in der Hochschule",
+    "title": "Exploring LLMs for Teaching and Learning",
     "section": "",
     "text": "mathematische Basiskompetenzen im Kindergartenalter\n\nDu bist eine Fachperson im Bereich der Entwicklungspsychologie. Du bist Experte für mathematische Basiskompetenzen im Kindergartenalter. Ich schreibe eine Masterarbeit und du hilfst mir bei den Formulierungen. Ich schreibe eine wissenschaftliche Arbeit über das Thema “Erfassung mathematischer Basiskompetenzen”\n\nDer MBK 0 (Test mathematischer Basiskompetenzen im Kindergartenalter) von Krajewski (2018) ist ein Einzeltest für Kinder im Alter von 3.6 bis 7 Jahren. Diesem Test liegt das Entwicklungsmodell der Zahl-Grössen-Verknüpfung (Krajewski, 2008) zugrunde (vgl. Abschnitt 4.2.1). Der MBK 0 ist ein Test zur Erfassung der mathematischen Basiskompetenzen\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "pages/contents.html",
-    "href": "pages/contents.html",
-    "title": "Contents",
-    "section": "",
-    "text": "Ich bin an der Hochschulbibliothek der BFH verantwortlich für die Koordination der IK-Angebote. Wir und unsere Kolleg*innen an der Ausleihe haben vermehrt mit Studierenden zu tun, die eine «Recherche» mit ChatGPT durchführen oder auf andere Art damit arbeiten. Ich denke, für die Informationswissenschaft wird die KI einiges an Veränderungen mit sich bringen. Noch gibt es aber kaum Informationsanlässe für unsere Branche. Könntest du dir vorstellen, für unser Team IK eine Einführung ins Thema zu geben und Vor- und Nachteile aufzuzeigen?"
-  },
-  {
-    "objectID": "pages/contents.html#ziele",
-    "href": "pages/contents.html#ziele",
-    "title": "Contents",
-    "section": "",
-    "text": "Ich bin an der Hochschulbibliothek der BFH verantwortlich für die Koordination der IK-Angebote. Wir und unsere Kolleg*innen an der Ausleihe haben vermehrt mit Studierenden zu tun, die eine «Recherche» mit ChatGPT durchführen oder auf andere Art damit arbeiten. Ich denke, für die Informationswissenschaft wird die KI einiges an Veränderungen mit sich bringen. Noch gibt es aber kaum Informationsanlässe für unsere Branche. Könntest du dir vorstellen, für unser Team IK eine Einführung ins Thema zu geben und Vor- und Nachteile aufzuzeigen?"
-  },
-  {
-    "objectID": "pages/contents.html#fragensammlung",
-    "href": "pages/contents.html#fragensammlung",
-    "title": "Contents",
-    "section": "Fragensammlung",
-    "text": "Fragensammlung\n\nWie funktioniert ChatGPT genau? Welche anderen relevanten KI-Tools sollte man kennen?\n\n\nDidaktik/Methodik:\n\nNützliche Unterstützung im Unterricht durch ChatGPT (zB Kahoot und Präsentationen erstellen) – kennst du Anleitungen, gute Vorgehensweisen?\nAbschlussarbeiten und ChatGPT\nPlagiate erkennen\n\n\n\nFragen aus dem Berufsfeld Information und Dokumentation:\n\nTechnische Einsatzmöglichkeiten von ChatGPT bei der Recherche oder in Discovery-Tools (Recherchetechnologien) in Zukunft\nChatGPT nutzen, um eine Recherche vorzubereiten? Thema einkreisen, Begriffe sammeln etc.\nLiteraturhinweise, die ChatGPT ausspielt\nNeue Aufgabe für I&D-Institutionen: KI-generiertes Wissen einordnen?\nUrheberrecht: Wem gehört ein KI-Text?\n\n\n\nRisiken\n\nRisiken von ChatGPT: fachliche Unkorrektheit, Unwahrheit\nWas können wir den Studierenden in unseren Workshops mitgeben?\nEthisch bedenkliche Hintergründe von ChatGPT: https://www.srf.ch/radio-srf-1/kuenstliche-intelligenz-traumatisiert-weil-sie-den-chat-roboter-trainieren-mussten"
-  },
-  {
-    "objectID": "pages/contents.html#beispiel",
-    "href": "pages/contents.html#beispiel",
-    "title": "Contents",
-    "section": "Beispiel",
-    "text": "Beispiel\n\nwir hatten mehrfach Studierende in den Bibliotheken, die mit ChatGPT «Literaturrecherchen» machten und dann mit langen Listen von Referenzen nicht existierender Bücher und Artikel daher kamen 😊 einige Kolleginnen an der Ausleihe haben dann, natürlich vergeblich, danach gesucht. Vielleicht kannst du etwas dazu sagen, wie solche falschen bibliographischen Angaben entstehen."
-  },
-  {
-    "objectID": "pages/contents.html#future",
-    "href": "pages/contents.html#future",
-    "title": "Contents",
-    "section": "Future",
-    "text": "Future\n\nbe data-aware\n\nretrieval augmented generation\n\nbe agentic, i.e. allow and LLM to interact with its environment"
-  },
-  {
-    "objectID": "pages/exercise.html",
-    "href": "pages/exercise.html",
-    "title": "Arbeitsauftrag",
-    "section": "",
-    "text": "Use ChatGPT to write a poem or a short story.\nHave ChatGPT a concept from your field of study.\nUse ChatGPT to prepare a research paper; have ChatGPT review existing literature and write a summary.\n\n\n\n\n Back to top"
   },
   {
     "objectID": "pages/notes.html",
@@ -583,78 +779,379 @@
   {
     "objectID": "pages/resources.html",
     "href": "pages/resources.html",
-    "title": "KI/GPT in der Hochschule",
+    "title": "Exploring LLMs for Teaching and Learning",
     "section": "",
     "text": "👉🏼 KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus\n👉🏼 KI-basierte Schreibtools in der Lehre – Knowledge Base"
   },
   {
     "objectID": "pages/resources.html#ki-orientierungshilfe-der-bfh",
     "href": "pages/resources.html#ki-orientierungshilfe-der-bfh",
-    "title": "KI/GPT in der Hochschule",
+    "title": "Exploring LLMs for Teaching and Learning",
     "section": "",
     "text": "👉🏼 KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus\n👉🏼 KI-basierte Schreibtools in der Lehre – Knowledge Base"
   },
   {
     "objectID": "pages/resources.html#chatgpt-an-der-hochschule",
     "href": "pages/resources.html#chatgpt-an-der-hochschule",
-    "title": "KI/GPT in der Hochschule",
+    "title": "Exploring LLMs for Teaching and Learning",
     "section": "ChatGPT an der Hochschule",
     "text": "ChatGPT an der Hochschule\n👉🏼 Überblick über KI-Tools im Kontext von akademischen Lese- und Schreibprozessen\n👉🏼 ChatGPT im Hochschulkontext – eine kommentierte Linksammlung\n👉🏼 Uni Bern: Chatbots in der Hochschullehre"
   },
   {
     "objectID": "pages/resources.html#wissenschaftliches-arbeiten",
     "href": "pages/resources.html#wissenschaftliches-arbeiten",
-    "title": "KI/GPT in der Hochschule",
+    "title": "Exploring LLMs for Teaching and Learning",
     "section": "Wissenschaftliches Arbeiten",
     "text": "Wissenschaftliches Arbeiten\n👉🏼 ChatGPT zitieren"
   },
   {
     "objectID": "pages/resources.html#rechtliche-fragen",
     "href": "pages/resources.html#rechtliche-fragen",
-    "title": "KI/GPT in der Hochschule",
+    "title": "Exploring LLMs for Teaching and Learning",
     "section": "Rechtliche Fragen",
     "text": "Rechtliche Fragen\n👉🏼 Didaktische Und Rechtliche Perspektiven Auf Ki-Gestütztes Schreiben In Der Hochschulbildung (Salden 2023)"
   },
   {
     "objectID": "pages/resources.html#ethische-fragen",
     "href": "pages/resources.html#ethische-fragen",
-    "title": "KI/GPT in der Hochschule",
+    "title": "Exploring LLMs for Teaching and Learning",
     "section": "Ethische Fragen",
     "text": "Ethische Fragen\n👉🏼 Prekäre Klickarbeit hinter den Kulissen von ChatGPT\n👉🏼 Traumatische Klickarbeit: Die Menschen hinter ChatGPT"
   },
   {
     "objectID": "pages/tools.html",
     "href": "pages/tools.html",
-    "title": "KI/GPT in der Hochschule",
+    "title": "Exploring LLMs for Teaching and Learning",
     "section": "",
     "text": "👉🏼 The largest AI tools directory (updated daily)"
   },
   {
     "objectID": "pages/tools.html#ai-tools",
     "href": "pages/tools.html#ai-tools",
-    "title": "KI/GPT in der Hochschule",
+    "title": "Exploring LLMs for Teaching and Learning",
     "section": "",
     "text": "👉🏼 The largest AI tools directory (updated daily)"
   },
   {
     "objectID": "pages/tools.html#literatursuche",
     "href": "pages/tools.html#literatursuche",
-    "title": "KI/GPT in der Hochschule",
+    "title": "Exploring LLMs for Teaching and Learning",
     "section": "Literatursuche",
     "text": "Literatursuche\n👉🏼 Elicit\n👉🏼 Consensus"
   },
   {
     "objectID": "pages/tools.html#prompt-engineering",
     "href": "pages/tools.html#prompt-engineering",
-    "title": "KI/GPT in der Hochschule",
+    "title": "Exploring LLMs for Teaching and Learning",
     "section": "Prompt Engineering",
     "text": "Prompt Engineering\n👉🏼 Prompting Guide"
   },
   {
-    "objectID": "pages/text-representation.html#text-representation",
-    "href": "pages/text-representation.html#text-representation",
-    "title": "Introduction to Natural Language Processing",
-    "section": "Text representation",
-    "text": "Text representation\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\n\n\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\nFigure 1: ?(caption)\n\n\n\n\nThis is a demo of the Jupyter notebook.\n😊 Yay, it works! 🎉\nThi is an Observable plot."
+    "objectID": "slides/02-prompting-techniques.html#heres-what-happens-when-your-lawyer-uses-chatgpt",
+    "href": "slides/02-prompting-techniques.html#heres-what-happens-when-your-lawyer-uses-chatgpt",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Here’s What Happens When Your Lawyer Uses ChatGPT",
+    "text": "Here’s What Happens When Your Lawyer Uses ChatGPT"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#the-best-prompts-for-chatgpt-the-ultimate-list",
+    "href": "slides/02-prompting-techniques.html#the-best-prompts-for-chatgpt-the-ultimate-list",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "The Best Prompts For ChatGPT: The ultimate list",
+    "text": "The Best Prompts For ChatGPT: The ultimate list"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#was-ist-künstliche-intelligenz-1",
+    "href": "slides/02-prompting-techniques.html#was-ist-künstliche-intelligenz-1",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Was ist Künstliche Intelligenz?",
+    "text": "Was ist Künstliche Intelligenz?\n\nQuelle: derbund.ch/so-funktioniert-kuenstliche-intelligenz-599276436215\nSpeaker notes go here."
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#embed",
+    "href": "slides/02-prompting-techniques.html#embed",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Embed",
+    "text": "Embed"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#machine-learning",
+    "href": "slides/02-prompting-techniques.html#machine-learning",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Machine Learning",
+    "text": "Machine Learning\n\nRegelbasierte Systeme müssen programmiert werden.\nML Modelle lernen implizit, d.h. ohne Regeln einprogrammiert zu bekommen.\nWichtige Begriffe:\n\nTrainingsdaten: Modelle werden mit Daten gefüttert, und Parameter des Modells werden so eingestellt, dass das Modell möglichst “gut” ist.\nSupervised learning: Aufgabe ist bekannt, z.B. Bilder - klassifizieren.\nUnsupervised learning: Unbekannte Muster entdecken.\nReinforcement learning: Ziel ist vorgegeben, Modell lernt durch Feedback (Belohnung) wie Ziel erreicht werden kann.\n\n\n\nWe have to learn the bitter lesson that building in how we think we think does not work in the long run. We should stop trying to find simple ways to think about space, objects, multiple agents, or symmetries… instead we should build in only the meta-methods that can find and capture this arbitrary complexity. We want AI agents that can discover like we can, not which contain what we have discovered (Sutton 2019)."
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#supervised-learning",
+    "href": "slides/02-prompting-techniques.html#supervised-learning",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Supervised learning",
+    "text": "Supervised learning\n\nBilder von Hunden und Katzen klassifizeren: Was sind die Merkmale, die Hunde von Katzen unterscheiden?"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#reinforcement-learning",
+    "href": "slides/02-prompting-techniques.html#reinforcement-learning",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Reinforcement learning",
+    "text": "Reinforcement learning\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEin “Agent” lernt durch Feedback (Belohnung) wie ein Ziel erreicht werden kann.\n\n\n\nBeispiel für RL Model: AlphaGo ist das erste Computerprogramm, das einen professionellen (menschlichen) Go-Spieler besiegt hat."
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#natural-language-processing",
+    "href": "slides/02-prompting-techniques.html#natural-language-processing",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Natural Language Processing",
+    "text": "Natural Language Processing\n\n\n\nSpeech recognition\nText-to-speech synthesis\nMachine translation\nInformation extraction\nInformation retrieval\nQuestion answering\n\n\n\nSentiment analysis\n\n😊 I love this movie!\n😐 This movie is ok.\n😠 This movie is terrible!"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#tokenization",
+    "href": "slides/02-prompting-techniques.html#tokenization",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Tokenization",
+    "text": "Tokenization\n\nQuelle: State of ChatGPT"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#embeddings",
+    "href": "slides/02-prompting-techniques.html#embeddings",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Embeddings",
+    "text": "Embeddings\n\nNumerische Tokens werden in einem hochdimensionalen Vektorraum abgebildet.\nDistanz zwischen Vektoren misst Ähnlichkeit zwischen Tokens.\n\n\n\n\n\n\nQuelle: Wolfram (2023)\n\n\n\n\n\n\n\n\n\nQuelle: So funktioniert ChatGPT"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#chatgpt",
+    "href": "slides/02-prompting-techniques.html#chatgpt",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "ChatGPT",
+    "text": "ChatGPT\nBesteht aus 2 Modellen:\n\nLarge language model (LLM): GPT-3.5 oder GPT-4 (generative pre-trained transformer): das eigentliche Sprachmodell\nAssistant: Ein für Dialoge spezialisiertes Modell"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#llm",
+    "href": "slides/02-prompting-techniques.html#llm",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "LLM",
+    "text": "LLM\nAufgabe eines LLMs: “auto-regressive next word prediction” (eigentlich “token prediction”):\n\\[ P(w_{w+1} | w_1, w_2, ..., w_t) \\]\n\nDas nächste Wort wird vorhergesagt, basierend auf den vorherigen Worten.\nDiese vorherigen Wörter werden als “context” bezeichnet."
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#assistant",
+    "href": "slides/02-prompting-techniques.html#assistant",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Assistant",
+    "text": "Assistant\n\nLLM produziert Text, aber nicht menschliche Konversationen.\nWeiteres Training ist erforderlich, damit das Modell lernt, wie ein Mensch “Konversationen” zu führen."
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#zusammenfassung",
+    "href": "slides/02-prompting-techniques.html#zusammenfassung",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Zusammenfassung",
+    "text": "Zusammenfassung\nChatGPT wurde in mehreren Schritten trainiert:\n\nDaten aus dem Internet werden gesammelt.\nPre-training: LLM wird auf diesen Daten trainiert, das nächste Wort vorherzusagen.\nReinforcement Learning from Human Feedback: Assistant wird trainiert, menschliche Konversationen zu führen."
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#daten",
+    "href": "slides/02-prompting-techniques.html#daten",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Daten",
+    "text": "Daten"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#methoden",
+    "href": "slides/02-prompting-techniques.html#methoden",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Methoden",
+    "text": "Methoden\n\n\nWe trained this model using Reinforcement Learning from Human Feedback (RLHF), using the same methods as InstructGPT, but with slight differences in the data collection setup. We trained an initial model using supervised fine-tuning: human AI trainers provided conversations in which they played both sides—the user and an AI assistant. We gave the trainers access to model-written suggestions to help them compose their responses. We mixed this new dialogue dataset with the InstructGPT dataset, which we transformed into a dialogue format.\nTo create a reward model for reinforcement learning, we needed to collect comparison data, which consisted of two or more model responses ranked by quality. To collect this data, we took conversations that AI trainers had with the chatbot. We randomly selected a model-written message, sampled several alternative completions, and had AI trainers rank them. Using these reward models, we can fine-tune the model using Proximal Policy Optimization. We performed several iterations of this process."
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#pre-training",
+    "href": "slides/02-prompting-techniques.html#pre-training",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Pre-training",
+    "text": "Pre-training"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#pre-training-1",
+    "href": "slides/02-prompting-techniques.html#pre-training-1",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Pre-training",
+    "text": "Pre-training"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#reinforcement-learning-from-human-feedback-rlhf",
+    "href": "slides/02-prompting-techniques.html#reinforcement-learning-from-human-feedback-rlhf",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Reinforcement Learning from Human Feedback (RLHF)",
+    "text": "Reinforcement Learning from Human Feedback (RLHF)\nBenutzt Feedback vom Menschen um “schlechte” Outputs zu minimieren.\n\nQuelle: openai.com/blog/chatgpt"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#zusammenfassung-1",
+    "href": "slides/02-prompting-techniques.html#zusammenfassung-1",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Zusammenfassung",
+    "text": "Zusammenfassung\n\nChatGPT hat einen hohen Energieverbrauch.\nLLM lernt Vorurteile aus den Trainingsdaten.\nToxische Inhalte werden durch Billigarbeiter:innen moderiert."
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#energieverbrauch",
+    "href": "slides/02-prompting-techniques.html#energieverbrauch",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Energieverbrauch",
+    "text": "Energieverbrauch\n\nTraining: “What we do know is that training ChatGPT used \\(1.287\\) GWh, roughly equivalent to the consumption of 120 US homes for a year.” Quelle: Heating up: how much energy does AI use?\nPatterson et al. (2022) schätzen die Trainingskosten auf 502 Tonnen \\(\\text{CO}_2\\) (RLHF würde etwas mehr kosten, ca. 1% der ursprünglichen Kosten).\nBenutzung: 7 Tonnen \\(\\text{CO}_2\\) pro Tag (Ende Februar). Quelle: How much energy does ChatGPT use?\nDer Energieverbrauch von ChatGPT ist equivalent zu 400-800 US Haushalten. Das ist beträchtlich, im Vergleich zu z.B. Kryptowährungen eher gering."
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#bias",
+    "href": "slides/02-prompting-techniques.html#bias",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Bias",
+    "text": "Bias\n\n\n\n\n\nDa LLMs von Texten lernen, die von Menschen geschrieben wurden, können sie auch Vorurteile lernen.\n\nQuelle: Hast du Vorurteile?"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#ethik",
+    "href": "slides/02-prompting-techniques.html#ethik",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Ethik",
+    "text": "Ethik\n\n\n\n\n\nAuf Grund der grossen Menge von Trainingsdaten, die für Sprachmodelle benötigt werden, ist Qualitätskontrolle schwierig.\nDiskriminierende oder beleidigende Aussagen werden von einem Chatbot generiert.\nSolche Antworten können als unerwünscht markiert werden.\nToxische Inhalte wie körperliche und sexuelle Gewalt, Suizide und Tierquälerei, müssen beim Trainieren aus den Antworten gefiltert werden. Dabei mussten angestellte Arbeitskräfte für weniger als 2 Dollar die Stunde teils schockierende Inhalte lesen.\n\nQuelle: Traumatische Klickarbeit"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#wie-generiert-chatgpt-text",
+    "href": "slides/02-prompting-techniques.html#wie-generiert-chatgpt-text",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Wie generiert ChatGPT Text?",
+    "text": "Wie generiert ChatGPT Text?\n\nLLM: Gegeben einer Input-Sequenz (Kontext) von Tokens (Wörter, Teile von Wörtern, Satzzeichen, Emojis, etc.), was sind die wahrscheinlichsten nächsten Tokens?\nAuto-regressiv: Ein Token wird generiert, wird dem Kontext hinzugefügt.\n\n \n\nDer neue Kontext wird verwendet, um das nächste Token zu generieren, etc.\nWichtig: Jedes Token erhält gleich viel Zeit. Es gibt keine Tokens, die mehr oder weniger wichtig sind (Computation per Token ist konstant).\nWeil jedes Token gleich gewichtet wird, kann es an jeder Stelle im Output zu “ungünstigen” Pfaden führen."
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#prompt",
+    "href": "slides/02-prompting-techniques.html#prompt",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Prompt",
+    "text": "Prompt\n\nDer ursprüngliche Kontext wird Prompt (Eingabetext) genannt.\nDieser ist entscheidend für die Qualität der Antwort.\n\n\n\n\n\n\n\nPrompt Beispiel\n\n\n“Was ist 89322/1313?”\nvs. \n“Was ist 89322/1313? Arbeite Schritt für Schritt.”"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#prompt-1",
+    "href": "slides/02-prompting-techniques.html#prompt-1",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Prompt",
+    "text": "Prompt"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#role-playing-simulator",
+    "href": "slides/02-prompting-techniques.html#role-playing-simulator",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Role-Playing Simulator",
+    "text": "Role-Playing Simulator\n\nWe can think of an LLM as a non-deterministic simulator capable of role-playing an infinity of characters, or, to put it another way, capable of stochastically generating an infinity of simulacra.\n\nQuelle: Shanahan, McDonell, and Reynolds (2023)\n\nBei jeder Interaktion mit ChatGPT wird ein Dialog neu simuliert."
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#role-playing-simulator-1",
+    "href": "slides/02-prompting-techniques.html#role-playing-simulator-1",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Role-Playing Simulator",
+    "text": "Role-Playing Simulator"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#role-playing-simulator-2",
+    "href": "slides/02-prompting-techniques.html#role-playing-simulator-2",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Role-Playing Simulator",
+    "text": "Role-Playing Simulator\n\nEin LLM ist keine Entität mit Handlungsabsichten, sondern ein Simulator von möglichen Konversationen.\nChatGPT hat kein Konzept von Wahrheit, sondern generiert Antworten, die plausibel sind.\nSomit kann ChatGPT weder die Wahrheit sagen noch lügen - diese Konzepte sind für ein LLM vorerst irrelevant."
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#was-kann-chatgpt",
+    "href": "slides/02-prompting-techniques.html#was-kann-chatgpt",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Was kann ChatGPT?",
+    "text": "Was kann ChatGPT?\n\n\n\n\n\n\n\n\n\n\nWeitere Beispiele: Bubeck et al. (2023)\n\nSehr viel, wenn richtig geprompted"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#denkt-chatgpt",
+    "href": "slides/02-prompting-techniques.html#denkt-chatgpt",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Denkt ChatGPT?",
+    "text": "Denkt ChatGPT?"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#system-1-vs-system-2",
+    "href": "slides/02-prompting-techniques.html#system-1-vs-system-2",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "System 1 vs System 2",
+    "text": "System 1 vs System 2\n\nThinking Fast and Slow\nSystem 1: schnell, instinktiv, automatisch\nSystem 2: langsam, deliberativ, anstrengend"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#prompt-engineering",
+    "href": "slides/02-prompting-techniques.html#prompt-engineering",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Prompt Engineering",
+    "text": "Prompt Engineering\n\nQualität der Antwort hängt sehr von der Qualität des Prompts ab.\n2 Möglichkeiten, um die Qualität der Antworten zu verbessern:\n\nIncrementelle Prompts: Schritt für Schritt durch die Konversation führen (dialogisches Prompting).\nMega-Prompts: Alle Informationen auf einmal geben.\n\nAm besten selber ausprobieren."
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#mega-prompt",
+    "href": "slides/02-prompting-techniques.html#mega-prompt",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Mega-Prompt",
+    "text": "Mega-Prompt\n\nRolle: Wer oder was wird simuliert?\nAufgabe: Was ist zu tun?\nArbeitschritte: Was ist in welcher Reihenfolge zu tun?\nKontext, Einschränkungen\nZiel: Was soll am Ende herauskommen?\nFormat: Wie soll das Ergebnis aussehen?\n\n\n\n\n\n\n\nBeispiel Hochschullehre: Feedback\n\n\n“I want you to act as a harsh critic. Criticize what I will write to you and show me where my argumentation is lacking. Start by asking me what text I want to have feedback on. Then ask me questions about my context to create the best feedback possible. If you feel you have all the context necessary, think step by step when creating your feedback” (Lenk-Ostendorf & Folgmann 2023)\n\n\n\n\n\n\n\n\n\nWeitere Beispiele\n\n\n\nOpenAI Discord Server discord.com/invite/openai\nPrompting Guide"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#plug-ins",
+    "href": "slides/02-prompting-techniques.html#plug-ins",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Plug-ins",
+    "text": "Plug-ins"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#retrieval-augmented-llms",
+    "href": "slides/02-prompting-techniques.html#retrieval-augmented-llms",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Retrieval-augmented LLMs",
+    "text": "Retrieval-augmented LLMs"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#retrieval-augmented-llms-1",
+    "href": "slides/02-prompting-techniques.html#retrieval-augmented-llms-1",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Retrieval-augmented LLMs",
+    "text": "Retrieval-augmented LLMs\nBeispiel: 👉🏼 Assistent der Virtuellen Akademie"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#haltung-der-bfh",
+    "href": "slides/02-prompting-techniques.html#haltung-der-bfh",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Haltung der BFH",
+    "text": "Haltung der BFH\n\nTechnologien sollen dort, wo sie den Lernprozess unterstützen und praxisrelevant sind, in die Lehre einbezogen werden.\nStudierende sollen lernen, Technologien kompetent einzusetzen und kritisch zu hinterfragen. Dies gilt uneingeschränkt auch für ChatGPT und andere gleichgerichtete Tools."
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#zitieren",
+    "href": "slides/02-prompting-techniques.html#zitieren",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Zitieren",
+    "text": "Zitieren\n\nEs existieren noch keine Richtlinien für das Zitieren von ChatGPT oder anderen KI-basierte Schreibtools.\nChatGPT ist rein rechtlich keine zitierfähige Quelle und damit auch nicht zitierpflichtig (Fleck 2023).\nAus der Orientierungshilfe: “KI-basierte Schreibtools sind externe Quellen und müssen daher im Sinne der wissenschaftlichen Integrität immer, wie andere Quellen auch, zitiert werden, sofern ganze Textpassagen von ChatGPT benutzt werden. Falls mit dem Tool der eigene Text überarbeitet wurde, muss ChatGPT als verwendetes Hilfsmittel angeführt werden.”\n\n\n\n\n\n\n\nMöglicher Pauschalverweis\n\n\n“Beim Verfassen der Arbeit habe ich das KI-gestützte Schreibwerkzeug ChatGPT zur Textoptimierung verwendet. Wörtlich aus dem Tool übernommene Passagen wurden im Text als persönliche Kommunikation zitiert.”"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#plagiate-und-detektion",
+    "href": "slides/02-prompting-techniques.html#plagiate-und-detektion",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Plagiate und Detektion",
+    "text": "Plagiate und Detektion\n\nTexte von ChatGPT werden jedes Mal individuell erstellt. Es handelt sich nicht um Plagiate.\nDie klassischen Tools zur Aufdeckung von Plagiaten wie z.B. TurnItIn funktionieren hier nicht.\nDie BFH empfiehlt weiterhin, schriftliche Arbeiten mit der Plagiatserkennungssoftware Turnitin zu prüfen."
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#kompetenznachweise",
+    "href": "slides/02-prompting-techniques.html#kompetenznachweise",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Kompetenznachweise",
+    "text": "Kompetenznachweise\n\nSiehe KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus\nBeim Benutzen von KI-generierten Texten in Kompetenznachweisen ohne Deklaration oder Zitierung kann von einem Plagiat im weiteren Sinne ausgegangen werden, welches das bisher etablierte Plagiatsverständnis im engeren Sinne erweitert.\nOpen Book-Prüfungen: KI-Tools müssten explizit ausgeschlossen werden.\nClosed Book-Prüfungen: KI-Tools können durch Einsatz von Safe Exam-Browser und Lernstick ausgeschlossen werden.\nSchriftliche Arbeiten: KI-Tools durch pauschalen Hilfsmittelverweis am Ende der Arbeit deklarieren.\nAlternative oder ergänzende Prüfungsformen: praktische Prüfungen, mündliche Prüfungen, Präsentationen."
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#rechtliche-aspekte",
+    "href": "slides/02-prompting-techniques.html#rechtliche-aspekte",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Rechtliche Aspekte",
+    "text": "Rechtliche Aspekte\n\nChatGPT kann keine Urheberschaft und keine Autorenschaft beanspruchen, da dies nur natürliche Personen können.\nMenschen können die Urheberschaft eines Textes beanspruchen, auch wenn sie auf Unterstützung durch ChatGPT zurückgegriffen haben – sofern sie eine wesentliche gestalterische Eigenleistung am Text erbracht haben.\n\nQuelle: Salden (2023)"
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#datenschutz",
+    "href": "slides/02-prompting-techniques.html#datenschutz",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Datenschutz",
+    "text": "Datenschutz\n\nAnonyme Nutzung von ChatGPT ist mit persönlichen Konto nicht möglich (über Handynummer identifizierbar).\nAlle Eingaben und alle Antworten werden bei ChatGPT unverschlüsselt abgespeichert.\nDaten liegen auf amerikanischen Servern und sind damit für amerikanische Ermittlungsbehörden grundsätzlich zugänglich."
+  },
+  {
+    "objectID": "slides/02-prompting-techniques.html#seminararbeit-mit-ki-unterstützung",
+    "href": "slides/02-prompting-techniques.html#seminararbeit-mit-ki-unterstützung",
+    "title": "Qualitätszirkel Departement Gesundheit",
+    "section": "Seminararbeit mit KI-Unterstützung",
+    "text": "Seminararbeit mit KI-Unterstützung\nLehrperson: Kerstin Denecke, Technik und Informatik, Institut für Medizininformatik\n\nElicit [Brainstorm research questions]: Idee für Forschungsfrage\nChatGPT: Feedback zu Fragestellungen, Verbesserungsvorschläge\nElicit [Abstract summary]: Rechercheunterstützung\nConsensus: Unterstützung für Belege in der Diskussion\n\n\n\n\n\n\n\nChatGPT Prompt\n\n\nVerhalte dich wie eine wissenschaftliche Betreuungsperson in ihrer Sprechstunde. Du musst den aktuellen Stand meiner Hausarbeit überprüfen und kritisch beurteilen. Dazu evaluierst du meine Forschungsfrage und äusserst konstruktive Kritik in Bezug auf deren Stärken und Schwächen. Die Fragestellung lautet:\n“Wie binden Therapeuten Chatbots in die Behandlung ein?”"
   }
 ]

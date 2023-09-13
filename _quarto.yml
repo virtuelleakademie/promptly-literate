@@ -29,27 +29,32 @@ website:
     # logo: /assets/robot.png
     background: primary
     left:
-      - text: "📚 Programm"
-        file: pages/index.qmd
+      - text: "📚 Programme"
+        file: pages/programme.qmd
 
       - text: "📺 Slides"
         menu:
           - text: "Part 1"
-            file: slides/workshop-slides-1.qmd
+            file: slides/01-text-representation-generation.qmd
+          - text: "Part 2"
+            file: slides/02-prompting-techniques.qmd
+          - text: "Part 3"
+            file: slides/03-prompting-learning-teaching.qmd
+
 
 
       - text: "🎓 Tutorials"
         menu:
           - text: "Introduction to natural language processing"
-            file: pages/text-representation.ipynb
-          - text: "How does text generation work?"
-            file: pages/text-generation.ipynb
-          - text: "ChatGPT vs Playground"
-            file: pages/chatgpt-playground.ipynb
-          - text: "How to use LLMs: Prompting"
-            file: pages/prompting.ipynb
-          - text: "Prompts for teaching and learning"
-            file: pages/about.qmd
+          #   file: pages/text-representation.ipynb
+          # - text: "How does text generation work?"
+          #   file: pages/text-generation.ipynb
+          # - text: "ChatGPT vs Playground"
+          #   file: pages/chatgpt-playground.ipynb
+          # - text: "How to use LLMs: Prompting"
+          #   file: pages/prompting.ipynb
+          # - text: "Prompts for teaching and learning"
+          #   file: pages/about.qmd
 
 
       - text: "💼 Activities"

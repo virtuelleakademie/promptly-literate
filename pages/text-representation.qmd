@@ -1,0 +1,29 @@
+---
+title: "Text representation"
+description: |
+  Programming a GPT model.
+date: last-modified
+date-format: "DD MMM, YYYY"
+author: 
+  - name: Andrew Ellis
+    url: https://github.com/awellis
+    affiliation: Virtuelle Akademie, Berner Fachhochschule
+    affiliation-url: https://virtuelleakademie.ch
+    orcid: 0000-0002-2788-936X
+license: CC BY
+citation: true
+bibliography: ../bibliography.bib
+format:
+    html:
+        toc: true
+        code-link: true
+jupyter: python3
+execute: 
+  cache: false
+code-annotations: select
+---
+
+
+```{python}
+import tiktoken
+```
