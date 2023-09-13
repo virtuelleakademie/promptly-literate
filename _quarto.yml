@@ -40,14 +40,14 @@ website:
 
       - text: "🎓 Tutorials"
         menu:
-          - text: "Natural language processing"
-            href: pages/text-representation.ipynb
-          - text: "How does an LLM work?"
-            file: pages/about.qmd
+          - text: "Introduction to natural language processing"
+            file: pages/text-representation.ipynb
+          - text: "How does text generation work?"
+            file: pages/text-generation.ipynb
           - text: "ChatGPT vs Playground"
-            file: pages/about.qmd
+            file: pages/chatgpt-playground.ipynb
           - text: "How to use LLMs: Prompting"
-            file: pages/about.qmd
+            file: pages/prompting.ipynb
           - text: "Prompts for teaching and learning"
             file: pages/about.qmd
 
