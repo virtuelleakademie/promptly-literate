@@ -9,6 +9,11 @@
 
 ## Prompting
 
+- A brief description of the assistant
+- Personality traits of the assistant
+- Instructions or rules you would like the assistant to follow
+- Data or information needed for the model, such as relevant questions from an FAQ
+
 Tactics:
 
 - Include details in your query to get more relevant answers
