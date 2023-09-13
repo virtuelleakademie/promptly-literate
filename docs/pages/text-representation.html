@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>KI/GPT in der Hochschule - Notes</title>
+<title>KI/GPT in der Hochschule - Introduction to Natural Language Processing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -67,10 +101,10 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="KI/GPT in der Hochschule - Notes">
+<meta property="og:title" content="KI/GPT in der Hochschule - Introduction to Natural Language Processing">
 <meta property="og:description" content="">
 <meta property="og:site_name" content="KI/GPT in der Hochschule">
-<meta name="twitter:title" content="KI/GPT in der Hochschule - Notes">
+<meta name="twitter:title" content="KI/GPT in der Hochschule - Introduction to Natural Language Processing">
 <meta name="twitter:description" content="">
 <meta name="twitter:creator" content="@awellis">
 <meta name="twitter:card" content="summary_large_image">
@@ -114,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-tutorials">    
         <li>
-    <a class="dropdown-item" href="../pages/nlp-text-representation.ipynb">
+    <a class="dropdown-item" href="../pages/text-representation.html">
  <span class="dropdown-text">Natural language processing</span></a>
   </li>  
         <li>
@@ -212,9 +246,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#qualitätszirkel-gesundheit" id="toc-qualitätszirkel-gesundheit" class="nav-link active" data-scroll-target="#qualitätszirkel-gesundheit">Qualitätszirkel Gesundheit</a></li>
-  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a></li>
-  <li><a href="#isaac-asimovs-three-laws-of-robotics" id="toc-isaac-asimovs-three-laws-of-robotics" class="nav-link" data-scroll-target="#isaac-asimovs-three-laws-of-robotics">Isaac Asimov’s “Three Laws of Robotics”</a></li>
+  <li><a href="#natural-language-processing" id="toc-natural-language-processing" class="nav-link active" data-scroll-target="#natural-language-processing">Natural Language Processing</a></li>
+  <li><a href="#text-representation" id="toc-text-representation" class="nav-link" data-scroll-target="#text-representation">Text representation</a></li>
   </ul>
 </nav>
     </div>
@@ -223,7 +256,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Notes</h1>
+<h1 class="title">Introduction to Natural Language Processing</h1>
 </div>
 
 
@@ -239,34 +272,41 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="qualitätszirkel-gesundheit" class="level2">
-<h2 class="anchored" data-anchor-id="qualitätszirkel-gesundheit">Qualitätszirkel Gesundheit</h2>
-<p>Mögliche Inhalte: Kurz, was kann man sich unter KI vorstellen Was sind Chat GPT oder andere tools Elicit, Bild Generatoren. Welche Auswirkungen hat KI auf das Lernen, auf die Lehre Etc.</p>
-<p>Wie besprochen sende ich dir zwei Aufträge zu schriftlichen Arbeiten, die unsere Studierenden als Kompetenznachweis zu Hause erledigen. – Modulabschlussarbeit im Modul Forschungsanwendung: <strong>Formulieren einer Forschungsfrage</strong>, <strong>Literaturrecherche</strong> auf wissenschaftlichen Datenbanken, Studien auswählen, <strong>Qualität einschätzen</strong>, Ergebnisse darstellen, <strong>Synthese</strong>, Diskussion, Schlussfolgerungen. – Schriftliche Reflexionsarbeit basierend auf einem Kommunikationstraining: siehe Punkte 1-11 (Anhang Schriftliche Reflexionsarbeit). Der Anhang Kommunikationstraining ist als Hintergrundinfo gedacht. – Bachelor These (kein Anhang): Viele Studierende verfassen eine systematische Literaturarbeit ausgehend von einer Fragestellung. Die Arbeit umfasst: Abstract, Einleitung, Fragestellung, Ziele, Theoretischer Bezugsrahmen, Methode, Ergebnisse, Diskussion, Schlussfolgerungen</p>
+<section id="natural-language-processing" class="level2">
+<h2 class="anchored" data-anchor-id="natural-language-processing">Natural Language Processing</h2>
 </section>
-<section id="notes" class="level2">
-<h2 class="anchored" data-anchor-id="notes">Notes</h2>
-<ul>
-<li>Can GPT think?
-<ul>
-<li>what is thinking?</li>
-<li>System 1 vs System 2</li>
-<li>deliberative vs reflexive</li>
-<li>planning: timescales or 1-step-ahead</li>
-</ul></li>
-<li>Creativity?</li>
-<li>Consciousness?</li>
-<li>Agent?</li>
-<li>epistemic vs instrumental</li>
-<li>what is a goal?</li>
-</ul>
-</section>
-<section id="isaac-asimovs-three-laws-of-robotics" class="level2">
-<h2 class="anchored" data-anchor-id="isaac-asimovs-three-laws-of-robotics">Isaac Asimov’s “Three Laws of Robotics”</h2>
-<p>The best known set of laws are Isaac Asimov’s “Three Laws of Robotics”. These were introduced in his 1942 short story “Runaround”, although they were foreshadowed in a few earlier stories. The Three Laws are:</p>
-<pre><code>A robot may not injure a human being or, through inaction, allow a human being to come to harm.
-A robot must obey the orders given it by human beings except where such orders would conflict with the First Law.
-A robot must protect its own existence as long as such protection does not conflict with the First or Second Laws.</code></pre>
+<section id="text-representation" class="level2">
+<h2 class="anchored" data-anchor-id="text-representation">Text representation</h2>
+<div id="cell-fig-matplotlib" class="cell" data-execution_count="2">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  subplot_kw <span class="op">=</span> {<span class="st">'projection'</span>: <span class="st">'polar'</span>} </span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>ax.plot(theta, r)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>ax.grid(<span class="va">True</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div id="fig-matplotlib" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="text-representation_files/figure-html/fig-matplotlib-output-1.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: <strong>?(caption)</strong></figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>This is a demo of the Jupyter notebook.</p>
+<p>😊 Yay, it works! 🎉</p>
+<p>Thi is an Observable plot.</p>
 
 
 </section>

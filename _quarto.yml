@@ -35,13 +35,13 @@ website:
       - text: "📺 Slides"
         menu:
           - text: "Part 1"
-            file: slides/informationsanlass-bibliotheksmitarbeitende-chatgpt.qmd
+            file: slides/workshop-slides-1.qmd
 
 
       - text: "🎓 Tutorials"
         menu:
           - text: "Natural language processing"
-            href: pages/jupyter-demo.ipynb
+            href: pages/text-representation.ipynb
           - text: "How does an LLM work?"
             file: pages/about.qmd
           - text: "ChatGPT vs Playground"
