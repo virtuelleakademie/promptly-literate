@@ -8,7 +8,7 @@ project:
     # - jupyter-demo.ipynb
 
 website:
-  title: "KI/GPT in der Hochschule"
+  title: "Exploring LLMs for Teaching and Learning"
   site-url: https://virtuelleakademie.github.io/promptly-literate
   repo-url: https://github.com/virtuelleakademie/promptly-literate
   # repo-actions: [edit, issue]
