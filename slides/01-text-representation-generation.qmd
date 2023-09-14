@@ -51,12 +51,10 @@ library(knitr)
 
 1. What is natural language processing?
 2. How do LLMs represent text?
-3. How are LLMs trained?
-4. What is ChatGPT?
-5. Wie wurde ChatGPT trainiert?
-6. How do LLMs generate text?
-7. Wie "denkt" ChatGPT?
-8. Zukünftige Verwendungen von LLMs
+3. What is ChatGPT?
+4. How was ChatGPT trained??
+5. How should we think about LLMs?
+6. ChatGPT and OpenAI Playground?
 
 <!-- ::: footer
 <a href="https://virtuelleakademie.github.io/gpt-nano">🏠 KI/GPT in der Hochschule</a>
@@ -64,15 +62,15 @@ library(knitr)
 
 
 
-# Was ist künstliche Intelligenz? {background-color="#b48ead"}
+# What is natural language processing (NLP)? {background-color="#b48ead"}
 
 ::: {.absolute top="0" left="100%"}
 ::: {.sectionhead}
-1 [2 3 4 5 6 7 8]{style="opacity:0.25"}
+1 [2 3 4 5 6]{style="opacity:0.25"}
 :::
 :::
 
-## What is natural language processing (NLP)?
+## What is NLP?
 
 - NLP is a subfield of [artificial intelligence (AI)]((https://www.derbund.ch/so-funktioniert-kuenstliche-intelligenz-599276436215)).
 - NLP is concerned with the interactions between computers and human (natural) languages.
@@ -189,7 +187,7 @@ knitr::include_graphics("../assets/images/RL-agent.png")
 
 ::: {.absolute top="0" left="100%"}
 ::: {.sectionhead}
-[1]{style="opacity:0.25"} 2 [3 4 5 6 7 8]{style="opacity:0.25"}
+[1]{style="opacity:0.25"} 2 [3 4 5 6]{style="opacity:0.25"}
 :::
 :::
 
@@ -278,7 +276,7 @@ You can read more about embeddings [in this tutorial](../pages/text-representati
 
 ::: {.absolute top="0" left="100%"}
 ::: {.sectionhead}
-[1 2]{style="opacity:0.25"} 3 [4 5 6 7 8]{style="opacity:0.25"}
+[1 2]{style="opacity:0.25"} 3 [4 5 6]{style="opacity:0.25"}
 :::
 :::
 
@@ -327,7 +325,7 @@ knitr::include_graphics("../assets/images/RLHF.png")
 
 ::: {.absolute top="0" left="100%"}
 ::: {.sectionhead}
-[1 2 3 4]{style="opacity:0.25"} 5 [6 7 8]{style="opacity:0.25"}
+[1 2 3 4]{style="opacity:0.25"} 5 [6]{style="opacity:0.25"}
 :::
 :::
 
@@ -356,7 +354,7 @@ This is very important when we try to understand why LLMs hallucinate, i.e. gene
 
 ::: {.absolute top="0" left="100%"}
 ::: {.sectionhead}
-[1 2 3 4]{style="opacity:0.25"} 5 [6 7 8]{style="opacity:0.25"}
+[1 2 3 4 5]{style="opacity:0.25"} 6
 :::
 :::
 
@@ -367,22 +365,18 @@ This is very important when we try to understand why LLMs hallucinate, i.e. gene
 OpenAI offer two ways to interact with their assistant model:
 
 1) ChatGPT: A web interface where you can chat with the model.
-   
 2) OpenAI Playground: A web interface that gives users more control over the model.
 
-<!-- TODO: open first activity -->
+Now open the first activity to learn more about ChatGPT and OpenAI Playground: [👉 Activity 1](../pages/activity-1-explore-llms.qmd).
 
-[](https://www.llama2.ai/)
-[](https://goose.ai/playground)
-[](https://www.bing.com/)
-[](https://bard.google.com/)
 
-[](https://docs.cohere.com/docs/temperature)
 
-[](https://www.prompthub.us/blog/understanding-openai-parameters-how-to-optimize-your-prompts-for-better-outputs)
+# Idea Generation {background-color="#b48ead"}
 
-[](https://shivammehta25.github.io/posts/temperature-in-language-models-open-ai-whisper-probabilistic-machine-learning/)
-
+🎯 Highlights
+- An introductory session on the mechanics of GenAI, focusing on ChatGPT
+- Hands-on demos and case studies across multiple use cases
+- Idea Generation workshop: Teams brainstormed how GenAI could be implemented in their respective fields
 
 
 # References {background-color="#2e3440"}

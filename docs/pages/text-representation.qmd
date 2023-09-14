@@ -32,14 +32,11 @@ Text embeddings are numerical representations of words, sentences or documents. 
 
 - Embeddings should capture features of words or concepts, and relationships between these.
 - A sentence embedding is just like a word embedding, except it associates every sentence with a vector full of numbers, capturing similarities between sentences. 
-
-
-
- are a way of representing words/sentences as vectors of numbers. The idea is that words/sentences with similar meanings will have similar vectors. This is useful for many tasks in natural language processing, such as sentiment analysis, machine translation, and question answering.
+- The key idea is that words/sentences with similar meanings will have similar vectors. This is useful for many tasks in natural language processing, such as sentiment analysis, machine translation, and question answering.
 
 You can read more about text embeddings in this [👉 post](https://docs.cohere.com/docs/text-embeddings).
 
-THe following is an example of sentence embeddings, showing the distance between sentences. The distance is calculated using the dot product (cosine similarity) of the embeddings.
+The following is an example of sentence embeddings, showing the distance between sentences. The distance is calculated using the dot product (cosine similarity) of the embeddings.
 
 
 ```{python}
@@ -47,6 +44,7 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 embedding = OpenAIEmbeddings()
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 from pyobsplot import Plot, d3, Math, js
 ```
 
@@ -56,9 +54,9 @@ sentences = [
     "Good morning, how are you?",
     "I am doing well, how about you?",
     "Hi, how are you doing today?",
-    "I'm feeling a bit under the weather today.",
+    "Hey, what's up?",
     "I like apples.",
-        "One of my daughters doesn't like kiwis.",
+    "One of my daughters doesn't like kiwis.",
     "The other doesn't like bananas.",
     "The earth is the third planet from the sun.",
     "The moon is a natural satellite of the earth.",
@@ -132,3 +130,36 @@ You can see that the sentences are grouped together by similarity. For example, 
 
 
 This is important: embeddings capture the meaning of words and sentences, and are the basis of LLMs' ability to "understand" language. 
+
+Here is an alternative similarity plot,  showing the general topic of each sentence. 
+
+```{python}
+topics = {"Greeting": 4, "Fruit": 3,
+          "Planets": 3, "Animals": 4,
+          "Art": 2}
+topics_repeated = [key for key, value in topics.items() for i in range(value)]
+
+
+# Create the similarity matrix
+embeddings = np.array([embedding.embed_query(sentence) for sentence in sentences])
+dot_product_matrix = np.dot(embeddings, embeddings.T)
+
+# Create the heatmap
+fig, ax = plt.subplots()
+im = ax.imshow(dot_product_matrix)
+
+# Set the x and y axis labels
+ax.set_xticks(np.arange(len(sentences)))
+ax.set_yticks(np.arange(len(sentences)))
+ax.set_xticklabels(topics_repeated)
+ax.set_yticklabels(topics_repeated)
+
+# Rotate the x axis labels
+plt.setp(ax.get_xticklabels(), rotation=45, ha="right", rotation_mode="anchor")
+
+# Add a colorbar
+cbar = ax.figure.colorbar(im, ax=ax)
+
+# Show the plot
+plt.show()
+```
