@@ -371,14 +371,6 @@ Now open the first activity to learn more about ChatGPT and OpenAI Playground: [
 
 
 
-# Idea Generation {background-color="#b48ead"}
-
-🎯 Highlights
-- An introductory session on the mechanics of GenAI, focusing on ChatGPT
-- Hands-on demos and case studies across multiple use cases
-- Idea Generation workshop: Teams brainstormed how GenAI could be implemented in their respective fields
-
-
 # References {background-color="#2e3440"}
 
 ::: {#refs}
