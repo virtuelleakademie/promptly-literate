@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
   render:
-    - pages/*.ipynb
+    # - pages/*.ipynb
     - pages/*.qmd
     - slides/*.qmd
     # - jupyter-demo.ipynb
@@ -29,16 +29,20 @@ website:
     # logo: /assets/robot.png
     background: primary
     left:
-      - text: "📚 Programme"
+      # - text: "🏠 Home"
+      #   file: pages/index.qmd
+      - text: "📚 Schedule"
         file: pages/programme.qmd
 
       - text: "📺 Slides"
         menu:
-          - text: "Part 1"
+          - text: "Introduction"
+            file: slides/00-introduction.qmd
+          - text: "Part 1: Text representation, training and text generation"
             file: slides/01-text-representation-generation.qmd
-          - text: "Part 2"
+          - text: "Part 2: Prompting techniques"
             file: slides/02-prompting-techniques.qmd
-          - text: "Part 3"
+          - text: "Part 3: Prompting for learning and teaching"
             file: slides/03-prompting-learning-teaching.qmd
 
 
@@ -46,7 +50,7 @@ website:
       - text: "🎓 Tutorials"
         menu:
           - text: "Introduction to natural language processing"
-          #   file: pages/text-representation.ipynb
+            file: pages/text-representation.qmd
           # - text: "How does text generation work?"
           #   file: pages/text-generation.ipynb
           # - text: "ChatGPT vs Playground"
