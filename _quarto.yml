@@ -63,14 +63,14 @@ website:
 
       - text: "💼 Activities"
         menu:
-          - text: "Exploring ChatGPT/Playground"
-            file: pages/about.qmd
-          - text: "Prompting: basics"
-            file: pages/about.qmd
-          - text: "Prompting: roles"
-            file: pages/about.qmd
-          - text: "Develop an Assistant"
-            file: pages/about.qmd
+          - text: "Activity 1: Exploring LLMs"
+            file: pages/activity-1-exploring-llms.qmd
+          - text: "Activity 2: Prompting techniques"
+            file: pages/activity-2-prompting-techniques.qmd
+          - text: "Activity 3: Prompting for teaching and learning"
+            file: pages/activity-3-prompting-learning-teaching.qmd
+          # - text: "Develop an Assistant"
+          #   file: pages/about.qmd
 
       - text: "🛠️ Resources"
         menu:
