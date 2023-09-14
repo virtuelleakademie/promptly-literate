@@ -15,7 +15,7 @@ format:
           # data-background-size: contain
           data-background-opacity: "1"
         # logo: ../assets/robot.png
-        footer: <a href="https://virtuelleakademie.github.io/gpt-nano">⤴️ KI/GPT in der Hochschule </a>
+        footer: <a href="../index.html">back to website ⤴️</a>
         navigation-mode: vertical
         progress: true
         scrollable: true
