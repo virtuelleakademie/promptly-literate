@@ -165,3 +165,6 @@ promptly-literate.Rproj
 /.quarto/
 pages/*_cache/
 pages/*_files/
+
+# Spelling
+/.cspell/
