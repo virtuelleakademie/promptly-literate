@@ -9,7 +9,7 @@
 <meta name="author" content="Andrew Ellis">
 <meta name="description" content="Programming a GPT model.">
 
-<title>Exploring LLMs for Teaching and Learning - Text representation</title>
+<title>Exploring LLMs for Teaching and Learning - Activity 2: Basic Prompting Techniques</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,10 +69,10 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Exploring LLMs for Teaching and Learning - Text representation">
+<meta property="og:title" content="Exploring LLMs for Teaching and Learning - Activity 2: Basic Prompting Techniques">
 <meta property="og:description" content="Programming a GPT model.">
 <meta property="og:site_name" content="Exploring LLMs for Teaching and Learning">
-<meta name="twitter:title" content="Exploring LLMs for Teaching and Learning - Text representation">
+<meta name="twitter:title" content="Exploring LLMs for Teaching and Learning - Activity 2: Basic Prompting Techniques">
 <meta name="twitter:description" content="Programming a GPT model.">
 <meta name="twitter:creator" content="@awellis">
 <meta name="twitter:card" content="summary_large_image">
@@ -202,14 +202,22 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#basic-techniques" id="toc-basic-techniques" class="nav-link active" data-scroll-target="#basic-techniques">Basic techniques</a></li>
+  <li><a href="#explore-prompting-guides" id="toc-explore-prompting-guides" class="nav-link" data-scroll-target="#explore-prompting-guides">Explore Prompting Guides</a></li>
+  <li><a href="#tasks" id="toc-tasks" class="nav-link" data-scroll-target="#tasks">Tasks</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Text representation</h1>
+<h1 class="title">Activity 2: Basic Prompting Techniques</h1>
 </div>
 
 <div>
@@ -251,20 +259,126 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="basic-techniques" class="level2">
+<h2 class="anchored" data-anchor-id="basic-techniques">Basic techniques</h2>
+<p>In this activity, you can explore various prompting guides for GPT models. They more or less all converge on the same set of techniques:.</p>
+<p>These are:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Prompting Techniques
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Numbered Steps: For sequential tasks.</li>
+<li>Delimiters: To separate info (e.g.&nbsp;<code>"</code>, `,, <code>'</code>, <code>|</code>, <code>#</code>, …).</li>
+<li>Few-shot prompting: Use a few examples for guidance.</li>
+<li>Chain-of-thought: Interconnected prompts.</li>
+<li>Role-based: Make the model assume a role (e.g.&nbsp;act like a tutor or advisor).</li>
+<li>Success Tip: Iterate and refine prompts for peak performance.</li>
+</ul>
+</div>
+</div>
+<p>Combining these techniques, a template prompt for an LMM might look like this:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Role: who is being simulated?</li>
+<li>Task: what is to be done?</li>
+<li>Steps: what are the steps to complete the task?</li>
+<li>Context: what is the context of the task?</li>
+<li>Goal: what is the goal of the task?</li>
+<li>Format: what is the format of the output?</li>
+</ol>
+</div>
+</div>
+<p>An example prompt for a chatbot might look like this:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Feedback on a text
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>I want you to act as a harsh critic. Criticize what I give to you and show me where my argumentation is lacking. Start by asking me what text I would like feedback on. Then ask me questions about my context to create the best feedback possible. If you feel you have all the context necessary, think step by step when creating your feedback.</code></p>
+</div>
+</div>
+</section>
+<section id="explore-prompting-guides" class="level2">
+<h2 class="anchored" data-anchor-id="explore-prompting-guides">Explore Prompting Guides</h2>
+<ul>
+<li><p><a href="https://learnprompting.org/docs/intro">Learn prompting</a>: An incredibly comprehensive (and free) guide aimed at non-technical users.</p></li>
+<li><p><a href="https://www.promptingguide.ai/">Prompting guide</a>: This is an excellent prompting guide by <strong>DAIR.AI</strong> (Democratizing Artificial Intelligence Research, Education, and Technologies). The guide is licensed under an MIT license.</p></li>
+<li><p><a href="https://prompttools.streamlit.app/">PromptTools Playground</a>: a web app that lets you play with various prompting techniques. You can use different LLMs, and even compare the results.</p></li>
+<li><p><a href="https://huggingface.co/spaces/amagastya/SPARK">SPARK: a retrieval-augmented chatbot</a>. It uses various prompting guides as its knowledge base.</p></li>
+</ul>
+</section>
+<section id="tasks" class="level2">
+<h2 class="anchored" data-anchor-id="tasks">Tasks</h2>
+<ul>
+<li>Explore prompting, using both ChatGPT and the Playground.</li>
+<li>Try the PromptTools Playground.</li>
+<li>Try out SPARK. This is a good deomonstration of using a knowledge base and document retrieval can allow you to create a QA tool.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Prompts
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Try revisiting the prompts you created in the previous activity. Given you current knowledge, can you improve them?</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Discussion 💬
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>What experiences did you have with prompting?</li>
+<li>Did you find any of the techniques particularly useful?</li>
+</ul>
+</div>
+</div>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div id="quarto-reuse" class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a></div></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{ellis2023,
   author = {Ellis, Andrew},
-  title = {Text Representation},
+  title = {Activity 2: {Basic} {Prompting} {Techniques}},
   pages = {undefined},
   date = {2023-09-14},
   url = {https://virtuelleakademie.github.io/promptly-literate/pages/activity-2-prompting-techniques.html},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-ellis2023" class="csl-entry quarto-appendix-citeas" role="listitem">
-Ellis, Andrew. 2023. <span>“Text Representation.”</span> September 14,
-2023. <a href="https://virtuelleakademie.github.io/promptly-literate/pages/activity-2-prompting-techniques.html">https://virtuelleakademie.github.io/promptly-literate/pages/activity-2-prompting-techniques.html</a>.
+Ellis, Andrew. 2023. <span>“Activity 2: Basic Prompting
+Techniques.”</span> September 14, 2023. <a href="https://virtuelleakademie.github.io/promptly-literate/pages/activity-2-prompting-techniques.html">https://virtuelleakademie.github.io/promptly-literate/pages/activity-2-prompting-techniques.html</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

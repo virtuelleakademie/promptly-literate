@@ -133,7 +133,7 @@ In all of these examples, use the **temperature** parameter in the playground to
 
 
 :::{.callout-caution}
-## Discussion
+## Discussion 💬 
 
 - What do you think of the models' performance? What are their strengths and weaknesses? What are the limitations of the models? 
 - If you are unhappy, how can you improve the model's performance?
