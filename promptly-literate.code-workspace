@@ -81,6 +81,18 @@
 				}
 			]
 		},
-		"git.ignoreLimitWarning": true
+		"git.ignoreLimitWarning": true,
+		"python.envFile": "${workspaceFolder}/.env",
+		"python.terminal.activateEnvInCurrentTerminal": true,
+		"editor.renderControlCharacters": false,
+		"spellright.language": [
+			"en",
+			"de"
+		],
+		"spellright.documentTypes": [
+			"latex",
+			"plaintext"
+		],
+		"cSpell.language": "en,en-GB,en-US"
 	}
 }

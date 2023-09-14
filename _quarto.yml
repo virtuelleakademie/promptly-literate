@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
   render:
-    - pages/*.ipynb
+    # - pages/*.ipynb
     - pages/*.qmd
     - slides/*.qmd
     # - jupyter-demo.ipynb
@@ -29,27 +29,36 @@ website:
     # logo: /assets/robot.png
     background: primary
     left:
-      - text: "📚 Programm"
-        file: pages/index.qmd
+      # - text: "🏠 Home"
+      #   file: pages/index.qmd
+      - text: "📚 Schedule"
+        file: pages/programme.qmd
 
       - text: "📺 Slides"
         menu:
-          - text: "Part 1"
-            file: slides/workshop-slides-1.qmd
+          - text: "Introduction"
+            file: slides/00-introduction.qmd
+          - text: "Part 1: Text representation, training and text generation"
+            file: slides/01-text-representation-generation.qmd
+          - text: "Part 2: Prompting techniques"
+            file: slides/02-prompting-techniques.qmd
+          - text: "Part 3: Prompting for learning and teaching"
+            file: slides/03-prompting-learning-teaching.qmd
+
 
 
       - text: "🎓 Tutorials"
         menu:
-          - text: "Natural language processing"
-            href: pages/text-representation.ipynb
-          - text: "How does an LLM work?"
-            file: pages/about.qmd
-          - text: "ChatGPT vs Playground"
-            file: pages/about.qmd
-          - text: "How to use LLMs: Prompting"
-            file: pages/about.qmd
-          - text: "Prompts for teaching and learning"
-            file: pages/about.qmd
+          - text: "Introduction to natural language processing"
+            file: pages/text-representation.qmd
+          # - text: "How does text generation work?"
+          #   file: pages/text-generation.ipynb
+          # - text: "ChatGPT vs Playground"
+          #   file: pages/chatgpt-playground.ipynb
+          # - text: "How to use LLMs: Prompting"
+          #   file: pages/prompting.ipynb
+          # - text: "Prompts for teaching and learning"
+          #   file: pages/about.qmd
 
 
       - text: "💼 Activities"

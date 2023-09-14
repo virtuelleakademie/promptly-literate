@@ -11,7 +11,7 @@ about:
       href: https://virtuelleakademie.ch/
     - icon: lightbulb-fill
       text: Knowledge Base
-      href: https://virtuelleakademie.notion.site/
+      href: https://virtuelleakademie.ch/knowledge-base/
     - icon: mortarboard-fill
       text: Weiterbildungsangebote
       href: https://www.bfh.ch/de/ueber-die-bfh/service-beratung/virtuelle-akademie/
@@ -39,7 +39,7 @@ Nächste Termine:
 - 15.September 2023, 13-17 Uhr
 - 27.Oktober 2023, 13-17 Uhr
 
-👉🏼 [www.bfh.ch/de/weiterbildung/kurse/ki-schreibtools](https://www.bfh.ch/de/weiterbildung/kurse/ki-schreibtools/)
+👉 [www.bfh.ch/de/weiterbildung/kurse/ki-schreibtools](https://www.bfh.ch/de/weiterbildung/kurse/ki-schreibtools/)
 :::
 
 :::{.callout-note}
@@ -48,14 +48,9 @@ Hast du Fragen zum Umgang mit Künstlicher Intelligenz (KI) in der Lehre? Dann s
 
 Nächste Termine:
 
-- 17. August 2023, 16-18 Uhr
+- ~~17. August 2023, 16-18 Uhr~~
 - 3. November 2023, 15-17 Uhr
 
-👉🏼 [virtuelleakademie.ch/beratungen-coachings](https://virtuelleakademie.ch/beratungen-coachings/):
+👉 [virtuelleakademie.ch/beratungen-coachings](https://virtuelleakademie.ch/beratungen-coachings/):
 :::
 
-
-<!-- ## Team
-Die Stärke der Virtuellen Akademie: Ein Team, in dem diverse Fähigkeiten zusammenkommen. Von Hochschuldidaktik über Lerntechnologien bis hin zu Visualisierungs- und Video-Expertise.
-
-👉🏼 [Team](https://virtuelleakademie.ch/ueber-uns/) -->
