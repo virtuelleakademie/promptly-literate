@@ -6,8 +6,7 @@ author: "Andrew Ellis"
 date: last-modified
 date-format: "DD MMMM, YYYY"
 bibliography: ../bibliography.bib
-nocite: |
-  @broschinskiGrafikenErklaertFunktioniert2023
+
 format: 
     revealjs:
         # theme: moon
@@ -138,7 +137,7 @@ Multiple examples promote deeper understanding, assist in recalling information,
  
 
 - Select a specific concept.
-- Loo up works related to the concept.
+- Look up works related to the concept.
 - Specify the need for diverse examples.
 - Choose the desired writing style.
 - Define the target audience.
