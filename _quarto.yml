@@ -49,7 +49,7 @@ website:
 
       - text: "🎓 Tutorials"
         menu:
-          - text: "Introduction to natural language processing"
+          - text: "Text representation: embeddings"
             file: pages/text-representation.qmd
           # - text: "How does text generation work?"
           #   file: pages/text-generation.ipynb
