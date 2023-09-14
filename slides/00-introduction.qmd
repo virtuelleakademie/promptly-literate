@@ -64,6 +64,11 @@ library(knitr)
 
 
 
+## Key messages
+
+1) Keep human in the loop: LLMs should be used to augment human writing, not to replace it.
+
+2) Prompting, prompting, prompting: this workshop is mainly about prompting. We can think about prompting as a way of "programming" LLMs, i.e. getting LLMs to do what we want them to do.
 
 
 # Contents {background-color="#b48ead"}
