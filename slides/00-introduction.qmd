@@ -1,5 +1,5 @@
 ---
-title: "Qualitätszirkel Departement Gesundheit "
+title: "Exploring LLMs for Teaching and Learning"
 author: "Andrew Ellis"
 date: last-modified
 date-format: "DD MMMM, YYYY"
@@ -11,7 +11,7 @@ format:
         # theme: moon
         theme: default
         title-slide-attributes:
-          data-background-image: ../assets/background-purple.png
+          data-background-image: ../assets/background-blue.png
           # data-background-size: contain
           data-background-opacity: "1"
         # logo: ../assets/robot.png
