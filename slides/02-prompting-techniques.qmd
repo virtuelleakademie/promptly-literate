@@ -47,22 +47,27 @@ format:
 library(knitr)
 ```
 
+# How does an LLM generate text {background-color="#b48ead"}
 
-##  Here’s What Happens When Your Lawyer Uses ChatGPT {background-color="#2e3440"}
-
-
-
-```{=html}
-<iframe width="780" height="500" src="https://simonwillison.net/2023/May/27/lawyer-chatgpt/" title="ChatGPT: US lawyer admits using AI for case research"></iframe>
-```
-
+::: {.absolute top="0" left="100%"}
+::: {.sectionhead}
+[1 2 3 4]{style="opacity:0.25"} 5 [6 7 8]{style="opacity:0.25"}
+:::
+:::
 
 
-## The Best Prompts For ChatGPT: The ultimate list {background-color="#2e3440"}
+## Available knowledge
 
-```{=html}
-<iframe width="780" height="500" src="https://www.writingbeginner.com/best-prompts-for-chatgpt/" title="Best prompts for ChatGPT"></iframe>
-```
+- An LLM learns from its training data. 
+- Text generation depends on this knowledge and the context.
+  
+
+## What does an LLM know?
+
+LLMs (with enough parameters) show **emergent** behaviour; they learn to do things that they were not explicitly trained to do.
+- write code
+- solve logic puzzles
+- multistep reasoning 
 
 
 
