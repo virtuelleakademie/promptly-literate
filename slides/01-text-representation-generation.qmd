@@ -1,5 +1,5 @@
 ---
-title: "Qualitätszirkel Departement Gesundheit "
+title: "KI-basierte Schreibtools in der Lehre"
 author: "Andrew Ellis"
 date: last-modified
 date-format: "DD MMMM, YYYY"
