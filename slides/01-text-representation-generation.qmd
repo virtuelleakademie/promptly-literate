@@ -1,5 +1,5 @@
 ---
-title: "KI-basierte Schreibtools in der Lehre"
+title: "LLMs: Text representation, training, and text generation"
 author: "Andrew Ellis"
 date: last-modified
 date-format: "DD MMMM, YYYY"
@@ -15,7 +15,7 @@ format:
           # data-background-size: contain
           data-background-opacity: "1"
         # logo: ../assets/robot.png
-        footer: <a href="https://virtuelleakademie.github.io/gpt-nano">⤴️ KI/GPT in der Hochschule </a>
+        footer: <a href="../index.html">back to website ⤴️</a>
         navigation-mode: vertical
         progress: true
         scrollable: true
@@ -36,7 +36,6 @@ format:
           width: normal
           numbers: true
           markers: true
-
 # slide-level: 3
 # number-sections: true
 ---
@@ -48,34 +47,16 @@ library(knitr)
 ```
 
 
-##  Here’s What Happens When Your Lawyer Uses ChatGPT {background-color="#2e3440"}
+# Contents {background-color="#b48ead"}
 
-
-
-```{=html}
-<iframe width="780" height="500" src="https://simonwillison.net/2023/May/27/lawyer-chatgpt/" title="ChatGPT: US lawyer admits using AI for case research"></iframe>
-```
-
-
-
-## The Best Prompts For ChatGPT: The ultimate list {background-color="#2e3440"}
-
-```{=html}
-<iframe width="780" height="500" src="https://www.writingbeginner.com/best-prompts-for-chatgpt/" title="Best prompts for ChatGPT"></iframe>
-```
-
-
-
-# Inhalt {background-color="#b48ead"}
-
-1. Was ist künstliche Intelligenz?
-2. Was ist ChatGPT?
-3. Wie wurde ChatGPT trainiert?
-4. Energieverbrauch, Bias, Ethik
-5. Wie "denkt" ChatGPT?
-6. Zukünftige Verwendungen von LLMs
-7. Wissenschaftliches Arbeiten
-8. Case Study: Seminararbeit mit KI-Unterstützung
+1. What is natural language processing?
+2. How do LLMs represent text?
+3. How are LLMs trained?
+4. What is ChatGPT?
+5. Wie wurde ChatGPT trainiert?
+6. How do LLMs generate text?
+7. Wie "denkt" ChatGPT?
+8. Zukünftige Verwendungen von LLMs
 
 <!-- ::: footer
 <a href="https://virtuelleakademie.github.io/gpt-nano">🏠 KI/GPT in der Hochschule</a>
@@ -91,36 +72,80 @@ library(knitr)
 :::
 :::
 
-## Was ist Künstliche Intelligenz?
+## What is natural language processing (NLP)?
+
+- NLP is a subfield of [artificial intelligence (AI)]((https://www.derbund.ch/so-funktioniert-kuenstliche-intelligenz-599276436215)).
+- NLP is concerned with the interactions between computers and human (natural) languages.
+  
+### Brief timeline
+
+- 1950: Alan Turing proposed the Turing test to assess machine intelligence through language conversation.
+- 1954: IBM introduced the first machine translation system, translating Russian to English using rules.
+- 1960s-1970s: Rule-based systems like SHRDLU and ELIZA used human-crafted rules for language interaction.
+- 1980s-1990s: Statistical methods employed probabilities and text data, using models like Hidden Markov Models and n-grams.
+- 2000s-present: NLP shifted to neural network methods with deep learning, employing recurrent neural networks for complex language tasks.
+- Transformers (first published in 2017) are the current state-of-the-art for NLP, and are the basis for large language models (LLMs), such as GPT-3.5, GPT-4, ChatGPT, Llama 2, and others.
+- LLMs are models with billions of parameters, trained on massive amounts of text data. Training consists of predicting the next word in a sequence of words. 
 
 
-```{r}
-#| fig-cap: "Quelle: [derbund.ch/so-funktioniert-kuenstliche-intelligenz-599276436215](https://www.derbund.ch/so-funktioniert-kuenstliche-intelligenz-599276436215)"
-include_graphics("../assets/images/was-ist-KI.png")
-```
 
+## Long-range dependencies
 
-::: {.notes}
-Speaker notes go here.
+:::{.callout-note}
+## Complicated sentence
+"The boy who was throwing stones at the birds, despite being warned by his parents not to harm any creatures, was chased by the angry flock."
 :::
 
+Who was chased?
 
-## Embed
-
-<!-- {{< embed ../pages/jupyter-demo.ipynb#fig-matplotlib  >}} -->
-
-
-## Machine Learning
-
-- Regelbasierte Systeme müssen programmiert werden.
-- ML Modelle lernen implizit, d.h. ohne Regeln einprogrammiert zu bekommen.
+- This type of long-range dependency is difficult for traditional NLP methods to handle.
+- The verb phrase (`the boy was chased`) is separated from the subject by a long distance - you can't just look at the previous few words to answer the question.
+- Transformers have a special feature that lets them easily connect words that are far apart in a sentence; `was chased` is linked directly to `The boy` without distraction by the words in between.
 
 
-- Wichtige Begriffe:
-  - __Trainingsdaten:__ Modelle werden mit Daten gefüttert, und Parameter des Modells werden so eingestellt, dass das Modell möglichst "gut" ist.
-  - __Supervised learning:__ Aufgabe ist bekannt, z.B. Bilder - klassifizieren.
-  - __Unsupervised learning:__ Unbekannte Muster entdecken.
-  - __Reinforcement learning:__ Ziel ist vorgegeben, Modell lernt durch Feedback (Belohnung) wie Ziel erreicht werden kann.
+
+## Key areas in NLP
+
+:::{.callout-note appearance="minimal"}                                  
+`Sentiment Analysis`:             Identifying emotions and opinions in text.    
+`Machine Translation`:            Automatically translating between languages.  
+`Question Answering`:             Providing direct answers to user questions.   
+`Text Summarization`:             Generating concise summaries from long text.  
+`Speech Recognition`:             Converting spoken words to text.              
+`Speech Synthesis`:               Creating spoken words from text.              
+`Natural Language Generation`:    Generating human-like text.               
+`Natural Language Understanding`: Extracting meaning from text.          
+`Dialogue Systems`:               Conversing with humans using natural language.
+:::
+
+- Before LLMs, specialized models were trained for each task.
+- LLMs are general-purpose models that can perform a wide variety of tasks.
+  
+## Example: sentiment analysis (text classification)
+The task of classifying text as positive, negative, or neutral.
+
+- `I love this movie!` → positive 😊
+- `This movie is ok.` → neutral 😐 
+- `This movie is terrible!` → negative 😠
+
+
+
+
+ 
+
+
+## Machine Learning primer
+
+- Earlier, rule-based systems had to be programmed.
+- Machine learning (ML) models learn implicitly, i.e. without rules being programmed in.
+
+
+- Important terms:
+  - __training data:__ Models are fed with data, and parameters of the model are adjusted so that the model is as "good" as possible.
+  - __supervised learning:__ Categories known, e.g. classify images of animals.
+  - __unsupervised learning:__ Categories are unknown, e.g. discover unknown patterns.
+  - Unbekannte Muster entdecken.
+  - __reinforcement learning:__ The goal is given, and the model learns through feedback (reward) how the goal can be achieved.
 
 > We have to learn the bitter lesson that building in how we think we think does not work in the long run. We should stop trying to find simple ways to think about space, objects, multiple agents, or symmetries... instead we should build in only the meta-methods that can find and capture this arbitrary complexity. We want AI agents that can discover like we can, not which contain what we have discovered [@suttonBitterLesson2019].
 
@@ -130,7 +155,9 @@ Speaker notes go here.
 ```{r}
 knitr::include_graphics("../assets/images/cats-dogs.png")
 ```
-__Bilder von Hunden und Katzen klassifizeren:__ Was sind die Merkmale, die Hunde von Katzen unterscheiden?
+
+__Classifiy pictures of cats and dogs:__ The goal of a model could be to discover which features distinguish cats from dogs.
+
 
 
 
@@ -153,21 +180,12 @@ knitr::include_graphics("../assets/images/RL-agent.png")
 :::
 ::::
 
- 
-::: aside
-Beispiel für RL Model: [AlphaGo](https://www.deepmind.com/research/highlighted-research/alphago) ist das erste Computerprogramm, das einen professionellen (menschlichen) [Go](https://de.wikipedia.org/wiki/Go_(Spiel))-Spieler besiegt hat.
-:::
-
-::: {.notes}
-- Ein "Agent" lernt durch Feedback (Belohnung) wie ein Ziel erreicht werden kann.
-:::
 
 
 
 
 
-
-# Was ist ChatGPT? {background-color="#b48ead"}
+# What is ChatGPT? {background-color="#b48ead"}
 
 ::: {.absolute top="0" left="100%"}
 ::: {.sectionhead}
@@ -176,83 +194,81 @@ Beispiel für RL Model: [AlphaGo](https://www.deepmind.com/research/highlighted-
 :::
 
 
-## Natural Language Processing 
-
-:::: {.columns}
-::: {.column width="50%"}
-
-- Speech recognition
-- Text-to-speech synthesis
-- Machine translation
-- Information extraction
-- Information retrieval
-- Question answering
-
-:::
-
-::: {.column width="50%"}
-- Sentiment analysis
-  - 😊 I love this movie!
-  - 😐 This movie is ok.
-  - 😠 This movie is terrible!
-  
-:::
-
-::::
 
 
 
-## Tokenization
-
-```{r}
-#| fig-cap: "Quelle: [State of ChatGPT](https://build.microsoft.com/en-US/sessions/db3f4859-cd30-4445-a0cd-553c3304f8e2?source=sessions)"
-knitr::include_graphics("../assets/images/karpathy-tokenization.png")
-```
-
-## Embeddings
-- Numerische Tokens werden in einem hochdimensionalen Vektorraum abgebildet.
-- Distanz zwischen Vektoren misst Ähnlichkeit zwischen Tokens.
-
-```{r}
-#| fig-cap: "Quelle: @wolframWhatChatGPTDoing2023"
-knitr::include_graphics("../assets/images/wolfram-embeddings.png")
-```
-
-```{r}
-#| fig-cap: "Quelle: [So funktioniert ChatGPT](https://www.golem.de/news/kuenstliche-intelligenz-so-funktioniert-chatgpt-2302-171644.html)"
-knitr::include_graphics("../assets/images/3_Wortgruppen_im_sem_Raum.png")
-```
 
 ## ChatGPT
 
-Besteht aus 2 Modellen:
+ChatGPT is a particular kind of LLM and consists of two models:
+
+__Base model:__ GPT-3.5 oder GPT-4 (generative pre-trained transformer). This model is trained "simply" to predict the next word in a sequence of words. A base model produces text, but not human-like conversations.
+
+:::{.callout-note}
+## Example
+Give the input `Once upon a time there was a`, the model will predict which word is likely to follow.
+:::
+
+__Assistant model:__ This model is trained using reinforcement learning from human feedback to have human-like conversations.
+
+:::{.callout-note}
+## Example
+👩‍💼: `Tell me a story!`
+
+💬: `Once upon a time there was a ....`
+:::
 
 
-- __Large language model (LLM):__ GPT-3.5 oder GPT-4 (generative pre-trained transformer): das eigentliche Sprachmodell
+## Text generation
 
-- __Assistant:__ Ein für Dialoge spezialisiertes Modell
+- LLMs produce text by predicting the next word, one word at a time: 
+- This is known as "auto-regressive next word prediction" (actually "token prediction").
 
-
-## LLM
-
-Aufgabe eines LLMs: "auto-regressive next word prediction" (eigentlich "token prediction"):
-
+- The model predicts which word (token) is likely to follow, given a sequence of words (tokens). 
+- Key idea: this simple procedure is followed over and over again, with each new word (token) being added to the sequence of words (tokens) that the model uses to predict the next word (token).
 $$ P(w_{w+1} | w_1, w_2, ..., w_t) $$
 
-- Das nächste Wort wird vorhergesagt, basierend auf den vorherigen Worten. 
-- Diese vorherigen Wörter werden als "context" bezeichnet.
+- The sequence of words is called the __context__; the text generated by the model is dependent on the context.
+- The output of the model is a probability distribution over all possible words (tokens). The model then chooses one word (token) from this distribution.
+
+
+## Text generation examples
 
 ```{r}
 knitr::include_graphics("../assets/images/word-probs.png")
 knitr::include_graphics("../assets/images/gpt-2-autoregression-2.gif")
 ```
 
-## Assistant
-
-- LLM produziert Text, aber nicht menschliche Konversationen.
-- Weiteres Training ist erforderlich, damit das Modell lernt, wie ein Mensch "Konversationen" zu führen.
 
 
+## Tokenization
+So far we have been talking about words, but LLMs operate with tokens. These are sub-words, and make working with text much easier for the model. A rule of thumb is that one token generally corresponds to ~4 characters of English text. This translates to roughly $\frac{3}{4}$ of a word (so 100 tokens is about 75 words).
+
+```{r}
+knitr::include_graphics("../assets/images/tokenization.png")
+```
+
+Feel free to try out the [OpenAI tokenizer](https://platform.openai.com/tokenizer). 
+
+## Embeddings
+- The next step is to represent tokens as vectors. 
+- This is called "embedding" the tokens. The vectors are high-dimensional, and the **distance** between vectors measures the similarity between tokens.
+
+:::: {.columns}
+::: {.column width="50%"}
+
+```{r}
+knitr::include_graphics("../assets/images/embedding.png")
+```
+:::
+::: {.column width="50%"}
+- In this 2-dimensional representation, concepts that are "related" lie close together.
+
+:::
+
+::::
+
+You can read more about embeddings [in this tutorial](../pages/text-representation.qmd).
 
 
 
@@ -314,80 +330,7 @@ Benutzt  Feedback vom Menschen um "schlechte" Outputs zu minimieren.
 knitr::include_graphics("../assets/images/RLHF.png")
 ```
 
-
- 
-
-# Energieverbrauch, Bias, Ethik {background-color="#b48ead"}
-
-::: {.absolute top="0" left="100%"}
-::: {.sectionhead}
-[1 2 3]{style="opacity:0.25"} 4 [5 6 7 8]{style="opacity:0.25"}
-:::
-:::
-
-## Zusammenfassung
-
-- ChatGPT hat einen hohen Energieverbrauch.
-- LLM lernt Vorurteile aus den Trainingsdaten.
-- Toxische Inhalte werden durch Billigarbeiter:innen moderiert.
-
-
-## Energieverbrauch
-
-- __Training:__ "What we do know is that training ChatGPT used $1.287$ GWh, roughly equivalent to the consumption of 120 US homes for a year." Quelle: [Heating up: how much energy does AI use?](https://techhq.com/2023/03/data-center-energy-usage-chatgpt/)
-
-- @pattersonCarbonEmissionsLarge2022 schätzen die Trainingskosten auf 502 Tonnen $\text{CO}_2$ (RLHF würde etwas mehr kosten, ca. 1% der ursprünglichen Kosten).
-
-- __Benutzung:__ 7 Tonnen $\text{CO}_2$ pro Tag (Ende Februar). Quelle: [How much energy does ChatGPT use?](https://xcorr.net/2023/04/08/how-much-energy-does-chatgpt-use/)
-  
-- Der Energieverbrauch von ChatGPT ist equivalent zu 400-800 US Haushalten. Das ist beträchtlich, im Vergleich zu z.B. Kryptowährungen eher gering.
-
-
-
-## Bias
-
-:::: {.columns}
-
-::: {.column width="50%"}
-```{=html}
-<iframe width="780" height="500" src="https://www.societybyte.swiss/2022/12/22/hi-chatgpt-hast-du-vorurteile/" title="Vorurteile"></iframe>
-```
-:::
-
-::: {.column width="50%"}
-
-- Da LLMs von Texten lernen, die von Menschen geschrieben wurden, können sie auch Vorurteile lernen.
-
-Quelle: [Hast du Vorurteile?](https://www.societybyte.swiss/2022/12/22/hi-chatgpt-hast-du-vorurteile/)
-:::
-
-::::
-
-## Ethik
-
-:::: {.columns}
-
-::: {.column width="50%"}
-```{=html}
-<iframe width="780" height="500" src="https://www.societybyte.swiss/2023/06/07/traumatische-klickarbeit-die-menschen-hinter-chatgpt/" title="Traumatische Klickarbeit"></iframe>
-```
-:::
-
-::: {.column width="50%"}
-- Auf Grund der grossen Menge von Trainingsdaten, die für Sprachmodelle benötigt werden, ist Qualitätskontrolle schwierig.
-- Diskriminierende oder beleidigende Aussagen werden von einem Chatbot generiert.
-- Solche Antworten können als unerwünscht markiert werden.
-- Toxische Inhalte wie körperliche und sexuelle Gewalt, Suizide und Tierquälerei, müssen beim Trainieren aus den Antworten gefiltert werden. Dabei mussten angestellte Arbeitskräfte für weniger als 2 Dollar die Stunde teils schockierende Inhalte lesen. 
-
-Quelle: [Traumatische Klickarbeit](https://www.societybyte.swiss/2023/06/07/traumatische-klickarbeit-die-menschen-hinter-chatgpt/)
-
-:::
-
-::::
-
-
-
-# Wie "denkt" ChatGPT? {background-color="#b48ead"}
+# How do LLMs generate text? {background-color="#b48ead"}
 
 ::: {.absolute top="0" left="100%"}
 ::: {.sectionhead}
@@ -395,8 +338,9 @@ Quelle: [Traumatische Klickarbeit](https://www.societybyte.swiss/2023/06/07/trau
 :::
 :::
 
+ 
 ## Wie generiert ChatGPT Text?
-
+<!-- TODO: https://docs.cohere.com/docs/temperature -->
 - LLM: Gegeben einer Input-Sequenz (Kontext) von Tokens (Wörter, Teile von Wörtern, Satzzeichen, Emojis, etc.), was sind die wahrscheinlichsten nächsten Tokens?
 - Auto-regressiv: Ein Token wird generiert, wird dem Kontext hinzugefügt.
   
@@ -408,6 +352,16 @@ include_graphics("../assets/images/autoregressive.png")
 - Der neue Kontext wird verwendet, um das nächste Token zu generieren, etc.
 - __Wichtig:__ Jedes Token erhält gleich viel Zeit. Es gibt keine Tokens, die mehr oder weniger wichtig sind (Computation per Token ist konstant).
 - Weil jedes Token gleich gewichtet wird, kann es an jeder Stelle im Output zu "ungünstigen" Pfaden führen.
+
+
+# Wie "denkt" ChatGPT? {background-color="#b48ead"}
+
+::: {.absolute top="0" left="100%"}
+::: {.sectionhead}
+[1 2 3 4]{style="opacity:0.25"} 5 [6 7 8]{style="opacity:0.25"}
+:::
+:::
+
 
 ## Prompt
 
@@ -559,90 +513,6 @@ height="700"
 frameborder="0"
 ></iframe>
 ```
-
-
-# Wissenschaftliches Arbeiten {background-color="#b48ead"}
-
-::: {.absolute top="0" left="100%"}
-::: {.sectionhead}
-[1 2 3 4 5 6]{style="opacity:0.25"} 7 [8]{style="opacity:0.25"}
-:::
-:::
-
-## Haltung der BFH
-
-- Technologien sollen dort, wo sie den Lernprozess unterstützen und praxisrelevant sind, in die Lehre einbezogen werden. 
-- Studierende sollen lernen, Technologien kompetent einzusetzen und kritisch zu hinterfragen. Dies gilt uneingeschränkt auch für ChatGPT und andere gleichgerichtete Tools.
-
-## Zitieren
-
-- Es existieren noch keine Richtlinien für das Zitieren von ChatGPT oder anderen KI-basierte Schreibtools.
-- ChatGPT ist rein rechtlich keine zitierfähige Quelle und damit auch nicht zitierpflichtig [@fleckPruefungsrechtlicheFragenChatGPT2023].
-- Aus der Orientierungshilfe: "KI-basierte Schreibtools sind externe Quellen und müssen daher im Sinne der wissenschaftlichen Integrität immer, wie andere Quellen auch, zitiert werden, sofern ganze Textpassagen von ChatGPT benutzt werden. Falls mit dem Tool der eigene Text überarbeitet wurde, muss ChatGPT als verwendetes Hilfsmittel angeführt werden."
-  
-:::{.callout-note}
-## Möglicher Pauschalverweis
-  
-"Beim Verfassen der Arbeit habe ich das KI-gestützte Schreibwerkzeug ChatGPT zur Textoptimierung verwendet. Wörtlich aus dem Tool übernommene Passagen wurden im Text als persönliche Kommunikation zitiert."
-:::
-
-## Plagiate und Detektion
-
-- Texte von ChatGPT werden jedes Mal individuell erstellt. Es handelt sich nicht um Plagiate. 
-- Die klassischen Tools zur Aufdeckung von Plagiaten wie z.B. _TurnItIn_ funktionieren hier nicht.
-- Die BFH empfiehlt weiterhin, schriftliche Arbeiten mit der Plagiatserkennungssoftware Turnitin zu prüfen. 
-
-## Kompetenznachweise
-
-- Siehe [KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus](https://virtuelleakademie.notion.site/KI-in-der-Lehre-af068030108844c4834ef00824fd8da6?p=f671067195a94f2d8239931c09ae92ec&pm=s)
-- Beim Benutzen von KI-generierten Texten in Kompetenznachweisen ohne Deklaration oder Zitierung kann von einem Plagiat _im weiteren Sinne_ ausgegangen werden, welches das bisher etablierte Plagiatsverständnis im engeren Sinne erweitert.
-- __Open Book-Prüfungen:__ KI-Tools müssten explizit ausgeschlossen werden.
-- __Closed Book-Prüfungen:__ KI-Tools können durch Einsatz von Safe Exam-Browser und [Lernstick](https://www.bfh.ch/de/forschung/forschungsbereiche/lernstick/) ausgeschlossen werden.
-- __Schriftliche Arbeiten:__ KI-Tools durch pauschalen Hilfsmittelverweis am Ende der Arbeit deklarieren.
-- __Alternative oder ergänzende Prüfungsformen:__ praktische Prüfungen, mündliche Prüfungen, Präsentationen.
-
-## Rechtliche Aspekte
-
-- ChatGPT kann keine Urheberschaft und keine Autorenschaft beanspruchen, da dies nur natürliche Personen können.
-- Menschen können die Urheberschaft eines Textes beanspruchen, auch wenn sie auf Unterstützung durch ChatGPT zurückgegriffen haben – sofern sie eine wesentliche gestalterische Eigenleistung am Text erbracht haben.
-
-Quelle: @saldenDidaktischeUndRechtliche2023 
-
-
-## Datenschutz
-
-- Anonyme Nutzung von ChatGPT ist mit persönlichen Konto nicht möglich (über Handynummer identifizierbar).
-- Alle Eingaben und alle Antworten werden bei ChatGPT unverschlüsselt abgespeichert.
-- Daten liegen auf amerikanischen Servern und sind damit für amerikanische Ermittlungsbehörden grundsätzlich zugänglich.
-
-
-
-# Case Study: Seminararbeit mit KI-Unterstützung {background-color="#b48ead"}
-
-::: {.absolute top="0" left="100%"}
-::: {.sectionhead}
-[1 2 3 4 5 6 7]{style="opacity:0.25"} 8
-:::
-:::
-
-## Seminararbeit mit KI-Unterstützung
-
-Lehrperson: Kerstin Denecke, Technik und Informatik, Institut für Medizininformatik 
-
-1) __Elicit__ [Brainstorm research questions]: Idee für Forschungsfrage 
-2) __ChatGPT:__ Feedback zu Fragestellungen, Verbesserungsvorschläge
-3) __Elicit__ [Abstract summary]: Rechercheunterstützung
-4) __Consensus:__ Unterstützung für Belege in der Diskussion
-
-
-:::{.callout-note}
-## ChatGPT Prompt
-
-Verhalte dich wie eine wissenschaftliche Betreuungsperson in ihrer Sprechstunde. Du musst den aktuellen Stand meiner Hausarbeit überprüfen und kritisch beurteilen. Dazu evaluierst du meine Forschungsfrage und äusserst konstruktive Kritik in Bezug auf deren Stärken und Schwächen. Die Fragestellung lautet:
-
-"Wie binden Therapeuten Chatbots in die Behandlung ein?"
-
-:::
 
 # References {background-color="#2e3440"}
 
