@@ -1,0 +1,129 @@
+---
+title: "Reflection"
+author: "Andrew Ellis"
+date: last-modified
+date-format: "DD MMMM, YYYY"
+bibliography: ../bibliography.bib
+nocite: |
+  @broschinskiGrafikenErklaertFunktioniert2023
+format: 
+    revealjs:
+        # theme: moon
+        theme: default
+        title-slide-attributes:
+          data-background-image: ../assets/background-purple.png
+          # data-background-size: contain
+          data-background-opacity: "1"
+        # logo: ../assets/robot.png
+        footer: <a href="../index.html">back to website ⤴️</a>
+        navigation-mode: vertical
+        progress: true
+        scrollable: true
+        slide-number: true
+        show-slide-number: all
+        controls-layout: bottom-right
+        controls-tutorial: true
+        preview-links: auto
+        chalkboard: true
+        from: markdown+emoji
+        code-fold: true
+        code-summary: "Show code"
+        code-tools: true
+        menu: 
+          sticky: true
+          keyboard: true
+          autoOpen: true
+          width: normal
+          numbers: true
+          markers: true
+
+# slide-level: 3
+# number-sections: true
+---
+
+```{r}
+#| warning: false
+#| message: false
+library(knitr)
+```
+
+
+
+
+
+
+# Basic Prompting Techniques {background-color="#b48ead"}
+
+::: {.absolute top="0" left="100%"}
+::: {.sectionhead}
+1 [2 3 4 5 6 7 8]{style="opacity:0.25"}
+:::
+:::
+
+## What does an LLM know?
+
+- LLMs (with enough parameters) show **emergent** behaviour; they learn to do things that they were not explicitly trained to do. 
+
+- They can e.g. solve logic puzzles and perform complex multistep reasoning. 
+
+- Often, these capabilities, which are encoded in the models parameters, need to be "unlocked" by the right prompt.
+
+
+
+## OpenAI Best Practices
+OpenAI give a set of strategies for using their models [👉 Six strategies](https://platform.openai.com/docs/guides/gpt-best-practices/six-strategies-for-getting-better-results) . 
+
+These include:
+
+- **writing clear instructions**
+- **providing reference texts**
+- **splitting tasks into subtasks**
+- **giving GPT 'time to think'**
+- **using external tools** (This is provided by e.g. plugins.)
+
+## Writing clear instructions
+
+Given that might conceive of an LLM as a role-playing simulator of conversations, it is intuitively clear that instructions should be clear and unambiguous, and should indicate which role the model should adopt.
+
+- [Include details in your query to get more relevant answers](https://platform.openai.com/docs/guides/gpt-best-practices/tactic-include-details-in-your-query-to-get-more-relevant-answers)
+- [Ask the model to adopt a persona](https://platform.openai.com/docs/guides/gpt-best-practices/tactic-ask-the-model-to-adopt-a-persona)
+- [Use delimiters to clearly indicate distinct parts of the input](https://platform.openai.com/docs/guides/gpt-best-practices/tactic-ask-the-model-to-adopt-a-persona)
+- [Specify the steps required to complete a task](https://platform.openai.com/docs/guides/gpt-best-practices/tactic-specify-the-steps-required-to-complete-a-task)
+- [Provide examples](https://platform.openai.com/docs/guides/gpt-best-practices/tactic-provide-examples)
+- [Specify the desired length of the output](https://platform.openai.com/docs/guides/gpt-best-practices/tactic-specify-the-desired-length-of-the-output)
+
+
+## Providing reference texts
+
+- Provide a model with trusted and relevant information. 
+- Then instruct the model to use the provided information to compose its answer.
+
+This leads to an incredibly powerful technique, which is known as **retrieval-augmented generation**. By this, we mean that we first create a database of documents, and then retrieve the most relevant documents, based on a user's query. These are then included in the prompt to the model. The model is instructed to use the information in the documents to compose its answer.
+
+
+<!-- ## Splitting tasks into subtasks
+FOr complex queries, first split the task into subtasks, and then ask the model to complete each subtask in turn. -->
+
+## Giving GPT 'time to think'
+
+- LLMs generate text auto-regressively, and the model spends the same amount of computation on each token.
+- Rather that getting the answer straight away, it makes sense to give the model more context, and to give it more steps to "think". 
+- By doing so, you are increasing the chances that the model will give a good answer.
+- This technique is known as **chain-of-thought** prompting, and can often be induced by simply instructing the model to `think step-by-step`.
+
+<!-- ![Chain-of-thought example](../assets/images/chain-of-thought.png) -->
+
+
+
+## Explore prompting techniques
+Now open the second activity to learn more about ChatGPT and OpenAI Playground: [👉 Activity 2](../pages/activity-2-prompting-techniques.qmd).
+
+
+
+
+
+
+# References {background-color="#2e3440"}
+
+::: {#refs}
+:::
