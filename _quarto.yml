@@ -44,6 +44,8 @@ website:
             file: slides/02-prompting-techniques.qmd
           - text: "Part 3: Prompting for learning and teaching"
             file: slides/03-prompting-learning-teaching.qmd
+          - text: "Part 4: Reflection"
+            file: slides/04-reflection.qmd
 
 
 
@@ -56,7 +58,7 @@ website:
           # - text: "ChatGPT vs Playground"
           #   file: pages/chatgpt-playground.ipynb
           # - text: "How to use LLMs: Prompting"
-          #   file: pages/prompting.ipynb
+          #   file: pages/prompting.qmd
           # - text: "Prompts for teaching and learning"
           #   file: pages/about.qmd
 
