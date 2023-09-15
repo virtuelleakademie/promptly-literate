@@ -31,8 +31,8 @@ website:
     left:
       # - text: "🏠 Home"
       #   file: pages/index.qmd
-      - text: "📚 Schedule"
-        file: pages/programme.qmd
+      - text: "📚 Agenda"
+        file: pages/agenda.qmd
 
       - text: "📺 Slides"
         menu:
