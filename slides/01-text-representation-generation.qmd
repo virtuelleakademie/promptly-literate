@@ -77,7 +77,7 @@ library(knitr)
   
 ### Brief timeline
 
-- 1950: Alan Turing proposed the Turing test to assess machine intelligence through language conversation.
+- 1950: Alan Turing proposed the Turing test to assess machine intelligence through conversation.
 - 1954: IBM introduced the first machine translation system, translating Russian to English using rules.
 - 1960s-1970s: Rule-based systems like SHRDLU and ELIZA used human-crafted rules for language interaction.
 - 1980s-1990s: Statistical methods employed probabilities and text data, using models like Hidden Markov Models and n-grams.

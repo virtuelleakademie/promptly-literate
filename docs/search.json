@@ -25,7 +25,7 @@
     "href": "slides/02-prompting-techniques.html#what-does-an-llm-know",
     "title": "Basic Prompting Techniques",
     "section": "What does an LLM know?",
-    "text": "What does an LLM know?\n\nLLMs (with enough parameters) show emergent behaviour; they learn to do things that they were not explicitly trained to do.\nThey can e.g. solve logic puzzles and perform complex multistep reasoning.\nOften, these capabilities, which are encoded in the models parameters, need to be “unlocked” by the right prompt."
+    "text": "What does an LLM know?\n\nLLMs (with enough parameters) show emergent behaviour; they learn to do things they were not explicitly trained to do.\nThey can e.g. solve logic puzzles and perform complex multistep reasoning.\nOften, these capabilities, which are encoded in the models parameters, need to be “unlocked” by the right prompt."
   },
   {
     "objectID": "slides/02-prompting-techniques.html#openai-best-practices",
@@ -95,7 +95,7 @@
     "href": "slides/00-introduction.html#energy-consumption",
     "title": "Introduction",
     "section": "Energy consumption",
-    "text": "Energy consumption\n\nTraining:\n\n“What we do know is that training ChatGPT used \\(1.287\\) GWh, roughly equivalent to the consumption of 120 US homes for a year.” Quelle: Heating up: how much energy does AI use?\nPatterson et al. (2022) estimate training costs at 502 tons of \\(\\text{CO}_2\\).\n\nUsage:\n\n7 tons of \\(\\text{CO}_2\\) per day (end of February). Source: How much energy does ChatGPT use?\nChatGPT’s energy consumption is equivalent to 400-800 US households. This is considerable, but compared to e.g. cryptocurrencies it is rather low."
+    "text": "Energy consumption\n\nTraining:\n\n“What we do know is that training ChatGPT used \\(1.3\\) GWh, roughly equivalent to the consumption of 120 US homes for a year.” Quelle: Heating up: how much energy does AI use?\nPatterson et al. (2022) estimate training costs at 502 tons of \\(\\text{CO}_2\\).\n\nUsage:\n\n7 tons of \\(\\text{CO}_2\\) per day (end of February). Source: How much energy does ChatGPT use?\nChatGPT’s energy consumption is equivalent to 400-800 US households. This is considerable, but compared to e.g. cryptocurrencies it is rather low."
   },
   {
     "objectID": "slides/00-introduction.html#bias",
@@ -375,7 +375,7 @@
     "href": "pages/agenda.html#schedule",
     "title": "Agenda",
     "section": "⏱️ Schedule",
-    "text": "⏱️ Schedule\n🕐 13:00 - 13:35   →   💬 Introduction  🕜 13:30 - 14:00   →   📺 Input 1: What are LLMs?  🕑 14:00 - 14:20   →   💼 Activity 1: Explore ChatGPT and Playground  🕝 14:20 - 14:45   →   ⏸️: Break  🕒 14:50 - 15:15   →   📺 Input 2: Prompting techniques  🕞 15:15 - 15:45   →   💼 Activity 2: Explore prompting techniques  🕓 15:45 - 16:00   →   ⏸️: Break  🕓 16:00 - 16:20   →   📺 Input 3: Prompting for learning and teaching  🕟 16:20 - 16:50   →   💼 Activity 3: Design your own LLM-based educational activity  🕔 16:50 - 17:00   →   💬 Idea generation and wrap-up"
+    "text": "⏱️ Schedule\n🕐 13:00 - 13:35   →   💬 Introduction  🕜 13:30 - 14:00   →   📺 Input 1: What are LLMs?  🕑 14:00 - 14:20   →   💼 Activity 1: Explore ChatGPT and Playground  🕝 14:20 - 14:45   →   ⏸️ Break  🕒 14:50 - 15:15   →   📺 Input 2: Prompting techniques  🕞 15:15 - 15:45   →   💼 Activity 2: Explore prompting techniques  🕓 15:45 - 16:00   →   ⏸️ Break  🕓 16:00 - 16:20   →   📺 Input 3: Prompting for learning and teaching  🕟 16:20 - 16:50   →   💼 Activity 3: Design your own LLM-based educational activity  🕔 16:50 - 17:00   →   💬 Idea generation and wrap-up"
   },
   {
     "objectID": "pages/agenda.html#instructor",
@@ -508,7 +508,7 @@
     "href": "slides/01-text-representation-generation.html#what-is-nlp",
     "title": "LLMs: Text representation, training, and text generation",
     "section": "What is NLP?",
-    "text": "What is NLP?\n\nNLP is a subfield of artificial intelligence (AI).\nNLP is concerned with the interactions between computers and human (natural) languages.\n\nBrief timeline\n\n1950: Alan Turing proposed the Turing test to assess machine intelligence through language conversation.\n1954: IBM introduced the first machine translation system, translating Russian to English using rules.\n1960s-1970s: Rule-based systems like SHRDLU and ELIZA used human-crafted rules for language interaction.\n1980s-1990s: Statistical methods employed probabilities and text data, using models like Hidden Markov Models and n-grams.\n2000s-present: NLP shifted to neural network methods with deep learning, employing recurrent neural networks for complex language tasks.\nTransformers (first published in 2017) are the current state-of-the-art for NLP, and are the basis for large language models (LLMs), such as GPT-3.5, GPT-4, ChatGPT, Llama 2, and others.\nLLMs are models with billions of parameters, trained on massive amounts of text data. Training consists of predicting the next word in a sequence of words."
+    "text": "What is NLP?\n\nNLP is a subfield of artificial intelligence (AI).\nNLP is concerned with the interactions between computers and human (natural) languages.\n\nBrief timeline\n\n1950: Alan Turing proposed the Turing test to assess machine intelligence through conversation.\n1954: IBM introduced the first machine translation system, translating Russian to English using rules.\n1960s-1970s: Rule-based systems like SHRDLU and ELIZA used human-crafted rules for language interaction.\n1980s-1990s: Statistical methods employed probabilities and text data, using models like Hidden Markov Models and n-grams.\n2000s-present: NLP shifted to neural network methods with deep learning, employing recurrent neural networks for complex language tasks.\nTransformers (first published in 2017) are the current state-of-the-art for NLP, and are the basis for large language models (LLMs), such as GPT-3.5, GPT-4, ChatGPT, Llama 2, and others.\nLLMs are models with billions of parameters, trained on massive amounts of text data. Training consists of predicting the next word in a sequence of words."
   },
   {
     "objectID": "slides/01-text-representation-generation.html#long-range-dependencies",
@@ -648,7 +648,7 @@
     "href": "slides/03-prompting-learning-teaching.html#prompting-for-learning-and-teaching",
     "title": "Prompting for Learning and Teaching",
     "section": "Prompting for Learning and Teaching",
-    "text": "Prompting for Learning and Teaching\nWe will now explore prompting in two different educational settings, based on two papers.\nOne setting is focussed on on using LLMs to improve learning (E. Mollick and Mollick 2023), and the other is focussed on using LLMs for teaching(E. R. Mollick and Mollick 2023).\nLearning: Explores how to use large LLMs in education as learning tools. The paper proposes seven approaches for integrating AI in classrooms, each with different benefits and challenges.\nTeaching: The paper discusses how LLMs can help instructors implement five teaching strategies that are supported by research but difficult to apply in practice."
+    "text": "Prompting for Learning and Teaching\nWe will now explore prompting in two different educational settings, based on two papers.\nOne setting is focussed on using LLMs to improve learning (E. Mollick and Mollick 2023), and the other is focussed on using LLMs for teaching(E. R. Mollick and Mollick 2023).\nLearning: Explores how to use large LLMs in education as learning tools. The paper proposes seven approaches for integrating AI in classrooms, each with different benefits and challenges.\nTeaching: The paper discusses how LLMs can help instructors implement five teaching strategies that are supported by research but difficult to apply in practice."
   },
   {
     "objectID": "slides/03-prompting-learning-teaching.html#seven-approaches-for-ai-assisted-learning",

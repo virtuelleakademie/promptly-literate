@@ -52,7 +52,7 @@ library(knitr)
 
 We will now explore prompting in two different educational settings, based on two papers.
 
-One setting is focussed on on using LLMs to improve learning [@mollickAssigningAISeven2023b], and the other is focussed on using LLMs for teaching[@mollickUsingAIImplement2023a].
+One setting is focussed on using LLMs to improve learning [@mollickAssigningAISeven2023b], and the other is focussed on using LLMs for teaching[@mollickUsingAIImplement2023a].
 
 **Learning**: Explores how to use large LLMs in education as learning tools. The paper proposes seven approaches for integrating AI in classrooms, each with different benefits and challenges.
 

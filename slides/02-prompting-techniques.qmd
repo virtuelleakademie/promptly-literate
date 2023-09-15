@@ -62,7 +62,7 @@ library(knitr)
 
 ## What does an LLM know?
 
-- LLMs (with enough parameters) show **emergent** behaviour; they learn to do things that they were not explicitly trained to do. 
+- LLMs (with enough parameters) show **emergent** behaviour; they learn to do things they were not explicitly trained to do. 
 
 - They can e.g. solve logic puzzles and perform complex multistep reasoning. 
 

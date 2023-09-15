@@ -99,7 +99,7 @@ library(knitr)
 ## Energy consumption
 
 - __Training:__ 
-  - "What we do know is that training ChatGPT used $1.287$ GWh, roughly equivalent to the consumption of 120 US homes for a year." Quelle: [Heating up: how much energy does AI use?](https://techhq.com/2023/03/data-center-energy-usage-chatgpt/)
+  - "What we do know is that training ChatGPT used $1.3$ GWh, roughly equivalent to the consumption of 120 US homes for a year." Quelle: [Heating up: how much energy does AI use?](https://techhq.com/2023/03/data-center-energy-usage-chatgpt/)
 
   - @pattersonCarbonEmissionsLarge2022 estimate training costs at 502 tons of $\text{CO}_2$.
 
