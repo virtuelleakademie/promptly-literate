@@ -93,6 +93,17 @@
 			"latex",
 			"plaintext"
 		],
-		"cSpell.language": "en,en-GB,en-US"
+		"cSpell.language": "en,en-GB,en-US",
+		"cSpell.customDictionaries": {
+			"custom-dictionary-workspace": {
+				"name": "custom-dictionary-workspace",
+				"path": "${workspaceFolder:promptly-literate}/.cspell/custom-dictionary-workspace.txt",
+				"addWords": true,
+				"scope": "workspace"
+			}
+		},
+		"cSpell.words": [
+			"mollick"
+		]
 	}
 }

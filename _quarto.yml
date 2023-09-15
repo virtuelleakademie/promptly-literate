@@ -8,7 +8,7 @@ project:
     # - jupyter-demo.ipynb
 
 website:
-  title: "Exploring LLMs for Teaching and Learning"
+  title: "LLMs for Teaching and Learning"
   site-url: https://virtuelleakademie.github.io/promptly-literate
   repo-url: https://github.com/virtuelleakademie/promptly-literate
   # repo-actions: [edit, issue]
@@ -44,33 +44,35 @@ website:
             file: slides/02-prompting-techniques.qmd
           - text: "Part 3: Prompting for learning and teaching"
             file: slides/03-prompting-learning-teaching.qmd
+          - text: "Part 4: Reflection"
+            file: slides/04-reflection.qmd
 
 
 
       - text: "🎓 Tutorials"
         menu:
-          - text: "Introduction to natural language processing"
+          - text: "Text representation: embeddings"
             file: pages/text-representation.qmd
           # - text: "How does text generation work?"
           #   file: pages/text-generation.ipynb
           # - text: "ChatGPT vs Playground"
           #   file: pages/chatgpt-playground.ipynb
           # - text: "How to use LLMs: Prompting"
-          #   file: pages/prompting.ipynb
+          #   file: pages/prompting.qmd
           # - text: "Prompts for teaching and learning"
           #   file: pages/about.qmd
 
 
       - text: "💼 Activities"
         menu:
-          - text: "Exploring ChatGPT/Playground"
-            file: pages/about.qmd
-          - text: "Prompting: basics"
-            file: pages/about.qmd
-          - text: "Prompting: roles"
-            file: pages/about.qmd
-          - text: "Develop an Assistant"
-            file: pages/about.qmd
+          - text: "Activity 1: Exploring LLMs"
+            file: pages/activity-1-explore-llms.qmd
+          - text: "Activity 2: Prompting techniques"
+            file: pages/activity-2-prompting-techniques.qmd
+          - text: "Activity 3: Prompting for teaching and learning"
+            file: pages/activity-3-prompting-learning-teaching.qmd
+          # - text: "Develop an Assistant"
+          #   file: pages/about.qmd
 
       - text: "🛠️ Resources"
         menu:

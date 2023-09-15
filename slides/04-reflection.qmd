@@ -1,0 +1,62 @@
+---
+title: "Idea Generation and Reflection"
+author: "Andrew Ellis"
+date: last-modified
+date-format: "DD MMMM, YYYY"
+bibliography: ../bibliography.bib
+format: 
+    revealjs:
+        # theme: moon
+        theme: default
+        title-slide-attributes:
+          data-background-image: ../assets/background-purple.png
+          # data-background-size: contain
+          data-background-opacity: "1"
+        # logo: ../assets/robot.png
+        footer: <a href="../index.html">back to website ⤴️</a>
+        navigation-mode: vertical
+        progress: true
+        scrollable: true
+        slide-number: true
+        show-slide-number: all
+        controls-layout: bottom-right
+        controls-tutorial: true
+        preview-links: auto
+        chalkboard: true
+        from: markdown+emoji
+        code-fold: true
+        code-summary: "Show code"
+        code-tools: true
+        menu: 
+          sticky: true
+          keyboard: true
+          autoOpen: true
+          width: normal
+          numbers: true
+          markers: true
+
+# slide-level: 3
+# number-sections: true
+---
+
+
+## Idea Generation {background-color="#b48ead"}
+
+
+- **Ideas for tools**: Do you have any ideas that weren't discussed in this workshop? What would you like to see in the future?
+- **Opportunities and challenges**: What are the opportunities and challenges involved with using LLMs in educational settings?
+
+## Reflection {background-color="#A3BE8C"}
+
+- Do you feel confident in using LLMs in your educational practice? What would help you feel more confident?
+- Do you feel that you understand how to apply LLMs?
+- Do you feel confident in evaluating LLM-based tools?
+
+## Thank you for attending this workshop! {background-color="#EBCB8B"}
+
+
+<br>
+<br>
+<br>
+
+🌟 Your feedback matters! Please take 5 minutes to complete our [👉 evaluation form](https://app.wooclap.com/DXKXBN/questionnaires/64bf884383d74ec2f3abe4f8).

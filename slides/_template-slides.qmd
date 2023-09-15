@@ -510,6 +510,8 @@ include_graphics("../assets/images/system-1-vs-system-2.png")
 5. Ziel: Was soll am Ende herauskommen?
 6. Format: Wie soll das Ergebnis aussehen?
 
+
+
 :::{.callout-note}
 ## Beispiel Hochschullehre: Feedback
 "I want you to act as a harsh critic. Criticize what I will write to you and show me where my argumentation is lacking. Start by asking me what text I want to have feedback on. Then ask me questions about my context to create the best feedback possible. If you feel you have all the context necessary, think step by step when creating your feedback" (Lenk-Ostendorf & Folgmann 2023)

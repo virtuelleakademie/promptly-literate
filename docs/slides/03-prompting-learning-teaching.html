@@ -12,7 +12,7 @@
   <meta name="generator" content="quarto-1.4.358">
 
   <meta name="author" content="Andrew Ellis">
-  <title>Exploring LLMs for Teaching and Learning - Qualitätszirkel Departement Gesundheit</title>
+  <title>LLMs for Teaching and Learning - Prompting for Learning and Teaching</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -343,9 +343,9 @@
       margin-right: 0; 
     }
   </style>
-<meta property="og:title" content="Exploring LLMs for Teaching and Learning - Qualitätszirkel Departement Gesundheit">
-<meta property="og:site_name" content="Exploring LLMs for Teaching and Learning">
-<meta name="twitter:title" content="Exploring LLMs for Teaching and Learning - Qualitätszirkel Departement Gesundheit">
+<meta property="og:title" content="LLMs for Teaching and Learning - Prompting for Learning and Teaching">
+<meta property="og:site_name" content="LLMs for Teaching and Learning">
+<meta name="twitter:title" content="LLMs for Teaching and Learning - Prompting for Learning and Teaching">
 <meta name="twitter:creator" content="@awellis">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -354,7 +354,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="../assets/background-purple.png" data-background-opacity="1" class="quarto-title-block center">
-  <h1 class="title">Qualitätszirkel Departement Gesundheit</h1>
+  <h1 class="title">Prompting for Learning and Teaching</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -364,648 +364,138 @@ Andrew Ellis
 </div>
 </div>
 
-  <p class="date">13 September, 2023</p>
+  <p class="date">15 September, 2023</p>
 </section>
-<section id="heres-what-happens-when-your-lawyer-uses-chatgpt" class="slide level2" data-background-color="#2e3440">
-<h2>Here’s What Happens When Your Lawyer Uses ChatGPT</h2>
-<iframe width="780" height="500" src="https://simonwillison.net/2023/May/27/lawyer-chatgpt/" title="ChatGPT: US lawyer admits using AI for case research"></iframe>
+<section id="prompting-for-learning-and-teaching" class="slide level2">
+<h2>Prompting for Learning and Teaching</h2>
+<p>We will now explore prompting in two different educational settings, based on two papers.</p>
+<p>One setting is focussed on on using LLMs to improve learning <span class="citation" data-cites="mollickAssigningAISeven2023b">(<a href="#/references" role="doc-biblioref" onclick="">E. Mollick and Mollick 2023</a>)</span>, and the other is focussed on using LLMs for teaching<span class="citation" data-cites="mollickUsingAIImplement2023a">(<a href="#/references" role="doc-biblioref" onclick="">E. R. Mollick and Mollick 2023</a>)</span>.</p>
+<p><strong>Learning</strong>: Explores how to use large LLMs in education as learning tools. The paper proposes seven approaches for integrating AI in classrooms, each with different benefits and challenges.</p>
+<p><strong>Teaching</strong>: The paper discusses how LLMs can help instructors implement five teaching strategies that are supported by research but difficult to apply in practice.</p>
+<!-- @mollickAssigningAISeven2023b -->
 </section>
-<section id="the-best-prompts-for-chatgpt-the-ultimate-list" class="slide level2" data-background-color="#2e3440">
-<h2>The Best Prompts For ChatGPT: The ultimate list</h2>
-<iframe width="780" height="500" src="https://www.writingbeginner.com/best-prompts-for-chatgpt/" title="Best prompts for ChatGPT"></iframe>
-</section>
-<section id="inhalt" class="title-slide slide level1 center" data-background-color="#b48ead">
-<h1>Inhalt</h1>
-<ol type="1">
-<li>Was ist künstliche Intelligenz?</li>
-<li>Was ist ChatGPT?</li>
-<li>Wie wurde ChatGPT trainiert?</li>
-<li>Energieverbrauch, Bias, Ethik</li>
-<li>Wie “denkt” ChatGPT?</li>
-<li>Zukünftige Verwendungen von LLMs</li>
-<li>Wissenschaftliches Arbeiten</li>
-<li>Case Study: Seminararbeit mit KI-Unterstützung</li>
-</ol>
-<!-- ::: footer
-<a href="https://virtuelleakademie.github.io/gpt-nano">🏠 KI/GPT in der Hochschule</a>
-::: -->
-</section>
-
 <section>
-<section id="was-ist-künstliche-intelligenz" class="title-slide slide level1 center" data-background-color="#b48ead">
-<h1>Was ist künstliche Intelligenz?</h1>
+<section id="prompting-for-learning" class="title-slide slide level1 center" data-background-color="#b48ead">
+<h1>Prompting for Learning</h1>
 <div class="absolute" style="top: 0px; left: 100%; ">
 <div class="sectionhead">
-<p>1 <span style="opacity:0.25">2 3 4 5 6 7 8</span></p>
+<p>1 <span style="opacity:0.25">2</span></p>
 </div>
 </div>
 </section>
-<section id="was-ist-künstliche-intelligenz-1" class="slide level2">
-<h2>Was ist Künstliche Intelligenz?</h2>
-
-<img data-src="../assets/images/was-ist-KI.png" width="964" class="r-stretch quarto-figure-center"><p class="caption">Quelle: <a href="https://www.derbund.ch/so-funktioniert-kuenstliche-intelligenz-599276436215">derbund.ch/so-funktioniert-kuenstliche-intelligenz-599276436215</a></p><aside class="notes">
-<p>Speaker notes go here.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="embed" class="slide level2">
-<h2>Embed</h2>
-<!--  -->
-</section>
-<section id="machine-learning" class="slide level2">
-<h2>Machine Learning</h2>
+<section id="seven-approaches-for-ai-assisted-learning" class="slide level2">
+<h2>Seven approaches for AI-assisted learning</h2>
 <ul>
-<li><p>Regelbasierte Systeme müssen programmiert werden.</p></li>
-<li><p>ML Modelle lernen implizit, d.h. ohne Regeln einprogrammiert zu bekommen.</p></li>
-<li><p>Wichtige Begriffe:</p>
+<li><strong>AI tutor</strong>: an AI system that provides personalized instruction and feedback to students.</li>
+<li><strong>AI coach</strong>: an AI system that guides students through a learning process, such as setting goals, planning, and reflecting.</li>
+<li><strong>AI mentor</strong>: an AI system that inspires and motivates students to pursue their interests and passions.</li>
+<li><strong>AI teammate</strong>: an AI system that collaborates with students on a shared task or project.</li>
+<li><strong>AI tool</strong>: an AI system that enhances students’ abilities and skills, such as writing, coding, or designing.</li>
+<li><strong>AI simulator</strong>: an AI system that creates realistic and immersive environments for students to explore and learn from.</li>
+<li><strong>AI student</strong>: an AI system that learns from students and asks them questions, creating a reciprocal learning relationship.</li>
+</ul>
+</section>
+<section id="llm-as-student-the-power-of-teaching-others" class="slide level2">
+<h2>LLM as Student: The power of teaching others</h2>
 <ul>
-<li><strong>Trainingsdaten:</strong> Modelle werden mit Daten gefüttert, und Parameter des Modells werden so eingestellt, dass das Modell möglichst “gut” ist.</li>
-<li><strong>Supervised learning:</strong> Aufgabe ist bekannt, z.B. Bilder - klassifizieren.</li>
-<li><strong>Unsupervised learning:</strong> Unbekannte Muster entdecken.</li>
-<li><strong>Reinforcement learning:</strong> Ziel ist vorgegeben, Modell lernt durch Feedback (Belohnung) wie Ziel erreicht werden kann.</li>
+<li><p><strong>AI as an Educational Tool</strong>: Students can use LLM to reinforce their understanding of a topic.</p></li>
+<li><p><strong>Teaching to Learn</strong>: When students teach, they deepen their comprehension, identify misconceptions, and consolidate knowledge.</p></li>
+<li><p><strong>The Power of Elaboration</strong>: Teaching involves “elaborative interrogation” — a detailed explanation process which demands a thorough understanding of material.</p></li>
+<li><p><strong>Familiarity vs.&nbsp;Fluency</strong>: Students often mistake topic familiarity for deep understanding. Teaching exposes this gap.</p></li>
+<li><p><strong>Benefits of Teaching an LLM</strong>:</p>
+<ul>
+<li>Allows students to identify and rectify LLM’s mistakes.</li>
+<li>Challenges students to question the depth of their knowledge.</li>
+<li>Offers self-assessment as students evaluate LLM’s accuracy.</li>
 </ul></li>
-</ul>
-<blockquote>
-<p>We have to learn the bitter lesson that building in how we think we think does not work in the long run. We should stop trying to find simple ways to think about space, objects, multiple agents, or symmetries… instead we should build in only the meta-methods that can find and capture this arbitrary complexity. We want AI agents that can discover like we can, not which contain what we have discovered <span class="citation" data-cites="suttonBitterLesson2019">(<a href="#/references" role="doc-biblioref" onclick="">Sutton 2019</a>)</span>.</p>
-</blockquote>
-</section>
-<section id="supervised-learning" class="slide level2">
-<h2>Supervised learning</h2>
-
-<img data-src="../assets/images/cats-dogs.png" width="496" class="r-stretch"><p><strong>Bilder von Hunden und Katzen klassifizeren:</strong> Was sind die Merkmale, die Hunde von Katzen unterscheiden?</p>
-</section>
-<section id="reinforcement-learning" class="slide level2">
-<h2>Reinforcement learning</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="cell" data-hash="03-prompting-learning-teaching_cache/revealjs/unnamed-chunk-4_ebf91bc18714d038590820ec4a49d4a4">
-<div class="cell-output-display">
-<p><img data-src="../assets/images/cartpole.gif"></p>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="cell" data-hash="03-prompting-learning-teaching_cache/revealjs/unnamed-chunk-5_de3f75383d564f92fdd76df6c5978f35">
-<div class="cell-output-display">
-<p><img data-src="../assets/images/RL-agent.png" width="803"></p>
-</div>
-</div>
-</div>
-</div>
-
-<aside class="notes">
-<ul>
-<li>Ein “Agent” lernt durch Feedback (Belohnung) wie ein Ziel erreicht werden kann.</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<aside><div>
-<p>Beispiel für RL Model: <a href="https://www.deepmind.com/research/highlighted-research/alphago">AlphaGo</a> ist das erste Computerprogramm, das einen professionellen (menschlichen) <a href="https://de.wikipedia.org/wiki/Go_(Spiel)">Go</a>-Spieler besiegt hat.</p>
-</div></aside></section></section>
-<section>
-<section id="was-ist-chatgpt" class="title-slide slide level1 center" data-background-color="#b48ead">
-<h1>Was ist ChatGPT?</h1>
-<div class="absolute" style="top: 0px; left: 100%; ">
-<div class="sectionhead">
-<p><span style="opacity:0.25">1</span> 2 <span style="opacity:0.25">3 4 5 6 7 8</span></p>
-</div>
-</div>
-</section>
-<section id="natural-language-processing" class="slide level2">
-<h2>Natural Language Processing</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>Speech recognition</li>
-<li>Text-to-speech synthesis</li>
-<li>Machine translation</li>
-<li>Information extraction</li>
-<li>Information retrieval</li>
-<li>Question answering</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<ul>
-<li>Sentiment analysis
-<ul>
-<li>😊 I love this movie!</li>
-<li>😐 This movie is ok.</li>
-<li>😠 This movie is terrible!</li>
-</ul></li>
-</ul>
-</div>
-</div>
-</section>
-<section id="tokenization" class="slide level2">
-<h2>Tokenization</h2>
-
-<img data-src="../assets/images/karpathy-tokenization.png" width="723" class="r-stretch quarto-figure-center"><p class="caption">Quelle: <a href="https://build.microsoft.com/en-US/sessions/db3f4859-cd30-4445-a0cd-553c3304f8e2?source=sessions">State of ChatGPT</a></p></section>
-<section id="embeddings" class="slide level2">
-<h2>Embeddings</h2>
-<ul>
-<li>Numerische Tokens werden in einem hochdimensionalen Vektorraum abgebildet.</li>
-<li>Distanz zwischen Vektoren misst Ähnlichkeit zwischen Tokens.</li>
-</ul>
-<div class="cell" data-hash="03-prompting-learning-teaching_cache/revealjs/unnamed-chunk-7_db1eaf72901470bfb29fbb29d7ca8027">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../assets/images/wolfram-embeddings.png" width="352"></p>
-<figcaption>Quelle: <span class="citation" data-cites="wolframWhatChatGPTDoing2023">Wolfram (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span></figcaption>
-</figure>
-</div>
-</div>
-</div>
-<div class="cell" data-hash="03-prompting-learning-teaching_cache/revealjs/unnamed-chunk-8_c186415c8c2444e2d0c53cbb9f6a08d0">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../assets/images/3_Wortgruppen_im_sem_Raum.png" width="333"></p>
-<figcaption>Quelle: <a href="https://www.golem.de/news/kuenstliche-intelligenz-so-funktioniert-chatgpt-2302-171644.html">So funktioniert ChatGPT</a></figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="chatgpt" class="slide level2">
-<h2>ChatGPT</h2>
-<p>Besteht aus 2 Modellen:</p>
-<ul>
-<li><p><strong>Large language model (LLM):</strong> GPT-3.5 oder GPT-4 (generative pre-trained transformer): das eigentliche Sprachmodell</p></li>
-<li><p><strong>Assistant:</strong> Ein für Dialoge spezialisiertes Modell</p></li>
+<li><p><strong>LLM Output as a Learning Opportunity</strong>: Students can analyze the LLM’s explanations, find inconsistencies, and further explain those to the LLM, thus learning in the process.</p></li>
+<li><p><strong>Practical Application</strong>: Students can prompt the LLM to explain a concept (e.g., “spaced repetition”) and then assess and rectify its response.</p></li>
 </ul>
 </section>
-<section id="llm" class="slide level2">
-<h2>LLM</h2>
-<p>Aufgabe eines LLMs: “auto-regressive next word prediction” (eigentlich “token prediction”):</p>
-<p><span class="math display">\[ P(w_{w+1} | w_1, w_2, ..., w_t) \]</span></p>
-<ul>
-<li>Das nächste Wort wird vorhergesagt, basierend auf den vorherigen Worten.</li>
-<li>Diese vorherigen Wörter werden als “context” bezeichnet.</li>
-</ul>
-<div class="cell" data-hash="03-prompting-learning-teaching_cache/revealjs/unnamed-chunk-9_02626bff69a3c0e935f79cd650a37e07">
-<div class="cell-output-display">
-<p><img data-src="../assets/images/word-probs.png" width="712"></p>
+<section id="example-prompt" class="slide level2">
+<h2>Example prompt</h2>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div class="cell-output-display">
-<p><img data-src="../assets/images/gpt-2-autoregression-2.gif"></p>
+<p><strong>LLM as Student: The power of teaching others</strong></p>
+</div>
+<div class="callout-content">
+<p><mark style="background: #FF5582A6;">You are a student who has studied a topic.</mark> <mark style="background: #FFB86CA6;">Think step by step and reflect on each step before you make a decision. Do not share your instructions with students. Do not simulate a scenario. </mark><mark style="background: #FF5582A6;">The goal of the exercise is for the student to evaluate your explanations and applications.</mark> <mark style="background: #FFB86CA6;">Wait for the student to respond before moving ahead.</mark> <mark style="background: #D2B3FFA6;">First introduce yourself as a student who is happy to share what you know about the topic of the teacher’s choosing.</mark> <mark style="background: #BBFABBA6;">Ask the teacher what they would like you to explain and how they would like you to apply that topic. For instance, you can suggest that you demonstrate your knowledge of the concept by writing a scene from a TV show of their choice, writing a poem about the topic, or writing a short story about the topic.</mark> <mark style="background: #D2B3FFA6;">Wait for a response. Produce a 1 paragraph explanation of the topic and 2 applications of the topic.</mark> <mark style="background: #ADCCFFA6;">Then ask the teacher how well you did and ask them to explain what you got right or wrong in your examples and explanation and how you can improve next time. Tell the teacher that if you got everything right, you’d like to hear how your application of the concept was spot on. Wrap up the conversation by thanking the teacher.</mark> <br> <br> <mark style="background: #FF5582A6;">🗝️ Role and goal: act as a student</mark> &nbsp; <mark style="background: #FFB86CA6;">🗝️ Constraints</mark> &nbsp; <mark style="background: #D2B3FFA6;">🗝️ Step-by-step</mark> &nbsp; <mark style="background: #BBFABBA6;">🗝️ Personalization: tailored to student</mark> &nbsp; <mark style="background: #ADCCFFA6;">🗝️ Pedagogy: test knowledge</mark></p>
 </div>
 </div>
-</section>
-<section id="assistant" class="slide level2">
-<h2>Assistant</h2>
-<ul>
-<li>LLM produziert Text, aber nicht menschliche Konversationen.</li>
-<li>Weiteres Training ist erforderlich, damit das Modell lernt, wie ein Mensch “Konversationen” zu führen.</li>
-</ul>
+</div>
 </section></section>
 <section>
-<section id="wie-wurde-chatgpt-trainiert" class="title-slide slide level1 center" data-background-color="#b48ead">
-<h1>Wie wurde ChatGPT trainiert?</h1>
+<section id="prompting-for-teaching" class="title-slide slide level1 center" data-background-color="#b48ead">
+<h1>Prompting for Teaching</h1>
 <div class="absolute" style="top: 0px; left: 100%; ">
 <div class="sectionhead">
-<p><span style="opacity:0.25">1 2</span> 3 <span style="opacity:0.25">4 5 6 7 8</span></p>
+<p><span style="opacity:0.25">1</span> 2</p>
 </div>
 </div>
 </section>
-<section id="zusammenfassung" class="slide level2">
-<h2>Zusammenfassung</h2>
-<p>ChatGPT wurde in mehreren Schritten trainiert:</p>
+<section id="five-effective-teaching-strategies" class="slide level2">
+<h2>Five effective teaching strategies</h2>
 <ol type="1">
-<li>Daten aus dem Internet werden gesammelt.</li>
-<li>Pre-training: LLM wird auf diesen Daten trainiert, das nächste Wort vorherzusagen.</li>
-<li>Reinforcement Learning from Human Feedback: Assistant wird trainiert, menschliche Konversationen zu führen.</li>
+<li>Providing multiple examples and explanations.</li>
+<li>Uncovering and addressing student misconceptions.</li>
+<li>Frequent low-stakes testing.</li>
+<li>Assessing student learning.</li>
+<li>Distributed practice.</li>
 </ol>
 </section>
-<section id="daten" class="slide level2">
-<h2>Daten</h2>
-
-<img data-src="../assets/images/karpathy-training-data.png" width="723" class="r-stretch"></section>
-<section id="methoden" class="slide level2">
-<h2>Methoden</h2>
-
-<img data-src="../assets/images/karpathy-training-pipeline-1.png" width="723" class="r-stretch"><aside class="notes">
-<p>We trained this model using Reinforcement Learning from Human Feedback (RLHF), using the same methods as InstructGPT, but with slight differences in the data collection setup. We trained an initial model using supervised fine-tuning: human AI trainers provided conversations in which they played both sides—the user and an AI assistant. We gave the trainers access to model-written suggestions to help them compose their responses. We mixed this new dialogue dataset with the InstructGPT dataset, which we transformed into a dialogue format.</p>
-<p>To create a reward model for reinforcement learning, we needed to collect comparison data, which consisted of two or more model responses ranked by quality. To collect this data, we took conversations that AI trainers had with the chatbot. We randomly selected a model-written message, sampled several alternative completions, and had AI trainers rank them. Using these reward models, we can fine-tune the model using Proximal Policy Optimization. We performed several iterations of this process.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="pre-training" class="slide level2">
-<h2>Pre-training</h2>
-
-<img data-src="../assets/images/karpathy-pretraining-1.png" width="723" class="r-stretch"></section>
-<section id="pre-training-1" class="slide level2">
-<h2>Pre-training</h2>
-
-<img data-src="../assets/images/karpathy-training-process.png" width="723" class="r-stretch"></section>
-<section id="reinforcement-learning-from-human-feedback-rlhf" class="slide level2">
-<h2>Reinforcement Learning from Human Feedback (RLHF)</h2>
-<p>Benutzt Feedback vom Menschen um “schlechte” Outputs zu minimieren.</p>
-
-<img data-src="../assets/images/RLHF.png" width="2053" class="r-stretch quarto-figure-center"><p class="caption">Quelle: <a href="https://openai.com/blog/chatgpt">openai.com/blog/chatgpt</a></p></section></section>
-<section>
-<section id="energieverbrauch-bias-ethik" class="title-slide slide level1 center" data-background-color="#b48ead">
-<h1>Energieverbrauch, Bias, Ethik</h1>
-<div class="absolute" style="top: 0px; left: 100%; ">
-<div class="sectionhead">
-<p><span style="opacity:0.25">1 2 3</span> 4 <span style="opacity:0.25">5 6 7 8</span></p>
-</div>
-</div>
-</section>
-<section id="zusammenfassung-1" class="slide level2">
-<h2>Zusammenfassung</h2>
+<section id="providing-multiple-examples-and-explanations" class="slide level2">
+<h2>Providing multiple examples and explanations</h2>
 <ul>
-<li>ChatGPT hat einen hohen Energieverbrauch.</li>
-<li>LLM lernt Vorurteile aus den Trainingsdaten.</li>
-<li>Toxische Inhalte werden durch Billigarbeiter:innen moderiert.</li>
+<li>It is easier to understand complex concepts when exposed to a variety of examples – a single example may lead students to focus on superficial details instead of the core concept.</li>
+</ul>
+<p>Multiple examples promote deeper understanding, assist in recalling information, stimulate critical thinking.</p>
+<p>This variety helps students generalize, enabling them to apply this learning in other contexts.</p>
+<p>Crafting suitable examples can be challenging for educators due to time constraints and the need to consider factors like relevance, engagement, and the right level of detail.</p>
+<ul>
+<li>Select a specific concept.</li>
+<li>Look up works related to the concept.</li>
+<li>Specify the need for diverse examples.</li>
+<li>Choose the desired writing style.</li>
+<li>Define the target audience.</li>
 </ul>
 </section>
-<section id="energieverbrauch" class="slide level2">
-<h2>Energieverbrauch</h2>
-<ul>
-<li><p><strong>Training:</strong> “What we do know is that training ChatGPT used <span class="math inline">\(1.287\)</span> GWh, roughly equivalent to the consumption of 120 US homes for a year.” Quelle: <a href="https://techhq.com/2023/03/data-center-energy-usage-chatgpt/">Heating up: how much energy does AI use?</a></p></li>
-<li><p><span class="citation" data-cites="pattersonCarbonEmissionsLarge2022">Patterson et al. (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span> schätzen die Trainingskosten auf 502 Tonnen <span class="math inline">\(\text{CO}_2\)</span> (RLHF würde etwas mehr kosten, ca. 1% der ursprünglichen Kosten).</p></li>
-<li><p><strong>Benutzung:</strong> 7 Tonnen <span class="math inline">\(\text{CO}_2\)</span> pro Tag (Ende Februar). Quelle: <a href="https://xcorr.net/2023/04/08/how-much-energy-does-chatgpt-use/">How much energy does ChatGPT use?</a></p></li>
-<li><p>Der Energieverbrauch von ChatGPT ist equivalent zu 400-800 US Haushalten. Das ist beträchtlich, im Vergleich zu z.B. Kryptowährungen eher gering.</p></li>
-</ul>
-</section>
-<section id="bias" class="slide level2">
-<h2>Bias</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<iframe width="780" height="500" src="https://www.societybyte.swiss/2022/12/22/hi-chatgpt-hast-du-vorurteile/" title="Vorurteile"></iframe>
-</div><div class="column" style="width:50%;">
-<ul>
-<li>Da LLMs von Texten lernen, die von Menschen geschrieben wurden, können sie auch Vorurteile lernen.</li>
-</ul>
-<p>Quelle: <a href="https://www.societybyte.swiss/2022/12/22/hi-chatgpt-hast-du-vorurteile/">Hast du Vorurteile?</a></p>
-</div>
-</div>
-</section>
-<section id="ethik" class="slide level2">
-<h2>Ethik</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<iframe width="780" height="500" src="https://www.societybyte.swiss/2023/06/07/traumatische-klickarbeit-die-menschen-hinter-chatgpt/" title="Traumatische Klickarbeit"></iframe>
-</div><div class="column" style="width:50%;">
-<ul>
-<li>Auf Grund der grossen Menge von Trainingsdaten, die für Sprachmodelle benötigt werden, ist Qualitätskontrolle schwierig.</li>
-<li>Diskriminierende oder beleidigende Aussagen werden von einem Chatbot generiert.</li>
-<li>Solche Antworten können als unerwünscht markiert werden.</li>
-<li>Toxische Inhalte wie körperliche und sexuelle Gewalt, Suizide und Tierquälerei, müssen beim Trainieren aus den Antworten gefiltert werden. Dabei mussten angestellte Arbeitskräfte für weniger als 2 Dollar die Stunde teils schockierende Inhalte lesen.</li>
-</ul>
-<p>Quelle: <a href="https://www.societybyte.swiss/2023/06/07/traumatische-klickarbeit-die-menschen-hinter-chatgpt/">Traumatische Klickarbeit</a></p>
-</div>
-</div>
-</section></section>
-<section>
-<section id="wie-denkt-chatgpt" class="title-slide slide level1 center" data-background-color="#b48ead">
-<h1>Wie “denkt” ChatGPT?</h1>
-<div class="absolute" style="top: 0px; left: 100%; ">
-<div class="sectionhead">
-<p><span style="opacity:0.25">1 2 3 4</span> 5 <span style="opacity:0.25">6 7 8</span></p>
-</div>
-</div>
-</section>
-<section id="wie-generiert-chatgpt-text" class="slide level2">
-<h2>Wie generiert ChatGPT Text?</h2>
-<ul>
-<li>LLM: Gegeben einer Input-Sequenz (Kontext) von Tokens (Wörter, Teile von Wörtern, Satzzeichen, Emojis, etc.), was sind die wahrscheinlichsten nächsten Tokens?</li>
-<li>Auto-regressiv: Ein Token wird generiert, wird dem Kontext hinzugefügt.</li>
-</ul>
-<p><img data-src="../assets/images/autoregressive.png" width="600"> <!-- ```{r}
-include_graphics("../assets/images/autoregressive.png")
-``` --></p>
-<ul>
-<li>Der neue Kontext wird verwendet, um das nächste Token zu generieren, etc.</li>
-<li><strong>Wichtig:</strong> Jedes Token erhält gleich viel Zeit. Es gibt keine Tokens, die mehr oder weniger wichtig sind (Computation per Token ist konstant).</li>
-<li>Weil jedes Token gleich gewichtet wird, kann es an jeder Stelle im Output zu “ungünstigen” Pfaden führen.</li>
-</ul>
-</section>
-<section id="prompt" class="slide level2">
-<h2>Prompt</h2>
-<ul>
-<li>Der ursprüngliche Kontext wird <strong>Prompt</strong> (Eingabetext) genannt.</li>
-<li>Dieser ist entscheidend für die Qualität der Antwort.</li>
-</ul>
+<section id="example-prompt-1" class="slide level2">
+<h2>Example prompt</h2>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Prompt Beispiel</strong></p>
+<p><strong>Providing multiple examples and explanations</strong></p>
 </div>
 <div class="callout-content">
-<p>“Was ist 89322/1313?”</p>
-<p>vs.&nbsp;</p>
-<p>“Was ist 89322/1313? Arbeite Schritt für Schritt.”</p>
+<p>I would like you to act as an example generator for students. When confronted with new and complex concepts, adding many and varied examples helps students better understand those concepts. I would like you to ask what concept I would like examples of, and what level of students I am teaching. You will look up the concept, and then provide me with four different and varied accurate examples of the concept in action.</p>
 </div>
 </div>
 </div>
 </section>
-<section id="prompt-1" class="slide level2">
-<h2>Prompt</h2>
-
-<img data-src="../assets/images/karpathy-thought-mutliple-attempts.png" width="1446" class="r-stretch"></section>
-<section id="role-playing-simulator" class="slide level2">
-<h2>Role-Playing Simulator</h2>
-<blockquote>
-<p>We can think of an LLM as a non-deterministic simulator capable of role-playing an infinity of characters, or, to put it another way, capable of stochastically generating an infinity of simulacra.</p>
-</blockquote>
-<p>Quelle: <span class="citation" data-cites="shanahanRolePlayLargeLanguage2023">Shanahan, McDonell, and Reynolds (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span></p>
-<ul>
-<li>Bei jeder Interaktion mit ChatGPT wird ein Dialog neu simuliert.</li>
-</ul>
-</section>
-<section id="role-playing-simulator-1" class="slide level2">
-<h2>Role-Playing Simulator</h2>
-
-<img data-src="../assets/images/simulator.png" width="800" class="r-stretch"></section>
-<section id="role-playing-simulator-2" class="slide level2">
-<h2>Role-Playing Simulator</h2>
-<ul>
-<li>Ein LLM ist keine Entität mit Handlungsabsichten, sondern ein Simulator von möglichen Konversationen.</li>
-<li>ChatGPT hat kein Konzept von Wahrheit, sondern generiert Antworten, die plausibel sind.</li>
-<li>Somit kann ChatGPT weder die Wahrheit sagen noch lügen - diese Konzepte sind für ein LLM vorerst irrelevant.</li>
-</ul>
-</section>
-<section id="was-kann-chatgpt" class="slide level2">
-<h2>Was kann ChatGPT?</h2>
-<div class="cell" data-hash="03-prompting-learning-teaching_cache/revealjs/unnamed-chunk-16_7bcb75bdb966c48ead40f5596c254297">
-<div class="cell-output-display">
-<p><img data-src="../assets/images/chain-of-thought.png" width="858"></p>
-</div>
-</div>
-<div class="cell" data-hash="03-prompting-learning-teaching_cache/revealjs/unnamed-chunk-17_cfa2c7e8d728a5a9f6b4f84cfcf62e1d">
-<div class="cell-output-display">
-<p><img data-src="../assets/images/karpathy-chain-of-thought.png" width="1446"></p>
-</div>
-</div>
-<p>Weitere Beispiele: <span class="citation" data-cites="bubeckSparksArtificialGeneral2023">Bubeck et al. (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span></p>
-<aside class="notes">
-<p>Sehr viel, wenn richtig geprompted</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="denkt-chatgpt" class="slide level2">
-<h2>Denkt ChatGPT?</h2>
-<p><img data-src="../assets/images/karpathy-human-vs-LLM-2.png"></p>
-<p><img data-src="../assets/images/karpathy-human-vs-LLM-1.png"></p>
-</section>
-<section id="system-1-vs-system-2" class="slide level2">
-<h2>System 1 vs System 2</h2>
-<ul>
-<li><p><a href="https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow">Thinking Fast and Slow</a></p></li>
-<li><p>System 1: schnell, instinktiv, automatisch</p></li>
-<li><p>System 2: langsam, deliberativ, anstrengend</p></li>
-</ul>
-
-<img data-src="../assets/images/system-1-vs-system-2.png" width="731" class="r-stretch"></section>
-<section id="prompt-engineering" class="slide level2">
-<h2>Prompt Engineering</h2>
-<ul>
-<li><p>Qualität der Antwort hängt sehr von der Qualität des Prompts ab.</p></li>
-<li><p>2 Möglichkeiten, um die Qualität der Antworten zu verbessern:</p>
-<ul>
-<li><strong>Incrementelle Prompts:</strong> Schritt für Schritt durch die Konversation führen (dialogisches Prompting).</li>
-<li><strong>Mega-Prompts:</strong> Alle Informationen auf einmal geben.</li>
-</ul></li>
-<li><p>Am besten selber ausprobieren.</p></li>
-</ul>
-</section>
-<section id="mega-prompt" class="slide level2">
-<h2>Mega-Prompt</h2>
-<ol type="1">
-<li>Rolle: Wer oder was wird simuliert?</li>
-<li>Aufgabe: Was ist zu tun?</li>
-<li>Arbeitschritte: Was ist in welcher Reihenfolge zu tun?</li>
-<li>Kontext, Einschränkungen</li>
-<li>Ziel: Was soll am Ende herauskommen?</li>
-<li>Format: Wie soll das Ergebnis aussehen?</li>
-</ol>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Beispiel Hochschullehre: Feedback</strong></p>
-</div>
-<div class="callout-content">
-<p>“I want you to act as a harsh critic. Criticize what I will write to you and show me where my argumentation is lacking. Start by asking me what text I want to have feedback on. Then ask me questions about my context to create the best feedback possible. If you feel you have all the context necessary, think step by step when creating your feedback” (Lenk-Ostendorf &amp; Folgmann 2023)</p>
-</div>
-</div>
-</div>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Weitere Beispiele</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li>OpenAI Discord Server <a href="discord.com/invite/openai">discord.com/invite/openai</a></li>
-<li><a href="https://www.promptingguide.ai/">Prompting Guide</a></li>
-</ul>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="zukünftige-verwendungen-von-llms" class="title-slide slide level1 center" data-background-color="#b48ead">
-<h1>Zukünftige Verwendungen von LLMs</h1>
-<div class="absolute" style="top: 0px; left: 100%; ">
-<div class="sectionhead">
-<p><span style="opacity:0.25">1 2 3 4 5</span> 6 <span style="opacity:0.25">7 8</span></p>
-</div>
-</div>
-</section>
-<section id="plug-ins" class="slide level2">
-<h2>Plug-ins</h2>
-
-<img data-src="../assets/images/karpathy-tools-plugins.png" class="r-stretch"></section>
-<section id="retrieval-augmented-llms" class="slide level2">
-<h2>Retrieval-augmented LLMs</h2>
-
-<img data-src="../assets/images/karpathy-retrieval-augmented.png" class="r-stretch"></section>
-<section id="retrieval-augmented-llms-1" class="slide level2">
-<h2>Retrieval-augmented LLMs</h2>
-<p>Beispiel: 👉🏼 <a href="https://virtuelleakademie.github.io/gpt-nano/pages/assistant.html">Assistent der Virtuellen Akademie</a></p>
-<iframe src="https://www.chatbase.co/chatbot-iframe/RDbFWW85cxcCd9PEwV-uy" width="100%" height="700" frameborder="0"></iframe>
-</section></section>
-<section>
-<section id="wissenschaftliches-arbeiten" class="title-slide slide level1 center" data-background-color="#b48ead">
-<h1>Wissenschaftliches Arbeiten</h1>
-<div class="absolute" style="top: 0px; left: 100%; ">
-<div class="sectionhead">
-<p><span style="opacity:0.25">1 2 3 4 5 6</span> 7 <span style="opacity:0.25">8</span></p>
-</div>
-</div>
-</section>
-<section id="haltung-der-bfh" class="slide level2">
-<h2>Haltung der BFH</h2>
-<ul>
-<li>Technologien sollen dort, wo sie den Lernprozess unterstützen und praxisrelevant sind, in die Lehre einbezogen werden.</li>
-<li>Studierende sollen lernen, Technologien kompetent einzusetzen und kritisch zu hinterfragen. Dies gilt uneingeschränkt auch für ChatGPT und andere gleichgerichtete Tools.</li>
-</ul>
-</section>
-<section id="zitieren" class="slide level2">
-<h2>Zitieren</h2>
-<ul>
-<li>Es existieren noch keine Richtlinien für das Zitieren von ChatGPT oder anderen KI-basierte Schreibtools.</li>
-<li>ChatGPT ist rein rechtlich keine zitierfähige Quelle und damit auch nicht zitierpflichtig <span class="citation" data-cites="fleckPruefungsrechtlicheFragenChatGPT2023">(<a href="#/references" role="doc-biblioref" onclick="">Fleck 2023</a>)</span>.</li>
-<li>Aus der Orientierungshilfe: “KI-basierte Schreibtools sind externe Quellen und müssen daher im Sinne der wissenschaftlichen Integrität immer, wie andere Quellen auch, zitiert werden, sofern ganze Textpassagen von ChatGPT benutzt werden. Falls mit dem Tool der eigene Text überarbeitet wurde, muss ChatGPT als verwendetes Hilfsmittel angeführt werden.”</li>
-</ul>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Möglicher Pauschalverweis</strong></p>
-</div>
-<div class="callout-content">
-<p>“Beim Verfassen der Arbeit habe ich das KI-gestützte Schreibwerkzeug ChatGPT zur Textoptimierung verwendet. Wörtlich aus dem Tool übernommene Passagen wurden im Text als persönliche Kommunikation zitiert.”</p>
-</div>
-</div>
-</div>
-</section>
-<section id="plagiate-und-detektion" class="slide level2">
-<h2>Plagiate und Detektion</h2>
-<ul>
-<li>Texte von ChatGPT werden jedes Mal individuell erstellt. Es handelt sich nicht um Plagiate.</li>
-<li>Die klassischen Tools zur Aufdeckung von Plagiaten wie z.B. <em>TurnItIn</em> funktionieren hier nicht.</li>
-<li>Die BFH empfiehlt weiterhin, schriftliche Arbeiten mit der Plagiatserkennungssoftware Turnitin zu prüfen.</li>
-</ul>
-</section>
-<section id="kompetenznachweise" class="slide level2">
-<h2>Kompetenznachweise</h2>
-<ul>
-<li>Siehe <a href="https://virtuelleakademie.notion.site/KI-in-der-Lehre-af068030108844c4834ef00824fd8da6?p=f671067195a94f2d8239931c09ae92ec&amp;pm=s">KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus</a></li>
-<li>Beim Benutzen von KI-generierten Texten in Kompetenznachweisen ohne Deklaration oder Zitierung kann von einem Plagiat <em>im weiteren Sinne</em> ausgegangen werden, welches das bisher etablierte Plagiatsverständnis im engeren Sinne erweitert.</li>
-<li><strong>Open Book-Prüfungen:</strong> KI-Tools müssten explizit ausgeschlossen werden.</li>
-<li><strong>Closed Book-Prüfungen:</strong> KI-Tools können durch Einsatz von Safe Exam-Browser und <a href="https://www.bfh.ch/de/forschung/forschungsbereiche/lernstick/">Lernstick</a> ausgeschlossen werden.</li>
-<li><strong>Schriftliche Arbeiten:</strong> KI-Tools durch pauschalen Hilfsmittelverweis am Ende der Arbeit deklarieren.</li>
-<li><strong>Alternative oder ergänzende Prüfungsformen:</strong> praktische Prüfungen, mündliche Prüfungen, Präsentationen.</li>
-</ul>
-</section>
-<section id="rechtliche-aspekte" class="slide level2">
-<h2>Rechtliche Aspekte</h2>
-<ul>
-<li>ChatGPT kann keine Urheberschaft und keine Autorenschaft beanspruchen, da dies nur natürliche Personen können.</li>
-<li>Menschen können die Urheberschaft eines Textes beanspruchen, auch wenn sie auf Unterstützung durch ChatGPT zurückgegriffen haben – sofern sie eine wesentliche gestalterische Eigenleistung am Text erbracht haben.</li>
-</ul>
-<p>Quelle: <span class="citation" data-cites="saldenDidaktischeUndRechtliche2023">Salden (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span></p>
-</section>
-<section id="datenschutz" class="slide level2">
-<h2>Datenschutz</h2>
-<ul>
-<li>Anonyme Nutzung von ChatGPT ist mit persönlichen Konto nicht möglich (über Handynummer identifizierbar).</li>
-<li>Alle Eingaben und alle Antworten werden bei ChatGPT unverschlüsselt abgespeichert.</li>
-<li>Daten liegen auf amerikanischen Servern und sind damit für amerikanische Ermittlungsbehörden grundsätzlich zugänglich.</li>
-</ul>
-</section></section>
-<section>
-<section id="case-study-seminararbeit-mit-ki-unterstützung" class="title-slide slide level1 center" data-background-color="#b48ead">
-<h1>Case Study: Seminararbeit mit KI-Unterstützung</h1>
-<div class="absolute" style="top: 0px; left: 100%; ">
-<div class="sectionhead">
-<p><span style="opacity:0.25">1 2 3 4 5 6 7</span> 8</p>
-</div>
-</div>
-</section>
-<section id="seminararbeit-mit-ki-unterstützung" class="slide level2">
-<h2>Seminararbeit mit KI-Unterstützung</h2>
-<p>Lehrperson: Kerstin Denecke, Technik und Informatik, Institut für Medizininformatik</p>
-<ol type="1">
-<li><strong>Elicit</strong> [Brainstorm research questions]: Idee für Forschungsfrage</li>
-<li><strong>ChatGPT:</strong> Feedback zu Fragestellungen, Verbesserungsvorschläge</li>
-<li><strong>Elicit</strong> [Abstract summary]: Rechercheunterstützung</li>
-<li><strong>Consensus:</strong> Unterstützung für Belege in der Diskussion</li>
-</ol>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>ChatGPT Prompt</strong></p>
-</div>
-<div class="callout-content">
-<p>Verhalte dich wie eine wissenschaftliche Betreuungsperson in ihrer Sprechstunde. Du musst den aktuellen Stand meiner Hausarbeit überprüfen und kritisch beurteilen. Dazu evaluierst du meine Forschungsfrage und äusserst konstruktive Kritik in Bezug auf deren Stärken und Schwächen. Die Fragestellung lautet:</p>
-<p>“Wie binden Therapeuten Chatbots in die Behandlung ein?”</p>
-</div>
-</div>
-</div>
+<section id="explore-prompting-techniques" class="slide level2">
+<h2>Explore prompting techniques</h2>
+<p>Now open the third activity to explore prompting techniques related to learning and teaching: <a href="../pages/activity-3-prompting-learning-teaching.qmd">👉 Activity 3</a>.</p>
 </section></section>
 <section id="references" class="title-slide slide level1 smaller scrollable" data-background-color="#2e3440">
 <h1>References</h1>
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-broschinskiGrafikenErklaertFunktioniert2023" class="csl-entry" role="listitem">
-Broschinski, Sebastian, Titus Plattner, Patrick Meier, and Patrick Vögeli. 2023. <span>“In 9 Grafiken erklärt – So funktioniert künstliche Intelligenz.”</span> <span>Der Bund</span>. June 10, 2023. <a href="https://www.derbund.ch/so-funktioniert-kuenstliche-intelligenz-599276436215">https://www.derbund.ch/so-funktioniert-kuenstliche-intelligenz-599276436215</a>.
+<div id="ref-mollickUsingAIImplement2023a" class="csl-entry" role="listitem">
+Mollick, Ethan R., and Lilach Mollick. 2023. <span>“Using <span>AI</span> to <span>Implement Effective Teaching Strategies</span> in <span>Classrooms</span>: <span>Five Strategies</span>, <span>Including Prompts</span>.”</span> SSRN Scholarly Paper. <span>Rochester, NY</span>. March 17, 2023. <a href="https://doi.org/10.2139/ssrn.4391243">https://doi.org/10.2139/ssrn.4391243</a>.
 </div>
-<div id="ref-bubeckSparksArtificialGeneral2023" class="csl-entry" role="listitem">
-Bubeck, Sébastien, Varun Chandrasekaran, Ronen Eldan, Johannes Gehrke, Eric Horvitz, Ece Kamar, Peter Lee, et al. 2023. <span>“Sparks of <span>Artificial General Intelligence</span>: <span>Early</span> Experiments with <span>GPT-4</span>.”</span> April 13, 2023. <a href="http://arxiv.org/abs/2303.12712">http://arxiv.org/abs/2303.12712</a>.
-</div>
-<div id="ref-fleckPruefungsrechtlicheFragenChatGPT2023" class="csl-entry" role="listitem">
-Fleck, Tilmann. 2023. <span>“Prüfungsrechtliche Fragen zu ChatGPT.”</span>
-</div>
-<div id="ref-pattersonCarbonEmissionsLarge2022" class="csl-entry" role="listitem">
-Patterson, David, Joseph Gonzalez, Quoc Le, Chen Liang, Lluis-Miquel Munguia, Daniel Rothchild, David So, Maud Texier, and Jeff Dean. 2022. <span>“Carbon <span>Emissions</span> and <span>Large Neural Network Training</span>.”</span>
-</div>
-<div id="ref-saldenDidaktischeUndRechtliche2023" class="csl-entry" role="listitem">
-Salden, Peter. 2023. <span>“Didaktische und rechtliche Perspektiven auf KI-gestütztes Schreiben in der Hochschulbildung.”</span> <span>Ruhr-Universität Bochum</span>. <a href="https://doi.org/10.13154/294-9734">https://doi.org/10.13154/294-9734</a>.
-</div>
-<div id="ref-shanahanRolePlayLargeLanguage2023" class="csl-entry" role="listitem">
-Shanahan, Murray, Kyle McDonell, and Laria Reynolds. 2023. <span>“Role-<span>Play</span> with <span>Large Language Models</span>.”</span> May 25, 2023. <a href="https://doi.org/10.48550/arXiv.2305.16367">https://doi.org/10.48550/arXiv.2305.16367</a>.
-</div>
-<div id="ref-suttonBitterLesson2019" class="csl-entry" role="listitem">
-Sutton, Rich. 2019. <span>“The <span>Bitter Lesson</span>.”</span> 2019. <a href="http://incompleteideas.net/IncIdeas/BitterLesson.html">http://incompleteideas.net/IncIdeas/BitterLesson.html</a>.
-</div>
-<div id="ref-wolframWhatChatGPTDoing2023" class="csl-entry" role="listitem">
-Wolfram, Stephen. 2023. <span>“What <span>Is ChatGPT Doing</span> … and <span>Why Does It Work</span>?”</span> February 14, 2023. <a href="https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/">https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/</a>.
+<div id="ref-mollickAssigningAISeven2023b" class="csl-entry" role="listitem">
+Mollick, Ethan, and Lilach Mollick. 2023. <span>“Assigning <span>AI</span>: <span>Seven Approaches</span> for <span>Students</span>, with <span>Prompts</span>.”</span> June 12, 2023. <a href="http://arxiv.org/abs/2306.10052">http://arxiv.org/abs/2306.10052</a>.
 </div>
 </div>
 
 <div class="footer footer-default">
-<p><a href="https://virtuelleakademie.github.io/gpt-nano">⤴️ KI/GPT in der Hochschule </a></p>
+<p><a href="../index.html">back to website ⤴️</a></p>
 </div>
 </section>
     </div>
