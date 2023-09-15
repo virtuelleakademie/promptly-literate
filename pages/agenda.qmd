@@ -3,3 +3,42 @@ title: "Agenda"
 ---
 <!-- In this workshop, we will investigate how Large Language Models (LLMs) are trained, how they produce text, and what they are capable of. We will also discuss similarities and differences between LLMs and human thought processes. As LLMs become increasingly human-like in their performance, it is important to develop effective ways to describe their behaviour. We will discuss high-level concepts that allow us think about LLMs without falling into the trap of anthropomorphism. -->
 <!-- TODO: fix schedule -->
+
+## 📖 Contents
+
+- What are large language models (LLMs)?
+- How are LLMs trained?
+- How do LLMs produce text?
+- What are effective prompting techniques?
+- How can I use LLMs for in educational settings?
+
+
+## 🎯 Learning outcomes
+:::{.callout-tip}
+## After this workshop, you will be able to:
+
+1) Explain how LLMs represent and generate text.
+2) Create effective prompts for LLMs.
+3) Design your own LLM-based educational activities.
+4) Critically evaluate LLM-based educational activities.
+:::
+
+## ⏱️ Schedule
+
+🕐 13:00 - 13:35 &nbsp;&nbsp;→&nbsp;&nbsp; 💬 Introduction <br>
+🕜 13:30 - 14:00 &nbsp;&nbsp;→&nbsp;&nbsp; 📺 Input 1: What are LLMs? <br>
+🕑 14:00 - 14:20 &nbsp;&nbsp;→&nbsp;&nbsp; 💼 Activity 1: Explore ChatGPT and Playground <br>
+🕝 14:20 - 14:45 &nbsp;&nbsp;→&nbsp;&nbsp; ⏸️: Break <br>
+🕒 14:50 - 15:15 &nbsp;&nbsp;→&nbsp;&nbsp; 📺 Input 2: Prompting techniques <br>
+🕞 15:15 - 15:45 &nbsp;&nbsp;→&nbsp;&nbsp; 💼 Activity 2: Explore prompting techniques <br>
+🕓 15:45 - 16:00 &nbsp;&nbsp;→&nbsp;&nbsp; ⏸️: Break <br>
+🕓 16:00 - 16:20 &nbsp;&nbsp;→&nbsp;&nbsp; 📺 Input 3: Prompting for learning and teaching <br>
+🕟 16:20 - 16:50 &nbsp;&nbsp;→&nbsp;&nbsp; 💼 Activity 3: Design your own LLM-based educational activity <br>
+🕔 16:50 - 17:00 &nbsp;&nbsp;→&nbsp;&nbsp; 💬 Idea generation and wrap-up
+
+
+## 🙋 Instructor
+
+- [**Andrew Ellis**](https://www.bfh.ch/en/about-bfh/people/a3xvoqozosua/): Andrew is a data scientist at the [Virtual Academy](https://virtuelleakademie.ch/) of the [Bern University of Applied Sciences](https://www.bfh.ch/). His background is in cognitive psychology and he is fascinated by the intersection of language, thought, and artificial intelligence.
+
+
