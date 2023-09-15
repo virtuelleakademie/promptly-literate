@@ -1,0 +1,5 @@
+---
+title: "Agenda"
+---
+<!-- In this workshop, we will investigate how Large Language Models (LLMs) are trained, how they produce text, and what they are capable of. We will also discuss similarities and differences between LLMs and human thought processes. As LLMs become increasingly human-like in their performance, it is important to develop effective ways to describe their behaviour. We will discuss high-level concepts that allow us think about LLMs without falling into the trap of anthropomorphism. -->
+<!-- TODO: fix schedule -->
