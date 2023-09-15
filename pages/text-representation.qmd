@@ -135,8 +135,8 @@ Here is an alternative similarity plot,  showing the general topic of each sente
 
 ```{python}
 topics = {"Greeting": 4, "Fruit": 3,
-          "Planets": 3, "Animals": 4,
-          "Art": 2}
+          "Planets": 3, "Animals": 3,
+          "Art": 3}
 topics_repeated = [key for key, value in topics.items() for i in range(value)]
 
 
