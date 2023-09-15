@@ -8,7 +8,7 @@ project:
     # - jupyter-demo.ipynb
 
 website:
-  title: "Exploring LLMs for Teaching and Learning"
+  title: "LLMs for Teaching and Learning"
   site-url: https://virtuelleakademie.github.io/promptly-literate
   repo-url: https://github.com/virtuelleakademie/promptly-literate
   # repo-actions: [edit, issue]
@@ -66,7 +66,7 @@ website:
       - text: "💼 Activities"
         menu:
           - text: "Activity 1: Exploring LLMs"
-            file: pages/activity-1-exploring-llms.qmd
+            file: pages/activity-1-explore-llms.qmd
           - text: "Activity 2: Prompting techniques"
             file: pages/activity-2-prompting-techniques.qmd
           - text: "Activity 3: Prompting for teaching and learning"
