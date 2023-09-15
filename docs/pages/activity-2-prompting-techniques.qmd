@@ -28,9 +28,24 @@ code-annotations: select
 ## Basic techniques
 
 
-In this activity, you can explore various prompting guides for GPT models. They more or less all converge on the same set of techniques:.
+In this activity, you can explore various prompting guides for GPT models. They more or less all converge on the same set of techniques.
 
-These are:
+## Tasks
+
+- Explore prompting, using both ChatGPT and the Playground. 
+- Try the PromptTools Playground.
+- Try out SPARK. This is a good deomonstration of using a knowledge base and document retrieval can allow you to create a QA tool.
+
+:::{.callout-tip}
+## Prompts
+
+Try revisiting the prompts you created in the previous activity. Given you current knowledge, can you improve them?
+:::
+
+
+## Prompting Guides
+
+The general techniques are:
 
 :::{.callout-note}
 ## Prompting Techniques
@@ -74,19 +89,6 @@ An example prompt for a chatbot might look like this:
 
 
 - [SPARK: a retrieval-augmented chatbot](https://huggingface.co/spaces/amagastya/SPARK). It uses various prompting guides as its knowledge base.
-
-
-## Tasks
-
-- Explore prompting, using both ChatGPT and the Playground. 
-- Try the PromptTools Playground.
-- Try out SPARK. This is a good deomonstration of using a knowledge base and document retrieval can allow you to create a QA tool.
-
-:::{.callout-tip}
-## Prompts
-
-Try revisiting the prompts you created in the previous activity. Given you current knowledge, can you improve them?
-:::
 
 
 

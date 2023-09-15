@@ -126,7 +126,7 @@ Plot.plot(
 )
 ```
 
-You can see that the sentences are grouped together by similarity. For example, the sentences about fruit are grouped together, and the sentences about planets are grouped together, in the sense that they are similar to each other.
+You can see that the sentences are grouped together by semantic similarity. For example, the sentences about fruit are grouped together, and the sentences about planets are grouped together, in the sense that they are similar to each other.
 
 
 This is important: embeddings capture the meaning of words and sentences, and are the basis of LLMs' ability to "understand" language. 
