@@ -193,7 +193,7 @@
     "href": "pages/prompting.html#tone-transformation",
     "title": "Prompting Programmatically",
     "section": "Tone transformation",
-    "text": "Tone transformation\n\nprompt = f\"\"\"\nTranslate the following from slang to a business letter: \n'Dude, This is Joe, check out this spec on this standing lamp.'\n\"\"\"\nresponse = get_completion(prompt)\nprint(response)\n\nDear Sir/Madam,\n\nI hope this letter finds you well. My name is Joe, and I am writing to bring your attention to a specification document regarding a standing lamp. \n\nI kindly request that you take a moment to review the attached spec, as it contains important details about the standing lamp in question. \n\nThank you for your time and consideration. I look forward to hearing from you soon.\n\nSincerely,\nJoe"
+    "text": "Tone transformation\n\nprompt = f\"\"\"\nTranslate the following from slang to a business letter: \n'Dude, This is Joe, check out this spec on this standing lamp.'\n\"\"\"\nresponse = get_completion(prompt)\nprint(response)\n\nDear Sir/Madam,\n\nI hope this letter finds you well. My name is Joe, and I am writing to bring your attention to a specification document regarding a standing lamp. \n\nI kindly request that you take a moment to review the attached document, as it provides detailed information about the features and specifications of the aforementioned standing lamp. \n\nThank you for your time and consideration. I look forward to discussing this further with you.\n\nYours sincerely,\nJoe"
   },
   {
     "objectID": "pages/prompting.html#proofreading-and-editing",
