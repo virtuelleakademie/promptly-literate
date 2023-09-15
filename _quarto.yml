@@ -57,8 +57,8 @@ website:
           #   file: pages/text-generation.ipynb
           # - text: "ChatGPT vs Playground"
           #   file: pages/chatgpt-playground.ipynb
-          # - text: "How to use LLMs: Prompting"
-          #   file: pages/prompting.qmd
+          - text: "Using the API: Prompting Programmatically"
+            file: pages/prompting.ipynb
           # - text: "Prompts for teaching and learning"
           #   file: pages/about.qmd
 
