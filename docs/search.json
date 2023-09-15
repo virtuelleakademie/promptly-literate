@@ -1285,7 +1285,7 @@
     "href": "slides/03-prompting-learning-teaching.html#providing-multiple-examples-and-explanations",
     "title": "Prompting for Learning and Teaching",
     "section": "Providing multiple examples and explanations",
-    "text": "Providing multiple examples and explanations\n\nIt is easier to understand complex concepts when exposed to a variety of examples – a single example may lead students to focus on superficial details instead of the core concept.\n\nMultiple examples promote deeper understanding, assist in recalling information, stimulate critical thinking.\nThis variety helps students generalize, enabling them to apply this learning in other contexts.\nCrafting suitable examples can be challenging for educators due to time constraints and the need to consider factors like relevance, engagement, and the right level of detail.\n\nSelect a specific concept.\nLoo up works related to the concept.\nSpecify the need for diverse examples.\nChoose the desired writing style.\nDefine the target audience."
+    "text": "Providing multiple examples and explanations\n\nIt is easier to understand complex concepts when exposed to a variety of examples – a single example may lead students to focus on superficial details instead of the core concept.\n\nMultiple examples promote deeper understanding, assist in recalling information, stimulate critical thinking.\nThis variety helps students generalize, enabling them to apply this learning in other contexts.\nCrafting suitable examples can be challenging for educators due to time constraints and the need to consider factors like relevance, engagement, and the right level of detail.\n\nSelect a specific concept.\nLook up works related to the concept.\nSpecify the need for diverse examples.\nChoose the desired writing style.\nDefine the target audience."
   },
   {
     "objectID": "pages/activity-3-prompting-learning-teaching.html#seven-approaches-for-ai-assisted-learning",
@@ -1405,5 +1405,33 @@
     "title": "Activity 3: Prompting for Learning and Teaching",
     "section": "Prompting for Learning",
     "text": "Prompting for Learning\nMollick and Mollick (2023b) explores how to use large language models (LLMs) in education as learning tools, while avoiding their risks and limitations. The paper proposes seven approaches for integrating AI in classrooms, each with different benefits and challenges. The paper also suggests practical strategies for students to learn with and about AI, such as being critical, active, and complementary to the AI’s output."
+  },
+  {
+    "objectID": "slides/04-reflection.html#idea-generation",
+    "href": "slides/04-reflection.html#idea-generation",
+    "title": "Idea Generation and Reflection",
+    "section": "Idea Generation",
+    "text": "Idea Generation\n\nIdeas for tools: Do you have any ideas that weren’t discussed in this workshop? What would you like to see in the future?\nOpportunities and challenges: What are the opportunities and challenges involved with using LLMs in educational settings?"
+  },
+  {
+    "objectID": "slides/04-reflection.html#thank-you",
+    "href": "slides/04-reflection.html#thank-you",
+    "title": "Idea Generation",
+    "section": "Thank you!",
+    "text": "Thank you!\n\n\nback to website ⤴️"
+  },
+  {
+    "objectID": "slides/04-reflection.html#thank-you-for-attending-this-workshop",
+    "href": "slides/04-reflection.html#thank-you-for-attending-this-workshop",
+    "title": "Idea Generation and Reflection",
+    "section": "Thank you for attending this workshop!",
+    "text": "Thank you for attending this workshop!\n  \n🌟 Your feedback matters! Please take 5 minutes to complete our 👉 evaluation form.\n\n\nback to website ⤴️"
+  },
+  {
+    "objectID": "slides/04-reflection.html#reflection",
+    "href": "slides/04-reflection.html#reflection",
+    "title": "Idea Generation and Reflection",
+    "section": "Reflection",
+    "text": "Reflection\n\nDo you feel confident in using LLMs in your educational practice? What would help you feel more confident?\nDo you feel that you understand how to apply LLMs?\nDo you feel confident in evaluating LLM-based tools?"
   }
 ]
