@@ -1,0 +1,110 @@
+---
+title: "Schedule"
+---
+<!-- In this workshop, we will investigate how Large Language Models (LLMs) are trained, how they produce text, and what they are capable of. We will also discuss similarities and differences between LLMs and human thought processes. As LLMs become increasingly human-like in their performance, it is important to develop effective ways to describe their behaviour. We will discuss high-level concepts that allow us think about LLMs without falling into the trap of anthropomorphism. -->
+<!-- TODO: fix schedule -->
+## Inhalt
+
+- Was sind Large Language Models (LLMs)?
+- Wie werden LLMs trainiert?
+- Wie generieren LLMs Texte?
+- Was sind Ähnlichkeiten und Unterschiede zwischen LLMs und menschlichem Denken?
+- Wie können wir LLMs benutzen?
+- Wie können wir LLMs beschreiben, ohne sie zu anthropomorphisieren?
+
+## Lernziele
+:::{.callout-tip}
+## Nach diesem Workshop:
+1) Kannst du mit Anfragen von Studierenden in Bezug auf fachspezifische KI-generierte Texte umgehen.
+2) Kannst du in eigenen Worten wiedergeben, wie KI-generierte Texte entstehen.
+3) Hast du Kriterien, anhand derer du KI-Tools beurteilen kannst.
+:::
+
+<!-- 
+- Modell
+- Zweck des Tools
+- Zielgruppe
+- Datenschutz
+- Herausgeber + Preismodell
+- Offenheit des Codes 
+-->
+
+## Program
+
+```{mermaid}
+flowchart LR
+  A(["Einleitung
+            5'"]) 
+  A -.-> B(["Reaktivationsrunde 
+                      10'"]) 
+  B -.-> C(["Input: Wie funktioniert ChatGPT? 
+                      30'"])
+  C -.-> D(["Vertiefung: Lernziele 1 + 2 
+                      15'"]) 
+  C -.-> E(["Vertiefung: Lernziel 3 
+                        15'"]) 
+  D -.-> F(["Verankern 
+                10'"]) 
+  E -.-> F
+  F -.-> G(["Diskussion 
+            15'"])
+```
+
+- __Einleitung [⏱️ 5']:__ Einstieg in den Workshop
+- __Reaktivationsrunde [⏱️ 10']:__ In diesem Teil tauschen die Teilnehmenden sich über ihre Erfahrungen mit KI-generierten Texten aus.
+- __Input: Wie funktioniert ChatGPT? [⏱️ 30']:__ Referat zum Thema künstliche Intelligenz und ChatGPT.
+- __Vertiefung [⏱️ 30']:__ In diesem Teil werden die oben genannten Lernziele vertieft (alleine, in Kleingruppen und im Plenum).
+
+- __Verankern [⏱️ 10']:__ In diesem Teil werden Erfahrungen zusammengefasst und reflektiert.
+- __Diskussion [⏱️ 15']:__ Am Ende des Workshops wird über die Erfahrungen und Erkenntnisse diskutiert.
+
+
+## Vorbereitung
+
+Löse folgende Aufgaben mit ChatGPT (oder Bing Chat):
+
+1.	Lasse ChatGPT ein Gedicht schreiben. Gebe Thema und Stil vor (z.B. "Hochschulbibliotheken und künstliche Intelligenz" im Stile des Sturm und Drang).
+2.	Lasse ChatGPT dir ein Konzept deines Fachbereichs in einem kurzen Textabschnitt vereinfachend erklären. 
+3.	Benutze ChatGPT, um zu einem Forschungsthema (z.B. "Was ist der Zusammenhang zwischen Sprache und Denken?") eine Literaturrecherche durchzuführen. Lasse dir eine kommentierte Liste von wissenschaftlichen Publikationen geben.
+4.	Lasse ChatGPT ein paar Mathe-Aufgaben lösen (z.B. "Was ist 89322/1313?")
+5.	Löse mit ChatGPT eine praktische Aufgabe: "Hier haben wir ein Buch, 9 Eier (ohne Eierkarton), einen Laptop, eine Flasche und einen Nagel. Bitte sag mir, wie ich sie stabil übereinander stapeln kann."
+
+
+
+<!-- ## Tutorials
+
+- [0: Instructions](instructions.qmd). Some instructions on the tools used in the workshop. It would be handy to read this before the workshop starts!
+- [1: What is ChatGPT and how does is work?](pages/chatgpt.qmd). A brief introduction to the ChatGPT model, and how it works.
+- [2: How do you use ChatGPT?](pages/prompting.qmd). A discussion of what can do, and how to use it correctly.
+- [3: Concepts for thinking about ChatGPT](pages/concepts.qmd). A discussion of how to think about ChatGPT, and how it is similar and different to human thought. -->
+
+<!-- ## Quick Start Guide
+
+Qui exercitation voluptate aute Lorem veniam do amet consequat cillum culpa consectetur ea laboris. Dolor occaecat nisi nulla officia occaecat ut enim incididunt non nisi officia duis sint eu. Ad anim aute eu est. Laboris consequat voluptate veniam Lorem voluptate est. Veniam qui cillum nulla ex pariatur non ex nisi ut deserunt quis magna voluptate deserunt occaecat. In mollit ipsum cupidatat nostrud cupidatat ut eiusmod. -->
+
+
+## Leitung
+
+- [Andrew Ellis](https://www.bfh.ch/en/about-bfh/people/a3xvoqozosua/): 
+Andrew ist Data Scientist an der [Virtuellen Akademie](https://virtuelleakademie.ch/) der [Berner Fachhochschule](https://www.bfh.ch/en/). Sein Hintergrund ist in den Kognitionswissenschaften und er ist begeistert von der Schnittstelle zwischen Sprache, Denken und künstlicher Intelligenz."
+
+
+<!-- ```{mermaid}
+journey
+    %% title Program
+    section Teil 1
+      Einführung: 3: Andrew
+    section Teil 2
+      Reaktivationsrunde: 7: Teilnehmer
+    section Teil 3
+      Wie funktioniert ChatGPT?: 4: Andrew
+    section Teil 4
+      Lernziele 1 + 2: 7: Teilnehmer
+      Lernziel 3: 7: Teilnehmer
+    section Teil 5
+      Ankern: 3: Andrew
+    section Teil 6
+      Diskussion: 7: Andrew, Teilnehmer
+``` -->
+
+
