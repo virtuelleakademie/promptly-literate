@@ -168,123 +168,67 @@
     "text": "Text embeddings are numerical representations of words, sentences or documents. They are used in many NLP tasks, such as sentiment analysis, machine translation, and question answering.\n\nEmbeddings should capture features of words or concepts, and relationships between these.\nA sentence embedding is just like a word embedding, except it associates every sentence with a vector full of numbers, capturing similarities between sentences.\nThe key idea is that words/sentences with similar meanings will have similar vectors. This is useful for many tasks in natural language processing, such as sentiment analysis, machine translation, and question answering.\n\nYou can read more about text embeddings in this 👉 post.\nThe following is an example of sentence embeddings, showing the distance between sentences. The distance is calculated using the dot product (cosine similarity) of the embeddings.\n\n\nCode\nfrom langchain.embeddings.openai import OpenAIEmbeddings\nembedding = OpenAIEmbeddings()\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nfrom pyobsplot import Plot, d3, Math, js\n\n\n\n\nCode\nsentences = [\n    \"Good morning, how are you?\",\n    \"I am doing well, how about you?\",\n    \"Hi, how are you doing today?\",\n    \"Hey, what's up?\",\n    \"I like apples.\",\n    \"One of my daughters doesn't like kiwis.\",\n    \"The other doesn't like bananas.\",\n    \"The earth is the third planet from the sun.\",\n    \"The moon is a natural satellite of the earth.\",\n    \"Jupiter is the fifth planet from the Sun and the largest in the Solar System.\",\n    \"The humpback whale is renowned for its enchanting songs, which are believed to serve various purposes, including communication, mating, and navigation during migration.\",\n    \"Dolphins, highly intelligent marine mammals, communicate with each other using a complex system of clicks, whistles, and body language, enabling them to work together in hunting and navigation.\",\n    \"The honeybee, through its pollination efforts, plays a vital role in agriculture, contributing to the growth of many of the fruits and vegetables humans rely on for sustenance.\",\n    \"The Large Plane Trees, also known as Road Menders at Saint-Rémy, is an oil-on-canvas painting by Vincent van Gogh.\",\n    \"Pablo Picasso's Guernica, an iconic mural-sized oil painting, stands as a poignant representation of the horrors of war.\",\n    \"This powerful artwork was created in response to the bombing of the town of Guernica during the Spanish Civil War.\"\n]\n\n\n\n\nCode\nembeddings = np.array([embedding.embed_query(sentence) for sentence in sentences])\n\ndot_product_matrix = np.dot(embeddings, embeddings.T)\n\ndf = pd.DataFrame(dot_product_matrix, columns=range(1, len(embeddings)+1))\n\ndf['embedding_index'] = range(1, len(embeddings)+1)\n\ndf = df.melt(id_vars=['embedding_index'], var_name='embedding_index_2', value_name='similarity')\n\n\n\n\n\n\n\n\n\n\n\nSentences\n\n\n\n\n1\nGood morning, how are you?\n\n\n2\nI am doing well, how about you?\n\n\n3\nHi, how are you doing today?\n\n\n4\nHey, what's up?\n\n\n5\nI like apples.\n\n\n6\nOne of my daughters doesn't like kiwis.\n\n\n7\nThe other doesn't like bananas.\n\n\n8\nThe earth is the third planet from the sun.\n\n\n9\nThe moon is a natural satellite of the earth.\n\n\n10\nJupiter is the fifth planet from the Sun and the largest in the Solar System.\n\n\n11\nThe humpback whale is renowned for its enchanting songs, which are believed to serve various purposes, including communication, mating, and navigation during migration.\n\n\n12\nDolphins, highly intelligent marine mammals, communicate with each other using a complex system of clicks, whistles, and body language, enabling them to work together in hunting and navigation.\n\n\n13\nThe honeybee, through its pollination efforts, plays a vital role in agriculture, contributing to the growth of many of the fruits and vegetables humans rely on for sustenance.\n\n\n14\nThe Large Plane Trees, also known as Road Menders at Saint-Rémy, is an oil-on-canvas painting by Vincent van Gogh.\n\n\n15\nPablo Picasso's Guernica, an iconic mural-sized oil painting, stands as a poignant representation of the horrors of war.\n\n\n16\nThis powerful artwork was created in response to the bombing of the town of Guernica during the Spanish Civil War.\n\n\n\n\n\n\n\n\n\nCode\nPlot.plot(\n    {\n        \"height\": 640,\n        \"padding\": 0.05,\n        \"grid\": True,\n        \"x\": {\"axis\": \"top\", \"label\": \"Embedding Index\"},\n        \"y\": {\"label\": \"Embedding Index\"},\n        \"color\": {\"type\": \"linear\", \"scheme\": \"PiYG\"},\n        \"marks\": [\n            Plot.cell(\n                df,\n                {\"x\": \"embedding_index\", \"y\": \"embedding_index_2\", \"fill\": \"similarity\", \"tip\": True},\n            ),\n            Plot.text(\n                df,\n                {\n                    \"x\": \"embedding_index\",\n                    \"y\": \"embedding_index_2\",\n                    \"text\": js(\"d =&gt; d.similarity.toFixed(2)\"),\n                    \"title\": \"title\"\n                },\n            ),\n        ],\n    }\n)\n\n\n\n\n\nYou can see that the sentences are grouped together by similarity. For example, the sentences about fruit are grouped together, and the sentences about planets are grouped together, in the sense that they are similar to each other.\nThis is important: embeddings capture the meaning of words and sentences, and are the basis of LLMs’ ability to “understand” language.\nHere is an alternative similarity plot, showing the general topic of each sentence.\n\n\nCode\ntopics = {\"Greeting\": 4, \"Fruit\": 3,\n          \"Planets\": 3, \"Animals\": 3,\n          \"Art\": 3}\ntopics_repeated = [key for key, value in topics.items() for i in range(value)]\n\n\n# Create the similarity matrix\nembeddings = np.array([embedding.embed_query(sentence) for sentence in sentences])\ndot_product_matrix = np.dot(embeddings, embeddings.T)\n\n# Create the heatmap\nfig, ax = plt.subplots()\nim = ax.imshow(dot_product_matrix)\n\n# Set the x and y axis labels\nax.set_xticks(np.arange(len(sentences)))\nax.set_yticks(np.arange(len(sentences)))\nax.set_xticklabels(topics_repeated)\nax.set_yticklabels(topics_repeated)\n\n# Rotate the x axis labels\nplt.setp(ax.get_xticklabels(), rotation=45, ha=\"right\", rotation_mode=\"anchor\")\n\n# Add a colorbar\ncbar = ax.figure.colorbar(im, ax=ax)\n\n# Show the plot\nplt.show()"
   },
   {
-    "objectID": "pages/prompting.html",
-    "href": "pages/prompting.html",
-    "title": "Prompting Programmatically",
+    "objectID": "pages/resources.html",
+    "href": "pages/resources.html",
+    "title": "LLMs for Teaching and Learning",
     "section": "",
-    "text": "import openai\nimport os\n\nfrom dotenv import load_dotenv, find_dotenv\n_ = load_dotenv(find_dotenv())\n\nopenai.api_key  = os.getenv('OPENAI_API_KEY')\n\nfrom IPython.display import display, Markdown, Latex, HTML, JSON\ndef get_completion(prompt, model=\"gpt-3.5-turbo\", temperature=0.0):\n    messages = [{\"role\": \"user\", \"content\": prompt}]\n    response = openai.ChatCompletion.create(\n        model=model,\n        messages=messages,\n        temperature=temperature\n    )\n    return response.choices[0].message[\"content\"]"
+    "text": "👉🏼 KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus\n👉🏼 KI-basierte Schreibtools in der Lehre – Knowledge Base"
   },
   {
-    "objectID": "pages/prompting.html#prompting-principles",
-    "href": "pages/prompting.html#prompting-principles",
-    "title": "Prompting Programmatically",
-    "section": "Prompting Principles",
-    "text": "Prompting Principles\n\nPrinciple 1: Write clear and specific instructions\nPrinciple 2: Give the model time to “think”\n\n\nTactics\n\nTactic 1: Use delimiters to clearly indicate distinct parts of the input\n\nDelimiters can be anything, such as: ``, \"\"\", &lt; &gt;, ,:`\n\n\ntext = f\"\"\"\nYou should express what you want a model to do by \\ \nproviding instructions that are as clear and \\ \nspecific as you can possibly make them. \\ \nThis will guide the model towards the desired output, \\ \nand reduce the chances of receiving irrelevant \\ \nor incorrect responses. Don't confuse writing a \\ \nclear prompt with writing a short prompt. \\ \nIn many cases, longer prompts provide more clarity \\ \nand context for the model, which can lead to \\ \nmore detailed and relevant outputs.\n\"\"\"\nprompt = f\"\"\"\nSummarize the text delimited by triple backticks \\ \ninto a single sentence.\n```{text}```\n\"\"\"\nresponse = get_completion(prompt)\nprint(response)\n\nTo guide a model towards the desired output and reduce irrelevant or incorrect responses, it is important to provide clear and specific instructions, which can be achieved through longer prompts that offer more clarity and context.\n\n\n\n\nTactic 4: “Few-shot” prompting\n\nprompt = f\"\"\"\nYour task is to answer in a consistent style.\n\n&lt;child&gt;: Teach me about patience.\n\n&lt;grandparent&gt;: The river that carves the deepest \\ \nvalley flows from a modest spring; the \\ \ngrandest symphony originates from a single note; \\ \nthe most intricate tapestry begins with a solitary thread.\n\n&lt;child&gt;: Teach me about resilience.\n\"\"\"\nresponse = get_completion(prompt)\nprint(response)\n\n&lt;grandparent&gt;: Resilience is like a mighty oak tree that withstands the strongest storms, bending but never breaking. It is the unwavering determination to rise again after every fall, and the ability to find strength in the face of adversity. Just as a diamond is formed under immense pressure, resilience is forged through challenges and hardships, making us stronger and more resilient in the process."
+    "objectID": "pages/resources.html#ki-orientierungshilfe-der-bfh",
+    "href": "pages/resources.html#ki-orientierungshilfe-der-bfh",
+    "title": "LLMs for Teaching and Learning",
+    "section": "",
+    "text": "👉🏼 KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus\n👉🏼 KI-basierte Schreibtools in der Lehre – Knowledge Base"
   },
   {
-    "objectID": "pages/prompting.html#sentment-analysis",
-    "href": "pages/prompting.html#sentment-analysis",
-    "title": "Prompting Programmatically",
-    "section": "Sentment Analysis",
-    "text": "Sentment Analysis\n\nlamp_review = \"\"\"\nNeeded a nice lamp for my bedroom, and this one had \\\nadditional storage and not too high of a price point. \\\nGot it fast.  The string to our lamp broke during the \\\ntransit and the company happily sent over a new one. \\\nCame within a few days as well. It was easy to put \\\ntogether.  I had a missing part, so I contacted their \\\nsupport and they very quickly got me the missing piece! \\\nLumina seems to me to be a great company that cares \\\nabout their customers and products!!\n\"\"\"\n\n\nprompt = f\"\"\"\nWhat is the sentiment of the following product review, \nwhich is delimited with triple backticks?\n\nReview text: '''{lamp_review}'''\n\"\"\"\nresponse = get_completion(prompt)\nprint(response)\n\nThe sentiment of the product review is positive."
+    "objectID": "pages/resources.html#chatgpt-an-der-hochschule",
+    "href": "pages/resources.html#chatgpt-an-der-hochschule",
+    "title": "LLMs for Teaching and Learning",
+    "section": "ChatGPT an der Hochschule",
+    "text": "ChatGPT an der Hochschule\n👉🏼 Überblick über KI-Tools im Kontext von akademischen Lese- und Schreibprozessen\n👉🏼 ChatGPT im Hochschulkontext – eine kommentierte Linksammlung\n👉🏼 Uni Bern: Chatbots in der Hochschullehre"
   },
   {
-    "objectID": "pages/prompting.html#tone-transformation",
-    "href": "pages/prompting.html#tone-transformation",
-    "title": "Prompting Programmatically",
-    "section": "Tone transformation",
-    "text": "Tone transformation\n\nprompt = f\"\"\"\nTranslate the following from slang to a business letter: \n'Dude, This is Joe, check out this spec on this standing lamp.'\n\"\"\"\nresponse = get_completion(prompt)\nprint(response)\n\nDear Sir/Madam,\n\nI hope this letter finds you well. My name is Joe, and I am writing to bring your attention to a specification document regarding a standing lamp. \n\nI kindly request that you take a moment to review the attached document, as it provides detailed information about the features and qualities of the aforementioned standing lamp. \n\nThank you for your time and consideration. I look forward to discussing this matter further with you.\n\nYours sincerely,\nJoe"
+    "objectID": "pages/resources.html#wissenschaftliches-arbeiten",
+    "href": "pages/resources.html#wissenschaftliches-arbeiten",
+    "title": "LLMs for Teaching and Learning",
+    "section": "Wissenschaftliches Arbeiten",
+    "text": "Wissenschaftliches Arbeiten\n👉🏼 ChatGPT zitieren"
   },
   {
-    "objectID": "pages/prompting.html#proofreading-and-editing",
-    "href": "pages/prompting.html#proofreading-and-editing",
-    "title": "Prompting Programmatically",
-    "section": "Proofreading and editing",
-    "text": "Proofreading and editing\n\ntext = f\"\"\"\nGot this for my daughter for her birthday cuz she keeps taking \\\nmine from my room.  Yes, adults also like pandas too.  She takes \\\nit everywhere with her, and it's super soft and cute.  One of the \\\nears is a bit lower than the other, and I don't think that was \\\ndesigned to be asymmetrical. It's a bit small for what I paid for it \\\nthough. I think there might be other options that are bigger for \\\nthe same price.  It arrived a day earlier than expected, so I got \\\nto play with it myself before I gave it to my daughter.\n\"\"\"\nprompt = f\"proofread and correct this review: ```{text}```\"\nresponse = get_completion(prompt)\nprint(response)\n\nGot this for my daughter for her birthday because she keeps taking mine from my room. Yes, adults also like pandas too. She takes it everywhere with her, and it's super soft and cute. However, one of the ears is a bit lower than the other, and I don't think that was designed to be asymmetrical. Additionally, it's a bit small for what I paid for it. I believe there might be other options that are bigger for the same price. On the positive side, it arrived a day earlier than expected, so I got to play with it myself before I gave it to my daughter.\n\n\n\nfrom redlines import Redlines\n\ndiff = Redlines(text,response)\ndisplay(Markdown(diff.output_markdown))\n\nGot this for my daughter for her birthday cuz because she keeps taking mine from my room. room. Yes, adults also like pandas too. too. She takes it everywhere with her, and it’s super soft and cute. One cute. However, one of the ears is a bit lower than the other, and I don’t think that was designed to be asymmetrical. It’s Additionally, it’s a bit small for what I paid for it though. it. I think believe there might be other options that are bigger for the same price. It price. On the positive side, it arrived a day earlier than expected, so I got to play with it myself before I gave it to my daughter.\n\n\n\nprompt = f\"\"\"\nproofread and correct this review. Make it more compelling. \nEnsure it follows APA style guide and targets an advanced reader. \nOutput in markdown format.\nText: ```{text}```\n\"\"\"\nresponse = get_completion(prompt)\ndisplay(Markdown(response))\n\nReview of the Panda Plush Toy: A Perfect Gift for All Ages\nI purchased this delightful panda plush toy as a birthday gift for my daughter, who has a penchant for “borrowing” my belongings from my room. As an adult, I must admit that I too have fallen in love with this adorable creature.\nThe first thing that struck me about this plush toy is its exceptional softness. It is an absolute pleasure to touch and hold, providing a comforting and soothing experience. Its cuteness is undeniable, making it an instant favorite for my daughter.\nHowever, I did notice a minor flaw in the design. One of the ears appears to be slightly lower than the other, which seems unintentional as the intention was not to create an asymmetrical look. Despite this small imperfection, the overall quality of the toy remains impressive.\nWhile the panda plush toy is undeniably charming, I must mention that it is smaller than I anticipated given its price. I believe there may be other options available in the market that offer a larger size for the same price.\nOn a positive note, the delivery of the toy exceeded my expectations. It arrived a day earlier than the estimated delivery date, allowing me to indulge in some playtime with it before presenting it to my daughter. This unexpected bonus added to the overall excitement and joy surrounding the gift.\nIn conclusion, the panda plush toy is a delightful and endearing gift suitable for individuals of all ages. Its softness, cuteness, and portability make it a perfect companion for any occasion. While it may be smaller than expected, the superior quality and early delivery compensate for this minor drawback. I highly recommend this panda plush toy to anyone seeking a charming and lovable addition to their collection."
+    "objectID": "pages/resources.html#rechtliche-fragen",
+    "href": "pages/resources.html#rechtliche-fragen",
+    "title": "LLMs for Teaching and Learning",
+    "section": "Rechtliche Fragen",
+    "text": "Rechtliche Fragen\n👉🏼 Didaktische Und Rechtliche Perspektiven Auf Ki-Gestütztes Schreiben In Der Hochschulbildung (Salden 2023)"
   },
   {
-    "objectID": "pages/observable-test.html",
-    "href": "pages/observable-test.html",
+    "objectID": "pages/resources.html#ethische-fragen",
+    "href": "pages/resources.html#ethische-fragen",
+    "title": "LLMs for Teaching and Learning",
+    "section": "Ethische Fragen",
+    "text": "Ethische Fragen\n👉🏼 Prekäre Klickarbeit hinter den Kulissen von ChatGPT\n👉🏼 Traumatische Klickarbeit: Die Menschen hinter ChatGPT"
+  },
+  {
+    "objectID": "pages/programme.html",
+    "href": "pages/programme.html",
+    "title": "Programme",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "pages/observable-1.html",
+    "href": "pages/observable-1.html",
     "title": "Untitled",
     "section": "",
-    "text": "x\n\n\n\n\n\n\n\nx = c(1,2,3,4)\nojs_define(x)\n\n\n\n\n Back to top"
+    "text": "ojs_define(data = palmerpenguins::penguins)\n\n\nviewof bill_length_min = Inputs.range(\n  [32, 50], \n  {value: 35, step: 1, label: \"Bill length (min):\"}\n)\nviewof islands = Inputs.checkbox(\n  [\"Torgersen\", \"Biscoe\", \"Dream\"], \n  { value: [\"Torgersen\", \"Biscoe\"], \n    label: \"Islands:\"\n  }\n)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfiltered = transpose(data).filter(function(penguin) {\n  return bill_length_min &lt; penguin.bill_length_mm &&\n         islands.includes(penguin.island);\n})\n\n\n\n\n\n\n\nPlot.rectY(filtered, \n  Plot.binX(\n    {y: \"count\"}, \n    {x: \"body_mass_g\", fill: \"species\", thresholds: 20}\n  ))\n  .plot({\n    facet: {\n      data: filtered,\n      x: \"sex\",\n      y: \"species\",\n      marginRight: 80\n    },\n    marks: [\n      Plot.frame(),\n    ]\n  }\n)\n\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "pages/index.html",
-    "href": "pages/index.html",
-    "title": "Index page",
+    "objectID": "pages/beispiel-arbeit.html",
+    "href": "pages/beispiel-arbeit.html",
+    "title": "LLMs for Teaching and Learning",
     "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "pages/assistant.html",
-    "href": "pages/assistant.html",
-    "title": "Assistent der Virtuellen Akademie",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "pages/activity-2-prompting-techniques.html",
-    "href": "pages/activity-2-prompting-techniques.html",
-    "title": "Activity 2: Basic Prompting Techniques",
-    "section": "",
-    "text": "In this activity, you can explore various prompting guides for GPT models. They more or less all converge on the same set of techniques:.\nThese are:\n\n\n\n\n\n\nPrompting Techniques\n\n\n\n\nNumbered Steps: For sequential tasks.\nDelimiters: To separate info (e.g. \", `,, ', |, #, …).\nFew-shot prompting: Use a few examples for guidance.\nChain-of-thought: Interconnected prompts.\nRole-based: Make the model assume a role (e.g. act like a tutor or advisor).\nSuccess Tip: Iterate and refine prompts for peak performance.\n\n\n\nCombining these techniques, a template prompt for an LMM might look like this:\n\n\n\n\n\n\nNote\n\n\n\n\nRole: who is being simulated?\nTask: what is to be done?\nSteps: what are the steps to complete the task?\nContext: what is the context of the task?\nGoal: what is the goal of the task?\nFormat: what is the format of the output?\n\n\n\nAn example prompt for a chatbot might look like this:\n\n\n\n\n\n\nFeedback on a text\n\n\n\nI want you to act as a harsh critic. Criticize what I give to you and show me where my argumentation is lacking. Start by asking me what text I would like feedback on. Then ask me questions about my context to create the best feedback possible. If you feel you have all the context necessary, think step by step when creating your feedback."
-  },
-  {
-    "objectID": "pages/activity-2-prompting-techniques.html#basic-techniques",
-    "href": "pages/activity-2-prompting-techniques.html#basic-techniques",
-    "title": "Activity 2: Basic Prompting Techniques",
-    "section": "",
-    "text": "In this activity, you can explore various prompting guides for GPT models. They more or less all converge on the same set of techniques:.\nThese are:\n\n\n\n\n\n\nPrompting Techniques\n\n\n\n\nNumbered Steps: For sequential tasks.\nDelimiters: To separate info (e.g. \", `,, ', |, #, …).\nFew-shot prompting: Use a few examples for guidance.\nChain-of-thought: Interconnected prompts.\nRole-based: Make the model assume a role (e.g. act like a tutor or advisor).\nSuccess Tip: Iterate and refine prompts for peak performance.\n\n\n\nCombining these techniques, a template prompt for an LMM might look like this:\n\n\n\n\n\n\nNote\n\n\n\n\nRole: who is being simulated?\nTask: what is to be done?\nSteps: what are the steps to complete the task?\nContext: what is the context of the task?\nGoal: what is the goal of the task?\nFormat: what is the format of the output?\n\n\n\nAn example prompt for a chatbot might look like this:\n\n\n\n\n\n\nFeedback on a text\n\n\n\nI want you to act as a harsh critic. Criticize what I give to you and show me where my argumentation is lacking. Start by asking me what text I would like feedback on. Then ask me questions about my context to create the best feedback possible. If you feel you have all the context necessary, think step by step when creating your feedback."
-  },
-  {
-    "objectID": "pages/activity-2-prompting-techniques.html#explore-prompting-guides",
-    "href": "pages/activity-2-prompting-techniques.html#explore-prompting-guides",
-    "title": "Activity 2: Basic Prompting Techniques",
-    "section": "Explore Prompting Guides",
-    "text": "Explore Prompting Guides\n\nLearn prompting: An incredibly comprehensive (and free) guide aimed at non-technical users.\nPrompting guide: This is an excellent prompting guide by DAIR.AI (Democratizing Artificial Intelligence Research, Education, and Technologies). The guide is licensed under an MIT license.\nPromptTools Playground: a web app that lets you play with various prompting techniques. You can use different LLMs, and even compare the results.\nSPARK: a retrieval-augmented chatbot. It uses various prompting guides as its knowledge base."
-  },
-  {
-    "objectID": "pages/activity-2-prompting-techniques.html#tasks",
-    "href": "pages/activity-2-prompting-techniques.html#tasks",
-    "title": "Activity 2: Basic Prompting Techniques",
-    "section": "Tasks",
-    "text": "Tasks\n\nExplore prompting, using both ChatGPT and the Playground.\nTry the PromptTools Playground.\nTry out SPARK. This is a good deomonstration of using a knowledge base and document retrieval can allow you to create a QA tool.\n\n\n\n\n\n\n\nPrompts\n\n\n\nTry revisiting the prompts you created in the previous activity. Given you current knowledge, can you improve them?\n\n\n\n\n\n\n\n\nDiscussion 💬\n\n\n\n\nWhat experiences did you have with prompting?\nDid you find any of the techniques particularly useful?"
-  },
-  {
-    "objectID": "pages/about.html",
-    "href": "pages/about.html",
-    "title": "Virtuelle Akademie",
-    "section": "",
-    "text": "KI-basierte Schreibtools in der Lehre\n\n\n\nKünstliche Intelligenz (KI) hat das Potenzial, das Bildungswesen grundlegend zu verändern. In diesem Workshop werden wir die Rolle von KI in der Lehre erkunden, mit besonderem Fokus auf den Einsatz von KI-basierten Schreibtools.\nInhalte:\n\nWas ist künstliche Intelligenz? Wie funktionieren Tools wie ChatGPT?\nWie kommuniziere ich mit KI-Schreibtools? Wie schreibe ich gute Prompts?\n\nAnwendungsbeispiele von KI in der Lehre\n\nNächste Termine:\n\n15.September 2023, 13-17 Uhr\n27.Oktober 2023, 13-17 Uhr\n\n👉 www.bfh.ch/de/weiterbildung/kurse/ki-schreibtools\n\n\n\n\n\n\n\n\nKI-Sprechstunden\n\n\n\nHast du Fragen zum Umgang mit Künstlicher Intelligenz (KI) in der Lehre? Dann schau vorbei oder logge dich ein. Ohne Anmeldung.\nNächste Termine:\n\n17. August 2023, 16-18 Uhr\n\nNovember 2023, 15-17 Uhr\n\n\n👉 virtuelleakademie.ch/beratungen-coachings:"
-  },
-  {
-    "objectID": "pages/about.html#ki-kurse-der-virtuellen-akademie",
-    "href": "pages/about.html#ki-kurse-der-virtuellen-akademie",
-    "title": "Virtuelle Akademie",
-    "section": "",
-    "text": "KI-basierte Schreibtools in der Lehre\n\n\n\nKünstliche Intelligenz (KI) hat das Potenzial, das Bildungswesen grundlegend zu verändern. In diesem Workshop werden wir die Rolle von KI in der Lehre erkunden, mit besonderem Fokus auf den Einsatz von KI-basierten Schreibtools.\nInhalte:\n\nWas ist künstliche Intelligenz? Wie funktionieren Tools wie ChatGPT?\nWie kommuniziere ich mit KI-Schreibtools? Wie schreibe ich gute Prompts?\n\nAnwendungsbeispiele von KI in der Lehre\n\nNächste Termine:\n\n15.September 2023, 13-17 Uhr\n27.Oktober 2023, 13-17 Uhr\n\n👉 www.bfh.ch/de/weiterbildung/kurse/ki-schreibtools\n\n\n\n\n\n\n\n\nKI-Sprechstunden\n\n\n\nHast du Fragen zum Umgang mit Künstlicher Intelligenz (KI) in der Lehre? Dann schau vorbei oder logge dich ein. Ohne Anmeldung.\nNächste Termine:\n\n17. August 2023, 16-18 Uhr\n\nNovember 2023, 15-17 Uhr\n\n\n👉 virtuelleakademie.ch/beratungen-coachings:"
-  },
-  {
-    "objectID": "pages/activity-1-explore-llms.html",
-    "href": "pages/activity-1-explore-llms.html",
-    "title": "Activity 1: Exploring LLMs",
-    "section": "",
-    "text": "ChatGPT\nOpenAI Playground\nBing Chat\nGoogle Bard\nLlama2\nGoose AI\n\nNow we will explore two different interfaces to the same underlying OpenAI language models. These are GPT-3.5-turbo and GPT-4. The first is a smaller model (fewer parameters), whereas the second is the most advanced model (more parameters).\nGPT-4 is only accessible to paid customers.\nBoth of these models are trained on the same data, but the second is larger and more powerful. Both are optimized for conversations, and are capable of a wide variety of tasks. However, GPT-4 generally performs better, especially at tasks requiring more complex reasoning, and at following instructions. The differences between models are described in this article.\nOne of the most important differences is the context length that the models can handle. GPT-4 can process much more context than GPT-3.5-turbo.\n\nGPT-3.5-turbo can process a context of 4097 tokens (~3073 words) or 16’000 tokens (~12’000 words).\nGPT-4 comes in two varieties: 8192 tokens (~6144 words ) or 32’768 tokens (~25’000 words).\n\nHowever: ChatGPT only allows shorter context lengths; to get the full context length, you have to use the API (or playground).\nGeneral capabilities of the models include:\n\nLLMs are few-shot learners, meaning they can learn from a small number of examples.\nLLMs are zero-shot learners, meaning they can perform tasks without any examples, given appropriate instructions.\nreasoning\nwriting code in common programming languages\ntranslating between languages\nbasic mathematical abilities\n\nBubeck et al. (2023) give a fascinating summary of tasks that GPT-4 is lcaimed to be capable of.\nBoth models function in the same basic way (in a conversation): the entire previous conversation is fed into the model as context (prompt), and the model generates a response (token by token).\nIf you feel that the conversation has taken a wrong turn, you can edit your message, and the conversation will be re-generated from that point.\n\n\nThis is a simple interface to the GPT-3.5-turbo and GPT-4 models. It does not offer any possibility of adjusting the parameters of the model, but it does allow you to enter a prompt, and then to interact with the model.\nNotable features: - In the paid version, you can choose between GPT-3.5-turbo and GPT-4. - GPT-4 offers plugins. These can give the assistant access to a wide variety of sources of information, including databases, APIs, and web scraping. A very useful plugin is the Wolfram Alpha plugin, which allows the assistant to compute answers based on facts and mathematical knowledge. - GPT-4 and Advanced Data Analysis plugin; this gives the model the ability to run python code and display the results.\n\n\n\nThis is a more advanced interface to the GPT-3.5-turbo and GPT-4 models. It allows you to adjust the parameters of the model, and to enter different types of prompts, and then to interact with the model. It also allows you to use the full context lengths (8k, 16k or 32k tokens), meaning that you can process much longer texts.\nFurthermore, it allows you to save your prompts as presets to reuse them or to share them with others.\n\n\nThe playground offers the following parameters:\n\nMode: Currently only Chat\nModel: GPT-3.5-turbo or GPT-4 with varying context lengths.\nTemperature: This is the most interesting parameter - it controls the level of randomness. A setting of 0 means that the model will sample text deterministically (it will always choose the most probable next token), higher settings make the model’s output increasingly more random.\nMaximum length: controls the length of the output text.\nStop sequences: characters telling the model to stop generating text.\nTop P: tells the model to consider only subset of most probable tokens when generating. Use temperature instead.\nFrequency penalty: penalizes the model based on number of times that token has appeared.\nPresence penalty: penalizes the model for based on whether they have already appeared. Encourages diversity of tokens.\n\nIn general, the only parameters that you need to adjust are temperature and (possibly) maximum length.\nIf you want to read more about the temperature parameter, see the following article 👉 Temperature.\n1 and 2 are also interesting.\n\n\n\nThe playground offers three types of messages: system, user and assistant messages.\nThese system and user messages are both fed into the model as context, but they are treated differently; the system message is not part of the conversation. The idea is that the system message is a prompt that is not visible to the user, i.e. it can be hidden when building a chatbot.\nThe user and assistant messages are displayed in the conversation. The assistant messages are generated by the model, and the user messages are entered by the user."
-  },
-  {
-    "objectID": "pages/activity-1-explore-llms.html#models",
-    "href": "pages/activity-1-explore-llms.html#models",
-    "title": "Activity 1: Exploring LLMs",
-    "section": "",
-    "text": "ChatGPT\nOpenAI Playground\nBing Chat\nGoogle Bard\nLlama2\nGoose AI\n\nNow we will explore two different interfaces to the same underlying OpenAI language models. These are GPT-3.5-turbo and GPT-4. The first is a smaller model (fewer parameters), whereas the second is the most advanced model (more parameters).\nGPT-4 is only accessible to paid customers.\nBoth of these models are trained on the same data, but the second is larger and more powerful. Both are optimized for conversations, and are capable of a wide variety of tasks. However, GPT-4 generally performs better, especially at tasks requiring more complex reasoning, and at following instructions. The differences between models are described in this article.\nOne of the most important differences is the context length that the models can handle. GPT-4 can process much more context than GPT-3.5-turbo.\n\nGPT-3.5-turbo can process a context of 4097 tokens (~3073 words) or 16’000 tokens (~12’000 words).\nGPT-4 comes in two varieties: 8192 tokens (~6144 words ) or 32’768 tokens (~25’000 words).\n\nHowever: ChatGPT only allows shorter context lengths; to get the full context length, you have to use the API (or playground).\nGeneral capabilities of the models include:\n\nLLMs are few-shot learners, meaning they can learn from a small number of examples.\nLLMs are zero-shot learners, meaning they can perform tasks without any examples, given appropriate instructions.\nreasoning\nwriting code in common programming languages\ntranslating between languages\nbasic mathematical abilities\n\nBubeck et al. (2023) give a fascinating summary of tasks that GPT-4 is lcaimed to be capable of.\nBoth models function in the same basic way (in a conversation): the entire previous conversation is fed into the model as context (prompt), and the model generates a response (token by token).\nIf you feel that the conversation has taken a wrong turn, you can edit your message, and the conversation will be re-generated from that point.\n\n\nThis is a simple interface to the GPT-3.5-turbo and GPT-4 models. It does not offer any possibility of adjusting the parameters of the model, but it does allow you to enter a prompt, and then to interact with the model.\nNotable features: - In the paid version, you can choose between GPT-3.5-turbo and GPT-4. - GPT-4 offers plugins. These can give the assistant access to a wide variety of sources of information, including databases, APIs, and web scraping. A very useful plugin is the Wolfram Alpha plugin, which allows the assistant to compute answers based on facts and mathematical knowledge. - GPT-4 and Advanced Data Analysis plugin; this gives the model the ability to run python code and display the results.\n\n\n\nThis is a more advanced interface to the GPT-3.5-turbo and GPT-4 models. It allows you to adjust the parameters of the model, and to enter different types of prompts, and then to interact with the model. It also allows you to use the full context lengths (8k, 16k or 32k tokens), meaning that you can process much longer texts.\nFurthermore, it allows you to save your prompts as presets to reuse them or to share them with others.\n\n\nThe playground offers the following parameters:\n\nMode: Currently only Chat\nModel: GPT-3.5-turbo or GPT-4 with varying context lengths.\nTemperature: This is the most interesting parameter - it controls the level of randomness. A setting of 0 means that the model will sample text deterministically (it will always choose the most probable next token), higher settings make the model’s output increasingly more random.\nMaximum length: controls the length of the output text.\nStop sequences: characters telling the model to stop generating text.\nTop P: tells the model to consider only subset of most probable tokens when generating. Use temperature instead.\nFrequency penalty: penalizes the model based on number of times that token has appeared.\nPresence penalty: penalizes the model for based on whether they have already appeared. Encourages diversity of tokens.\n\nIn general, the only parameters that you need to adjust are temperature and (possibly) maximum length.\nIf you want to read more about the temperature parameter, see the following article 👉 Temperature.\n1 and 2 are also interesting.\n\n\n\nThe playground offers three types of messages: system, user and assistant messages.\nThese system and user messages are both fed into the model as context, but they are treated differently; the system message is not part of the conversation. The idea is that the system message is a prompt that is not visible to the user, i.e. it can be hidden when building a chatbot.\nThe user and assistant messages are displayed in the conversation. The assistant messages are generated by the model, and the user messages are entered by the user."
-  },
-  {
-    "objectID": "pages/activity-1-explore-llms.html#tasks",
-    "href": "pages/activity-1-explore-llms.html#tasks",
-    "title": "Activity 1: Exploring LLMs",
-    "section": "Tasks",
-    "text": "Tasks\nNow use both ChatGPT and the Playground to perform the following tasks: Feel free to use the other models (Bing, Bard, Llama2, GooseAI) as well.\n\n\n\n\n\n\nPrompts\n\n\n\n\nGenerate fiction: Tell me a short story about a monk and a tortoise going on a road trip.\nLet the models write a poem. Give it a topic and a style (e.g. a haiku about an exciting day at the office).\nLet the models explain a concept from your field of study in a short text passage.\nUse the models to do some maths (e.g. What is 89322/1313?).\nUse the models to solve some common sense reasoning tasks. For example, We have a book, 9 eggs (without the egg carton), a laptop, a bottle, and a nail. Please tell me how I can stack them on top of each other in a stable way.\n\n\n\nIn all of these examples, use the temperature parameter in the playground to control the randomness of the model’s output. Try different settings, and see how the output changes.\n\n\n\n\n\n\nDiscussion 💬\n\n\n\n\nWhat do you think of the models’ performance? What are their strengths and weaknesses? What are the limitations of the models?\nIf you are unhappy, how can you improve the model’s performance?"
+    "text": "mathematische Basiskompetenzen im Kindergartenalter\n\nDu bist eine Fachperson im Bereich der Entwicklungspsychologie. Du bist Experte für mathematische Basiskompetenzen im Kindergartenalter. Ich schreibe eine Masterarbeit und du hilfst mir bei den Formulierungen. Ich schreibe eine wissenschaftliche Arbeit über das Thema “Erfassung mathematischer Basiskompetenzen”\n\nDer MBK 0 (Test mathematischer Basiskompetenzen im Kindergartenalter) von Krajewski (2018) ist ein Einzeltest für Kinder im Alter von 3.6 bis 7 Jahren. Diesem Test liegt das Entwicklungsmodell der Zahl-Grössen-Verknüpfung (Krajewski, 2008) zugrunde (vgl. Abschnitt 4.2.1). Der MBK 0 ist ein Test zur Erfassung der mathematischen Basiskompetenzen\n\n\n\n Back to top"
   },
   {
     "objectID": "pages/activity-3-prompting-learning-teaching.html",
@@ -336,102 +280,165 @@
     "text": "Tasks\nThe goal is to choose one or two examples from the papers mentioned above and create prompts for it. You can use the example prompts provided above as a starting point.\n\n\n\n\n\n\nCreate your own LLM tool\n\n\n\n\nChoose one or two examples from the papers mentioned above and create prompts, using the example prompts as a starting point.\nPlease feel free to use your own use cases and examples.\nChoose an appropriate LLM. Does the LLM have access to the Internet or other sources of information? Does the LLM allow you to adjust its settings?\nTry out your prompts and share your experiences with the group. What worked well? What didn’t work well? What would you change?\nIf you are using OpenAI Playground, you can save your prompt settings as a preset. This will allow you to reuse the same settings in the future.\n\n\n\n\n\n\n\n\n\nDiscussion 💬\n\n\n\n\nDo you find the examples provided in the papers useful?\nWould you use this approach in your teaching?\nCan you think of any improvements to existing tools necessary for applying LLMs in education?"
   },
   {
-    "objectID": "pages/beispiel-arbeit.html",
-    "href": "pages/beispiel-arbeit.html",
-    "title": "LLMs for Teaching and Learning",
+    "objectID": "pages/activity-1-explore-llms.html",
+    "href": "pages/activity-1-explore-llms.html",
+    "title": "Activity 1: Exploring LLMs",
     "section": "",
-    "text": "mathematische Basiskompetenzen im Kindergartenalter\n\nDu bist eine Fachperson im Bereich der Entwicklungspsychologie. Du bist Experte für mathematische Basiskompetenzen im Kindergartenalter. Ich schreibe eine Masterarbeit und du hilfst mir bei den Formulierungen. Ich schreibe eine wissenschaftliche Arbeit über das Thema “Erfassung mathematischer Basiskompetenzen”\n\nDer MBK 0 (Test mathematischer Basiskompetenzen im Kindergartenalter) von Krajewski (2018) ist ein Einzeltest für Kinder im Alter von 3.6 bis 7 Jahren. Diesem Test liegt das Entwicklungsmodell der Zahl-Grössen-Verknüpfung (Krajewski, 2008) zugrunde (vgl. Abschnitt 4.2.1). Der MBK 0 ist ein Test zur Erfassung der mathematischen Basiskompetenzen\n\n\n\n Back to top"
+    "text": "ChatGPT\nOpenAI Playground\nBing Chat\nGoogle Bard\nLlama2\nGoose AI\n\nNow we will explore two different interfaces to the same underlying OpenAI language models. These are GPT-3.5-turbo and GPT-4. The first is a smaller model (fewer parameters), whereas the second is the most advanced model (more parameters).\nGPT-4 is only accessible to paid customers.\nBoth of these models are trained on the same data, but the second is larger and more powerful. Both are optimized for conversations, and are capable of a wide variety of tasks. However, GPT-4 generally performs better, especially at tasks requiring more complex reasoning, and at following instructions. The differences between models are described in this article.\nOne of the most important differences is the context length that the models can handle. GPT-4 can process much more context than GPT-3.5-turbo.\n\nGPT-3.5-turbo can process a context of 4097 tokens (~3073 words) or 16’000 tokens (~12’000 words).\nGPT-4 comes in two varieties: 8192 tokens (~6144 words ) or 32’768 tokens (~25’000 words).\n\nHowever: ChatGPT only allows shorter context lengths; to get the full context length, you have to use the API (or playground).\nGeneral capabilities of the models include:\n\nLLMs are few-shot learners, meaning they can learn from a small number of examples.\nLLMs are zero-shot learners, meaning they can perform tasks without any examples, given appropriate instructions.\nreasoning\nwriting code in common programming languages\ntranslating between languages\nbasic mathematical abilities\n\nBubeck et al. (2023) give a fascinating summary of tasks that GPT-4 is lcaimed to be capable of.\nBoth models function in the same basic way (in a conversation): the entire previous conversation is fed into the model as context (prompt), and the model generates a response (token by token).\nIf you feel that the conversation has taken a wrong turn, you can edit your message, and the conversation will be re-generated from that point.\n\n\nThis is a simple interface to the GPT-3.5-turbo and GPT-4 models. It does not offer any possibility of adjusting the parameters of the model, but it does allow you to enter a prompt, and then to interact with the model.\nNotable features: - In the paid version, you can choose between GPT-3.5-turbo and GPT-4. - GPT-4 offers plugins. These can give the assistant access to a wide variety of sources of information, including databases, APIs, and web scraping. A very useful plugin is the Wolfram Alpha plugin, which allows the assistant to compute answers based on facts and mathematical knowledge. - GPT-4 and Advanced Data Analysis plugin; this gives the model the ability to run python code and display the results.\n\n\n\nThis is a more advanced interface to the GPT-3.5-turbo and GPT-4 models. It allows you to adjust the parameters of the model, and to enter different types of prompts, and then to interact with the model. It also allows you to use the full context lengths (8k, 16k or 32k tokens), meaning that you can process much longer texts.\nFurthermore, it allows you to save your prompts as presets to reuse them or to share them with others.\n\n\nThe playground offers the following parameters:\n\nMode: Currently only Chat\nModel: GPT-3.5-turbo or GPT-4 with varying context lengths.\nTemperature: This is the most interesting parameter - it controls the level of randomness. A setting of 0 means that the model will sample text deterministically (it will always choose the most probable next token), higher settings make the model’s output increasingly more random.\nMaximum length: controls the length of the output text.\nStop sequences: characters telling the model to stop generating text.\nTop P: tells the model to consider only subset of most probable tokens when generating. Use temperature instead.\nFrequency penalty: penalizes the model based on number of times that token has appeared.\nPresence penalty: penalizes the model for based on whether they have already appeared. Encourages diversity of tokens.\n\nIn general, the only parameters that you need to adjust are temperature and (possibly) maximum length.\nIf you want to read more about the temperature parameter, see the following article 👉 Temperature.\n1 and 2 are also interesting.\n\n\n\nThe playground offers three types of messages: system, user and assistant messages.\nThese system and user messages are both fed into the model as context, but they are treated differently; the system message is not part of the conversation. The idea is that the system message is a prompt that is not visible to the user, i.e. it can be hidden when building a chatbot.\nThe user and assistant messages are displayed in the conversation. The assistant messages are generated by the model, and the user messages are entered by the user."
   },
   {
-    "objectID": "pages/observable-1.html",
-    "href": "pages/observable-1.html",
+    "objectID": "pages/activity-1-explore-llms.html#models",
+    "href": "pages/activity-1-explore-llms.html#models",
+    "title": "Activity 1: Exploring LLMs",
+    "section": "",
+    "text": "ChatGPT\nOpenAI Playground\nBing Chat\nGoogle Bard\nLlama2\nGoose AI\n\nNow we will explore two different interfaces to the same underlying OpenAI language models. These are GPT-3.5-turbo and GPT-4. The first is a smaller model (fewer parameters), whereas the second is the most advanced model (more parameters).\nGPT-4 is only accessible to paid customers.\nBoth of these models are trained on the same data, but the second is larger and more powerful. Both are optimized for conversations, and are capable of a wide variety of tasks. However, GPT-4 generally performs better, especially at tasks requiring more complex reasoning, and at following instructions. The differences between models are described in this article.\nOne of the most important differences is the context length that the models can handle. GPT-4 can process much more context than GPT-3.5-turbo.\n\nGPT-3.5-turbo can process a context of 4097 tokens (~3073 words) or 16’000 tokens (~12’000 words).\nGPT-4 comes in two varieties: 8192 tokens (~6144 words ) or 32’768 tokens (~25’000 words).\n\nHowever: ChatGPT only allows shorter context lengths; to get the full context length, you have to use the API (or playground).\nGeneral capabilities of the models include:\n\nLLMs are few-shot learners, meaning they can learn from a small number of examples.\nLLMs are zero-shot learners, meaning they can perform tasks without any examples, given appropriate instructions.\nreasoning\nwriting code in common programming languages\ntranslating between languages\nbasic mathematical abilities\n\nBubeck et al. (2023) give a fascinating summary of tasks that GPT-4 is lcaimed to be capable of.\nBoth models function in the same basic way (in a conversation): the entire previous conversation is fed into the model as context (prompt), and the model generates a response (token by token).\nIf you feel that the conversation has taken a wrong turn, you can edit your message, and the conversation will be re-generated from that point.\n\n\nThis is a simple interface to the GPT-3.5-turbo and GPT-4 models. It does not offer any possibility of adjusting the parameters of the model, but it does allow you to enter a prompt, and then to interact with the model.\nNotable features: - In the paid version, you can choose between GPT-3.5-turbo and GPT-4. - GPT-4 offers plugins. These can give the assistant access to a wide variety of sources of information, including databases, APIs, and web scraping. A very useful plugin is the Wolfram Alpha plugin, which allows the assistant to compute answers based on facts and mathematical knowledge. - GPT-4 and Advanced Data Analysis plugin; this gives the model the ability to run python code and display the results.\n\n\n\nThis is a more advanced interface to the GPT-3.5-turbo and GPT-4 models. It allows you to adjust the parameters of the model, and to enter different types of prompts, and then to interact with the model. It also allows you to use the full context lengths (8k, 16k or 32k tokens), meaning that you can process much longer texts.\nFurthermore, it allows you to save your prompts as presets to reuse them or to share them with others.\n\n\nThe playground offers the following parameters:\n\nMode: Currently only Chat\nModel: GPT-3.5-turbo or GPT-4 with varying context lengths.\nTemperature: This is the most interesting parameter - it controls the level of randomness. A setting of 0 means that the model will sample text deterministically (it will always choose the most probable next token), higher settings make the model’s output increasingly more random.\nMaximum length: controls the length of the output text.\nStop sequences: characters telling the model to stop generating text.\nTop P: tells the model to consider only subset of most probable tokens when generating. Use temperature instead.\nFrequency penalty: penalizes the model based on number of times that token has appeared.\nPresence penalty: penalizes the model for based on whether they have already appeared. Encourages diversity of tokens.\n\nIn general, the only parameters that you need to adjust are temperature and (possibly) maximum length.\nIf you want to read more about the temperature parameter, see the following article 👉 Temperature.\n1 and 2 are also interesting.\n\n\n\nThe playground offers three types of messages: system, user and assistant messages.\nThese system and user messages are both fed into the model as context, but they are treated differently; the system message is not part of the conversation. The idea is that the system message is a prompt that is not visible to the user, i.e. it can be hidden when building a chatbot.\nThe user and assistant messages are displayed in the conversation. The assistant messages are generated by the model, and the user messages are entered by the user."
+  },
+  {
+    "objectID": "pages/activity-1-explore-llms.html#tasks",
+    "href": "pages/activity-1-explore-llms.html#tasks",
+    "title": "Activity 1: Exploring LLMs",
+    "section": "Tasks",
+    "text": "Tasks\nNow use both ChatGPT and the Playground to perform the following tasks: Feel free to use the other models (Bing, Bard, Llama2, GooseAI) as well.\n\n\n\n\n\n\nPrompts\n\n\n\n\nGenerate fiction: Tell me a short story about a monk and a tortoise going on a road trip.\nLet the models write a poem. Give it a topic and a style (e.g. a haiku about an exciting day at the office).\nLet the models explain a concept from your field of study in a short text passage.\nUse the models to do some maths (e.g. What is 89322/1313?).\nUse the models to solve some common sense reasoning tasks. For example, We have a book, 9 eggs (without the egg carton), a laptop, a bottle, and a nail. Please tell me how I can stack them on top of each other in a stable way.\n\n\n\nIn all of these examples, use the temperature parameter in the playground to control the randomness of the model’s output. Try different settings, and see how the output changes.\n\n\n\n\n\n\nDiscussion 💬\n\n\n\n\nWhat do you think of the models’ performance? What are their strengths and weaknesses? What are the limitations of the models?\nIf you are unhappy, how can you improve the model’s performance?"
+  },
+  {
+    "objectID": "pages/about.html",
+    "href": "pages/about.html",
+    "title": "Virtuelle Akademie",
+    "section": "",
+    "text": "KI-basierte Schreibtools in der Lehre\n\n\n\nKünstliche Intelligenz (KI) hat das Potenzial, das Bildungswesen grundlegend zu verändern. In diesem Workshop werden wir die Rolle von KI in der Lehre erkunden, mit besonderem Fokus auf den Einsatz von KI-basierten Schreibtools.\nInhalte:\n\nWas ist künstliche Intelligenz? Wie funktionieren Tools wie ChatGPT?\nWie kommuniziere ich mit KI-Schreibtools? Wie schreibe ich gute Prompts?\n\nAnwendungsbeispiele von KI in der Lehre\n\nNächste Termine:\n\n15.September 2023, 13-17 Uhr\n27.Oktober 2023, 13-17 Uhr\n\n👉 www.bfh.ch/de/weiterbildung/kurse/ki-schreibtools\n\n\n\n\n\n\n\n\nKI-Sprechstunden\n\n\n\nHast du Fragen zum Umgang mit Künstlicher Intelligenz (KI) in der Lehre? Dann schau vorbei oder logge dich ein. Ohne Anmeldung.\nNächste Termine:\n\n17. August 2023, 16-18 Uhr\n\nNovember 2023, 15-17 Uhr\n\n\n👉 virtuelleakademie.ch/beratungen-coachings:"
+  },
+  {
+    "objectID": "pages/about.html#ki-kurse-der-virtuellen-akademie",
+    "href": "pages/about.html#ki-kurse-der-virtuellen-akademie",
+    "title": "Virtuelle Akademie",
+    "section": "",
+    "text": "KI-basierte Schreibtools in der Lehre\n\n\n\nKünstliche Intelligenz (KI) hat das Potenzial, das Bildungswesen grundlegend zu verändern. In diesem Workshop werden wir die Rolle von KI in der Lehre erkunden, mit besonderem Fokus auf den Einsatz von KI-basierten Schreibtools.\nInhalte:\n\nWas ist künstliche Intelligenz? Wie funktionieren Tools wie ChatGPT?\nWie kommuniziere ich mit KI-Schreibtools? Wie schreibe ich gute Prompts?\n\nAnwendungsbeispiele von KI in der Lehre\n\nNächste Termine:\n\n15.September 2023, 13-17 Uhr\n27.Oktober 2023, 13-17 Uhr\n\n👉 www.bfh.ch/de/weiterbildung/kurse/ki-schreibtools\n\n\n\n\n\n\n\n\nKI-Sprechstunden\n\n\n\nHast du Fragen zum Umgang mit Künstlicher Intelligenz (KI) in der Lehre? Dann schau vorbei oder logge dich ein. Ohne Anmeldung.\nNächste Termine:\n\n17. August 2023, 16-18 Uhr\n\nNovember 2023, 15-17 Uhr\n\n\n👉 virtuelleakademie.ch/beratungen-coachings:"
+  },
+  {
+    "objectID": "pages/activity-2-prompting-techniques.html",
+    "href": "pages/activity-2-prompting-techniques.html",
+    "title": "Activity 2: Basic Prompting Techniques",
+    "section": "",
+    "text": "In this activity, you can explore various prompting guides for GPT models. They more or less all converge on the same set of techniques:.\nThese are:\n\n\n\n\n\n\nPrompting Techniques\n\n\n\n\nNumbered Steps: For sequential tasks.\nDelimiters: To separate info (e.g. \", `,, ', |, #, …).\nFew-shot prompting: Use a few examples for guidance.\nChain-of-thought: Interconnected prompts.\nRole-based: Make the model assume a role (e.g. act like a tutor or advisor).\nSuccess Tip: Iterate and refine prompts for peak performance.\n\n\n\nCombining these techniques, a template prompt for an LMM might look like this:\n\n\n\n\n\n\nNote\n\n\n\n\nRole: who is being simulated?\nTask: what is to be done?\nSteps: what are the steps to complete the task?\nContext: what is the context of the task?\nGoal: what is the goal of the task?\nFormat: what is the format of the output?\n\n\n\nAn example prompt for a chatbot might look like this:\n\n\n\n\n\n\nFeedback on a text\n\n\n\nI want you to act as a harsh critic. Criticize what I give to you and show me where my argumentation is lacking. Start by asking me what text I would like feedback on. Then ask me questions about my context to create the best feedback possible. If you feel you have all the context necessary, think step by step when creating your feedback."
+  },
+  {
+    "objectID": "pages/activity-2-prompting-techniques.html#basic-techniques",
+    "href": "pages/activity-2-prompting-techniques.html#basic-techniques",
+    "title": "Activity 2: Basic Prompting Techniques",
+    "section": "",
+    "text": "In this activity, you can explore various prompting guides for GPT models. They more or less all converge on the same set of techniques:.\nThese are:\n\n\n\n\n\n\nPrompting Techniques\n\n\n\n\nNumbered Steps: For sequential tasks.\nDelimiters: To separate info (e.g. \", `,, ', |, #, …).\nFew-shot prompting: Use a few examples for guidance.\nChain-of-thought: Interconnected prompts.\nRole-based: Make the model assume a role (e.g. act like a tutor or advisor).\nSuccess Tip: Iterate and refine prompts for peak performance.\n\n\n\nCombining these techniques, a template prompt for an LMM might look like this:\n\n\n\n\n\n\nNote\n\n\n\n\nRole: who is being simulated?\nTask: what is to be done?\nSteps: what are the steps to complete the task?\nContext: what is the context of the task?\nGoal: what is the goal of the task?\nFormat: what is the format of the output?\n\n\n\nAn example prompt for a chatbot might look like this:\n\n\n\n\n\n\nFeedback on a text\n\n\n\nI want you to act as a harsh critic. Criticize what I give to you and show me where my argumentation is lacking. Start by asking me what text I would like feedback on. Then ask me questions about my context to create the best feedback possible. If you feel you have all the context necessary, think step by step when creating your feedback."
+  },
+  {
+    "objectID": "pages/activity-2-prompting-techniques.html#explore-prompting-guides",
+    "href": "pages/activity-2-prompting-techniques.html#explore-prompting-guides",
+    "title": "Activity 2: Basic Prompting Techniques",
+    "section": "Explore Prompting Guides",
+    "text": "Explore Prompting Guides\n\nLearn prompting: An incredibly comprehensive (and free) guide aimed at non-technical users.\nPrompting guide: This is an excellent prompting guide by DAIR.AI (Democratizing Artificial Intelligence Research, Education, and Technologies). The guide is licensed under an MIT license.\nPromptTools Playground: a web app that lets you play with various prompting techniques. You can use different LLMs, and even compare the results.\nSPARK: a retrieval-augmented chatbot. It uses various prompting guides as its knowledge base."
+  },
+  {
+    "objectID": "pages/activity-2-prompting-techniques.html#tasks",
+    "href": "pages/activity-2-prompting-techniques.html#tasks",
+    "title": "Activity 2: Basic Prompting Techniques",
+    "section": "Tasks",
+    "text": "Tasks\n\nExplore prompting, using both ChatGPT and the Playground.\nTry the PromptTools Playground.\nTry out SPARK. This is a good deomonstration of using a knowledge base and document retrieval can allow you to create a QA tool.\n\n\n\n\n\n\n\nPrompts\n\n\n\nTry revisiting the prompts you created in the previous activity. Given you current knowledge, can you improve them?\n\n\n\n\n\n\n\n\nDiscussion 💬\n\n\n\n\nWhat experiences did you have with prompting?\nDid you find any of the techniques particularly useful?"
+  },
+  {
+    "objectID": "pages/assistant.html",
+    "href": "pages/assistant.html",
+    "title": "Assistent der Virtuellen Akademie",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "pages/index.html",
+    "href": "pages/index.html",
+    "title": "Index page",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "pages/observable-test.html",
+    "href": "pages/observable-test.html",
     "title": "Untitled",
     "section": "",
-    "text": "ojs_define(data = palmerpenguins::penguins)\n\n\nviewof bill_length_min = Inputs.range(\n  [32, 50], \n  {value: 35, step: 1, label: \"Bill length (min):\"}\n)\nviewof islands = Inputs.checkbox(\n  [\"Torgersen\", \"Biscoe\", \"Dream\"], \n  { value: [\"Torgersen\", \"Biscoe\"], \n    label: \"Islands:\"\n  }\n)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfiltered = transpose(data).filter(function(penguin) {\n  return bill_length_min &lt; penguin.bill_length_mm &&\n         islands.includes(penguin.island);\n})\n\n\n\n\n\n\n\nPlot.rectY(filtered, \n  Plot.binX(\n    {y: \"count\"}, \n    {x: \"body_mass_g\", fill: \"species\", thresholds: 20}\n  ))\n  .plot({\n    facet: {\n      data: filtered,\n      x: \"sex\",\n      y: \"species\",\n      marginRight: 80\n    },\n    marks: [\n      Plot.frame(),\n    ]\n  }\n)\n\n\n\n\n\n\n\n\n\n Back to top"
+    "text": "x\n\n\n\n\n\n\n\nx = c(1,2,3,4)\nojs_define(x)\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "pages/programme.html",
-    "href": "pages/programme.html",
-    "title": "Program",
+    "objectID": "pages/prompting.html",
+    "href": "pages/prompting.html",
+    "title": "Prompting Programmatically",
+    "section": "",
+    "text": "import openai\nimport os\n\nfrom dotenv import load_dotenv, find_dotenv\n_ = load_dotenv(find_dotenv())\n\nopenai.api_key  = os.getenv('OPENAI_API_KEY')\n\nfrom IPython.display import display, Markdown, Latex, HTML, JSON\ndef get_completion(prompt, model=\"gpt-3.5-turbo\", temperature=0.0):\n    messages = [{\"role\": \"user\", \"content\": prompt}]\n    response = openai.ChatCompletion.create(\n        model=model,\n        messages=messages,\n        temperature=temperature\n    )\n    return response.choices[0].message[\"content\"]"
+  },
+  {
+    "objectID": "pages/prompting.html#prompting-principles",
+    "href": "pages/prompting.html#prompting-principles",
+    "title": "Prompting Programmatically",
+    "section": "Prompting Principles",
+    "text": "Prompting Principles\n\nPrinciple 1: Write clear and specific instructions\nPrinciple 2: Give the model time to “think”\n\n\nTactics\n\nTactic 1: Use delimiters to clearly indicate distinct parts of the input\n\nDelimiters can be anything, such as: ``, \"\"\", &lt; &gt;, ,:`\n\n\ntext = f\"\"\"\nYou should express what you want a model to do by \\ \nproviding instructions that are as clear and \\ \nspecific as you can possibly make them. \\ \nThis will guide the model towards the desired output, \\ \nand reduce the chances of receiving irrelevant \\ \nor incorrect responses. Don't confuse writing a \\ \nclear prompt with writing a short prompt. \\ \nIn many cases, longer prompts provide more clarity \\ \nand context for the model, which can lead to \\ \nmore detailed and relevant outputs.\n\"\"\"\nprompt = f\"\"\"\nSummarize the text delimited by triple backticks \\ \ninto a single sentence.\n```{text}```\n\"\"\"\nresponse = get_completion(prompt)\nprint(response)\n\nTo guide a model towards the desired output and reduce irrelevant or incorrect responses, it is important to provide clear and specific instructions, which can be achieved through longer prompts that offer more clarity and context.\n\n\n\n\nTactic 4: “Few-shot” prompting\n\nprompt = f\"\"\"\nYour task is to answer in a consistent style.\n\n&lt;child&gt;: Teach me about patience.\n\n&lt;grandparent&gt;: The river that carves the deepest \\ \nvalley flows from a modest spring; the \\ \ngrandest symphony originates from a single note; \\ \nthe most intricate tapestry begins with a solitary thread.\n\n&lt;child&gt;: Teach me about resilience.\n\"\"\"\nresponse = get_completion(prompt)\nprint(response)\n\n&lt;grandparent&gt;: Resilience is like a mighty oak tree that withstands the strongest storms, bending but never breaking. It is the unwavering determination to rise again after every fall, and the ability to find strength in the face of adversity. Just as a diamond is formed under immense pressure, resilience is forged through challenges and hardships, making us stronger and more resilient in the process."
+  },
+  {
+    "objectID": "pages/prompting.html#sentment-analysis",
+    "href": "pages/prompting.html#sentment-analysis",
+    "title": "Prompting Programmatically",
+    "section": "Sentment Analysis",
+    "text": "Sentment Analysis\n\nlamp_review = \"\"\"\nNeeded a nice lamp for my bedroom, and this one had \\\nadditional storage and not too high of a price point. \\\nGot it fast.  The string to our lamp broke during the \\\ntransit and the company happily sent over a new one. \\\nCame within a few days as well. It was easy to put \\\ntogether.  I had a missing part, so I contacted their \\\nsupport and they very quickly got me the missing piece! \\\nLumina seems to me to be a great company that cares \\\nabout their customers and products!!\n\"\"\"\n\n\nprompt = f\"\"\"\nWhat is the sentiment of the following product review, \nwhich is delimited with triple backticks?\n\nReview text: '''{lamp_review}'''\n\"\"\"\nresponse = get_completion(prompt)\nprint(response)\n\nThe sentiment of the product review is positive."
+  },
+  {
+    "objectID": "pages/prompting.html#tone-transformation",
+    "href": "pages/prompting.html#tone-transformation",
+    "title": "Prompting Programmatically",
+    "section": "Tone transformation",
+    "text": "Tone transformation\n\nprompt = f\"\"\"\nTranslate the following from slang to a business letter: \n'Dude, This is Joe, check out this spec on this standing lamp.'\n\"\"\"\nresponse = get_completion(prompt)\nprint(response)\n\nDear Sir/Madam,\n\nI hope this letter finds you well. My name is Joe, and I am writing to bring your attention to a specification document regarding a standing lamp. \n\nI kindly request that you take a moment to review the attached document, as it provides detailed information about the features and specifications of the aforementioned standing lamp. \n\nThank you for your time and consideration. I look forward to discussing this further with you.\n\nYours sincerely,\nJoe"
+  },
+  {
+    "objectID": "pages/prompting.html#proofreading-and-editing",
+    "href": "pages/prompting.html#proofreading-and-editing",
+    "title": "Prompting Programmatically",
+    "section": "Proofreading and editing",
+    "text": "Proofreading and editing\n\ntext = f\"\"\"\nGot this for my daughter for her birthday cuz she keeps taking \\\nmine from my room.  Yes, adults also like pandas too.  She takes \\\nit everywhere with her, and it's super soft and cute.  One of the \\\nears is a bit lower than the other, and I don't think that was \\\ndesigned to be asymmetrical. It's a bit small for what I paid for it \\\nthough. I think there might be other options that are bigger for \\\nthe same price.  It arrived a day earlier than expected, so I got \\\nto play with it myself before I gave it to my daughter.\n\"\"\"\nprompt = f\"proofread and correct this review: ```{text}```\"\nresponse = get_completion(prompt)\nprint(response)\n\nGot this for my daughter for her birthday because she keeps taking mine from my room. Yes, adults also like pandas too. She takes it everywhere with her, and it's super soft and cute. However, one of the ears is a bit lower than the other, and I don't think that was designed to be asymmetrical. Additionally, it's a bit small for what I paid for it. I believe there might be other options that are bigger for the same price. On the positive side, it arrived a day earlier than expected, so I got to play with it myself before I gave it to my daughter.\n\n\n\nfrom redlines import Redlines\n\ndiff = Redlines(text,response)\ndisplay(Markdown(diff.output_markdown))\n\nGot this for my daughter for her birthday cuz because she keeps taking mine from my room. room. Yes, adults also like pandas too. too. She takes it everywhere with her, and it’s super soft and cute. One cute. However, one of the ears is a bit lower than the other, and I don’t think that was designed to be asymmetrical. It’s Additionally, it’s a bit small for what I paid for it though. it. I think believe there might be other options that are bigger for the same price. It price. On the positive side, it arrived a day earlier than expected, so I got to play with it myself before I gave it to my daughter.\n\n\n\nprompt = f\"\"\"\nproofread and correct this review. Make it more compelling. \nEnsure it follows APA style guide and targets an advanced reader. \nOutput in markdown format.\nText: ```{text}```\n\"\"\"\nresponse = get_completion(prompt)\ndisplay(Markdown(response))\n\nTitle: A Delightful Gift for Panda Enthusiasts: A Review of the Soft and Adorable Panda Plush Toy\nReviewer: [Your Name]\n\nI recently purchased this charming panda plush toy as a birthday gift for my daughter, who has a penchant for “borrowing” my belongings from time to time. As an adult, I must confess that I too have fallen under the spell of these lovable creatures.\nFrom the moment my daughter unwrapped the package, it was evident that this panda plush toy would become her constant companion. Its irresistibly soft texture and undeniable cuteness make it a joy to touch and behold. However, I did notice a minor flaw in its design: one of the ears appears to be slightly lower than the other, which may not have been intended as an intentional asymmetry.\nWhile the quality and appeal of this panda plush toy are undeniable, I must admit that I found its size to be slightly smaller than expected, considering its price. It is worth noting that there may be alternative options available at the same price point that offer a larger size.\nTo my surprise, the package arrived a day earlier than anticipated, affording me the opportunity to indulge in some playtime with the panda plush toy before presenting it to my daughter. This unexpected bonus allowed me to experience firsthand the joy and comfort it brings, further solidifying my belief in its exceptional quality.\nIn conclusion, this panda plush toy is a delightful gift for both children and adults who share a fondness for these captivating creatures. Its softness, cuteness, and undeniable charm make it an irresistible companion. While the slight asymmetry in its design and its relatively smaller size may be minor drawbacks, the overall experience of owning this panda plush toy is truly enchanting. For those seeking a larger option, it may be worth exploring alternative choices within the same price range.\n\nReferences\n[Your Last Name, Your First Initial]. (Year). Title of Review: A Delightful Gift for Panda Enthusiasts: A Review of the Soft and Adorable Panda Plush Toy. Journal Name, Volume(Issue), Page numbers."
+  },
+  {
+    "objectID": "pages/schedule.html",
+    "href": "pages/schedule.html",
+    "title": "Schedule",
     "section": "",
     "text": "Was sind Large Language Models (LLMs)?\nWie werden LLMs trainiert?\nWie generieren LLMs Texte?\nWas sind Ähnlichkeiten und Unterschiede zwischen LLMs und menschlichem Denken?\nWie können wir LLMs benutzen?\nWie können wir LLMs beschreiben, ohne sie zu anthropomorphisieren?"
   },
   {
-    "objectID": "pages/programme.html#inhalt",
-    "href": "pages/programme.html#inhalt",
-    "title": "Program",
+    "objectID": "pages/schedule.html#inhalt",
+    "href": "pages/schedule.html#inhalt",
+    "title": "Schedule",
     "section": "",
     "text": "Was sind Large Language Models (LLMs)?\nWie werden LLMs trainiert?\nWie generieren LLMs Texte?\nWas sind Ähnlichkeiten und Unterschiede zwischen LLMs und menschlichem Denken?\nWie können wir LLMs benutzen?\nWie können wir LLMs beschreiben, ohne sie zu anthropomorphisieren?"
   },
   {
-    "objectID": "pages/programme.html#lernziele",
-    "href": "pages/programme.html#lernziele",
-    "title": "Program",
+    "objectID": "pages/schedule.html#lernziele",
+    "href": "pages/schedule.html#lernziele",
+    "title": "Schedule",
     "section": "Lernziele",
     "text": "Lernziele\n\n\n\n\n\n\nNach diesem Workshop:\n\n\n\n\nKannst du mit Anfragen von Studierenden in Bezug auf fachspezifische KI-generierte Texte umgehen.\nKannst du in eigenen Worten wiedergeben, wie KI-generierte Texte entstehen.\nHast du Kriterien, anhand derer du KI-Tools beurteilen kannst."
   },
   {
-    "objectID": "pages/programme.html#program",
-    "href": "pages/programme.html#program",
-    "title": "Program",
+    "objectID": "pages/schedule.html#program",
+    "href": "pages/schedule.html#program",
+    "title": "Schedule",
     "section": "Program",
     "text": "Program\n\n\n\n\nflowchart LR\n  A([\"Einleitung\n            5'\"]) \n  A -.-&gt; B([\"Reaktivationsrunde \n                      10'\"]) \n  B -.-&gt; C([\"Input: Wie funktioniert ChatGPT? \n                      30'\"])\n  C -.-&gt; D([\"Vertiefung: Lernziele 1 + 2 \n                      15'\"]) \n  C -.-&gt; E([\"Vertiefung: Lernziel 3 \n                        15'\"]) \n  D -.-&gt; F([\"Verankern \n                10'\"]) \n  E -.-&gt; F\n  F -.-&gt; G([\"Diskussion \n            15'\"])\n\n\n\n\n\n\nEinleitung [⏱️ 5’]: Einstieg in den Workshop\nReaktivationsrunde [⏱️ 10’]: In diesem Teil tauschen die Teilnehmenden sich über ihre Erfahrungen mit KI-generierten Texten aus.\nInput: Wie funktioniert ChatGPT? [⏱️ 30’]: Referat zum Thema künstliche Intelligenz und ChatGPT.\nVertiefung [⏱️ 30’]: In diesem Teil werden die oben genannten Lernziele vertieft (alleine, in Kleingruppen und im Plenum).\nVerankern [⏱️ 10’]: In diesem Teil werden Erfahrungen zusammengefasst und reflektiert.\nDiskussion [⏱️ 15’]: Am Ende des Workshops wird über die Erfahrungen und Erkenntnisse diskutiert."
   },
   {
-    "objectID": "pages/programme.html#vorbereitung",
-    "href": "pages/programme.html#vorbereitung",
-    "title": "Program",
+    "objectID": "pages/schedule.html#vorbereitung",
+    "href": "pages/schedule.html#vorbereitung",
+    "title": "Schedule",
     "section": "Vorbereitung",
     "text": "Vorbereitung\nLöse folgende Aufgaben mit ChatGPT (oder Bing Chat):\n\nLasse ChatGPT ein Gedicht schreiben. Gebe Thema und Stil vor (z.B. “Hochschulbibliotheken und künstliche Intelligenz” im Stile des Sturm und Drang).\nLasse ChatGPT dir ein Konzept deines Fachbereichs in einem kurzen Textabschnitt vereinfachend erklären.\nBenutze ChatGPT, um zu einem Forschungsthema (z.B. “Was ist der Zusammenhang zwischen Sprache und Denken?”) eine Literaturrecherche durchzuführen. Lasse dir eine kommentierte Liste von wissenschaftlichen Publikationen geben.\nLasse ChatGPT ein paar Mathe-Aufgaben lösen (z.B. “Was ist 89322/1313?”)\nLöse mit ChatGPT eine praktische Aufgabe: “Hier haben wir ein Buch, 9 Eier (ohne Eierkarton), einen Laptop, eine Flasche und einen Nagel. Bitte sag mir, wie ich sie stabil übereinander stapeln kann.”"
   },
   {
-    "objectID": "pages/programme.html#leitung",
-    "href": "pages/programme.html#leitung",
-    "title": "Program",
+    "objectID": "pages/schedule.html#leitung",
+    "href": "pages/schedule.html#leitung",
+    "title": "Schedule",
     "section": "Leitung",
     "text": "Leitung\n\nAndrew Ellis: Andrew ist Data Scientist an der Virtuellen Akademie der Berner Fachhochschule. Sein Hintergrund ist in den Kognitionswissenschaften und er ist begeistert von der Schnittstelle zwischen Sprache, Denken und künstlicher Intelligenz.”"
-  },
-  {
-    "objectID": "pages/resources.html",
-    "href": "pages/resources.html",
-    "title": "LLMs for Teaching and Learning",
-    "section": "",
-    "text": "👉🏼 KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus\n👉🏼 KI-basierte Schreibtools in der Lehre – Knowledge Base"
-  },
-  {
-    "objectID": "pages/resources.html#ki-orientierungshilfe-der-bfh",
-    "href": "pages/resources.html#ki-orientierungshilfe-der-bfh",
-    "title": "LLMs for Teaching and Learning",
-    "section": "",
-    "text": "👉🏼 KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus\n👉🏼 KI-basierte Schreibtools in der Lehre – Knowledge Base"
-  },
-  {
-    "objectID": "pages/resources.html#chatgpt-an-der-hochschule",
-    "href": "pages/resources.html#chatgpt-an-der-hochschule",
-    "title": "LLMs for Teaching and Learning",
-    "section": "ChatGPT an der Hochschule",
-    "text": "ChatGPT an der Hochschule\n👉🏼 Überblick über KI-Tools im Kontext von akademischen Lese- und Schreibprozessen\n👉🏼 ChatGPT im Hochschulkontext – eine kommentierte Linksammlung\n👉🏼 Uni Bern: Chatbots in der Hochschullehre"
-  },
-  {
-    "objectID": "pages/resources.html#wissenschaftliches-arbeiten",
-    "href": "pages/resources.html#wissenschaftliches-arbeiten",
-    "title": "LLMs for Teaching and Learning",
-    "section": "Wissenschaftliches Arbeiten",
-    "text": "Wissenschaftliches Arbeiten\n👉🏼 ChatGPT zitieren"
-  },
-  {
-    "objectID": "pages/resources.html#rechtliche-fragen",
-    "href": "pages/resources.html#rechtliche-fragen",
-    "title": "LLMs for Teaching and Learning",
-    "section": "Rechtliche Fragen",
-    "text": "Rechtliche Fragen\n👉🏼 Didaktische Und Rechtliche Perspektiven Auf Ki-Gestütztes Schreiben In Der Hochschulbildung (Salden 2023)"
-  },
-  {
-    "objectID": "pages/resources.html#ethische-fragen",
-    "href": "pages/resources.html#ethische-fragen",
-    "title": "LLMs for Teaching and Learning",
-    "section": "Ethische Fragen",
-    "text": "Ethische Fragen\n👉🏼 Prekäre Klickarbeit hinter den Kulissen von ChatGPT\n👉🏼 Traumatische Klickarbeit: Die Menschen hinter ChatGPT"
   },
   {
     "objectID": "pages/tools.html",
