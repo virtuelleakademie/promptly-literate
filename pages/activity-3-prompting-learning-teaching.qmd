@@ -150,6 +150,8 @@ The goal is to choose one or two examples from the papers mentioned above and cr
 - Choose an appropriate LLM. Does the LLM have access to the Internet or other sources of information? Does the LLM allow you to adjust its settings?
 
 - Try out your prompts and share your experiences with the group. What worked well? What didn't work well? What would you change?
+
+- If you are using OpenAI Playground, you can save your prompt settings as a *preset*. This will allow you to reuse the same settings in the future.
 :::
 
 
