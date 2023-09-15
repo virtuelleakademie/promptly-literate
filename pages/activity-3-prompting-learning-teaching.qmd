@@ -35,6 +35,28 @@ One setting is focussed on on using LLMs to improve learning [@mollickAssigningA
 **Teaching**: The paper discusses how LLMs can help instructors implement five teaching strategies that are supported by research but difficult to apply in practice.
 
 
+## Tasks
+
+The goal is to choose one or two examples from the papers mentioned above and create prompts for it. You can use the example prompts provided above as a starting point.
+
+:::{.callout-tip}
+## Create your own LLM tool
+
+- Choose one or two examples from the papers mentioned above and create prompts, using the example prompts as a starting point.
+
+- Please feel free to use your own use cases and examples.
+  
+- Choose an appropriate LLM. Does the LLM have access to the Internet or other sources of information? Does the LLM allow you to adjust its settings?
+
+- Try out your prompts and share your experiences with the group. What worked well? What didn't work well? What would you change?
+
+- If you are using OpenAI Playground, you can save your prompt settings as a *preset*. This will allow you to reuse the same settings in the future.
+:::
+
+
+
+
+
 ## Prompting for Learning 
 
 @mollickAssigningAISeven2023a explores how to use large language models (LLMs) in education as learning tools, while avoiding their risks and limitations. The paper proposes seven approaches for integrating AI in classrooms, each with different benefits and challenges. The paper also suggests practical strategies for students to learn with and about AI, such as being critical, active, and complementary to the AI’s output.
@@ -133,34 +155,13 @@ You can also use this prompt with [Bard](https://bard.google.com/).
 
 
 
-
-
-
-## Tasks
-
-The goal is to choose one or two examples from the papers mentioned above and create prompts for it. You can use the example prompts provided above as a starting point.
-
-:::{.callout-tip}
-## Create your own LLM tool
-
-- Choose one or two examples from the papers mentioned above and create prompts, using the example prompts as a starting point.
-
-- Please feel free to use your own use cases and examples.
-  
-- Choose an appropriate LLM. Does the LLM have access to the Internet or other sources of information? Does the LLM allow you to adjust its settings?
-
-- Try out your prompts and share your experiences with the group. What worked well? What didn't work well? What would you change?
-
-- If you are using OpenAI Playground, you can save your prompt settings as a *preset*. This will allow you to reuse the same settings in the future.
-:::
-
-
-
 :::{.callout-caution}
 ## Discussion 💬 
 - Do you find the examples provided in the papers useful?
 - Would you use this approach in your teaching?
 - Can you think of any improvements to existing tools necessary for applying LLMs in education?
 :::
+
+
 
 ## References {#sec-references}
