@@ -142,7 +142,6 @@ The task of classifying text as positive, negative, or neutral.
   - __training data:__ Models are fed with data, and parameters of the model are adjusted so that the model is as "good" as possible.
   - __supervised learning:__ Categories known, e.g. classify images of animals.
   - __unsupervised learning:__ Categories are unknown, e.g. discover unknown patterns.
-  - Unbekannte Muster entdecken.
   - __reinforcement learning:__ The goal is given, and the model learns through feedback (reward) how the goal can be achieved.
 
 > We have to learn the bitter lesson that building in how we think we think does not work in the long run. We should stop trying to find simple ways to think about space, objects, multiple agents, or symmetries... instead we should build in only the meta-methods that can find and capture this arbitrary complexity. We want AI agents that can discover like we can, not which contain what we have discovered [@suttonBitterLesson2019].
@@ -220,7 +219,7 @@ __Assistant model:__ This model is trained using reinforcement learning from hum
 ## Text generation
 
 - LLMs produce text by predicting the next word, one word at a time: 
-- This is known as "auto-regressive next toke prediction" (we'll discover what tokens are in the next section).
+- This is known as "auto-regressive next token prediction" (we'll discover what tokens are in the next section).
 
 - The model predicts which token is likely to follow, given a sequence of tokens (words, punctuation, emojis, etc.). 
 - Key idea: this simple procedure is followed over and over again, with <mark style="background: #FFF3A3A6;">each new token being added to the sequence of tokens</mark> that the model uses to predict the next token.
