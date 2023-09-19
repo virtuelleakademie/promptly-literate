@@ -116,7 +116,7 @@ FOr complex queries, first split the task into subtasks, and then ask the model 
 
 
 ## Explore prompting techniques
-Now open the second activity to learn more about ChatGPT and OpenAI Playground: [👉 Activity 2](../pages/activity-2-prompting-techniques.qmd).
+Now open the second activity to learn more about ChatGPT and OpenAI Playground: [👉 Activity 2](../pages/activity-2-prompting-techniques.html).
 
 
 

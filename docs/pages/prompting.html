@@ -305,7 +305,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<div id="a03b5ab4" class="cell" data-execution_count="1">
+<div id="86b07e08" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> openai</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -316,7 +316,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> display, Markdown, Latex, HTML, JSON</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="b404981c" class="cell" data-execution_count="2">
+<div id="77cbf64d" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> get_completion(prompt, model<span class="op">=</span><span class="st">"gpt-3.5-turbo"</span>, temperature<span class="op">=</span><span class="fl">0.0</span>):</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    messages <span class="op">=</span> [{<span class="st">"role"</span>: <span class="st">"user"</span>, <span class="st">"content"</span>: prompt}]</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> openai.ChatCompletion.create(</span>
@@ -339,7 +339,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>Delimiters can be anything, such as: ``<code>, """, &lt; &gt;,</code><tag> </tag><code>,</code>:`</li>
 </ul>
-<div id="058c5f61" class="cell" data-execution_count="3">
+<div id="068e3497" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="ss">f"""</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ss">You should express what you want a model to do by \ </span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ss">providing instructions that are as clear and \ </span></span>
@@ -366,7 +366,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="tactic-4-few-shot-prompting" class="level4">
 <h4 class="anchored" data-anchor-id="tactic-4-few-shot-prompting">Tactic 4: “Few-shot” prompting</h4>
-<div id="a7594c41" class="cell" data-execution_count="4">
+<div id="2fcd33f5" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>prompt <span class="op">=</span> <span class="ss">f"""</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ss">Your task is to answer in a consistent style.</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -390,7 +390,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="sentment-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="sentment-analysis">Sentment Analysis</h2>
-<div id="ed7f6b4a" class="cell" data-execution_count="5">
+<div id="24d0d822" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>lamp_review <span class="op">=</span> <span class="st">"""</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="st">Needed a nice lamp for my bedroom, and this one had </span><span class="ch">\</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="st">additional storage and not too high of a price point. </span><span class="ch">\</span></span>
@@ -403,7 +403,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="st">about their customers and products!!</span></span>
 <span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="st">"""</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="f2fc365c" class="cell" data-execution_count="6">
+<div id="c337d260" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>prompt <span class="op">=</span> <span class="ss">f"""</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ss">What is the sentiment of the following product review, </span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="ss">which is delimited with triple backticks?</span></span>
@@ -419,7 +419,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="tone-transformation" class="level2">
 <h2 class="anchored" data-anchor-id="tone-transformation">Tone transformation</h2>
-<div id="d4d5bec1" class="cell" data-execution_count="7">
+<div id="bd39e9cd" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>prompt <span class="op">=</span> <span class="ss">f"""</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="ss">Translate the following from slang to a business letter: </span></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="ss">'Dude, This is Joe, check out this spec on this standing lamp.'</span></span>
@@ -433,7 +433,7 @@ I hope this letter finds you well. My name is Joe, and I am writing to bring you
 
 I kindly request that you take a moment to review the attached document, as it provides detailed information about the features and specifications of the aforementioned standing lamp. 
 
-Thank you for your time and consideration. I look forward to discussing this matter further with you.
+Thank you for your time and consideration. I look forward to discussing this further with you.
 
 Yours sincerely,
 Joe</code></pre>
@@ -442,7 +442,7 @@ Joe</code></pre>
 </section>
 <section id="proofreading-and-editing" class="level2">
 <h2 class="anchored" data-anchor-id="proofreading-and-editing">Proofreading and editing</h2>
-<div id="3dbf02fd" class="cell" data-execution_count="8">
+<div id="099e7721" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="ss">f"""</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="ss">Got this for my daughter for her birthday cuz she keeps taking </span><span class="ch">\</span></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="ss">mine from my room.  Yes, adults also like pandas too.  She takes </span><span class="ch">\</span></span>
@@ -460,7 +460,7 @@ Joe</code></pre>
 <pre><code>Got this for my daughter for her birthday because she keeps taking mine from my room. Yes, adults also like pandas too. She takes it everywhere with her, and it's super soft and cute. However, one of the ears is a bit lower than the other, and I don't think that was designed to be asymmetrical. Additionally, it's a bit small for what I paid for it. I believe there might be other options that are bigger for the same price. On the positive side, it arrived a day earlier than expected, so I got to play with it myself before I gave it to my daughter.</code></pre>
 </div>
 </div>
-<div id="50ad6d1b" class="cell" data-execution_count="9">
+<div id="4c9c818f" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> redlines <span class="im">import</span> Redlines</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>diff <span class="op">=</span> Redlines(text,response)</span>
@@ -469,7 +469,7 @@ Joe</code></pre>
 <p>Got this for my daughter for her birthday <span style="color:red;font-weight:700;text-decoration:line-through;">cuz </span><span style="color:green;font-weight:700;">because </span>she keeps taking mine from my <span style="color:red;font-weight:700;text-decoration:line-through;">room. </span><span style="color:green;font-weight:700;">room. </span>Yes, adults also like pandas <span style="color:red;font-weight:700;text-decoration:line-through;">too. </span><span style="color:green;font-weight:700;">too. </span>She takes it everywhere with her, and it’s super soft and <span style="color:red;font-weight:700;text-decoration:line-through;">cute. One </span><span style="color:green;font-weight:700;">cute. However, one </span>of the ears is a bit lower than the other, and I don’t think that was designed to be asymmetrical. <span style="color:red;font-weight:700;text-decoration:line-through;">It’s </span><span style="color:green;font-weight:700;">Additionally, it’s </span>a bit small for what I paid for <span style="color:red;font-weight:700;text-decoration:line-through;">it though. </span><span style="color:green;font-weight:700;">it. </span>I <span style="color:red;font-weight:700;text-decoration:line-through;">think </span><span style="color:green;font-weight:700;">believe </span>there might be other options that are bigger for the same <span style="color:red;font-weight:700;text-decoration:line-through;">price. It </span><span style="color:green;font-weight:700;">price. On the positive side, it </span>arrived a day earlier than expected, so I got to play with it myself before I gave it to my daughter.</p>
 </div>
 </div>
-<div id="8ee431a2" class="cell" data-execution_count="10">
+<div id="b2310a56" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>prompt <span class="op">=</span> <span class="ss">f"""</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="ss">proofread and correct this review. Make it more compelling. </span></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="ss">Ensure it follows APA style guide and targets an advanced reader. </span></span>
@@ -481,10 +481,10 @@ Joe</code></pre>
 <div class="cell-output cell-output-display">
 <p><strong>Review of the Panda Plush Toy: A Perfect Gift for All Ages</strong></p>
 <p>I purchased this delightful panda plush toy as a birthday gift for my daughter, who has a penchant for sneaking into my room and “borrowing” my belongings. However, it turns out that adults can also find joy in the company of these adorable creatures.</p>
-<p>The moment my daughter laid eyes on this panda, she instantly fell in love. Its irresistibly soft and cuddly texture makes it the perfect companion for her daily adventures. However, I did notice a minor flaw in its design - one of the ears is slightly lower than the other, which seems unintentional. Nevertheless, this asymmetry does not detract from its overall charm.</p>
-<p>While the quality of the plush toy is exceptional, I must admit that I expected it to be slightly larger given its price. Upon further research, I discovered that there are alternative options available at the same price point that offer a more substantial size. This is something to consider for those seeking a larger plush toy.</p>
-<p>On a positive note, the delivery of the panda plush toy exceeded my expectations. It arrived a day earlier than anticipated, allowing me to indulge in some playtime with it before presenting it to my daughter. This unexpected bonus added to the overall excitement and anticipation surrounding the gift.</p>
-<p>In conclusion, the panda plush toy is a delightful and endearing gift suitable for individuals of all ages. Its softness and cuteness make it an instant favorite, despite the minor design flaw and relatively smaller size. For those seeking a larger option, it may be worth exploring alternative choices within the same price range. Nonetheless, the prompt delivery and the joy it brings to my daughter’s life make it a worthwhile purchase.</p>
+<p>The moment my daughter laid eyes on this panda, she instantly fell in love. Its irresistibly soft and cuddly texture makes it the perfect companion for her daily adventures. However, I did notice a minor flaw in the design - one of the ears is slightly lower than the other, which seems unintentional. Nevertheless, this asymmetry does not detract from the overall charm of the toy.</p>
+<p>While the quality and cuteness of the panda are undeniable, I must admit that I found the size to be slightly smaller than expected, considering its price. It would be beneficial for the manufacturer to offer larger options at the same price point, providing customers with more choices.</p>
+<p>On a positive note, the delivery of the panda plush toy exceeded my expectations. It arrived a day earlier than anticipated, allowing me to indulge in some playtime with it before presenting it to my daughter. This unexpected bonus further enhanced my satisfaction with the purchase.</p>
+<p>In conclusion, the panda plush toy is a delightful gift suitable for individuals of all ages. Its softness and charm make it an irresistible companion, despite the minor design flaw and size discrepancy. With prompt delivery and the potential for expanded size options, this toy has the potential to become an even more appealing choice for discerning customers.</p>
 </div>
 </div>
 

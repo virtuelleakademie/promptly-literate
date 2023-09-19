@@ -155,7 +155,7 @@ I would like you to act as an example generator for students. When confronted wi
 
 ## Explore prompting techniques
 
-Now open the third activity to explore prompting techniques related to learning and teaching: [👉 Activity 3](../pages/activity-3-prompting-learning-teaching.qmd).
+Now open the third activity to explore prompting techniques related to learning and teaching: [👉 Activity 3](../pages/activity-3-prompting-learning-teaching.html).
 
 # References {background-color="#2e3440"}
 

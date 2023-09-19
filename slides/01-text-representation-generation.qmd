@@ -366,7 +366,7 @@ OpenAI offer two ways to interact with their assistant model:
 1) ChatGPT: A web interface where you can chat with the model.
 2) OpenAI Playground: A web interface that gives users more control over the model.
 
-Now open the first activity to learn more about ChatGPT and OpenAI Playground: [👉 Activity 1](../pages/activity-1-explore-llms.qmd).
+Now open the first activity to learn more about ChatGPT and OpenAI Playground: [👉 Activity 1](../pages/activity-1-explore-llms.html).
 
 
 
