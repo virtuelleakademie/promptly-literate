@@ -46,9 +46,6 @@ website:
             file: slides/03-prompting-learning-teaching.qmd
           - text: "Part 4: Reflection"
             file: slides/04-reflection.qmd
-          - text: "Test"
-            file: slides/sprechstunde.qmd
-
 
 
       - text: "🎓 Tutorials"
