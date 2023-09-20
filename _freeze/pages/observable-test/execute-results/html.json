@@ -1,0 +1,18 @@
+{
+  "hash": "f51209a191b76e53f17740a3606ff62c",
+  "result": {
+    "markdown": "---\ntitle: \"Untitled\"\nformat: html\nexecute:\n  cache: false\n---\n\n```{ojs}\nx\n```\n\n::: {.cell}\n\n```{.r .cell-code}\nx = c(1,2,3,4)\nojs_define(x)\n```\n:::",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<script type=\"ojs-define\">\n{\"contents\":[{\"name\":\"x\",\"value\":[1,2,3,4]}]}\n</script>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

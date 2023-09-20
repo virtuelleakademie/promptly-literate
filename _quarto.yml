@@ -5,7 +5,6 @@ project:
     # - pages/*.ipynb
     - pages/*.qmd
     - slides/*.qmd
-    # - jupyter-demo.ipynb
 
 website:
   title: "LLMs for Teaching and Learning"
@@ -115,7 +114,7 @@ format:
 
 execute:
   cache: true
-  freeze: false
+  freeze: auto
   execute-dir: project
 
 editor:
