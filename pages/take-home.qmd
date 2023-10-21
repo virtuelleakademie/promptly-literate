@@ -24,8 +24,8 @@ execute:
   keep-ipynb: true
 code-annotations: select
 
-filters:
-   - lightbox
+# filters:
+#    - lightbox
 lightbox: auto
 ---
 
