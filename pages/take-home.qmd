@@ -38,6 +38,4 @@ An LLM is a probabilistic model of its training corpus. It can be used to predic
 
 ![](../assets/robot.png)
 
-
-
 {{< youtube YDiSFS-yHwk >}}
