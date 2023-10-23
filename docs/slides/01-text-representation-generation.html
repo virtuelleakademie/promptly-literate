@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.358">
+  <meta name="generator" content="quarto-1.4.432">
 
   <meta name="author" content="Andrew Ellis">
   <title>LLMs for Teaching and Learning - LLMs: Text representation, training, and text generation</title>
@@ -34,6 +34,7 @@
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
+      margin-bottom: 0em;
     }
     .hanging-indent div.csl-entry {
       margin-left:2em;
@@ -56,6 +57,7 @@
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/verticator/verticator.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
@@ -364,7 +366,7 @@ Andrew Ellis
 </div>
 </div>
 
-  <p class="date">20 September, 2023</p>
+  <p class="date">22 October, 2023</p>
 </section>
 <section id="contents" class="title-slide slide level1 center" data-background-color="#b48ead">
 <h1>Contents</h1>
@@ -431,11 +433,8 @@ Andrew Ellis
 </section>
 <section id="key-areas-in-nlp" class="slide level2">
 <h2>Key areas in NLP</h2>
-<div class="callout callout-note no-icon callout-titled callout-style-simple">
+<div class="callout callout-note no-icon callout-style-simple">
 <div class="callout-body">
-<div class="callout-title">
-<p><strong></strong></p>
-</div>
 <div class="callout-content">
 <p><code>Sentiment Analysis</code>: Identifying emotions and opinions in text.<br>
 <code>Machine Translation</code>: Automatically translating between languages.<br>
@@ -489,13 +488,13 @@ Andrew Ellis
 <h2>Reinforcement learning</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="cell" data-hash="01-text-representation-generation_cache/revealjs/unnamed-chunk-3_d16c66c6f361ed56219cda2c3ce8b0d5">
+<div class="cell" data-hash="01-text-representation-generation_cache/revealjs/unnamed-chunk-3_c9fe821b68b17cc6cce1faad75dbc500">
 <div class="cell-output-display">
 <p><img data-src="../assets/images/cartpole.gif"></p>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
-<div class="cell" data-hash="01-text-representation-generation_cache/revealjs/unnamed-chunk-4_ff3ca5f89411aa5922dd1c90ba2e51c5">
+<div class="cell" data-hash="01-text-representation-generation_cache/revealjs/unnamed-chunk-4_922757a29585b6ae3ed7c0255be38203">
 <div class="cell-output-display">
 <p><img data-src="../assets/images/RL-agent.png" width="803"></p>
 </div>
@@ -578,7 +577,7 @@ Andrew Ellis
 </ul>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="cell" data-hash="01-text-representation-generation_cache/revealjs/unnamed-chunk-7_a1cd96a924e9dac801cdd21fa2f06381">
+<div class="cell" data-hash="01-text-representation-generation_cache/revealjs/unnamed-chunk-7_773fdf1c5ace00a8975835bd5e5182ce">
 <div class="cell-output-display">
 <p><img data-src="../assets/images/embedding.png" width="751"></p>
 </div>
@@ -615,7 +614,7 @@ Andrew Ellis
 <img data-src="../assets/images/karpathy-training-data.png" width="723" class="r-stretch"></section>
 <section id="pre-training" class="slide level2">
 <h2>Pre-training</h2>
-<div class="cell" data-hash="01-text-representation-generation_cache/revealjs/unnamed-chunk-9_333fb1084d1448958a9a72ffe0979ac4">
+<div class="cell" data-hash="01-text-representation-generation_cache/revealjs/unnamed-chunk-9_9424f3590b9133dcb7b98b981e7a2ba8">
 <div class="cell-output-display">
 <p><img data-src="../assets/images/pretraining.png" width="576"></p>
 </div>
@@ -680,7 +679,7 @@ Andrew Ellis
 </section></section>
 <section id="references" class="title-slide slide level1 smaller scrollable" data-background-color="#2e3440">
 <h1>References</h1>
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-broschinskiGrafikenErklaertFunktioniert2023" class="csl-entry" role="listitem">
 Broschinski, Sebastian, Titus Plattner, Patrick Meier, and Patrick Vögeli. 2023. <span>“In 9 Grafiken erklärt – So funktioniert künstliche Intelligenz.”</span> <span>Der Bund</span>. June 10, 2023. <a href="https://www.derbund.ch/so-funktioniert-kuenstliche-intelligenz-599276436215">https://www.derbund.ch/so-funktioniert-kuenstliche-intelligenz-599276436215</a>.
 </div>
@@ -707,6 +706,7 @@ Sutton, Rich. 2019. <span>“The <span>Bitter Lesson</span>.”</span> 2019. <a 
   <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../site_libs/revealjs/plugin/verticator/verticator.js"></script>
   <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -729,6 +729,7 @@ Sutton, Rich. 2019. <span>“The <span>Bitter Lesson</span>.”</span> 2019. <a 
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":true,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true,"sticky":true,"keyboard":true,"autoOpen":true,"width":"normal","numbers":true},
 'chalkboard': {"buttons":true},
+'verticator': {"themetag":"h1","color":"","inversecolor":"","skipuncounted":false,"clickable":true,"position":"auto","offset":"3vmin","autogenerate":true,"tooltip":false,"scale":1},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -899,7 +900,7 @@ Sutton, Rich. 2019. <span>“The <span>Bitter Lesson</span>.”</span> 2019. <a 
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, Verticator, QuartoSupport,
 
           RevealMath,
           RevealNotes,

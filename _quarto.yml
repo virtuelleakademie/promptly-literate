@@ -1,5 +1,8 @@
 project:
   type: website
+  preview:
+    port: 8800
+    browser: false
   output-dir: docs
   render:
     # - pages/*.ipynb
@@ -66,7 +69,7 @@ website:
           - text: "Activity 1: Exploring LLMs"
             file: pages/activity-1-explore-llms.qmd
           - text: "Activity 2: Prompting techniques"
-            file: pages/activity-2-prompting-techniques.qmd
+            file: pages/activity-2-prompting-techniques.qmd 
           - text: "Activity 3: Prompting for teaching and learning"
             file: pages/activity-3-prompting-learning-teaching.qmd
           # - text: "Develop an Assistant"
@@ -102,13 +105,19 @@ page-footer:
 
 format:
   html:
+    # theme:
+    #   light:
+    #   - cosmo
+    #   - styles/theme-light.scss
+    #   dark:
+    #   - cosmo
+    #   - styles/theme-dark.css
     theme:
       light:
-      - cosmo
-      - styles/theme-light.scss
-      dark:
-      - cosmo
-      - styles/theme-dark.scss
+      # - spacelab
+      - lux
+      - styles/lux-light.scss
+      # dark: lux
     toc: true
     link-external-newwindow: true
 
