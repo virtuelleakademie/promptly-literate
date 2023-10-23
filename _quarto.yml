@@ -106,17 +106,10 @@ page-footer:
 format:
   html:
     # theme:
-    #   light:
-    #   - cosmo
-    #   - styles/theme-light.scss
-    #   dark:
-    #   - cosmo
-    #   - styles/theme-dark.css
-    theme:
-      light: flatly
-      dark: darkly
-      # - lux
-      # - styles/lux-light.scss
+    #   light: flatly
+    #   dark: darkly
+    theme: [lux, styles/promptly.scss, styles/lux-light.scss]
+    css: styles/promptly.css
     toc: true
     link-external-newwindow: true
 
