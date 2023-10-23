@@ -24,12 +24,13 @@ website:
     creator: "@awellis"
     card-style: summary_large_image
 
-  reader-mode: true
+  reader-mode: false
   page-navigation: true
   back-to-top-navigation: true
   navbar:
+    # title: false
     # logo: /assets/robot.png
-    background: primary
+    background: light
     left:
       # - text: "🏠 Home"
       #   file: pages/index.qmd
@@ -105,11 +106,11 @@ page-footer:
 
 format:
   html:
-    # theme:
-    #   light: flatly
-    #   dark: darkly
-    theme: [lux, styles/promptly.scss, styles/lux-light.scss]
-    css: styles/promptly.css
+    theme:
+      light: flatly
+      dark: darkly
+    # theme: [lux, styles/promptly.scss, styles/lux-light.scss]
+    # css: styles/promptly.css
     toc: true
     link-external-newwindow: true
 
