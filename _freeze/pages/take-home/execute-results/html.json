@@ -1,0 +1,12 @@
+{
+  "hash": "9bb1b07d5dfec6ee7dfe53d8bd762331",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: Take-home messages\ndescription: |\n  Programming a GPT model.\ndate: last-modified\ndate-format: 'DD MMM, YYYY'\nauthor:\n  - name: Andrew Ellis\n    url: 'https://github.com/awellis'\n    affiliation: 'Virtuelle Akademie, Berner Fachhochschule'\n    affiliation-url: 'https://virtuelleakademie.ch'\n    orcid: 0000-0002-2788-936X\nlicense: CC BY\ncitation: true\nbibliography: ../bibliography.bib\nformat:\n  html:\n    toc: true\n    code-fold: false\n    code-link: true\nexecute:\n  cache: false\n  keep-ipynb: true\ncode-annotations: select\nlightbox: auto\n---\n\n1) An LLM is not a knowledge base, instead it's a statistical model of a knowledge base. An LLM is trained to be a language model.\nAn LLM is a probabilistic model of its training corpus. It can be used to predict text auto-regressively.\n\n\n {{< fa chess-pawn >}}\n {{< fa thumbs-up >}} \n\n![](../assets/robot.png)\n\n{{< youtube YDiSFS-yHwk >}}\n\n",
+    "supporting": [
+      "take-home_files/figure-html"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

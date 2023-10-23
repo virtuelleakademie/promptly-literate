@@ -34,7 +34,7 @@ In this activity, you can explore various prompting guides for GPT models. They 
 
 - Explore prompting, using both ChatGPT and the Playground. 
 - Try the PromptTools Playground.
-- Try out SPARK. This is a good deomonstration of using a knowledge base and document retrieval can allow you to create a QA tool.
+- Try out SPARK. This is a good demonstration of using a knowledge base and document retrieval can allow you to create a QA tool.
 
 :::{.callout-tip}
 ## Prompts

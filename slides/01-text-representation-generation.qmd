@@ -8,8 +8,8 @@ nocite: |
   @broschinskiGrafikenErklaertFunktioniert2023
 format: 
     revealjs:
-        # theme: moon
-        theme: default
+        theme: simple                                                                                    
+        # theme: default
         title-slide-attributes:
           data-background-image: ../assets/background-purple.png
           # data-background-size: contain
@@ -36,6 +36,19 @@ format:
           width: normal
           numbers: true
           markers: true
+        verticator:
+          themetag: 'h1'
+          color: ''
+          inversecolor: ''
+          skipuncounted: false
+          clickable: true
+          position: 'auto'
+          offset: '3vmin'
+          autogenerate: true
+          tooltip: false
+          scale: 1
+revealjs-plugins:
+  - verticator
 # slide-level: 3
 # number-sections: true
 ---
