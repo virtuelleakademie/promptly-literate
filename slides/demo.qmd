@@ -9,7 +9,7 @@ bibliography: ../bibliography.bib
 format: 
     revealjs:
         # theme: moon
-        theme: default
+        theme: night
         title-slide-attributes:
           data-background-image: ../assets/background-purple.png
           # data-background-size: contain
