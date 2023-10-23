@@ -33,10 +33,10 @@ website:
     left:
       # - text: "🏠 Home"
       #   file: pages/index.qmd
-      - text: "📚 Agenda"
+      - text: "📚 Agenda" # {{< fa calendar >}}
         file: pages/agenda.qmd
 
-      - text: "📺 Slides"
+      - text: "📺 Slides" # {{< fa person-chalkboard >}}
         menu:
           - text: "Introduction"
             file: slides/00-introduction.qmd
@@ -113,11 +113,10 @@ format:
     #   - cosmo
     #   - styles/theme-dark.css
     theme:
-      light:
-      # - spacelab
-      - lux
-      - styles/lux-light.scss
-      # dark: lux
+      light: flatly
+      dark: darkly
+      # - lux
+      # - styles/lux-light.scss
     toc: true
     link-external-newwindow: true
 

@@ -263,7 +263,14 @@
     "href": "pages/take-home.html",
     "title": "Take-home messages",
     "section": "",
-    "text": "An LLM is not a knowledge base, instead it’s a statistical model of a knowledge base. An LLM is trained to be a language model. An LLM is a probabilistic model of its training corpus. It can be used to predict text auto-regressively.\n\n\n\n\n\n\n\n\n Back to topReuseCC BY 4.0CitationBibTeX citation:@online{ellis2023,\n  author = {Ellis, Andrew},\n  title = {Take-Home Messages},\n  pages = {undefined},\n  date = {2023-10-23},\n  url = {https://virtuelleakademie.github.io/promptly-literate/pages/take-home.html},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nEllis, Andrew. 2023. “Take-Home Messages.” October 23,\n2023. https://virtuelleakademie.github.io/promptly-literate/pages/take-home.html."
+    "text": "An LLM is not a knowledge base, instead it’s a statistical model of a knowledge base. An LLM is trained to be a language model. An LLM is a probabilistic model of its training corpus. It can be used to predict text auto-regressively."
+  },
+  {
+    "objectID": "pages/take-home.html#embed-a-presentation",
+    "href": "pages/take-home.html#embed-a-presentation",
+    "title": "Take-home messages",
+    "section": "Embed a presentation",
+    "text": "Embed a presentation"
   },
   {
     "objectID": "pages/resources.html",
