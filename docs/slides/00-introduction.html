@@ -8,7 +8,9 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.432">
 
   <meta name="author" content="Andrew Ellis">
@@ -364,7 +366,7 @@ Andrew Ellis
 </div>
 </div>
 
-  <p class="date">25 October, 2023</p>
+  <p class="date">26 October, 2023</p>
 </section>
 <section id="contents" class="slide level2">
 <h2>Contents</h2>
@@ -425,8 +427,8 @@ Andrew Ellis
 <div class="callout callout-note no-icon callout-style-simple">
 <div class="callout-body">
 <div class="callout-content">
-<p>: What is the capital of France?</p>
-<p>: What is the capital of Germany? What is the capital of Italy? …</p>
+<p><i class="fa-solid fa-person" aria-label="person"></i>: What is the capital of France?</p>
+<p><i class="fa-solid fa-robot" aria-label="robot"></i>: What is the capital of Germany? What is the capital of Italy? …</p>
 </div>
 </div>
 </div>
@@ -443,8 +445,8 @@ Andrew Ellis
 <div class="callout callout-note no-icon callout-style-simple">
 <div class="callout-body">
 <div class="callout-content">
-<p>: The first person to walk on the Moon was</p>
-<p>: Neil Armstrong</p>
+<p><i class="fa-solid fa-person" aria-label="person"></i>: The first person to walk on the Moon was</p>
+<p><i class="fa-solid fa-robot" aria-label="robot"></i>: Neil Armstrong</p>
 </div>
 </div>
 </div>
@@ -483,7 +485,7 @@ Andrew Ellis
 <div class="callout callout-note no-icon callout-style-simple">
 <div class="callout-body">
 <div class="callout-content">
-<p>: What is the capital of France? : Paris. Is there anything else you would like to know about France?</p>
+<p><i class="fa-solid fa-person" aria-label="person"></i>: What is the capital of France? <i class="fa-solid fa-robot" aria-label="robot"></i>: Paris. Is there anything else you would like to know about France?</p>
 </div>
 </div>
 </div>
@@ -601,8 +603,27 @@ Andrew Ellis
 </div>
 </div>
 </section>
-<section id="references" class="title-slide slide level1 smaller scrollable" data-background-color="#2e3440">
-<h1>References</h1>
+<section id="what-are-llms-good-at" class="slide level2">
+<h2>What are LLMs good at?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Fixing grammar, bad writing, etc.</li>
+<li>Rephrasing</li>
+<li>Analyze texts</li>
+<li>Write computer code</li>
+<li>Answer questions about a knowledge base</li>
+<li>Translate languages</li>
+<li>Simulate characters for games</li>
+<li>Creating structured output</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<iframe width="600" height="600" src="https://chat.openai.com/share/49f95bd5-58de-466c-9323-5118fa83685e" title="Email addresses in a comma-separated list"></iframe>
+</div>
+</div>
+</section>
+<section id="references" class="slide level2 smaller scrollable" data-background-color="#2e3440">
+<h2>References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-shanahanTalkingLargeLanguage2023" class="csl-entry" role="listitem">
 Shanahan, Murray. 2023. <span>“Talking <span>About Large Language Models</span>.”</span> January 25, 2023. <a href="https://doi.org/10.48550/arXiv.2212.03551">https://doi.org/10.48550/arXiv.2212.03551</a>.
@@ -672,7 +693,7 @@ Wei, Jason, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgea
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: 'h.v',
+        slideNumber: 'c/t',
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
@@ -713,7 +734,7 @@ Wei, Jason, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgea
         rtl: false,
 
         // see https://revealjs.com/vertical-slides/#navigation-mode
-        navigationMode: 'default',
+        navigationMode: 'linear',
 
         // Randomizes the order of slides each time the presentation loads
         shuffle: false,
@@ -831,44 +852,6 @@ Wei, Jason, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgea
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

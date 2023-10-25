@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/slides/demo.html</loc>
-    <lastmod>2023-10-24T21:16:33.316Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/slides/zz-00-introduction.html</loc>
+    <lastmod>2023-10-25T12:49:20.030Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/slides/03-prompting-learning-teaching.html</loc>
-    <lastmod>2023-10-23T14:42:30.055Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/slides/04-reflection.html</loc>
+    <lastmod>2023-10-25T23:31:24.754Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/slides/01-text-representation-generation.html</loc>
-    <lastmod>2023-10-23T14:42:30.049Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/slides/02-prompting-techniques.html</loc>
+    <lastmod>2023-10-25T23:27:29.290Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/tools.html</loc>
-    <lastmod>2023-09-11T19:55:57.391Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/slides/00-introduction.html</loc>
+    <lastmod>2023-10-25T23:03:26.388Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/take-home.html</loc>
-    <lastmod>2023-10-25T09:32:52.962Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/text-representation.html</loc>
+    <lastmod>2023-10-23T14:42:30.048Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/shared-chats.html</loc>
+    <lastmod>2023-10-24T07:39:59.039Z</lastmod>
   </url>
   <url>
     <loc>https://virtuelleakademie.github.io/promptly-literate/pages/resources.html</loc>
-    <lastmod>2023-10-25T11:46:57.846Z</lastmod>
+    <lastmod>2023-10-25T22:33:18.795Z</lastmod>
   </url>
   <url>
     <loc>https://virtuelleakademie.github.io/promptly-literate/pages/observable-test.html</loc>
@@ -33,24 +37,32 @@
     <lastmod>2023-09-11T19:55:57.391Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/activity-3-prompting-learning-teaching.html</loc>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/activity-4-miro.html</loc>
+    <lastmod>2023-10-25T18:16:29.448Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/activity-2-prompting-learning-teaching.html</loc>
     <lastmod>2023-10-23T14:42:30.045Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/activity-1-explore-llms.html</loc>
-    <lastmod>2023-10-23T14:42:30.044Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/activity-0-explore-llms.html</loc>
+    <lastmod>2023-10-25T18:09:30.596Z</lastmod>
   </url>
   <url>
     <loc>https://virtuelleakademie.github.io/promptly-literate/pages/about.html</loc>
     <lastmod>2023-10-23T14:42:30.043Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/activity-2-prompting-techniques.html</loc>
-    <lastmod>2023-10-23T14:42:30.044Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/activity-1-prompting-techniques.html</loc>
+    <lastmod>2023-10-25T19:14:04.358Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/activity-3-reflection.html</loc>
+    <lastmod>2023-10-25T18:16:09.764Z</lastmod>
   </url>
   <url>
     <loc>https://virtuelleakademie.github.io/promptly-literate/pages/agenda.html</loc>
-    <lastmod>2023-10-25T12:47:19.197Z</lastmod>
+    <lastmod>2023-10-25T17:19:31.194Z</lastmod>
   </url>
   <url>
     <loc>https://virtuelleakademie.github.io/promptly-literate/pages/beispiel-arbeit.html</loc>
@@ -69,31 +81,31 @@
     <lastmod>2023-10-23T14:42:30.046Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/text-representation.html</loc>
-    <lastmod>2023-10-23T14:42:30.048Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/take-home.html</loc>
+    <lastmod>2023-10-25T09:32:52.962Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/slides/00-introduction.html</loc>
-    <lastmod>2023-10-25T15:58:49.422Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/tools.html</loc>
+    <lastmod>2023-09-11T19:55:57.391Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/slides/02-prompting-techniques.html</loc>
-    <lastmod>2023-10-23T14:42:30.055Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/slides/01-text-representation-generation.html</loc>
+    <lastmod>2023-10-23T14:42:30.049Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/slides/04-reflection.html</loc>
-    <lastmod>2023-09-15T00:47:59.063Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/slides/03-prompting-learning-teaching.html</loc>
+    <lastmod>2023-10-25T23:35:38.048Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/slides/empty.html</loc>
-    <lastmod>2023-10-23T14:27:42.002Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/slides/demo.html</loc>
+    <lastmod>2023-10-24T21:16:33.316Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/shared-chats.html</loc>
-    <lastmod>2023-10-24T07:39:59.039Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/activity-5-discussion-declaration.html</loc>
+    <lastmod>2023-10-25T18:41:44.510Z</lastmod>
   </url>
   <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/slides/zz-00-introduction.html</loc>
-    <lastmod>2023-10-25T12:49:20.030Z</lastmod>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/activities.html</loc>
+    <lastmod>2023-10-25T18:51:28.753Z</lastmod>
   </url>
 </urlset>
