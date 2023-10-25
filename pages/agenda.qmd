@@ -15,7 +15,7 @@ title: "Agenda"
 
 - Use LLMs yourself! It's important to gain an intuition for their capabilities and limitations.
 - Combine domain knowledge of the "thing" you are working on, an understanding of how LLMs work, and an understanding of how to prompt them. 
-- Use LLMs with students in a classroom setting. This will help students to develop their own understanding of LLMs.
+- Use LLMs with students in a classroom setting. This will help students to develop their own understanding of LLMs and become AI-literate.
 - Always (critically 👩‍🔬) check an LLM's output. They are language models, not knowledge bases.
 
 
