@@ -16,7 +16,7 @@ format:
           data-background-opacity: "1"
         # logo: ../assets/robot.png
         footer: <a href="../index.html">back to website ⤴️</a>
-        navigation-mode: vertical
+        navigation-mode: linear
         progress: true
         scrollable: false
         slide-number: true
@@ -43,11 +43,6 @@ format:
 # number-sections: true
 ---
 
-```{r}
-#| warning: false
-#| message: false
-library(knitr)
-```
 
 
 ## Contents
@@ -299,7 +294,32 @@ We can think of an LLM as a non-deterministic simulator capable of role-playing 
 
 ::::
 
-# References {background-color="#2e3440"}
+
+
+## What are LLMs good at?
+
+::::{.columns}
+::: {.column width="50%"}
+
+- Fixing grammar, bad writing, etc.
+- Rephrasing
+- Analyze texts
+- Write computer code
+- Answer questions about a knowledge base
+- Translate languages
+- Simulate characters for games
+- Creating structured output
+
+:::
+:::{.column width="50%"}
+```{=html}
+<iframe width="600" height="600" src="https://chat.openai.com/share/49f95bd5-58de-466c-9323-5118fa83685e" title="Email addresses in a comma-separated list"></iframe>
+```
+:::
+::::
+
+
+## References {background-color="#2e3440"}
 
 ::: {#refs}
 :::
