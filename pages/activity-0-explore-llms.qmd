@@ -1,0 +1,149 @@
+---
+title: "Activity 1: Exploring LLMs"
+description: |
+  Programming a GPT model.
+date: last-modified
+date-format: "DD MMM, YYYY"
+author: 
+  - name: Andrew Ellis
+    url: https://github.com/awellis
+    affiliation: Virtuelle Akademie, Berner Fachhochschule
+    affiliation-url: https://virtuelleakademie.ch
+    orcid: 0000-0002-2788-936X
+license: CC BY
+citation: true
+bibliography: ../bibliography.bib
+format:
+    html:
+        toc: true
+        code-fold: true
+        code-link: true
+jupyter: python3
+execute: 
+  cache: false
+  keep-ipynb: true
+code-annotations: select
+---
+
+
+
+## Tasks
+
+Use both ChatGPT and the Playground to perform the following tasks:
+[Feel free to use the other models (Bing, Bard, Llama2, GooseAI) as well.]{.aside}
+
+:::{.callout-tip}
+## Prompts
+
+1) Generate fiction: `Tell me a short story about a monk and a tortoise going on a road trip.`
+2)	Let the models write a poem. Give it a topic and a style (e.g. `a haiku about an exciting day at the office`).
+3) Let the models explain a concept from your field of study in a short text passage.
+4) Use the models to do some maths (e.g. `What is 89322/1313?`).
+5) Use the models to solve some common sense reasoning tasks. For example, `We have a book, 9 eggs (without the egg carton), a laptop, a bottle, and a nail. Please tell me how I can stack them on top of each other in a stable way.`
+:::
+
+In all of these examples, use the **temperature** parameter in the playground to control the randomness of the model's output. Try different settings, and see how the output changes.
+
+
+## Models
+- [ChatGPT](https://chat.openai.com/)
+- [OpenAI Playground](https://platform.openai.com/playground)
+- [Bing Chat](https://www.bing.com/)
+- [Google Bard](https://bard.google.com/)
+- [Llama2](https://www.llama2.ai/)
+- [Goose AI](https://goose.ai/playground)
+
+Now we will explore two different interfaces to the same underlying OpenAI language models. These are **GPT-3.5-turbo** and **GPT-4**. The first is a smaller model (fewer parameters), whereas the second is the most advanced model (more parameters). 
+
+[GPT-4 is only accessible to paid customers.]{.aside}
+
+Both of these models are trained on the same data, but the second is larger and more powerful. Both are optimized for conversations, and are capable of a wide variety of tasks. However, GPT-4 generally performs better, especially at tasks requiring more complex reasoning, and at following instructions. The differences between models are described in this [article](https://openai.com/research/gpt-4).
+
+One of the most important differences is the context length that the models can handle. GPT-4 can process much more context than GPT-3.5-turbo. 
+
+
+- GPT-3.5-turbo can process a context of 4097 tokens (~3073 words) or 16'000 tokens (~12'000 words).
+
+- GPT-4 comes in two varieties: 8192 tokens (~6144 words ) or 32'768 tokens (~25'000 words).
+
+[However: ChatGPT only allows shorter context lengths; to get the full context length, you have to use the API (or playground).]{.aside}
+
+
+General capabilities of the models include:
+
+- LLMs are *few-shot* learners, meaning they can learn from a small number of examples.
+- LLMs are *zero-shot* learners, meaning they can perform tasks without any examples, given appropriate instructions.
+- reasoning
+- writing code in common programming languages
+- translating between languages
+- basic mathematical abilities
+
+@bubeckSparksArtificialGeneral2023 give a fascinating summary of tasks that GPT-4 is claimed to be capable of.
+
+
+Both models function in the same basic way (in a conversation): the entire previous conversation is fed into the model as context (prompt), and the model generates a response (token by token). 
+
+If you feel that the conversation has taken a wrong turn, you can **edit** your message, and the conversation will be re-generated from that point.
+
+
+
+
+### ChatGPT
+
+This is a simple interface to the GPT-3.5-turbo and GPT-4 models. It does not offer any possibility of adjusting the parameters of the model, but it does allow you to enter a prompt, and then to interact with the model.
+
+Notable features:
+- In the paid version, you can choose between GPT-3.5-turbo and GPT-4.
+- GPT-4 offers plugins. These can give the assistant access to a wide variety of sources of information, including databases, APIs, and web scraping. A very useful plugin is the *Wolfram Alpha* plugin, which allows the assistant to compute answers based on facts and mathematical knowledge.
+- GPT-4 and **Advanced Data Analysis** plugin; this gives the model the ability to run python code and display the results.
+
+
+
+### Playground
+
+This is a more advanced interface to the GPT-3.5-turbo and GPT-4 models. It allows you to adjust the parameters of the model, and to enter different types of prompts, and then to interact with the model. It also allows you to use the full context lengths (8k, 16k or 32k tokens), meaning that you can process much longer texts.
+
+Furthermore, it allows you to save your prompts as **presets** to reuse them or to share them with others.
+
+#### Parameters
+The playground offers the following parameters:
+
+- Mode: Currently only `Chat`
+- Model: GPT-3.5-turbo or GPT-4 with varying context lengths.
+- <mark style="background: #FFF3A3A6;">Temperature: This is the most interesting parameter - it controls the level of _randomness_. A setting of 0 means that the model will sample text deterministically (it will always choose the most probable next token), higher settings make the model's output increasingly more random.</mark>
+- Maximum length: controls the length of the output text.
+- Stop sequences: characters telling the model to stop generating text.
+- Top P: tells the model to consider only subset of most probable tokens when generating. Use **temperature** instead.
+- Frequency penalty: penalizes the model based on number of times that token has appeared.
+- Presence penalty: penalizes the model for based on whether they have already appeared. Encourages diversity of tokens.
+
+In general, the only parameters that you need to adjust are **temperature** and (possibly) **maximum length**. 
+
+
+If you want to read more about the temperature parameter, see the following article
+[👉 Temperature](https://docs.cohere.com/docs/temperature).
+
+
+[[1](https://www.prompthub.us/blog/understanding-openai-parameters-how-to-optimize-your-prompts-for-better-outputs) and 
+[2](https://shivammehta25.github.io/posts/temperature-in-language-models-open-ai-whisper-probabilistic-machine-learning/) are also interesting.]{.aside}
+
+
+
+
+#### System and user messages
+The playground offers three types of messages: **system**, **user** and **assistant** messages. 
+
+These system and user messages are both fed into the model as context, but they are treated differently; the system message is not part of the conversation. The idea is that the system message is a prompt that is not visible to the user, i.e. it can be hidden when building a chatbot.
+
+The user and assistant messages are displayed in the conversation. The assistant messages are generated by the model, and the user messages are entered by the user.
+
+
+
+
+:::{.callout-caution}
+## Discussion 💬 
+
+- What do you think of the models' performance? What are their strengths and weaknesses? What are the limitations of the models? 
+- If you are unhappy, how can you improve the model's performance?
+
+:::

@@ -8,11 +8,13 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.432">
 
   <meta name="author" content="Andrew Ellis">
-  <title>LLMs for Teaching and Learning - Introduction</title>
+  <title>LLMs for Teaching and Learning - What is ChatGPT?</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -267,7 +269,6 @@
     }
     .reveal .slide:not(.center) {
       height: 100%;
-      overflow-y: auto;
     }
     .reveal .slide.scrollable {
       overflow-y: auto;
@@ -344,9 +345,9 @@
       margin-right: 0; 
     }
   </style>
-<meta property="og:title" content="LLMs for Teaching and Learning - Introduction">
+<meta property="og:title" content="LLMs for Teaching and Learning - What is ChatGPT?">
 <meta property="og:site_name" content="LLMs for Teaching and Learning">
-<meta name="twitter:title" content="LLMs for Teaching and Learning - Introduction">
+<meta name="twitter:title" content="LLMs for Teaching and Learning - What is ChatGPT?">
 <meta name="twitter:creator" content="@awellis">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -354,8 +355,8 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" data-background-image="../assets/background-purple.png" data-background-opacity="1" class="quarto-title-block center">
-  <h1 class="title">Introduction</h1>
+<section id="title-slide" data-background-opacity="1" class="quarto-title-block center">
+  <h1 class="title">What is ChatGPT?</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -365,180 +366,273 @@ Andrew Ellis
 </div>
 </div>
 
-  <p class="date">21 October, 2023</p>
+  <p class="date">26 October, 2023</p>
 </section>
-<section id="what-happens-when-your-lawyer-uses-chatgpt" class="slide level2" data-background-color="#2e3440">
-<h2>What Happens When Your Lawyer Uses ChatGPT</h2>
-<iframe width="780" height="640" src="https://simonwillison.net/2023/May/27/lawyer-chatgpt/" title="ChatGPT: US lawyer admits using AI for case research"></iframe>
-</section>
-<section id="the-best-prompts-for-chatgpt-the-ultimate-list" class="slide level2" data-background-color="#2e3440">
-<h2>The Best Prompts For ChatGPT: The ultimate list</h2>
-<iframe width="780" height="640" src="https://www.writingbeginner.com/best-prompts-for-chatgpt/" title="Best prompts for ChatGPT"></iframe>
-</section>
-<section id="key-messages" class="slide level2">
-<h2>Key messages</h2>
-<ol type="1">
-<li><p>Keep human in the loop: LLMs should be used to augment human writing, not to replace it.</p></li>
-<li><p>Prompting, prompting, prompting: this workshop is mainly about prompting. We can think about prompting as a way of “programming” LLMs, i.e.&nbsp;getting LLMs to do what we want them to do.</p></li>
-</ol>
-</section>
-<section id="contents" class="title-slide slide level1 center" data-background-color="#b48ead">
-<h1>Contents</h1>
+<section id="contents" class="slide level2">
+<h2>Contents</h2>
 <ul>
-<li>Energy consumption, bias, ethical aspects
-<ol type="1">
-<li>Energy consumption</li>
-<li>Bias</li>
-<li>Ethical aspects</li>
-</ol></li>
-<li>Wissenschaftliches Arbeiten</li>
+<li>Example: 20 questions</li>
+<li>What is ChatGPT?
+<ul>
+<li>Base model</li>
+<li>Assistant model</li>
+</ul></li>
+<li>What is it not?</li>
+<li>ChatGPT as a role-play simulator</li>
 </ul>
-</section>
+<!-- ## Key messages
 
-<section>
-<section id="energy-consumption-bias-ethical-aspects" class="title-slide slide level1 center" data-background-color="#b48ead">
-<h1>Energy consumption, bias, ethical aspects</h1>
-<div class="absolute" style="top: 0px; left: 100%; ">
-<div class="sectionhead">
-<p><span style="opacity:0.25">1 2 3</span> 4 <span style="opacity:0.25">5 6 7 8</span></p>
-</div>
-</div>
+1) 👩‍⚖️ Keep a human in the loop: LLMs should be used to augment human writing, not to replace it.
+
+2) This workshop is mainly about prompting. We can think about prompting as a way of "programming" LLMs, i.e. getting LLMs to do what we want them to do. -->
 </section>
-<section id="summary" class="slide level2">
-<h2>Summary</h2>
-<ul>
-<li>ChatGPT has comparatively high energy requirements.</li>
-<li>Large language models (LMMs) learn all kinds of human biases from their training data.</li>
-<li>Toxic content produced by LLMs is flagged by cheap labor.</li>
-</ul>
-</section>
-<section id="energy-consumption" class="slide level2">
-<h2>Energy consumption</h2>
-<ul>
-<li><strong>Training:</strong>
-<ul>
-<li><p>“What we do know is that training ChatGPT used <span class="math inline">\(1.3\)</span> GWh, roughly equivalent to the consumption of 120 US homes for a year.” Quelle: <a href="https://techhq.com/2023/03/data-center-energy-usage-chatgpt/">Heating up: how much energy does AI use?</a></p></li>
-<li><p><span class="citation" data-cites="pattersonCarbonEmissionsLarge2022">Patterson et al. (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span> estimate training costs at 502 tons of <span class="math inline">\(\text{CO}_2\)</span>.</p></li>
-</ul></li>
-<li><strong>Usage:</strong>
-<ul>
-<li>7 tons of <span class="math inline">\(\text{CO}_2\)</span> per day (end of February). Source: <a href="https://xcorr.net/2023/04/08/how-much-energy-does-chatgpt-use/">How much energy does ChatGPT use?</a></li>
-<li>ChatGPT’s energy consumption is equivalent to 400-800 US households. This is considerable, but compared to e.g.&nbsp;cryptocurrencies it is rather low.</li>
-</ul></li>
-</ul>
-</section>
-<section id="bias" class="slide level2">
-<h2>Bias</h2>
+<section id="questions" class="slide level2">
+<h2>20 questions</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<iframe width="780" height="500" src="https://www.societybyte.swiss/2022/12/22/hi-chatgpt-hast-du-vorurteile/" title="Vorurteile"></iframe>
+<iframe width="600" height="600" src="https://chat.openai.com/share/a4daa92d-4631-4d7e-bfe6-ef9b3b5eb0a0" title="Once upon a time"></iframe>
+
 </div><div class="column" style="width:50%;">
 <ul>
-<li>Da LLMs von Texten lernen, die von Menschen geschrieben wurden, können sie auch Vorurteile lernen.</li>
+<li>🤷‍♂️ What is ChatGPT doing here?</li>
+<li>How does this work?</li>
 </ul>
-<p>Quelle: <a href="https://www.societybyte.swiss/2022/12/22/hi-chatgpt-hast-du-vorurteile/">Hast du Vorurteile?</a></p>
 </div>
 </div>
 </section>
-<section id="ethical-aspects" class="slide level2">
-<h2>Ethical aspects</h2>
+<section id="what-is-chatgpt" class="slide level2">
+<h2>What is ChatGPT?</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<iframe width="780" height="500" src="https://www.societybyte.swiss/2023/06/07/traumatische-klickarbeit-die-menschen-hinter-chatgpt/" title="Traumatische Klickarbeit"></iframe>
-</div><div class="column" style="width:50%;">
+<div class="column" style="width:34%;">
+<p><img data-src="../assets/images/Language Model.png" style="width:100.0%"></p>
+</div><div class="column" style="width:66%;">
 <ul>
-<li>Auf Grund der grossen Menge von Trainingsdaten, die für Sprachmodelle benötigt werden, ist Qualitätskontrolle schwierig.</li>
-<li>Diskriminierende oder beleidigende Aussagen werden von einem Chatbot generiert.</li>
-<li>Solche Antworten können als unerwünscht markiert werden.</li>
-<li>Toxische Inhalte wie körperliche und sexuelle Gewalt, Suizide und Tierquälerei, müssen beim Trainieren aus den Antworten gefiltert werden. Dabei mussten angestellte Arbeitskräfte für weniger als 2 Dollar die Stunde teils schockierende Inhalte lesen.</li>
+<li>Consists of a <strong>base</strong> model and an <strong>assistant</strong> model.</li>
+<li><strong>Base or foundation</strong> model: probabilistic model of how language is generated.</li>
+<li><strong>Assistant</strong>: able to create human-like dialogue.</li>
 </ul>
-<p>Quelle: <a href="https://www.societybyte.swiss/2023/06/07/traumatische-klickarbeit-die-menschen-hinter-chatgpt/">Traumatische Klickarbeit</a></p>
-</div>
-</div>
-</section></section>
-<section>
-<section id="wissenschaftliches-arbeiten" class="title-slide slide level1 center" data-background-color="#b48ead">
-<h1>Wissenschaftliches Arbeiten</h1>
-<div class="absolute" style="top: 0px; left: 100%; ">
-<div class="sectionhead">
-<p><span style="opacity:0.25">1 2 3 4 5 6</span> 7 <span style="opacity:0.25">8</span></p>
 </div>
 </div>
 </section>
-<section id="haltung-der-bfh" class="slide level2">
-<h2>Haltung der BFH</h2>
+<section id="base-model" class="slide level2">
+<h2>Base model</h2>
+<div class="columns">
+<div class="column" style="width:34%;">
+<p><img data-src="../assets/images/LLM-Bookshelf.png" style="width:100.0%"></p>
+<p><img data-src="../assets/images/pretraining.png" style="width:100.0%"></p>
+</div><div class="column" style="width:66%;">
 <ul>
-<li>Technologien sollen dort, wo sie den Lernprozess unterstützen und praxisrelevant sind, in die Lehre einbezogen werden.</li>
-<li>Studierende sollen lernen, Technologien kompetent einzusetzen und kritisch zu hinterfragen. Dies gilt uneingeschränkt auch für ChatGPT und andere gleichgerichtete Tools.</li>
+<li>Is trained to predict text.</li>
 </ul>
+<div class="callout callout-note no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p><i class="fa-solid fa-person" aria-label="person"></i>: What is the capital of France?</p>
+<p><i class="fa-solid fa-robot" aria-label="robot"></i>: What is the capital of Germany? What is the capital of Italy? …</p>
+</div>
+</div>
+</div>
+<ul>
+<li>Extracts various types of knowledge from text: linguistic, factual, commonsense, etc.</li>
+<li>Does not know how to have a conversation.</li>
+</ul>
+</div>
+</div>
 </section>
-<section id="zitieren" class="slide level2">
-<h2>Zitieren</h2>
-<ul>
-<li>Es existieren noch keine Richtlinien für das Zitieren von ChatGPT oder anderen KI-basierte Schreibtools.</li>
-<li>ChatGPT ist rein rechtlich keine zitierfähige Quelle und damit auch nicht zitierpflichtig <span class="citation" data-cites="fleckPruefungsrechtlicheFragenChatGPT2023">(<a href="#/references" role="doc-biblioref" onclick="">Fleck 2023</a>)</span>.</li>
-<li>Aus der Orientierungshilfe: “KI-basierte Schreibtools sind externe Quellen und müssen daher im Sinne der wissenschaftlichen Integrität immer, wie andere Quellen auch, zitiert werden, sofern ganze Textpassagen von ChatGPT benutzt werden. Falls mit dem Tool der eigene Text überarbeitet wurde, muss ChatGPT als verwendetes Hilfsmittel angeführt werden.”</li>
-</ul>
-<div class="callout callout-note callout-titled callout-style-default">
+<section id="base-model-1" class="slide level2">
+<h2>Base model</h2>
+<p>Produces text that most likely follows the input (prompt).</p>
+<div class="callout callout-note no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p><i class="fa-solid fa-person" aria-label="person"></i>: The first person to walk on the Moon was</p>
+<p><i class="fa-solid fa-robot" aria-label="robot"></i>: Neil Armstrong</p>
+</div>
+</div>
+</div>
+<div class="callout callout-caution no-icon callout-titled callout-style-simple">
 <div class="callout-body">
 <div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Möglicher Pauschalverweis</strong></p>
+<p><strong>Does an LLM know facts?</strong></p>
 </div>
 <div class="callout-content">
-<p>“Beim Verfassen der Arbeit habe ich das KI-gestützte Schreibwerkzeug ChatGPT zur Textoptimierung verwendet. Wörtlich aus dem Tool übernommene Passagen wurden im Text als persönliche Kommunikation zitiert.”</p>
+<p>What we are really asking: Given what it learned during training, what words are most likely to follow <em>“The first person to walk on the Moon was”</em>? A good reply to this question is <em>“Neil Armstrong”</em>.</p>
 </div>
 </div>
 </div>
 </section>
-<section id="plagiate-und-detektion" class="slide level2">
-<h2>Plagiate und Detektion</h2>
+<section id="base-model-emergent-properties" class="slide level2">
+<h2>Base model: emergent properties</h2>
 <ul>
-<li>Texte von ChatGPT werden jedes Mal individuell erstellt. Es handelt sich nicht um Plagiate.</li>
-<li>Die klassischen Tools zur Aufdeckung von Plagiaten wie z.B. <em>TurnItIn</em> funktionieren hier nicht.</li>
-<li>Die BFH empfiehlt weiterhin, schriftliche Arbeiten mit der Plagiatserkennungssoftware Turnitin zu prüfen.</li>
+<li>LLMs are thought to show emergent properties - abilities not explicitly programmed into the model, but emerge as a result of text prediction.
+<ul>
+<li>performing arithmetic, answering questions, summarizing text, translating, etc.</li>
+<li>zero-shot learning: LLMs can perform tasks without being trained on them.</li>
+<li>few-shot learning: LLMs can perform tasks with few examples.</li>
+</ul></li>
 </ul>
 </section>
-<section id="kompetenznachweise" class="slide level2">
-<h2>Kompetenznachweise</h2>
+<section id="assistant-model" class="slide level2">
+<h2>Assistant model</h2>
+<div class="columns">
+<div class="column" style="width:34%;">
+<p><img data-src="../assets/images/Chat.png" style="width:100.0%"></p>
+<p><img data-src="../assets/images/RLHF.svg" style="width:100.0%"></p>
+</div><div class="column" style="width:66%;">
 <ul>
-<li>Siehe <a href="https://virtuelleakademie.ch/knowledge-base/ki-basierte-schreibtools-in-der-lehre-chatgpt-im-fokus/">KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus</a></li>
-<li>Beim Benutzen von KI-generierten Texten in Kompetenznachweisen ohne Deklaration oder Zitierung kann von einem Plagiat <em>im weiteren Sinne</em> ausgegangen werden, welches das bisher etablierte Plagiatsverständnis im engeren Sinne erweitert.</li>
-<li><strong>Open Book-Prüfungen:</strong> KI-Tools müssten explizit ausgeschlossen werden.</li>
-<li><strong>Closed Book-Prüfungen:</strong> KI-Tools können durch Einsatz von Safe Exam-Browser und <a href="https://www.bfh.ch/de/forschung/forschungsbereiche/lernstick/">Lernstick</a> ausgeschlossen werden.</li>
-<li><strong>Schriftliche Arbeiten:</strong> KI-Tools durch pauschalen Hilfsmittelverweis am Ende der Arbeit deklarieren.</li>
-<li><strong>Alternative oder ergänzende Prüfungsformen:</strong> praktische Prüfungen, mündliche Prüfungen, Präsentationen.</li>
+<li>Is trained to create human-like dialogue.</li>
+</ul>
+<div class="callout callout-note no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p><i class="fa-solid fa-person" aria-label="person"></i>: What is the capital of France? <i class="fa-solid fa-robot" aria-label="robot"></i>: Paris. Is there anything else you would like to know about France?</p>
+</div>
+</div>
+</div>
+<ul>
+<li>Trained to have conversations: turn-taking, question answering, not being [rude/sexist/racist], etc.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="knowledge-base" class="slide level2">
+<h2>Knowledge base</h2>
+<div class="columns">
+<div class="column" style="width:34%;">
+<p><img data-src="../assets/images/KnowledgeBase.png" style="width:100.0%"></p>
+</div><div class="column" style="width:66%;">
+<ul>
+<li>A knowledge base is a collection of facts about the world.</li>
+<li><code>Ask</code> and <code>Tell</code></li>
+<li>I can ask but I can’t tell.</li>
+<li>It cannot give me verifiable facts.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="knowledge-base-1" class="slide level2">
+<h2>Knowledge base</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../assets/images/Rilke.png" style="width:75.0%"></p>
+<figcaption>Am Strande von Rainer Maria Rilke <br> 👉 <a href="https://chat.openai.com/share/37698510-9047-4d4f-8a6b-00f054d06457">Open in ChatGPT</a></figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../assets/images/Hesse.png" style="width:75.0%"></p>
+<figcaption>Kennst du dieses Gedicht? <br> 👉 <a href="https://chat.openai.com/share/37698510-9047-4d4f-8a6b-00f054d06457">Open in ChatGPT</a></figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="fragment">
+<p>What can we learn from this?</p>
+</div>
+</section>
+<section id="knowledge-base-2" class="slide level2">
+<h2>Knowledge base</h2>
+<div class="columns">
+<div class="column" style="width:34%;">
+<p><img data-src="../assets/images/Pothole.png" style="width:100.0%"></p>
+</div><div class="column" style="width:64%;">
+<ul>
+<li>Can’t tell me where it got its information from.</li>
+<li>LLMs are models of knowledge bases, but not knowledge bases themselves.</li>
+<li>Expensive/difficult to update with new knowledge.</li>
+<li>Produce ethically questionable results.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="an-llm-is-a-role-play-simulator" class="slide level2">
+<h2>An LLM is a role-play simulator</h2>
+<div class="columns">
+<div class="column" style="width:34%;">
+<p><img data-src="../assets/images/live-action-role-play.png" style="width:100.0%"></p>
+</div><div class="column" style="width:64%;">
+<div class="callout callout-note no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<p>We can think of an LLM as a non-deterministic simulator capable of role-playing an infinity of characters, or, to put it another way, capable of stochastically generating an infinity of simulacra <span class="citation" data-cites="shanahanRolePlayLargeLanguage2023">(<a href="#/references" role="doc-biblioref" onclick="">Shanahan, McDonell, and Reynolds 2023</a>)</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="an-llm-is-a-role-play-simulator-1" class="slide level2">
+<h2>An LLM is a role-play simulator</h2>
+<ul>
+<li>An assistant is trained to respond to user prompts in a human-like way.</li>
+<li>A simulator of <strong>possible</strong> human conversation.</li>
+<li>Has no intentions. It is not an entity with its own goals.</li>
+<li>Does not have a “personality” or “character” in the traditional sense. It can be thought of as a role-playing simulator.</li>
+<li>Has no concept of “truth” or “lying”. The model is not trying to deceive the user, it is simply trying to respond in a human-like way.</li>
 </ul>
 </section>
-<section id="rechtliche-aspekte" class="slide level2">
-<h2>Rechtliche Aspekte</h2>
+<section id="an-llm-is-a-role-play-simulator-2" class="slide level2">
+<h2>An LLM is a role-play simulator</h2>
+
+<img data-src="../assets/images/simulator.png" style="width:100.0%" class="r-stretch"><div class="callout callout-note no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
 <ul>
-<li>ChatGPT kann keine Urheberschaft und keine Autorenschaft beanspruchen, da dies nur natürliche Personen können.</li>
-<li>Menschen können die Urheberschaft eines Textes beanspruchen, auch wenn sie auf Unterstützung durch ChatGPT zurückgegriffen haben – sofern sie eine wesentliche gestalterische Eigenleistung am Text erbracht haben.</li>
+<li>The dialogue agent will do its best to role-play a character in a dialogue.</li>
+<li>At every step, the model is trying to generate text that is most likely to follow the input.</li>
+<li>It can take many different paths. Your interaction is just one of those possible paths.</li>
 </ul>
-<p>Quelle: <span class="citation" data-cites="saldenDidaktischeUndRechtliche2023">Salden (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span></p>
+</div>
+</div>
+</div>
 </section>
-<section id="datenschutz" class="slide level2">
-<h2>Datenschutz</h2>
+<section id="an-llm-is-a-role-play-simulator-3" class="slide level2">
+<h2>An LLM is a role-play simulator</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe width="600" height="600" src="https://chat.openai.com/share/01f39c79-7c23-4a33-8f3e-9d052113cdd5" title="Once upon a time"></iframe>
+
+</div><div class="column" style="width:34%;">
 <ul>
-<li>Anonyme Nutzung von ChatGPT ist mit persönlichen Konto nicht möglich (über Handynummer identifizierbar).</li>
-<li>Alle Eingaben und alle Antworten werden bei ChatGPT unverschlüsselt abgespeichert.</li>
-<li>Daten liegen auf amerikanischen Servern und sind damit für amerikanische Ermittlungsbehörden grundsätzlich zugänglich.</li>
+<li>You can open this conversation in ChatGPT.</li>
+<li>Try re-generating the conversation after the initial prompt.</li>
 </ul>
-</section></section>
-<section id="references" class="title-slide slide level1 smaller scrollable" data-background-color="#2e3440">
-<h1>References</h1>
+</div>
+</div>
+</section>
+<section id="what-are-llms-good-at" class="slide level2">
+<h2>What are LLMs good at?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Fixing grammar, bad writing, etc.</li>
+<li>Rephrasing</li>
+<li>Analyze texts</li>
+<li>Write computer code</li>
+<li>Answer questions about a knowledge base</li>
+<li>Translate languages</li>
+<li>Simulate characters for games</li>
+<li>Creating structured output</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<iframe width="600" height="600" src="https://chat.openai.com/share/49f95bd5-58de-466c-9323-5118fa83685e" title="Email addresses in a comma-separated list"></iframe>
+</div>
+</div>
+</section>
+<section id="references" class="slide level2 smaller scrollable" data-background-color="#2e3440">
+<h2>References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-fleckPruefungsrechtlicheFragenChatGPT2023" class="csl-entry" role="listitem">
-Fleck, Tilmann. 2023. <span>“Prüfungsrechtliche Fragen zu ChatGPT.”</span>
+<div id="ref-shanahanTalkingLargeLanguage2023" class="csl-entry" role="listitem">
+Shanahan, Murray. 2023. <span>“Talking <span>About Large Language Models</span>.”</span> January 25, 2023. <a href="https://doi.org/10.48550/arXiv.2212.03551">https://doi.org/10.48550/arXiv.2212.03551</a>.
 </div>
-<div id="ref-pattersonCarbonEmissionsLarge2022" class="csl-entry" role="listitem">
-Patterson, David, Joseph Gonzalez, Quoc Le, Chen Liang, Lluis-Miquel Munguia, Daniel Rothchild, David So, Maud Texier, and Jeff Dean. 2022. <span>“Carbon <span>Emissions</span> and <span>Large Neural Network Training</span>.”</span>
+<div id="ref-shanahanRolePlayLargeLanguage2023" class="csl-entry" role="listitem">
+Shanahan, Murray, Kyle McDonell, and Laria Reynolds. 2023. <span>“Role-<span>Play</span> with <span>Large Language Models</span>.”</span> May 25, 2023. <a href="https://doi.org/10.48550/arXiv.2305.16367">https://doi.org/10.48550/arXiv.2305.16367</a>.
 </div>
-<div id="ref-saldenDidaktischeUndRechtliche2023" class="csl-entry" role="listitem">
-Salden, Peter. 2023. <span>“Didaktische und rechtliche Perspektiven auf KI-gestütztes Schreiben in der Hochschulbildung.”</span> <span>Ruhr-Universität Bochum</span>. <a href="https://doi.org/10.13154/294-9734">https://doi.org/10.13154/294-9734</a>.
+<div id="ref-weiEmergentAbilitiesLarge2022b" class="csl-entry" role="listitem">
+Wei, Jason, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeaud, Dani Yogatama, et al. 2022. <span>“Emergent <span>Abilities</span> of <span>Large Language Models</span>.”</span> October 26, 2022. <a href="https://doi.org/10.48550/arXiv.2206.07682">https://doi.org/10.48550/arXiv.2206.07682</a>.
 </div>
 </div>
 
@@ -599,7 +693,7 @@ Salden, Peter. 2023. <span>“Didaktische und rechtliche Perspektiven auf KI-ges
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: 'h.v',
+        slideNumber: 'c/t',
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
@@ -640,7 +734,7 @@ Salden, Peter. 2023. <span>“Didaktische und rechtliche Perspektiven auf KI-ges
         rtl: false,
 
         // see https://revealjs.com/vertical-slides/#navigation-mode
-        navigationMode: 'default',
+        navigationMode: 'linear',
 
         // Randomizes the order of slides each time the presentation loads
         shuffle: false,
@@ -758,44 +852,6 @@ Salden, Peter. 2023. <span>“Didaktische und rechtliche Perspektiven auf KI-ges
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

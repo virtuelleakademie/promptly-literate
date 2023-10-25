@@ -16,7 +16,7 @@ format:
         footer: <a href="../index.html">back to website ⤴️</a>
         navigation-mode: vertical
         progress: true
-        scrollable: true
+        scrollable: false
         slide-number: true
         show-slide-number: all
         controls-layout: bottom-right
@@ -59,4 +59,10 @@ format:
 <br>
 <br>
 
-🌟 Your feedback matters! Please take 5 minutes to complete our [👉 evaluation form](https://app.wooclap.com/DXKXBN/questionnaires/64bf884383d74ec2f3abe4f8).
+🌟 Your feedback matters! Please take 5 minutes to complete our [👉 evaluation form](https://app.wooclap.com/DXKXBN/questionnaires/64bf88698c1a5330b3676879).
+
+## Evaluation Form {background-color="#EBCB8B"}
+
+```{=html}
+<iframe src="https://app.wooclap.com/DXKXBN/questionnaires/64bf88698c1a5330b3676879" width="100%" height="600px" frameborder="0" allowfullscreen></iframe>
+```

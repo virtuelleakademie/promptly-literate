@@ -39,9 +39,9 @@ website:
 
       - text: "📺 Slides" # {{< fa person-chalkboard >}}
         menu:
-          - text: "Introduction"
+          - text: "Part 1: What is ChatGPT?"
             file: slides/00-introduction.qmd
-          - text: "Part 1: Text representation, training and text generation"
+          - text: "Further info: Text representation, training and text generation"
             file: slides/01-text-representation-generation.qmd
           - text: "Part 2: Prompting techniques"
             file: slides/02-prompting-techniques.qmd
@@ -50,6 +50,23 @@ website:
           - text: "Part 4: Reflection"
             file: slides/04-reflection.qmd
 
+
+      - text: "💼 Activities"
+        menu:
+          - text: "Activities"
+            file: pages/activities.qmd
+          - text: "Optional Activity: Exploring LLMs"
+            file: pages/activity-0-explore-llms.qmd
+          - text: "Activity 1: Prompting techniques"
+            file: pages/activity-1-prompting-techniques.qmd 
+          - text: "Activity 2: Prompting for teaching and learning"
+            file: pages/activity-2-prompting-learning-teaching.qmd
+          - text: "Activity 3: Reflection"
+            file: pages/activity-3-reflection.qmd
+          - text: "Activity 4: Add your prompt tricks to the Miro board"
+            file: pages/activity-4-miro.qmd
+          - text: "Activity 5: Discuss AI declaration"
+            file: pages/activity-5-discussion-declaration.qmd 
 
       - text: "🎓 Tutorials"
         menu:
@@ -64,21 +81,9 @@ website:
           # - text: "Prompts for teaching and learning"
           #   file: pages/about.qmd
 
-
-      - text: "💼 Activities"
-        menu:
-          - text: "Activity 1: Exploring LLMs"
-            file: pages/activity-1-explore-llms.qmd
-          - text: "Activity 2: Prompting techniques"
-            file: pages/activity-2-prompting-techniques.qmd 
-          - text: "Activity 3: Prompting for teaching and learning"
-            file: pages/activity-3-prompting-learning-teaching.qmd
-          # - text: "Develop an Assistant"
-          #   file: pages/about.qmd
-
       - text: "🛠️ Resources"
         menu:
-          - text: "Ratgeber"
+          - text: "Guides"
             file: pages/resources.qmd
           - text: "Tools"
             file: pages/tools.qmd

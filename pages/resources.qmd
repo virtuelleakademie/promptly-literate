@@ -6,32 +6,41 @@ bibliography: ../bibliography.bib
 
 ## KI Orientierungshilfe der BFH
 
-👉🏼 [KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus](https://bernerfachhochschule.sharepoint.com/sites/mybfh-BFH-News-de/SitePages/Nachrichten-K%C3%BCnstliche-Intelligenz-(KI)-in-der-Lehre.aspx)
+- [KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus](https://bernerfachhochschule.sharepoint.com/sites/mybfh-BFH-News-de/SitePages/Nachrichten-K%C3%BCnstliche-Intelligenz-(KI)-in-der-Lehre.aspx)
 
-👉🏼 [KI-basierte Schreibtools in der Lehre – Knowledge Base](https://virtuelleakademie.ch/knowledge-base/ki-basierte-schreibtools-in-der-lehre-chatgpt-im-fokus/)
+- [KI-basierte Schreibtools in der Lehre – Knowledge Base](https://virtuelleakademie.ch/knowledge-base/ki-basierte-schreibtools-in-der-lehre-chatgpt-im-fokus/)
 
+## Bildung 6.0
+Das Projekt Bildung 6.0 der Berner Fachhochschule stellt relevante und verlässliche Informationen und Empfehlungen zum richtigen Umgang mit KI-basierten Werkzeugen (KBW) für Studierende und Lehrende auf einer Online-Plattform bereit.
 
+- [Projekt Bildung 6.0](https://www.bildung6.ch/)
 
 ## ChatGPT an der Hochschule
 
-👉🏼 [Überblick über KI-Tools im Kontext von akademischen Lese- und Schreibprozessen](https://www.vkkiwa.de/ki-ressourcen/)
+- [Prompts for Education: Enhancing Productivity & Learning](https://github.com/microsoft/prompts-for-edu)
 
-👉🏼 [ChatGPT im Hochschulkontext – eine kommentierte Linksammlung](https://hochschulforumdigitalisierung.de/de/blog/chatgpt-im-hochschulkontext-%E2%80%93-eine-kommentierte-linksammlung)
+- [Überblick über KI-Tools im Kontext von akademischen Lese- und Schreibprozessen](https://www.vkkiwa.de/ki-ressourcen/)
 
-👉🏼 [Uni Bern: Chatbots in der Hochschullehre](https://www.hd.unibe.ch/dienstleistungen/chatbots_in_der_hochschullehre/index_ger.html#e1381410)
+- [ChatGPT im Hochschulkontext – eine kommentierte Linksammlung](https://hochschulforumdigitalisierung.de/de/blog/chatgpt-im-hochschulkontext-%E2%80%93-eine-kommentierte-linksammlung)
 
+-  [Uni Bern: Chatbots in der Hochschullehre](https://www.hd.unibe.ch/dienstleistungen/chatbots_in_der_hochschullehre/index_ger.html#e1381410)
+
+
+## How does GPT work?
+
+- [Generative AI exists because of the transformer (Financial Times 12/09/2023)](https://ig.ft.com/generative-ai/)
 
 ## Wissenschaftliches Arbeiten
 
-👉🏼 [ChatGPT zitieren](https://apastyle.apa.org/blog/how-to-cite-chatgpt)
-
+- [ChatGPT zitieren](https://apastyle.apa.org/blog/how-to-cite-chatgpt)
+-  
 ## Rechtliche Fragen
 
-👉🏼 [Didaktische Und Rechtliche Perspektiven Auf Ki-Gestütztes Schreiben In Der Hochschulbildung](https://hss-opus.ub.ruhr-uni-bochum.de/opus4/frontdoor/index/index/docId/9734) [@saldenDidaktischeUndRechtliche2023]
+- [Didaktische Und Rechtliche Perspektiven Auf Ki-Gestütztes Schreiben In Der Hochschulbildung](https://hss-opus.ub.ruhr-uni-bochum.de/opus4/frontdoor/index/index/docId/9734) [@saldenDidaktischeUndRechtliche2023]
 
 
 ## Ethische Fragen
 
-👉🏼 [Prekäre Klickarbeit hinter den Kulissen von ChatGPT](https://netzpolitik.org/2023/globaler-sueden-prekaere-klickarbeit-hinter-den-kulissen-von-chatgpt/)
+- [Prekäre Klickarbeit hinter den Kulissen von ChatGPT](https://netzpolitik.org/2023/globaler-sueden-prekaere-klickarbeit-hinter-den-kulissen-von-chatgpt/)
 
-👉🏼 [Traumatische Klickarbeit: Die Menschen hinter ChatGPT](https://www.societybyte.swiss/2023/06/07/traumatische-klickarbeit-die-menschen-hinter-chatgpt/)
+- [Traumatische Klickarbeit: Die Menschen hinter ChatGPT](https://www.societybyte.swiss/2023/06/07/traumatische-klickarbeit-die-menschen-hinter-chatgpt/)
