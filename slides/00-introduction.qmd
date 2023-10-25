@@ -1,5 +1,5 @@
 ---
-title: "Introduction"
+title: "What is ChatGPT?"
 author: "Andrew Ellis"
 date: last-modified
 date-format: "DD MMMM, YYYY"

@@ -39,9 +39,9 @@ website:
 
       - text: "📺 Slides" # {{< fa person-chalkboard >}}
         menu:
-          - text: "Introduction"
+          - text: "Part 1: What is ChatGPT?"
             file: slides/00-introduction.qmd
-          - text: "Part 1: Text representation, training and text generation"
+          - text: "Further info: Text representation, training and text generation"
             file: slides/01-text-representation-generation.qmd
           - text: "Part 2: Prompting techniques"
             file: slides/02-prompting-techniques.qmd
