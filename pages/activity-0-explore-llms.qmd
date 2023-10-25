@@ -78,7 +78,7 @@ General capabilities of the models include:
 - translating between languages
 - basic mathematical abilities
 
-@bubeckSparksArtificialGeneral2023 give a fascinating summary of tasks that GPT-4 is lcaimed to be capable of.
+@bubeckSparksArtificialGeneral2023 give a fascinating summary of tasks that GPT-4 is claimed to be capable of.
 
 
 Both models function in the same basic way (in a conversation): the entire previous conversation is fed into the model as context (prompt), and the model generates a response (token by token). 
