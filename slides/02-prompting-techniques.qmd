@@ -11,14 +11,14 @@ format:
         # theme: moon
         theme: default
         title-slide-attributes:
-          data-background-image: ../assets/background-purple.png
+          # data-background-image: ../assets/background-purple.png
           # data-background-size: contain
           data-background-opacity: "1"
         # logo: ../assets/robot.png
         footer: <a href="../index.html">back to website ⤴️</a>
-        navigation-mode: vertical
+        navigation-mode: linear
         progress: true
-        scrollable: true
+        scrollable: false
         slide-number: true
         show-slide-number: all
         controls-layout: bottom-right
@@ -41,26 +41,9 @@ format:
 # number-sections: true
 ---
 
-```{r}
-#| warning: false
-#| message: false
-library(knitr)
-```
 
 
-
-
-
-
-# Basic Prompting Techniques {background-color="#b48ead"}
-
-::: {.absolute top="0" left="100%"}
-::: {.sectionhead}
-
-:::
-:::
-
-## What does an LLM know?
+## Unlocking knowledge?
 
 - LLMs (with enough parameters) show **emergent** behaviour; they learn to do things they were not explicitly trained to do. 
 
