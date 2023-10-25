@@ -277,28 +277,28 @@
     "href": "pages/resources.html",
     "title": "LLMs for Teaching and Learning",
     "section": "",
-    "text": "👉🏼 KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus\n👉🏼 KI-basierte Schreibtools in der Lehre – Knowledge Base"
+    "text": "KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus\nKI-basierte Schreibtools in der Lehre – Knowledge Base"
   },
   {
     "objectID": "pages/resources.html#ki-orientierungshilfe-der-bfh",
     "href": "pages/resources.html#ki-orientierungshilfe-der-bfh",
     "title": "LLMs for Teaching and Learning",
     "section": "",
-    "text": "👉🏼 KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus\n👉🏼 KI-basierte Schreibtools in der Lehre – Knowledge Base"
+    "text": "KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus\nKI-basierte Schreibtools in der Lehre – Knowledge Base"
   },
   {
     "objectID": "pages/resources.html#chatgpt-an-der-hochschule",
     "href": "pages/resources.html#chatgpt-an-der-hochschule",
     "title": "LLMs for Teaching and Learning",
     "section": "ChatGPT an der Hochschule",
-    "text": "ChatGPT an der Hochschule\n👉🏼 Überblick über KI-Tools im Kontext von akademischen Lese- und Schreibprozessen\n👉🏼 ChatGPT im Hochschulkontext – eine kommentierte Linksammlung\n👉🏼 Uni Bern: Chatbots in der Hochschullehre"
+    "text": "ChatGPT an der Hochschule\n\nÜberblick über KI-Tools im Kontext von akademischen Lese- und Schreibprozessen\nChatGPT im Hochschulkontext – eine kommentierte Linksammlung\nUni Bern: Chatbots in der Hochschullehre"
   },
   {
     "objectID": "pages/resources.html#wissenschaftliches-arbeiten",
     "href": "pages/resources.html#wissenschaftliches-arbeiten",
     "title": "LLMs for Teaching and Learning",
     "section": "Wissenschaftliches Arbeiten",
-    "text": "Wissenschaftliches Arbeiten\n👉🏼 ChatGPT zitieren"
+    "text": "Wissenschaftliches Arbeiten\n\nChatGPT zitieren\nRechtliche Fragen\nDidaktische Und Rechtliche Perspektiven Auf Ki-Gestütztes Schreiben In Der Hochschulbildung (Salden 2023)"
   },
   {
     "objectID": "pages/resources.html#rechtliche-fragen",
@@ -312,7 +312,7 @@
     "href": "pages/resources.html#ethische-fragen",
     "title": "LLMs for Teaching and Learning",
     "section": "Ethische Fragen",
-    "text": "Ethische Fragen\n👉🏼 Prekäre Klickarbeit hinter den Kulissen von ChatGPT\n👉🏼 Traumatische Klickarbeit: Die Menschen hinter ChatGPT"
+    "text": "Ethische Fragen\n\nPrekäre Klickarbeit hinter den Kulissen von ChatGPT\nTraumatische Klickarbeit: Die Menschen hinter ChatGPT"
   },
   {
     "objectID": "pages/observable-test.html",
@@ -459,35 +459,35 @@
     "href": "pages/agenda.html",
     "title": "Agenda",
     "section": "",
-    "text": "What are large language models (LLMs)?\nHow are LLMs trained?\nHow do LLMs produce text?\nWhat are effective prompting techniques?\nHow can I use LLMs for in educational settings?"
+    "text": "What are large language models (LLMs)? How do they generate text?\nWhat tasks can LLMs perform? What are their limitations?\nWhat are effective prompting techniques?\nHow can I use LLMs in educational settings?"
   },
   {
     "objectID": "pages/agenda.html#contents",
     "href": "pages/agenda.html#contents",
     "title": "Agenda",
     "section": "",
-    "text": "What are large language models (LLMs)?\nHow are LLMs trained?\nHow do LLMs produce text?\nWhat are effective prompting techniques?\nHow can I use LLMs for in educational settings?"
+    "text": "What are large language models (LLMs)? How do they generate text?\nWhat tasks can LLMs perform? What are their limitations?\nWhat are effective prompting techniques?\nHow can I use LLMs in educational settings?"
   },
   {
     "objectID": "pages/agenda.html#learning-outcomes",
     "href": "pages/agenda.html#learning-outcomes",
     "title": "Agenda",
     "section": "🎯 Learning outcomes",
-    "text": "🎯 Learning outcomes\n\n\n\n\n\n\nAfter this workshop, you will be able to:\n\n\n\n\nExplain how LLMs represent and generate text.\nCreate effective prompts for LLMs.\nDesign your own LLM-based educational activities.\nCritically evaluate LLM-based educational activities."
+    "text": "🎯 Learning outcomes\n\n\n\n\n\n\nAfter this workshop, you will be able to:\n\n\n\n\nExplain what large language models and conversational agents, such as ChatGPT, can be used for, and what they shouldn’t be used for.\nCreate effective prompts for LLMs.\nDesign your own LLM-based educational activities.\nCritically evaluate LLM-based educational activities."
   },
   {
     "objectID": "pages/agenda.html#schedule",
     "href": "pages/agenda.html#schedule",
     "title": "Agenda",
     "section": "⏱️ Schedule",
-    "text": "⏱️ Schedule\n🕐 13:00 - 13:35   →   💬 Introduction  🕜 13:30 - 14:00   →   📺 Input 1: What are LLMs?  🕑 14:00 - 14:20   →   💼 Activity 1: Explore ChatGPT and Playground  🕝 14:20 - 14:45   →   ⏸️ Break  🕒 14:50 - 15:15   →   📺 Input 2: Prompting techniques  🕞 15:15 - 15:45   →   💼 Activity 2: Explore prompting techniques  🕓 15:45 - 16:00   →   ⏸️ Break  🕓 16:00 - 16:20   →   📺 Input 3: Prompting for learning and teaching  🕟 16:20 - 16:50   →   💼 Activity 3: Design your own LLM-based educational activity  🕔 16:50 - 17:00   →   💬 Idea generation and wrap-up"
+    "text": "⏱️ Schedule"
   },
   {
     "objectID": "pages/agenda.html#instructor",
     "href": "pages/agenda.html#instructor",
     "title": "Agenda",
     "section": "🙋 Instructor",
-    "text": "🙋 Instructor\n\nAndrew Ellis: Andrew is a data scientist at the Virtual Academy of the Bern University of Applied Sciences. His background is in cognitive psychology and he is fascinated by the intersection of language, thought, and artificial intelligence."
+    "text": "🙋 Instructor\n\nAndrew Ellis, Virtual Academy at the Bern University of Applied Sciences:\nAndrew is a data scientist at the Virtual Academy. He is fascinated by the intersection of language, thought, and artificial intelligence. At BFH, he studies and teaches the use of generative AI in education and examines the ways in which humans interact with large language models. He also develops statistical models, which he employs to conduct studies on the impact of AI-based learning tools on learning outcomes. Andrew obtained his PhD in cognitive psychology from the University of Bern, where he investigated how people form mental images and how this is related to perception."
   },
   {
     "objectID": "pages/beispiel-arbeit.html",
@@ -613,7 +613,7 @@
     "href": "slides/00-introduction.html#key-messages",
     "title": "Introduction",
     "section": "Key messages",
-    "text": "Key messages\n\nKeep human in the loop: LLMs should be used to augment human writing, not to replace it.\nPrompting, prompting, prompting: this workshop is mainly about prompting. We can think about prompting as a way of “programming” LLMs, i.e. getting LLMs to do what we want them to do."
+    "text": "Key messages\n\n👩‍⚖️ Keep a human in the loop: LLMs should be used to augment human writing, not to replace it.\nThis workshop is mainly about prompting. We can think about prompting as a way of “programming” LLMs, i.e. getting LLMs to do what we want them to do."
   },
   {
     "objectID": "slides/00-introduction.html#summary",
@@ -761,5 +761,306 @@
     "title": "Untitled",
     "section": "Slide two",
     "text": "Slide two\n\nbullet one\n\n\nmore stuff"
+  },
+  {
+    "objectID": "slides/demo.html#in-the-morning",
+    "href": "slides/demo.html#in-the-morning",
+    "title": "Introduction",
+    "section": "In the morning",
+    "text": "In the morning"
+  },
+  {
+    "objectID": "slides/demo.html#chart-1",
+    "href": "slides/demo.html#chart-1",
+    "title": "Introduction",
+    "section": "Chart 1",
+    "text": "Chart 1\n\n\n\n\nsequenceDiagram\n  participant Alice\n  participant Bob\n  Alice-&gt;&gt;John: Hello John, how are you?\n  loop Healthcheck\n    John-&gt;&gt;John: Fight against hypochondria\n  end\n  Note right of John: Rational thoughts &lt;br/&gt;prevail!\n  John--&gt;&gt;Alice: Great!\n  John-&gt;&gt;Bob: How about you?\n  Bob--&gt;&gt;John: Jolly good!"
+  },
+  {
+    "objectID": "slides/demo.html#chart-2",
+    "href": "slides/demo.html#chart-2",
+    "title": "Introduction",
+    "section": "Chart 2",
+    "text": "Chart 2"
+  },
+  {
+    "objectID": "slides/demo.html#in-the-evening",
+    "href": "slides/demo.html#in-the-evening",
+    "title": "Introduction",
+    "section": "In the evening",
+    "text": "In the evening"
+  },
+  {
+    "objectID": "slides/demo.html#later",
+    "href": "slides/demo.html#later",
+    "title": "Introduction",
+    "section": "Later",
+    "text": "Later"
+  },
+  {
+    "objectID": "pages/take-home.html#embed-miro-board",
+    "href": "pages/take-home.html#embed-miro-board",
+    "title": "Take-home messages",
+    "section": "Embed Miro board",
+    "text": "Embed Miro board"
+  },
+  {
+    "objectID": "pages/shared-chats.html",
+    "href": "pages/shared-chats.html",
+    "title": "Shared CHatGPT links",
+    "section": "",
+    "text": "20 questions\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "pages/agenda.html#take-home-messages",
+    "href": "pages/agenda.html#take-home-messages",
+    "title": "Agenda",
+    "section": "🏠 Take-home messages",
+    "text": "🏠 Take-home messages\n\nUse LLMs yourself! It’s important to gain an intuition for their capabilities and limitations.\nCombine domain knowledge of the “thing” you are working on, an understanding of how LLMs work, and an understanding of how to prompt them.\nUse LLMs with students in a classroom setting. This will help students to develop their own understanding of LLMs.\nAlways (critically 👩‍🔬) check an LLM’s output. They are language models, not knowledge bases."
+  },
+  {
+    "objectID": "pages/resources.html#bildung-6.0",
+    "href": "pages/resources.html#bildung-6.0",
+    "title": "LLMs for Teaching and Learning",
+    "section": "Bildung 6.0",
+    "text": "Bildung 6.0\nDas Projekt Bildung 6.0 der Berner Fachhochschule stellt relevante und verlässliche Informationen und Empfehlungen zum richtigen Umgang mit KI-basierten Werkzeugen (KBW) für Studierende und Lehrende auf einer Online-Plattform bereit.\n\nProjekt Bildung 6.0"
+  },
+  {
+    "objectID": "slides/00-introduction.html#introduction",
+    "href": "slides/00-introduction.html#introduction",
+    "title": "Introduction",
+    "section": "Introduction",
+    "text": "Introduction"
+  },
+  {
+    "objectID": "slides/00-introduction.html#contents",
+    "href": "slides/00-introduction.html#contents",
+    "title": "Introduction",
+    "section": "Contents",
+    "text": "Contents\n\nExample: 20 questions\nWhat is ChatGPT?\n\nBase model\nAssistant model\n\nWhat is it not?\nChatGPT as a role-play simulator"
+  },
+  {
+    "objectID": "slides/00-introduction.html#what-is-chatgpt",
+    "href": "slides/00-introduction.html#what-is-chatgpt",
+    "title": "Introduction",
+    "section": "What is ChatGPT?",
+    "text": "What is ChatGPT?\n\n\n\n\n\nConsists of a base model and an assistant model.\nBase or foundation model: probabilistic model of how language is generated.\nAssistant: able to create human-like dialogue."
+  },
+  {
+    "objectID": "slides/00-introduction.html#base-model",
+    "href": "slides/00-introduction.html#base-model",
+    "title": "Introduction",
+    "section": "Base model",
+    "text": "Base model\n\n\n\n\n\n\nIs trained to predict text.\n\n\n\n\n: What is the capital of France?\n: What is the capital of Germany? What is the capital of Italy? …\n\n\n\n\nExtracts various types of knowledge from text: linguistic, factual, commonsense, etc.\nDoes not know how to have a conversation."
+  },
+  {
+    "objectID": "slides/00-introduction.html#base-large-language-model",
+    "href": "slides/00-introduction.html#base-large-language-model",
+    "title": "Introduction",
+    "section": "Base (large language) model",
+    "text": "Base (large language) model\n\n\n\n\n\nAn LLM is trained to predict text.\nE.g."
+  },
+  {
+    "objectID": "slides/00-introduction.html#base-foundation-model",
+    "href": "slides/00-introduction.html#base-foundation-model",
+    "title": "Introduction",
+    "section": "Base (foundation) model",
+    "text": "Base (foundation) model\n\n\n\n\n\n\nIs trained to predict text.\n\n\n\n\n: The capital of France is\n: Paris. The capital of Germany is Berlin. The capital of Italy is…\n\n\n\n\nExtracts various types of knowledge from text: linguistic, factual, commonsense, etc.\nDoes not know how to have a conversation."
+  },
+  {
+    "objectID": "slides/00-introduction.html#section",
+    "href": "slides/00-introduction.html#section",
+    "title": "Introduction",
+    "section": "",
+    "text": "The first person to walk on the Moon was"
+  },
+  {
+    "objectID": "slides/00-introduction.html#base-model-1",
+    "href": "slides/00-introduction.html#base-model-1",
+    "title": "Introduction",
+    "section": "Base model",
+    "text": "Base model\nProduces text that most likely follows the input (prompt).\n\n\n\n: The first person to walk on the Moon was\n: Neil Armstrong\n\n\n\n\n\n\nDoes an LLM know facts?\n\n\nWhat we are really asking: Given what it learned during training, what words are most likely to follow “The first person to walk on the Moon was”? A good reply to this question is “Neil Armstrong”."
+  },
+  {
+    "objectID": "slides/00-introduction.html#base-model-emergent-properties",
+    "href": "slides/00-introduction.html#base-model-emergent-properties",
+    "title": "Introduction",
+    "section": "Base model: emergent properties",
+    "text": "Base model: emergent properties\n\nLLMs are thought to show emergent properties - abilities not explicitly programmed into the model, but emerge as a result of text prediction.\n\nperforming arithmetic, answering questions, summarizing text, translating, etc.\nzero-shot learning: LLMs can perform tasks without being trained on them.\nfew-shot learning: LLMs can perform tasks with few examples."
+  },
+  {
+    "objectID": "slides/00-introduction.html#does-an-llm-know-facts",
+    "href": "slides/00-introduction.html#does-an-llm-know-facts",
+    "title": "Introduction",
+    "section": "Does an LLM know facts?",
+    "text": "Does an LLM know facts?\nWhat we are really asking: Given what it learned during training, what words are most likely to follow “The first person to walk on the Moon was”? A good reply to this question is “Neil Armstrong”."
+  },
+  {
+    "objectID": "slides/00-introduction.html#assistant-model",
+    "href": "slides/00-introduction.html#assistant-model",
+    "title": "Introduction",
+    "section": "Assistant model",
+    "text": "Assistant model\n\n\n\n\n\n\nIs trained to create human-like dialogue.\n\n\n\n\n: What is the capital of France? : Paris. Is there anything else you would like to know about France?\n\n\n\n\nTrained to have conversations: turn-taking, question answering, not being [rude/sexist/racist], etc."
+  },
+  {
+    "objectID": "slides/00-introduction.html#assistant-model-1",
+    "href": "slides/00-introduction.html#assistant-model-1",
+    "title": "Introduction",
+    "section": "Assistant model",
+    "text": "Assistant model"
+  },
+  {
+    "objectID": "slides/00-introduction.html#assistant-model-2",
+    "href": "slides/00-introduction.html#assistant-model-2",
+    "title": "Introduction",
+    "section": "Assistant model",
+    "text": "Assistant model"
+  },
+  {
+    "objectID": "slides/00-introduction.html#an-llm-is-a-role-play-simulator",
+    "href": "slides/00-introduction.html#an-llm-is-a-role-play-simulator",
+    "title": "Introduction",
+    "section": "An LLM is a role-play simulator",
+    "text": "An LLM is a role-play simulator\n\n\n\n\n\n\n\nWe can think of an LLM as a non-deterministic simulator capable of role-playing an infinity of characters, or, to put it another way, capable of stochastically generating an infinity of simulacra (Shanahan, McDonell, and Reynolds 2023)"
+  },
+  {
+    "objectID": "slides/00-introduction.html#knowledge-base",
+    "href": "slides/00-introduction.html#knowledge-base",
+    "title": "Introduction",
+    "section": "Knowledge base",
+    "text": "Knowledge base\n\n\n\n\n\nA knowledge base is a collection of facts about the world.\nAsk and Tell\nI can ask but I can’t tell.\nIt cannot give me verifiable facts."
+  },
+  {
+    "objectID": "slides/00-introduction.html#knowledge-base-1",
+    "href": "slides/00-introduction.html#knowledge-base-1",
+    "title": "Introduction",
+    "section": "Knowledge base",
+    "text": "Knowledge base\n\n\n\n\n\nAm Strande von Rainer Maria Rilke  👉 Open in ChatGPT\n\n\n\n\n\n\nKennst du dieses Gedicht?  👉 Open in ChatGPT\n\n\n\n\n\nWhat can we learn from this?"
+  },
+  {
+    "objectID": "slides/00-introduction.html#knowledge-base-2",
+    "href": "slides/00-introduction.html#knowledge-base-2",
+    "title": "Introduction",
+    "section": "Knowledge base",
+    "text": "Knowledge base\n\n\n\n\n\nCan’t tell me where it got its information from.\nLLMs are models of knowledge bases, but not knowledge bases themselves.\nExpensive/difficult to update with new knowledge.\nProduce ethically questionable results."
+  },
+  {
+    "objectID": "slides/00-introduction.html#an-llm-is-a-role-play-simulator-1",
+    "href": "slides/00-introduction.html#an-llm-is-a-role-play-simulator-1",
+    "title": "Introduction",
+    "section": "An LLM is a role-play simulator",
+    "text": "An LLM is a role-play simulator\n\nAn assistant is trained to respond to user prompts in a human-like way.\nA simulator of possible human conversation.\nHas no intentions. It is not an entity with its own goals.\nDoes not have a “personality” or “character” in the traditional sense. It can be thought of as a role-playing simulator.\nHas no concept of “truth” or “lying”. The model is not trying to deceive the user, it is simply trying to respond in a human-like way."
+  },
+  {
+    "objectID": "slides/00-introduction.html#an-llm-is-a-role-play-simulator-2",
+    "href": "slides/00-introduction.html#an-llm-is-a-role-play-simulator-2",
+    "title": "Introduction",
+    "section": "An LLM is a role-play simulator",
+    "text": "An LLM is a role-play simulator\n\n\n\n\n\nThe dialogue agent will do its best to role-play a character in a dialogue.\nAt every step, the model is trying to generate text that is most likely to follow the input.\nIt can take many different paths. Your interaction is just one of those possible paths."
+  },
+  {
+    "objectID": "slides/00-introduction.html#an-llm-is-a-role-play-simulator-3",
+    "href": "slides/00-introduction.html#an-llm-is-a-role-play-simulator-3",
+    "title": "Introduction",
+    "section": "An LLM is a role-play simulator",
+    "text": "An LLM is a role-play simulator\n\n\n\n\n\n\nYou can open this conversation in ChatGPT.\nTry re-generating the conversation after the initial prompt."
+  },
+  {
+    "objectID": "slides/zz-00-introduction.html#what-happens-when-your-lawyer-uses-chatgpt",
+    "href": "slides/zz-00-introduction.html#what-happens-when-your-lawyer-uses-chatgpt",
+    "title": "Introduction",
+    "section": "What Happens When Your Lawyer Uses ChatGPT",
+    "text": "What Happens When Your Lawyer Uses ChatGPT"
+  },
+  {
+    "objectID": "slides/zz-00-introduction.html#the-best-prompts-for-chatgpt-the-ultimate-list",
+    "href": "slides/zz-00-introduction.html#the-best-prompts-for-chatgpt-the-ultimate-list",
+    "title": "Introduction",
+    "section": "The Best Prompts For ChatGPT: The ultimate list",
+    "text": "The Best Prompts For ChatGPT: The ultimate list"
+  },
+  {
+    "objectID": "slides/zz-00-introduction.html#key-messages",
+    "href": "slides/zz-00-introduction.html#key-messages",
+    "title": "Introduction",
+    "section": "Key messages",
+    "text": "Key messages\n\nKeep human in the loop: LLMs should be used to augment human writing, not to replace it.\nPrompting, prompting, prompting: this workshop is mainly about prompting. We can think about prompting as a way of “programming” LLMs, i.e. getting LLMs to do what we want them to do."
+  },
+  {
+    "objectID": "slides/zz-00-introduction.html#summary",
+    "href": "slides/zz-00-introduction.html#summary",
+    "title": "Introduction",
+    "section": "Summary",
+    "text": "Summary\n\nChatGPT has comparatively high energy requirements.\nLarge language models (LMMs) learn all kinds of human biases from their training data.\nToxic content produced by LLMs is flagged by cheap labor."
+  },
+  {
+    "objectID": "slides/zz-00-introduction.html#energy-consumption",
+    "href": "slides/zz-00-introduction.html#energy-consumption",
+    "title": "Introduction",
+    "section": "Energy consumption",
+    "text": "Energy consumption\n\nTraining:\n\n“What we do know is that training ChatGPT used \\(1.3\\) GWh, roughly equivalent to the consumption of 120 US homes for a year.” Quelle: Heating up: how much energy does AI use?\nPatterson et al. (2022) estimate training costs at 502 tons of \\(\\text{CO}_2\\).\n\nUsage:\n\n7 tons of \\(\\text{CO}_2\\) per day (end of February). Source: How much energy does ChatGPT use?\nChatGPT’s energy consumption is equivalent to 400-800 US households. This is considerable, but compared to e.g. cryptocurrencies it is rather low."
+  },
+  {
+    "objectID": "slides/zz-00-introduction.html#bias",
+    "href": "slides/zz-00-introduction.html#bias",
+    "title": "Introduction",
+    "section": "Bias",
+    "text": "Bias\n\n\n\n\n\nDa LLMs von Texten lernen, die von Menschen geschrieben wurden, können sie auch Vorurteile lernen.\n\nQuelle: Hast du Vorurteile?"
+  },
+  {
+    "objectID": "slides/zz-00-introduction.html#ethical-aspects",
+    "href": "slides/zz-00-introduction.html#ethical-aspects",
+    "title": "Introduction",
+    "section": "Ethical aspects",
+    "text": "Ethical aspects\n\n\n\n\n\nAuf Grund der grossen Menge von Trainingsdaten, die für Sprachmodelle benötigt werden, ist Qualitätskontrolle schwierig.\nDiskriminierende oder beleidigende Aussagen werden von einem Chatbot generiert.\nSolche Antworten können als unerwünscht markiert werden.\nToxische Inhalte wie körperliche und sexuelle Gewalt, Suizide und Tierquälerei, müssen beim Trainieren aus den Antworten gefiltert werden. Dabei mussten angestellte Arbeitskräfte für weniger als 2 Dollar die Stunde teils schockierende Inhalte lesen.\n\nQuelle: Traumatische Klickarbeit"
+  },
+  {
+    "objectID": "slides/zz-00-introduction.html#haltung-der-bfh",
+    "href": "slides/zz-00-introduction.html#haltung-der-bfh",
+    "title": "Introduction",
+    "section": "Haltung der BFH",
+    "text": "Haltung der BFH\n\nTechnologien sollen dort, wo sie den Lernprozess unterstützen und praxisrelevant sind, in die Lehre einbezogen werden.\nStudierende sollen lernen, Technologien kompetent einzusetzen und kritisch zu hinterfragen. Dies gilt uneingeschränkt auch für ChatGPT und andere gleichgerichtete Tools."
+  },
+  {
+    "objectID": "slides/zz-00-introduction.html#zitieren",
+    "href": "slides/zz-00-introduction.html#zitieren",
+    "title": "Introduction",
+    "section": "Zitieren",
+    "text": "Zitieren\n\nEs existieren noch keine Richtlinien für das Zitieren von ChatGPT oder anderen KI-basierte Schreibtools.\nChatGPT ist rein rechtlich keine zitierfähige Quelle und damit auch nicht zitierpflichtig (Fleck 2023).\nAus der Orientierungshilfe: “KI-basierte Schreibtools sind externe Quellen und müssen daher im Sinne der wissenschaftlichen Integrität immer, wie andere Quellen auch, zitiert werden, sofern ganze Textpassagen von ChatGPT benutzt werden. Falls mit dem Tool der eigene Text überarbeitet wurde, muss ChatGPT als verwendetes Hilfsmittel angeführt werden.”\n\n\n\n\n\n\n\nMöglicher Pauschalverweis\n\n\n“Beim Verfassen der Arbeit habe ich das KI-gestützte Schreibwerkzeug ChatGPT zur Textoptimierung verwendet. Wörtlich aus dem Tool übernommene Passagen wurden im Text als persönliche Kommunikation zitiert.”"
+  },
+  {
+    "objectID": "slides/zz-00-introduction.html#plagiate-und-detektion",
+    "href": "slides/zz-00-introduction.html#plagiate-und-detektion",
+    "title": "Introduction",
+    "section": "Plagiate und Detektion",
+    "text": "Plagiate und Detektion\n\nTexte von ChatGPT werden jedes Mal individuell erstellt. Es handelt sich nicht um Plagiate.\nDie klassischen Tools zur Aufdeckung von Plagiaten wie z.B. TurnItIn funktionieren hier nicht.\nDie BFH empfiehlt weiterhin, schriftliche Arbeiten mit der Plagiatserkennungssoftware Turnitin zu prüfen."
+  },
+  {
+    "objectID": "slides/zz-00-introduction.html#kompetenznachweise",
+    "href": "slides/zz-00-introduction.html#kompetenznachweise",
+    "title": "Introduction",
+    "section": "Kompetenznachweise",
+    "text": "Kompetenznachweise\n\nSiehe KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus\nBeim Benutzen von KI-generierten Texten in Kompetenznachweisen ohne Deklaration oder Zitierung kann von einem Plagiat im weiteren Sinne ausgegangen werden, welches das bisher etablierte Plagiatsverständnis im engeren Sinne erweitert.\nOpen Book-Prüfungen: KI-Tools müssten explizit ausgeschlossen werden.\nClosed Book-Prüfungen: KI-Tools können durch Einsatz von Safe Exam-Browser und Lernstick ausgeschlossen werden.\nSchriftliche Arbeiten: KI-Tools durch pauschalen Hilfsmittelverweis am Ende der Arbeit deklarieren.\nAlternative oder ergänzende Prüfungsformen: praktische Prüfungen, mündliche Prüfungen, Präsentationen."
+  },
+  {
+    "objectID": "slides/zz-00-introduction.html#rechtliche-aspekte",
+    "href": "slides/zz-00-introduction.html#rechtliche-aspekte",
+    "title": "Introduction",
+    "section": "Rechtliche Aspekte",
+    "text": "Rechtliche Aspekte\n\nChatGPT kann keine Urheberschaft und keine Autorenschaft beanspruchen, da dies nur natürliche Personen können.\nMenschen können die Urheberschaft eines Textes beanspruchen, auch wenn sie auf Unterstützung durch ChatGPT zurückgegriffen haben – sofern sie eine wesentliche gestalterische Eigenleistung am Text erbracht haben.\n\nQuelle: Salden (2023)"
+  },
+  {
+    "objectID": "slides/zz-00-introduction.html#datenschutz",
+    "href": "slides/zz-00-introduction.html#datenschutz",
+    "title": "Introduction",
+    "section": "Datenschutz",
+    "text": "Datenschutz\n\nAnonyme Nutzung von ChatGPT ist mit persönlichen Konto nicht möglich (über Handynummer identifizierbar).\nAlle Eingaben und alle Antworten werden bei ChatGPT unverschlüsselt abgespeichert.\nDaten liegen auf amerikanischen Servern und sind damit für amerikanische Ermittlungsbehörden grundsätzlich zugänglich."
+  },
+  {
+    "objectID": "slides/00-introduction.html#questions",
+    "href": "slides/00-introduction.html#questions",
+    "title": "Introduction",
+    "section": "20 questions",
+    "text": "20 questions\n\n\n\n\n\n\n🤷‍♂️ What is ChatGPT doing here?\nHow does this work?"
   }
 ]

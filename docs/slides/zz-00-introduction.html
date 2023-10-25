@@ -30,7 +30,27 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -324,9 +344,6 @@
       margin-right: 0; 
     }
   </style>
-  <script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-  <script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-  <link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 <meta property="og:title" content="LLMs for Teaching and Learning - Introduction">
 <meta property="og:site_name" content="LLMs for Teaching and Learning">
 <meta name="twitter:title" content="LLMs for Teaching and Learning - Introduction">
@@ -348,87 +365,187 @@ Andrew Ellis
 </div>
 </div>
 
-  <p class="date">24 October, 2023</p>
+  <p class="date">25 October, 2023</p>
 </section>
-<section>
-<section id="in-the-morning" class="title-slide slide level1 center">
-<h1>In the morning</h1>
+<section id="what-happens-when-your-lawyer-uses-chatgpt" class="slide level2" data-background-color="#2e3440">
+<h2>What Happens When Your Lawyer Uses ChatGPT</h2>
+<iframe width="780" height="640" src="https://simonwillison.net/2023/May/27/lawyer-chatgpt/" title="ChatGPT: US lawyer admits using AI for case research"></iframe>
+</section>
+<section id="the-best-prompts-for-chatgpt-the-ultimate-list" class="slide level2" data-background-color="#2e3440">
+<h2>The Best Prompts For ChatGPT: The ultimate list</h2>
+<iframe width="780" height="640" src="https://www.writingbeginner.com/best-prompts-for-chatgpt/" title="Best prompts for ChatGPT"></iframe>
+</section>
+<section id="key-messages" class="slide level2">
+<h2>Key messages</h2>
+<ol type="1">
+<li><p>Keep human in the loop: LLMs should be used to augment human writing, not to replace it.</p></li>
+<li><p>Prompting, prompting, prompting: this workshop is mainly about prompting. We can think about prompting as a way of “programming” LLMs, i.e.&nbsp;getting LLMs to do what we want them to do.</p></li>
+</ol>
+</section>
+<section id="contents" class="title-slide slide level1 center" data-background-color="#b48ead">
+<h1>Contents</h1>
+<ul>
+<li>Energy consumption, bias, ethical aspects
+<ol type="1">
+<li>Energy consumption</li>
+<li>Bias</li>
+<li>Ethical aspects</li>
+</ol></li>
+<li>Wissenschaftliches Arbeiten</li>
+</ul>
+</section>
 
-</section>
-<section id="chart-1" class="slide level2">
-<h2>Chart 1</h2>
-<div class="cell" data-reveal="true">
-<div class="cell-output-display">
-<div>
-<div>
-<pre class="mermaid mermaid-js">sequenceDiagram
-  participant Alice
-  participant Bob
-  Alice-&gt;&gt;John: Hello John, how are you?
-  loop Healthcheck
-    John-&gt;&gt;John: Fight against hypochondria
-  end
-  Note right of John: Rational thoughts &lt;br/&gt;prevail!
-  John--&gt;&gt;Alice: Great!
-  John-&gt;&gt;Bob: How about you?
-  Bob--&gt;&gt;John: Jolly good!
-</pre>
-</div>
-</div>
+<section>
+<section id="energy-consumption-bias-ethical-aspects" class="title-slide slide level1 center" data-background-color="#b48ead">
+<h1>Energy consumption, bias, ethical aspects</h1>
+<div class="absolute" style="top: 0px; left: 100%; ">
+<div class="sectionhead">
+<p><span style="opacity:0.25">1 2 3</span> 4 <span style="opacity:0.25">5 6 7 8</span></p>
 </div>
 </div>
 </section>
-<section id="chart-2" class="slide level2">
-<h2>Chart 2</h2>
-</section>
-<section id="getting-up" class="slide level2">
-<h2>Getting up</h2>
+<section id="summary" class="slide level2">
+<h2>Summary</h2>
 <ul>
-<li>Turn off alarm</li>
-<li>Get out of bed</li>
+<li>ChatGPT has comparatively high energy requirements.</li>
+<li>Large language models (LMMs) learn all kinds of human biases from their training data.</li>
+<li>Toxic content produced by LLMs is flagged by cheap labor.</li>
 </ul>
 </section>
-<section id="breakfast" class="slide level2">
-<h2>Breakfast</h2>
+<section id="energy-consumption" class="slide level2">
+<h2>Energy consumption</h2>
 <ul>
-<li>Eat eggs</li>
-<li>Drink coffee</li>
+<li><strong>Training:</strong>
+<ul>
+<li><p>“What we do know is that training ChatGPT used <span class="math inline">\(1.3\)</span> GWh, roughly equivalent to the consumption of 120 US homes for a year.” Quelle: <a href="https://techhq.com/2023/03/data-center-energy-usage-chatgpt/">Heating up: how much energy does AI use?</a></p></li>
+<li><p><span class="citation" data-cites="pattersonCarbonEmissionsLarge2022">Patterson et al. (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span> estimate training costs at 502 tons of <span class="math inline">\(\text{CO}_2\)</span>.</p></li>
+</ul></li>
+<li><strong>Usage:</strong>
+<ul>
+<li>7 tons of <span class="math inline">\(\text{CO}_2\)</span> per day (end of February). Source: <a href="https://xcorr.net/2023/04/08/how-much-energy-does-chatgpt-use/">How much energy does ChatGPT use?</a></li>
+<li>ChatGPT’s energy consumption is equivalent to 400-800 US households. This is considerable, but compared to e.g.&nbsp;cryptocurrencies it is rather low.</li>
+</ul></li>
 </ul>
 </section>
-<section id="in-the-evening" class="slide level2">
-<h2>In the evening</h2>
-</section>
-<section id="dinner" class="slide level2">
-<h2>Dinner</h2>
-<ul>
-<li>Eat spaghetti</li>
-<li>Drink wine</li>
-</ul>
-</section>
-<section id="going-to-sleep" class="slide level2">
-<h2>Going to sleep</h2>
-<ul>
-<li>Get in bed</li>
-<li>Count sheep</li>
-</ul>
-</section>
-<section id="later" class="slide level2">
-<h2>Later</h2>
-</section>
-<section id="two-columns" class="slide level2">
-<h2>Two columns</h2>
+<section id="bias" class="slide level2">
+<h2>Bias</h2>
 <div class="columns">
-<div class="column" style="width:40%;">
-<p>Left column</p>
-</div><div class="column" style="width:60%;">
-<p>Right column</p>
+<div class="column" style="width:50%;">
+<iframe width="780" height="500" src="https://www.societybyte.swiss/2022/12/22/hi-chatgpt-hast-du-vorurteile/" title="Vorurteile"></iframe>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Da LLMs von Texten lernen, die von Menschen geschrieben wurden, können sie auch Vorurteile lernen.</li>
+</ul>
+<p>Quelle: <a href="https://www.societybyte.swiss/2022/12/22/hi-chatgpt-hast-du-vorurteile/">Hast du Vorurteile?</a></p>
+</div>
+</div>
+</section>
+<section id="ethical-aspects" class="slide level2">
+<h2>Ethical aspects</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe width="780" height="500" src="https://www.societybyte.swiss/2023/06/07/traumatische-klickarbeit-die-menschen-hinter-chatgpt/" title="Traumatische Klickarbeit"></iframe>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Auf Grund der grossen Menge von Trainingsdaten, die für Sprachmodelle benötigt werden, ist Qualitätskontrolle schwierig.</li>
+<li>Diskriminierende oder beleidigende Aussagen werden von einem Chatbot generiert.</li>
+<li>Solche Antworten können als unerwünscht markiert werden.</li>
+<li>Toxische Inhalte wie körperliche und sexuelle Gewalt, Suizide und Tierquälerei, müssen beim Trainieren aus den Antworten gefiltert werden. Dabei mussten angestellte Arbeitskräfte für weniger als 2 Dollar die Stunde teils schockierende Inhalte lesen.</li>
+</ul>
+<p>Quelle: <a href="https://www.societybyte.swiss/2023/06/07/traumatische-klickarbeit-die-menschen-hinter-chatgpt/">Traumatische Klickarbeit</a></p>
+</div>
+</div>
+</section></section>
+<section>
+<section id="wissenschaftliches-arbeiten" class="title-slide slide level1 center" data-background-color="#b48ead">
+<h1>Wissenschaftliches Arbeiten</h1>
+<div class="absolute" style="top: 0px; left: 100%; ">
+<div class="sectionhead">
+<p><span style="opacity:0.25">1 2 3 4 5 6</span> 7 <span style="opacity:0.25">8</span></p>
+</div>
+</div>
+</section>
+<section id="haltung-der-bfh" class="slide level2">
+<h2>Haltung der BFH</h2>
+<ul>
+<li>Technologien sollen dort, wo sie den Lernprozess unterstützen und praxisrelevant sind, in die Lehre einbezogen werden.</li>
+<li>Studierende sollen lernen, Technologien kompetent einzusetzen und kritisch zu hinterfragen. Dies gilt uneingeschränkt auch für ChatGPT und andere gleichgerichtete Tools.</li>
+</ul>
+</section>
+<section id="zitieren" class="slide level2">
+<h2>Zitieren</h2>
+<ul>
+<li>Es existieren noch keine Richtlinien für das Zitieren von ChatGPT oder anderen KI-basierte Schreibtools.</li>
+<li>ChatGPT ist rein rechtlich keine zitierfähige Quelle und damit auch nicht zitierpflichtig <span class="citation" data-cites="fleckPruefungsrechtlicheFragenChatGPT2023">(<a href="#/references" role="doc-biblioref" onclick="">Fleck 2023</a>)</span>.</li>
+<li>Aus der Orientierungshilfe: “KI-basierte Schreibtools sind externe Quellen und müssen daher im Sinne der wissenschaftlichen Integrität immer, wie andere Quellen auch, zitiert werden, sofern ganze Textpassagen von ChatGPT benutzt werden. Falls mit dem Tool der eigene Text überarbeitet wurde, muss ChatGPT als verwendetes Hilfsmittel angeführt werden.”</li>
+</ul>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Möglicher Pauschalverweis</strong></p>
+</div>
+<div class="callout-content">
+<p>“Beim Verfassen der Arbeit habe ich das KI-gestützte Schreibwerkzeug ChatGPT zur Textoptimierung verwendet. Wörtlich aus dem Tool übernommene Passagen wurden im Text als persönliche Kommunikation zitiert.”</p>
+</div>
+</div>
+</div>
+</section>
+<section id="plagiate-und-detektion" class="slide level2">
+<h2>Plagiate und Detektion</h2>
+<ul>
+<li>Texte von ChatGPT werden jedes Mal individuell erstellt. Es handelt sich nicht um Plagiate.</li>
+<li>Die klassischen Tools zur Aufdeckung von Plagiaten wie z.B. <em>TurnItIn</em> funktionieren hier nicht.</li>
+<li>Die BFH empfiehlt weiterhin, schriftliche Arbeiten mit der Plagiatserkennungssoftware Turnitin zu prüfen.</li>
+</ul>
+</section>
+<section id="kompetenznachweise" class="slide level2">
+<h2>Kompetenznachweise</h2>
+<ul>
+<li>Siehe <a href="https://virtuelleakademie.ch/knowledge-base/ki-basierte-schreibtools-in-der-lehre-chatgpt-im-fokus/">KI-basierte Schreibtools in der Lehre – ChatGPT im Fokus</a></li>
+<li>Beim Benutzen von KI-generierten Texten in Kompetenznachweisen ohne Deklaration oder Zitierung kann von einem Plagiat <em>im weiteren Sinne</em> ausgegangen werden, welches das bisher etablierte Plagiatsverständnis im engeren Sinne erweitert.</li>
+<li><strong>Open Book-Prüfungen:</strong> KI-Tools müssten explizit ausgeschlossen werden.</li>
+<li><strong>Closed Book-Prüfungen:</strong> KI-Tools können durch Einsatz von Safe Exam-Browser und <a href="https://www.bfh.ch/de/forschung/forschungsbereiche/lernstick/">Lernstick</a> ausgeschlossen werden.</li>
+<li><strong>Schriftliche Arbeiten:</strong> KI-Tools durch pauschalen Hilfsmittelverweis am Ende der Arbeit deklarieren.</li>
+<li><strong>Alternative oder ergänzende Prüfungsformen:</strong> praktische Prüfungen, mündliche Prüfungen, Präsentationen.</li>
+</ul>
+</section>
+<section id="rechtliche-aspekte" class="slide level2">
+<h2>Rechtliche Aspekte</h2>
+<ul>
+<li>ChatGPT kann keine Urheberschaft und keine Autorenschaft beanspruchen, da dies nur natürliche Personen können.</li>
+<li>Menschen können die Urheberschaft eines Textes beanspruchen, auch wenn sie auf Unterstützung durch ChatGPT zurückgegriffen haben – sofern sie eine wesentliche gestalterische Eigenleistung am Text erbracht haben.</li>
+</ul>
+<p>Quelle: <span class="citation" data-cites="saldenDidaktischeUndRechtliche2023">Salden (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span></p>
+</section>
+<section id="datenschutz" class="slide level2">
+<h2>Datenschutz</h2>
+<ul>
+<li>Anonyme Nutzung von ChatGPT ist mit persönlichen Konto nicht möglich (über Handynummer identifizierbar).</li>
+<li>Alle Eingaben und alle Antworten werden bei ChatGPT unverschlüsselt abgespeichert.</li>
+<li>Daten liegen auf amerikanischen Servern und sind damit für amerikanische Ermittlungsbehörden grundsätzlich zugänglich.</li>
+</ul>
+</section></section>
+<section id="references" class="title-slide slide level1 smaller scrollable" data-background-color="#2e3440">
+<h1>References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-fleckPruefungsrechtlicheFragenChatGPT2023" class="csl-entry" role="listitem">
+Fleck, Tilmann. 2023. <span>“Prüfungsrechtliche Fragen zu ChatGPT.”</span>
+</div>
+<div id="ref-pattersonCarbonEmissionsLarge2022" class="csl-entry" role="listitem">
+Patterson, David, Joseph Gonzalez, Quoc Le, Chen Liang, Lluis-Miquel Munguia, Daniel Rothchild, David So, Maud Texier, and Jeff Dean. 2022. <span>“Carbon <span>Emissions</span> and <span>Large Neural Network Training</span>.”</span>
+</div>
+<div id="ref-saldenDidaktischeUndRechtliche2023" class="csl-entry" role="listitem">
+Salden, Peter. 2023. <span>“Didaktische und rechtliche Perspektiven auf KI-gestütztes Schreiben in der Hochschulbildung.”</span> <span>Ruhr-Universität Bochum</span>. <a href="https://doi.org/10.13154/294-9734">https://doi.org/10.13154/294-9734</a>.
 </div>
 </div>
 
 <div class="footer footer-default">
 <p><a href="../index.html">back to website ⤴️</a></p>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 
@@ -641,6 +758,44 @@ Andrew Ellis
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

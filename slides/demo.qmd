@@ -9,7 +9,7 @@ bibliography: ../bibliography.bib
 format: 
     revealjs:
         # theme: moon
-        theme: night
+        theme: default
         title-slide-attributes:
           data-background-image: ../assets/background-purple.png
           # data-background-size: contain
@@ -44,6 +44,25 @@ format:
 
 # In the morning
 
+## Chart 1
+
+```{mermaid}
+sequenceDiagram
+  participant Alice
+  participant Bob
+  Alice->>John: Hello John, how are you?
+  loop Healthcheck
+    John->>John: Fight against hypochondria
+  end
+  Note right of John: Rational thoughts <br/>prevail!
+  John-->>Alice: Great!
+  John->>Bob: How about you?
+  Bob-->>John: Jolly good!
+```
+
+## Chart 2
+
+
 ## Getting up
 
 - Turn off alarm
@@ -54,7 +73,7 @@ format:
 - Eat eggs
 - Drink coffee
 
-# In the evening
+## In the evening
 
 ## Dinner
 
@@ -68,7 +87,7 @@ format:
   
 
 
-# Later
+## Later
 
 ## Two columns
 

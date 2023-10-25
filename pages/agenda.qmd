@@ -6,18 +6,24 @@ title: "Agenda"
 
 ## 📖 Contents
 
-- What are large language models (LLMs)?
-- How are LLMs trained?
-- How do LLMs produce text?
+- What are large language models (LLMs)? How do they generate text?
+- What tasks can LLMs perform? What are their limitations?
 - What are effective prompting techniques?
-- How can I use LLMs for in educational settings?
+- How can I use LLMs in educational settings?
+
+## 🏠 Take-home messages
+
+- Use LLMs yourself! It's important to gain an intuition for their capabilities and limitations.
+- Combine domain knowledge of the "thing" you are working on, an understanding of how LLMs work, and an understanding of how to prompt them. 
+- Use LLMs with students in a classroom setting. This will help students to develop their own understanding of LLMs.
+- Always (critically 👩‍🔬) check an LLM's output. They are language models, not knowledge bases.
 
 
 ## 🎯 Learning outcomes
 :::{.callout-tip}
 ## After this workshop, you will be able to:
 
-1) Explain how LLMs represent and generate text.
+1) Explain what large language models and conversational agents, such as ChatGPT, can be used for, and what they shouldn't be used for.
 2) Create effective prompts for LLMs.
 3) Design your own LLM-based educational activities.
 4) Critically evaluate LLM-based educational activities.
@@ -25,7 +31,9 @@ title: "Agenda"
 
 ## ⏱️ Schedule
 
-🕐 13:00 - 13:35 &nbsp;&nbsp;→&nbsp;&nbsp; 💬 Introduction <br>
+![](../assets/schedule.svg)
+
+<!-- 🕐 13:00 - 13:35 &nbsp;&nbsp;→&nbsp;&nbsp; 💬 Introduction <br>
 🕜 13:30 - 14:00 &nbsp;&nbsp;→&nbsp;&nbsp; 📺 Input 1: What are LLMs? <br>
 🕑 14:00 - 14:20 &nbsp;&nbsp;→&nbsp;&nbsp; 💼 Activity 1: Explore ChatGPT and Playground <br>
 🕝 14:20 - 14:45 &nbsp;&nbsp;→&nbsp;&nbsp; ⏸️ Break <br>
@@ -34,11 +42,13 @@ title: "Agenda"
 🕓 15:45 - 16:00 &nbsp;&nbsp;→&nbsp;&nbsp; ⏸️ Break <br>
 🕓 16:00 - 16:20 &nbsp;&nbsp;→&nbsp;&nbsp; 📺 Input 3: Prompting for learning and teaching <br>
 🕟 16:20 - 16:50 &nbsp;&nbsp;→&nbsp;&nbsp; 💼 Activity 3: Design your own LLM-based educational activity <br>
-🕔 16:50 - 17:00 &nbsp;&nbsp;→&nbsp;&nbsp; 💬 Idea generation and wrap-up
+🕔 16:50 - 17:00 &nbsp;&nbsp;→&nbsp;&nbsp; 💬 Idea generation and wrap-up -->
 
 
 ## 🙋 Instructor
 
-- [**Andrew Ellis**](https://www.bfh.ch/en/about-bfh/people/a3xvoqozosua/): Andrew is a data scientist at the [Virtual Academy](https://virtuelleakademie.ch/) of the [Bern University of Applied Sciences](https://www.bfh.ch/). His background is in cognitive psychology and he is fascinated by the intersection of language, thought, and artificial intelligence.
+- [**Andrew Ellis**](https://www.bfh.ch/en/about-bfh/people/a3xvoqozosua/), [Virtual Academy](https://virtuelleakademie.ch/) at the [Bern University of Applied Sciences](https://www.bfh.ch/):  
+  
+  Andrew is a data scientist at the [Virtual Academy](https://virtuelleakademie.ch/). He is fascinated by the intersection of language, thought, and artificial intelligence. At BFH, he studies and teaches the use of generative AI in education and examines the ways in which humans interact with large language models. He also develops statistical models, which he employs to conduct studies on the impact of AI-based learning tools on learning outcomes. Andrew obtained his PhD in cognitive psychology from the University of Bern, where he investigated how people form mental images and how this is related to perception.
 
 
