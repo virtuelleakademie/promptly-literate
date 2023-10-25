@@ -1,5 +1,5 @@
 ---
-title: "Activity 13: Basic Prompting Techniques"
+title: "Activity 2: Basic Prompting Techniques"
 description: |
   Programming a GPT model.
 date: last-modified

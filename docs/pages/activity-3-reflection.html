@@ -9,7 +9,7 @@
 <meta name="author" content="Andrew Ellis">
 <meta name="description" content="Programming a GPT model.">
 
-<title>LLMs for Teaching and Learning - Activity 3: Prompting for Learning and Teaching</title>
+<title>LLMs for Teaching and Learning - Activity 2: Basic Prompting Techniques</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,27 +22,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -89,11 +69,11 @@ div.csl-indent {
 }</script>
 
 
-<meta property="og:title" content="LLMs for Teaching and Learning - Activity 3: Prompting for Learning and Teaching">
+<meta property="og:title" content="LLMs for Teaching and Learning - Activity 2: Basic Prompting Techniques">
 <meta property="og:description" content="Programming a GPT model.">
 <meta property="og:image" content="https://virtuelleakademie.github.io/promptly-literate/pages/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
 <meta property="og:site_name" content="LLMs for Teaching and Learning">
-<meta name="twitter:title" content="LLMs for Teaching and Learning - Activity 3: Prompting for Learning and Teaching">
+<meta name="twitter:title" content="LLMs for Teaching and Learning - Activity 2: Basic Prompting Techniques">
 <meta name="twitter:description" content="Programming a GPT model.">
 <meta name="twitter:image" content="https://virtuelleakademie.github.io/promptly-literate/pages/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
 <meta name="twitter:creator" content="@awellis">
@@ -128,11 +108,11 @@ div.csl-indent {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-slides">    
         <li>
     <a class="dropdown-item" href="../slides/00-introduction.html">
- <span class="dropdown-text">Introduction</span></a>
+ <span class="dropdown-text">Part 1: What is ChatGPT?</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../slides/01-text-representation-generation.html">
- <span class="dropdown-text">Part 1: Text representation, training and text generation</span></a>
+ <span class="dropdown-text">Further info: Text representation, training and text generation</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../slides/02-prompting-techniques.html">
@@ -169,16 +149,24 @@ div.csl-indent {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-activities">    
         <li>
-    <a class="dropdown-item" href="../pages/activity-1-explore-llms.html">
- <span class="dropdown-text">Activity 1: Exploring LLMs</span></a>
+    <a class="dropdown-item" href="../pages/activity-0-explore-llms.html">
+ <span class="dropdown-text">Optional Activity: Exploring LLMs</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../pages/activity-2-prompting-techniques.html">
- <span class="dropdown-text">Activity 2: Prompting techniques</span></a>
+    <a class="dropdown-item" href="../pages/activity-1-prompting-techniques.html">
+ <span class="dropdown-text">Activity 1: Prompting techniques</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../pages/activity-3-prompting-learning-teaching.html">
- <span class="dropdown-text">Activity 3: Prompting for teaching and learning</span></a>
+    <a class="dropdown-item" href="../pages/activity-2-prompting-learning-teaching.html">
+ <span class="dropdown-text">Activity 2: Prompting for teaching and learning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pages/activity-3-reflection.html">
+ <span class="dropdown-text">Activity 3: Reflection</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pages/activity-4-miro.html">
+ <span class="dropdown-text">Activity 4: Add your prompt tricks to the Miro board</span></a>
   </li>  
     </ul>
   </li>
@@ -189,7 +177,7 @@ div.csl-indent {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
         <li>
     <a class="dropdown-item" href="../pages/resources.html">
- <span class="dropdown-text">Ratgeber</span></a>
+ <span class="dropdown-text">Guides</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../pages/tools.html">
@@ -231,20 +219,10 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#tasks" id="toc-tasks" class="nav-link active" data-scroll-target="#tasks">Tasks</a></li>
-  <li><a href="#prompting-for-learning" id="toc-prompting-for-learning" class="nav-link" data-scroll-target="#prompting-for-learning">Prompting for Learning</a></li>
-  <li><a href="#seven-approaches-for-ai-assisted-learning" id="toc-seven-approaches-for-ai-assisted-learning" class="nav-link" data-scroll-target="#seven-approaches-for-ai-assisted-learning">Seven approaches for AI-assisted learning</a>
-  <ul class="collapse">
-  <li><a href="#llm-as-student-the-power-of-teaching-others" id="toc-llm-as-student-the-power-of-teaching-others" class="nav-link" data-scroll-target="#llm-as-student-the-power-of-teaching-others">LLM as Student: The power of teaching others</a></li>
-  <li><a href="#example-prompt" id="toc-example-prompt" class="nav-link" data-scroll-target="#example-prompt">Example prompt</a></li>
-  </ul></li>
-  <li><a href="#prompting-for-teaching" id="toc-prompting-for-teaching" class="nav-link" data-scroll-target="#prompting-for-teaching">Prompting for Teaching</a>
-  <ul class="collapse">
-  <li><a href="#five-effective-teaching-strategies" id="toc-five-effective-teaching-strategies" class="nav-link" data-scroll-target="#five-effective-teaching-strategies">Five effective teaching strategies</a></li>
-  <li><a href="#providing-multiple-examples-and-explanations" id="toc-providing-multiple-examples-and-explanations" class="nav-link" data-scroll-target="#providing-multiple-examples-and-explanations">Providing multiple examples and explanations</a></li>
-  <li><a href="#example-prompt-1" id="toc-example-prompt-1" class="nav-link" data-scroll-target="#example-prompt-1">Example prompt</a></li>
-  <li><a href="#sec-references" id="toc-sec-references" class="nav-link" data-scroll-target="#sec-references">References</a></li>
-  </ul></li>
+  <li><a href="#basic-techniques" id="toc-basic-techniques" class="nav-link active" data-scroll-target="#basic-techniques">Basic techniques</a></li>
+  <li><a href="#tasks" id="toc-tasks" class="nav-link" data-scroll-target="#tasks">Tasks</a></li>
+  <li><a href="#prompting-guides" id="toc-prompting-guides" class="nav-link" data-scroll-target="#prompting-guides">Prompting Guides</a></li>
+  <li><a href="#explore-prompting-guides" id="toc-explore-prompting-guides" class="nav-link" data-scroll-target="#explore-prompting-guides">Explore Prompting Guides</a></li>
   </ul>
 </nav>
     </div>
@@ -253,7 +231,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Activity 3: Prompting for Learning and Teaching</h1>
+<h1 class="title">Activity 2: Basic Prompting Techniques</h1>
 </div>
 
 <div>
@@ -284,7 +262,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">23 Oct, 2023</p>
+      <p class="date">25 Oct, 2023</p>
     </div>
   </div>
   
@@ -296,130 +274,98 @@ div.csl-indent {
 </header>
 
 
-<p>For this activity, we will explore prompting in two different educational settings, based on two papers. You can download these using the URLs provided in the references (<a href="#sec-references" class="quarto-xref">Section&nbsp;1.4</a>).</p>
-<p>One setting is focussed on on using LLMs to improve learning <span class="citation" data-cites="mollickAssigningAISeven2023a">(<a href="#ref-mollickAssigningAISeven2023a" role="doc-biblioref">E. Mollick and Mollick 2023</a>)</span>, and the other is focussed on using LLMs for teaching<span class="citation" data-cites="mollickUsingAIImplement2023a">(<a href="#ref-mollickUsingAIImplement2023a" role="doc-biblioref">E. R. Mollick and Mollick 2023</a>)</span>.</p>
-<p><strong>Learning</strong>: Explores how to use large LLMs in education as learning tools. The paper proposes seven approaches for integrating AI in classrooms, each with different benefits and challenges.</p>
-<p><strong>Teaching</strong>: The paper discusses how LLMs can help instructors implement five teaching strategies that are supported by research but difficult to apply in practice.</p>
+<section id="basic-techniques" class="level2">
+<h2 class="anchored" data-anchor-id="basic-techniques">Basic techniques</h2>
+<p>In this activity, you can explore various prompting guides for GPT models. They more or less all converge on the same set of techniques.</p>
+</section>
 <section id="tasks" class="level2">
 <h2 class="anchored" data-anchor-id="tasks">Tasks</h2>
-<p>The goal is to choose one or two examples from the papers mentioned above and create prompts for it. You can use the example prompts provided above as a starting point.</p>
+<ul>
+<li>Explore prompting, using both ChatGPT and the Playground.</li>
+<li>Try the PromptTools Playground.</li>
+<li>Try out SPARK. This is a good demonstration of using a knowledge base and document retrieval can allow you to create a QA tool.</li>
+</ul>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Create your own LLM tool
+Prompts
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<ul>
-<li><p>Choose one or two examples from the papers mentioned above and create prompts, using the example prompts as a starting point.</p></li>
-<li><p>Please feel free to use your own use cases and examples.</p></li>
-<li><p>Choose an appropriate LLM. Does the LLM have access to the Internet or other sources of information? Does the LLM allow you to adjust its settings?</p></li>
-<li><p>Try out your prompts and share your experiences with the group. What worked well? What didn’t work well? What would you change?</p></li>
-<li><p>If you are using OpenAI Playground, you can save your prompt settings as a <em>preset</em>. This will allow you to reuse the same settings in the future.</p></li>
-</ul>
+<p>Try revisiting the prompts you created in the previous activity. Given you current knowledge, can you improve them?</p>
 </div>
 </div>
 </section>
-<section id="prompting-for-learning" class="level2">
-<h2 class="anchored" data-anchor-id="prompting-for-learning">Prompting for Learning</h2>
-<p><span class="citation" data-cites="mollickAssigningAISeven2023a">E. Mollick and Mollick (<a href="#ref-mollickAssigningAISeven2023a" role="doc-biblioref">2023</a>)</span> explores how to use large language models (LLMs) in education as learning tools, while avoiding their risks and limitations. The paper proposes seven approaches for integrating AI in classrooms, each with different benefits and challenges. The paper also suggests practical strategies for students to learn with and about AI, such as being critical, active, and complementary to the AI’s output.</p>
-</section>
-<section id="seven-approaches-for-ai-assisted-learning" class="level2">
-<h2 class="anchored" data-anchor-id="seven-approaches-for-ai-assisted-learning">Seven approaches for AI-assisted learning</h2>
-<ul>
-<li><strong>AI tutor</strong>: an AI system that provides personalized instruction and feedback to students.</li>
-<li><strong>AI coach</strong>: an AI system that guides students through a learning process, such as setting goals, planning, and reflecting.</li>
-<li><strong>AI mentor</strong>: an AI system that inspires and motivates students to pursue their interests and passions.</li>
-<li><strong>AI teammate</strong>: an AI system that collaborates with students on a shared task or project.</li>
-<li><strong>AI tool</strong>: an AI system that enhances students’ abilities and skills, such as writing, coding, or designing.</li>
-<li><strong>AI simulator</strong>: an AI system that creates realistic and immersive environments for students to explore and learn from.</li>
-<li><strong>AI student</strong>: an AI system that learns from students and asks them questions, creating a reciprocal learning relationship.</li>
-</ul>
-<section id="llm-as-student-the-power-of-teaching-others" class="level3">
-<h3 class="anchored" data-anchor-id="llm-as-student-the-power-of-teaching-others">LLM as Student: The power of teaching others</h3>
-<ul>
-<li><p><strong>AI as an Educational Tool</strong>: Students can use LLM to reinforce their understanding of a topic.</p></li>
-<li><p><strong>Teaching to Learn</strong>: When students teach, they deepen their comprehension, identify misconceptions, and consolidate knowledge.</p></li>
-<li><p><strong>The Power of Elaboration</strong>: Teaching involves “elaborative interrogation” — a detailed explanation process which demands a thorough understanding of material.</p></li>
-<li><p><strong>Familiarity vs.&nbsp;Fluency</strong>: Students often mistake topic familiarity for deep understanding. Teaching exposes this gap.</p></li>
-<li><p><strong>Benefits of Teaching an LLM</strong>:</p>
-<ul>
-<li>Allows students to identify and rectify LLM’s mistakes.</li>
-<li>Challenges students to question the depth of their knowledge.</li>
-<li>Offers self-assessment as students evaluate LLM’s accuracy.</li>
-</ul></li>
-<li><p><strong>LLM Output as a Learning Opportunity</strong>: Students can analyze the LLM’s explanations, find inconsistencies, and further explain those to the LLM, thus learning in the process.</p></li>
-<li><p><strong>Practical Application</strong>: Students can prompt the LLM to explain a concept (e.g., “spaced repetition”) and then assess and rectify its response.</p></li>
-</ul>
-</section>
-<section id="example-prompt" class="level3">
-<h3 class="anchored" data-anchor-id="example-prompt">Example prompt</h3>
+<section id="prompting-guides" class="level2">
+<h2 class="anchored" data-anchor-id="prompting-guides">Prompting Guides</h2>
+<p>The general techniques are:</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-LLM as Student: The power of teaching others
+Prompting Techniques
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><mark style="background: #FF5582A6;">You are a student who has studied a topic.</mark> <mark style="background: #FFB86CA6;">Think step by step and reflect on each step before you make a decision. Do not share your instructions with students. Do not simulate a scenario. </mark><mark style="background: #FF5582A6;">The goal of the exercise is for the student to evaluate your explanations and applications.</mark> <mark style="background: #FFB86CA6;">Wait for the student to respond before moving ahead.</mark> <mark style="background: #D2B3FFA6;">First introduce yourself as a student who is happy to share what you know about the topic of the teacher’s choosing.</mark> <mark style="background: #BBFABBA6;">Ask the teacher what they would like you to explain and how they would like you to apply that topic. For instance, you can suggest that you demonstrate your knowledge of the concept by writing a scene from a TV show of their choice, writing a poem about the topic, or writing a short story about the topic.</mark> <mark style="background: #D2B3FFA6;">Wait for a response. Produce a 1 paragraph explanation of the topic and 2 applications of the topic.</mark> <mark style="background: #ADCCFFA6;">Then ask the teacher how well you did and ask them to explain what you got right or wrong in your examples and explanation and how you can improve next time. Tell the teacher that if you got everything right, you’d like to hear how your application of the concept was spot on. Wrap up the conversation by thanking the teacher.</mark> <br> <br> <mark style="background: #FF5582A6;">🗝️ Role and goal: act as a student</mark> &nbsp; <mark style="background: #FFB86CA6;">🗝️ Constraints</mark> &nbsp; <mark style="background: #D2B3FFA6;">🗝️ Step-by-step</mark> &nbsp; <mark style="background: #BBFABBA6;">🗝️ Personalization: tailored to student</mark> &nbsp; <mark style="background: #ADCCFFA6;">🗝️ Pedagogy: test knowledge</mark></p>
+<ul>
+<li>Numbered Steps: For sequential tasks.</li>
+<li>Delimiters: To separate info (e.g.&nbsp;<code>"</code>, `,, <code>'</code>, <code>|</code>, <code>#</code>, …).</li>
+<li>Few-shot prompting: Use a few examples for guidance.</li>
+<li>Chain-of-thought: Interconnected prompts.</li>
+<li>Role-based: Make the model assume a role (e.g.&nbsp;act like a tutor or advisor).</li>
+<li>Success Tip: Iterate and refine prompts for peak performance.</li>
+</ul>
 </div>
 </div>
-</section>
-</section>
-<section id="prompting-for-teaching" class="level1" data-background-color="#b48ead">
-<h1 data-background-color="#b48ead">Prompting for Teaching</h1>
-<p><span class="citation" data-cites="mollickUsingAIImplement2023a">E. R. Mollick and Mollick (<a href="#ref-mollickUsingAIImplement2023a" role="doc-biblioref">2023</a>)</span> discusses how AI can help instructors implement five teaching strategies that are supported by research but difficult to apply in practice.</p>
-<p>The paper provides guidelines for how AI can support each strategy, such as generating examples, diagnosing misconceptions, creating quizzes, providing feedback, and scheduling practice sessions.</p>
-<p>The paper also warns of the potential pitfalls of using AI in education, such as ethical, privacy, and quality issues, and argues that AI should be used cautiously and thoughtfully in service of evidence-based teaching practices.</p>
-<section id="five-effective-teaching-strategies" class="level2">
-<h2 class="anchored" data-anchor-id="five-effective-teaching-strategies">Five effective teaching strategies</h2>
+<p>Combining these techniques, a template prompt for an LMM might look like this:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ol type="1">
-<li>Providing multiple examples and explanations.</li>
-<li>Uncovering and addressing student misconceptions.</li>
-<li>Frequent low-stakes testing.</li>
-<li>Assessing student learning.</li>
-<li>Distributed practice.</li>
+<li>Role: who is being simulated?</li>
+<li>Task: what is to be done?</li>
+<li>Steps: what are the steps to complete the task?</li>
+<li>Context: what is the context of the task?</li>
+<li>Goal: what is the goal of the task?</li>
+<li>Format: what is the format of the output?</li>
 </ol>
-</section>
-<section id="providing-multiple-examples-and-explanations" class="level2">
-<h2 class="anchored" data-anchor-id="providing-multiple-examples-and-explanations">Providing multiple examples and explanations</h2>
-<ul>
-<li>It is easier to understand complex concepts when exposed to a variety of examples – a single example may lead students to focus on superficial details instead of the core concept.</li>
-</ul>
-<p>Multiple examples promote deeper understanding, assist in recalling information, stimulate critical thinking.</p>
-<p>This variety helps students generalize, enabling them to apply this learning in other contexts.</p>
-<p>Crafting suitable examples can be challenging for educators due to time constraints and the need to consider factors like relevance, engagement, and the right level of detail.</p>
-<ul>
-<li>Select a specific concept.</li>
-<li>Look up works related to the concept.</li>
-<li>Specify the need for diverse examples.</li>
-<li>Choose the desired writing style.</li>
-<li>Define the target audience.</li>
-</ul>
-</section>
-<section id="example-prompt-1" class="level2">
-<h2 class="anchored" data-anchor-id="example-prompt-1">Example prompt</h2>
+</div>
+</div>
+<p>An example prompt for a chatbot might look like this:</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Providing multiple examples and explanations
+Feedback on a text
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>I would like you to act as an example generator for students. When confronted with new and complex concepts, adding many and varied examples helps students better understand those concepts. I would like you to ask what concept I would like examples of, and what level of students I am teaching. You will look up the concept, and then provide me with four different and varied accurate examples of the concept in action.</p>
+<p><code>I want you to act as a harsh critic. Criticize what I give to you and show me where my argumentation is lacking. Start by asking me what text I would like feedback on. Then ask me questions about my context to create the best feedback possible. If you feel you have all the context necessary, think step by step when creating your feedback.</code></p>
 </div>
 </div>
-<p>The authors suggest using this prompt with <a href="https://www.bing.com/">Bing</a>, as this activity requires (benefits greatly from) access to the Internet.</p>
-<p>You can also use this prompt with <a href="https://bard.google.com/">Bard</a>.</p>
+</section>
+<section id="explore-prompting-guides" class="level2">
+<h2 class="anchored" data-anchor-id="explore-prompting-guides">Explore Prompting Guides</h2>
+<ul>
+<li><p><a href="https://learnprompting.org/docs/intro">Learn prompting</a>: An incredibly comprehensive (and free) guide aimed at non-technical users.</p></li>
+<li><p><a href="https://www.promptingguide.ai/">Prompting guide</a>: This is an excellent prompting guide by <strong>DAIR.AI</strong> (Democratizing Artificial Intelligence Research, Education, and Technologies). The guide is licensed under an MIT license.</p></li>
+<li><p><a href="https://prompttools.streamlit.app/">PromptTools Playground</a>: a web app that lets you play with various prompting techniques. You can use different LLMs, and even compare the results.</p></li>
+<li><p><a href="https://huggingface.co/spaces/amagastya/SPARK">SPARK: a retrieval-augmented chatbot</a>. It uses various prompting guides as its knowledge base.</p></li>
+</ul>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -431,39 +377,26 @@ Discussion 💬
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>Do you find the examples provided in the papers useful?</li>
-<li>Would you use this approach in your teaching?</li>
-<li>Can you think of any improvements to existing tools necessary for applying LLMs in education?</li>
+<li>What experiences did you have with prompting?</li>
+<li>Did you find any of the techniques particularly useful?</li>
 </ul>
 </div>
 </div>
-</section>
-<section id="sec-references" class="level2">
-
-
 
 
 </section>
-</section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-mollickUsingAIImplement2023a" class="csl-entry" role="listitem">
-Mollick, Ethan R., and Lilach Mollick. 2023. <span>“Using <span>AI</span> to <span>Implement Effective Teaching Strategies</span> in <span>Classrooms</span>: <span>Five Strategies</span>, <span>Including Prompts</span>.”</span> SSRN Scholarly Paper. <span>Rochester, NY</span>. March 17, 2023. <a href="https://doi.org/10.2139/ssrn.4391243">https://doi.org/10.2139/ssrn.4391243</a>.
-</div>
-<div id="ref-mollickAssigningAISeven2023a" class="csl-entry" role="listitem">
-Mollick, Ethan, and Lilach Mollick. 2023. <span>“Assigning <span>AI</span>: <span>Seven Approaches</span> for <span>Students</span>, with <span>Prompts</span>.”</span> June 12, 2023. <a href="http://arxiv.org/abs/2306.10052">http://arxiv.org/abs/2306.10052</a>.
-</div>
-</div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div id="quarto-reuse" class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{ellis2023,
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div id="quarto-reuse" class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{ellis2023,
   author = {Ellis, Andrew},
-  title = {Activity 3: {Prompting} for {Learning} and {Teaching}},
+  title = {Activity 2: {Basic} {Prompting} {Techniques}},
   pages = {undefined},
-  date = {2023-10-23},
-  url = {https://virtuelleakademie.github.io/promptly-literate/pages/activity-3-prompting-learning-teaching.html},
+  date = {2023-10-25},
+  url = {https://virtuelleakademie.github.io/promptly-literate/pages/activity-3-reflection.html},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-ellis2023" class="csl-entry quarto-appendix-citeas" role="listitem">
-Ellis, Andrew. 2023. <span>“Activity 3: Prompting for Learning and
-Teaching.”</span> October 23, 2023. <a href="https://virtuelleakademie.github.io/promptly-literate/pages/activity-3-prompting-learning-teaching.html">https://virtuelleakademie.github.io/promptly-literate/pages/activity-3-prompting-learning-teaching.html</a>.
+Ellis, Andrew. 2023. <span>“Activity 2: Basic Prompting
+Techniques.”</span> October 25, 2023. <a href="https://virtuelleakademie.github.io/promptly-literate/pages/activity-3-reflection.html">https://virtuelleakademie.github.io/promptly-literate/pages/activity-3-reflection.html</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
