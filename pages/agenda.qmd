@@ -1,5 +1,6 @@
 ---
 title: "Agenda"
+lightbox: auto
 ---
 <!-- In this workshop, we will investigate how Large Language Models (LLMs) are trained, how they produce text, and what they are capable of. We will also discuss similarities and differences between LLMs and human thought processes. As LLMs become increasingly human-like in their performance, it is important to develop effective ways to describe their behaviour. We will discuss high-level concepts that allow us think about LLMs without falling into the trap of anthropomorphism. -->
 <!-- TODO: fix schedule -->
@@ -31,18 +32,7 @@ title: "Agenda"
 
 ## ⏱️ Schedule
 
-![](../assets/schedule.svg)
-
-<!-- 🕐 13:00 - 13:35 &nbsp;&nbsp;→&nbsp;&nbsp; 💬 Introduction <br>
-🕜 13:30 - 14:00 &nbsp;&nbsp;→&nbsp;&nbsp; 📺 Input 1: What are LLMs? <br>
-🕑 14:00 - 14:20 &nbsp;&nbsp;→&nbsp;&nbsp; 💼 Activity 1: Explore ChatGPT and Playground <br>
-🕝 14:20 - 14:45 &nbsp;&nbsp;→&nbsp;&nbsp; ⏸️ Break <br>
-🕒 14:50 - 15:15 &nbsp;&nbsp;→&nbsp;&nbsp; 📺 Input 2: Prompting techniques <br>
-🕞 15:15 - 15:45 &nbsp;&nbsp;→&nbsp;&nbsp; 💼 Activity 2: Explore prompting techniques <br>
-🕓 15:45 - 16:00 &nbsp;&nbsp;→&nbsp;&nbsp; ⏸️ Break <br>
-🕓 16:00 - 16:20 &nbsp;&nbsp;→&nbsp;&nbsp; 📺 Input 3: Prompting for learning and teaching <br>
-🕟 16:20 - 16:50 &nbsp;&nbsp;→&nbsp;&nbsp; 💼 Activity 3: Design your own LLM-based educational activity <br>
-🕔 16:50 - 17:00 &nbsp;&nbsp;→&nbsp;&nbsp; 💬 Idea generation and wrap-up -->
+![](../assets/schedule.svg){width=100%}
 
 
 ## 🙋 Instructor
