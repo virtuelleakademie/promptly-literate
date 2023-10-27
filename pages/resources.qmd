@@ -34,6 +34,7 @@ Das Projekt Bildung 6.0 der Berner Fachhochschule stellt relevante und verlässl
 - [How do large language models work: part 1](https://www.youtube.com/watch?v=lnA9DMvHtfI&t=0s)
 - [How do large language models work: part 2](https://www.youtube.com/watch?v=YDiSFS-yHwk)
 
+**Tutorials zu Prompting**
 
 - [ChatGPT Mega Prompts](https://youtube.com/playlist?list=PLD93Zs0BCugs9hSvTP16iACgdJkc_kiWI&si=mAyoe9hWnEmdNvtT)
 
