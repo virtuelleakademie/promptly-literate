@@ -1,0 +1,212 @@
+---
+title: "Activities"
+description: |
+  Programming a GPT model.
+date: last-modified
+date-format: "DD MMM, YYYY"
+author: 
+  - name: Andrew Ellis
+    url: https://github.com/awellis
+    affiliation: Virtuelle Akademie, Berner Fachhochschule
+    affiliation-url: https://virtuelleakademie.ch
+    orcid: 0000-0002-2788-936X
+license: CC BY
+citation: true
+bibliography: ../bibliography.bib
+format:
+    html:
+        toc: true
+        code-fold: true
+        code-link: true
+jupyter: python3
+execute: 
+  cache: false
+  keep-ipynb: true
+code-annotations: select
+lightbox: auto
+---
+
+
+Das Ziel dieser Arbeitsaufträge ist, dass du in der Lage bist, massgeschneiderte Prompts für beliebige Anwendungen zu erstellen.
+
+
+Arbeitsaufträge 1 und 2 befassen sich mit dem Schreiben von Prompts.
+
+
+ Experimentieren und der Gruppenaustausch im
+Mittelpunkt, wobei die Gruppen auf maximal 5 Teilnehmerinnen und Teilnehmer
+begrenzt sind.
+
+- Arbeitsphase 1: Prompts schreiben (20 Min.)
+- Arbeitsphase 2: Peer-Diskussion zur Verbesserung der Prompts (40 Min.)
+- Arbeitsphase 3: Lehrveranstaltungsdesign mit KI-Prompts (30 Min.)
+
+Resultat: Ergebnisse sichern im Prompt-Katalog
+
+
+Ideen: Statistik-Tutor, Erstellen von Lernzielen
+
+
+
+## Arbeitsphase 1: prompts schreiben
+Arbeitsauftrag: Schreiben Sie einen Prompt zu einem vordefinierten Themenbereich.
+In dieser Aufgabe erstellen wir unsere ersten Prompts, indem wir die Empfehlungen für
+gutes Prompting berücksichtigen und sie ausprobieren.
+• Bearbeiten Sie einen eher formalen, weniger komplexen Aspekt einer
+Lehrveranstaltung.
+• Es geht vorrangig darum, erste Erfahrungen zu machen, möglichst alle Empfehlungen
+zu kombinieren und dabei zu erleben, wie aus einer einfachen Aufgabe ein durchaus
+umfassender Prompt entstehen kann.
+• Bitte beachten Sie, dass die finale Antwort der KI am Ende Ihrer Prompt-Entwicklung
+so gestaltet sein sollte, dass möglichst wenig zusätzliche "Handarbeit" von Ihnen
+benötigt wird.
+
+:::{.callout-tip collapse="true"}
+## Szenarien
+
+Szenario 1: Lassen Sie die KI einen 14-wöchigen Semesterplan erstellen, der die Titel
+der Sitzungen für ein Seminar zum Thema „Wissenschaftliche Integrität“ oder eine
+andere Lehrveranstaltung Ihrer Wahl und eine kurze Beschreibung des Inhalts der
+einzelnen Sitzungen enthält.
+
+• Szenario 2: Lassen Sie die KI einen Ablaufplan für eine 90-minütige Seminarsitzung
+zum Thema „Wissenschaftlich Recherchieren“ oder ein anderes Thema Ihrer Wahl
+erstellen, der mindestens ein aktivierendes Arbeitsformat enthält, wie z.B.
+Gruppenarbeit.
+
+• Szenario 3: Lassen Sie die KI eine Lernraum-Nachricht schreiben, die über wichtige
+Aspekte der Abschlussklausur für eine Lehrveranstaltung Ihrer Wahl informiert und
+die in Deutsch und Englisch formuliert ist.
+
+• Szenario 4: Lassen Sie die KI-Lernziele für den Kompetenzbereich „Korrektes
+Zitieren“ oder einen anderen Kompetenzbereich Ihrer Wahl formulieren, die
+verschiedene Lernzielebenen adressieren, z.B. „Erinnern – Verstehen – Anwenden –
+Analysieren – Evaluieren – Erzeugen“.
+
+ Szenario 5: Lassen Sie die KI eine Gliederung für ein „How To“-Dokument erstellen,
+das Studierenden die Bedienung von ChatGPT erklärt.
+
+• Szearnio 6: Lassen Sie die KI einen Begrüßungstext schreiben, der als erstes Textfeld
+in einem Online-Lernraum angezeigt wird und den Studierenden eine erste
+Orientierung über den Lernraum gibt.
+
+• Szenario 7: Lassen Sie die KI eine Struktur für einen Online-Lernraum zur
+Lehrveranstaltung „Gute wissenschaftliche Praxis“ oder eine andere
+Lehrveranstaltung Ihrer Wahl vorschlagen.
+:::
+
+
+
+
+## Evaluation (Gruppenarbeit)
+
+Orientieren Sie sich bei der Diskussion und Reflexion an diesen Fragevorschlägen
+• Was ist mir wichtig?
+• Trifft das Ergebnis meine Erwartung?
+• Welche Anpassungen verbessern das Ergebnis?
+• Ist das Ergebnis nützlich zum Erreichen meines Ziels?
+• Welche Fehler könnte das Ergebnis enthalten?
+• Welche Vor- und Nachteile bringt diese Strategie mit sich?
+• Welche Erfahrungen habt Ihr gemacht?
+• Welche ethischen Fragen sind damit evtl. verknüpft?
+• Welche Herausforderungen sehe ich beim Einsatz in der Lehre?
+
+## Activity 1
+
+
+In this activity, you can explore various prompting guides for GPT models. They more or less all converge on the same set of techniques.
+
+
+## Arbeitsphase 3: Lehrveranstaltungsdesign mit KI-Prompts (30 Min.)
+### Simple prompts
+   
+(@) Extract a table of facts
+
+### Complex prompts
+
+(@) Writing assistant
+
+Der von Rob Lennon entwickelte Mega-Prompt besteht aus sechs Abschnitten, die das KI-System umfassend auf seine Aufgabe vorbereiten und gleichzeitig einen iterativen Kommunikationsprozess mit dem User zur Verbesserung des Ergebnisses erleichtern sollen. Diese sechs Abschnitte sind:
+
+Rolle – Wen oder was soll das KI-System simulieren?
+Aufgabe / Tätigkeit – Was ist zu tun?
+Arbeitsschritte – welche Teilschritte sind in welcher Reihenfolge zu tun?
+Kontext / Nebenbedingungen / Einschränkungen – was muss dabei beachtet werden?
+Ziel – welches konkrete Ziel soll der Dialog erreichen?
+Format des Outputs – wie soll die Rückmeldung des Bots aussehen?
+Ein solcher Prompt könnte vereinfacht so aussehen:
+
+:::{.callout-tip collapse="true"}
+## Schreibassistent
+```
+# Deine Rolle
+Du bist mein Schreibassistent. Du hilfst mir, Texte für eine Lehrveranstaltung an einer Universität zu schreiben. Du machst auf Basis meiner Eingaben konkrete Textvorschläge.
+
+# Aufgabe
+Schreibe einen Vorschlag für eine Liste von Lernzielen. Die Lernziele sollen für eine 90minütige Seminarsitzung geschrieben werden. Der Titel der Seminarsitzung lautet "Lernziele mit KI schreiben".
+
+# Arbeitsschritte
+Formuliere zunächst einen Vorschlag für die Liste von Lernzielen. Frage mich nach Veränderungen, die ich vornehmen möchte. Gibt mir dann eine angepasste Ausgabe.
+
+# Rahmenbedingungen
+Die Liste soll 6 Lernziele enthalten. Jedes Lernziel sollte aus maximal 3 Sätzen bestehen. Verwende aktive Formulierungen wie "Die Studierenden kennen ..." oder "Die Studierenden üben ...".  Die Sprache ist deutsch, formell und auf dem Niveau einer Hochschule.
+
+# Ziel
+Das Ziel ist es, eine für Studierende verständliche Liste von Lernzielen zu schreiben. Diese Liste wird den Studierenden am Anfang der Seminarsitzung gezeigt.
+
+# Format des Outputs
+Das Ergebnis ist eine nummerierte Liste. Gib zuerst die Liste aus und frag mich dann nach Veränderungen, die Du an der Liste vornehmen sollst. Passe die Liste an meine Antwort an.
+
+```
+:::
+
+
+(@) Prompt creator
+
+Die Idee des "Prompt Creator" geht über bisherige Ansätze hinaus. Bisher haben wir Prompts formuliert, zu denen das System eine Antwort generiert. Beim "Prompt Creator" wird das System angewiesen, für uns einen Prompt zu erstellen, die wir dann erneut in das System eingeben. So entsteht der eigentliche, für Menschen nutzbare Output. Grundlegend lautet unsere erste Anweisung an das System: "Bitte erstelle den besten Prompt zum Thema X." Ein Vorteil dieses Ansatzes ist, dass der erste Prompt meistens kürzer und weniger komplex ist.
+
+Hier ist ein Beispiel für einen "Prompt Creator". Mehr Infos dazu gibt es in diesem [YouTube-Video](https://www.youtube.com/watch?v=1Seum8aAyzk).
+
+{{< youtube 1Seum8aAyzk >}}
+
+:::{.callout-tip collapse="true"}
+## Prompt Creator
+```
+Ich möchte, dass du mein Prompt Creator wirst. Dein Ziel ist es, mir zu helfen, den bestmöglichen Prompt für meine Bedürfnisse zu erstellen. Der Prompt wird zum Abschluss von dir, der generativen KI, verwendet. Du wirst den folgenden Prozess befolgen:
+
+1. Als erstes fragst du mich, worum es in dem Prompt gehen soll. Ich werde dir meine Antwort geben, aber wir müssen sie durch ständige Wiederholungen verbessern, indem wir die nächsten Schritte durchgehen.
+
+2. Auf der Grundlage meines Inputs erstellst du 3 Abschnitte:
+
+a) Überarbeiteter Prompt: du schreibst deinen überarbeiteten Prompt. Er sollte klar, präzise und für dich leicht verständlich sein
+
+b) Vorschläge: du machst Vorschläge, welche Details du in den Prompt einbauen solltest, um ihn zu verbessern
+
+c) Fragen: du stellst relevante Fragen dazu, welche zusätzlichen Informationen ich brauche, um den Prompt zu verbessern.
+ 
+3. Der Prompt, den du bereitstellst, sollte die Form einer Anfrage von mir haben, die von einer generativen KI ausgeführt werden soll.
+ 
+4. Wir werden diesen iterativen Prozess fortsetzen, indem ich dir zusätzliche Informationen liefere und du die Aufforderung im Abschnitt "Überarbeitete Aufforderung" aktualisierst, bis sie vollständig ist.
+```
+:::
+
+## Activity 2
+
+- Explore prompting, using both ChatGPT and the Playground. 
+- Try the PromptTools Playground.
+- Try out SPARK. This is a good demonstration of using a knowledge base and document retrieval can allow you to create a QA tool.
+
+## Activity 3
+
+## Activity 4
+
+## [Activity 5](activity-5-discussion-declaration.qmd)
+
+
+:::{.callout-caution}
+## Discussion 💬 
+
+- What experiences did you have with prompting?
+- Did you find any of the techniques particularly useful?
+:::
+

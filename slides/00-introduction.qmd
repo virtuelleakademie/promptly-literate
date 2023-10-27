@@ -43,6 +43,95 @@ format:
 # number-sections: true
 ---
 
+## 📖 Themen {.scrollable}
+
+| Kategorie | Themen |
+|---|---|
+| Unterricht & Bildung | <small>- MC Fragen Entwicklung<br>- Case Study entwickeln<br>- Unterrichtsvorbereitung<br>- KI-Management in den Unterricht integrieren<br>- Grundlagen kennen lernen<br>- Sinnvoller Einsatz für Lehre reflektieren<br>- Generieren von MC-Fragen<br>- Brainstorming/Ideengenerierung (z.T. mit Studierenden)<br>- Akademisches und berufliches Schreiben unterrichten<br>- Funktionsweise von KI-Schreibtools<br>- Einsatzszenarien für KI-Schreibtools<br>- Reflektierter Umgang mit KI-Schreibtools<br>- Unterstützung für Schüler*innen mit sprachlichen Schwierigkeiten<br>- Verständnis von Schreibtools<br>- Sinnvoller Einsatz von Schreibtools durch Studierende und Mitarbeitende</small> |
+| Sprache & Schreiben | <small>- Formulierungshilfe bei wissenschaftlichen Schreibarbeiten<br>- Übersetzungen oder Überprüfungen von Texten in Deutsch<br>- Kreative Schreibübung<br>- Übersetzungen<br>- Ideensammlung<br>- Textkorrekturen/-anpassungen<br>- Perspektivenwechsel<br>- Szenarien erfinden lassen<br>- Mails verfassen<br>- Konzepte überprüfen</small> |
+| Technologie & Innovation | <small>- Diverses<br>- Zeitersparnis bei Vorbereitungen mithilfe neuer Technologien<br>- Prüfungen mit KI<br>- Open Book Prüfungen<br>- Grenzen der KI ausloten<br>- Interesse an Entwicklungen der Sprachmodelle</small> |
+| Freizeit & Lifestyle | <small>- Fragen für Freizeitaktivitäten, z.B. bei Regenwetter mit Kleinkindern<br>- Ideensammlung für Ausflüge in der Freizeit<br>- Programmplanung der Ferien<br>- Vorschlag für einen Mailtest</small> |
+| Feedback & Repräsentation | <small>- Rückmeldung an das Institut an der BFH</small> |
+
+
+## 📖 Themen
+![](../assets/images/topics.png){width=100%}
+
+
+:::aside
+👉 [ChatGPT Dialog öffnen](https://chat.openai.com/share/5109a0b4-0510-46a9-974d-31954241820b)
+:::
+
+## 🙋 Fragen {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+1. **Bildungs-KI:**
+   - KI in Lehre?
+   - KI im Schreibdidaktik-Bereich?
+   - Übungen mit ChatGPT?
+   - ChatGPT zum Lernen?
+
+2. **Ethik & KI:**
+   - Ethischer Umgang?
+   - Datenüberwachung?
+   - Wahrheitsgehalt von ChatGPT?
+
+3. **KI-Funktionalität:**
+   - KI-Gefahren?
+   - Alles von ChatGPT beantwortbar?
+   - Effektives "prompten"?
+
+:::
+::: {.column width="50%"}
+
+4. **KI-Bedienung:**
+   - KI nutzen?
+   - Informationen eingeben?
+
+5. **KI-Optimierung:**
+   - Sinnvolle Nutzung?
+   - Aufsätze optimieren?
+
+6. **KI-Wahrnehmung:**
+   - Zögerliche Nutzung?
+
+7. **Zukunft & Sprachmodelle:**
+   - Prognosen?
+   - Weiterentwicklung?
+
+8. **Qualitätscheck:**
+   - KI-Ergebnisse prüfen?
+
+
+:::
+::::
+
+
+<!-- 👉 [ChatGPT Dialog öffnen](https://chat.openai.com/share/5babaf97-e64b-4ae2-a233-f028047f66f9) -->
+
+## 🏠 Take-home messages
+- Use LLMs yourself! It’s important to gain an intuition for their capabilities and limitations.
+- Combine domain knowledge of the “thing” you are working on, an understanding of how LLMs work, and an understanding of how to prompt them.
+- Use LLMs with students in a classroom setting. This will help students to develop their own understanding of LLMs and become AI-literate.
+- Always (critically 👩‍🔬) check an LLM’s output. They are language models, not knowledge bases. Keep a human in the loop.
+
+## 🎯 Learning outcomes
+:::{.callout-tip}
+## After this workshop, you will be able to:
+
+1) Explain what large language models and conversational agents, such as ChatGPT, can be used for, and what they shouldn't be used for.
+2) Create effective prompts for LLMs.
+3) Design your own LLM-based educational activities.
+4) Critically evaluate LLM-based educational activities.
+:::
+
+
+## ⏱️ Schedule
+
+![](../assets/schedule.svg){width=100%}
 
 
 ## Contents
