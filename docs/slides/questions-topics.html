@@ -8,13 +8,11 @@
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.432">
 
   <meta name="author" content="Andrew Ellis">
-  <title>LLMs for Teaching and Learning - What is ChatGPT?</title>
+  <title>LLMs for Teaching and Learning - Fragen und Themen</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -32,27 +30,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for citations */
-    div.csl-bib-body { }
-    div.csl-entry {
-      clear: both;
-      margin-bottom: 0em;
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
     }
-    .hanging-indent div.csl-entry {
-      margin-left:2em;
-      text-indent:-2em;
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
     }
-    div.csl-left-margin {
-      min-width:2em;
-      float:left;
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
     }
-    div.csl-right-inline {
-      margin-left:2em;
-      padding-left:1em;
-    }
-    div.csl-indent {
-      margin-left: 2em;
-    }  </style>
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+  </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -345,9 +388,9 @@
       margin-right: 0; 
     }
   </style>
-<meta property="og:title" content="LLMs for Teaching and Learning - What is ChatGPT?">
+<meta property="og:title" content="LLMs for Teaching and Learning - Fragen und Themen">
 <meta property="og:site_name" content="LLMs for Teaching and Learning">
-<meta name="twitter:title" content="LLMs for Teaching and Learning - What is ChatGPT?">
+<meta name="twitter:title" content="LLMs for Teaching and Learning - Fragen und Themen">
 <meta name="twitter:creator" content="@awellis">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -356,7 +399,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-opacity="1" class="quarto-title-block center">
-  <h1 class="title">What is ChatGPT?</h1>
+  <h1 class="title">Fragen und Themen</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -368,401 +411,119 @@ Andrew Ellis
 
   <p class="date">27 October, 2023</p>
 </section>
-<section id="themen" class="slide level2 scrollable">
-<h2>📖 Themen</h2>
-<table>
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Kategorie</th>
-<th>Themen</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Unterricht &amp; Bildung</td>
-<td><small>- MC Fragen Entwicklung<br>- Case Study entwickeln<br>- Unterrichtsvorbereitung<br>- KI-Management in den Unterricht integrieren<br>- Grundlagen kennen lernen<br>- Sinnvoller Einsatz für Lehre reflektieren<br>- Generieren von MC-Fragen<br>- Brainstorming/Ideengenerierung (z.T. mit Studierenden)<br>- Akademisches und berufliches Schreiben unterrichten<br>- Funktionsweise von KI-Schreibtools<br>- Einsatzszenarien für KI-Schreibtools<br>- Reflektierter Umgang mit KI-Schreibtools<br>- Unterstützung für Schüler*innen mit sprachlichen Schwierigkeiten<br>- Verständnis von Schreibtools<br>- Sinnvoller Einsatz von Schreibtools durch Studierende und Mitarbeitende</small></td>
-</tr>
-<tr class="even">
-<td>Sprache &amp; Schreiben</td>
-<td><small>- Formulierungshilfe bei wissenschaftlichen Schreibarbeiten<br>- Übersetzungen oder Überprüfungen von Texten in Deutsch<br>- Kreative Schreibübung<br>- Übersetzungen<br>- Ideensammlung<br>- Textkorrekturen/-anpassungen<br>- Perspektivenwechsel<br>- Szenarien erfinden lassen<br>- Mails verfassen<br>- Konzepte überprüfen</small></td>
-</tr>
-<tr class="odd">
-<td>Technologie &amp; Innovation</td>
-<td><small>- Diverses<br>- Zeitersparnis bei Vorbereitungen mithilfe neuer Technologien<br>- Prüfungen mit KI<br>- Open Book Prüfungen<br>- Grenzen der KI ausloten<br>- Interesse an Entwicklungen der Sprachmodelle</small></td>
-</tr>
-<tr class="even">
-<td>Freizeit &amp; Lifestyle</td>
-<td><small>- Fragen für Freizeitaktivitäten, z.B. bei Regenwetter mit Kleinkindern<br>- Ideensammlung für Ausflüge in der Freizeit<br>- Programmplanung der Ferien<br>- Vorschlag für einen Mailtest</small></td>
-</tr>
-<tr class="odd">
-<td>Feedback &amp; Repräsentation</td>
-<td><small>- Rückmeldung an das Institut an der BFH</small></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="themen-1" class="slide level2">
-<h2>📖 Themen</h2>
-<p><img data-src="../assets/images/topics.png" style="width:100.0%"></p>
-
-<aside><div>
-<p>👉 <a href="https://chat.openai.com/share/5109a0b4-0510-46a9-974d-31954241820b">ChatGPT Dialog öffnen</a></p>
-</div></aside></section>
-<section id="fragen" class="slide level2 smaller">
-<h2>🙋 Fragen</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ol type="1">
-<li><strong>Bildungs-KI:</strong>
-<ul>
-<li>KI in Lehre?</li>
-<li>KI im Schreibdidaktik-Bereich?</li>
-<li>Übungen mit ChatGPT?</li>
-<li>ChatGPT zum Lernen?</li>
-</ul></li>
-<li><strong>Ethik &amp; KI:</strong>
-<ul>
-<li>Ethischer Umgang?</li>
-<li>Datenüberwachung?</li>
-<li>Wahrheitsgehalt von ChatGPT?</li>
-</ul></li>
-<li><strong>KI-Funktionalität:</strong>
-<ul>
-<li>KI-Gefahren?</li>
-<li>Alles von ChatGPT beantwortbar?</li>
-<li>Effektives “prompten”?</li>
-</ul></li>
-</ol>
-</div><div class="column" style="width:50%;">
-<ol start="4" type="1">
-<li><strong>KI-Bedienung:</strong>
-<ul>
-<li>KI nutzen?</li>
-<li>Informationen eingeben?</li>
-</ul></li>
-<li><strong>KI-Optimierung:</strong>
-<ul>
-<li>Sinnvolle Nutzung?</li>
-<li>Aufsätze optimieren?</li>
-</ul></li>
-<li><strong>KI-Wahrnehmung:</strong>
-<ul>
-<li>Zögerliche Nutzung?</li>
-</ul></li>
-<li><strong>Zukunft &amp; Sprachmodelle:</strong>
-<ul>
-<li>Prognosen?</li>
-<li>Weiterentwicklung?</li>
-</ul></li>
-<li><strong>Qualitätscheck:</strong>
-<ul>
-<li>KI-Ergebnisse prüfen?</li>
-</ul></li>
-</ol>
+<section id="themen" class="slide level2">
+<h2>Themen</h2>
+<div id="d8ea72f5" class="cell" data-execution_count="1">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="co"># Create a new graph</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a>G <span class="op">=</span> nx.Graph()</span>
+<span id="cb1-7"><a href="#cb1-7"></a></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="co"># Define the categories/nodes</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>categories <span class="op">=</span> [<span class="st">"Unterricht &amp; Bildung"</span>, <span class="st">"Sprache &amp; Schreiben"</span>, <span class="st">"Technologie &amp; Innovation"</span>, <span class="st">"Freizeit &amp; Lifestyle"</span>, <span class="st">"Feedback &amp; Repräsentation"</span>]</span>
+<span id="cb1-10"><a href="#cb1-10"></a></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="co"># Add nodes to the graph</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a>G.add_nodes_from(categories)</span>
+<span id="cb1-13"><a href="#cb1-13"></a></span>
+<span id="cb1-14"><a href="#cb1-14"></a><span class="co"># Define the relationships/edges based on the interpretation</span></span>
+<span id="cb1-15"><a href="#cb1-15"></a>relationships <span class="op">=</span> [</span>
+<span id="cb1-16"><a href="#cb1-16"></a>    (<span class="st">"Unterricht &amp; Bildung"</span>, <span class="st">"Sprache &amp; Schreiben"</span>),</span>
+<span id="cb1-17"><a href="#cb1-17"></a>    (<span class="st">"Unterricht &amp; Bildung"</span>, <span class="st">"Technologie &amp; Innovation"</span>),</span>
+<span id="cb1-18"><a href="#cb1-18"></a>    (<span class="st">"Sprache &amp; Schreiben"</span>, <span class="st">"Technologie &amp; Innovation"</span>),</span>
+<span id="cb1-19"><a href="#cb1-19"></a>    (<span class="st">"Technologie &amp; Innovation"</span>, <span class="st">"Freizeit &amp; Lifestyle"</span>),</span>
+<span id="cb1-20"><a href="#cb1-20"></a>    (<span class="st">"Unterricht &amp; Bildung"</span>, <span class="st">"Feedback &amp; Repräsentation"</span>)</span>
+<span id="cb1-21"><a href="#cb1-21"></a>]</span>
+<span id="cb1-22"><a href="#cb1-22"></a></span>
+<span id="cb1-23"><a href="#cb1-23"></a><span class="co"># Add edges to the graph</span></span>
+<span id="cb1-24"><a href="#cb1-24"></a>G.add_edges_from(relationships)</span>
+<span id="cb1-25"><a href="#cb1-25"></a></span>
+<span id="cb1-26"><a href="#cb1-26"></a><span class="co"># Define the topics under each category</span></span>
+<span id="cb1-27"><a href="#cb1-27"></a>topics <span class="op">=</span> {</span>
+<span id="cb1-28"><a href="#cb1-28"></a>    <span class="st">"Unterricht &amp; Bildung"</span>: [</span>
+<span id="cb1-29"><a href="#cb1-29"></a>        <span class="st">"MC Fragen Entwicklung"</span>, <span class="st">"Case Study entwickeln"</span>, <span class="st">"Unterrichtsvorbereitung"</span>, </span>
+<span id="cb1-30"><a href="#cb1-30"></a>        <span class="st">"KI-Management in den Unterricht integrieren"</span>, <span class="st">"Grundlagen kennen lernen"</span>, </span>
+<span id="cb1-31"><a href="#cb1-31"></a>        <span class="st">"Sinnvoller Einsatz für Lehre reflektieren"</span>, <span class="st">"Generieren von MC-Fragen"</span>, </span>
+<span id="cb1-32"><a href="#cb1-32"></a>        <span class="st">"Brainstorming/Ideengenerierung (z.T. mit Studierenden)"</span>, <span class="st">"Akademisches und berufliches Schreiben unterrichten"</span>, </span>
+<span id="cb1-33"><a href="#cb1-33"></a>        <span class="st">"Funktionsweise von KI-Schreibtools"</span>, <span class="st">"Einsatzszenarien für KI-Schreibtools"</span>, </span>
+<span id="cb1-34"><a href="#cb1-34"></a>        <span class="st">"Reflektierter Umgang mit KI-Schreibtools"</span>, <span class="st">"Unterstützung für Schüler*innen mit sprachlichen Schwierigkeiten"</span>, </span>
+<span id="cb1-35"><a href="#cb1-35"></a>        <span class="st">"Verständnis von Schreibtools"</span>, <span class="st">"Sinnvoller Einsatz von Schreibtools durch Studierende und Mitarbeitende"</span></span>
+<span id="cb1-36"><a href="#cb1-36"></a>    ],</span>
+<span id="cb1-37"><a href="#cb1-37"></a>    <span class="st">"Sprache &amp; Schreiben"</span>: [</span>
+<span id="cb1-38"><a href="#cb1-38"></a>        <span class="st">"Formulierungshilfe bei wissenschaftlichen Schreibarbeiten"</span>, <span class="st">"Übersetzungen oder Überprüfungen von Texten in Deutsch"</span>, </span>
+<span id="cb1-39"><a href="#cb1-39"></a>        <span class="st">"Kreative Schreibübung"</span>, <span class="st">"Übersetzungen"</span>, <span class="st">"Ideensammlung"</span>, </span>
+<span id="cb1-40"><a href="#cb1-40"></a>        <span class="st">"Textkorrekturen/-anpassungen"</span>, <span class="st">"Perspektivenwechsel"</span>, <span class="st">"Szenarien erfinden lassen"</span>, </span>
+<span id="cb1-41"><a href="#cb1-41"></a>        <span class="st">"Mails verfassen"</span>, <span class="st">"Konzepte überprüfen"</span></span>
+<span id="cb1-42"><a href="#cb1-42"></a>    ],</span>
+<span id="cb1-43"><a href="#cb1-43"></a>    <span class="st">"Technologie &amp; Innovation"</span>: [</span>
+<span id="cb1-44"><a href="#cb1-44"></a>        <span class="st">"Diverses"</span>, <span class="st">"Zeitersparnis bei Vorbereitungen mithilfe neuer Technologien"</span>, </span>
+<span id="cb1-45"><a href="#cb1-45"></a>        <span class="st">"Prüfungen mit KI"</span>, <span class="st">"Open Book Prüfungen"</span>, <span class="st">"Grenzen der KI ausloten"</span>, </span>
+<span id="cb1-46"><a href="#cb1-46"></a>        <span class="st">"Interesse an Entwicklungen der Sprachmodelle"</span></span>
+<span id="cb1-47"><a href="#cb1-47"></a>    ],</span>
+<span id="cb1-48"><a href="#cb1-48"></a>    <span class="st">"Freizeit &amp; Lifestyle"</span>: [</span>
+<span id="cb1-49"><a href="#cb1-49"></a>        <span class="st">"Fragen für Freizeitaktivitäten, z.B. bei Regenwetter mit Kleinkindern"</span>, </span>
+<span id="cb1-50"><a href="#cb1-50"></a>        <span class="st">"Ideensammlung für Ausflüge in der Freizeit"</span>, <span class="st">"Programmplanung der Ferien"</span>, <span class="st">"Vorschlag für einen Mailtest"</span></span>
+<span id="cb1-51"><a href="#cb1-51"></a>    ],</span>
+<span id="cb1-52"><a href="#cb1-52"></a>    <span class="st">"Feedback &amp; Repräsentation"</span>: [<span class="st">"Rückmeldung an das Institut an der BFH"</span>]</span>
+<span id="cb1-53"><a href="#cb1-53"></a>}</span>
+<span id="cb1-54"><a href="#cb1-54"></a></span>
+<span id="cb1-55"><a href="#cb1-55"></a><span class="co"># Add topics as nodes to the graph</span></span>
+<span id="cb1-56"><a href="#cb1-56"></a><span class="cf">for</span> category, topic_list <span class="kw">in</span> topics.items():</span>
+<span id="cb1-57"><a href="#cb1-57"></a>    G.add_nodes_from(topic_list)</span>
+<span id="cb1-58"><a href="#cb1-58"></a>    <span class="cf">for</span> topic <span class="kw">in</span> topic_list:</span>
+<span id="cb1-59"><a href="#cb1-59"></a>        G.add_edge(category, topic)</span>
+<span id="cb1-60"><a href="#cb1-60"></a></span>
+<span id="cb1-61"><a href="#cb1-61"></a><span class="co"># Get a color palette with as many colors as there are topics</span></span>
+<span id="cb1-62"><a href="#cb1-62"></a>colors <span class="op">=</span> sns.color_palette(<span class="st">"husl"</span>, <span class="bu">len</span>(topics))</span>
+<span id="cb1-63"><a href="#cb1-63"></a></span>
+<span id="cb1-64"><a href="#cb1-64"></a><span class="co"># Map each category to a color</span></span>
+<span id="cb1-65"><a href="#cb1-65"></a>color_map <span class="op">=</span> {}</span>
+<span id="cb1-66"><a href="#cb1-66"></a><span class="cf">for</span> idx, category <span class="kw">in</span> <span class="bu">enumerate</span>(topics):</span>
+<span id="cb1-67"><a href="#cb1-67"></a>    <span class="cf">for</span> topic <span class="kw">in</span> topics[category]:</span>
+<span id="cb1-68"><a href="#cb1-68"></a>        color_map[topic] <span class="op">=</span> colors[idx]</span>
+<span id="cb1-69"><a href="#cb1-69"></a></span>
+<span id="cb1-70"><a href="#cb1-70"></a><span class="co"># Add colors for the categories themselves</span></span>
+<span id="cb1-71"><a href="#cb1-71"></a>category_colors <span class="op">=</span> [<span class="st">"red"</span>, <span class="st">"green"</span>, <span class="st">"blue"</span>, <span class="st">"purple"</span>, <span class="st">"orange"</span>]</span>
+<span id="cb1-72"><a href="#cb1-72"></a><span class="cf">for</span> idx, category <span class="kw">in</span> <span class="bu">enumerate</span>(categories):</span>
+<span id="cb1-73"><a href="#cb1-73"></a>    color_map[category] <span class="op">=</span> category_colors[idx]</span>
+<span id="cb1-74"><a href="#cb1-74"></a></span>
+<span id="cb1-75"><a href="#cb1-75"></a><span class="co"># Get the colors for each node in the order they are in the graph</span></span>
+<span id="cb1-76"><a href="#cb1-76"></a>node_colors <span class="op">=</span> [color_map[node] <span class="cf">for</span> node <span class="kw">in</span> G.nodes()]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div id="93b99e3d" class="cell" data-execution_count="2">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># Plotting the graph with different colors for each topic</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">20</span>, <span class="dv">20</span>)) <span class="co">#figsize=(20, 15)</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a>pos <span class="op">=</span> nx.spring_layout(G, seed<span class="op">=</span><span class="dv">42</span>, k<span class="op">=</span><span class="fl">0.5</span>, iterations<span class="op">=</span><span class="dv">100</span>)</span>
+<span id="cb2-4"><a href="#cb2-4"></a>nx.draw(G, pos, with_labels<span class="op">=</span><span class="va">True</span>, node_size<span class="op">=</span><span class="dv">2000</span>, node_color<span class="op">=</span>node_colors, font_size<span class="op">=</span><span class="dv">12</span>, font_color<span class="op">=</span><span class="st">'black'</span>, width<span class="op">=</span><span class="dv">2</span>, edge_color<span class="op">=</span><span class="st">'gray'</span>, alpha<span class="op">=</span><span class="fl">0.6</span>)</span>
+<span id="cb2-5"><a href="#cb2-5"></a>plt.title(<span class="st">"Beziehungen zwischen den Bereichen und zugehörigen Themen"</span>, fontsize<span class="op">=</span><span class="dv">18</span>)</span>
+<span id="cb2-6"><a href="#cb2-6"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img data-src="questions-topics_files/figure-html/cell-3-output-1.png" width="1939" height="1966"></p>
 </div>
 </div>
-<!-- 👉 [ChatGPT Dialog öffnen](https://chat.openai.com/share/5babaf97-e64b-4ae2-a233-f028047f66f9) -->
-</section>
-<section id="take-home-messages" class="slide level2">
-<h2>🏠 Take-home messages</h2>
-<ul>
-<li>Use LLMs yourself! It’s important to gain an intuition for their capabilities and limitations.</li>
-<li>Combine domain knowledge of the “thing” you are working on, an understanding of how LLMs work, and an understanding of how to prompt them.</li>
-<li>Use LLMs with students in a classroom setting. This will help students to develop their own understanding of LLMs and become AI-literate.</li>
-<li>Always (critically 👩‍🔬) check an LLM’s output. They are language models, not knowledge bases. Keep a human in the loop.</li>
-</ul>
-</section>
-<section id="learning-outcomes" class="slide level2">
-<h2>🎯 Learning outcomes</h2>
-<div class="callout callout-tip no-icon callout-titled callout-style-simple">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>After this workshop, you will be able to:</strong></p>
-</div>
-<div class="callout-content">
-<ol type="1">
-<li>Explain what large language models and conversational agents, such as ChatGPT, can be used for, and what they shouldn’t be used for.</li>
-<li>Create effective prompts for LLMs.</li>
-<li>Design your own LLM-based educational activities.</li>
-<li>Critically evaluate LLM-based educational activities.</li>
-</ol>
-</div>
-</div>
-</div>
-</section>
-<section id="schedule" class="slide level2">
-<h2>⏱️ Schedule</h2>
-
-<img data-src="../assets/schedule.svg" style="width:100.0%" class="r-stretch"></section>
-<section id="contents" class="slide level2">
-<h2>Contents</h2>
-<ul>
-<li>Example: 20 questions</li>
-<li>What is ChatGPT?
-<ul>
-<li>Base model</li>
-<li>Assistant model</li>
-</ul></li>
-<li>What is it not?</li>
-<li>ChatGPT as a role-play simulator</li>
-</ul>
-<!-- ## Key messages
-
-1) 👩‍⚖️ Keep a human in the loop: LLMs should be used to augment human writing, not to replace it.
-
-2) This workshop is mainly about prompting. We can think about prompting as a way of "programming" LLMs, i.e. getting LLMs to do what we want them to do. -->
-</section>
-<section id="questions" class="slide level2">
-<h2>20 questions</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<iframe width="600" height="600" src="https://chat.openai.com/share/a4daa92d-4631-4d7e-bfe6-ef9b3b5eb0a0" title="Once upon a time"></iframe>
-
-</div><div class="column" style="width:50%;">
-<ul>
-<li>🤷‍♂️ What is ChatGPT doing here?</li>
-<li>How does this work?</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="what-is-chatgpt" class="slide level2">
-<h2>What is ChatGPT?</h2>
-<div class="columns">
-<div class="column" style="width:34%;">
-<p><img data-src="../assets/images/Language Model.png" style="width:100.0%"></p>
-</div><div class="column" style="width:66%;">
-<ul>
-<li>Consists of a <strong>base</strong> model and an <strong>assistant</strong> model.</li>
-<li><strong>Base or foundation</strong> model: probabilistic model of how language is generated.</li>
-<li><strong>Assistant</strong>: able to create human-like dialogue.</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="base-model" class="slide level2">
-<h2>Base model</h2>
-<div class="columns">
-<div class="column" style="width:34%;">
-<p><img data-src="../assets/images/LLM-Bookshelf.png" style="width:100.0%"></p>
-<p><img data-src="../assets/images/pretraining.png" style="width:100.0%"></p>
-</div><div class="column" style="width:66%;">
-<ul>
-<li>Is trained to predict text.</li>
-</ul>
-<div class="callout callout-note no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p><i class="fa-solid fa-person" aria-label="person"></i>: What is the capital of France?</p>
-<p><i class="fa-solid fa-robot" aria-label="robot"></i>: What is the capital of Germany? What is the capital of Italy? …</p>
-</div>
-</div>
-</div>
-<ul>
-<li>Extracts various types of knowledge from text: linguistic, factual, commonsense, etc.</li>
-<li>Does not know how to have a conversation.</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="base-model-1" class="slide level2">
-<h2>Base model</h2>
-<p>Produces text that most likely follows the input (prompt).</p>
-<div class="callout callout-note no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p><i class="fa-solid fa-person" aria-label="person"></i>: The first person to walk on the Moon was</p>
-<p><i class="fa-solid fa-robot" aria-label="robot"></i>: Neil Armstrong</p>
-</div>
-</div>
-</div>
-<div class="callout callout-caution no-icon callout-titled callout-style-simple">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Does an LLM know facts?</strong></p>
-</div>
-<div class="callout-content">
-<p>What we are really asking: Given what it learned during training, what words are most likely to follow <em>“The first person to walk on the Moon was”</em>? A good reply to this question is <em>“Neil Armstrong”</em>.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="base-model-emergent-properties" class="slide level2">
-<h2>Base model: emergent properties</h2>
-<ul>
-<li>LLMs are thought to show emergent properties - abilities not explicitly programmed into the model, but emerge as a result of text prediction.
-<ul>
-<li>performing arithmetic, answering questions, summarizing text, translating, etc.</li>
-<li>zero-shot learning: LLMs can perform tasks without being trained on them.</li>
-<li>few-shot learning: LLMs can perform tasks with few examples.</li>
-</ul></li>
-</ul>
-</section>
-<section id="assistant-model" class="slide level2">
-<h2>Assistant model</h2>
-<div class="columns">
-<div class="column" style="width:34%;">
-<p><img data-src="../assets/images/Chat.png" style="width:100.0%"></p>
-<p><img data-src="../assets/images/RLHF.svg" style="width:100.0%"></p>
-</div><div class="column" style="width:66%;">
-<ul>
-<li>Is trained to create human-like dialogue.</li>
-</ul>
-<div class="callout callout-note no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p><i class="fa-solid fa-person" aria-label="person"></i>: What is the capital of France? <i class="fa-solid fa-robot" aria-label="robot"></i>: Paris. Is there anything else you would like to know about France?</p>
-</div>
-</div>
-</div>
-<ul>
-<li>Trained to have conversations: turn-taking, question answering, not being [rude/sexist/racist], etc.</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="knowledge-base" class="slide level2">
-<h2>Knowledge base</h2>
-<div class="columns">
-<div class="column" style="width:34%;">
-<p><img data-src="../assets/images/KnowledgeBase.png" style="width:100.0%"></p>
-</div><div class="column" style="width:66%;">
-<ul>
-<li>A knowledge base is a collection of facts about the world.</li>
-<li><code>Ask</code> and <code>Tell</code></li>
-<li>I can ask but I can’t tell.</li>
-<li>It cannot give me verifiable facts.</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="knowledge-base-1" class="slide level2">
-<h2>Knowledge base</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../assets/images/Rilke.png" style="width:75.0%"></p>
-<figcaption>Am Strande von Rainer Maria Rilke <br> 👉 <a href="https://chat.openai.com/share/37698510-9047-4d4f-8a6b-00f054d06457">Open in ChatGPT</a></figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../assets/images/Hesse.png" style="width:75.0%"></p>
-<figcaption>Kennst du dieses Gedicht? <br> 👉 <a href="https://chat.openai.com/share/37698510-9047-4d4f-8a6b-00f054d06457">Open in ChatGPT</a></figcaption>
-</figure>
-</div>
-</div>
-</div>
-<div class="fragment">
-<p>What can we learn from this?</p>
-</div>
-</section>
-<section id="knowledge-base-2" class="slide level2">
-<h2>Knowledge base</h2>
-<div class="columns">
-<div class="column" style="width:34%;">
-<p><img data-src="../assets/images/Pothole.png" style="width:100.0%"></p>
-</div><div class="column" style="width:64%;">
-<ul>
-<li>Can’t tell me where it got its information from.</li>
-<li>LLMs are models of knowledge bases, but not knowledge bases themselves.</li>
-<li>Expensive/difficult to update with new knowledge.</li>
-<li>Produce ethically questionable results.</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="an-llm-is-a-role-play-simulator" class="slide level2">
-<h2>An LLM is a role-play simulator</h2>
-<div class="columns">
-<div class="column" style="width:34%;">
-<p><img data-src="../assets/images/live-action-role-play.png" style="width:100.0%"></p>
-</div><div class="column" style="width:64%;">
-<div class="callout callout-note no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p>We can think of an LLM as a non-deterministic simulator capable of role-playing an infinity of characters, or, to put it another way, capable of stochastically generating an infinity of simulacra <span class="citation" data-cites="shanahanRolePlayLargeLanguage2023">(<a href="#/references" role="doc-biblioref" onclick="">Shanahan, McDonell, and Reynolds 2023</a>)</span></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="an-llm-is-a-role-play-simulator-1" class="slide level2">
-<h2>An LLM is a role-play simulator</h2>
-<ul>
-<li>An assistant is trained to respond to user prompts in a human-like way.</li>
-<li>A simulator of <strong>possible</strong> human conversation.</li>
-<li>Has no intentions. It is not an entity with its own goals.</li>
-<li>Does not have a “personality” or “character” in the traditional sense. It can be thought of as a role-playing simulator.</li>
-<li>Has no concept of “truth” or “lying”. The model is not trying to deceive the user, it is simply trying to respond in a human-like way.</li>
-</ul>
-</section>
-<section id="an-llm-is-a-role-play-simulator-2" class="slide level2">
-<h2>An LLM is a role-play simulator</h2>
-
-<img data-src="../assets/images/simulator.png" style="width:100.0%" class="r-stretch"><div class="callout callout-note no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<ul>
-<li>The dialogue agent will do its best to role-play a character in a dialogue.</li>
-<li>At every step, the model is trying to generate text that is most likely to follow the input.</li>
-<li>It can take many different paths. Your interaction is just one of those possible paths.</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<section id="an-llm-is-a-role-play-simulator-3" class="slide level2">
-<h2>An LLM is a role-play simulator</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<iframe width="600" height="600" src="https://chat.openai.com/share/01f39c79-7c23-4a33-8f3e-9d052113cdd5" title="Once upon a time"></iframe>
-
-</div><div class="column" style="width:34%;">
-<ul>
-<li>You can open this conversation in ChatGPT.</li>
-<li>Try re-generating the conversation after the initial prompt.</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="what-are-llms-good-at" class="slide level2">
-<h2>What are LLMs good at?</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>Fixing grammar, bad writing, etc.</li>
-<li>Rephrasing</li>
-<li>Analyze texts</li>
-<li>Write computer code</li>
-<li>Answer questions about a knowledge base</li>
-<li>Translate languages</li>
-<li>Simulate characters for games</li>
-<li>Creating structured output</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<iframe width="600" height="600" src="https://chat.openai.com/share/49f95bd5-58de-466c-9323-5118fa83685e" title="Email addresses in a comma-separated list"></iframe>
-</div>
-</div>
-</section>
-<section id="references" class="slide level2 smaller scrollable" data-background-color="#2e3440">
-<h2>References</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-shanahanTalkingLargeLanguage2023" class="csl-entry" role="listitem">
-Shanahan, Murray. 2023. <span>“Talking <span>About Large Language Models</span>.”</span> January 25, 2023. <a href="https://doi.org/10.48550/arXiv.2212.03551">https://doi.org/10.48550/arXiv.2212.03551</a>.
-</div>
-<div id="ref-shanahanRolePlayLargeLanguage2023" class="csl-entry" role="listitem">
-Shanahan, Murray, Kyle McDonell, and Laria Reynolds. 2023. <span>“Role-<span>Play</span> with <span>Large Language Models</span>.”</span> May 25, 2023. <a href="https://doi.org/10.48550/arXiv.2305.16367">https://doi.org/10.48550/arXiv.2305.16367</a>.
-</div>
-<div id="ref-weiEmergentAbilitiesLarge2022b" class="csl-entry" role="listitem">
-Wei, Jason, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeaud, Dani Yogatama, et al. 2022. <span>“Emergent <span>Abilities</span> of <span>Large Language Models</span>.”</span> October 26, 2022. <a href="https://doi.org/10.48550/arXiv.2206.07682">https://doi.org/10.48550/arXiv.2206.07682</a>.
+<div id="43d1af73" class="cell" data-execution_count="3">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># Adjust the figure size to be wider</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">25</span>, <span class="dv">10</span>))</span>
+<span id="cb3-3"><a href="#cb3-3"></a></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="co"># Adjust the layout to be more spread out horizontally</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a>pos <span class="op">=</span> nx.spring_layout(G, seed<span class="op">=</span><span class="dv">42</span>, k<span class="op">=</span><span class="fl">0.7</span>, iterations<span class="op">=</span><span class="dv">150</span>, scale<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb3-6"><a href="#cb3-6"></a></span>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="co"># Plotting the graph with the adjusted layout</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a>nx.draw(G, pos, with_labels<span class="op">=</span><span class="va">True</span>, node_size<span class="op">=</span><span class="dv">2000</span>, node_color<span class="op">=</span>node_colors, font_size<span class="op">=</span><span class="dv">12</span>, font_color<span class="op">=</span><span class="st">'black'</span>, width<span class="op">=</span><span class="dv">2</span>, edge_color<span class="op">=</span><span class="st">'gray'</span>, alpha<span class="op">=</span><span class="fl">0.6</span>)</span>
+<span id="cb3-9"><a href="#cb3-9"></a>plt.title(<span class="st">"Beziehungen zwischen den Bereichen und zugehörigen Themen"</span>, fontsize<span class="op">=</span><span class="dv">20</span>)</span>
+<span id="cb3-10"><a href="#cb3-10"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img data-src="questions-topics_files/figure-html/cell-4-output-1.png" width="2419" height="1008"></p>
 </div>
 </div>
 
