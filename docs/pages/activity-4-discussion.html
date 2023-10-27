@@ -7,9 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Andrew Ellis">
-<meta name="description" content="Programming a GPT model.">
 
-<title>LLMs for Teaching and Learning - Take-home messages</title>
+<title>LLMs for Teaching and Learning - Activity 4: Discussion</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -44,9 +43,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,12 +68,12 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="LLMs for Teaching and Learning - Take-home messages">
-<meta property="og:description" content="Programming a GPT model.">
+<meta property="og:title" content="LLMs for Teaching and Learning - Activity 4: Discussion">
+<meta property="og:description" content="">
 <meta property="og:image" content="https://virtuelleakademie.github.io/promptly-literate/pages/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
 <meta property="og:site_name" content="LLMs for Teaching and Learning">
-<meta name="twitter:title" content="LLMs for Teaching and Learning - Take-home messages">
-<meta name="twitter:description" content="Programming a GPT model.">
+<meta name="twitter:title" content="LLMs for Teaching and Learning - Activity 4: Discussion">
+<meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://virtuelleakademie.github.io/promptly-literate/pages/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
 <meta name="twitter:creator" content="@awellis">
 <meta name="twitter:card" content="summary_large_image">
@@ -137,10 +133,6 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-activities">    
         <li>
-    <a class="dropdown-item" href="../pages/activities.html">
- <span class="dropdown-text">Activities</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../pages/activity-0-explore-llms.html">
  <span class="dropdown-text">Optional Activity: Exploring LLMs</span></a>
   </li>  
@@ -153,16 +145,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Activity 2: Prompting for teaching and learning</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../pages/activity-3-reflection.html">
- <span class="dropdown-text">Activity 3: Reflection</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="../pages/activity-4-miro.html">
- <span class="dropdown-text">Activity 4: Add your prompt tricks to the Miro board</span></a>
+ <span class="dropdown-text">Activity 3: Add your prompt tricks to the Miro board</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../pages/activity-5-discussion-declaration.html">
- <span class="dropdown-text">Activity 5: Discuss AI declaration</span></a>
+    <a class="dropdown-item" href="../pages/activity-4-discussion.html">
+ <span class="dropdown-text">Activity 4: Discussion</span></a>
   </li>  
     </ul>
   </li>
@@ -230,8 +218,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#embed-a-presentation" id="toc-embed-a-presentation" class="nav-link active" data-scroll-target="#embed-a-presentation">Embed a presentation</a></li>
-  <li><a href="#embed-miro-board" id="toc-embed-miro-board" class="nav-link" data-scroll-target="#embed-miro-board">Embed Miro board</a></li>
+  <li><a href="#themen" id="toc-themen" class="nav-link active" data-scroll-target="#themen">Themen</a></li>
+  <li><a href="#fragen" id="toc-fragen" class="nav-link" data-scroll-target="#fragen">Fragen</a></li>
   </ul>
 </nav>
     </div>
@@ -240,14 +228,9 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Take-home messages</h1>
+<h1 class="title">Activity 4: Discussion</h1>
 </div>
 
-<div>
-  <div class="description">
-    <p>Programming a GPT model.</p>
-  </div>
-</div>
 
 <div class="quarto-title-meta-author">
   <div class="quarto-title-meta-heading">Author</div>
@@ -271,7 +254,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">26 Oct, 2023</p>
+      <p class="date">27 Oct, 2023</p>
     </div>
   </div>
   
@@ -283,36 +266,193 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<ol type="1">
-<li>An LLM is not a knowledge base, instead it’s a statistical model of a knowledge base. An LLM is trained to be a language model. An LLM is a probabilistic model of its training corpus. It can be used to predict text auto-regressively.</li>
-</ol>
-{{&lt; fa chess-pawn &gt;}}
-{{&lt; fa thumbs-up &gt;}}
-{{&lt; fa calendar &gt;}}
-<p><a href="../assets/robot.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../assets/robot.png" class="img-fluid"></a></p>
-{{&lt; youtube YDiSFS-yHwk &gt;}}
-<section id="embed-a-presentation" class="level2">
-<h2 class="anchored" data-anchor-id="embed-a-presentation">Embed a presentation</h2>
-<iframe width="800" height="600" src="../slides/demo.html" title="Presentation example"></iframe>
+<p>Gibt es Themen oder Fragen, die an diesem Workshop nicht behandelt wurden, die Sie aber gerne diskutieren würden?</p>
+<section id="themen" class="level2">
+<h2 class="anchored" data-anchor-id="themen">Themen</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Unterricht &amp; Bildung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>MC Fragen Entwicklung</li>
+<li>Case Study entwickeln</li>
+<li>Unterrichtsvorbereitung</li>
+<li>KI-Management in den Unterricht integrieren</li>
+<li>Grundlagen kennen lernen</li>
+<li>Sinnvoller Einsatz für Lehre reflektieren</li>
+<li>Generieren von MC-Fragen</li>
+<li>Brainstorming/Ideengenerierung (z.T. mit Studierenden)</li>
+<li>Akademisches und berufliches Schreiben unterrichten</li>
+<li>Funktionsweise von KI-Schreibtools</li>
+<li>Einsatzszenarien für KI-Schreibtools</li>
+<li>Reflektierter Umgang mit KI-Schreibtools</li>
+<li>Unterstützung für Schüler*innen mit sprachlichen Schwierigkeiten</li>
+<li>Verständnis von Schreibtools</li>
+<li>Sinnvoller Einsatz von Schreibtools durch Studierende und Mitarbeitende</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Sprache &amp; Schreiben
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Formulierungshilfe bei wissenschaftlichen Schreibarbeiten</li>
+<li>Übersetzungen oder Überprüfungen von Texten in Deutsch</li>
+<li>Kreative Schreibübung</li>
+<li>Übersetzungen</li>
+<li>Ideensammlung</li>
+<li>Textkorrekturen/-anpassungen</li>
+<li>Perspektivenwechsel</li>
+<li>Szenarien erfinden lassen</li>
+<li>Mails verfassen</li>
+<li>Konzepte überprüfen</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Technologie &amp; Innovation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Diverses</li>
+<li>Zeitersparnis bei Vorbereitungen mithilfe neuer Technologien</li>
+<li>Prüfungen mit KI</li>
+<li>Open Book Prüfungen</li>
+<li>Grenzen der KI ausloten</li>
+<li>Interesse an Entwicklungen der Sprachmodelle</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Freizeit &amp; Lifestyle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Fragen für Freizeitaktivitäten, z.B. bei Regenwetter mit Kleinkindern</li>
+<li>Ideensammlung für Ausflüge in der Freizeit</li>
+<li>Programmplanung der Ferien</li>
+<li>Vorschlag für einen Mailtest</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Feedback &amp; Repräsentation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Rückmeldung an das Institut an der BFH</li>
+</ul>
+</div>
+</div>
+</div>
+<p><img src="../assets/images/topics.png" class="img-fluid" style="width:100.0%"></p>
 </section>
-<section id="embed-miro-board" class="level2">
-<h2 class="anchored" data-anchor-id="embed-miro-board">Embed Miro board</h2>
-<iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVNW_AhHc=/?moveToViewport=-777,-200,3208,2084&amp;embedId=260483093652" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen=""></iframe>
+<section id="fragen" class="level2">
+<h2 class="anchored" data-anchor-id="fragen">Fragen</h2>
+<ol type="1">
+<li><strong>Bildungs-KI:</strong>
+<ul>
+<li>KI in Lehre?</li>
+<li>KI im Schreibdidaktik-Bereich?</li>
+<li>Übungen mit ChatGPT?</li>
+<li>ChatGPT zum Lernen?</li>
+</ul></li>
+<li><strong>Ethik &amp; KI:</strong>
+<ul>
+<li>Ethischer Umgang?</li>
+<li>Datenüberwachung?</li>
+<li>Wahrheitsgehalt von ChatGPT?</li>
+</ul></li>
+<li><strong>KI-Funktionalität:</strong>
+<ul>
+<li>KI-Gefahren?</li>
+<li>Alles von ChatGPT beantwortbar?</li>
+<li>Effektives “prompten”?</li>
+</ul></li>
+<li><strong>KI-Bedienung:</strong>
+<ul>
+<li>KI nutzen?</li>
+<li>Informationen eingeben?</li>
+</ul></li>
+<li><strong>KI-Optimierung:</strong>
+<ul>
+<li>Sinnvolle Nutzung?</li>
+<li>Aufsätze optimieren?</li>
+</ul></li>
+<li><strong>KI-Wahrnehmung:</strong>
+<ul>
+<li>Zögerliche Nutzung?</li>
+</ul></li>
+<li><strong>Zukunft &amp; Sprachmodelle:</strong>
+<ul>
+<li>Prognosen?</li>
+<li>Weiterentwicklung?</li>
+</ul></li>
+<li><strong>Qualitätscheck:</strong>
+<ul>
+<li>KI-Ergebnisse prüfen?</li>
+</ul></li>
+</ol>
 
 
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div id="quarto-reuse" class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{ellis2023,
   author = {Ellis, Andrew},
-  title = {Take-Home Messages},
+  title = {Activity 4: {Discussion}},
   pages = {undefined},
-  date = {2023-10-26},
-  url = {https://virtuelleakademie.github.io/promptly-literate/pages/take-home.html},
+  date = {2023-10-27},
+  url = {https://virtuelleakademie.github.io/promptly-literate/pages/activity-4-discussion.html},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-ellis2023" class="csl-entry quarto-appendix-citeas" role="listitem">
-Ellis, Andrew. 2023. <span>“Take-Home Messages.”</span> October 26,
-2023. <a href="https://virtuelleakademie.github.io/promptly-literate/pages/take-home.html">https://virtuelleakademie.github.io/promptly-literate/pages/take-home.html</a>.
+Ellis, Andrew. 2023. <span>“Activity 4: Discussion.”</span> October 27,
+2023. <a href="https://virtuelleakademie.github.io/promptly-literate/pages/activity-4-discussion.html">https://virtuelleakademie.github.io/promptly-literate/pages/activity-4-discussion.html</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -908,7 +1048,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom","loop":false});</script>
 
 
 

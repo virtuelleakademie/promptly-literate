@@ -1,0 +1,132 @@
+---
+title: "Activity 4: Discussion"
+# description: |
+#   Programming a GPT model
+date: last-modified
+date-format: "DD MMM, YYYY"
+author: 
+  - name: Andrew Ellis
+    url: https://github.com/awellis
+    affiliation: Virtuelle Akademie, Berner Fachhochschule
+    affiliation-url: https://virtuelleakademie.ch
+    orcid: 0000-0002-2788-936X
+license: CC BY
+citation: true
+bibliography: ../bibliography.bib
+format:
+    html:
+        toc: true
+        code-fold: true
+        code-link: true
+jupyter: python3
+execute: 
+  cache: false
+  keep-ipynb: true
+code-annotations: select
+
+---
+
+Gibt es Themen oder Fragen, die an diesem Workshop nicht behandelt wurden, die Sie aber gerne diskutieren würden?
+
+## Themen
+
+:::{.callout-tip collapse="true"}
+## Unterricht & Bildung
+
+- MC Fragen Entwicklung
+- Case Study entwickeln
+- Unterrichtsvorbereitung
+- KI-Management in den Unterricht integrieren
+- Grundlagen kennen lernen
+- Sinnvoller Einsatz für Lehre reflektieren
+- Generieren von MC-Fragen
+- Brainstorming/Ideengenerierung (z.T. mit Studierenden)
+- Akademisches und berufliches Schreiben unterrichten
+- Funktionsweise von KI-Schreibtools
+- Einsatzszenarien für KI-Schreibtools
+- Reflektierter Umgang mit KI-Schreibtools
+- Unterstützung für Schüler*innen mit sprachlichen Schwierigkeiten
+- Verständnis von Schreibtools
+- Sinnvoller Einsatz von Schreibtools durch Studierende und Mitarbeitende
+:::
+
+:::{.callout-tip collapse="true"}
+## Sprache & Schreiben
+
+- Formulierungshilfe bei wissenschaftlichen Schreibarbeiten
+- Übersetzungen oder Überprüfungen von Texten in Deutsch
+- Kreative Schreibübung
+- Übersetzungen
+- Ideensammlung
+- Textkorrekturen/-anpassungen
+- Perspektivenwechsel
+- Szenarien erfinden lassen
+- Mails verfassen
+- Konzepte überprüfen
+:::
+
+:::{.callout-tip collapse="true"}
+## Technologie & Innovation
+
+- Diverses
+- Zeitersparnis bei Vorbereitungen mithilfe neuer Technologien
+- Prüfungen mit KI
+- Open Book Prüfungen
+- Grenzen der KI ausloten
+- Interesse an Entwicklungen der Sprachmodelle
+:::
+
+:::{.callout-tip collapse="true"}
+## Freizeit & Lifestyle
+
+- Fragen für Freizeitaktivitäten, z.B. bei Regenwetter mit Kleinkindern
+- Ideensammlung für Ausflüge in der Freizeit
+- Programmplanung der Ferien
+- Vorschlag für einen Mailtest
+:::
+
+:::{.callout-tip collapse="true"}
+## Feedback & Repräsentation
+
+- Rückmeldung an das Institut an der BFH
+:::
+
+![](../assets/images/topics.png){width=100%}
+
+
+## Fragen
+
+1. **Bildungs-KI:**
+   - KI in Lehre?
+   - KI im Schreibdidaktik-Bereich?
+   - Übungen mit ChatGPT?
+   - ChatGPT zum Lernen?
+
+2. **Ethik & KI:**
+   - Ethischer Umgang?
+   - Datenüberwachung?
+   - Wahrheitsgehalt von ChatGPT?
+
+3. **KI-Funktionalität:**
+   - KI-Gefahren?
+   - Alles von ChatGPT beantwortbar?
+   - Effektives "prompten"?
+  
+4. **KI-Bedienung:**
+   - KI nutzen?
+   - Informationen eingeben?
+
+5. **KI-Optimierung:**
+   - Sinnvolle Nutzung?
+   - Aufsätze optimieren?
+
+6. **KI-Wahrnehmung:**
+   - Zögerliche Nutzung?
+
+7. **Zukunft & Sprachmodelle:**
+   - Prognosen?
+   - Weiterentwicklung?
+
+8. **Qualitätscheck:**
+   - KI-Ergebnisse prüfen?
+

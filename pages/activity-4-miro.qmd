@@ -1,5 +1,5 @@
 ---
-title: "Activity 2: Basic Prompting Techniques"
+title: "Activity 3: Share you prompts"
 description: |
   Programming a GPT model.
 date: last-modified

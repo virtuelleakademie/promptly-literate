@@ -122,7 +122,7 @@ If you want help getting started, you can open this conversation in ChatGPT.
 
 (@) **Reflection**: Did your prompt work? What worked well? What didn't work well? 
 
-(@) **Miro board**: Add your prompt to the [Miro board](https://miro.com/app/board/uXjVNW_AhHc=/?share_link_id=410125738019). You can also open this in [activity 4](activity-4-miro.qmd).
+(@) **Miro board**: Add your prompt to the [Miro board](https://miro.com/app/board/uXjVNW_AhHc=/?share_link_id=410125738019). You can also open this in [activity 3](activity-4-miro.qmd).
 
 
 

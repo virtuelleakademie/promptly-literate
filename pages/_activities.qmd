@@ -163,9 +163,11 @@ Das Ergebnis ist eine nummerierte Liste. Gib zuerst die Liste aus und frag mich 
 
 (@) Prompt creator
 
-Die Idee, eine KI als "Prompt Creator" zu verwenden, geht konzeptuell über alle vorgenannten Empfehlungen hinaus, indem es dem Prozess des Promptings eine weitere Stufe hinzufügt. Bislang sind wir davon ausgegangen, dass Menschen Prompts schreiben, die dann eine Ausgabe durch das KI-System erzeugen. Diese Ausgabe ist direkt – oder nach Anpassungen des Prompts das Ergebnis, mit dem der Mensch weiterarbeitet. Beim Prompt Creator wird das KI-System nicht direkt dazu benutzt, auf einen menschlichen Prompt hin eine verwertbare Ausgabe zu erzeugen. Stattdessen wird die KI angewiesen, einen Prompt für uns zu schreiben, den wir dann wieder in die KI hineinfüttern. Erst dann entsteht der durch Menschen verwertbare Output. Im Kern ist also unser initialer Prompt an die Maschine immer folgende Anweisung: “Liebe KI, bitte schreib mir den besten Prompt zum Thema X, mit dem ich Dich dann wieder füttern kann.” Der Prompt Creator hat zudem den Vorteil, dass der initale Prompt meist kürzer ausfällt und nicht bereits so komplexe Überlegungen erfordert wie etwa der für das Mega-Prompting zu entwickelnde Prompt.
+Die Idee des "Prompt Creator" geht über bisherige Ansätze hinaus. Bisher haben wir Prompts formuliert, zu denen das System eine Antwort generiert. Beim "Prompt Creator" wird das System angewiesen, für uns einen Prompt zu erstellen, die wir dann erneut in das System eingeben. So entsteht der eigentliche, für Menschen nutzbare Output. Grundlegend lautet unsere erste Anweisung an das System: "Bitte erstelle den besten Prompt zum Thema X." Ein Vorteil dieses Ansatzes ist, dass der erste Prompt meistens kürzer und weniger komplex ist.
 
-Um das KI-System als Prompt Creator zu verwenden, kann z.B. die folgende Promptstruktur verwendet werden:
+Hier ist ein Beispiel für einen "Prompt Creator". Mehr Infos dazu gibt es in diesem [YouTube-Video](https://www.youtube.com/watch?v=1Seum8aAyzk).
+
+{{< youtube 1Seum8aAyzk >}}
 
 :::{.callout-tip collapse="true"}
 ## Prompt Creator

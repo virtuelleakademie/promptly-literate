@@ -53,20 +53,20 @@ website:
 
       - text: "💼 Activities"
         menu:
-          - text: "Activities"
-            file: pages/activities.qmd
+          # - text: "Activities"
+          #   file: pages/activities.qmd
           - text: "Optional Activity: Exploring LLMs"
             file: pages/activity-0-explore-llms.qmd
           - text: "Activity 1: Prompting techniques"
             file: pages/activity-1-prompting-techniques.qmd 
           - text: "Activity 2: Prompting for teaching and learning"
             file: pages/activity-2-prompting-learning-teaching.qmd
-          - text: "Activity 3: Reflection"
-            file: pages/activity-3-reflection.qmd
-          - text: "Activity 4: Add your prompt tricks to the Miro board"
+          # - text: "Activity 3: Reflection"
+          #   file: pages/activity-3-reflection.qmd
+          - text: "Activity 3: Add your prompt tricks to the Miro board"
             file: pages/activity-4-miro.qmd
-          - text: "Activity 5: Discuss AI declaration"
-            file: pages/activity-5-discussion-declaration.qmd 
+          - text: "Activity 4: Discussion"
+            file: pages/activity-4-discussion.qmd 
 
       - text: "🎓 Tutorials"
         menu:
