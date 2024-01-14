@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.432">
+  <meta name="generator" content="quarto-1.4.542">
 
   <meta name="author" content="Andrew Ellis">
   <title>LLMs for Teaching and Learning - Fragen und Themen</title>
@@ -414,121 +414,131 @@ Andrew Ellis
 <section id="themen" class="slide level2">
 <h2>Themen</h2>
 <div id="d8ea72f5" class="cell" data-execution_count="1">
-<details>
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb1-4"><a href="#cb1-4"></a></span>
-<span id="cb1-5"><a href="#cb1-5"></a><span class="co"># Create a new graph</span></span>
-<span id="cb1-6"><a href="#cb1-6"></a>G <span class="op">=</span> nx.Graph()</span>
-<span id="cb1-7"><a href="#cb1-7"></a></span>
-<span id="cb1-8"><a href="#cb1-8"></a><span class="co"># Define the categories/nodes</span></span>
-<span id="cb1-9"><a href="#cb1-9"></a>categories <span class="op">=</span> [<span class="st">"Unterricht &amp; Bildung"</span>, <span class="st">"Sprache &amp; Schreiben"</span>, <span class="st">"Technologie &amp; Innovation"</span>, <span class="st">"Freizeit &amp; Lifestyle"</span>, <span class="st">"Feedback &amp; Repräsentation"</span>]</span>
-<span id="cb1-10"><a href="#cb1-10"></a></span>
-<span id="cb1-11"><a href="#cb1-11"></a><span class="co"># Add nodes to the graph</span></span>
-<span id="cb1-12"><a href="#cb1-12"></a>G.add_nodes_from(categories)</span>
-<span id="cb1-13"><a href="#cb1-13"></a></span>
-<span id="cb1-14"><a href="#cb1-14"></a><span class="co"># Define the relationships/edges based on the interpretation</span></span>
-<span id="cb1-15"><a href="#cb1-15"></a>relationships <span class="op">=</span> [</span>
-<span id="cb1-16"><a href="#cb1-16"></a>    (<span class="st">"Unterricht &amp; Bildung"</span>, <span class="st">"Sprache &amp; Schreiben"</span>),</span>
-<span id="cb1-17"><a href="#cb1-17"></a>    (<span class="st">"Unterricht &amp; Bildung"</span>, <span class="st">"Technologie &amp; Innovation"</span>),</span>
-<span id="cb1-18"><a href="#cb1-18"></a>    (<span class="st">"Sprache &amp; Schreiben"</span>, <span class="st">"Technologie &amp; Innovation"</span>),</span>
-<span id="cb1-19"><a href="#cb1-19"></a>    (<span class="st">"Technologie &amp; Innovation"</span>, <span class="st">"Freizeit &amp; Lifestyle"</span>),</span>
-<span id="cb1-20"><a href="#cb1-20"></a>    (<span class="st">"Unterricht &amp; Bildung"</span>, <span class="st">"Feedback &amp; Repräsentation"</span>)</span>
-<span id="cb1-21"><a href="#cb1-21"></a>]</span>
-<span id="cb1-22"><a href="#cb1-22"></a></span>
-<span id="cb1-23"><a href="#cb1-23"></a><span class="co"># Add edges to the graph</span></span>
-<span id="cb1-24"><a href="#cb1-24"></a>G.add_edges_from(relationships)</span>
-<span id="cb1-25"><a href="#cb1-25"></a></span>
-<span id="cb1-26"><a href="#cb1-26"></a><span class="co"># Define the topics under each category</span></span>
-<span id="cb1-27"><a href="#cb1-27"></a>topics <span class="op">=</span> {</span>
-<span id="cb1-28"><a href="#cb1-28"></a>    <span class="st">"Unterricht &amp; Bildung"</span>: [</span>
-<span id="cb1-29"><a href="#cb1-29"></a>        <span class="st">"MC Fragen Entwicklung"</span>, <span class="st">"Case Study entwickeln"</span>, <span class="st">"Unterrichtsvorbereitung"</span>, </span>
-<span id="cb1-30"><a href="#cb1-30"></a>        <span class="st">"KI-Management in den Unterricht integrieren"</span>, <span class="st">"Grundlagen kennen lernen"</span>, </span>
-<span id="cb1-31"><a href="#cb1-31"></a>        <span class="st">"Sinnvoller Einsatz für Lehre reflektieren"</span>, <span class="st">"Generieren von MC-Fragen"</span>, </span>
-<span id="cb1-32"><a href="#cb1-32"></a>        <span class="st">"Brainstorming/Ideengenerierung (z.T. mit Studierenden)"</span>, <span class="st">"Akademisches und berufliches Schreiben unterrichten"</span>, </span>
-<span id="cb1-33"><a href="#cb1-33"></a>        <span class="st">"Funktionsweise von KI-Schreibtools"</span>, <span class="st">"Einsatzszenarien für KI-Schreibtools"</span>, </span>
-<span id="cb1-34"><a href="#cb1-34"></a>        <span class="st">"Reflektierter Umgang mit KI-Schreibtools"</span>, <span class="st">"Unterstützung für Schüler*innen mit sprachlichen Schwierigkeiten"</span>, </span>
-<span id="cb1-35"><a href="#cb1-35"></a>        <span class="st">"Verständnis von Schreibtools"</span>, <span class="st">"Sinnvoller Einsatz von Schreibtools durch Studierende und Mitarbeitende"</span></span>
-<span id="cb1-36"><a href="#cb1-36"></a>    ],</span>
-<span id="cb1-37"><a href="#cb1-37"></a>    <span class="st">"Sprache &amp; Schreiben"</span>: [</span>
-<span id="cb1-38"><a href="#cb1-38"></a>        <span class="st">"Formulierungshilfe bei wissenschaftlichen Schreibarbeiten"</span>, <span class="st">"Übersetzungen oder Überprüfungen von Texten in Deutsch"</span>, </span>
-<span id="cb1-39"><a href="#cb1-39"></a>        <span class="st">"Kreative Schreibübung"</span>, <span class="st">"Übersetzungen"</span>, <span class="st">"Ideensammlung"</span>, </span>
-<span id="cb1-40"><a href="#cb1-40"></a>        <span class="st">"Textkorrekturen/-anpassungen"</span>, <span class="st">"Perspektivenwechsel"</span>, <span class="st">"Szenarien erfinden lassen"</span>, </span>
-<span id="cb1-41"><a href="#cb1-41"></a>        <span class="st">"Mails verfassen"</span>, <span class="st">"Konzepte überprüfen"</span></span>
-<span id="cb1-42"><a href="#cb1-42"></a>    ],</span>
-<span id="cb1-43"><a href="#cb1-43"></a>    <span class="st">"Technologie &amp; Innovation"</span>: [</span>
-<span id="cb1-44"><a href="#cb1-44"></a>        <span class="st">"Diverses"</span>, <span class="st">"Zeitersparnis bei Vorbereitungen mithilfe neuer Technologien"</span>, </span>
-<span id="cb1-45"><a href="#cb1-45"></a>        <span class="st">"Prüfungen mit KI"</span>, <span class="st">"Open Book Prüfungen"</span>, <span class="st">"Grenzen der KI ausloten"</span>, </span>
-<span id="cb1-46"><a href="#cb1-46"></a>        <span class="st">"Interesse an Entwicklungen der Sprachmodelle"</span></span>
-<span id="cb1-47"><a href="#cb1-47"></a>    ],</span>
-<span id="cb1-48"><a href="#cb1-48"></a>    <span class="st">"Freizeit &amp; Lifestyle"</span>: [</span>
-<span id="cb1-49"><a href="#cb1-49"></a>        <span class="st">"Fragen für Freizeitaktivitäten, z.B. bei Regenwetter mit Kleinkindern"</span>, </span>
-<span id="cb1-50"><a href="#cb1-50"></a>        <span class="st">"Ideensammlung für Ausflüge in der Freizeit"</span>, <span class="st">"Programmplanung der Ferien"</span>, <span class="st">"Vorschlag für einen Mailtest"</span></span>
-<span id="cb1-51"><a href="#cb1-51"></a>    ],</span>
-<span id="cb1-52"><a href="#cb1-52"></a>    <span class="st">"Feedback &amp; Repräsentation"</span>: [<span class="st">"Rückmeldung an das Institut an der BFH"</span>]</span>
-<span id="cb1-53"><a href="#cb1-53"></a>}</span>
-<span id="cb1-54"><a href="#cb1-54"></a></span>
-<span id="cb1-55"><a href="#cb1-55"></a><span class="co"># Add topics as nodes to the graph</span></span>
-<span id="cb1-56"><a href="#cb1-56"></a><span class="cf">for</span> category, topic_list <span class="kw">in</span> topics.items():</span>
-<span id="cb1-57"><a href="#cb1-57"></a>    G.add_nodes_from(topic_list)</span>
-<span id="cb1-58"><a href="#cb1-58"></a>    <span class="cf">for</span> topic <span class="kw">in</span> topic_list:</span>
-<span id="cb1-59"><a href="#cb1-59"></a>        G.add_edge(category, topic)</span>
-<span id="cb1-60"><a href="#cb1-60"></a></span>
-<span id="cb1-61"><a href="#cb1-61"></a><span class="co"># Get a color palette with as many colors as there are topics</span></span>
-<span id="cb1-62"><a href="#cb1-62"></a>colors <span class="op">=</span> sns.color_palette(<span class="st">"husl"</span>, <span class="bu">len</span>(topics))</span>
-<span id="cb1-63"><a href="#cb1-63"></a></span>
-<span id="cb1-64"><a href="#cb1-64"></a><span class="co"># Map each category to a color</span></span>
-<span id="cb1-65"><a href="#cb1-65"></a>color_map <span class="op">=</span> {}</span>
-<span id="cb1-66"><a href="#cb1-66"></a><span class="cf">for</span> idx, category <span class="kw">in</span> <span class="bu">enumerate</span>(topics):</span>
-<span id="cb1-67"><a href="#cb1-67"></a>    <span class="cf">for</span> topic <span class="kw">in</span> topics[category]:</span>
-<span id="cb1-68"><a href="#cb1-68"></a>        color_map[topic] <span class="op">=</span> colors[idx]</span>
-<span id="cb1-69"><a href="#cb1-69"></a></span>
-<span id="cb1-70"><a href="#cb1-70"></a><span class="co"># Add colors for the categories themselves</span></span>
-<span id="cb1-71"><a href="#cb1-71"></a>category_colors <span class="op">=</span> [<span class="st">"red"</span>, <span class="st">"green"</span>, <span class="st">"blue"</span>, <span class="st">"purple"</span>, <span class="st">"orange"</span>]</span>
-<span id="cb1-72"><a href="#cb1-72"></a><span class="cf">for</span> idx, category <span class="kw">in</span> <span class="bu">enumerate</span>(categories):</span>
-<span id="cb1-73"><a href="#cb1-73"></a>    color_map[category] <span class="op">=</span> category_colors[idx]</span>
-<span id="cb1-74"><a href="#cb1-74"></a></span>
-<span id="cb1-75"><a href="#cb1-75"></a><span class="co"># Get the colors for each node in the order they are in the graph</span></span>
-<span id="cb1-76"><a href="#cb1-76"></a>node_colors <span class="op">=</span> [color_map[node] <span class="cf">for</span> node <span class="kw">in</span> G.nodes()]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-2"><a></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-3"><a></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-4"><a></a></span>
+<span id="cb1-5"><a></a><span class="co"># Create a new graph</span></span>
+<span id="cb1-6"><a></a>G <span class="op">=</span> nx.Graph()</span>
+<span id="cb1-7"><a></a></span>
+<span id="cb1-8"><a></a><span class="co"># Define the categories/nodes</span></span>
+<span id="cb1-9"><a></a>categories <span class="op">=</span> [<span class="st">"Unterricht &amp; Bildung"</span>, <span class="st">"Sprache &amp; Schreiben"</span>, <span class="st">"Technologie &amp; Innovation"</span>, <span class="st">"Freizeit &amp; Lifestyle"</span>, <span class="st">"Feedback &amp; Repräsentation"</span>]</span>
+<span id="cb1-10"><a></a></span>
+<span id="cb1-11"><a></a><span class="co"># Add nodes to the graph</span></span>
+<span id="cb1-12"><a></a>G.add_nodes_from(categories)</span>
+<span id="cb1-13"><a></a></span>
+<span id="cb1-14"><a></a><span class="co"># Define the relationships/edges based on the interpretation</span></span>
+<span id="cb1-15"><a></a>relationships <span class="op">=</span> [</span>
+<span id="cb1-16"><a></a>    (<span class="st">"Unterricht &amp; Bildung"</span>, <span class="st">"Sprache &amp; Schreiben"</span>),</span>
+<span id="cb1-17"><a></a>    (<span class="st">"Unterricht &amp; Bildung"</span>, <span class="st">"Technologie &amp; Innovation"</span>),</span>
+<span id="cb1-18"><a></a>    (<span class="st">"Sprache &amp; Schreiben"</span>, <span class="st">"Technologie &amp; Innovation"</span>),</span>
+<span id="cb1-19"><a></a>    (<span class="st">"Technologie &amp; Innovation"</span>, <span class="st">"Freizeit &amp; Lifestyle"</span>),</span>
+<span id="cb1-20"><a></a>    (<span class="st">"Unterricht &amp; Bildung"</span>, <span class="st">"Feedback &amp; Repräsentation"</span>)</span>
+<span id="cb1-21"><a></a>]</span>
+<span id="cb1-22"><a></a></span>
+<span id="cb1-23"><a></a><span class="co"># Add edges to the graph</span></span>
+<span id="cb1-24"><a></a>G.add_edges_from(relationships)</span>
+<span id="cb1-25"><a></a></span>
+<span id="cb1-26"><a></a><span class="co"># Define the topics under each category</span></span>
+<span id="cb1-27"><a></a>topics <span class="op">=</span> {</span>
+<span id="cb1-28"><a></a>    <span class="st">"Unterricht &amp; Bildung"</span>: [</span>
+<span id="cb1-29"><a></a>        <span class="st">"MC Fragen Entwicklung"</span>, <span class="st">"Case Study entwickeln"</span>, <span class="st">"Unterrichtsvorbereitung"</span>, </span>
+<span id="cb1-30"><a></a>        <span class="st">"KI-Management in den Unterricht integrieren"</span>, <span class="st">"Grundlagen kennen lernen"</span>, </span>
+<span id="cb1-31"><a></a>        <span class="st">"Sinnvoller Einsatz für Lehre reflektieren"</span>, <span class="st">"Generieren von MC-Fragen"</span>, </span>
+<span id="cb1-32"><a></a>        <span class="st">"Brainstorming/Ideengenerierung (z.T. mit Studierenden)"</span>, <span class="st">"Akademisches und berufliches Schreiben unterrichten"</span>, </span>
+<span id="cb1-33"><a></a>        <span class="st">"Funktionsweise von KI-Schreibtools"</span>, <span class="st">"Einsatzszenarien für KI-Schreibtools"</span>, </span>
+<span id="cb1-34"><a></a>        <span class="st">"Reflektierter Umgang mit KI-Schreibtools"</span>, <span class="st">"Unterstützung für Schüler*innen mit sprachlichen Schwierigkeiten"</span>, </span>
+<span id="cb1-35"><a></a>        <span class="st">"Verständnis von Schreibtools"</span>, <span class="st">"Sinnvoller Einsatz von Schreibtools durch Studierende und Mitarbeitende"</span></span>
+<span id="cb1-36"><a></a>    ],</span>
+<span id="cb1-37"><a></a>    <span class="st">"Sprache &amp; Schreiben"</span>: [</span>
+<span id="cb1-38"><a></a>        <span class="st">"Formulierungshilfe bei wissenschaftlichen Schreibarbeiten"</span>, <span class="st">"Übersetzungen oder Überprüfungen von Texten in Deutsch"</span>, </span>
+<span id="cb1-39"><a></a>        <span class="st">"Kreative Schreibübung"</span>, <span class="st">"Übersetzungen"</span>, <span class="st">"Ideensammlung"</span>, </span>
+<span id="cb1-40"><a></a>        <span class="st">"Textkorrekturen/-anpassungen"</span>, <span class="st">"Perspektivenwechsel"</span>, <span class="st">"Szenarien erfinden lassen"</span>, </span>
+<span id="cb1-41"><a></a>        <span class="st">"Mails verfassen"</span>, <span class="st">"Konzepte überprüfen"</span></span>
+<span id="cb1-42"><a></a>    ],</span>
+<span id="cb1-43"><a></a>    <span class="st">"Technologie &amp; Innovation"</span>: [</span>
+<span id="cb1-44"><a></a>        <span class="st">"Diverses"</span>, <span class="st">"Zeitersparnis bei Vorbereitungen mithilfe neuer Technologien"</span>, </span>
+<span id="cb1-45"><a></a>        <span class="st">"Prüfungen mit KI"</span>, <span class="st">"Open Book Prüfungen"</span>, <span class="st">"Grenzen der KI ausloten"</span>, </span>
+<span id="cb1-46"><a></a>        <span class="st">"Interesse an Entwicklungen der Sprachmodelle"</span></span>
+<span id="cb1-47"><a></a>    ],</span>
+<span id="cb1-48"><a></a>    <span class="st">"Freizeit &amp; Lifestyle"</span>: [</span>
+<span id="cb1-49"><a></a>        <span class="st">"Fragen für Freizeitaktivitäten, z.B. bei Regenwetter mit Kleinkindern"</span>, </span>
+<span id="cb1-50"><a></a>        <span class="st">"Ideensammlung für Ausflüge in der Freizeit"</span>, <span class="st">"Programmplanung der Ferien"</span>, <span class="st">"Vorschlag für einen Mailtest"</span></span>
+<span id="cb1-51"><a></a>    ],</span>
+<span id="cb1-52"><a></a>    <span class="st">"Feedback &amp; Repräsentation"</span>: [<span class="st">"Rückmeldung an das Institut an der BFH"</span>]</span>
+<span id="cb1-53"><a></a>}</span>
+<span id="cb1-54"><a></a></span>
+<span id="cb1-55"><a></a><span class="co"># Add topics as nodes to the graph</span></span>
+<span id="cb1-56"><a></a><span class="cf">for</span> category, topic_list <span class="kw">in</span> topics.items():</span>
+<span id="cb1-57"><a></a>    G.add_nodes_from(topic_list)</span>
+<span id="cb1-58"><a></a>    <span class="cf">for</span> topic <span class="kw">in</span> topic_list:</span>
+<span id="cb1-59"><a></a>        G.add_edge(category, topic)</span>
+<span id="cb1-60"><a></a></span>
+<span id="cb1-61"><a></a><span class="co"># Get a color palette with as many colors as there are topics</span></span>
+<span id="cb1-62"><a></a>colors <span class="op">=</span> sns.color_palette(<span class="st">"husl"</span>, <span class="bu">len</span>(topics))</span>
+<span id="cb1-63"><a></a></span>
+<span id="cb1-64"><a></a><span class="co"># Map each category to a color</span></span>
+<span id="cb1-65"><a></a>color_map <span class="op">=</span> {}</span>
+<span id="cb1-66"><a></a><span class="cf">for</span> idx, category <span class="kw">in</span> <span class="bu">enumerate</span>(topics):</span>
+<span id="cb1-67"><a></a>    <span class="cf">for</span> topic <span class="kw">in</span> topics[category]:</span>
+<span id="cb1-68"><a></a>        color_map[topic] <span class="op">=</span> colors[idx]</span>
+<span id="cb1-69"><a></a></span>
+<span id="cb1-70"><a></a><span class="co"># Add colors for the categories themselves</span></span>
+<span id="cb1-71"><a></a>category_colors <span class="op">=</span> [<span class="st">"red"</span>, <span class="st">"green"</span>, <span class="st">"blue"</span>, <span class="st">"purple"</span>, <span class="st">"orange"</span>]</span>
+<span id="cb1-72"><a></a><span class="cf">for</span> idx, category <span class="kw">in</span> <span class="bu">enumerate</span>(categories):</span>
+<span id="cb1-73"><a></a>    color_map[category] <span class="op">=</span> category_colors[idx]</span>
+<span id="cb1-74"><a></a></span>
+<span id="cb1-75"><a></a><span class="co"># Get the colors for each node in the order they are in the graph</span></span>
+<span id="cb1-76"><a></a>node_colors <span class="op">=</span> [color_map[node] <span class="cf">for</span> node <span class="kw">in</span> G.nodes()]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <div id="93b99e3d" class="cell" data-execution_count="2">
-<details>
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># Plotting the graph with different colors for each topic</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">20</span>, <span class="dv">20</span>)) <span class="co">#figsize=(20, 15)</span></span>
-<span id="cb2-3"><a href="#cb2-3"></a>pos <span class="op">=</span> nx.spring_layout(G, seed<span class="op">=</span><span class="dv">42</span>, k<span class="op">=</span><span class="fl">0.5</span>, iterations<span class="op">=</span><span class="dv">100</span>)</span>
-<span id="cb2-4"><a href="#cb2-4"></a>nx.draw(G, pos, with_labels<span class="op">=</span><span class="va">True</span>, node_size<span class="op">=</span><span class="dv">2000</span>, node_color<span class="op">=</span>node_colors, font_size<span class="op">=</span><span class="dv">12</span>, font_color<span class="op">=</span><span class="st">'black'</span>, width<span class="op">=</span><span class="dv">2</span>, edge_color<span class="op">=</span><span class="st">'gray'</span>, alpha<span class="op">=</span><span class="fl">0.6</span>)</span>
-<span id="cb2-5"><a href="#cb2-5"></a>plt.title(<span class="st">"Beziehungen zwischen den Bereichen und zugehörigen Themen"</span>, fontsize<span class="op">=</span><span class="dv">18</span>)</span>
-<span id="cb2-6"><a href="#cb2-6"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="co"># Plotting the graph with different colors for each topic</span></span>
+<span id="cb2-2"><a></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">20</span>, <span class="dv">20</span>)) <span class="co">#figsize=(20, 15)</span></span>
+<span id="cb2-3"><a></a>pos <span class="op">=</span> nx.spring_layout(G, seed<span class="op">=</span><span class="dv">42</span>, k<span class="op">=</span><span class="fl">0.5</span>, iterations<span class="op">=</span><span class="dv">100</span>)</span>
+<span id="cb2-4"><a></a>nx.draw(G, pos, with_labels<span class="op">=</span><span class="va">True</span>, node_size<span class="op">=</span><span class="dv">2000</span>, node_color<span class="op">=</span>node_colors, font_size<span class="op">=</span><span class="dv">12</span>, font_color<span class="op">=</span><span class="st">'black'</span>, width<span class="op">=</span><span class="dv">2</span>, edge_color<span class="op">=</span><span class="st">'gray'</span>, alpha<span class="op">=</span><span class="fl">0.6</span>)</span>
+<span id="cb2-5"><a></a>plt.title(<span class="st">"Beziehungen zwischen den Bereichen und zugehörigen Themen"</span>, fontsize<span class="op">=</span><span class="dv">18</span>)</span>
+<span id="cb2-6"><a></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
+<div>
+<figure>
 <p><img data-src="questions-topics_files/figure-html/cell-3-output-1.png" width="1939" height="1966"></p>
+</figure>
+</div>
 </div>
 </div>
 <div id="43d1af73" class="cell" data-execution_count="3">
-<details>
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># Adjust the figure size to be wider</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">25</span>, <span class="dv">10</span>))</span>
-<span id="cb3-3"><a href="#cb3-3"></a></span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="co"># Adjust the layout to be more spread out horizontally</span></span>
-<span id="cb3-5"><a href="#cb3-5"></a>pos <span class="op">=</span> nx.spring_layout(G, seed<span class="op">=</span><span class="dv">42</span>, k<span class="op">=</span><span class="fl">0.7</span>, iterations<span class="op">=</span><span class="dv">150</span>, scale<span class="op">=</span><span class="dv">2</span>)</span>
-<span id="cb3-6"><a href="#cb3-6"></a></span>
-<span id="cb3-7"><a href="#cb3-7"></a><span class="co"># Plotting the graph with the adjusted layout</span></span>
-<span id="cb3-8"><a href="#cb3-8"></a>nx.draw(G, pos, with_labels<span class="op">=</span><span class="va">True</span>, node_size<span class="op">=</span><span class="dv">2000</span>, node_color<span class="op">=</span>node_colors, font_size<span class="op">=</span><span class="dv">12</span>, font_color<span class="op">=</span><span class="st">'black'</span>, width<span class="op">=</span><span class="dv">2</span>, edge_color<span class="op">=</span><span class="st">'gray'</span>, alpha<span class="op">=</span><span class="fl">0.6</span>)</span>
-<span id="cb3-9"><a href="#cb3-9"></a>plt.title(<span class="st">"Beziehungen zwischen den Bereichen und zugehörigen Themen"</span>, fontsize<span class="op">=</span><span class="dv">20</span>)</span>
-<span id="cb3-10"><a href="#cb3-10"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold">
+<summary>Show code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a><span class="co"># Adjust the figure size to be wider</span></span>
+<span id="cb3-2"><a></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">25</span>, <span class="dv">10</span>))</span>
+<span id="cb3-3"><a></a></span>
+<span id="cb3-4"><a></a><span class="co"># Adjust the layout to be more spread out horizontally</span></span>
+<span id="cb3-5"><a></a>pos <span class="op">=</span> nx.spring_layout(G, seed<span class="op">=</span><span class="dv">42</span>, k<span class="op">=</span><span class="fl">0.7</span>, iterations<span class="op">=</span><span class="dv">150</span>, scale<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb3-6"><a></a></span>
+<span id="cb3-7"><a></a><span class="co"># Plotting the graph with the adjusted layout</span></span>
+<span id="cb3-8"><a></a>nx.draw(G, pos, with_labels<span class="op">=</span><span class="va">True</span>, node_size<span class="op">=</span><span class="dv">2000</span>, node_color<span class="op">=</span>node_colors, font_size<span class="op">=</span><span class="dv">12</span>, font_color<span class="op">=</span><span class="st">'black'</span>, width<span class="op">=</span><span class="dv">2</span>, edge_color<span class="op">=</span><span class="st">'gray'</span>, alpha<span class="op">=</span><span class="fl">0.6</span>)</span>
+<span id="cb3-9"><a></a>plt.title(<span class="st">"Beziehungen zwischen den Bereichen und zugehörigen Themen"</span>, fontsize<span class="op">=</span><span class="dv">20</span>)</span>
+<span id="cb3-10"><a></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-display">
+<div>
+<figure>
 <p><img data-src="questions-topics_files/figure-html/cell-4-output-1.png" width="2419" height="1008"></p>
+</figure>
+</div>
 </div>
 </div>
 
+<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p><a href="../index.html">back to website ⤴️</a></p>
+</div>
 </div>
 </section>
     </div>
