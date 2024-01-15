@@ -812,27 +812,6 @@
     "text": "Text embeddings are numerical representations of words, sentences or documents. They are used in many NLP tasks, such as sentiment analysis, machine translation, and question answering.\n\nEmbeddings should capture features of words or concepts, and relationships between these.\nA sentence embedding is just like a word embedding, except it associates every sentence with a vector full of numbers, capturing similarities between sentences.\nThe key idea is that words/sentences with similar meanings will have similar vectors. This is useful for many tasks in natural language processing, such as sentiment analysis, machine translation, and question answering.\n\nYou can read more about text embeddings in this 👉 post.\nThe following is an example of sentence embeddings, showing the distance between sentences. The distance is calculated using the dot product (cosine similarity) of the embeddings.\n\n\nCode\nfrom langchain.embeddings.openai import OpenAIEmbeddings\nembedding = OpenAIEmbeddings()\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nfrom pyobsplot import Plot, d3, Math, js\n\n\n\n\nCode\nsentences = [\n    \"Good morning, how are you?\",\n    \"I am doing well, how about you?\",\n    \"Hi, how are you doing today?\",\n    \"Hey, what's up?\",\n    \"I like apples.\",\n    \"One of my daughters doesn't like kiwis.\",\n    \"The other doesn't like bananas.\",\n    \"The earth is the third planet from the sun.\",\n    \"The moon is a natural satellite of the earth.\",\n    \"Jupiter is the fifth planet from the Sun and the largest in the Solar System.\",\n    \"The humpback whale is renowned for its enchanting songs, which are believed to serve various purposes, including communication, mating, and navigation during migration.\",\n    \"Dolphins, highly intelligent marine mammals, communicate with each other using a complex system of clicks, whistles, and body language, enabling them to work together in hunting and navigation.\",\n    \"The honeybee, through its pollination efforts, plays a vital role in agriculture, contributing to the growth of many of the fruits and vegetables humans rely on for sustenance.\",\n    \"The Large Plane Trees, also known as Road Menders at Saint-Rémy, is an oil-on-canvas painting by Vincent van Gogh.\",\n    \"Pablo Picasso's Guernica, an iconic mural-sized oil painting, stands as a poignant representation of the horrors of war.\",\n    \"This powerful artwork was created in response to the bombing of the town of Guernica during the Spanish Civil War.\"\n]\n\n\n\n\nCode\nembeddings = np.array([embedding.embed_query(sentence) for sentence in sentences])\n\ndot_product_matrix = np.dot(embeddings, embeddings.T)\n\ndf = pd.DataFrame(dot_product_matrix, columns=range(1, len(embeddings)+1))\n\ndf['embedding_index'] = range(1, len(embeddings)+1)\n\ndf = df.melt(id_vars=['embedding_index'], var_name='embedding_index_2', value_name='similarity')\n\n\n\n\n\n\n\n\n\n\n\nSentences\n\n\n\n\n1\nGood morning, how are you?\n\n\n2\nI am doing well, how about you?\n\n\n3\nHi, how are you doing today?\n\n\n4\nHey, what's up?\n\n\n5\nI like apples.\n\n\n6\nOne of my daughters doesn't like kiwis.\n\n\n7\nThe other doesn't like bananas.\n\n\n8\nThe earth is the third planet from the sun.\n\n\n9\nThe moon is a natural satellite of the earth.\n\n\n10\nJupiter is the fifth planet from the Sun and the largest in the Solar System.\n\n\n11\nThe humpback whale is renowned for its enchanting songs, which are believed to serve various purposes, including communication, mating, and navigation during migration.\n\n\n12\nDolphins, highly intelligent marine mammals, communicate with each other using a complex system of clicks, whistles, and body language, enabling them to work together in hunting and navigation.\n\n\n13\nThe honeybee, through its pollination efforts, plays a vital role in agriculture, contributing to the growth of many of the fruits and vegetables humans rely on for sustenance.\n\n\n14\nThe Large Plane Trees, also known as Road Menders at Saint-Rémy, is an oil-on-canvas painting by Vincent van Gogh.\n\n\n15\nPablo Picasso's Guernica, an iconic mural-sized oil painting, stands as a poignant representation of the horrors of war.\n\n\n16\nThis powerful artwork was created in response to the bombing of the town of Guernica during the Spanish Civil War.\n\n\n\n\n\n\n\n\n\nCode\nPlot.plot(\n    {\n        \"height\": 640,\n        \"padding\": 0.05,\n        \"grid\": True,\n        \"x\": {\"axis\": \"top\", \"label\": \"Embedding Index\"},\n        \"y\": {\"label\": \"Embedding Index\"},\n        \"color\": {\"type\": \"linear\", \"scheme\": \"PiYG\"},\n        \"marks\": [\n            Plot.cell(\n                df,\n                {\"x\": \"embedding_index\", \"y\": \"embedding_index_2\", \"fill\": \"similarity\", \"tip\": True},\n            ),\n            Plot.text(\n                df,\n                {\n                    \"x\": \"embedding_index\",\n                    \"y\": \"embedding_index_2\",\n                    \"text\": js(\"d =&gt; d.similarity.toFixed(2)\"),\n                    \"title\": \"title\"\n                },\n            ),\n        ],\n    }\n)\n\n\n\n\n\nYou can see that the sentences are grouped together by semantic similarity. For example, the sentences about fruit are grouped together, and the sentences about planets are grouped together, in the sense that they are similar to each other.\nThis is important: embeddings capture the meaning of words and sentences, and are the basis of LLMs’ ability to “understand” language.\nHere is an alternative similarity plot, showing the general topic of each sentence.\n\n\nCode\ntopics = {\"Greeting\": 4, \"Fruit\": 3,\n          \"Planets\": 3, \"Animals\": 3,\n          \"Art\": 3}\ntopics_repeated = [key for key, value in topics.items() for i in range(value)]\n\n\n# Create the similarity matrix\nembeddings = np.array([embedding.embed_query(sentence) for sentence in sentences])\ndot_product_matrix = np.dot(embeddings, embeddings.T)\n\n# Create the heatmap\nfig, ax = plt.subplots()\nim = ax.imshow(dot_product_matrix)\n\n# Set the x and y axis labels\nax.set_xticks(np.arange(len(sentences)))\nax.set_yticks(np.arange(len(sentences)))\nax.set_xticklabels(topics_repeated)\nax.set_yticklabels(topics_repeated)\n\n# Rotate the x axis labels\nplt.setp(ax.get_xticklabels(), rotation=45, ha=\"right\", rotation_mode=\"anchor\")\n\n# Add a colorbar\ncbar = ax.figure.colorbar(im, ax=ax)\n\n# Show the plot\nplt.show()"
   },
   {
-    "objectID": "slides/00-introduction.html#themen",
-    "href": "slides/00-introduction.html#themen",
-    "title": "What is ChatGPT?",
-    "section": "📖 Themen",
-    "text": "📖 Themen\n\n\n\n\n\n\n\nKategorie\nThemen\n\n\n\n\nUnterricht & Bildung\n- MC Fragen Entwicklung- Case Study entwickeln- Unterrichtsvorbereitung- KI-Management in den Unterricht integrieren- Grundlagen kennen lernen- Sinnvoller Einsatz für Lehre reflektieren- Generieren von MC-Fragen- Brainstorming/Ideengenerierung (z.T. mit Studierenden)- Akademisches und berufliches Schreiben unterrichten- Funktionsweise von KI-Schreibtools- Einsatzszenarien für KI-Schreibtools- Reflektierter Umgang mit KI-Schreibtools- Unterstützung für Schüler*innen mit sprachlichen Schwierigkeiten- Verständnis von Schreibtools- Sinnvoller Einsatz von Schreibtools durch Studierende und Mitarbeitende\n\n\nSprache & Schreiben\n- Formulierungshilfe bei wissenschaftlichen Schreibarbeiten- Übersetzungen oder Überprüfungen von Texten in Deutsch- Kreative Schreibübung- Übersetzungen- Ideensammlung- Textkorrekturen/-anpassungen- Perspektivenwechsel- Szenarien erfinden lassen- Mails verfassen- Konzepte überprüfen\n\n\nTechnologie & Innovation\n- Diverses- Zeitersparnis bei Vorbereitungen mithilfe neuer Technologien- Prüfungen mit KI- Open Book Prüfungen- Grenzen der KI ausloten- Interesse an Entwicklungen der Sprachmodelle\n\n\nFreizeit & Lifestyle\n- Fragen für Freizeitaktivitäten, z.B. bei Regenwetter mit Kleinkindern- Ideensammlung für Ausflüge in der Freizeit- Programmplanung der Ferien- Vorschlag für einen Mailtest\n\n\nFeedback & Repräsentation\n- Rückmeldung an das Institut an der BFH"
-  },
-  {
-    "objectID": "slides/00-introduction.html#themen-1",
-    "href": "slides/00-introduction.html#themen-1",
-    "title": "What is ChatGPT?",
-    "section": "📖 Themen",
-    "text": "📖 Themen\n\n\n\n👉 ChatGPT Dialog öffnen"
-  },
-  {
-    "objectID": "slides/00-introduction.html#fragen",
-    "href": "slides/00-introduction.html#fragen",
-    "title": "What is ChatGPT?",
-    "section": "🙋 Fragen",
-    "text": "🙋 Fragen\n\n\n\nBildungs-KI:\n\nKI in Lehre?\nKI im Schreibdidaktik-Bereich?\nÜbungen mit ChatGPT?\nChatGPT zum Lernen?\n\nEthik & KI:\n\nEthischer Umgang?\nDatenüberwachung?\nWahrheitsgehalt von ChatGPT?\n\nKI-Funktionalität:\n\nKI-Gefahren?\nAlles von ChatGPT beantwortbar?\nEffektives “prompten”?\n\n\n\n\nKI-Bedienung:\n\nKI nutzen?\nInformationen eingeben?\n\nKI-Optimierung:\n\nSinnvolle Nutzung?\nAufsätze optimieren?\n\nKI-Wahrnehmung:\n\nZögerliche Nutzung?\n\nZukunft & Sprachmodelle:\n\nPrognosen?\nWeiterentwicklung?\n\nQualitätscheck:\n\nKI-Ergebnisse prüfen?"
-  },
-  {
     "objectID": "slides/00-introduction.html#take-home-messages",
     "href": "slides/00-introduction.html#take-home-messages",
     "title": "What is ChatGPT?",
@@ -875,32 +854,39 @@
     "text": "What is ChatGPT?\n\n\n\n\n\nConsists of a base model and an assistant model.\nBase or foundation model: probabilistic model of how language is generated.\nAssistant: able to create human-like dialogue."
   },
   {
+    "objectID": "slides/00-introduction.html#base-model-text-prediction",
+    "href": "slides/00-introduction.html#base-model-text-prediction",
+    "title": "What is ChatGPT?",
+    "section": "Base model: text prediction",
+    "text": "Base model: text prediction\n\n\n\n\n\n\n\nExtracts knowledge from text: linguistic, factual, commonsense, etc."
+  },
+  {
     "objectID": "slides/00-introduction.html#base-model",
     "href": "slides/00-introduction.html#base-model",
     "title": "What is ChatGPT?",
     "section": "Base model",
-    "text": "Base model\n\n\n\n\n\n\nIs trained to predict text.\n\n\n\n\n: What is the capital of France?\n: What is the capital of Germany? What is the capital of Italy? …\n\n\n\n\nExtracts various types of knowledge from text: linguistic, factual, commonsense, etc.\nDoes not know how to have a conversation."
-  },
-  {
-    "objectID": "slides/00-introduction.html#base-model-1",
-    "href": "slides/00-introduction.html#base-model-1",
-    "title": "What is ChatGPT?",
-    "section": "Base model",
-    "text": "Base model\nProduces text that most likely follows the input (prompt).\n\n\n\n: The first person to walk on the Moon was\n: Neil Armstrong\n\n\n\n\n\n\nDoes an LLM know facts?\n\n\nWhat we are really asking: Given what it learned during training, what words are most likely to follow “The first person to walk on the Moon was”? A good reply to this question is “Neil Armstrong”."
+    "text": "Base model\nProduces text that most likely follows the input (prompt).\n\n\n\n: What is the capital of France?\n: What is the capital of Germany? What is the capital of Italy? …\n\n\n\n\n\n\n: The first person to walk on the Moon was\n: Neil Armstrong\n\n\n\n\n\n\nDoes an LLM know facts?\n\n\nWhat we are really asking: Given what it learned during training, what words are most likely to follow “The first person to walk on the Moon was”? A good reply to this question is “Neil Armstrong”."
   },
   {
     "objectID": "slides/00-introduction.html#base-model-emergent-properties",
     "href": "slides/00-introduction.html#base-model-emergent-properties",
     "title": "What is ChatGPT?",
     "section": "Base model: emergent properties",
-    "text": "Base model: emergent properties\n\nLLMs are thought to show emergent properties - abilities not explicitly programmed into the model, but emerge as a result of text prediction.\n\nperforming arithmetic, answering questions, summarizing text, translating, etc.\nzero-shot learning: LLMs can perform tasks without being trained on them.\nfew-shot learning: LLMs can perform tasks with few examples."
+    "text": "Base model: emergent properties\nLLMs are thought to show emergent properties - abilities not explicitly programmed into the model, but emerge as a result of text prediction.\n\nperforming arithmetic, answering questions, summarizing text, translating, etc.\nzero-shot learning: LLMs can perform tasks without being trained on them.\nfew-shot learning: LLMs can perform tasks with few examples."
   },
   {
-    "objectID": "slides/00-introduction.html#assistant-model",
-    "href": "slides/00-introduction.html#assistant-model",
+    "objectID": "slides/00-introduction.html#assistant-model-alignment",
+    "href": "slides/00-introduction.html#assistant-model-alignment",
     "title": "What is ChatGPT?",
-    "section": "Assistant model",
-    "text": "Assistant model\n\n\n\n\n\n\nIs trained to create human-like dialogue.\n\n\n\n\n: What is the capital of France? : Paris. Is there anything else you would like to know about France?\n\n\n\n\nTrained to have conversations: turn-taking, question answering, not being [rude/sexist/racist], etc."
+    "section": "Assistant model: alignment",
+    "text": "Assistant model: alignment\n\n\n\n\n\n  - Trained to have conversations: turn-taking, question answering, not being [rude/sexist/racist], etc."
+  },
+  {
+    "objectID": "slides/00-introduction.html#chatbot",
+    "href": "slides/00-introduction.html#chatbot",
+    "title": "What is ChatGPT?",
+    "section": "Chatbot",
+    "text": "Chatbot\n\n\n\n\n\n\nPrompt: System message: You are a helpful assistant. User message: Tell me a joke.\n: Why don’t scientists trust atoms? Because they make up everything!\nPrompt: System message: You are a helpful assistant. User message: Tell me a joke. Assistant message: Why don’t scientists trust atoms? Because they make up everything! User message: Tell me another one.\n: Why did the scarecrow win an award? Because he was outstanding in his field! ::: –&gt;"
   },
   {
     "objectID": "slides/00-introduction.html#knowledge-base",
@@ -956,7 +942,7 @@
     "href": "slides/00-introduction.html#what-are-llms-good-at",
     "title": "What is ChatGPT?",
     "section": "What are LLMs good at?",
-    "text": "What are LLMs good at?\n\n\n\nFixing grammar, bad writing, etc.\nRephrasing\nAnalyze texts\nWrite computer code\nAnswer questions about a knowledge base\nTranslate languages\nSimulate characters for games\nCreating structured output"
+    "text": "What are LLMs good at?\n\n\n\nFixing grammar, bad writing, etc.\nRephrasing\nAnalyze texts\nWrite computer code\nAnswer questions about a knowledge base\nTranslate languages\nCreating structured output"
   },
   {
     "objectID": "slides/00-introduction.html#references",
@@ -991,7 +977,7 @@
     "href": "slides/02-prompting-techniques.html#basics-of-prompting-1",
     "title": "Basic Prompting Techniques",
     "section": "Basics of prompting",
-    "text": "Basics of prompting\nOpenAI give a set of strategies for using their models\n\nThese include:\n\nwriting clear instructions\nproviding reference texts\nsplitting tasks into subtasks\ngiving GPT ‘time to think’\nusing external tools\n\n\n👉 Six strategies"
+    "text": "Basics of prompting\nOpenAI give a set of strategies for using their models\n\nThese include:\n\nwriting clear instructions\nproviding reference texts\nsplitting tasks into subtasks\ngiving GPT ‘time to think’\nusing external tools\n\n\n👉 Prompt engineering"
   },
   {
     "objectID": "slides/02-prompting-techniques.html#writing-clear-instructions",
@@ -1012,7 +998,7 @@
     "href": "slides/02-prompting-techniques.html#provide-reference-texts",
     "title": "Basic Prompting Techniques",
     "section": "Provide reference texts",
-    "text": "Provide reference texts\n\nProvide a model with trusted and relevant information.\nThen instruct the model to use the provided information to compose its answer.\n\n\n\nThis leads to an powerful technique, which is known as retrieval-augmented generation. First create a database of documents, then retrieve the most relevant documents, based on a user’s query. These are then included in the prompt to the model. The model is instructed to use the information in the documents to compose its answer."
+    "text": "Provide reference texts\n\nProvide a model with trusted and relevant information.\nThen instruct the model to use the provided information to compose its answer.\n\n\n\nThis leads to retrieval-augmented generation (RAG). First create a database of documents, then retrieve the most relevant documents, based on a user’s query. These are then included in the prompt to the model. The model is instructed to use the information in the documents to compose its answer."
   },
   {
     "objectID": "slides/02-prompting-techniques.html#provide-reference-texts-1",

@@ -43,7 +43,7 @@ format:
 # number-sections: true
 ---
 
-## 📖 Themen {.scrollable}
+<!-- ## 📖 Themen {.scrollable}
 
 | Kategorie | Themen |
 |---|---|
@@ -52,8 +52,8 @@ format:
 | Technologie & Innovation | <small>- Diverses<br>- Zeitersparnis bei Vorbereitungen mithilfe neuer Technologien<br>- Prüfungen mit KI<br>- Open Book Prüfungen<br>- Grenzen der KI ausloten<br>- Interesse an Entwicklungen der Sprachmodelle</small> |
 | Freizeit & Lifestyle | <small>- Fragen für Freizeitaktivitäten, z.B. bei Regenwetter mit Kleinkindern<br>- Ideensammlung für Ausflüge in der Freizeit<br>- Programmplanung der Ferien<br>- Vorschlag für einen Mailtest</small> |
 | Feedback & Repräsentation | <small>- Rückmeldung an das Institut an der BFH</small> |
-
-
+ -->
+<!-- 
 ## 📖 Themen
 ![](../assets/images/topics.png){width=100%}
 
@@ -107,7 +107,7 @@ format:
 
 
 :::
-::::
+:::: -->
 
 
 <!-- 👉 [ChatGPT Dialog öffnen](https://chat.openai.com/share/5babaf97-e64b-4ae2-a233-f028047f66f9) -->
@@ -186,27 +186,24 @@ format:
 :::
 ::::
 
-## Base model
+## Base model: text prediction
 
 :::: {.columns}
 
 ::: {.column width="34%"}
 ![](../assets/images/LLM-Bookshelf.png){width=100%}
 
-![](../assets/images/pretraining.png){width=100%}
 :::
 
 ::: {.column width="66%"}
-- Is trained to predict text. 
+<!-- - Is trained to predict text.  -->
 
-:::{.callout-note}
-{{< fa person >}}: What is the capital of France?
+![](../assets/images/pretraining.png){width=100%}
 
-{{< fa robot >}}: What is the capital of Germany? What is the capital of Italy? ...
-:::
 
-- Extracts various types of knowledge from text: linguistic, factual, commonsense, etc.
-- Does not know how to have a conversation.
+
+- Extracts knowledge from text: linguistic, factual, commonsense, etc.
+<!-- - Does not know how to have a conversation. -->
 
 :::
 ::::
@@ -216,12 +213,18 @@ format:
 Produces text that most likely follows the input (prompt).
 
 :::{.callout-note}
+{{< fa person >}}: What is the capital of France?
+
+{{< fa robot >}}: What is the capital of Germany? What is the capital of Italy? ...
+:::
+
+:::{.callout-note}
 {{< fa person >}}: The first person to walk on the Moon was
 
 {{< fa robot >}}: Neil Armstrong
 :::
 
-:::{.callout-caution collapse="true"}
+:::{.callout-caution collapse=true}
 ## Does an LLM know facts?
 
 What we are really asking: 
@@ -231,34 +234,66 @@ Given what it learned during training, what words are most likely to follow _"Th
 
 ## Base model: emergent properties
 
-- LLMs are thought to show emergent properties - abilities not explicitly programmed into the model, but emerge as a result of text prediction.
-  - performing arithmetic, answering questions, summarizing text, translating, etc.
-  - zero-shot learning: LLMs can perform tasks without being trained on them.
-  - few-shot learning: LLMs can perform tasks with few examples.
+LLMs are thought to show emergent properties - abilities not explicitly programmed into the model, but emerge as a result of text prediction.
+
+- performing arithmetic, answering questions, summarizing text, translating, etc.
+- zero-shot learning: LLMs can perform tasks without being trained on them.
+- few-shot learning: LLMs can perform tasks with few examples.
 
 
 
-## Assistant model
+## Assistant model: alignment
 :::: {.columns}
 
 ::: {.column width="34%"}
 ![](../assets/images/Chat.png){width=100%}
 
-![](../assets/images/RLHF.svg){width=100%}
+
+<!-- ![](../assets/images/RLHF.svg){width=100%} -->
 :::
 
 ::: {.column width="66%"}
-- Is trained to create human-like dialogue. 
-
-:::{.callout-note}
-{{< fa person >}}: What is the capital of France?
-{{< fa robot >}}: Paris. Is there anything else you would like to know about France?
-:::
-
+![](../assets/images/RLHF.svg){width=100%}
+<!-- - Is trained to create human-like dialogue.  -->
 - Trained to have conversations: turn-taking, question answering, not being [rude/sexist/racist], etc.
 
 :::
 ::::
+
+
+## Chatbot
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](../assets/images/chatbot.svg){width=100%}
+:::
+
+::: {.column width="50%"}
+![](../assets/images/chatbot-2.svg){width=100%}
+
+<!-- :::{.callout-caution appearance="simple"}
+<!-- ## How it actually works -->
+
+__Prompt:__
+   System message: You are a helpful assistant.
+   User message: Tell me a joke.
+
+{{< fa robot >}}: Why don't scientists trust atoms? Because they make up everything!
+  
+__Prompt:__
+   System message: You are a helpful assistant.
+   User message: Tell me a joke.
+   Assistant message: Why don't scientists trust atoms? Because they make up everything!
+   User message: Tell me another one.
+
+{{< fa robot >}}: Why did the scarecrow win an award? Because he was outstanding in his field!
+::: -->
+
+
+:::
+::::
+
 
 ## Knowledge base
 
@@ -287,8 +322,7 @@ Given what it learned during training, what words are most likely to follow _"Th
 
 ::: {.column width="50%"}
 
-![Am Strande von Rainer Maria Rilke <br> 👉 [Open in ChatGPT](https://chat.openai.com/share/37698510-9047-4d4f-8a6b-00f054d06457)](../assets/images/Rilke.png){width=75%}
-
+![Am Strande von Rainer Maria Rilke <br> 👉 [Open in ChatGPT](https://chat.openai.com/share/027179f2-a82b-46d7-9cd3-318d55209331)](../assets/images/Rilke.png){width=75%}
 :::
 
 ::: {.column width="50%"}
@@ -371,7 +405,7 @@ We can think of an LLM as a non-deterministic simulator capable of role-playing 
 ::: {.column width="50%"}
 
 ```{=html}
-<iframe width="600" height="600" src="https://chat.openai.com/share/01f39c79-7c23-4a33-8f3e-9d052113cdd5" title="Once upon a time"></iframe>
+<iframe width="600" height="600" src="https://chat.openai.com/share/0e2b648c-a5c5-48ca-b434-e7aefc6dfd6d" title="Once upon a time"></iframe>
 
 ```
 :::
@@ -396,7 +430,6 @@ We can think of an LLM as a non-deterministic simulator capable of role-playing 
 - Write computer code
 - Answer questions about a knowledge base
 - Translate languages
-- Simulate characters for games
 - Creating structured output
 
 :::
