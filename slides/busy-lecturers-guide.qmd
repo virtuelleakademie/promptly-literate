@@ -1,0 +1,447 @@
+---
+title: "What is ChatGPT?"
+author: "Andrew Ellis"
+date: last-modified
+date-format: "DD MMMM, YYYY"
+bibliography: ../bibliography.bib
+nocite: |
+  @shanahanTalkingLargeLanguage2023, @shanahanRolePlayLargeLanguage2023, @weiEmergentAbilitiesLarge2022b
+format: 
+    revealjs:
+        # theme: moon
+        theme: default
+        title-slide-attributes:
+          # data-background-image: ../assets/background-purple.png
+          # data-background-size: contain
+          data-background-opacity: "1"
+        # logo: ../assets/robot.png
+        footer: <a href="../index.html">back to website ⤴️</a>
+        navigation-mode: linear
+        progress: true
+        scrollable: false
+        slide-number: true
+        show-slide-number: all
+        controls-layout: bottom-right
+        controls-tutorial: true
+        preview-links: auto
+        chalkboard: true
+        from: markdown+emoji
+        code-fold: true
+        code-summary: "Show code"
+        code-tools: true
+        menu: 
+          sticky: true
+          keyboard: true
+          autoOpen: true
+          width: normal
+          numbers: true
+          markers: true
+        callout-appearance: simple
+        callout-icon: false
+
+# slide-level: 3
+# number-sections: true
+---
+
+<!-- ## 📖 Themen {.scrollable}
+
+| Kategorie | Themen |
+|---|---|
+| Unterricht & Bildung | <small>- MC Fragen Entwicklung<br>- Case Study entwickeln<br>- Unterrichtsvorbereitung<br>- KI-Management in den Unterricht integrieren<br>- Grundlagen kennen lernen<br>- Sinnvoller Einsatz für Lehre reflektieren<br>- Generieren von MC-Fragen<br>- Brainstorming/Ideengenerierung (z.T. mit Studierenden)<br>- Akademisches und berufliches Schreiben unterrichten<br>- Funktionsweise von KI-Schreibtools<br>- Einsatzszenarien für KI-Schreibtools<br>- Reflektierter Umgang mit KI-Schreibtools<br>- Unterstützung für Schüler*innen mit sprachlichen Schwierigkeiten<br>- Verständnis von Schreibtools<br>- Sinnvoller Einsatz von Schreibtools durch Studierende und Mitarbeitende</small> |
+| Sprache & Schreiben | <small>- Formulierungshilfe bei wissenschaftlichen Schreibarbeiten<br>- Übersetzungen oder Überprüfungen von Texten in Deutsch<br>- Kreative Schreibübung<br>- Übersetzungen<br>- Ideensammlung<br>- Textkorrekturen/-anpassungen<br>- Perspektivenwechsel<br>- Szenarien erfinden lassen<br>- Mails verfassen<br>- Konzepte überprüfen</small> |
+| Technologie & Innovation | <small>- Diverses<br>- Zeitersparnis bei Vorbereitungen mithilfe neuer Technologien<br>- Prüfungen mit KI<br>- Open Book Prüfungen<br>- Grenzen der KI ausloten<br>- Interesse an Entwicklungen der Sprachmodelle</small> |
+| Freizeit & Lifestyle | <small>- Fragen für Freizeitaktivitäten, z.B. bei Regenwetter mit Kleinkindern<br>- Ideensammlung für Ausflüge in der Freizeit<br>- Programmplanung der Ferien<br>- Vorschlag für einen Mailtest</small> |
+| Feedback & Repräsentation | <small>- Rückmeldung an das Institut an der BFH</small> |
+ -->
+<!-- 
+## 📖 Themen
+![](../assets/images/topics.png){width=100%}
+
+
+:::aside
+👉 [ChatGPT Dialog öffnen](https://chat.openai.com/share/5109a0b4-0510-46a9-974d-31954241820b)
+:::
+
+## 🙋 Fragen {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+1. **Bildungs-KI:**
+   - KI in Lehre?
+   - KI im Schreibdidaktik-Bereich?
+   - Übungen mit ChatGPT?
+   - ChatGPT zum Lernen?
+
+2. **Ethik & KI:**
+   - Ethischer Umgang?
+   - Datenüberwachung?
+   - Wahrheitsgehalt von ChatGPT?
+
+3. **KI-Funktionalität:**
+   - KI-Gefahren?
+   - Alles von ChatGPT beantwortbar?
+   - Effektives "prompten"?
+
+:::
+::: {.column width="50%"}
+
+4. **KI-Bedienung:**
+   - KI nutzen?
+   - Informationen eingeben?
+
+5. **KI-Optimierung:**
+   - Sinnvolle Nutzung?
+   - Aufsätze optimieren?
+
+6. **KI-Wahrnehmung:**
+   - Zögerliche Nutzung?
+
+7. **Zukunft & Sprachmodelle:**
+   - Prognosen?
+   - Weiterentwicklung?
+
+8. **Qualitätscheck:**
+   - KI-Ergebnisse prüfen?
+
+
+:::
+:::: -->
+
+
+<!-- 👉 [ChatGPT Dialog öffnen](https://chat.openai.com/share/5babaf97-e64b-4ae2-a233-f028047f66f9) -->
+
+## 🏠 Take-home messages
+- Use LLMs yourself! It’s important to gain an intuition for their capabilities and limitations.
+- Combine domain knowledge of the “thing” you are working on, an understanding of how LLMs work, and an understanding of how to prompt them.
+- Use LLMs with students in a classroom setting. This will help students to develop their own understanding of LLMs and become AI-literate.
+- Always (critically 👩‍🔬) check an LLM’s output. They are language models, not knowledge bases. Keep a human in the loop.
+
+## 🎯 Learning outcomes
+:::{.callout-tip}
+## After this workshop, you will be able to:
+
+1) Explain what large language models and conversational agents, such as ChatGPT, can be used for, and what they shouldn't be used for.
+2) Create effective prompts for LLMs.
+3) Design your own LLM-based educational activities.
+4) Critically evaluate LLM-based educational activities.
+:::
+
+
+## ⏱️ Schedule
+
+![](../assets/schedule.svg){width=100%}
+
+
+## Contents
+
+- Example: 20 questions
+- What is ChatGPT?
+  - Base model
+  - Assistant model
+- What is it not?
+- ChatGPT as a role-play simulator
+
+
+
+
+<!-- ## Key messages
+
+1) 👩‍⚖️ Keep a human in the loop: LLMs should be used to augment human writing, not to replace it.
+
+2) This workshop is mainly about prompting. We can think about prompting as a way of "programming" LLMs, i.e. getting LLMs to do what we want them to do. -->
+
+## 20 questions
+
+:::: {.columns}
+
+::: {.column width="50%"}
+```{=html}
+<iframe width="600" height="600" src="https://chat.openai.com/share/a4daa92d-4631-4d7e-bfe6-ef9b3b5eb0a0" title="Once upon a time"></iframe>
+
+```
+
+:::
+
+::: {.column width="50%"}
+- 🤷‍♂️ What is ChatGPT doing here? 
+- How does this work?
+:::
+
+::::
+
+## What is ChatGPT?
+
+:::: {.columns}
+
+::: {.column width="34%"}
+![](../assets/images/Language%20Model.png){width=100%}
+:::
+
+::: {.column width="66%"}
+- Consists of a **base** model and an **assistant** model.
+- **Base or foundation** model: probabilistic model of how language is generated.
+- **Assistant**: able to create human-like dialogue.
+:::
+::::
+
+## Base model: text prediction
+
+:::: {.columns}
+
+::: {.column width="34%"}
+![](../assets/images/LLM-Bookshelf.png){width=100%}
+
+:::
+
+::: {.column width="66%"}
+<!-- - Is trained to predict text.  -->
+
+![](../assets/images/pretraining.png){width=100%}
+
+
+
+- Extracts knowledge from text: linguistic, factual, commonsense, etc.
+<!-- - Does not know how to have a conversation. -->
+
+:::
+::::
+
+## Base model
+
+Produces text that most likely follows the input (prompt).
+
+:::{.callout-note}
+{{< fa person >}}: What is the capital of France?
+
+{{< fa robot >}}: What is the capital of Germany? What is the capital of Italy? ...
+:::
+
+:::{.callout-note}
+{{< fa person >}}: The first person to walk on the Moon was
+
+{{< fa robot >}}: Neil Armstrong
+:::
+
+:::{.callout-caution collapse=true}
+## Does an LLM know facts?
+
+What we are really asking: 
+Given what it learned during training, what words are most likely to follow _"The first person to walk on the Moon was "_? A good reply to this question is _"Neil Armstrong"_.
+  
+:::
+
+## Base model: emergent properties
+
+LLMs are thought to show emergent properties - abilities not explicitly programmed into the model, but emerge as a result of text prediction.
+
+- performing arithmetic, answering questions, summarizing text, translating, etc.
+- zero-shot learning: LLMs can perform tasks without being trained on them.
+- few-shot learning: LLMs can perform tasks with few examples.
+
+
+
+## Assistant model: alignment
+:::: {.columns}
+
+::: {.column width="34%"}
+![](../assets/images/Chat.png){width=100%}
+
+
+<!-- ![](../assets/images/RLHF.svg){width=100%} -->
+:::
+
+::: {.column width="66%"}
+![](../assets/images/RLHF.svg){width=100%}
+<!-- - Is trained to create human-like dialogue.  -->
+- Trained to have conversations: turn-taking, question answering, not being [rude/sexist/racist], etc.
+
+:::
+::::
+
+
+## Chatbot
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](../assets/images/chatbot.svg){width=100%}
+:::
+
+::: {.column width="50%"}
+![](../assets/images/chatbot-2.svg){width=100%}
+
+<!-- :::{.callout-caution appearance="simple"}
+<!-- ## How it actually works -->
+
+__Prompt:__
+   System message: You are a helpful assistant.
+   User message: Tell me a joke.
+
+{{< fa robot >}}: Why don't scientists trust atoms? Because they make up everything!
+  
+__Prompt:__
+   System message: You are a helpful assistant.
+   User message: Tell me a joke.
+   Assistant message: Why don't scientists trust atoms? Because they make up everything!
+   User message: Tell me another one.
+
+{{< fa robot >}}: Why did the scarecrow win an award? Because he was outstanding in his field!
+::: -->
+
+
+:::
+::::
+
+
+## Knowledge base
+
+:::: {.columns}
+
+::: {.column width="34%"}
+![](../assets/images/KnowledgeBase.png){width=100%}
+
+:::
+
+::: {.column width="66%"}
+- A knowledge base is a collection of facts about the world.
+- `Ask` and `Tell`
+- I can ask but I can't tell.
+- It cannot give me verifiable facts.
+
+
+
+
+:::
+::::
+
+## Knowledge base
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![Am Strande von Rainer Maria Rilke <br> 👉 [Open in ChatGPT](https://chat.openai.com/share/027179f2-a82b-46d7-9cd3-318d55209331)](../assets/images/Rilke.png){width=75%}
+:::
+
+::: {.column width="50%"}
+
+![Kennst du dieses Gedicht? <br> 👉 [Open in ChatGPT](https://chat.openai.com/share/37698510-9047-4d4f-8a6b-00f054d06457)](../assets/images/Hesse.png){width=75%}
+
+
+:::
+::::
+
+. . . 
+
+What can we learn from this?
+
+## Knowledge base
+
+:::: {.columns}
+
+::: {.column width="34%"}
+![](../assets/images/Pothole.png){width=100%}
+
+:::
+
+::: {.column width="64%"}
+
+- Can't tell me where it got its information from.
+- LLMs are models of knowledge bases, but not knowledge bases themselves.
+- Expensive/difficult to update with new knowledge.
+- Produce ethically questionable results.
+
+:::
+::::
+
+
+
+
+
+## An LLM is a role-play simulator
+
+:::: {.columns}
+
+::: {.column width="34%"}
+![](../assets/images/live-action-role-play.png){width=100%}
+
+:::
+
+::: {.column width="64%"}
+
+:::{.callout-note}
+We can think of an LLM as a non-deterministic simulator capable of role-playing an infinity of characters, or, to put it another way, capable of stochastically generating an infinity of simulacra [@shanahanRolePlayLargeLanguage2023]
+:::
+:::
+::::
+
+## An LLM is a role-play simulator
+
+- An assistant is trained to respond to user prompts in a human-like way.
+- A simulator of **possible** human conversation.
+- Has no intentions. It is not an entity with its own goals.
+- Does not have a "personality" or "character" in the traditional sense. It can be thought of as a role-playing simulator.
+- Has no concept of "truth" or "lying". The model is not trying to deceive the user, it is simply trying to respond in a human-like way.
+
+
+## An LLM is a role-play simulator
+
+
+![](../assets/images/simulator.png){width=100%}
+
+:::{.callout-note}
+- The dialogue agent will do its best to role-play a character in a dialogue.
+- At every step, the model is trying to generate text that is most likely to follow the input. 
+- It can take many different paths. Your interaction is just one of those possible paths.
+:::
+
+
+## An LLM is a role-play simulator
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```{=html}
+<iframe width="600" height="600" src="https://chat.openai.com/share/0e2b648c-a5c5-48ca-b434-e7aefc6dfd6d" title="Once upon a time"></iframe>
+
+```
+:::
+
+::: {.column width="34%"}
+- You can open this conversation in ChatGPT.
+- Try re-generating the conversation after the initial prompt.
+:::
+
+::::
+
+
+
+## What are LLMs good at?
+
+::::{.columns}
+::: {.column width="50%"}
+
+- Fixing grammar, bad writing, etc.
+- Rephrasing
+- Analyze texts
+- Write computer code
+- Answer questions about a knowledge base
+- Translate languages
+- Creating structured output
+
+:::
+:::{.column width="50%"}
+```{=html}
+<iframe width="600" height="600" src="https://chat.openai.com/share/49f95bd5-58de-466c-9323-5118fa83685e" title="Email addresses in a comma-separated list"></iframe>
+```
+:::
+::::
+
+
+## References {background-color="#2e3440"}
+
+::: {#refs}
+:::

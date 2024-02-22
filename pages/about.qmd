@@ -1,10 +1,10 @@
 ---
 title: "Virtuelle Akademie"
 about:
-  template: trestles
-  image: ../assets/robot.png
-  image-width: 12em
-  image-shape: rounded
+  template: solana #trestles
+  # image: ../assets/robot.png
+  # image-width: 12em
+  # image-shape: rounded
   links:
     - icon: magic
       text: Virtuelle Akademie

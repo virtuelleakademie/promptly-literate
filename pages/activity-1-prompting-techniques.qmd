@@ -33,7 +33,7 @@ In this activity, you can explore various prompting guides for GPT models. They 
 
 (@) **Explore prompting**. Use both/either ChatGPT and Bing Chat. If you want to look anything up, try these prompting guides:
 
-:::{.callout-tip collapse="true"}
+:::{.callout-tip collapse="false"}
 ## Learn prompting: An comprehensive (and free) guide aimed at non-technical users.
 👉 [Learn prompting](https://learnprompting.org/docs/intro)
 
