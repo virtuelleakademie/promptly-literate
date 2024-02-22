@@ -153,3 +153,5 @@ pages/*_files/
 /.cspell/
 slides/empty.qmd
 docs/slides/empty.html
+
+.vscode/
