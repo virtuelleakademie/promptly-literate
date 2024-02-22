@@ -100,9 +100,9 @@ website:
             file: pages/tools.qmd
 
     tools:
-      - icon: robot
-        text: Assistant
-        file: pages/assistant.qmd
+      # - icon: robot
+      #   text: Assistant
+      #   file: pages/assistant.qmd
       - icon: lightbulb-fill
         text: Knowledge Base
         href: https://virtuelleakademie.ch/knowledge-base/
