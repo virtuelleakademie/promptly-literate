@@ -10,7 +10,7 @@ project:
     - slides/*.qmd
 
 website:
-  title: "LLMs for Teaching and Learning"
+  title: "Promptly Literate //"
   site-url: https://virtuelleakademie.github.io/promptly-literate
   repo-url: https://github.com/virtuelleakademie/promptly-literate
   # repo-actions: [edit, issue]
@@ -27,6 +27,8 @@ website:
   reader-mode: false
   page-navigation: true
   back-to-top-navigation: true
+
+  # Bootstrap icons: https://icons.getbootstrap.com/
   navbar:
     # title: false
     # logo: /assets/robot.png
@@ -34,11 +36,15 @@ website:
     left:
       # - text: "🏠 Home"
       #   file: pages/index.qmd
-      - text: "📚 Agenda" # {{< fa calendar >}}
+      - icon: calendar-event #house-door
+        text: "Agenda" # {{< fa calendar >}}
         file: pages/agenda.qmd
 
-      - text: "📺 Slides" # {{< fa person-chalkboard >}}
+      - icon: file-slides
+        text: "Slides" # {{< fa person-chalkboard >}}
         menu:
+          - text: "The busy lecturer's guide to LLMs"
+            file: slides/busy-lecturers-guide.qmd
           - text: "Part 1: What is ChatGPT?"
             file: slides/00-introduction.qmd
           - text: "Further info: Text representation, training and text generation"
@@ -51,7 +57,8 @@ website:
             file: slides/04-reflection.qmd
 
 
-      - text: "💼 Activities"
+      - icon: brush #pencil-square
+        text: "Activities"
         menu:
           # - text: "Activities"
           #   file: pages/activities.qmd
@@ -68,7 +75,8 @@ website:
           - text: "Activity 4: Discussion"
             file: pages/activity-4-discussion.qmd 
 
-      - text: "🎓 Tutorials"
+      - icon: book
+        text: "Tutorials"
         menu:
           - text: "Text representation: embeddings"
             file: pages/text-representation.qmd
@@ -78,10 +86,13 @@ website:
           #   file: pages/chatgpt-playground.ipynb
           - text: "Using the API: Prompting Programmatically"
             file: pages/prompting.qmd
+          - text: Dashboard
+            file: dashboards/dashboard-demo.qmd
           # - text: "Prompts for teaching and learning"
           #   file: pages/about.qmd
 
-      - text: "🛠️ Resources"
+      - icon: wrench-adjustable #tools
+        text: "Resources"
         menu:
           - text: "Guides"
             file: pages/resources.qmd
@@ -103,7 +114,21 @@ website:
             url:  https://github.com/virtuelleakademie/promptly-literate/
           - text: Report a Bug
             url:  https://github.com/virtuelleakademie/promptly-literate/issues
-
+  # sidebar:
+  #   - title: "Slides 📺"
+  #     style: "docked"
+  #     background: light
+  #     contents:
+  #       - text: "The busy lecturer's guide to LLMs"
+  #         file: slides/busy-lecturers-guide.qmd
+  #       - text: "Part 1: What is ChatGPT?"
+  #         file: slides/00-introduction.qmd
+  #   - title: "🎓 Tutorials"
+  #     style: "docked"
+  #     background: light
+  #     contents:
+  #       - text: "Using the API: Prompting Programmatically"
+  #         file: pages/prompting.qmd
 page-footer:
     right:
     - icon: github
@@ -112,12 +137,18 @@ page-footer:
 format:
   html:
     theme:
-      light: flatly
-      dark: darkly
-    # theme: [lux, styles/promptly.scss, styles/lux-light.scss]
-    # css: styles/promptly.css
+      light: simplex
     toc: true
+    link-external-icon: true
     link-external-newwindow: true
+    anchor-sections: true
+    smooth-scroll: true
+    # linkcolor: rebeccapurple
+comments:
+  hypothesis: 
+    theme: clean
+  # utterances: 
+    # repo: virtuelleakademie/promptly-literate
 
 execute:
   cache: true
