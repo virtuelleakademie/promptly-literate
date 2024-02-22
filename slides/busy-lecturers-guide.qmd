@@ -44,16 +44,23 @@ format:
 ---
 
 # Contents
+:::: {.columns}
+::: {.column width="50%"}
+1. Assistant zoo
+2. Training
+3. Inference (text generation)
+4. Foundation models
+5. Assistant models
+:::
 
-- Training
-- Inference (text generation)
-- Foundation models
-- Assistant models
-- Hallucination
-- But can an LLM think?
-- Prompting
-- Advanced techniques
-- Are LLMs the future of AI?
+::: {.column width="50%"}
+6. Hallucination
+7. But can an LLM think?
+8. Prompting
+9. Advanced techniques
+10. Are LLMs the future of AI?
+:::
+::::
 
 
 # {{< bi house-door >}} Take-home messages
@@ -68,6 +75,14 @@ format:
 {{< bi emoji-sunglasses  size=5em color=#2ecaf9 label="Proud Happy Face" >}}
 
 
+# Assistant zoo {.smaller}
+
+| Assistant                                  | Provider        | Privacy | LLM                                       | Capabilities                              | Price      |
+| ------------------------------------------ | --------------- | ------- | ----------------------------------------- | ----------------------------------------- | ---------- |
+| [ChatGPT](https://chat.openai.com/)                                  | OpenAI          | 👎🏼    | GPT-3.5, GPT-4                            | Web search, DALLE, GPTs, multimodal input | 💶         |
+| [Copilot](https://copilot.microsoft.com/)  | Microsoft       | 👍🏼    | GPT-3.5, GPT-4                            | Web search, DALLE, multimodal input       | 🆓 for BFH |
+| [Gemini](https://gemini.google.com/app)    | Google          | 👎🏼    | Gemini Ultra, Gemini Pro, and Gemini Nano | Web search, multimodal input              | 💶         |
+| [HuggingChat](https://huggingface.co/chat) | 🤗 Hugging Face | 👍🏼    | Various open models, e.g. [CodeLlama](https://about.fb.com/news/2023/08/code-llama-ai-for-coding/), [Llama 2](https://huggingface.co/meta-llama/Llama-2-70b-chat-hf),  [Mistral](https://mistral.ai/news/announcing-mistral-7b/), [Gemma](https://blog.google/technology/developers/gemma-open-models/)                    |                                           | 🆓         |
 
 
 # Training
