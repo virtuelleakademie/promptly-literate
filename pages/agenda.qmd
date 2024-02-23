@@ -44,11 +44,10 @@ lightbox: auto
 
 ## {{< bi people-fill >}} Instructors
 
-- [**Andrew Ellis**](https://www.bfh.ch/en/about-bfh/people/a3xvoqozosua/), [Virtual Academy](https://virtuelleakademie.ch/) at the [Bern University of Applied Sciences](https://www.bfh.ch/):  
-  
-  Andrew is a data scientist at the [Virtual Academy](https://virtuelleakademie.ch/). He is fascinated by the intersection of language, thought, and artificial intelligence. At BFH, he studies and teaches the use of generative AI in education and examines the ways in which humans interact with large language models. He also develops statistical models, which he employs to conduct studies on the impact of AI-based learning tools on learning outcomes. Andrew obtained his PhD in cognitive psychology from the University of Bern, where he investigated how people form mental images and how this is related to perception.
+- [**Andrew Ellis**](https://www.bfh.ch/en/about-bfh/people/a3xvoqozosua/), [Virtual Academy](https://virtuelleakademie.ch/) at the [Bern University of Applied Sciences](https://www.bfh.ch/):
 
+  Andrew, a data scientist at the [Virtual Academy](https://virtuelleakademie.ch/), explores the convergence of language, thought, and AI. He teaches and researches generative AI's role in education at BFH, focusing on human interactions with large language models and the impact of AI learning tools on educational outcomes. Andrew holds a PhD in cognitive psychology from the University of Bern, where he studied mental imagery and perception.
 
 - [**Kaspar Kaufmann**](https://www.bfh.ch/de/ueber-die-bfh/personen/wzzprvvtyrw6/), [Virtual Academy](https://virtuelleakademie.ch/) at the [Bern University of Applied Sciences](https://www.bfh.ch/):
 
-  As a researcher at the Virtual Academy, Kaspar aims to promote digital competencies among teachers and learners at BFH. He is passionate about fostering a community of confident, critical and responsible users of digital technologies for education, work and civic participation.
+  As a researcher at the [Virtual Academy](https://virtuelleakademie.ch/), Kaspar aims to promote digital competencies among teachers and learners at BFH. He is passionate about fostering a community of confident, critical and responsible users of digital technologies for education, work and civic participation.
