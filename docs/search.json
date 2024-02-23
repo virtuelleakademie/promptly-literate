@@ -1229,7 +1229,7 @@
     "href": "slides/busy-lecturers-guide.html#are-llms-knowledge-bases",
     "title": "The busy lecturer’s guide to LLMs",
     "section": "Are LLMs knowledge bases?",
-    "text": "Are LLMs knowledge bases?\n\n\n\n\n\nI can ask but the response is not verifiable.\nI can’t tell, i.e. can’t store new information (expensive/difficult to update with new knowledge).\nLLM can’t tell me where it got its information from.\nLLMs are models of knowledge bases, but not knowledge bases themselves.\nProduce ethically questionable results."
+    "text": "Are LLMs knowledge bases?\n\n\n\n\n\nI can ask but the response is not verifiable.\nI can’t tell, i.e. can’t store new information (expensive/difficult to update with new knowledge).\nLLM can’t tell me where it got its information from.\nLLMs are models of knowledge bases, but not knowledge bases themselves."
   },
   {
     "objectID": "slides/busy-lecturers-guide.html#how-do-humans-think",

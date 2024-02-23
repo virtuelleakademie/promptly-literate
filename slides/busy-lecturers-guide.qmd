@@ -418,8 +418,6 @@ It looks like the LLM knows the capital of Uzbekistan^[What it is actually doing
 - I can't tell, i.e. can't store new information (expensive/difficult to update with new knowledge).
 - LLM can't tell me where it got its information from.
 - LLMs are models of knowledge bases, but not knowledge bases themselves.
-- Produce ethically questionable results.
-
 :::
 ::::
 
@@ -473,9 +471,6 @@ E.g. physical reasoning
 ## Local models
 
 
-# Are LLMs the future of AI?
-
-No.
 
 
 
