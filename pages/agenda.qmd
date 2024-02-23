@@ -16,7 +16,7 @@ lightbox: auto
 
 {{< bi link >}} [The busy lecturer's guide to LLMs](../slides/busy-lecturers-guide.qmd)
 
-## {{< bi code-aquare >}} Activities
+## {{< bi brush >}} Activities
 
 {{< bi link >}} [Confabulations and prompting](../pages/activities-20240223.qmd)
 
