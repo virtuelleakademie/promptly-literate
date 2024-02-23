@@ -28,6 +28,7 @@ about:
 Möchtest du das volle Potential von Sprachmodellen wie ChatGPT ausschöpfen? In diesem Prompt-Labor tauchen wir sowohl in die Grundlagen von Sprachmodellen als auch in Techniken zur Erstellung effektiver Prompts ein.
 
 Inhalt:
+
 - Was sind KI-Sprachmodelle? Wie werden sie trainiert? 
 
 - Wie generieren KI-Sprachmodelle Text? 

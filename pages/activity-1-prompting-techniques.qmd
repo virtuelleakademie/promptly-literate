@@ -33,9 +33,9 @@ In this activity, you can explore various prompting guides for LLMs. They more o
 
 (@) **Explore prompting**. Use both/either ChatGPT and Copilot. If you want to look anything up, try these prompting guides:
 
-:::{.callout-tip collapse="false"}
+:::{.callout-tip collapse="true"}
 ## Learn prompting: An comprehensive (and free) guide aimed at non-technical users.
-👉 [Learn prompting](https://learnprompting.org/docs/intro)
+{{< bi link >}} [Learn prompting](https://learnprompting.org/docs/intro)
 
 ```{=html}
 <iframe src="https://learnprompting.org/docs/intro" width="100%" height="500px"></iframe>
@@ -45,7 +45,7 @@ In this activity, you can explore various prompting guides for LLMs. They more o
 
 :::{.callout-tip collapse="true"}
 ## Prompting guide: A more technical guide to prompting
-👉 [Prompting guide](https://www.promptingguide.ai/): **DAIR.AI** (Democratizing Artificial Intelligence Research, Education, and Technologies). The guide is licensed under an MIT license.
+{{< bi link >}} [Prompting guide](https://www.promptingguide.ai/): **DAIR.AI** (Democratizing Artificial Intelligence Research, Education, and Technologies). The guide is licensed under an MIT license.
 
 ```{=html}
 <iframe src="https://www.promptingguide.ai/" width="100%" height="500px"></iframe>

@@ -45,16 +45,6 @@ website:
         menu:
           - text: "The busy lecturer's guide to LLMs"
             file: slides/busy-lecturers-guide.qmd
-          - text: "Part 1: What is ChatGPT?"
-            file: slides/00-introduction.qmd
-          - text: "Further info: Text representation, training and text generation"
-            file: slides/01-text-representation-generation.qmd
-          - text: "Part 2: Prompting techniques"
-            file: slides/02-prompting-techniques.qmd
-          - text: "Part 3: Prompting for learning and teaching"
-            file: slides/03-prompting-learning-teaching.qmd
-          # - text: "Part 4: Reflection"
-          #   file: slides/04-reflection.qmd
 
 
       - icon: brush #pencil-square
@@ -90,7 +80,18 @@ website:
           #   file: dashboards/dashboard-demo.qmd
           # - text: "Prompts for teaching and learning"
           #   file: pages/about.qmd
-
+      - icon: archive
+        text: "Archive"
+        menu: 
+          - text: "Part 1: What is ChatGPT?"
+            file: slides/00-introduction.qmd
+          - text: "Further info: Text representation, training and text generation"
+            file: slides/01-text-representation-generation.qmd
+          - text: "Part 2: Prompting techniques"
+            file: slides/02-prompting-techniques.qmd
+          - text: "Part 3: Prompting for learning and teaching"
+            file: slides/03-prompting-learning-teaching.qmd
+            
       - icon: wrench-adjustable #tools
         text: "Resources"
         menu:

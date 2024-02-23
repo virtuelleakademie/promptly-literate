@@ -592,7 +592,7 @@
     "href": "pages/activity-1-prompting-techniques.html#tasks",
     "title": "Activity 1: Basic Prompting Techniques",
     "section": "Tasks",
-    "text": "Tasks\n\nExplore prompting. Use both/either ChatGPT and Copilot. If you want to look anything up, try these prompting guides:\n\n\n\n\n\n\n\nLearn prompting: An comprehensive (and free) guide aimed at non-technical users.\n\n\n\n\n\n👉 Learn prompting\n\n\n\n\n\n\n\n\n\n\nPrompting guide: A more technical guide to prompting\n\n\n\n\n\n👉 Prompting guide: DAIR.AI (Democratizing Artificial Intelligence Research, Education, and Technologies). The guide is licensed under an MIT license.\n\n\n\n\n\n\n\n\n\n\nSPARK\n\n\n\n\n\n👉 SPARK: a retrieval-augmented chatbot: Chatbot that uses various prompting guides as its knowledge base.\n\n\n\n\n\nWrite a prompt that will make ChatGPT or Copilot act as an argumentation critic.\n\nYou can use this as your starting point, and then iteratively improve it.\n\n\nYour first step could be to translate this into German: 👉 Open in ChatGPT\n\n\n\n\n\n\nFeedback on a text\n\n\n\n\n\nI want you to act as a critic. Criticize what I give to you and show me where my argumentation is lacking. Start by asking me what text I would like feedback on. Then give me your feedback.\n\n\n\n\nIf you need (badly written) essay, you can use this one:\n\n\n\n\n\n\nBadly written essay\n\n\n\n\n\nSollten Schulnoten abgeschafft werden?\nIn unserer heutigen Bildungswelt gibt es viele verschiedene Methoden, um den Fortschritt und das Wissen eines Schülers zu messen. Eine der gebräuchlichsten Methoden sind Schulnoten. Aber sollten wir wirklich Noten verwenden, um den Wert eines Schülers zu bestimmen? Ich glaube, dass Noten in Schulen abgeschafft werden sollten, und hier sind meine Gründe dafür:\nErstens, Noten sind oft subjektiv. Verschiedene Lehrer haben unterschiedliche Meinungen darüber, was eine “A” -Arbeit im Vergleich zu einer “B” -Arbeit ist. Ein Schüler könnte in einem Fach bei einem Lehrer eine “A” bekommen und bei einem anderen Lehrer eine “B”. Dies zeigt, dass Noten nicht immer ein genaues Bild von dem Wissen eines Schülers geben.\nZweitens, Noten erzeugen unnötigen Druck. Viele Schüler fühlen sich durch die Noten, die sie bekommen, gestresst und überfordert. Dieser Druck kann zu Angstzuständen, Depressionen und anderen gesundheitlichen Problemen führen. Wenn es keine Noten gäbe, könnten sich die Schüler mehr auf das Lernen konzentrieren und weniger darauf, eine bestimmte Note zu bekommen.\nDrittens, durch die Abschaffung von Noten könnten Schüler mehr Freiheit in ihrer Bildung haben. Sie könnten Themen studieren, die sie wirklich interessieren, anstatt sich darauf zu konzentrieren, welche Themen ihnen die besten Noten bringen würden. Dies könnte zu einer besseren und umfassenderen Bildung führen.\nEinige könnten argumentieren, dass Noten notwendig sind, um den Fortschritt eines Schülers zu messen. Aber es gibt viele andere Möglichkeiten, den Fortschritt zu messen, wie zum Beispiel Portfolios, Präsentationen oder Projekte. Diese Methoden könnten ein genaueres Bild von dem Wissen und den Fähigkeiten eines Schülers geben.\nAbschließend glaube ich, dass Schulnoten mehr Schaden als Nutzen bringen. Sie sind oft subjektiv, erzeugen unnötigen Druck und beschränken die Freiheit der Schüler. Es ist an der Zeit, dass wir ein neues System finden, um den Fortschritt und das Wissen unserer Schüler zu messen.\n\n\n\n\nReflection: Did your prompt work? What worked well? What didn’t work well?"
+    "text": "Tasks\n\nExplore prompting. Use both/either ChatGPT and Copilot. If you want to look anything up, try these prompting guides:\n\n\n\n\n\n\n\nLearn prompting: An comprehensive (and free) guide aimed at non-technical users.\n\n\n\n\n\n Learn prompting\n\n\n\n\n\n\n\n\n\n\nPrompting guide: A more technical guide to prompting\n\n\n\n\n\n Prompting guide: DAIR.AI (Democratizing Artificial Intelligence Research, Education, and Technologies). The guide is licensed under an MIT license.\n\n\n\n\n\n\n\n\n\n\nSPARK\n\n\n\n\n\n👉 SPARK: a retrieval-augmented chatbot: Chatbot that uses various prompting guides as its knowledge base.\n\n\n\n\n\nWrite a prompt that will make ChatGPT or Copilot act as an argumentation critic.\n\nYou can use this as your starting point, and then iteratively improve it.\n\n\nYour first step could be to translate this into German: 👉 Open in ChatGPT\n\n\n\n\n\n\nFeedback on a text\n\n\n\n\n\nI want you to act as a critic. Criticize what I give to you and show me where my argumentation is lacking. Start by asking me what text I would like feedback on. Then give me your feedback.\n\n\n\n\nIf you need (badly written) essay, you can use this one:\n\n\n\n\n\n\nBadly written essay\n\n\n\n\n\nSollten Schulnoten abgeschafft werden?\nIn unserer heutigen Bildungswelt gibt es viele verschiedene Methoden, um den Fortschritt und das Wissen eines Schülers zu messen. Eine der gebräuchlichsten Methoden sind Schulnoten. Aber sollten wir wirklich Noten verwenden, um den Wert eines Schülers zu bestimmen? Ich glaube, dass Noten in Schulen abgeschafft werden sollten, und hier sind meine Gründe dafür:\nErstens, Noten sind oft subjektiv. Verschiedene Lehrer haben unterschiedliche Meinungen darüber, was eine “A” -Arbeit im Vergleich zu einer “B” -Arbeit ist. Ein Schüler könnte in einem Fach bei einem Lehrer eine “A” bekommen und bei einem anderen Lehrer eine “B”. Dies zeigt, dass Noten nicht immer ein genaues Bild von dem Wissen eines Schülers geben.\nZweitens, Noten erzeugen unnötigen Druck. Viele Schüler fühlen sich durch die Noten, die sie bekommen, gestresst und überfordert. Dieser Druck kann zu Angstzuständen, Depressionen und anderen gesundheitlichen Problemen führen. Wenn es keine Noten gäbe, könnten sich die Schüler mehr auf das Lernen konzentrieren und weniger darauf, eine bestimmte Note zu bekommen.\nDrittens, durch die Abschaffung von Noten könnten Schüler mehr Freiheit in ihrer Bildung haben. Sie könnten Themen studieren, die sie wirklich interessieren, anstatt sich darauf zu konzentrieren, welche Themen ihnen die besten Noten bringen würden. Dies könnte zu einer besseren und umfassenderen Bildung führen.\nEinige könnten argumentieren, dass Noten notwendig sind, um den Fortschritt eines Schülers zu messen. Aber es gibt viele andere Möglichkeiten, den Fortschritt zu messen, wie zum Beispiel Portfolios, Präsentationen oder Projekte. Diese Methoden könnten ein genaueres Bild von dem Wissen und den Fähigkeiten eines Schülers geben.\nAbschließend glaube ich, dass Schulnoten mehr Schaden als Nutzen bringen. Sie sind oft subjektiv, erzeugen unnötigen Druck und beschränken die Freiheit der Schüler. Es ist an der Zeit, dass wir ein neues System finden, um den Fortschritt und das Wissen unserer Schüler zu messen.\n\n\n\n\nReflection: Did your prompt work? What worked well? What didn’t work well?"
   },
   {
     "objectID": "pages/activity-1-prompting-techniques.html#prompting-guidelines",
@@ -606,14 +606,14 @@
     "href": "pages/about.html",
     "title": "Virtuelle Akademie",
     "section": "",
-    "text": "Prompt-Labor: Basics zu KI-Sprachmodellen\n\n\n\nMöchtest du das volle Potential von Sprachmodellen wie ChatGPT ausschöpfen? In diesem Prompt-Labor tauchen wir sowohl in die Grundlagen von Sprachmodellen als auch in Techniken zur Erstellung effektiver Prompts ein.\nInhalt: - Was sind KI-Sprachmodelle? Wie werden sie trainiert?\n\nWie generieren KI-Sprachmodelle Text?\nWie kommuniziere ich mit KI-Sprachmodellen? Wie schreibe ich gute Prompts?\n\nNächste Termine:\n23.02.2024, 14–16h\n22.04.2024, 10–12h\n www.bfh.ch/de/weiterbildung/kurse/prompt-labor-basics/\n\n\n\n\n\n\n\n\nPrompt-Labor Vertiefung: KI-Sprachmodelle in der Lehre nutzen\n\n\n\nMöchtest du Tools wie ChatGPT oder Chatbots für deinen Unterricht oder deine Weiterbildung nutzen? Das Prompt-Labor bietet Raum zum Experimentieren, Diskutieren und Entwickeln.\nInhalt: - Wie können Sprachmodelle genutzt werden, um Lehr- und Lernstrategien zu implementieren?\nNächste Termine:\n13.03.2024, 10–12h\n01.05.2024, 10–12h\n17.05.2024, 13.30–15.30\n www.bfh.ch/de/weiterbildung/kurse/prompt-labor-vertiefung/"
+    "text": "Prompt-Labor: Basics zu KI-Sprachmodellen\n\n\n\nMöchtest du das volle Potential von Sprachmodellen wie ChatGPT ausschöpfen? In diesem Prompt-Labor tauchen wir sowohl in die Grundlagen von Sprachmodellen als auch in Techniken zur Erstellung effektiver Prompts ein.\nInhalt:\n\nWas sind KI-Sprachmodelle? Wie werden sie trainiert?\nWie generieren KI-Sprachmodelle Text?\nWie kommuniziere ich mit KI-Sprachmodellen? Wie schreibe ich gute Prompts?\n\nNächste Termine:\n23.02.2024, 14–16h\n22.04.2024, 10–12h\n www.bfh.ch/de/weiterbildung/kurse/prompt-labor-basics/\n\n\n\n\n\n\n\n\nPrompt-Labor Vertiefung: KI-Sprachmodelle in der Lehre nutzen\n\n\n\nMöchtest du Tools wie ChatGPT oder Chatbots für deinen Unterricht oder deine Weiterbildung nutzen? Das Prompt-Labor bietet Raum zum Experimentieren, Diskutieren und Entwickeln.\nInhalt: - Wie können Sprachmodelle genutzt werden, um Lehr- und Lernstrategien zu implementieren?\nNächste Termine:\n13.03.2024, 10–12h\n01.05.2024, 10–12h\n17.05.2024, 13.30–15.30\n www.bfh.ch/de/weiterbildung/kurse/prompt-labor-vertiefung/"
   },
   {
     "objectID": "pages/about.html#ki-kurse-der-virtuellen-akademie",
     "href": "pages/about.html#ki-kurse-der-virtuellen-akademie",
     "title": "Virtuelle Akademie",
     "section": "",
-    "text": "Prompt-Labor: Basics zu KI-Sprachmodellen\n\n\n\nMöchtest du das volle Potential von Sprachmodellen wie ChatGPT ausschöpfen? In diesem Prompt-Labor tauchen wir sowohl in die Grundlagen von Sprachmodellen als auch in Techniken zur Erstellung effektiver Prompts ein.\nInhalt: - Was sind KI-Sprachmodelle? Wie werden sie trainiert?\n\nWie generieren KI-Sprachmodelle Text?\nWie kommuniziere ich mit KI-Sprachmodellen? Wie schreibe ich gute Prompts?\n\nNächste Termine:\n23.02.2024, 14–16h\n22.04.2024, 10–12h\n www.bfh.ch/de/weiterbildung/kurse/prompt-labor-basics/\n\n\n\n\n\n\n\n\nPrompt-Labor Vertiefung: KI-Sprachmodelle in der Lehre nutzen\n\n\n\nMöchtest du Tools wie ChatGPT oder Chatbots für deinen Unterricht oder deine Weiterbildung nutzen? Das Prompt-Labor bietet Raum zum Experimentieren, Diskutieren und Entwickeln.\nInhalt: - Wie können Sprachmodelle genutzt werden, um Lehr- und Lernstrategien zu implementieren?\nNächste Termine:\n13.03.2024, 10–12h\n01.05.2024, 10–12h\n17.05.2024, 13.30–15.30\n www.bfh.ch/de/weiterbildung/kurse/prompt-labor-vertiefung/"
+    "text": "Prompt-Labor: Basics zu KI-Sprachmodellen\n\n\n\nMöchtest du das volle Potential von Sprachmodellen wie ChatGPT ausschöpfen? In diesem Prompt-Labor tauchen wir sowohl in die Grundlagen von Sprachmodellen als auch in Techniken zur Erstellung effektiver Prompts ein.\nInhalt:\n\nWas sind KI-Sprachmodelle? Wie werden sie trainiert?\nWie generieren KI-Sprachmodelle Text?\nWie kommuniziere ich mit KI-Sprachmodellen? Wie schreibe ich gute Prompts?\n\nNächste Termine:\n23.02.2024, 14–16h\n22.04.2024, 10–12h\n www.bfh.ch/de/weiterbildung/kurse/prompt-labor-basics/\n\n\n\n\n\n\n\n\nPrompt-Labor Vertiefung: KI-Sprachmodelle in der Lehre nutzen\n\n\n\nMöchtest du Tools wie ChatGPT oder Chatbots für deinen Unterricht oder deine Weiterbildung nutzen? Das Prompt-Labor bietet Raum zum Experimentieren, Diskutieren und Entwickeln.\nInhalt: - Wie können Sprachmodelle genutzt werden, um Lehr- und Lernstrategien zu implementieren?\nNächste Termine:\n13.03.2024, 10–12h\n01.05.2024, 10–12h\n17.05.2024, 13.30–15.30\n www.bfh.ch/de/weiterbildung/kurse/prompt-labor-vertiefung/"
   },
   {
     "objectID": "pages/activity-0-explore-llms.html",
@@ -732,7 +732,7 @@
     "href": "pages/agenda.html#instructors",
     "title": "Agenda",
     "section": " Instructors",
-    "text": "Instructors\n\nAndrew Ellis, Virtual Academy at the Bern University of Applied Sciences:\nAndrew is a data scientist at the Virtual Academy. He is fascinated by the intersection of language, thought, and artificial intelligence. At BFH, he studies and teaches the use of generative AI in education and examines the ways in which humans interact with large language models. He also develops statistical models, which he employs to conduct studies on the impact of AI-based learning tools on learning outcomes. Andrew obtained his PhD in cognitive psychology from the University of Bern, where he investigated how people form mental images and how this is related to perception.\nKaspar Kaufmann, Virtual Academy at the Bern University of Applied Sciences:\nAs a researcher at the Virtual Academy, Kaspar aims to promote digital competencies among teachers and learners at BFH. He is passionate about fostering a community of confident, critical and responsible users of digital technologies for education, work and civic participation."
+    "text": "Instructors\n\nAndrew Ellis, Virtual Academy at the Bern University of Applied Sciences:\nAndrew, a data scientist at the Virtual Academy, explores the convergence of language, thought, and AI. He teaches and researches generative AI’s role in education at BFH, focusing on human interactions with large language models and the impact of AI learning tools on educational outcomes. Andrew holds a PhD in cognitive psychology from the University of Bern, where he studied mental imagery and perception.\nKaspar Kaufmann, Virtual Academy at the Bern University of Applied Sciences:\nAs a researcher at the Virtual Academy, Kaspar aims to promote digital competencies among teachers and learners at BFH. He is passionate about fostering a community of confident, critical and responsible users of digital technologies for education, work and civic participation."
   },
   {
     "objectID": "pages/beispiel-arbeit.html",
@@ -1239,46 +1239,123 @@
     "text": "How do humans think?\nE.g. physical reasoning\n\n\n\n\n\nBattaglia, Hamrick, and Tenenbaum (2013)\n\n\n\n\n\n\nGerstenberg (2022)"
   },
   {
-    "objectID": "slides/busy-lecturers-guide.html#basic",
-    "href": "slides/busy-lecturers-guide.html#basic",
+    "objectID": "slides/busy-lecturers-guide.html#what-is-a-prompt",
+    "href": "slides/busy-lecturers-guide.html#what-is-a-prompt",
     "title": "The busy lecturer’s guide to LLMs",
-    "section": "Basic",
-    "text": "Basic"
+    "section": "What is a prompt?",
+    "text": "What is a prompt?\n\nRemember: the goal of an LLM is complete text.\nA prompt is a piece of text (instruction) that is given to a language model to complete.\n\n\n\n\nPROMPT : Write a haiku about a workshop on large language models.\nASSISTANT : Whispers of circuits,\nKnowledge blooms in bytes and bits,\nModel learns and fits.\n\n\n\n\nThe response is generated as continuation of the prompt.\n\n\nMore technical definition: The output is generated by auto-regressively sampling from the probability distribution over the vocabulary, conditioned on the prompt."
   },
   {
-    "objectID": "slides/busy-lecturers-guide.html#advanced",
-    "href": "slides/busy-lecturers-guide.html#advanced",
+    "objectID": "slides/busy-lecturers-guide.html#unlocking-knowledge",
+    "href": "slides/busy-lecturers-guide.html#unlocking-knowledge",
     "title": "The busy lecturer’s guide to LLMs",
-    "section": "Advanced",
-    "text": "Advanced"
+    "section": "Unlocking knowledge",
+    "text": "Unlocking knowledge\n\n\n\n\n\nLLMs learn to do things they were not explicitly trained to do. \nOften, these capabilities need to be “unlocked” by the right prompt. \n\n\n\nWhat is the right prompt?\nThe answer is very similar to what you would tell a human dialogue partner/assistant.\nYou can increase the probability of getting the desired output by asking good questions or giving enough information."
+  },
+  {
+    "objectID": "slides/busy-lecturers-guide.html#basics-of-prompting",
+    "href": "slides/busy-lecturers-guide.html#basics-of-prompting",
+    "title": "The busy lecturer’s guide to LLMs",
+    "section": "Basics of prompting",
+    "text": "Basics of prompting\nOpenAI give a set of strategies for using their models effectively:\n Prompt engineering\nThese include:\n\nwriting clear instructions\nproviding reference texts\nsplitting tasks into subtasks\ngiving the LLM ‘time to think’\nusing external tools"
+  },
+  {
+    "objectID": "slides/busy-lecturers-guide.html#writing-clear-instructions",
+    "href": "slides/busy-lecturers-guide.html#writing-clear-instructions",
+    "title": "The busy lecturer’s guide to LLMs",
+    "section": "Writing clear instructions",
+    "text": "Writing clear instructions\n\n\n\nThink of an LLM as a role-playing conversation simulator.\nInstructions should be clear and unambiguous.\nIndicate which role the model (persona) should adopt.\n\n\n\n\n\n\nInclude details in your query to get more relevant answers\nAsk the model to adopt a persona\nUse delimiters to clearly indicate distinct parts of the input\nSpecify the steps required to complete a task\nProvide examples\nSpecify the desired length of the output"
+  },
+  {
+    "objectID": "slides/busy-lecturers-guide.html#adopt-a-persona-role",
+    "href": "slides/busy-lecturers-guide.html#adopt-a-persona-role",
+    "title": "The busy lecturer’s guide to LLMs",
+    "section": "Adopt a persona (role)",
+    "text": "Adopt a persona (role)\n\n\n\n: You are an expert on learning techniques. Explain the concept of ‘flipped classroom’ in one paragraph.\n\n\n\n\n\n\n: You are an expert financial derivatives. Explain the concept of ‘flipped classroom’ in one paragraph."
+  },
+  {
+    "objectID": "slides/busy-lecturers-guide.html#provide-reference-texts",
+    "href": "slides/busy-lecturers-guide.html#provide-reference-texts",
+    "title": "The busy lecturer’s guide to LLMs",
+    "section": "Provide reference texts",
+    "text": "Provide reference texts\n\nProvide a model with trusted and relevant information.\nThen instruct the model to use the provided information to compose its answer.\n\n Instruct the model to answer using a reference text\n\n\nThis leads to retrieval-augmented generation (RAG). First create a database of documents, then retrieve the most relevant documents, based on a user’s query. These are then included in the prompt to the model. The model is instructed to use the information in the documents to compose its answer."
+  },
+  {
+    "objectID": "slides/busy-lecturers-guide.html#provide-reference-texts-1",
+    "href": "slides/busy-lecturers-guide.html#provide-reference-texts-1",
+    "title": "The busy lecturer’s guide to LLMs",
+    "section": "Provide reference texts",
+    "text": "Provide reference texts\n\n\n\n: You will be provided with a document delimited by triple quotes and a question. Your task is to provide a simplified answer to the question using only the provided document and to cite the passage(s) of the document used to answer the question. If the document does not contain the information needed to answer this question then simply write: “Insufficient information.” If an answer to the question is provided, it must be annotated with a citation. Use the following format for to cite relevant passages ({“citation”: …}). Cite only the relevant passage(s) of the document, not the entire document.\n““” The flipped classroom intentionally shifts instruction to a learner-centered model, in which students are often initially introduced to new topics outside of school, freeing up classroom time for the exploration of topics in greater depth, creating meaningful learning opportunities. With a flipped classroom, ‘content delivery’ may take a variety of forms, often featuring video lessons prepared by the teacher or third parties, although online collaborative discussions, digital research, and text readings may alternatively be used. The ideal length for a video lesson is widely cited as eight to twelve minutes. ““”\nQuestion: What is flipped classroom?"
+  },
+  {
+    "objectID": "slides/busy-lecturers-guide.html#giving-gpt-time-to-think",
+    "href": "slides/busy-lecturers-guide.html#giving-gpt-time-to-think",
+    "title": "The busy lecturer’s guide to LLMs",
+    "section": "Giving GPT ‘time to think’",
+    "text": "Giving GPT ‘time to think’\n\nLLMs generate text one word at a time–the model spends the same amount of computation on each word.\nGiving the model more context gives it more steps to “think”.\nThis increases the chances that the model will give a good answer.\nThis technique is known as chain-of-thought prompting, and can often be induced by simply instructing the model to think step-by-step or Take a deep breath and work on this problem step-by-step (Yang et al. 2023)."
+  },
+  {
+    "objectID": "slides/busy-lecturers-guide.html#chain-of-thought-prompting",
+    "href": "slides/busy-lecturers-guide.html#chain-of-thought-prompting",
+    "title": "The busy lecturer’s guide to LLMs",
+    "section": "Chain-of-thought prompting",
+    "text": "Chain-of-thought prompting\n\nChain-of-thought prompting encourages the LLM to “explain” its intermediate reasoning steps.\nEnables complex reasoning and problem solving.\n\nInstead of this:\n\n\n\n: The odd numbers in this group add up to an even number: 4, 8, 9, 15, 12, 2, 1. Yes or no?\n\n\n\nDo this:\n\n\n\n: Is this statement correct? The odd numbers in this group add up to an even number: 4, 8, 9, 15, 12, 2, 1.\nReason through the problem step-by-step. Start by identifying the odd numbers. Next, add them up. Finally, determine if the sum is even or odd. Write down your reasoning steps in a numbered list.\n\n\n\n\nWhy does this work?"
+  },
+  {
+    "objectID": "slides/busy-lecturers-guide.html#zero-shot-chain-of-thought-prompting",
+    "href": "slides/busy-lecturers-guide.html#zero-shot-chain-of-thought-prompting",
+    "title": "The busy lecturer’s guide to LLMs",
+    "section": "Zero-shot chain-of-thought prompting",
+    "text": "Zero-shot chain-of-thought prompting\n\n\n\n: The odd numbers in this group add up to an even number: 4, 8, 9, 15, 12, 2, 1. Take a deep breath and think step-by-step.\n\n\n\n\n\nWhen using GPT-4, ChatGPT and Copilot do this automatically."
+  },
+  {
+    "objectID": "slides/busy-lecturers-guide.html#use-markdown-formatting",
+    "href": "slides/busy-lecturers-guide.html#use-markdown-formatting",
+    "title": "The busy lecturer’s guide to LLMs",
+    "section": "Use Markdown formatting",
+    "text": "Use Markdown formatting\n\nUse Markdown to format your prompts.\nInstruct the LLM to format its output using Markdown.\n\n\n\n\n: Improve this haiku:\nWords weave through the air,\nMinds meld with machine’s deep thought,\nKnowledge blooms anew.\nIt is about about a workshop on large language models. I’m not happy with it.\nShow me all the text. Format your edits as **TEXT** and show the deleted text as ~~TEXT~~. Keep you review short (max 100 words).\n\n\n\nTry this example in ChatGPT."
+  },
+  {
+    "objectID": "slides/busy-lecturers-guide.html#advanced-prompting-techniques",
+    "href": "slides/busy-lecturers-guide.html#advanced-prompting-techniques",
+    "title": "The busy lecturer’s guide to LLMs",
+    "section": "Advanced prompting techniques",
+    "text": "Advanced prompting techniques\nFor more advanced prompting techniques, see these websites:\n\n Learn prompting\n Prompting guide\n OpenAI cookbook\n\nand explore this activity."
   },
   {
     "objectID": "slides/busy-lecturers-guide.html#retrieval-augmented-generation-rag",
     "href": "slides/busy-lecturers-guide.html#retrieval-augmented-generation-rag",
     "title": "The busy lecturer’s guide to LLMs",
     "section": "Retrieval-augmented generation (RAG)",
-    "text": "Retrieval-augmented generation (RAG)"
+    "text": "Retrieval-augmented generation (RAG)\n\n\nFigure courtesy of Pinecone"
   },
   {
     "objectID": "slides/busy-lecturers-guide.html#web-search",
     "href": "slides/busy-lecturers-guide.html#web-search",
     "title": "The busy lecturer’s guide to LLMs",
     "section": "Web search",
-    "text": "Web search"
+    "text": "Web search\n\nSimilar to retrieval-augmented generation, but with web search.\nLLMs can be instructed to use web search to find information.\nCopilot does this automatically - ChatGPT (paid version only) can be instructed to do this."
+  },
+  {
+    "objectID": "slides/busy-lecturers-guide.html#external-tools",
+    "href": "slides/busy-lecturers-guide.html#external-tools",
+    "title": "The busy lecturer’s guide to LLMs",
+    "section": "External tools",
+    "text": "External tools\n\nLLMs can be instructed to use external tools to complete tasks.\nFor example, an LLM can be instructed to use a calculator to perform arithmetic.\nOpenAI calls this approach function calling."
   },
   {
     "objectID": "slides/busy-lecturers-guide.html#multi-agent-conversations",
     "href": "slides/busy-lecturers-guide.html#multi-agent-conversations",
     "title": "The busy lecturer’s guide to LLMs",
     "section": "Multi-agent conversations",
-    "text": "Multi-agent conversations"
+    "text": "Multi-agent conversations\n\n\n\n\n DEMO"
   },
   {
     "objectID": "slides/busy-lecturers-guide.html#local-models",
     "href": "slides/busy-lecturers-guide.html#local-models",
     "title": "The busy lecturer’s guide to LLMs",
     "section": "Local models",
-    "text": "Local models"
+    "text": "Local models\n\nDownload and run models, such as e.g. Llama 2 or Code Llama, locally.\nOllama\nLM Studio\n\nHardware requirements:\n\nApple Silicon Mac (M1/M2/M3) / Windows / Linux\n16GB+ of RAM is recommended\nNVIDIA/AMD GPUs supported"
   },
   {
     "objectID": "slides/questions-topics.html#themen",
