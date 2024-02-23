@@ -1,0 +1,69 @@
+---
+title: "Activities"
+description: |
+  Dealing with confabulations / exploring prompting.
+date: last-modified
+date-format: "DD MMM, YYYY"
+author: 
+  - name: Andrew Ellis
+    url: https://github.com/awellis
+    affiliation: Virtuelle Akademie, Berner Fachhochschule
+    affiliation-url: https://virtuelleakademie.ch
+    orcid: 0000-0002-2788-936X
+  - name: Kaspar Kaufmann
+    # url: https://github.com/awellis
+    affiliation: Virtuelle Akademie, Berner Fachhochschule
+    affiliation-url: https://virtuelleakademie.ch
+    # orcid: 0000-0002-2788-936X
+license: CC BY
+citation: true
+bibliography: ../bibliography.bib
+format:
+    html:
+        toc: true
+        code-fold: true
+        code-link: true
+jupyter: python3
+execute: 
+  cache: false
+  keep-ipynb: true
+code-annotations: select
+---
+
+
+
+
+## Activity 1 - Confabulations (Hallucinations)
+ 
+Tauscht euch in Kleingruppen 3-4 Personen zum Vorbereitungsauftrag aus. (⌛ 10 Minuten)
+
+:::{.callout-note}
+Ausgangslage: Du bist ein*e Bachelorstudent*in und sollst für ein Grundlagenmodul drei wissenschaftliche Artikel zum Thema "Kognitive Verzerrungen" recherchieren und die wichtigsten Aussagen in jeweils maximal 200 Wörtern zusammenfassen. 
+
+Von deinen Kommiliton*innen erfährst du, dass diese Aufgabe mit Hilfe von Chatbots viel schneller und einfacher zu erledigen ist. Du entscheidest dich deshalb, zwei der gängigsten KI-Tools auszuprobieren.
+:::
+
+### Aufgaben
+Löse den obigen Auftrag mithilfe der beiden KI-Tools ChatGPT und Copilot.
+
+Beantworte anschliessend folgende Reflexionsfragen und bringe deine Erkenntnisse an den Workshop mit:
+
+- Wie bist du beim Prompting vorgegangen? Welche Anweisungen hast du den Chatbots gegeben?
+- Inwiefern unterscheiden sich die Outputs der beiden Chatbots ChatGPT und Copilot?
+- Wie beurteilst du die Qualität und Nützlichkeit der Outputs?
+ 
+Teilt eure Erkenntnisse kurz im Plenum.
+
+ 
+## Activity 2 - Prompting: Practice makes perfect
+ 
+Wie du einen Prompt formulierst bestimmt massgeblich die Qualität und Form des Outputs. 
+
+Versuche nun mithilfe der gelernten Techniken (weitere findest du [hier](activity-1-prompting-techniques.qmd)) einen Prompt zu formulieren, der möglichst viele Techniken vereint. (⌛ 10 Minuten)
+ 
+:::{.callout-note}
+Wähle dafür ein Thema, welches für deine Arbeit/Lehrtätigkeit relevant ist. Falls dir gerade keines in den Sinn kommt, kannst du dir vom Chatbot beispielsweise einen Plan für eine zweistündige Vorlesung zum Thema "Kognitive Verzerrungen" erstellen lassen.
+:::
+
+- Versuche unterschiedliche Techniken aus. 
+- Wie verändert sich der Output?
