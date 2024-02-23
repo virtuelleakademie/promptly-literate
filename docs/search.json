@@ -602,6 +602,27 @@
     "text": "Prompting Guidelines\nOpenAI give a set of strategies for using their models\n\n\n👉 Six strategies\nThese include:\n\nwriting clear instructions\nproviding reference texts\nsplitting tasks into subtasks\ngiving GPT ‘time to think’\nusing external tools\n\nSome general techniques are:\n\nNumbered Steps: For sequential tasks.\nUse delimiters: To separate info (e.g. \", `,, ', |, #, …).\nFew-shot prompting: Use a few examples for guidance.\nChain-of-thought: Interconnected prompts.\nRole-based: Make the model assume a role (e.g. act like a tutor or advisor).\nIterate and refine prompts. Choose your final prompt and use it in a new chat.\n\nCombining these techniques, a template prompt for an LMM might look like this:\n\n\n\n\n\n\nTemplate\n\n\n\n\nRole: who is being simulated?\nTask: what is to be done?\nSteps: what are the steps to complete the task?\nContext: what is the context of the task?\nGoal: what is the goal of the task?\nFormat: what is the format of the output?"
   },
   {
+    "objectID": "pages/activities-20240223.html",
+    "href": "pages/activities-20240223.html",
+    "title": "Activities",
+    "section": "",
+    "text": "Tauscht euch in Kleingruppen 3-4 Personen zum Vorbereitungsauftrag aus. (⌛ 10 Minuten)\n\n\n\n\n\n\nNote\n\n\n\nAusgangslage: Du bist eine Bachelorstudentin und sollst für ein Grundlagenmodul drei wissenschaftliche Artikel zum Thema “Kognitive Verzerrungen” recherchieren und die wichtigsten Aussagen in jeweils maximal 200 Wörtern zusammenfassen.\nVon deinen Kommiliton*innen erfährst du, dass diese Aufgabe mit Hilfe von Chatbots viel schneller und einfacher zu erledigen ist. Du entscheidest dich deshalb, zwei der gängigsten KI-Tools auszuprobieren.\n\n\n\n\nLöse den obigen Auftrag mithilfe der beiden KI-Tools ChatGPT und Copilot.\nBeantworte anschliessend folgende Reflexionsfragen und bringe deine Erkenntnisse an den Workshop mit:\n\nWie bist du beim Prompting vorgegangen? Welche Anweisungen hast du den Chatbots gegeben?\nInwiefern unterscheiden sich die Outputs der beiden Chatbots ChatGPT und Copilot?\nWie beurteilst du die Qualität und Nützlichkeit der Outputs?\n\nTeilt eure Erkenntnisse kurz im Plenum."
+  },
+  {
+    "objectID": "pages/activities-20240223.html#activity-1---confabulations-hallucinations",
+    "href": "pages/activities-20240223.html#activity-1---confabulations-hallucinations",
+    "title": "Activities",
+    "section": "",
+    "text": "Tauscht euch in Kleingruppen 3-4 Personen zum Vorbereitungsauftrag aus. (⌛ 10 Minuten)\n\n\n\n\n\n\nNote\n\n\n\nAusgangslage: Du bist eine Bachelorstudentin und sollst für ein Grundlagenmodul drei wissenschaftliche Artikel zum Thema “Kognitive Verzerrungen” recherchieren und die wichtigsten Aussagen in jeweils maximal 200 Wörtern zusammenfassen.\nVon deinen Kommiliton*innen erfährst du, dass diese Aufgabe mit Hilfe von Chatbots viel schneller und einfacher zu erledigen ist. Du entscheidest dich deshalb, zwei der gängigsten KI-Tools auszuprobieren.\n\n\n\n\nLöse den obigen Auftrag mithilfe der beiden KI-Tools ChatGPT und Copilot.\nBeantworte anschliessend folgende Reflexionsfragen und bringe deine Erkenntnisse an den Workshop mit:\n\nWie bist du beim Prompting vorgegangen? Welche Anweisungen hast du den Chatbots gegeben?\nInwiefern unterscheiden sich die Outputs der beiden Chatbots ChatGPT und Copilot?\nWie beurteilst du die Qualität und Nützlichkeit der Outputs?\n\nTeilt eure Erkenntnisse kurz im Plenum."
+  },
+  {
+    "objectID": "pages/activities-20240223.html#activity-2---prompting-practice-makes-perfect",
+    "href": "pages/activities-20240223.html#activity-2---prompting-practice-makes-perfect",
+    "title": "Activities",
+    "section": "Activity 2 - Prompting: Practice makes perfect",
+    "text": "Activity 2 - Prompting: Practice makes perfect\nWie du einen Prompt formulierst bestimmt massgeblich die Qualität und Form des Outputs.\nVersuche nun mithilfe der gelernten Techniken (weitere findest du hier) einen Prompt zu formulieren, der möglichst viele Techniken vereint. (⌛ 10 Minuten)\n\n\n\n\n\n\nNote\n\n\n\nWähle dafür ein Thema, welches für deine Arbeit/Lehrtätigkeit relevant ist. Falls dir gerade keines in den Sinn kommt, kannst du dir vom Chatbot beispielsweise einen Plan für eine zweistündige Vorlesung zum Thema “Kognitive Verzerrungen” erstellen lassen.\n\n\n\nVersuche unterschiedliche Techniken aus.\nWie verändert sich der Output?"
+  },
+  {
     "objectID": "pages/about.html",
     "href": "pages/about.html",
     "title": "Virtuelle Akademie",
@@ -712,6 +733,13 @@
     "title": "Agenda",
     "section": " Slides",
     "text": "Slides\n The busy lecturer’s guide to LLMs"
+  },
+  {
+    "objectID": "pages/agenda.html#activities",
+    "href": "pages/agenda.html#activities",
+    "title": "Agenda",
+    "section": " Activities",
+    "text": "Activities\n Confabulations and prompting"
   },
   {
     "objectID": "pages/agenda.html#take-home-messages",
@@ -1363,33 +1391,5 @@
     "title": "Fragen und Themen",
     "section": "Themen",
     "text": "Themen\n\n\nShow code\nimport matplotlib.pyplot as plt\nimport networkx as nx\nimport seaborn as sns\n\n# Create a new graph\nG = nx.Graph()\n\n# Define the categories/nodes\ncategories = [\"Unterricht & Bildung\", \"Sprache & Schreiben\", \"Technologie & Innovation\", \"Freizeit & Lifestyle\", \"Feedback & Repräsentation\"]\n\n# Add nodes to the graph\nG.add_nodes_from(categories)\n\n# Define the relationships/edges based on the interpretation\nrelationships = [\n    (\"Unterricht & Bildung\", \"Sprache & Schreiben\"),\n    (\"Unterricht & Bildung\", \"Technologie & Innovation\"),\n    (\"Sprache & Schreiben\", \"Technologie & Innovation\"),\n    (\"Technologie & Innovation\", \"Freizeit & Lifestyle\"),\n    (\"Unterricht & Bildung\", \"Feedback & Repräsentation\")\n]\n\n# Add edges to the graph\nG.add_edges_from(relationships)\n\n# Define the topics under each category\ntopics = {\n    \"Unterricht & Bildung\": [\n        \"MC Fragen Entwicklung\", \"Case Study entwickeln\", \"Unterrichtsvorbereitung\", \n        \"KI-Management in den Unterricht integrieren\", \"Grundlagen kennen lernen\", \n        \"Sinnvoller Einsatz für Lehre reflektieren\", \"Generieren von MC-Fragen\", \n        \"Brainstorming/Ideengenerierung (z.T. mit Studierenden)\", \"Akademisches und berufliches Schreiben unterrichten\", \n        \"Funktionsweise von KI-Schreibtools\", \"Einsatzszenarien für KI-Schreibtools\", \n        \"Reflektierter Umgang mit KI-Schreibtools\", \"Unterstützung für Schüler*innen mit sprachlichen Schwierigkeiten\", \n        \"Verständnis von Schreibtools\", \"Sinnvoller Einsatz von Schreibtools durch Studierende und Mitarbeitende\"\n    ],\n    \"Sprache & Schreiben\": [\n        \"Formulierungshilfe bei wissenschaftlichen Schreibarbeiten\", \"Übersetzungen oder Überprüfungen von Texten in Deutsch\", \n        \"Kreative Schreibübung\", \"Übersetzungen\", \"Ideensammlung\", \n        \"Textkorrekturen/-anpassungen\", \"Perspektivenwechsel\", \"Szenarien erfinden lassen\", \n        \"Mails verfassen\", \"Konzepte überprüfen\"\n    ],\n    \"Technologie & Innovation\": [\n        \"Diverses\", \"Zeitersparnis bei Vorbereitungen mithilfe neuer Technologien\", \n        \"Prüfungen mit KI\", \"Open Book Prüfungen\", \"Grenzen der KI ausloten\", \n        \"Interesse an Entwicklungen der Sprachmodelle\"\n    ],\n    \"Freizeit & Lifestyle\": [\n        \"Fragen für Freizeitaktivitäten, z.B. bei Regenwetter mit Kleinkindern\", \n        \"Ideensammlung für Ausflüge in der Freizeit\", \"Programmplanung der Ferien\", \"Vorschlag für einen Mailtest\"\n    ],\n    \"Feedback & Repräsentation\": [\"Rückmeldung an das Institut an der BFH\"]\n}\n\n# Add topics as nodes to the graph\nfor category, topic_list in topics.items():\n    G.add_nodes_from(topic_list)\n    for topic in topic_list:\n        G.add_edge(category, topic)\n\n# Get a color palette with as many colors as there are topics\ncolors = sns.color_palette(\"husl\", len(topics))\n\n# Map each category to a color\ncolor_map = {}\nfor idx, category in enumerate(topics):\n    for topic in topics[category]:\n        color_map[topic] = colors[idx]\n\n# Add colors for the categories themselves\ncategory_colors = [\"red\", \"green\", \"blue\", \"purple\", \"orange\"]\nfor idx, category in enumerate(categories):\n    color_map[category] = category_colors[idx]\n\n# Get the colors for each node in the order they are in the graph\nnode_colors = [color_map[node] for node in G.nodes()]\n\n\n\n\nShow code\n# Plotting the graph with different colors for each topic\nplt.figure(figsize=(20, 20)) #figsize=(20, 15)\npos = nx.spring_layout(G, seed=42, k=0.5, iterations=100)\nnx.draw(G, pos, with_labels=True, node_size=2000, node_color=node_colors, font_size=12, font_color='black', width=2, edge_color='gray', alpha=0.6)\nplt.title(\"Beziehungen zwischen den Bereichen und zugehörigen Themen\", fontsize=18)\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nShow code\n# Adjust the figure size to be wider\nplt.figure(figsize=(25, 10))\n\n# Adjust the layout to be more spread out horizontally\npos = nx.spring_layout(G, seed=42, k=0.7, iterations=150, scale=2)\n\n# Plotting the graph with the adjusted layout\nnx.draw(G, pos, with_labels=True, node_size=2000, node_color=node_colors, font_size=12, font_color='black', width=2, edge_color='gray', alpha=0.6)\nplt.title(\"Beziehungen zwischen den Bereichen und zugehörigen Themen\", fontsize=20)\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\nback to website ⤴️"
-  },
-  {
-    "objectID": "pages/activities-20240223.html",
-    "href": "pages/activities-20240223.html",
-    "title": "Activities",
-    "section": "",
-    "text": "Tauscht euch in Kleingruppen 3-4 Personen zum Vorbereitungsauftrag aus. (⌛ 10 Minuten)\n\n\n\n\n\n\nNote\n\n\n\nAusgangslage: Du bist eine Bachelorstudentin und sollst für ein Grundlagenmodul drei wissenschaftliche Artikel zum Thema “Kognitive Verzerrungen” recherchieren und die wichtigsten Aussagen in jeweils maximal 200 Wörtern zusammenfassen.\nVon deinen Kommiliton*innen erfährst du, dass diese Aufgabe mit Hilfe von Chatbots viel schneller und einfacher zu erledigen ist. Du entscheidest dich deshalb, zwei der gängigsten KI-Tools auszuprobieren.\n\n\n\n\nLöse den obigen Auftrag mithilfe der beiden KI-Tools ChatGPT und Copilot.\nBeantworte anschliessend folgende Reflexionsfragen und bringe deine Erkenntnisse an den Workshop mit:\n\nWie bist du beim Prompting vorgegangen? Welche Anweisungen hast du den Chatbots gegeben?\nInwiefern unterscheiden sich die Outputs der beiden Chatbots ChatGPT und Copilot?\nWie beurteilst du die Qualität und Nützlichkeit der Outputs?\n\nTeilt eure Erkenntnisse kurz im Plenum."
-  },
-  {
-    "objectID": "pages/activities-20240223.html#activity-1---confabulations-hallucinations",
-    "href": "pages/activities-20240223.html#activity-1---confabulations-hallucinations",
-    "title": "Activities",
-    "section": "",
-    "text": "Tauscht euch in Kleingruppen 3-4 Personen zum Vorbereitungsauftrag aus. (⌛ 10 Minuten)\n\n\n\n\n\n\nNote\n\n\n\nAusgangslage: Du bist eine Bachelorstudentin und sollst für ein Grundlagenmodul drei wissenschaftliche Artikel zum Thema “Kognitive Verzerrungen” recherchieren und die wichtigsten Aussagen in jeweils maximal 200 Wörtern zusammenfassen.\nVon deinen Kommiliton*innen erfährst du, dass diese Aufgabe mit Hilfe von Chatbots viel schneller und einfacher zu erledigen ist. Du entscheidest dich deshalb, zwei der gängigsten KI-Tools auszuprobieren.\n\n\n\n\nLöse den obigen Auftrag mithilfe der beiden KI-Tools ChatGPT und Copilot.\nBeantworte anschliessend folgende Reflexionsfragen und bringe deine Erkenntnisse an den Workshop mit:\n\nWie bist du beim Prompting vorgegangen? Welche Anweisungen hast du den Chatbots gegeben?\nInwiefern unterscheiden sich die Outputs der beiden Chatbots ChatGPT und Copilot?\nWie beurteilst du die Qualität und Nützlichkeit der Outputs?\n\nTeilt eure Erkenntnisse kurz im Plenum."
-  },
-  {
-    "objectID": "pages/activities-20240223.html#activity-2---prompting-practice-makes-perfect",
-    "href": "pages/activities-20240223.html#activity-2---prompting-practice-makes-perfect",
-    "title": "Activities",
-    "section": "Activity 2 - Prompting: Practice makes perfect",
-    "text": "Activity 2 - Prompting: Practice makes perfect\nWie du einen Prompt formulierst bestimmt massgeblich die Qualität und Form des Outputs.\nVersuche nun mithilfe der gelernten Techniken (weitere findest du hier) einen Prompt zu formulieren, der möglichst viele Techniken vereint. (⌛ 10 Minuten)\n\n\n\n\n\n\nNote\n\n\n\nWähle dafür ein Thema, welches für deine Arbeit/Lehrtätigkeit relevant ist. Falls dir gerade keines in den Sinn kommt, kannst du dir vom Chatbot beispielsweise einen Plan für eine zweistündige Vorlesung zum Thema “Kognitive Verzerrungen” erstellen lassen.\n\n\n\nVersuche unterschiedliche Techniken aus.\nWie verändert sich der Output?"
-  },
-  {
-    "objectID": "pages/agenda.html#activities",
-    "href": "pages/agenda.html#activities",
-    "title": "Agenda",
-    "section": " Activities",
-    "text": "Activities\n Confabulations and prompting"
   }
 ]
