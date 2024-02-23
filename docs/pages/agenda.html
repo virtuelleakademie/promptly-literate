@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.542">
+<meta name="generator" content="quarto-1.4.550">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>LLMs for Teaching and Learning - Agenda</title>
+<title>Promptly Literate // - Agenda</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -36,15 +36,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/bootstrap-icons-1.11.1/all.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,11 +67,25 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "theme": "clean"
+}
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
 
 
-<meta property="og:title" content="LLMs for Teaching and Learning - Agenda">
-<meta property="og:site_name" content="LLMs for Teaching and Learning">
-<meta name="twitter:title" content="LLMs for Teaching and Learning - Agenda">
+<meta property="og:title" content="Promptly Literate // - Agenda">
+<meta property="og:description" content="">
+<meta property="og:site_name" content="Promptly Literate //">
+<meta name="twitter:title" content="Promptly Literate // - Agenda">
+<meta name="twitter:description" content="">
 <meta name="twitter:creator" content="@awellis">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -88,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">LLMs for Teaching and Learning</span>
+    <span class="navbar-title">Promptly Literate //</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -98,14 +108,21 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../pages/agenda.html" aria-current="page"> 
-<span class="menu-text">📚 Agenda</span></a>
+    <a class="nav-link active" href="../pages/agenda.html" aria-current="page"> <i class="bi bi-calendar-event" role="img">
+</i> 
+<span class="menu-text">Agenda</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-slides" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">📺 Slides</span>
+      <i class="bi bi-file-slides" role="img">
+</i> 
+ <span class="menu-text">Slides</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-slides">    
+        <li>
+    <a class="dropdown-item" href="../slides/busy-lecturers-guide.html">
+ <span class="dropdown-text">The busy lecturer’s guide to LLMs</span></a>
+  </li>  
         <li>
     <a class="dropdown-item" href="../slides/00-introduction.html">
  <span class="dropdown-text">Part 1: What is ChatGPT?</span></a>
@@ -122,15 +139,13 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../slides/03-prompting-learning-teaching.html">
  <span class="dropdown-text">Part 3: Prompting for learning and teaching</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../slides/04-reflection.html">
- <span class="dropdown-text">Part 4: Reflection</span></a>
-  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-activities" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">💼 Activities</span>
+      <i class="bi bi-brush" role="img">
+</i> 
+ <span class="menu-text">Activities</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-activities">    
         <li>
@@ -145,19 +160,13 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../pages/activity-2-prompting-learning-teaching.html">
  <span class="dropdown-text">Activity 2: Prompting for teaching and learning</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../pages/activity-4-miro.html">
- <span class="dropdown-text">Activity 3: Add your prompt tricks to the Miro board</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../pages/activity-4-discussion.html">
- <span class="dropdown-text">Activity 4: Discussion</span></a>
-  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tutorials" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">🎓 Tutorials</span>
+      <i class="bi bi-book" role="img">
+</i> 
+ <span class="menu-text">Tutorials</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-tutorials">    
         <li>
@@ -172,7 +181,9 @@ ul.task-list li input[type="checkbox"] {
   </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">🛠️ Resources</span>
+      <i class="bi bi-wrench-adjustable" role="img">
+</i> 
+ <span class="menu-text">Resources</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
         <li>
@@ -187,8 +198,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools tools-wide">
-    <a href="../pages/assistant.html" title="Assistant" class="quarto-navigation-tool px-1" aria-label="Assistant"><i class="bi bi-robot"></i></a>
+          <div class="quarto-navbar-tools">
     <a href="https://virtuelleakademie.ch/knowledge-base/" title="Knowledge Base" class="quarto-navigation-tool px-1" aria-label="Knowledge Base"><i class="bi bi-lightbulb-fill"></i></a>
     <div class="dropdown">
       <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label=""><i class="bi bi-github"></i></a>
@@ -205,7 +215,6 @@ ul.task-list li input[type="checkbox"] {
           </li>
       </ul>
     </div>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -219,11 +228,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#contents" id="toc-contents" class="nav-link active" data-scroll-target="#contents">📖 Contents</a></li>
-  <li><a href="#take-home-messages" id="toc-take-home-messages" class="nav-link" data-scroll-target="#take-home-messages">🏠 Take-home messages</a></li>
-  <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link" data-scroll-target="#learning-outcomes">🎯 Learning outcomes</a></li>
-  <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule">⏱️ Schedule</a></li>
-  <li><a href="#instructor" id="toc-instructor" class="nav-link" data-scroll-target="#instructor">🙋 Instructor</a></li>
+  <li><a href="#contents" id="toc-contents" class="nav-link active" data-scroll-target="#contents"><i class="bi-book " style="" role="img" aria-hidden="true"></i> Contents</a></li>
+  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides"><i class="bi-file-slides " style="" role="img" aria-hidden="true"></i> Slides</a></li>
+  <li><a href="#take-home-messages" id="toc-take-home-messages" class="nav-link" data-scroll-target="#take-home-messages"><i class="bi-house-door " style="" role="img" aria-hidden="true"></i> Take-home messages</a></li>
+  <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link" data-scroll-target="#learning-outcomes"><i class="bi-bullseye " style="" role="img" aria-hidden="true"></i> Learning outcomes</a></li>
+  <li><a href="#instructors" id="toc-instructors" class="nav-link" data-scroll-target="#instructors"><i class="bi-people-fill " style="" role="img" aria-hidden="true"></i> Instructors</a></li>
   </ul>
 </nav>
     </div>
@@ -252,7 +261,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- In this workshop, we will investigate how Large Language Models (LLMs) are trained, how they produce text, and what they are capable of. We will also discuss similarities and differences between LLMs and human thought processes. As LLMs become increasingly human-like in their performance, it is important to develop effective ways to describe their behaviour. We will discuss high-level concepts that allow us think about LLMs without falling into the trap of anthropomorphism. -->
 <!-- TODO: fix schedule -->
 <section id="contents" class="level2">
-<h2 class="anchored" data-anchor-id="contents">📖 Contents</h2>
+<h2 class="anchored" data-anchor-id="contents"><i class="bi-book " style="" role="img" aria-hidden="true"></i> Contents</h2>
 <ul>
 <li>What are large language models (LLMs)? How do they generate text?</li>
 <li>What tasks can LLMs perform? What are their limitations?</li>
@@ -260,17 +269,22 @@ ul.task-list li input[type="checkbox"] {
 <li>How can I use LLMs in educational settings?</li>
 </ul>
 </section>
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides"><i class="bi-file-slides " style="" role="img" aria-hidden="true"></i> Slides</h2>
+<p><i class="bi-link " style="" role="img" aria-hidden="true"></i> <a href="../slides/busy-lecturers-guide.html">The busy lecturer’s guide to LLMs</a></p>
+</section>
 <section id="take-home-messages" class="level2">
-<h2 class="anchored" data-anchor-id="take-home-messages">🏠 Take-home messages</h2>
+<h2 class="anchored" data-anchor-id="take-home-messages"><i class="bi-house-door " style="" role="img" aria-hidden="true"></i> Take-home messages</h2>
 <ul>
-<li>Use LLMs yourself! It’s important to gain an intuition for their capabilities and limitations.</li>
-<li>Combine domain knowledge of the “thing” you are working on, an understanding of how LLMs work, and an understanding of how to prompt them.</li>
-<li>Use LLMs with students in a classroom setting. This will help students to develop their own understanding of LLMs and become AI-literate.</li>
-<li>Always (critically 👩‍🔬) check an LLM’s output. They are language models, not knowledge bases.</li>
+<li>Explore LLMs firsthand to understand their strengths and weaknesses.</li>
+<li>Combine domain knowledge with an understanding of how LLMs work, and effective prompting strategies.</li>
+<li>Integrate LLMs into teaching to foster AI literacy among students.</li>
+<li>Critically evaluate an LLM’s output. They are language models, not knowledge bases.</li>
+<li>Keep a human in the loop.</li>
 </ul>
 </section>
 <section id="learning-outcomes" class="level2">
-<h2 class="anchored" data-anchor-id="learning-outcomes">🎯 Learning outcomes</h2>
+<h2 class="anchored" data-anchor-id="learning-outcomes"><i class="bi-bullseye " style="" role="img" aria-hidden="true"></i> Learning outcomes</h2>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -283,22 +297,22 @@ After this workshop, you will be able to:
 <div class="callout-body-container callout-body">
 <ol type="1">
 <li>Explain what large language models and conversational agents, such as ChatGPT, can be used for, and what they shouldn’t be used for.</li>
-<li>Create effective prompts for LLMs.</li>
-<li>Design your own LLM-based educational activities.</li>
-<li>Critically evaluate LLM-based educational activities.</li>
+<li>Create effective prompts for LLMs. <!-- 3) Design your own LLM-based educational activities.
+4) Critically evaluate LLM-based educational activities. --></li>
 </ol>
 </div>
 </div>
+<!-- ## ⏱️ Schedule
+
+![](../assets/schedule.svg){width=100%} -->
 </section>
-<section id="schedule" class="level2">
-<h2 class="anchored" data-anchor-id="schedule">⏱️ Schedule</h2>
-<p><a href="../assets/schedule.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../assets/schedule.svg" class="img-fluid" style="width:100.0%"></a></p>
-</section>
-<section id="instructor" class="level2">
-<h2 class="anchored" data-anchor-id="instructor">🙋 Instructor</h2>
+<section id="instructors" class="level2">
+<h2 class="anchored" data-anchor-id="instructors"><i class="bi-people-fill " style="" role="img" aria-hidden="true"></i> Instructors</h2>
 <ul>
 <li><p><a href="https://www.bfh.ch/en/about-bfh/people/a3xvoqozosua/"><strong>Andrew Ellis</strong></a>, <a href="https://virtuelleakademie.ch/">Virtual Academy</a> at the <a href="https://www.bfh.ch/">Bern University of Applied Sciences</a>:</p>
 <p>Andrew is a data scientist at the <a href="https://virtuelleakademie.ch/">Virtual Academy</a>. He is fascinated by the intersection of language, thought, and artificial intelligence. At BFH, he studies and teaches the use of generative AI in education and examines the ways in which humans interact with large language models. He also develops statistical models, which he employs to conduct studies on the impact of AI-based learning tools on learning outcomes. Andrew obtained his PhD in cognitive psychology from the University of Bern, where he investigated how people form mental images and how this is related to perception.</p></li>
+<li><p><a href="https://www.bfh.ch/de/ueber-die-bfh/personen/wzzprvvtyrw6/"><strong>Kaspar Kaufmann</strong></a>, <a href="https://virtuelleakademie.ch/">Virtual Academy</a> at the <a href="https://www.bfh.ch/">Bern University of Applied Sciences</a>:</p>
+<p>As a researcher at the Virtual Academy, Kaspar aims to promote digital competencies among teachers and learners at BFH. He is passionate about fostering a community of confident, critical and responsible users of digital technologies for education, work and civic participation.</p></li>
 </ul>
 
 
@@ -325,150 +339,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const disableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'prefetch';
-    }
-  }
-  const enableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'stylesheet';
-    }
-  }
-  const manageTransitions = (selector, allowTransitions) => {
-    const els = window.document.querySelectorAll(selector);
-    for (let i=0; i < els.length; i++) {
-      const el = els[i];
-      if (allowTransitions) {
-        el.classList.remove('notransition');
-      } else {
-        el.classList.add('notransition');
-      }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
-    }
-  }
-  const toggleColorMode = (alternate) => {
-    // Switch the stylesheets
-    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-    manageTransitions('#quarto-margin-sidebar .nav-link', false);
-    if (alternate) {
-      enableStylesheet(alternateStylesheets);
-      for (const sheetNode of alternateStylesheets) {
-        if (sheetNode.id === "quarto-bootstrap") {
-          toggleBodyColorMode(sheetNode);
-        }
-      }
-    } else {
-      disableStylesheet(alternateStylesheets);
-      toggleBodyColorPrimary();
-    }
-    manageTransitions('#quarto-margin-sidebar .nav-link', true);
-    // Switch the toggles
-    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-    for (let i=0; i < toggles.length; i++) {
-      const toggle = toggles[i];
-      if (toggle) {
-        if (alternate) {
-          toggle.classList.add("alternate");     
-        } else {
-          toggle.classList.remove("alternate");
-        }
-      }
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455)
-    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-      manageTransitions("body", false);
-      window.scrollTo(0, 1);
-      setTimeout(() => {
-        window.scrollTo(0, 0);
-        manageTransitions("body", true);
-      }, 40);  
-    }
-  }
-  const isFileUrl = () => { 
-    return window.location.protocol === 'file:';
-  }
-  const hasAlternateSentinel = () => {  
-    let styleSentinel = getColorSchemeSentinel();
-    if (styleSentinel !== null) {
-      return styleSentinel === "alternate";
-    } else {
-      return false;
-    }
-  }
-  const setStyleSentinel = (alternate) => {
-    const value = alternate ? "alternate" : "default";
-    if (!isFileUrl()) {
-      window.localStorage.setItem("quarto-color-scheme", value);
-    } else {
-      localAlternateSentinel = value;
-    }
-  }
-  const getColorSchemeSentinel = () => {
-    if (!isFileUrl()) {
-      const storageValue = window.localStorage.getItem("quarto-color-scheme");
-      return storageValue != null ? storageValue : localAlternateSentinel;
-    } else {
-      return localAlternateSentinel;
-    }
-  }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-  // Dark / light mode switch
-  window.quartoToggleColorScheme = () => {
-    // Read the current dark / light value 
-    let toAlternate = !hasAlternateSentinel();
-    toggleColorMode(toAlternate);
-    setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
-  };
-  // Ensure there is a toggle, if there isn't float one in the top right
-  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-    const a = window.document.createElement('a');
-    a.classList.add('top-right');
-    a.classList.add('quarto-color-scheme-toggle');
-    a.href = "";
-    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-    const i = window.document.createElement("i");
-    i.classList.add('bi');
-    a.appendChild(i);
-    window.document.body.appendChild(a);
-  }
-  // Switch to dark mode if need be
-  if (hasAlternateSentinel()) {
-    toggleColorMode(true);
-  } else {
-    toggleColorMode(false);
-  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -544,6 +414,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
           if (link.getAttribute("rel") === null) {
             link.setAttribute("rel", "noopener");
           }
+          // default icon
+          link.classList.add("external");
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -628,7 +500,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      return note.innerHTML;
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {
@@ -850,33 +727,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","openEffect":"zoom","selector":".lightbox","descPosition":"bottom","loop":false});
-window.onload = () => {
-  lightboxQuarto.on('slide_before_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    const href = trigger.getAttribute('href');
-    if (href !== null) {
-      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-      if (imgEl !== null) {
-        const srcAttr = imgEl.getAttribute("src");
-        if (srcAttr && srcAttr.startsWith("data:")) {
-          slideConfig.href = srcAttr;
-        }
-      }
-    } 
-  });
-
-  lightboxQuarto.on('slide_after_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    if (window.Quarto?.typesetMath) {
-      window.Quarto.typesetMath(slideNode);
-    }
-  });
-
-};
-          </script>
 
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
