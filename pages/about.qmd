@@ -50,6 +50,7 @@ Nächste Termine:
 Möchtest du Tools wie ChatGPT oder Chatbots für deinen Unterricht oder deine Weiterbildung nutzen? Das Prompt-Labor bietet Raum zum Experimentieren, Diskutieren und Entwickeln.
 
 Inhalt:
+
 - Wie können Sprachmodelle genutzt werden, um Lehr- und Lernstrategien zu implementieren?
 
 Nächste Termine:
