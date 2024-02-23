@@ -86,8 +86,8 @@ website:
           #   file: pages/chatgpt-playground.ipynb
           - text: "Using the API: Prompting Programmatically"
             file: pages/prompting.qmd
-          - text: Dashboard
-            file: dashboards/dashboard-demo.qmd
+          # - text: Dashboard
+          #   file: dashboards/dashboard-demo.qmd
           # - text: "Prompts for teaching and learning"
           #   file: pages/about.qmd
 
