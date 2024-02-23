@@ -702,7 +702,7 @@ Figure courtesy of [Pinecone](https://www.pinecone.io/learn/retrieval-augmented-
 
 ::: {.column width="50%"}
 
-{{< bi arrow-right-circle >}} DEMO
+- {{< bi arrow-right-circle >}} DEMO: haiku writing team
 :::
 ::::
 
@@ -721,25 +721,7 @@ Hardware requirements:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # What are LLMs good at?
-
 
 - Fixing grammar, bad writing, etc.
 - Rephrasing
@@ -748,6 +730,7 @@ Hardware requirements:
 - Answer questions about a knowledge base
 - Translate languages
 - Creating structured output
+- Factual output only with RAG or web search
 
 
 # References {background-color="#D8DEE9"}
