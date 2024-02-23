@@ -427,9 +427,40 @@ It looks like the LLM knows the capital of Uzbekistan^[What it is actually doing
 
 # But can an LLM think?
 
+::: {.incremental}
+- LLMs generate text token-by-token.
+- They output a probability distribution over all tokens.
+- The "magic" happens here: the learned probability distribution.
+- LLMs do not plan ahead.
+- LLMs cannot go back and edit their output.
+- The output depends on the context.
+:::
+
+## How do humans think?
+
+:::: {.columns}
+::: {.column width="50%"}
+
+![@battagliaSimulationEnginePhysical2013](../assets/images/physics-intuition.png){width=100%}
+
+:::
+::: {.column width="50%"}
+![@gerstenbergWhatWouldHave2022](../assets/images/causal-simulation.png){width=100%}
+:::
+::::
+
+
+
+
+
 # Prompting
 
-# Advanced techniques
+## Basic
+
+## Advanced
+
+
+# Advanced LLM techniques
 
 ## Retrieval-augmented generation (RAG)
 
@@ -438,6 +469,7 @@ It looks like the LLM knows the capital of Uzbekistan^[What it is actually doing
 ## Multi-agent conversations
 
 ## Local models
+
 
 # Are LLMs the future of AI?
 
