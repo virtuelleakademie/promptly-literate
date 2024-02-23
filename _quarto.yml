@@ -53,8 +53,8 @@ website:
             file: slides/02-prompting-techniques.qmd
           - text: "Part 3: Prompting for learning and teaching"
             file: slides/03-prompting-learning-teaching.qmd
-          - text: "Part 4: Reflection"
-            file: slides/04-reflection.qmd
+          # - text: "Part 4: Reflection"
+          #   file: slides/04-reflection.qmd
 
 
       - icon: brush #pencil-square
@@ -70,10 +70,10 @@ website:
             file: pages/activity-2-prompting-learning-teaching.qmd
           # - text: "Activity 3: Reflection"
           #   file: pages/activity-3-reflection.qmd
-          - text: "Activity 3: Add your prompt tricks to the Miro board"
-            file: pages/activity-4-miro.qmd
-          - text: "Activity 4: Discussion"
-            file: pages/activity-4-discussion.qmd 
+          # - text: "Activity 3: Add your prompt tricks to the Miro board"
+          #   file: pages/activity-4-miro.qmd
+          # - text: "Activity 4: Discussion"
+          #   file: pages/activity-4-discussion.qmd 
 
       - icon: book
         text: "Tutorials"
