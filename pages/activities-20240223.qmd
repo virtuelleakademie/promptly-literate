@@ -14,7 +14,7 @@ author:
     # url: https://github.com/awellis
     affiliation: Virtuelle Akademie, Berner Fachhochschule
     affiliation-url: https://virtuelleakademie.ch
-    # orcid: 0000-0002-2788-936X
+    orcid: 0000-0001-9825-1032
 license: CC BY
 citation: true
 bibliography: ../bibliography.bib
