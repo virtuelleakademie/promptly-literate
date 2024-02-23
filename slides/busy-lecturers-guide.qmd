@@ -15,7 +15,7 @@ format:
           # data-background-size: contain
           data-background-opacity: "1"
         # logo: ../assets/robot.png
-        footer: <a href="../index.html">back to website {{< bi layer-forward >}} </a>
+        footer: <a href="../index.html">back to website {{< bi box-arrow-up-left >}} </a>
         navigation-mode: vertical
         progress: true
         scrollable: false
@@ -38,51 +38,29 @@ format:
           markers: true
         callout-appearance: simple
         callout-icon: false
-
-# slide-level: 3
-# number-sections: true
+revealjs-plugins:
+  - attribution
 ---
-
-# Contents
-:::: {.columns}
-::: {.column width="50%"}
-1. Assistant zoo
-2. Training
-3. Inference (text generation)
-4. Foundation models
-5. Assistant models
-:::
-
-::: {.column width="50%"}
-6. Hallucination
-7. But can an LLM think?
-8. Prompting
-9. Advanced techniques
-10. Are LLMs the future of AI?
-:::
-::::
 
 
 # {{< bi house-door >}} Take-home messages
 
-## Bootstrap
-{{< bi alarm >}}
-
-{{< bi alarm-fill >}}
-
-{{< bi balloon-heart  size=5em color=#2ecaf9 >}}
-
-{{< bi emoji-sunglasses  size=5em color=#2ecaf9 label="Proud Happy Face" >}}
+- Explore LLMs firsthand to understand their strengths and weaknesses.
+- Combine domain knowledge with an understanding of how LLMs work, and effective prompting strategies.
+- Integrate LLMs into teaching to foster AI literacy among students.
+- Critically evaluate an LLM’s output. They are language models, not knowledge bases. 
+- Keep a human in the loop.
+  
 
 
-# Assistant zoo {.smaller}
+# Assistant menagerie {.smaller}
 
-| Assistant                                  | Provider        | Privacy | LLM                                       | Capabilities                              | Price      |
-| ------------------------------------------ | --------------- | ------- | ----------------------------------------- | ----------------------------------------- | ---------- |
-| [ChatGPT](https://chat.openai.com/)                                  | OpenAI          | 👎🏼    | GPT-3.5, GPT-4                            | Web search, DALLE, GPTs, multimodal input | 💶         |
-| [Copilot](https://copilot.microsoft.com/)  | Microsoft       | 👍🏼    | GPT-3.5, GPT-4                            | Web search, DALLE, multimodal input       | 🆓 for BFH |
-| [Gemini](https://gemini.google.com/app)    | Google          | 👎🏼    | Gemini Ultra, Gemini Pro, and Gemini Nano | Web search, multimodal input              | 💶         |
-| [HuggingChat](https://huggingface.co/chat) | 🤗 Hugging Face | 👍🏼    | Various open models, e.g. [CodeLlama](https://about.fb.com/news/2023/08/code-llama-ai-for-coding/), [Llama 2](https://huggingface.co/meta-llama/Llama-2-70b-chat-hf),  [Mistral](https://mistral.ai/news/announcing-mistral-7b/), [Gemma](https://blog.google/technology/developers/gemma-open-models/)                    |                                           | 🆓         |
+| Assistant                                  | Provider         | Privacy | LLM                                                                                                                                                                                                                                                                                                     | Capabilities                              | Pricing model    |
+| ------------------------------------------ | ---------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ---------- |
+| [ChatGPT](https://chat.openai.com/)        | OpenAI           | 👎🏼  | GPT-3.5, GPT-4                                                                                                                                                                                                                                                                                          | Web search, DALLE, GPTs, multimodal input | 💶        |
+| [Copilot](https://copilot.microsoft.com/)  | Microsoft        | 👍🏼  | GPT-3.5, GPT-4                                                                                                                                                                                                                                                                                          | Web search, DALLE, multimodal input       | 🆓 for BFH employees and students|
+| [Gemini](https://gemini.google.com/app)    | Google           | 👎🏼  | Gemini Ultra, Gemini Pro, and Gemini Nano                                                                                                                                                                                                                                                               | Web search, multimodal input              | 💶        |
+| [HuggingChat](https://huggingface.co/chat) | 🤗 Hugging Face | 👍🏼  | Various open models, e.g. [CodeLlama](https://about.fb.com/news/2023/08/code-llama-ai-for-coding/), [Llama 2](https://huggingface.co/meta-llama/Llama-2-70b-chat-hf),  [Mistral](https://mistral.ai/news/announcing-mistral-7b/), [Gemma](https://blog.google/technology/developers/gemma-open-models/) |                                           | 🆓         |
 
 
 # Training
@@ -92,22 +70,360 @@ format:
 :::
 
 ::: {.column width="50%"}
-![](../assets/images/Language%20Model.png){width=50%}
+![](../assets/images/LLM-Bookshelf.png){width=100%}
 :::
 ::::
 
-## Machine learning
+## How to train a language model
+
+<br> <br>
+
+![](../assets/images/llm-training.excalidraw.svg){width=80%}
+
+## Example
+![](../assets/images/pretraining.png){width=100%}
+
+## Generalization
+- The ability to apply knowledge to new, unseen data/situations
+- E.g. a language model should learn to generate rhymes
+- Extracts knowledge from text: linguistic, factual, commonsense, etc.
 
 ## What is learned?
+::: {.incremental}
+- An LLM learns to predict the next word in a sequence, given the previous words:
+ $$ P(word | context) $$
+- Think of as "fancy autocomplete" (but very very powerful and sopisticated)
+:::
+
+. . .
+
+![](../assets/images/ppl_full.gif){width=100%}
 
 
-# Inference
+
+
+
+
+# Text Generation
+:::: {.columns}
+
+::: {.column width="50%"}
+:::
+
+::: {.column width="50%"}
+![](../assets/images/textgeneration.png){width=100%}
+:::
+::::
+
+
+## How does an LLM generate text?
+
+![](../assets/images/text-generation-output.excalidraw.svg){width=100%}
+
+
+## Sampling
+
+![](../assets/images/sampling.excalidraw.svg){width=100%}
+
+## Auto-regressive generation
+
+![](../assets/images/autoregressive.png){width=100%}
+
+## Auto-regressive generation
+
+:::: {.columns}
+::: {.column width="50%"}
+- Text is generated __one word at a time__ (actually tokens, not words).
+- Model predicts which token is likely to follow, given a sequence of tokens (words, punctuation, emojis, etc.). 
+- Key idea: this simple procedure is followed over and over again, with <mark style="background: #EBCB8B;">each new token being added to the sequence of tokens</mark> that the model uses to predict the next token.
+
+:::
+::: {.column width="50%"}
+$$ P(w_{w+1} | w_1, w_2, ..., w_t) $$
+
+- Sequence of words is called the <mark style="background: #EBCB8B;">context</mark>.
+
+{{< bi arrow-right-circle-fill >}} Generated text is dependent on the context.
+
+{{< bi arrow-right-circle-fill >}} Every token is given an equal amount time (computation per token is constant). 
+:::
+::::
+
+
+
+## Tokenization
+LLMs operate with tokens, not words. These are sub-words, and make working with text much easier for the model. A rule of thumb is that one token generally corresponds to ~4 characters of English text. This translates to roughly $\frac{3}{4}$ of a word (so 100 tokens is about 75 words).
+
+```{r}
+knitr::include_graphics("../assets/images/tokenization.png")
+```
+
+Feel free to try out the [OpenAI tokenizer](https://platform.openai.com/tokenizer). 
+
+## Embeddings
+- The next step is to represent tokens as vectors. 
+- This is called "embedding" the tokens. The vectors are high-dimensional, and the **distance** between vectors measures the similarity between tokens.
+
+:::: {.columns}
+::: {.column width="50%"}
+
+```{r}
+knitr::include_graphics("../assets/images/embedding.png")
+```
+:::
+::: {.column width="50%"}
+In this 2-dimensional representation, concepts that are "related" lie close together. Read about embeddings [in this tutorial](../pages/text-representation.qmd).
+
+:::
+
+::::
+
+
+
 
 # Foundation models
 
+A foundation model, or large language model (LLM):
+
+- is a type of machine learning model that is trained to predict the next word following the input (prompt).
+- is trained "simply" to predict the next word following a sequence of words. 
+- does not necessarily produce human-like conversations.
+
+:::{.callout-note}
+{{< bi person >}}: 
+What is the capital of France?
+
+{{< bi robot >}}: 
+What is the capital of Germany? 
+What is the capital of Italy? .
+..
+:::
+
+
+## Training data
+
+![](../assets/images/karpathy-training-data.png){width=100%}
+
+::: attribution
+Figure courtesy of [Andrej Karpathy](https://karpathy.ai/)
+:::
+
+## Training process
+
+![](../assets/images/karpathy-training-process.png){width=100%}
+
+::: attribution
+Figure courtesy of [Andrej Karpathy](https://karpathy.ai/)
+:::
+
+## Emergent abilities
+
+LLMs are thought to show emergent abilities - abilities not explicitly taught. Instead, they emerge _as a result of text prediction_.
+
+Abilities include:
+
+- performing arithmetic, answering questions, summarizing text, translating, etc.
+- zero-shot learning: LLMs can perform tasks without being trained on them.
+- few-shot learning: LLMs can perform tasks with few examples.
+
+## Emergent abilities
+
+What kind of knowledge does an LLM have to have to be able to write a continuation of the following text?^[Continue this conversation with [ChatGPT](https://chat.openai.com/share/2661773e-3bf6-4be3-b251-41f639bfc2a1).]
+
+::::{.columns}
+::: {.column width="50%"}
+
+:::{.callout-note}
+{{< bi person >}}: 
+How many holes does a straw have?
+
+{{< bi robot >}}: 
+A straw has one hole. It's a cylindrical tunnel that runs through the entire length, creating a single continuous space from one end to the other.
+
+{{< bi person >}}: 
+What about a tunnel?
+
+{{< bi robot >}}:
+Similar to a straw, a tunnel can also be considered to have one hole. It's an elongated pathway carved through an obstruction, allowing passage from one side to the other, thus creating a single continuous space or hole through the material.
+:::
+:::
+
+::: {.column width="50%"}
+![](../assets/images/straw-tunnel.png){width=100%}
+:::
+::::
+
+
+
 # Assistant models
 
+  
+:::: {.columns}
+
+::: {.column width="34%"}
+![](../assets/images/Chat.png){width=100%}
+
+
+<!-- ![](../assets/images/RLHF.svg){width=100%} -->
+:::
+
+::: {.column width="66%"}
+
+- Trained (fine-tuned) in two stages to have conversations: turn-taking, question answering, not being [rude/sexist/racist], etc.
+
+- Foundation model has learned to predict all kinds of text, including both desirable and undesirable text.
+- Fine-tuning is a process narrow down the space of all possible output to only desirable, human-like dialogue.
+- Model is **aligned** with the values of the fine-tuner.
+
+:::
+::::
+
+
+## Instruction fine-tuning
+
+![](../assets/images/finetuning.png){width=100%}
+
+## Reinforcement learning from human feedback (RLHF)
+
+![](../assets/images/RLHF.svg){width=100%}
+
+
+
+
+
+
+# How do Chatbots work?
+
+![](../assets/images/chatbotexcalidraw.svg){width=100%}
+
+- Designed to present the illusion of a conversation between two entities.
+
+## How do chatbots actually work?
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](../assets/images/chatbot.svg){width=100%}
+:::
+
+::: {.column width="50%"}
+![](../assets/images/chatbot-2.svg){width=100%}
+
+
+:::
+::::
+
+
+
+## An LLM is a role-play simulator
+
+:::: {.columns}
+
+::: {.column width="34%"}
+![](../assets/images/live-action-role-play.png){width=100%}
+
+:::
+
+::: {.column width="64%"}
+
+:::{.callout-note}
+We can think of an LLM as a non-deterministic simulator capable of role-playing an infinity of characters, or, to put it another way, capable of stochastically generating an infinity of simulacra [@shanahanRolePlayLargeLanguage2023]
+:::
+:::
+::::
+
+## An LLM is a role-play simulator
+
+- An assistant is trained to respond to user prompts in a human-like way.
+- A simulator of **possible** human conversation.
+- Has no intentions. It is not an entity with its own goals.
+- Does not have a "personality" or "character" in the traditional sense. It can be thought of as a role-playing simulator.
+- Has no concept of "truth" or "lying". The model is not trying to deceive the user, it is simply trying to respond in a human-like way.
+
+
+## Stochastic generation
+
+![](../assets/images/simulator.png){width=100%}
+
+
+
 # Hallucination
+
+:::: {.columns}
+
+::: {.column width="34%"}
+![](../assets/images/confabulating.png){width=100%}
+
+:::
+
+::: {.column width="64%"}
+- LLMs can generate text that is not true, or not based on any real-world knowledge.
+- This is known as "hallucination". A better term would be "confabulation".
+
+:::
+::::
+
+
+## Knowledge base
+
+:::: {.columns}
+
+::: {.column width="66%"}
+
+- A knowledge base is a collection of facts about the world.
+- I can `ask` (retrieve) and `tell` (store) facts.
+:::
+
+::: {.column width="34%"}
+
+![](../assets/images/KnowledgeBase.png){width=100%}
+
+:::
+::::
+
+## Can an LLM tell the truth?
+
+- How would you know if an LLM is able to give you factual information?
+- How would you test this?
+
+:::{.callout-note}
+{{< bi person >}}: 
+What is the capital of Uzbekistan?
+
+{{< bi robot >}}: 
+Tashkent
+:::
+
+ 
+
+It looks like the LLM knows the capital of Uzbekistan^[What it is actually doing is responding with the most likely sequence following the question.].
+
+## Confirmation bias
+
+- People tend to search for evidence consistent with their current beliefs.
+
+
+## Are LLMs knowledge bases?
+
+:::: {.columns}
+
+::: {.column width="34%"}
+![](../assets/images/Pothole.png){width=100%}
+
+:::
+
+::: {.column width="64%"}
+
+- I can ask but the response is not verifiable.
+- I can't tell, i.e. can't store new information (expensive/difficult to update with new knowledge).
+- LLM can't tell me where it got its information from.
+- LLMs are models of knowledge bases, but not knowledge bases themselves.
+- Produce ethically questionable results.
+
+:::
+::::
+
+
 
 # But can an LLM think?
 
@@ -125,7 +441,7 @@ format:
 
 # Are LLMs the future of AI?
 
-## No
+No.
 
 
 
@@ -147,8 +463,6 @@ format:
 
 # What are LLMs good at?
 
-::::{.columns}
-::: {.column width="50%"}
 
 - Fixing grammar, bad writing, etc.
 - Rephrasing
@@ -157,14 +471,6 @@ format:
 - Answer questions about a knowledge base
 - Translate languages
 - Creating structured output
-
-:::
-:::{.column width="50%"}
-```{=html}
-<iframe width="600" height="600" src="https://chat.openai.com/share/49f95bd5-58de-466c-9323-5118fa83685e" title="Email addresses in a comma-separated list"></iframe>
-```
-:::
-::::
 
 
 # References {background-color="#D8DEE9"}
