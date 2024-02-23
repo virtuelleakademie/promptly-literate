@@ -13,6 +13,7 @@ lightbox: auto
 - How can I use LLMs in educational settings?
 
 ## {{< bi file-slides >}} Slides
+
 {{< bi link >}} [The busy lecturer's guide to LLMs](../slides/busy-lecturers-guide.qmd)
 
 

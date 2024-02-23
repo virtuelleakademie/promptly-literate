@@ -438,6 +438,8 @@ It looks like the LLM knows the capital of Uzbekistan^[What it is actually doing
 
 ## How do humans think?
 
+E.g. physical reasoning
+
 :::: {.columns}
 ::: {.column width="50%"}
 
