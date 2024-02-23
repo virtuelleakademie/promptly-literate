@@ -40,9 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/bootstrap-icons-1.11.1/all.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -84,8 +82,10 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="Promptly Literate // - Agenda">
+<meta property="og:description" content="">
 <meta property="og:site_name" content="Promptly Literate //">
 <meta name="twitter:title" content="Promptly Literate // - Agenda">
+<meta name="twitter:description" content="">
 <meta name="twitter:creator" content="@awellis">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -139,10 +139,6 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../slides/03-prompting-learning-teaching.html">
  <span class="dropdown-text">Part 3: Prompting for learning and teaching</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../slides/04-reflection.html">
- <span class="dropdown-text">Part 4: Reflection</span></a>
-  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
@@ -164,14 +160,6 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../pages/activity-2-prompting-learning-teaching.html">
  <span class="dropdown-text">Activity 2: Prompting for teaching and learning</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../pages/activity-4-miro.html">
- <span class="dropdown-text">Activity 3: Add your prompt tricks to the Miro board</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../pages/activity-4-discussion.html">
- <span class="dropdown-text">Activity 4: Discussion</span></a>
-  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
@@ -188,10 +176,6 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="../pages/prompting.html">
  <span class="dropdown-text">Using the API: Prompting Programmatically</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../dashboards/dashboard-demo.qmd">
- <span class="dropdown-text">Dashboard</span></a>
   </li>  
     </ul>
   </li>
@@ -244,11 +228,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#contents" id="toc-contents" class="nav-link active" data-scroll-target="#contents">📖 Contents</a></li>
-  <li><a href="#take-home-messages" id="toc-take-home-messages" class="nav-link" data-scroll-target="#take-home-messages">🏠 Take-home messages</a></li>
-  <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link" data-scroll-target="#learning-outcomes">🎯 Learning outcomes</a></li>
-  <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule">⏱️ Schedule</a></li>
-  <li><a href="#instructor" id="toc-instructor" class="nav-link" data-scroll-target="#instructor">🙋 Instructor</a></li>
+  <li><a href="#contents" id="toc-contents" class="nav-link active" data-scroll-target="#contents"><i class="bi-book " style="" role="img" aria-hidden="true"></i> Contents</a></li>
+  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides"><i class="bi-file-slides " style="" role="img" aria-hidden="true"></i> Slides</a></li>
+  <li><a href="#take-home-messages" id="toc-take-home-messages" class="nav-link" data-scroll-target="#take-home-messages"><i class="bi-house-door " style="" role="img" aria-hidden="true"></i> Take-home messages</a></li>
+  <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link" data-scroll-target="#learning-outcomes"><i class="bi-bullseye " style="" role="img" aria-hidden="true"></i> Learning outcomes</a></li>
+  <li><a href="#instructors" id="toc-instructors" class="nav-link" data-scroll-target="#instructors"><i class="bi-people-fill " style="" role="img" aria-hidden="true"></i> Instructors</a></li>
   </ul>
 </nav>
     </div>
@@ -277,7 +261,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- In this workshop, we will investigate how Large Language Models (LLMs) are trained, how they produce text, and what they are capable of. We will also discuss similarities and differences between LLMs and human thought processes. As LLMs become increasingly human-like in their performance, it is important to develop effective ways to describe their behaviour. We will discuss high-level concepts that allow us think about LLMs without falling into the trap of anthropomorphism. -->
 <!-- TODO: fix schedule -->
 <section id="contents" class="level2">
-<h2 class="anchored" data-anchor-id="contents">📖 Contents</h2>
+<h2 class="anchored" data-anchor-id="contents"><i class="bi-book " style="" role="img" aria-hidden="true"></i> Contents</h2>
 <ul>
 <li>What are large language models (LLMs)? How do they generate text?</li>
 <li>What tasks can LLMs perform? What are their limitations?</li>
@@ -285,17 +269,22 @@ ul.task-list li input[type="checkbox"] {
 <li>How can I use LLMs in educational settings?</li>
 </ul>
 </section>
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides"><i class="bi-file-slides " style="" role="img" aria-hidden="true"></i> Slides</h2>
+<p><i class="bi-link " style="" role="img" aria-hidden="true"></i> <a href="../slides/busy-lecturers-guide.html">The busy lecturer’s guid to LLMs</a></p>
+</section>
 <section id="take-home-messages" class="level2">
-<h2 class="anchored" data-anchor-id="take-home-messages">🏠 Take-home messages</h2>
+<h2 class="anchored" data-anchor-id="take-home-messages"><i class="bi-house-door " style="" role="img" aria-hidden="true"></i> Take-home messages</h2>
 <ul>
-<li>Use LLMs yourself! It’s important to gain an intuition for their capabilities and limitations.</li>
-<li>Combine domain knowledge of the “thing” you are working on, an understanding of how LLMs work, and an understanding of how to prompt them.</li>
-<li>Use LLMs with students in a classroom setting. This will help students to develop their own understanding of LLMs and become AI-literate.</li>
-<li>Always (critically 👩‍🔬) check an LLM’s output. They are language models, not knowledge bases.</li>
+<li>Explore LLMs firsthand to understand their strengths and weaknesses.</li>
+<li>Combine domain knowledge with an understanding of how LLMs work, and effective prompting strategies.</li>
+<li>Integrate LLMs into teaching to foster AI literacy among students.</li>
+<li>Critically evaluate an LLM’s output. They are language models, not knowledge bases.</li>
+<li>Keep a human in the loop.</li>
 </ul>
 </section>
 <section id="learning-outcomes" class="level2">
-<h2 class="anchored" data-anchor-id="learning-outcomes">🎯 Learning outcomes</h2>
+<h2 class="anchored" data-anchor-id="learning-outcomes"><i class="bi-bullseye " style="" role="img" aria-hidden="true"></i> Learning outcomes</h2>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -308,22 +297,22 @@ After this workshop, you will be able to:
 <div class="callout-body-container callout-body">
 <ol type="1">
 <li>Explain what large language models and conversational agents, such as ChatGPT, can be used for, and what they shouldn’t be used for.</li>
-<li>Create effective prompts for LLMs.</li>
-<li>Design your own LLM-based educational activities.</li>
-<li>Critically evaluate LLM-based educational activities.</li>
+<li>Create effective prompts for LLMs. <!-- 3) Design your own LLM-based educational activities.
+4) Critically evaluate LLM-based educational activities. --></li>
 </ol>
 </div>
 </div>
+<!-- ## ⏱️ Schedule
+
+![](../assets/schedule.svg){width=100%} -->
 </section>
-<section id="schedule" class="level2">
-<h2 class="anchored" data-anchor-id="schedule">⏱️ Schedule</h2>
-<p><a href="../assets/schedule.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../assets/schedule.svg" class="img-fluid" style="width:100.0%"></a></p>
-</section>
-<section id="instructor" class="level2">
-<h2 class="anchored" data-anchor-id="instructor">🙋 Instructor</h2>
+<section id="instructors" class="level2">
+<h2 class="anchored" data-anchor-id="instructors"><i class="bi-people-fill " style="" role="img" aria-hidden="true"></i> Instructors</h2>
 <ul>
 <li><p><a href="https://www.bfh.ch/en/about-bfh/people/a3xvoqozosua/"><strong>Andrew Ellis</strong></a>, <a href="https://virtuelleakademie.ch/">Virtual Academy</a> at the <a href="https://www.bfh.ch/">Bern University of Applied Sciences</a>:</p>
 <p>Andrew is a data scientist at the <a href="https://virtuelleakademie.ch/">Virtual Academy</a>. He is fascinated by the intersection of language, thought, and artificial intelligence. At BFH, he studies and teaches the use of generative AI in education and examines the ways in which humans interact with large language models. He also develops statistical models, which he employs to conduct studies on the impact of AI-based learning tools on learning outcomes. Andrew obtained his PhD in cognitive psychology from the University of Bern, where he investigated how people form mental images and how this is related to perception.</p></li>
+<li><p><a href="https://www.bfh.ch/de/ueber-die-bfh/personen/wzzprvvtyrw6/"><strong>Kaspar Kaufmann</strong></a>, <a href="https://virtuelleakademie.ch/">Virtual Academy</a> at the <a href="https://www.bfh.ch/">Bern University of Applied Sciences</a>:</p>
+<p>As a researcher at the Virtual Academy, Kaspar aims to promote digital competencies among teachers and learners at BFH. He is passionate about fostering a community of confident, critical and responsible users of digital technologies for education, work and civic participation.</p></li>
 </ul>
 
 
@@ -738,31 +727,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","selector":".lightbox","loop":false,"openEffect":"zoom"});
-window.onload = () => {
-  lightboxQuarto.on('slide_before_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    const href = trigger.getAttribute('href');
-    if (href !== null) {
-      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-      if (imgEl !== null) {
-        const srcAttr = imgEl.getAttribute("src");
-        if (srcAttr && srcAttr.startsWith("data:")) {
-          slideConfig.href = srcAttr;
-        }
-      }
-    } 
-  });
-
-  lightboxQuarto.on('slide_after_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    if (window.Quarto?.typesetMath) {
-      window.Quarto.typesetMath(slideNode);
-    }
-  });
-
-};
-          </script>
 
 
 

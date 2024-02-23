@@ -27,11 +27,11 @@ code-annotations: select
 
 
 
-In this activity, you can explore various prompting guides for GPT models. They more or less all converge on the same set of techniques. You can then use these techniques to write your own prompt for a GPT model.
+In this activity, you can explore various prompting guides for LLMs. They more or less all converge on the same set of techniques. You can then use these techniques to write your own prompts.
 
 ## Tasks
 
-(@) **Explore prompting**. Use both/either ChatGPT and Bing Chat. If you want to look anything up, try these prompting guides:
+(@) **Explore prompting**. Use both/either ChatGPT and Copilot. If you want to look anything up, try these prompting guides:
 
 :::{.callout-tip collapse="false"}
 ## Learn prompting: An comprehensive (and free) guide aimed at non-technical users.
@@ -52,14 +52,6 @@ In this activity, you can explore various prompting guides for GPT models. They 
 ``` 
 :::
 
-:::{.callout-tip collapse="true"}
-## PromptTools Playground
-👉 [PromptTools Playground](https://prompttools.streamlit.app/): a web app that lets you play with various prompting techniques. You can use different LLMs, and even compare the results.
-
-<!-- ```{=html}
-<iframe src="https://prompttools.streamlit.app/" width="100%" height="500px"></iframe>
-```  -->
-:::
 
 :::{.callout-tip collapse="true"}
 ## SPARK
@@ -70,7 +62,7 @@ In this activity, you can explore various prompting guides for GPT models. They 
 ```  -->
 :::
 
-(@) **Write a prompt** that will make ChatGPT or Bing Chat act as an argumentation critic.
+(@) **Write a prompt** that will make ChatGPT or Copilot act as an argumentation critic.
 
 You can use this as your starting point, and then iteratively improve it.
 
@@ -107,23 +99,10 @@ Abschließend glaube ich, dass Schulnoten mehr Schaden als Nutzen bringen. Sie s
 :::
 
 
-If you want help getting started, you can open this conversation in ChatGPT.
-
-:::{.callout-tip collapse="true"}
-## Open in ChatGPT
-
-```{=html}
-<iframe src="https://chat.openai.com/share/a76bec67-df0d-4914-8cda-54d3ef2380d9" width="100%" height="500px"></iframe>
-```
-:::
-
 
 
 
 (@) **Reflection**: Did your prompt work? What worked well? What didn't work well? 
-
-(@) **Miro board**: Add your prompt to the [Miro board](https://miro.com/app/board/uXjVNW_AhHc=/?share_link_id=410125738019). You can also open this in [activity 3](activity-4-miro.qmd).
-
 
 
 

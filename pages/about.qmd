@@ -24,33 +24,22 @@ about:
 
 <!-- ### KI-basierte Schreibtools in der Lehre -->
 
-:::{.callout-note}
-## KI-basierte Schreibtools in der Lehre
-Künstliche Intelligenz (KI) hat das Potenzial, das Bildungswesen grundlegend zu verändern. In diesem Workshop werden wir die Rolle von KI in der Lehre erkunden, mit besonderem Fokus auf den Einsatz von KI-basierten Schreibtools.
+:::{.callout-note appearance="simple"}
+## Prompt-Labor Vertiefung: KI-Sprachmodelle in der Lehre nutzen
+Möchtest du Tools wie ChatGPT oder Chatbots für deinen Unterricht oder deine Weiterbildung nutzen? Das Prompt-Labor bietet Raum zum Experimentieren, Diskutieren und Entwickeln.
 
-Inhalte:
-
-- Was ist künstliche Intelligenz? Wie funktionieren Tools wie ChatGPT? 
-- Wie kommuniziere ich mit KI-Schreibtools? Wie schreibe ich gute Prompts?  
-- Anwendungsbeispiele von KI in der Lehre 
+Inhalt:
+Wie können Sprachmodelle genutzt werden, um Lehr- und Lernstrategien zu implementieren?
 
 Nächste Termine:
 
-- ~~15. September 2023, 13-17 Uhr~~
-- ➡️ 27. Oktober 2023, 13-17 Uhr
+13.03.2024, 10–12h
 
-👉 [www.bfh.ch/de/weiterbildung/kurse/ki-schreibtools](https://www.bfh.ch/de/weiterbildung/kurse/ki-schreibtools/)
+01.05.2024, 10–12h
+
+17.05.2024, 13.30–15.30
+
+{{< bi link >}} [www.bfh.ch/de/weiterbildung/kurse/prompt-labor-vertiefung/](https://www.bfh.ch/de/weiterbildung/kurse/prompt-labor-vertiefung/)
 :::
 
-:::{.callout-note}
-## KI-Sprechstunden
-Hast du Fragen zum Umgang mit Künstlicher Intelligenz (KI) in der Lehre? Dann schau vorbei oder logge dich ein. Ohne Anmeldung.
-
-Nächste Termine:
-
-- ~~17. August 2023, 16-18 Uhr~~
-- ➡️ 3. November 2023, 15-17 Uhr
-
-👉 [virtuelleakademie.ch/beratungen-coachings](https://virtuelleakademie.ch/beratungen-coachings/):
-:::
 

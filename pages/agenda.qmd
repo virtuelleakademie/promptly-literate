@@ -5,40 +5,49 @@ lightbox: auto
 <!-- In this workshop, we will investigate how Large Language Models (LLMs) are trained, how they produce text, and what they are capable of. We will also discuss similarities and differences between LLMs and human thought processes. As LLMs become increasingly human-like in their performance, it is important to develop effective ways to describe their behaviour. We will discuss high-level concepts that allow us think about LLMs without falling into the trap of anthropomorphism. -->
 <!-- TODO: fix schedule -->
 
-## 📖 Contents
+## {{< bi book >}} Contents
 
 - What are large language models (LLMs)? How do they generate text?
 - What tasks can LLMs perform? What are their limitations?
 - What are effective prompting techniques?
 - How can I use LLMs in educational settings?
 
-## 🏠 Take-home messages
-
-- Use LLMs yourself! It's important to gain an intuition for their capabilities and limitations.
-- Combine domain knowledge of the "thing" you are working on, an understanding of how LLMs work, and an understanding of how to prompt them. 
-- Use LLMs with students in a classroom setting. This will help students to develop their own understanding of LLMs and become AI-literate.
-- Always (critically 👩‍🔬) check an LLM's output. They are language models, not knowledge bases.
+## {{< bi file-slides >}} Slides
+{{< bi link >}} [The busy lecturer's guide to LLMs](../slides/busy-lecturers-guide.qmd)
 
 
-## 🎯 Learning outcomes
+## {{< bi house-door >}} Take-home messages
+
+- Explore LLMs firsthand to understand their strengths and weaknesses.
+- Combine domain knowledge with an understanding of how LLMs work, and effective prompting strategies.
+- Integrate LLMs into teaching to foster AI literacy among students.
+- Critically evaluate an LLM’s output. They are language models, not knowledge bases. 
+- Keep a human in the loop.
+  
+
+
+## {{< bi bullseye >}} Learning outcomes
 :::{.callout-tip}
 ## After this workshop, you will be able to:
 
 1) Explain what large language models and conversational agents, such as ChatGPT, can be used for, and what they shouldn't be used for.
 2) Create effective prompts for LLMs.
-3) Design your own LLM-based educational activities.
-4) Critically evaluate LLM-based educational activities.
+<!-- 3) Design your own LLM-based educational activities.
+4) Critically evaluate LLM-based educational activities. -->
 :::
 
-## ⏱️ Schedule
+<!-- ## ⏱️ Schedule
 
-![](../assets/schedule.svg){width=100%}
+![](../assets/schedule.svg){width=100%} -->
 
 
-## 🙋 Instructor
+## {{< bi people-fill >}} Instructors
 
 - [**Andrew Ellis**](https://www.bfh.ch/en/about-bfh/people/a3xvoqozosua/), [Virtual Academy](https://virtuelleakademie.ch/) at the [Bern University of Applied Sciences](https://www.bfh.ch/):  
   
   Andrew is a data scientist at the [Virtual Academy](https://virtuelleakademie.ch/). He is fascinated by the intersection of language, thought, and artificial intelligence. At BFH, he studies and teaches the use of generative AI in education and examines the ways in which humans interact with large language models. He also develops statistical models, which he employs to conduct studies on the impact of AI-based learning tools on learning outcomes. Andrew obtained his PhD in cognitive psychology from the University of Bern, where he investigated how people form mental images and how this is related to perception.
 
 
+- [**Kaspar Kaufmann**](https://www.bfh.ch/de/ueber-die-bfh/personen/wzzprvvtyrw6/), [Virtual Academy](https://virtuelleakademie.ch/) at the [Bern University of Applied Sciences](https://www.bfh.ch/):
+
+  As a researcher at the Virtual Academy, Kaspar aims to promote digital competencies among teachers and learners at BFH. He is passionate about fostering a community of confident, critical and responsible users of digital technologies for education, work and civic participation.
