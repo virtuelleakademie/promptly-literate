@@ -510,7 +510,7 @@ Andrew Ellis
 <ul>
 <li>Text is generated <strong>one word at a time</strong> (actually tokens, not words).</li>
 <li>Model predicts which token is likely to follow, given a sequence of tokens (words, punctuation, emojis, etc.).</li>
-<li>Key idea: this simple procedure is followed over and over again, with <mark style="background: #EBCB8B;">each new token being added to the sequence of tokens</mark> that the model uses to predict the next token.</li>
+<li><mark style="background: #EBCB8B;">Each new token is added to the sequence of tokens</mark> that the model uses to predict the next token.</li>
 </ul>
 </div><div class="column" style="width:50%;">
 <p><span class="math display">\[ P(w_{w+1} | w_1, w_2, ..., w_t) \]</span></p>

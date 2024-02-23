@@ -1117,7 +1117,7 @@
     "href": "slides/busy-lecturers-guide.html#auto-regressive-generation-1",
     "title": "The busy lecturer’s guide to LLMs",
     "section": "Auto-regressive generation",
-    "text": "Auto-regressive generation\n\n\n\nText is generated one word at a time (actually tokens, not words).\nModel predicts which token is likely to follow, given a sequence of tokens (words, punctuation, emojis, etc.).\nKey idea: this simple procedure is followed over and over again, with each new token being added to the sequence of tokens that the model uses to predict the next token.\n\n\n\\[ P(w_{w+1} | w_1, w_2, ..., w_t) \\]\n\nSequence of words is called the context.\n\n Generated text is dependent on the context.\n Every token is given an equal amount time (computation per token is constant)."
+    "text": "Auto-regressive generation\n\n\n\nText is generated one word at a time (actually tokens, not words).\nModel predicts which token is likely to follow, given a sequence of tokens (words, punctuation, emojis, etc.).\nEach new token is added to the sequence of tokens that the model uses to predict the next token.\n\n\n\\[ P(w_{w+1} | w_1, w_2, ..., w_t) \\]\n\nSequence of words is called the context.\n\n Generated text is dependent on the context.\n Every token is given an equal amount time (computation per token is constant)."
   },
   {
     "objectID": "slides/busy-lecturers-guide.html#tokenization",

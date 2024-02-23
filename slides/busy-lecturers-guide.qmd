@@ -135,7 +135,7 @@ revealjs-plugins:
 ::: {.column width="50%"}
 - Text is generated __one word at a time__ (actually tokens, not words).
 - Model predicts which token is likely to follow, given a sequence of tokens (words, punctuation, emojis, etc.). 
-- Key idea: this simple procedure is followed over and over again, with <mark style="background: #EBCB8B;">each new token being added to the sequence of tokens</mark> that the model uses to predict the next token.
+- <mark style="background: #EBCB8B;">Each new token is added to the sequence of tokens</mark> that the model uses to predict the next token.
 
 :::
 ::: {.column width="50%"}
