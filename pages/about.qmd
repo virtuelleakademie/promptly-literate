@@ -22,14 +22,34 @@ about:
 
 ## KI-Kurse der Virtuellen Akademie
 
-<!-- ### KI-basierte Schreibtools in der Lehre -->
+
+:::{.callout-note appearance="simple"}
+## Prompt-Labor: Basics zu KI-Sprachmodellen
+Möchtest du das volle Potential von Sprachmodellen wie ChatGPT ausschöpfen? In diesem Prompt-Labor tauchen wir sowohl in die Grundlagen von Sprachmodellen als auch in Techniken zur Erstellung effektiver Prompts ein.
+
+Inhalt:
+- Was sind KI-Sprachmodelle? Wie werden sie trainiert? 
+
+- Wie generieren KI-Sprachmodelle Text? 
+
+- Wie kommuniziere ich mit KI-Sprachmodellen? Wie schreibe ich gute Prompts? 
+
+
+Nächste Termine:
+
+~~23.02.2024, 14–16h~~
+
+22.04.2024, 10–12h
+
+{{< bi link >}} [www.bfh.ch/de/weiterbildung/kurse/prompt-labor-basics/](https://www.bfh.ch/de/weiterbildung/kurse/prompt-labor-basics/)
+::: 
 
 :::{.callout-note appearance="simple"}
 ## Prompt-Labor Vertiefung: KI-Sprachmodelle in der Lehre nutzen
 Möchtest du Tools wie ChatGPT oder Chatbots für deinen Unterricht oder deine Weiterbildung nutzen? Das Prompt-Labor bietet Raum zum Experimentieren, Diskutieren und Entwickeln.
 
 Inhalt:
-Wie können Sprachmodelle genutzt werden, um Lehr- und Lernstrategien zu implementieren?
+- Wie können Sprachmodelle genutzt werden, um Lehr- und Lernstrategien zu implementieren?
 
 Nächste Termine:
 
