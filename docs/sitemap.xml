@@ -21,8 +21,12 @@
     <lastmod>2024-02-21T23:51:34.453Z</lastmod>
   </url>
   <url>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/tutorial-basic-prompting.html</loc>
+    <lastmod>2024-02-26T15:21:44.158Z</lastmod>
+  </url>
+  <url>
     <loc>https://virtuelleakademie.github.io/promptly-literate/pages/text-representation.html</loc>
-    <lastmod>2024-02-24T21:49:19.245Z</lastmod>
+    <lastmod>2024-02-26T15:42:34.072Z</lastmod>
   </url>
   <url>
     <loc>https://virtuelleakademie.github.io/promptly-literate/pages/schedule.html</loc>
@@ -30,7 +34,7 @@
   </url>
   <url>
     <loc>https://virtuelleakademie.github.io/promptly-literate/pages/prompting.html</loc>
-    <lastmod>2023-09-15T01:23:50.446Z</lastmod>
+    <lastmod>2024-02-26T15:18:58.140Z</lastmod>
   </url>
   <url>
     <loc>https://virtuelleakademie.github.io/promptly-literate/pages/observable-1.html</loc>
@@ -101,6 +105,10 @@
     <lastmod>2023-10-26T14:36:00.812Z</lastmod>
   </url>
   <url>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/tutorial-pyobsplot.html</loc>
+    <lastmod>2024-02-26T15:05:34.838Z</lastmod>
+  </url>
+  <url>
     <loc>https://virtuelleakademie.github.io/promptly-literate/slides/01-text-representation-generation.html</loc>
     <lastmod>2023-10-23T14:42:30.049Z</lastmod>
   </url>
@@ -115,9 +123,5 @@
   <url>
     <loc>https://virtuelleakademie.github.io/promptly-literate/slides/questions-topics.html</loc>
     <lastmod>2023-10-27T06:42:33.742Z</lastmod>
-  </url>
-  <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/tutorial-basic-prompting.html</loc>
-    <lastmod>2024-02-26T14:56:11.000Z</lastmod>
   </url>
 </urlset>

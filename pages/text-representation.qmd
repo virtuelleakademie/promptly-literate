@@ -40,9 +40,12 @@ The following is an example of sentence embeddings, showing the distance between
 
 <!-- #TODO: use Hugging Face sentence transformers-->
 <!-- #TODO: use UMAP -->
+
 ```{python}
 from langchain.embeddings.openai import OpenAIEmbeddings
-embedding = OpenAIEmbeddings()
+# embedding = OpenAIEmbeddings()
+embedding = OpenAIEmbeddings(model="text-embedding-3-large")
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt

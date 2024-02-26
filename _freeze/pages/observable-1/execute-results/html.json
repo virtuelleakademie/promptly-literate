@@ -1,6 +1,7 @@
 {
   "hash": "b8212c0cb488a7e9e1639e528472374d",
   "result": {
+    "engine": "knitr",
     "markdown": "---\ntitle: \"Untitled\"\nformat: html\nexecute:\n  cache: false\n---\n\n::: {.cell}\n\n```{.r .cell-code}\nojs_define(data = palmerpenguins::penguins)\n```\n:::\n\n```{ojs}\nviewof bill_length_min = Inputs.range(\n  [32, 50], \n  {value: 35, step: 1, label: \"Bill length (min):\"}\n)\nviewof islands = Inputs.checkbox(\n  [\"Torgersen\", \"Biscoe\", \"Dream\"], \n  { value: [\"Torgersen\", \"Biscoe\"], \n    label: \"Islands:\"\n  }\n)\n```\n\n```{ojs}\nfiltered = transpose(data).filter(function(penguin) {\n  return bill_length_min < penguin.bill_length_mm &&\n         islands.includes(penguin.island);\n})\n```\n\n```{ojs}\nPlot.rectY(filtered, \n  Plot.binX(\n    {y: \"count\"}, \n    {x: \"body_mass_g\", fill: \"species\", thresholds: 20}\n  ))\n  .plot({\n    facet: {\n      data: filtered,\n      x: \"sex\",\n      y: \"species\",\n      marginRight: 80\n    },\n    marks: [\n      Plot.frame(),\n    ]\n  }\n)\n```",
     "supporting": [],
     "filters": [

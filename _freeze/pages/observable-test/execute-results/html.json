@@ -1,6 +1,7 @@
 {
   "hash": "f51209a191b76e53f17740a3606ff62c",
   "result": {
+    "engine": "knitr",
     "markdown": "---\ntitle: \"Untitled\"\nformat: html\nexecute:\n  cache: false\n---\n\n```{ojs}\nx\n```\n\n::: {.cell}\n\n```{.r .cell-code}\nx = c(1,2,3,4)\nojs_define(x)\n```\n:::",
     "supporting": [],
     "filters": [
