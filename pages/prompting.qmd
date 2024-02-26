@@ -28,6 +28,8 @@ code-annotations: select
 
 ```{python}
 import openai
+from openai import OpenAI
+client = OpenAI()
 import os
 
 from dotenv import load_dotenv, find_dotenv
@@ -39,14 +41,14 @@ from IPython.display import display, Markdown, Latex, HTML, JSON
 ```
 
 ```{python}
-def get_completion(prompt, model="gpt-3.5-turbo", temperature=0.0):
+def get_completion(prompt, model="gpt-4-turbo-preview", temperature=0.0):
     messages = [{"role": "user", "content": prompt}]
-    response = openai.ChatCompletion.create(
+    response = client.chat.completions.create(
         model=model,
         messages=messages,
         temperature=temperature
     )
-    return response.choices[0].message["content"]
+    return response.choices[0].message.content
 ```
 
 
