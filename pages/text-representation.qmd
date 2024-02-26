@@ -38,7 +38,8 @@ You can read more about text embeddings in this [👉 post](https://docs.cohere.
 
 The following is an example of sentence embeddings, showing the distance between sentences. The distance is calculated using the dot product (cosine similarity) of the embeddings.
 
-
+<!-- #TODO: use Hugging Face sentence transformers-->
+<!-- #TODO: use UMAP -->
 ```{python}
 from langchain.embeddings.openai import OpenAIEmbeddings
 embedding = OpenAIEmbeddings()
@@ -131,7 +132,7 @@ You can see that the sentences are grouped together by semantic similarity. For 
 
 This is important: embeddings capture the meaning of words and sentences, and are the basis of LLMs' ability to "understand" language. 
 
-Here is an alternative similarity plot,  showing the general topic of each sentence. 
+Here is an alternative similarity plot, showing the general topic of each sentence. 
 
 ```{python}
 topics = {"Greeting": 4, "Fruit": 3,
