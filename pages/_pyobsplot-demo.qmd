@@ -1,0 +1,48 @@
+---
+title: "Pyobsplot"
+jupyter: python3
+execute: 
+  cache: false
+  keep-ipynb: true
+---
+
+    
+    
+```{python}
+import polars as pl
+from pyobsplot import Plot
+
+penguins = pl.read_csv("https://github.com/juba/pyobsplot/raw/main/doc/data/penguins.csv")
+
+Plot.plot({
+    "grid": True,
+    "color": {"legend": True},
+    "marks": [
+        Plot.dot(
+            penguins, 
+            {"x": "flipper_length_mm", "y": "body_mass_g", "fill": "species"}
+        ),
+        Plot.density(
+            penguins, 
+            {"x": "flipper_length_mm", "y": "body_mass_g", "stroke": "species"}
+        )
+    ]
+})
+```
+
+
+```{python}
+from pyobsplot import Obsplot, Plot, d3
+
+op = Obsplot(renderer="widget")
+
+Plot.plot({
+    "x": {
+        "axis": None
+    },
+    "marks": [
+        Plot.ruleY([0], {"stroke": "steelblue"}),
+        Plot.lineY(d3.cumsum({ "length": 100 }, d3.randomNormal()))
+    ]
+})
+```

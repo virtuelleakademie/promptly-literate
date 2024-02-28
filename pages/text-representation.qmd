@@ -42,14 +42,15 @@ The following is an example of sentence embeddings, showing the distance between
 <!-- #TODO: use UMAP -->
 
 ```{python}
-from langchain.embeddings.openai import OpenAIEmbeddings
-# embedding = OpenAIEmbeddings()
-embedding = OpenAIEmbeddings(model="text-embedding-3-large")
+from langchain_openai import OpenAIEmbeddings
+embedding = OpenAIEmbeddings(model="text-embedding-3-large")# embedding = OpenAIEmbeddings()
 
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from pyobsplot import Plot, d3, Math, js
+from pyobsplot import Obsplot, Plot, d3, Math, js
+
+op = Obsplot(renderer="widget")
 ```
 
 ```{python}
@@ -103,7 +104,7 @@ display(sentences_df)
 
 ```{python}
 #| warning: false
-Plot.plot(
+op(
     {
         "height": 640,
         "padding": 0.05,
