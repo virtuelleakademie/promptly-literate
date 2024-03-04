@@ -43,7 +43,7 @@ The following is an example of sentence embeddings, showing the distance between
 
 ```{python}
 from langchain_openai import OpenAIEmbeddings
-embedding = OpenAIEmbeddings(model="text-embedding-3-large")# embedding = OpenAIEmbeddings()
+embedding = OpenAIEmbeddings()
 
 import numpy as np
 import pandas as pd
