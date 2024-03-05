@@ -307,10 +307,6 @@ Show me all the text. Format the text you added as _TEXT_ and show me the delete
 - {{< bi link >}} [OpenAI cookbook](https://cookbook.openai.com/)
 
 
-**Zum Ausprobieren:**
-
-- {{< bi brush >}} [Aktivität](../pages/activity-cas-hochschuldidaktik.qmd)
-
 ## Wofür sind LLMs gut?
 
 - Korrigieren von Grammatik, schlechtem Stil, usw.
@@ -321,6 +317,12 @@ Show me all the text. Format the text you added as _TEXT_ and show me the delete
 - Schreiben von Computercode
 - Beantworten von Fragen zu einer Wissensbasis
 - Faktische Ausgabe nur mit RAG oder Websuche
+
+
+## {{< bi brush >}} Übungen
+
+[{{< bi link >}} Prompt Techniken selber ausprobieren](../pages/activity-cas-hochschuldidaktik.qmd)
+
 
 ## Fortgeschrittene LLM-Techniken
 

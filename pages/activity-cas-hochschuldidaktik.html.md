@@ -1,7 +1,7 @@
 ---
 title: 'Activities: Learn Prompting'
 description: |
-  Programming a large language model.
+  Basic programming techniques.
 date: last-modified
 date-format: 'DD MMM, YYYY'
 author:
