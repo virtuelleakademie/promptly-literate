@@ -1452,8 +1452,8 @@
     "objectID": "slides/cas-hochschuldidaktik.html#orientierungshilfe-für-lehrpersonen-der-bfh",
     "href": "slides/cas-hochschuldidaktik.html#orientierungshilfe-für-lehrpersonen-der-bfh",
     "title": "CAS Hochschuldidaktik",
-    "section": "",
-    "text": "Note\n\n\n\n\nHaltung der BFH: Technologien, die den Lernprozess unterstützen und praxisrelevant sind, sollen in die Lehre einbezogen werden.\nEinsatz von KI in der Lehre: Die Mehrheit der Studierenden wird KI-Tools nutzen. Studierende sollen lernen, Technologien kompetent einzusetzen und kritisch zu hinterfragen.\n\n\n\n \n Knowledge Base der Virtuellen Akademie\n PDF"
+    "section": " Orientierungshilfe für Lehrpersonen der BFH",
+    "text": "Orientierungshilfe für Lehrpersonen der BFH\n\n\n\n\nHaltung der BFH: Technologien, die den Lernprozess unterstützen und praxisrelevant sind, sollen in die Lehre einbezogen werden.\nEinsatz von KI in der Lehre: Die Mehrheit der Studierenden wird KI-Tools nutzen. Studierende sollen lernen, Technologien kompetent einzusetzen und kritisch zu hinterfragen.\n\n\n\n\n \n Knowledge Base der Virtuellen Akademie\n PDF"
   },
   {
     "objectID": "slides/cas-hochschuldidaktik.html#assistant-menagerie",
@@ -1474,7 +1474,7 @@
     "href": "slides/cas-hochschuldidaktik.html#was-ist-ein-prompt",
     "title": "CAS Hochschuldidaktik",
     "section": "Was ist ein Prompt?",
-    "text": "Was ist ein Prompt?\n\nDas Ziel eines LLM ist es, Text zu vervollständigen.\nEin Prompt ist der Input (Anweisung) eines Sprachmodelles.\n\n\n\n\n\n\n\n Prompt:\n\n\n\nWrite a haiku about a workshop on large language models.\n\n\n\n\n\n\n\n\n Output:\n\n\n\nWhispers of circuits, Knowledge blooms in bytes and bits, Model learns and fits.\n\n\n\nDie Antwort wird als Fortsetzung des Prompts generiert."
+    "text": "Was ist ein Prompt?\n\nDas Ziel eines LLM ist es, Text zu vervollständigen.\nEin Prompt ist der Input (Anweisung) eines Sprachmodelles.\n\n\n\n\n Prompt:\n\n\nWrite a haiku about a workshop on large language models.\n\n\n\n\n\n\n Output:\n\n\nWhispers of circuits, Knowledge blooms in bytes and bits, Model learns and fits.\n\n\n\n\nDie Antwort wird als Fortsetzung des Prompts generiert."
   },
   {
     "objectID": "slides/cas-hochschuldidaktik.html#fähigkeiten-freischalten",
@@ -1495,14 +1495,14 @@
     "href": "slides/cas-hochschuldidaktik.html#klare-anweisungen-schreiben",
     "title": "CAS Hochschuldidaktik",
     "section": "Klare Anweisungen schreiben",
-    "text": "Klare Anweisungen schreiben\n\n\n\nTeile einem LLM mit, welche Art von Gespräch du führen möchtest.\n\nAnweisungen sollten klar und eindeutig sein.\nGib an, welche Rolle (Persona) das Modell übernehmen soll.\n\n\n\n\n\n\n\n\n\nNote\n\n\n\n\nGib Details in deiner Anfrage an, um relevantere Antworten zu bekommen\nBitte das Modell, eine Persona zu übernehmen\nVerwende Trennzeichen, um klar auf die unterschiedlichen Teile der Eingabe hinzuweisen\nGib die Schritte an, die zur Durchführung einer Aufgabe erforderlich sind\nGib Beispiele\nGib die gewünschte Länge der Ausgabe an"
+    "text": "Klare Anweisungen schreiben\n\n\n\nTeile einem LLM mit, welche Art von Gespräch du führen möchtest.\n\nAnweisungen sollten klar und eindeutig sein.\nGib an, welche Rolle (Persona) das Modell übernehmen soll.\n\n\n\n\n\n\n\nGib Details in deiner Anfrage an, um relevantere Antworten zu bekommen\nBitte das Modell, eine Persona zu übernehmen\nVerwende Trennzeichen, um klar auf die unterschiedlichen Teile der Eingabe hinzuweisen\nGib die Schritte an, die zur Durchführung einer Aufgabe erforderlich sind\nGib Beispiele\nGib die gewünschte Länge der Ausgabe an"
   },
   {
     "objectID": "slides/cas-hochschuldidaktik.html#eine-rolle-zuweisen",
     "href": "slides/cas-hochschuldidaktik.html#eine-rolle-zuweisen",
     "title": "CAS Hochschuldidaktik",
     "section": "Eine Rolle zuweisen",
-    "text": "Eine Rolle zuweisen\n\n\n\n\n\n\n Prompt:\n\n\n\nYou are an expert on learning techniques. Explain the concept of ‘flipped classroom’ in one paragraph.\n\n\n\n\n\n\n\n\n Prompt:\n\n\n\nYou are an expert on financial derivatives. Explain the concept of ‘flipped classroom’ in one paragraph."
+    "text": "Eine Rolle zuweisen\n\n\n\n Prompt:\n\n\nYou are an expert on learning techniques. Explain the concept of ‘flipped classroom’ in one paragraph.\n\n\n\n\n\n\n Prompt:\n\n\nYou are an expert on financial derivatives. Explain the concept of ‘flipped classroom’ in one paragraph."
   },
   {
     "objectID": "slides/cas-hochschuldidaktik.html#referenztexte-bereitstellen",
@@ -1523,7 +1523,7 @@
     "href": "slides/cas-hochschuldidaktik.html#markdown-formatierung-verwenden",
     "title": "CAS Hochschuldidaktik",
     "section": "Markdown-Formatierung verwenden",
-    "text": "Markdown-Formatierung verwenden\n\nVerwende Markdown zur Formatierung deiner Prompts.\nWeise das LLM an, den Output mit Markdown zu formatieren.\n\n\n\n\n\n\n\n Prompt:\n\n\n\nImprove this haiku:\n\n## Whispers of circuits\n\nWords weave through the air,  \nMinds meld with machine's deep thought,  \nKnowledge blooms anew.  \n\nIt is about about a workshop on large language models. I'm not happy with the phrase \" machine's deep thought\".\n\nShow me all the text. Format the text you added as _TEXT_ and show me the deleted text formatted as ~~TEXT~~ in the new haiku. Keep you review short (max 100 words)."
+    "text": "Markdown-Formatierung verwenden\n\nVerwende Markdown zur Formatierung deiner Prompts.\nWeise das LLM an, den Output mit Markdown zu formatieren.\n\n\n\n\n Prompt:\n\n\nImprove this haiku:\n\n## Whispers of circuits\n\nWords weave through the air,  \nMinds meld with machine's deep thought,  \nKnowledge blooms anew.  \n\nIt is about about a workshop on large language models. I'm not happy with the phrase \" machine's deep thought\".\n\nShow me all the text. Format the text you added as _TEXT_ and show me the deleted text formatted as ~~TEXT~~ in the new haiku. Keep you review short (max 100 words)."
   },
   {
     "objectID": "slides/cas-hochschuldidaktik.html#fortgeschrittene-prompting-techniken",
@@ -1579,7 +1579,7 @@
     "href": "slides/cas-hochschuldidaktik.html#references",
     "title": "CAS Hochschuldidaktik",
     "section": "References",
-    "text": "References\n\n\nYang, Chengrun, Xuezhi Wang, Yifeng Lu, Hanxiao Liu, Quoc V. Le, Denny Zhou, and Xinyun Chen. 2023. “Large Language Models as Optimizers.” September 6, 2023. http://arxiv.org/abs/2309.03409."
+    "text": "References\n\n\nYang, Chengrun, Xuezhi Wang, Yifeng Lu, Hanxiao Liu, Quoc V. Le, Denny Zhou, and Xinyun Chen. 2023. “Large Language Models as Optimizers.” September 6, 2023. http://arxiv.org/abs/2309.03409.\n\n\n\n\n\nback to website"
   },
   {
     "objectID": "slides/questions-topics.html#themen",
