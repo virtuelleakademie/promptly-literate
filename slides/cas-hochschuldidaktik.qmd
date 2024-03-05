@@ -1,0 +1,386 @@
+---
+title: "CAS Hochschuldidaktik"
+subtitle: "Eine Einführung in KI-basierte Schreibtools in der Lehre"
+author: "Andrew Ellis & Kaspar Kaufmann"
+date: last-modified
+date-format: "DD MMMM, YYYY"
+bibliography: ../bibliography.bib
+# nocite: |
+#   @shanahanTalkingLargeLanguage2023, @shanahanRolePlayLargeLanguage2023, @weiEmergentAbilitiesLarge2022b
+format: 
+    revealjs:
+        theme: [simple, ../styles/custom-reveal.scss]
+      #   theme: default
+        title-slide-attributes:
+          # data-background-image: ../assets/background-purple.png
+          # data-background-size: contain
+          data-background-opacity: "1"
+        # logo: ../assets/robot.png
+        footer: <a href="../index.html">back to website {{< bi box-arrow-up-left >}} </a>
+        # navigation-mode: vertical
+        progress: true
+        scrollable: true
+        slide-number: true
+        slide-level: 2
+        show-slide-number: all
+        controls-layout: bottom-right
+        controls-tutorial: true
+        preview-links: auto
+        chalkboard: true
+        from: markdown+emoji
+        code-fold: true
+        code-summary: "Show code"
+        code-tools: true
+        menu: 
+          sticky: true
+          keyboard: true
+          autoOpen: true
+          width: normal
+          numbers: true
+          markers: true
+        callout-appearance: simple
+        callout-icon: false
+revealjs-plugins:
+  - attribution
+---
+
+
+
+## {{< bi bookmark-star >}} Orientierungshilfe für Lehrpersonen der BFH
+
+
+:::{.callout-note}
+
+- **Haltung der BFH**: Technologien, die den Lernprozess unterstützen und praxisrelevant sind, sollen in die Lehre einbezogen werden.
+
+- **Einsatz von KI in der Lehre**: Die Mehrheit der Studierenden wird KI-Tools nutzen. Studierende sollen lernen, Technologien kompetent einzusetzen und kritisch zu hinterfragen.
+
+:::
+
+<br> <br>
+
+[{{< bi link >}} Knowledge Base der Virtuellen Akademie](https://virtuelleakademie.ch/knowledge-base/ki-basierte-schreibtools-in-der-lehre-chatgpt-im-fokus/)
+
+[{{< bi link >}} PDF](https://bernerfachhochschule.sharepoint.com/sites/mybfh-BFH-News-de/SitePages/Nachrichten-K%C3%BCnstliche-Intelligenz-(KI)-in-der-Lehre.aspx)
+
+
+# {{< bi house-door >}} Take-home messages
+
+- KI-Tools selber ausprobieren
+- Effektive Prompting-Strategien kennenlernen
+- KI-Kompetenz in der Lehre fördern
+- Output von KI-Tools kritisch evaluieren
+  
+
+
+## {{< bi collection >}} Assistant Menagerie {.smaller}
+
+| Assistant                                  | Provider         | Privacy | LLM                                                                                                                                                                                                                                                                                                     | Capabilities                              | Pricing model    |
+| ------------------------------------------ | ---------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ---------- |
+| [ChatGPT](https://chat.openai.com/)        | OpenAI           | 👎🏼  | GPT-3.5, GPT-4                                                                                                                                                                                                                                                                                          | Web search, DALLE, GPTs, multimodal input | 💶        |
+| [Copilot](https://copilot.microsoft.com/)  | Microsoft        | 👍🏼  | GPT-3.5, GPT-4                                                                                                                                                                                                                                                                                          | Web search, DALLE, multimodal input       | 🆓 Für BFH Mitarbeitende/Studierende|
+| [Gemini](https://gemini.google.com/app)    | Google           | 👎🏼  | Gemini Ultra/Pro/Nano                                                                                                                                                                                                                                                               | Web search, multimodal input              | 💶        |
+| [HuggingChat](https://huggingface.co/chat) | 🤗 Hugging Face | 👍🏼  | Open models ([CodeLlama](https://about.fb.com/news/2023/08/code-llama-ai-for-coding/), [Llama 2](https://huggingface.co/meta-llama/Llama-2-70b-chat-hf),  [Mistral](https://mistral.ai/news/announcing-mistral-7b/), [Gemma](https://blog.google/technology/developers/gemma-open-models/)) |                                           | 🆓         |
+
+
+
+
+
+
+
+
+
+
+
+
+## {{< bi magic >}} Prompting
+
+<br> <br>
+![](../assets/images/magic.svg){width=80%}
+
+
+## Was ist ein Prompt?
+
+- Das Ziel eines LLM ist es, Text zu vervollständigen.
+- Ein Prompt ist der Input (Anweisung) eines Sprachmodelles. 
+
+:::{.callout-note}
+## {{< bi person >}} Prompt:
+Write a haiku about a workshop on large language models.
+::: 
+:::{.callout-warning}
+## {{< bi robot >}} Output:
+Whispers of circuits,
+                            Knowledge blooms in bytes and bits,
+                            Model learns and fits.
+:::
+
+
+- Die Antwort wird als Fortsetzung des Prompts generiert.
+
+
+
+## Fähigkeiten freischalten
+<!-- :::: {.columns}
+::: {.column width="50%"} -->
+<!-- ::: {.incremental} -->
+- LLMs lernen Aufgaben zu lösen, für die sie nicht trainiert wurden.<!-- - They can solve logic puzzles and perform complex multistep reasoning.  -->
+- Fähigkeiten müssen durch den richtigen Prompt "freigeschaltet" werden.  
+![](../assets/images/unlock.svg)
+<!-- ::: -->
+
+<!-- :::
+
+::: {.column width="50%"} -->
+- Was ist der richtige Prompt?
+  + Sehr ähnlich zu dem, was man einem menschlichen Dialogpartner/Assistenten sagen würde.
+  + Chancen, die gewünschte Ausgabe zu erhalten, werden durch gute Fragen oder genügend Informationen erhöht.
+<!-- :::
+:::: -->
+
+
+## Grundlagen des Prompting
+
+- OpenAI gibt eine [{{< bi link >}} Reihe von Strategien](https://platform.openai.com/docs/guides/prompt-engineering) für die effektive Nutzung ihrer Modelle.
+
+
+
+Diese beinhalten:
+
+- klare Anweisungen schreiben
+- Referenztexte bereitstellen
+- Aufgaben in Teilaufgaben unterteilen
+- dem LLM 'Zeit zum Nachdenken' geben
+- externe Tools verwenden
+
+
+## Klare Anweisungen schreiben
+
+:::: {.columns}
+::: {.column width="50%"}
+- Teile einem LLM mit, welche Art von Gespräch du führen möchtest.
+  - Anweisungen sollten klar und eindeutig sein.
+  - Gib an, welche Rolle (Persona) das Modell übernehmen soll.
+
+:::
+
+::: {.column width="50%"}
+:::{.callout-note}
+- [Gib Details in deiner Anfrage an, um relevantere Antworten zu bekommen](https://platform.openai.com/docs/guides/prompt-engineering/tactic-include-details-in-your-query-to-get-more-relevant-answers)
+- [Bitte das Modell, eine Persona zu übernehmen](https://platform.openai.com/docs/guides/prompt-engineering/tactic-ask-the-model-to-adopt-a-persona)
+- [Verwende Trennzeichen, um klar auf die unterschiedlichen Teile der Eingabe hinzuweisen](https://platform.openai.com/docs/guides/prompt-engineering/tactic-use-delimiters-to-clearly-indicate-distinct-parts-of-the-input)
+- [Gib die Schritte an, die zur Durchführung einer Aufgabe erforderlich sind](https://platform.openai.com/docs/guides/prompt-engineering/tactic-specify-the-steps-required-to-complete-a-task)
+- [Gib Beispiele](https://platform.openai.com/docs/guides/prompt-engineering/tactic-provide-examples)
+- [Gib die gewünschte Länge der Ausgabe an](https://platform.openai.com/docs/guides/prompt-engineering/tactic-specify-the-desired-length-of-the-output)
+
+
+:::
+:::
+::::
+
+
+## Eine Rolle zuweisen
+
+:::{.callout-note}
+## {{< bi person >}} Prompt:
+You are an **expert on learning techniques**. Explain the concept of 'flipped classroom' in one paragraph.
+:::
+
+:::{.callout-note}
+## {{< bi person >}} Prompt:
+You are an **expert on financial derivatives**. Explain the concept of 'flipped classroom' in one paragraph.
+:::
+
+
+
+## Referenztexte bereitstellen
+
+- Stelle einem Modell vertrauenswürdige und relevante Informationen zur Verfügung.
+- Weise das Modell an, die bereitgestellten Informationen zur Erstellung der Antwort zu verwenden.
+
+
+[{{< bi link >}} Weise das Modell an, eine Antwort unter Verwendung eines Referenztextes zu geben](https://platform.openai.com/docs/guides/prompt-engineering/tactic-instruct-the-model-to-answer-using-a-reference-text)
+<!-- :::aside
+This leads to **retrieval-augmented generation (RAG)**. First create a database of documents, then retrieve the most relevant documents, based on a user's query. These are then included in the prompt to the model. The model is instructed to use the information in the documents to compose its answer.
+::: -->
+
+<!-- ## Referenztexte bereitstellen {.scrollable}
+
+:::{.callout-note}
+{{< bi person >}}: 
+You will be provided with 
+- context: a document delimited by **triple quotes**
+- a question 
+
+Your task is to provide a simplified answer to the question using only the provided document and to cite the passage(s) of the document used to answer the question. If the document does not contain the information needed to answer this question then simply write: "Insufficient information." If an answer to the question is provided, it must be annotated with a citation. Use the following format for to cite relevant passages ({"citation": …}). Cite only the relevant sentence(s) of the document, not the entire document.
+
+**Context**:"""The flipped classroom intentionally shifts instruction to a learner-centered model, in which students are often initially introduced to new topics outside of school, freeing up classroom time for the exploration of topics in greater depth, creating meaningful learning opportunities. With a flipped classroom, 'content delivery' may take a variety of forms, often featuring video lessons prepared by the teacher or third parties, although online collaborative discussions, digital research, and text readings may alternatively be used. The ideal length for a video lesson is widely cited as eight to twelve minutes."""
+
+**Question**: What is a good length for a video?
+
+::: -->
+
+
+
+## Einem LLM 'Zeit zum Denken' geben
+
+- LLMs generieren Text ein Wort nach dem anderen - das Modell verwendet die gleiche Menge an Berechnung für jedes Wort.
+- Wenn das Modell gezwungen wird, mehr Text zu produzieren, hat es mehr Schritte um "Nachzudenken".
+
+{{< bi arrow-return-right >}} Das Modell wird eine bessere Antwort geben.
+
+- Diese Technik ist bekannt als **chain-of-thought**-Prompting und kann oft einfach durch die Anweisung an das Modell induziert werden, "Schritt für Schritt zu denken" (`think step-by-step`) oder "Nimm dir einen Moment Zeit und arbeite dieses Problem Schritt für Schritt durch" (`Take a deep breath and work on this problem step-by-step`)[@yangLargeLanguageModels2023].
+- Copilot und ChatGPT machen dies seit Neuem automatisch.
+
+
+
+
+<!-- ## chain-of-thought-Prompting
+
+- **chain-of-thought**-Prompting ermutigt das LLM, seine Zwischenschritte im Denken zu "erklären".
+- Ermöglicht komplexes Denken und Problemlösen.
+
+Statt dessen:
+
+:::{.callout-note}
+{{< bi person >}}: The odd numbers in this group add up to an even number: 4, 8, 9, 15, 12, 2, 1. Yes or no?
+:::
+
+Do this:
+
+:::{.callout-note}
+{{< bi person >}}: Is this statement correct? The odd numbers in this group add up to an even number: 4, 8, 9, 15, 12, 2, 1. 
+
+Reason through the problem step-by-step. Start by identifying the odd numbers. Next, add them up. Finally, determine if the sum is even or odd. Write down your reasoning steps in a numbered list.
+
+:::
+
+
+## Zero-shot chain-of-thought prompting
+
+- Zero-Shot chain-of-thought-Prompting ist eine Technik, um das Modell dazu zu führen, ein Problem Schritt für Schritt zu durchdenken, ohne Beispiele oder Trainingsdaten bereitzustellen.
+
+:::{.callout-note}
+
+{{< bi person >}}: The odd numbers in this group add up to an even number: 4, 8, 9, 15, 12, 2, 1. <mark style="background: #BBFABBA6;">Take a deep breath and think step-by-step.</mark>
+
+
+:::
+
+
+:::aside
+When using GPT-4, ChatGPT and Copilot do this automatically.
+::: -->
+
+
+## Markdown-Formatierung verwenden
+
+- Verwende [Markdown](https://www.markdownguide.org/) zur Formatierung deiner Prompts.
+- Weise das LLM an, den Output mit Markdown zu formatieren.
+  
+:::{.callout-note}
+## {{< bi person >}} Prompt:
+
+```
+Improve this haiku:
+
+## Whispers of circuits
+
+Words weave through the air,  
+Minds meld with machine's deep thought,  
+Knowledge blooms anew.  
+
+It is about about a workshop on large language models. I'm not happy with the phrase " machine's deep thought".
+
+Show me all the text. Format the text you added as _TEXT_ and show me the deleted text formatted as ~~TEXT~~ in the new haiku. Keep you review short (max 100 words).
+```
+:::
+
+<!-- Try an example in [ChatGPT](https://chat.openai.com/share/c2230c3c-04cc-4aa5-b802-9646496aadbd). -->
+
+## Fortgeschrittene Prompting-Techniken
+
+**Weiterführende Information zu Prompting-Techniken:**
+
+- {{< bi link >}} [Learn prompting](https://learnprompting.org/docs/intro)
+- {{< bi link >}} [Prompting guide](https://www.promptingguide.ai/)
+- {{< bi link >}} [OpenAI cookbook](https://cookbook.openai.com/)
+
+
+**Zum Ausprobieren:****
+
+- {{< bi brush >}} [Aktivität](../pages/activity-cas-hochschuldidaktik.qmd)
+
+## Wofür sind LLMs gut?
+
+- Korrigieren von Grammatik, schlechtem Stil, usw.
+- Umschreiben/Paraphrasieren von Texten
+- Analysieren von Texten (Argumentation, Stil, usw.)
+- Übersetzen von Sprachen
+- Erstellen von strukturiertem Output
+- Schreiben von Computercode
+- Beantworten von Fragen zu einer Wissensbasis
+- Faktische Ausgabe nur mit RAG oder Websuche
+
+## Fortgeschrittene LLM-Techniken
+
+![](../assets/images/finetuning-vs-prompting.png){width=50%}
+
+## Retrieval-augmented Generation (RAG)
+
+![](../assets/images/rag-volvo.png){width=100%}
+
+:::{.attribution}
+
+Abbildung von [Pinecone](https://www.pinecone.io/learn/retrieval-augmented-generation/)
+:::
+
+## Websuche
+
+- Ähnlich wie die Retrieval-augmented Generation, aber mit Websuche.
+- LLMs können angewiesen werden, die Websuche zur Informationsbeschaffung zu nutzen.
+- LLM fasst die Informationen zusammen und benutzt sie als Referenztext zur Beantwortung der Frage.
+- Copilot macht dies automatisch - ChatGPT (nur kostenpflichtige Version) kann angewiesen werden, dies zu tun.
+  
+
+
+## Externe Werkzeuge
+
+- LLMs können angewiesen werden, externe Werkzeuge zur Aufgabenerfüllung zu nutzen.
+- Zum Beispiel kann ein LLM angewiesen werden, einen Taschenrechner zur Durchführung von Rechenoperationen zu verwenden.
+- OpenAI nennt diesen Ansatz [Funktionsaufruf](https://platform.openai.com/docs/guides/function-calling/function-calling).
+
+<!-- ## Multi-agent conversations
+
+:::: {.columns}
+::: {.column width="50%"}
+
+![](../assets/images/multi-agent.excalidraw.svg){width=100%}
+:::
+
+::: {.column width="50%"}
+
+- {{< bi arrow-right-circle >}} DEMO: haiku writing team
+:::
+:::: -->
+
+## Lokale Modelle
+
+- Laden Sie Modelle herunter und führen Sie sie lokal aus, wie z.B. Llama 2 oder Code Llama.
+- [Ollama](https://ollama.com/)
+- [LM Studio](https://lmstudio.ai/)
+
+Hardwareanforderungen:
+
+- Apple Silicon Mac (M1/M2/M3) / Windows / Linux
+- Es wird empfohlen, 16GB+ RAM zu haben
+- NVIDIA/AMD GPUs werden unterstützt
+
+
+
+
+
+## References {background-color="#D8DEE9"}
+
+::: {#refs}
+:::
