@@ -307,7 +307,7 @@ Show me all the text. Format the text you added as _TEXT_ and show me the delete
 - {{< bi link >}} [OpenAI cookbook](https://cookbook.openai.com/)
 
 
-**Zum Ausprobieren:****
+**Zum Ausprobieren:**
 
 - {{< bi brush >}} [Aktivität](../pages/activity-cas-hochschuldidaktik.qmd)
 
