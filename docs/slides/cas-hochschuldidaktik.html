@@ -9,13 +9,11 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-contrib/bootstrap-icons-1.11.1/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
+<link href="../site_libs/quarto-contrib/bootstrap-icons-1.11.1/all.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.550">
 
-  <meta name="author" content="Andrew Ellis">
-  <title>Promptly Literate // - The busy lecturer’s guide to LLMs</title>
+  <meta name="author" content="Andrew Ellis &amp; Kaspar Kaufmann">
+  <title>Promptly Literate // - CAS Hochschuldidaktik</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -282,6 +280,7 @@
     }
     .reveal .slide:not(.center) {
       height: 100%;
+      overflow-y: auto;
     }
     .reveal .slide.scrollable {
       overflow-y: auto;
@@ -358,9 +357,11 @@
       margin-right: 0; 
     }
   </style>
-<meta property="og:title" content="Promptly Literate // - The busy lecturer’s guide to LLMs">
+<meta property="og:title" content="Promptly Literate // - CAS Hochschuldidaktik">
+<meta property="og:description" content="Eine Einführung in KI-basierte Schreibtools in der Lehre">
 <meta property="og:site_name" content="Promptly Literate //">
-<meta name="twitter:title" content="Promptly Literate // - The busy lecturer’s guide to LLMs">
+<meta name="twitter:title" content="Promptly Literate // - CAS Hochschuldidaktik">
+<meta name="twitter:description" content="Eine Einführung in KI-basierte Schreibtools in der Lehre">
 <meta name="twitter:creator" content="@awellis">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -369,31 +370,47 @@
     <div class="slides">
 
 <section id="title-slide" data-background-opacity="1" class="quarto-title-block center">
-  <h1 class="title">The busy lecturer’s guide to LLMs</h1>
+  <h1 class="title">CAS Hochschuldidaktik</h1>
+  <p class="subtitle">Eine Einführung in KI-basierte Schreibtools in der Lehre</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Andrew Ellis 
+Andrew Ellis &amp; Kaspar Kaufmann 
 </div>
 </div>
 </div>
 
-  <p class="date">28 February, 2024</p>
+  <p class="date">05 March, 2024</p>
 </section>
+<section id="orientierungshilfe-für-lehrpersonen-der-bfh" class="slide level2">
+<h2><i class="bi-bookmark-star " style="" role="img" aria-hidden="true"></i> Orientierungshilfe für Lehrpersonen der BFH</h2>
+<div class="callout callout-note no-icon callout-style-simple">
+<div class="callout-body">
+<div class="callout-content">
+<ul>
+<li><p><strong>Haltung der BFH</strong>: Technologien, die den Lernprozess unterstützen und praxisrelevant sind, sollen in die Lehre einbezogen werden.</p></li>
+<li><p><strong>Einsatz von KI in der Lehre</strong>: Die Mehrheit der Studierenden wird KI-Tools nutzen. Studierende sollen lernen, Technologien kompetent einzusetzen und kritisch zu hinterfragen.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<p><br> <br></p>
+<p><a href="https://virtuelleakademie.ch/knowledge-base/ki-basierte-schreibtools-in-der-lehre-chatgpt-im-fokus/"><i class="bi-link " style="" role="img" aria-hidden="true"></i> Knowledge Base der Virtuellen Akademie</a></p>
+<p><a href="https://bernerfachhochschule.sharepoint.com/sites/mybfh-BFH-News-de/SitePages/Nachrichten-K%C3%BCnstliche-Intelligenz-(KI)-in-der-Lehre.aspx"><i class="bi-link " style="" role="img" aria-hidden="true"></i> PDF</a></p>
+</section>
+<section>
 <section id="take-home-messages" class="title-slide slide level1 center">
 <h1><i class="bi-house-door " style="" role="img" aria-hidden="true"></i> Take-home messages</h1>
 <ul>
-<li>Explore LLMs firsthand to understand their strengths and weaknesses.</li>
-<li>Combine domain knowledge with an understanding of how LLMs work, and effective prompting strategies.</li>
-<li>Integrate LLMs into teaching to foster AI literacy among students.</li>
-<li>Critically evaluate an LLM’s output. They are language models, not knowledge bases.</li>
-<li>Keep a human in the loop.</li>
+<li>KI-Tools selber ausprobieren</li>
+<li>Effektive Prompting-Strategien kennenlernen</li>
+<li>KI-Kompetenz in der Lehre fördern</li>
+<li>Output von KI-Tools kritisch evaluieren</li>
 </ul>
 </section>
-
-<section id="assistant-menagerie" class="title-slide slide level1 smaller center">
-<h1>Assistant menagerie</h1>
+<section id="assistant-menagerie" class="slide level2 smaller">
+<h2><i class="bi-collection " style="" role="img" aria-hidden="true"></i> Assistant Menagerie</h2>
 <table>
 <thead>
 <tr class="header">
@@ -420,13 +437,13 @@ Andrew Ellis
 <td>👍🏼</td>
 <td>GPT-3.5, GPT-4</td>
 <td>Web search, DALLE, multimodal input</td>
-<td>🆓 for BFH employees and students</td>
+<td>🆓 Für BFH Mitarbeitende/Studierende</td>
 </tr>
 <tr class="odd">
 <td><a href="https://gemini.google.com/app">Gemini</a></td>
 <td>Google</td>
 <td>👎🏼</td>
-<td>Gemini Ultra, Gemini Pro, and Gemini Nano</td>
+<td>Gemini Ultra/Pro/Nano</td>
 <td>Web search, multimodal input</td>
 <td>💶</td>
 </tr>
@@ -434,448 +451,105 @@ Andrew Ellis
 <td><a href="https://huggingface.co/chat">HuggingChat</a></td>
 <td>🤗 Hugging Face</td>
 <td>👍🏼</td>
-<td>Various open models, e.g.&nbsp;<a href="https://about.fb.com/news/2023/08/code-llama-ai-for-coding/">CodeLlama</a>, <a href="https://huggingface.co/meta-llama/Llama-2-70b-chat-hf">Llama 2</a>, <a href="https://mistral.ai/news/announcing-mistral-7b/">Mistral</a>, <a href="https://blog.google/technology/developers/gemma-open-models/">Gemma</a></td>
+<td>Open models (<a href="https://about.fb.com/news/2023/08/code-llama-ai-for-coding/">CodeLlama</a>, <a href="https://huggingface.co/meta-llama/Llama-2-70b-chat-hf">Llama 2</a>, <a href="https://mistral.ai/news/announcing-mistral-7b/">Mistral</a>, <a href="https://blog.google/technology/developers/gemma-open-models/">Gemma</a>)</td>
 <td></td>
 <td>🆓</td>
 </tr>
 </tbody>
 </table>
 </section>
-
-<section>
-<section id="training" class="title-slide slide level1 center">
-<h1>Training</h1>
-<div class="columns">
-<div class="column" style="width:50%;">
-
-</div><div class="column" style="width:50%;">
-<p><img data-src="../assets/images/LLM-Bookshelf.png" style="width:100.0%"></p>
-</div>
-</div>
+<section id="prompting" class="slide level2">
+<h2><i class="bi-magic " style="" role="img" aria-hidden="true"></i> Prompting</h2>
+<p><br> <br> <img data-src="../assets/images/magic.svg" style="width:80.0%"></p>
 </section>
-<section id="how-to-train-a-language-model" class="slide level2">
-<h2>How to train a language model</h2>
-<p><br> <br></p>
-
-<img data-src="../assets/images/llm-training.excalidraw.svg" style="width:80.0%" class="r-stretch"></section>
-<section id="example" class="slide level2">
-<h2>Example</h2>
-
-<img data-src="../assets/images/pretraining.png" style="width:100.0%" class="r-stretch"></section>
-<section id="generalization" class="slide level2">
-<h2>Generalization</h2>
+<section id="was-ist-ein-prompt" class="slide level2">
+<h2>Was ist ein Prompt?</h2>
 <ul>
-<li>The ability to apply knowledge to new, unseen data/situations</li>
-<li>E.g. a language model should learn to generate rhymes</li>
-<li>Extracts knowledge from text: linguistic, factual, commonsense, etc.</li>
+<li>Das Ziel eines LLM ist es, Text zu vervollständigen.</li>
+<li>Ein Prompt ist der Input (Anweisung) eines Sprachmodelles.</li>
 </ul>
-</section>
-<section id="what-is-learned" class="slide level2">
-<h2>What is learned?</h2>
-<div>
-<ul>
-<li class="fragment">An LLM learns to predict the next word in a sequence, given the previous words: <span class="math display">\[ P(word | context) \]</span></li>
-<li class="fragment">Think of as “fancy autocomplete” (but very very powerful and sopisticated)</li>
-</ul>
-</div>
-<div class="fragment">
-<p><img data-src="../assets/images/ppl_full.gif" style="width:100.0%"></p>
-</div>
-</section></section>
-<section>
-<section id="text-generation" class="title-slide slide level1 center">
-<h1>Text Generation</h1>
-<div class="columns">
-<div class="column" style="width:50%;">
-
-</div><div class="column" style="width:50%;">
-<p><img data-src="../assets/images/textgeneration.png" style="width:100.0%"></p>
-</div>
-</div>
-</section>
-<section id="how-does-an-llm-generate-text" class="slide level2">
-<h2>How does an LLM generate text?</h2>
-
-<img data-src="../assets/images/text-generation-output.excalidraw.svg" style="width:100.0%" class="r-stretch"></section>
-<section id="sampling" class="slide level2">
-<h2>Sampling</h2>
-
-<img data-src="../assets/images/sampling.excalidraw.svg" style="width:100.0%" class="r-stretch"></section>
-<section id="auto-regressive-generation" class="slide level2">
-<h2>Auto-regressive generation</h2>
-
-<img data-src="../assets/images/autoregressive.png" style="width:100.0%" class="r-stretch"></section>
-<section id="auto-regressive-generation-1" class="slide level2">
-<h2>Auto-regressive generation</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>Text is generated <strong>one word at a time</strong> (actually tokens, not words).</li>
-<li>Model predicts which token is likely to follow, given a sequence of tokens (words, punctuation, emojis, etc.).</li>
-<li><mark style="background: #EBCB8B;">Each new token is added to the sequence of tokens</mark> that the model uses to predict the next token.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><span class="math display">\[ P(w_{w+1} | w_1, w_2, ..., w_t) \]</span></p>
-<ul>
-<li>Sequence of words is called the <mark style="background: #EBCB8B;">context</mark>.</li>
-</ul>
-<p><i class="bi-arrow-right-circle-fill " style="" role="img" aria-hidden="true"></i> Generated text is dependent on the context.</p>
-<p><i class="bi-arrow-right-circle-fill " style="" role="img" aria-hidden="true"></i> Every token is given an equal amount time (computation per token is constant).</p>
-</div>
-</div>
-</section>
-<section id="tokenization" class="slide level2">
-<h2>Tokenization</h2>
-<p>LLMs operate with tokens, not words. These are sub-words, and make working with text much easier for the model. A rule of thumb is that one token generally corresponds to ~4 characters of English text. This translates to roughly <span class="math inline">\(\frac{3}{4}\)</span> of a word (so 100 tokens is about 75 words).</p>
-
-<img data-src="../assets/images/tokenization.png" width="675" class="r-stretch"><p>Feel free to try out the <a href="https://platform.openai.com/tokenizer">OpenAI tokenizer</a>.</p>
-</section>
-<section id="embeddings" class="slide level2">
-<h2>Embeddings</h2>
-<ul>
-<li>The next step is to represent tokens as vectors.</li>
-<li>This is called “embedding” the tokens. The vectors are high-dimensional, and the <strong>distance</strong> between vectors measures the similarity between tokens.</li>
-</ul>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="../assets/images/embedding.png" width="751"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<p>In this 2-dimensional representation, concepts that are “related” lie close together. Read about embeddings <a href="../pages/text-representation.html">in this tutorial</a>.</p>
-</div>
-</div>
-</section></section>
-<section>
-<section id="foundation-models" class="title-slide slide level1 center">
-<h1>Foundation models</h1>
-<p>A foundation model, or large language model (LLM):</p>
-<ul>
-<li>is a type of machine learning model that is trained to predict the next word following the input (prompt).</li>
-<li>is trained “simply” to predict the next word following a sequence of words.</li>
-<li>does not necessarily produce human-like conversations.</li>
-</ul>
-<div class="callout callout-note no-icon callout-style-simple">
+<div class="callout callout-note no-icon callout-titled callout-style-simple">
 <div class="callout-body">
+<div class="callout-title">
+<p><strong><i class="bi-person " style="" role="img" aria-hidden="true"></i> Prompt:</strong></p>
+</div>
 <div class="callout-content">
-<p><i class="bi-person " style="" role="img" aria-hidden="true"></i>: What is the capital of France?</p>
-<p><i class="bi-robot " style="" role="img" aria-hidden="true"></i>: What is the capital of Germany? What is the capital of Italy? . ..</p>
+<p>Write a haiku about a workshop on large language models.</p>
 </div>
 </div>
 </div>
-</section>
-<section id="training-data" class="slide level2">
-<h2>Training data</h2>
-
-<img data-src="../assets/images/karpathy-training-data.png" style="width:100.0%" class="r-stretch"><div class="attribution">
-<p>Figure courtesy of <a href="https://karpathy.ai/">Andrej Karpathy</a></p>
-</div>
-</section>
-<section id="training-process" class="slide level2">
-<h2>Training process</h2>
-
-<img data-src="../assets/images/karpathy-training-process.png" style="width:100.0%" class="r-stretch"><div class="attribution">
-<p>Figure courtesy of <a href="https://karpathy.ai/">Andrej Karpathy</a></p>
-</div>
-</section>
-<section id="emergent-abilities" class="slide level2">
-<h2>Emergent abilities</h2>
-<p>LLMs are thought to show emergent abilities - abilities not explicitly taught. Instead, they emerge <em>as a result of text prediction</em>.</p>
-<p>Abilities include:</p>
-<ul>
-<li>performing arithmetic, answering questions, summarizing text, translating, etc.</li>
-<li>zero-shot learning: LLMs can perform tasks without being trained on them.</li>
-<li>few-shot learning: LLMs can perform tasks with few examples.</li>
-</ul>
-</section>
-<section id="emergent-abilities-1" class="slide level2">
-<h2>Emergent abilities</h2>
-<p>What kind of knowledge does an LLM have to have to be able to write a continuation of the following text?<sup>1</sup></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="callout callout-note no-icon callout-style-simple">
+<div class="callout callout-warning no-icon callout-titled callout-style-simple">
 <div class="callout-body">
+<div class="callout-title">
+<p><strong><i class="bi-robot " style="" role="img" aria-hidden="true"></i> Output:</strong></p>
+</div>
 <div class="callout-content">
-<p><i class="bi-person " style="" role="img" aria-hidden="true"></i>: How many holes does a straw have?</p>
-<p><i class="bi-robot " style="" role="img" aria-hidden="true"></i>: A straw has one hole. It’s a cylindrical tunnel that runs through the entire length, creating a single continuous space from one end to the other.</p>
-<p><i class="bi-person " style="" role="img" aria-hidden="true"></i>: What about a tunnel?</p>
-<p><i class="bi-robot " style="" role="img" aria-hidden="true"></i>: Similar to a straw, a tunnel can also be considered to have one hole. It’s an elongated pathway carved through an obstruction, allowing passage from one side to the other, thus creating a single continuous space or hole through the material.</p>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<p><img data-src="../assets/images/straw-tunnel.png" style="width:100.0%"></p>
-</div>
-</div>
-<aside><ol class="aside-footnotes"><li id="fn1"><p>Continue this conversation with <a href="https://chat.openai.com/share/2661773e-3bf6-4be3-b251-41f639bfc2a1">ChatGPT</a>.</p></li></ol></aside></section></section>
-<section>
-<section id="assistant-models" class="title-slide slide level1 center">
-<h1>Assistant models</h1>
-<div class="columns">
-<div class="column" style="width:34%;">
-<p><img data-src="../assets/images/Chat.png" style="width:100.0%"></p>
-<!-- ![](../assets/images/RLHF.svg){width=100%} -->
-</div><div class="column" style="width:66%;">
-<ul>
-<li><p>Trained (fine-tuned) in two stages to have conversations: turn-taking, question answering, not being [rude/sexist/racist], etc.</p></li>
-<li><p>Foundation model has learned to predict all kinds of text, including both desirable and undesirable text.</p></li>
-<li><p>Fine-tuning is a process narrow down the space of all possible output to only desirable, human-like dialogue.</p></li>
-<li><p>Model is <strong>aligned</strong> with the values of the fine-tuner.</p></li>
-</ul>
-</div>
-</div>
-</section>
-<section id="instruction-fine-tuning" class="slide level2">
-<h2>Instruction fine-tuning</h2>
-
-<img data-src="../assets/images/finetuning.png" style="width:100.0%" class="r-stretch"></section>
-<section id="reinforcement-learning-from-human-feedback-rlhf" class="slide level2">
-<h2>Reinforcement learning from human feedback (RLHF)</h2>
-
-<img data-src="../assets/images/RLHF.svg" style="width:100.0%" class="r-stretch"></section></section>
-<section>
-<section id="how-do-chatbots-work" class="title-slide slide level1 center">
-<h1>How do Chatbots work?</h1>
-
-<img data-src="../assets/images/chatbotexcalidraw.svg" style="width:100.0%" class="r-stretch"><ul>
-<li>Designed to present the illusion of a conversation between two entities.</li>
-</ul>
-</section>
-<section id="how-do-chatbots-actually-work" class="slide level2">
-<h2>How do chatbots actually work?</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="../assets/images/chatbot.svg" style="width:100.0%"></p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="../assets/images/chatbot-2.svg" style="width:100.0%"></p>
-</div>
-</div>
-</section>
-<section id="an-llm-is-a-role-play-simulator" class="slide level2">
-<h2>An LLM is a role-play simulator</h2>
-<div class="columns">
-<div class="column" style="width:34%;">
-<p><img data-src="../assets/images/live-action-role-play.png" style="width:100.0%"></p>
-</div><div class="column" style="width:64%;">
-<div class="callout callout-note no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p>We can think of an LLM as a non-deterministic simulator capable of role-playing an infinity of characters, or, to put it another way, capable of stochastically generating an infinity of simulacra <span class="citation" data-cites="shanahanRolePlayLargeLanguage2023">(<a href="#/references" role="doc-biblioref" onclick="">Shanahan, McDonell, and Reynolds 2023</a>)</span></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="an-llm-is-a-role-play-simulator-1" class="slide level2">
-<h2>An LLM is a role-play simulator</h2>
-<ul>
-<li>An assistant is trained to respond to user prompts in a human-like way.</li>
-<li>A simulator of <strong>possible</strong> human conversation.</li>
-<li>Has no intentions. It is not an entity with its own goals.</li>
-<li>Does not have a “personality” or “character” in the traditional sense. It can be thought of as a role-playing simulator.</li>
-<li>Has no concept of “truth” or “lying”. The model is not trying to deceive the user, it is simply trying to respond in a human-like way.</li>
-</ul>
-</section>
-<section id="stochastic-generation" class="slide level2">
-<h2>Stochastic generation</h2>
-
-<img data-src="../assets/images/simulator.png" style="width:100.0%" class="r-stretch"></section></section>
-<section>
-<section id="hallucination" class="title-slide slide level1 center">
-<h1>Hallucination</h1>
-<div class="columns">
-<div class="column" style="width:34%;">
-<p><img data-src="../assets/images/confabulating.png" style="width:100.0%"></p>
-</div><div class="column" style="width:64%;">
-<ul>
-<li>LLMs can generate text that is not true, or not based on any real-world knowledge.</li>
-<li>This is known as “hallucination”. A better term would be “confabulation”.</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="knowledge-base" class="slide level2">
-<h2>Knowledge base</h2>
-<div class="columns">
-<div class="column" style="width:66%;">
-<ul>
-<li>A knowledge base is a collection of facts about the world.</li>
-<li>I can <code>ask</code> (retrieve) and <code>tell</code> (store) facts.</li>
-</ul>
-</div><div class="column" style="width:34%;">
-<p><img data-src="../assets/images/KnowledgeBase.png" style="width:100.0%"></p>
-</div>
-</div>
-</section>
-<section id="can-an-llm-tell-the-truth" class="slide level2">
-<h2>Can an LLM tell the truth?</h2>
-<ul>
-<li>How would you know if an LLM is able to give you factual information?</li>
-<li>How would you test this?</li>
-</ul>
-<div class="callout callout-note no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p><i class="bi-person " style="" role="img" aria-hidden="true"></i>: What is the capital of Uzbekistan?</p>
-<p><i class="bi-robot " style="" role="img" aria-hidden="true"></i>: Tashkent</p>
-</div>
-</div>
-</div>
-<p>It looks like the LLM knows the capital of Uzbekistan<sup>1</sup>.</p>
-<aside><ol class="aside-footnotes"><li id="fn2"><p>What it is actually doing is responding with the most likely sequence following the question.</p></li></ol></aside></section>
-<section id="confirmation-bias" class="slide level2">
-<h2>Confirmation bias</h2>
-<ul>
-<li>People tend to search for evidence consistent with their current beliefs.</li>
-</ul>
-</section>
-<section id="are-llms-knowledge-bases" class="slide level2">
-<h2>Are LLMs knowledge bases?</h2>
-<div class="columns">
-<div class="column" style="width:34%;">
-<p><img data-src="../assets/images/Pothole.png" style="width:100.0%"></p>
-</div><div class="column" style="width:64%;">
-<ul>
-<li>I can ask but the response is not verifiable.</li>
-<li>I can’t tell, i.e.&nbsp;can’t store new information (expensive/difficult to update with new knowledge).</li>
-<li>LLM can’t tell me where it got its information from.</li>
-<li>LLMs are models of knowledge bases, but not knowledge bases themselves.</li>
-</ul>
-</div>
-</div>
-</section></section>
-<section>
-<section id="but-can-an-llm-think" class="title-slide slide level1 center">
-<h1>But can an LLM think?</h1>
-<div>
-<ul>
-<li class="fragment">LLMs generate text token-by-token.</li>
-<li class="fragment">They output a probability distribution over all tokens.</li>
-<li class="fragment">The “magic” happens here: the learned probability distribution.</li>
-<li class="fragment">LLMs do not plan ahead.</li>
-<li class="fragment">LLMs cannot go back and edit their output.</li>
-<li class="fragment">The output depends on the context.</li>
-</ul>
-</div>
-</section>
-<section id="how-do-humans-think" class="slide level2">
-<h2>How do humans think?</h2>
-<p>E.g. physical reasoning</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../assets/images/physics-intuition.png" style="width:100.0%"></p>
-<figcaption><span class="citation" data-cites="battagliaSimulationEnginePhysical2013">Battaglia, Hamrick, and Tenenbaum (<a href="#/references" role="doc-biblioref" onclick="">2013</a>)</span></figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../assets/images/causal-simulation.png" style="width:100.0%"></p>
-<figcaption><span class="citation" data-cites="gerstenbergWhatWouldHave2022">Gerstenberg (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span></figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="prompting" class="title-slide slide level1 center">
-<h1>Prompting</h1>
-
-<img data-src="../assets/images/magic.svg" style="width:66.0%" class="r-stretch"></section>
-<section id="what-is-a-prompt" class="slide level2">
-<h2>What is a prompt?</h2>
-<ul>
-<li>Remember: the goal of an LLM is complete text.</li>
-<li>A prompt is a piece of text (instruction) that is given to a language model to complete.</li>
-</ul>
-<div class="callout callout-note no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p>PROMPT <i class="bi-person " style="" role="img" aria-hidden="true"></i>: Write a haiku about a workshop on large language models.</p>
-<p>ASSISTANT <i class="bi-robot " style="" role="img" aria-hidden="true"></i>: Whispers of circuits,<br>
-Knowledge blooms in bytes and bits,<br>
-Model learns and fits.</p>
+<p>Whispers of circuits, Knowledge blooms in bytes and bits, Model learns and fits.</p>
 </div>
 </div>
 </div>
 <ul>
-<li>The response is generated as continuation of the prompt.</li>
+<li>Die Antwort wird als Fortsetzung des Prompts generiert.</li>
 </ul>
-<aside class="notes">
-<p>More technical definition: The output is generated by auto-regressively sampling from the probability distribution over the vocabulary, conditioned on the prompt.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
-<section id="unlocking-knowledge" class="slide level2">
-<h2>Unlocking knowledge</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="../assets/images/unlock.svg"></p>
+<section id="fähigkeiten-freischalten" class="slide level2">
+<h2>Fähigkeiten freischalten</h2>
+<!-- :::: {.columns}
+::: {.column width="50%"} -->
 <!-- ::: {.incremental} -->
 <ul>
-<li>LLMs learn to do things they were not explicitly trained to do. <!-- - They can solve logic puzzles and perform complex multistep reasoning.  --></li>
-<li>Often, these capabilities need to be “unlocked” by the right prompt. <!-- ::: --></li>
+<li>LLMs lernen Aufgaben zu lösen, für die sie nicht trainiert wurden.<!-- - They can solve logic puzzles and perform complex multistep reasoning.  --></li>
+<li>Fähigkeiten müssen durch den richtigen Prompt “freigeschaltet” werden.<br>
+<img data-src="../assets/images/unlock.svg"> <!-- ::: --></li>
 </ul>
-</div><div class="column" style="width:50%;">
+<!-- :::
+
+::: {.column width="50%"} -->
 <ul>
-<li>What is the right prompt?</li>
-<li>The answer is very similar to what you would tell a human dialogue partner/assistant.</li>
-<li>You can increase the probability of getting the desired output by asking good questions or giving enough information.</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="basics-of-prompting" class="slide level2">
-<h2>Basics of prompting</h2>
-<p>OpenAI give a set of strategies for using their models effectively:</p>
-<p><i class="bi-link " style="" role="img" aria-hidden="true"></i> <a href="https://platform.openai.com/docs/guides/prompt-engineering">Prompt engineering</a></p>
-<p>These include:</p>
+<li>Was ist der richtige Prompt?
 <ul>
-<li>writing clear instructions</li>
-<li>providing reference texts</li>
-<li>splitting tasks into subtasks</li>
-<li>giving the LLM ‘time to think’</li>
-<li>using external tools</li>
+<li>Sehr ähnlich zu dem, was man einem menschlichen Dialogpartner/Assistenten sagen würde.</li>
+<li>Chancen, die gewünschte Ausgabe zu erhalten, werden durch gute Fragen oder genügend Informationen erhöht. <!-- :::
+:::: --></li>
+</ul></li>
 </ul>
 </section>
-<section id="writing-clear-instructions" class="slide level2">
-<h2>Writing clear instructions</h2>
+<section id="grundlagen-des-prompting" class="slide level2">
+<h2>Grundlagen des Prompting</h2>
+<ul>
+<li>OpenAI gibt eine <a href="https://platform.openai.com/docs/guides/prompt-engineering"><i class="bi-link " style="" role="img" aria-hidden="true"></i> Reihe von Strategien</a> für die effektive Nutzung ihrer Modelle.</li>
+</ul>
+<p>Diese beinhalten:</p>
+<ul>
+<li>klare Anweisungen schreiben</li>
+<li>Referenztexte bereitstellen</li>
+<li>Aufgaben in Teilaufgaben unterteilen</li>
+<li>dem LLM ‘Zeit zum Nachdenken’ geben</li>
+<li>externe Tools verwenden</li>
+</ul>
+</section>
+<section id="klare-anweisungen-schreiben" class="slide level2">
+<h2>Klare Anweisungen schreiben</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
-<li>Think of an LLM as a role-playing conversation simulator.</li>
-<li>Instructions should be clear and unambiguous.</li>
-<li>Indicate which role the model (persona) should adopt.</li>
+<li>Teile einem LLM mit, welche Art von Gespräch du führen möchtest.
+<ul>
+<li>Anweisungen sollten klar und eindeutig sein.</li>
+<li>Gib an, welche Rolle (Persona) das Modell übernehmen soll.</li>
+</ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
 <div class="callout callout-note no-icon callout-style-simple">
 <div class="callout-body">
 <div class="callout-content">
 <ul>
-<li><a href="https://platform.openai.com/docs/guides/prompt-engineering/tactic-include-details-in-your-query-to-get-more-relevant-answers">Include details in your query to get more relevant answers</a></li>
-<li><a href="https://platform.openai.com/docs/guides/prompt-engineering/tactic-ask-the-model-to-adopt-a-persona">Ask the model to adopt a persona</a></li>
-<li><a href="https://platform.openai.com/docs/guides/prompt-engineering/tactic-use-delimiters-to-clearly-indicate-distinct-parts-of-the-input">Use delimiters to clearly indicate distinct parts of the input</a></li>
-<li><a href="https://platform.openai.com/docs/guides/prompt-engineering/tactic-specify-the-steps-required-to-complete-a-task">Specify the steps required to complete a task</a></li>
-<li><a href="https://platform.openai.com/docs/guides/prompt-engineering/tactic-provide-examples">Provide examples</a></li>
-<li><a href="https://platform.openai.com/docs/guides/prompt-engineering/tactic-specify-the-desired-length-of-the-output">Specify the desired length of the output</a></li>
+<li><a href="https://platform.openai.com/docs/guides/prompt-engineering/tactic-include-details-in-your-query-to-get-more-relevant-answers">Gib Details in deiner Anfrage an, um relevantere Antworten zu bekommen</a></li>
+<li><a href="https://platform.openai.com/docs/guides/prompt-engineering/tactic-ask-the-model-to-adopt-a-persona">Bitte das Modell, eine Persona zu übernehmen</a></li>
+<li><a href="https://platform.openai.com/docs/guides/prompt-engineering/tactic-use-delimiters-to-clearly-indicate-distinct-parts-of-the-input">Verwende Trennzeichen, um klar auf die unterschiedlichen Teile der Eingabe hinzuweisen</a></li>
+<li><a href="https://platform.openai.com/docs/guides/prompt-engineering/tactic-specify-the-steps-required-to-complete-a-task">Gib die Schritte an, die zur Durchführung einer Aufgabe erforderlich sind</a></li>
+<li><a href="https://platform.openai.com/docs/guides/prompt-engineering/tactic-provide-examples">Gib Beispiele</a></li>
+<li><a href="https://platform.openai.com/docs/guides/prompt-engineering/tactic-specify-the-desired-length-of-the-output">Gib die gewünschte Länge der Ausgabe an</a></li>
 </ul>
 </div>
 </div>
@@ -883,222 +557,214 @@ Model learns and fits.</p>
 </div>
 </div>
 </section>
-<section id="adopt-a-persona-role" class="slide level2">
-<h2>Adopt a persona (role)</h2>
-<div class="callout callout-note no-icon callout-style-simple">
+<section id="eine-rolle-zuweisen" class="slide level2">
+<h2>Eine Rolle zuweisen</h2>
+<div class="callout callout-note no-icon callout-titled callout-style-simple">
 <div class="callout-body">
+<div class="callout-title">
+<p><strong><i class="bi-person " style="" role="img" aria-hidden="true"></i> Prompt:</strong></p>
+</div>
 <div class="callout-content">
-<p><i class="bi-person " style="" role="img" aria-hidden="true"></i>: You are an expert on learning techniques. Explain the concept of ‘flipped classroom’ in one paragraph.</p>
+<p>You are an <strong>expert on learning techniques</strong>. Explain the concept of ‘flipped classroom’ in one paragraph.</p>
 </div>
 </div>
 </div>
-<div class="callout callout-note no-icon callout-style-simple">
+<div class="callout callout-note no-icon callout-titled callout-style-simple">
 <div class="callout-body">
+<div class="callout-title">
+<p><strong><i class="bi-person " style="" role="img" aria-hidden="true"></i> Prompt:</strong></p>
+</div>
 <div class="callout-content">
-<p><i class="bi-person " style="" role="img" aria-hidden="true"></i>: You are an expert financial derivatives. Explain the concept of ‘flipped classroom’ in one paragraph.</p>
+<p>You are an <strong>expert on financial derivatives</strong>. Explain the concept of ‘flipped classroom’ in one paragraph.</p>
 </div>
 </div>
 </div>
 </section>
-<section id="provide-reference-texts" class="slide level2">
-<h2>Provide reference texts</h2>
+<section id="referenztexte-bereitstellen" class="slide level2">
+<h2>Referenztexte bereitstellen</h2>
 <ul>
-<li>Provide a model with trusted and relevant information.</li>
-<li>Then instruct the model to use the provided information to compose its answer.</li>
+<li>Stelle einem Modell vertrauenswürdige und relevante Informationen zur Verfügung.</li>
+<li>Weise das Modell an, die bereitgestellten Informationen zur Erstellung der Antwort zu verwenden.</li>
 </ul>
-<p><a href="https://platform.openai.com/docs/guides/prompt-engineering/tactic-instruct-the-model-to-answer-using-a-reference-text"><i class="bi-link " style="" role="img" aria-hidden="true"></i> Instruct the model to answer using a reference text</a></p>
+<p><a href="https://platform.openai.com/docs/guides/prompt-engineering/tactic-instruct-the-model-to-answer-using-a-reference-text"><i class="bi-link " style="" role="img" aria-hidden="true"></i> Weise das Modell an, eine Antwort unter Verwendung eines Referenztextes zu geben</a> <!-- :::aside
+This leads to **retrieval-augmented generation (RAG)**. First create a database of documents, then retrieve the most relevant documents, based on a user's query. These are then included in the prompt to the model. The model is instructed to use the information in the documents to compose its answer.
+::: --></p>
+<!-- ## Referenztexte bereitstellen {.scrollable}
 
-<aside><div>
-<p>This leads to <strong>retrieval-augmented generation (RAG)</strong>. First create a database of documents, then retrieve the most relevant documents, based on a user’s query. These are then included in the prompt to the model. The model is instructed to use the information in the documents to compose its answer.</p>
-</div></aside></section>
-<section id="provide-reference-texts-1" class="slide level2 scrollable">
-<h2>Provide reference texts</h2>
-<div class="callout callout-note no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p><i class="fa-solid fa-person" aria-label="person"></i>: You will be provided with a document delimited by triple quotes and a question. Your task is to provide a simplified answer to the question using only the provided document and to cite the passage(s) of the document used to answer the question. If the document does not contain the information needed to answer this question then simply write: “Insufficient information.” If an answer to the question is provided, it must be annotated with a citation. Use the following format for to cite relevant passages ({“citation”: …}). Cite only the relevant passage(s) of the document, not the entire document.</p>
-<p>““” The flipped classroom intentionally shifts instruction to a learner-centered model, in which students are often initially introduced to new topics outside of school, freeing up classroom time for the exploration of topics in greater depth, creating meaningful learning opportunities. With a flipped classroom, ‘content delivery’ may take a variety of forms, often featuring video lessons prepared by the teacher or third parties, although online collaborative discussions, digital research, and text readings may alternatively be used. The ideal length for a video lesson is widely cited as eight to twelve minutes. ““”</p>
-<p><strong>Question</strong>: What is flipped classroom?</p>
-</div>
-</div>
-</div>
-</section>
-<section id="giving-gpt-time-to-think" class="slide level2">
-<h2>Giving GPT ‘time to think’</h2>
-<ul>
-<li>LLMs generate text one word at a time–the model spends the same amount of computation on each word.</li>
-<li>Giving the model more context gives it more steps to “think”.</li>
-<li>This increases the chances that the model will give a good answer.</li>
-<li>This technique is known as <strong>chain-of-thought</strong> prompting, and can often be induced by simply instructing the model to <code>think step-by-step</code> or <code>Take a deep breath and work on this problem step-by-step</code> <span class="citation" data-cites="yangLargeLanguageModels2023">(<a href="#/references" role="doc-biblioref" onclick="">Yang et al. 2023</a>)</span>.</li>
-</ul>
-<!-- ![Chain-of-thought example](../assets/images/chain-of-thought.png) -->
-</section>
-<section id="chain-of-thought-prompting" class="slide level2">
-<h2>Chain-of-thought prompting</h2>
-<ul>
-<li>Chain-of-thought prompting encourages the LLM to “explain” its intermediate reasoning steps.</li>
-<li>Enables complex reasoning and problem solving.</li>
-</ul>
-<p>Instead of this:</p>
-<div class="callout callout-note no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p><i class="bi-person " style="" role="img" aria-hidden="true"></i>: The odd numbers in this group add up to an even number: 4, 8, 9, 15, 12, 2, 1. Yes or no?</p>
-</div>
-</div>
-</div>
-<p>Do this:</p>
-<div class="callout callout-note no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p><i class="bi-person " style="" role="img" aria-hidden="true"></i>: Is this statement correct? The odd numbers in this group add up to an even number: 4, 8, 9, 15, 12, 2, 1.</p>
-<p>Reason through the problem step-by-step. Start by identifying the odd numbers. Next, add them up. Finally, determine if the sum is even or odd. Write down your reasoning steps in a numbered list.</p>
-</div>
-</div>
-</div>
-<aside class="notes">
-<p>Why does this work?</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="zero-shot-chain-of-thought-prompting" class="slide level2">
-<h2>Zero-shot chain-of-thought prompting</h2>
-<div class="callout callout-note no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p><i class="fa-solid fa-person" aria-label="person"></i>: The odd numbers in this group add up to an even number: 4, 8, 9, 15, 12, 2, 1. <mark style="background: #BBFABBA6;">Take a deep breath and think step-by-step.</mark></p>
-</div>
-</div>
-</div>
+:::{.callout-note}
+: 
+You will be provided with 
+- context: a document delimited by **triple quotes**
+- a question 
 
-<aside><div>
-<p>When using GPT-4, ChatGPT and Copilot do this automatically.</p>
-</div></aside></section>
-<section id="use-markdown-formatting" class="slide level2">
-<h2>Use Markdown formatting</h2>
-<ul>
-<li>Use <a href="https://www.markdownguide.org/">Markdown</a> to format your prompts.</li>
-<li>Instruct the LLM to format its output using Markdown.</li>
-</ul>
-<div class="callout callout-note no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p><i class="bi-person " style="" role="img" aria-hidden="true"></i>: Improve this haiku:</p>
-<p>Words weave through the air,<br>
-Minds meld with machine’s deep thought,<br>
-Knowledge blooms anew.</p>
-<p>It is about about a workshop on large language models. I’m not happy with it.</p>
-<p>Show me all the text. Format your edits as <code>**TEXT**</code> and show the deleted text as <code>~~TEXT~~</code>. Keep you review short (max 100 words).</p>
-</div>
-</div>
-</div>
-<p>Try this example in <a href="https://chat.openai.com/share/c2230c3c-04cc-4aa5-b802-9646496aadbd">ChatGPT</a>.</p>
+Your task is to provide a simplified answer to the question using only the provided document and to cite the passage(s) of the document used to answer the question. If the document does not contain the information needed to answer this question then simply write: "Insufficient information." If an answer to the question is provided, it must be annotated with a citation. Use the following format for to cite relevant passages ({"citation": …}). Cite only the relevant sentence(s) of the document, not the entire document.
+
+**Context**:"""The flipped classroom intentionally shifts instruction to a learner-centered model, in which students are often initially introduced to new topics outside of school, freeing up classroom time for the exploration of topics in greater depth, creating meaningful learning opportunities. With a flipped classroom, 'content delivery' may take a variety of forms, often featuring video lessons prepared by the teacher or third parties, although online collaborative discussions, digital research, and text readings may alternatively be used. The ideal length for a video lesson is widely cited as eight to twelve minutes."""
+
+**Question**: What is a good length for a video?
+
+::: -->
 </section>
-<section id="advanced-prompting-techniques" class="slide level2">
-<h2>Advanced prompting techniques</h2>
-<p>For more advanced prompting techniques, see these websites:</p>
+<section id="einem-llm-zeit-zum-denken-geben" class="slide level2">
+<h2>Einem LLM ‘Zeit zum Denken’ geben</h2>
+<ul>
+<li>LLMs generieren Text ein Wort nach dem anderen - das Modell verwendet die gleiche Menge an Berechnung für jedes Wort.</li>
+<li>Wenn das Modell gezwungen wird, mehr Text zu produzieren, hat es mehr Schritte um “Nachzudenken”.</li>
+</ul>
+<p><i class="bi-arrow-return-right " style="" role="img" aria-hidden="true"></i> Das Modell wird eine bessere Antwort geben.</p>
+<ul>
+<li>Diese Technik ist bekannt als <strong>chain-of-thought</strong>-Prompting und kann oft einfach durch die Anweisung an das Modell induziert werden, “Schritt für Schritt zu denken” (<code>think step-by-step</code>) oder “Nimm dir einen Moment Zeit und arbeite dieses Problem Schritt für Schritt durch” (<code>Take a deep breath and work on this problem step-by-step</code>)<span class="citation" data-cites="yangLargeLanguageModels2023">(<a href="#/references" role="doc-biblioref" onclick="">Yang et al. 2023</a>)</span>.</li>
+<li>Copilot und ChatGPT machen dies seit Neuem automatisch.</li>
+</ul>
+<!-- ## chain-of-thought-Prompting
+
+- **chain-of-thought**-Prompting ermutigt das LLM, seine Zwischenschritte im Denken zu "erklären".
+- Ermöglicht komplexes Denken und Problemlösen.
+
+Statt dessen:
+
+:::{.callout-note}
+: The odd numbers in this group add up to an even number: 4, 8, 9, 15, 12, 2, 1. Yes or no?
+:::
+
+Do this:
+
+:::{.callout-note}
+: Is this statement correct? The odd numbers in this group add up to an even number: 4, 8, 9, 15, 12, 2, 1. 
+
+Reason through the problem step-by-step. Start by identifying the odd numbers. Next, add them up. Finally, determine if the sum is even or odd. Write down your reasoning steps in a numbered list.
+
+:::
+
+
+## Zero-shot chain-of-thought prompting
+
+- Zero-Shot chain-of-thought-Prompting ist eine Technik, um das Modell dazu zu führen, ein Problem Schritt für Schritt zu durchdenken, ohne Beispiele oder Trainingsdaten bereitzustellen.
+
+:::{.callout-note}
+
+: The odd numbers in this group add up to an even number: 4, 8, 9, 15, 12, 2, 1. <mark style="background: #BBFABBA6;">Take a deep breath and think step-by-step.</mark>
+
+
+:::
+
+
+:::aside
+When using GPT-4, ChatGPT and Copilot do this automatically.
+::: -->
+</section>
+<section id="markdown-formatierung-verwenden" class="slide level2">
+<h2>Markdown-Formatierung verwenden</h2>
+<ul>
+<li>Verwende <a href="https://www.markdownguide.org/">Markdown</a> zur Formatierung deiner Prompts.</li>
+<li>Weise das LLM an, den Output mit Markdown zu formatieren.</li>
+</ul>
+<div class="callout callout-note no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong><i class="bi-person " style="" role="img" aria-hidden="true"></i> Prompt:</strong></p>
+</div>
+<div class="callout-content">
+<pre><code>Improve this haiku:
+
+## Whispers of circuits
+
+Words weave through the air,  
+Minds meld with machine's deep thought,  
+Knowledge blooms anew.  
+
+It is about about a workshop on large language models. I'm not happy with the phrase " machine's deep thought".
+
+Show me all the text. Format the text you added as _TEXT_ and show me the deleted text formatted as ~~TEXT~~ in the new haiku. Keep you review short (max 100 words).</code></pre>
+</div>
+</div>
+</div>
+<!-- Try an example in [ChatGPT](https://chat.openai.com/share/c2230c3c-04cc-4aa5-b802-9646496aadbd). -->
+</section>
+<section id="fortgeschrittene-prompting-techniken" class="slide level2">
+<h2>Fortgeschrittene Prompting-Techniken</h2>
+<p><strong>Weiterführende Information zu Prompting-Techniken:</strong></p>
 <ul>
 <li><i class="bi-link " style="" role="img" aria-hidden="true"></i> <a href="https://learnprompting.org/docs/intro">Learn prompting</a></li>
 <li><i class="bi-link " style="" role="img" aria-hidden="true"></i> <a href="https://www.promptingguide.ai/">Prompting guide</a></li>
 <li><i class="bi-link " style="" role="img" aria-hidden="true"></i> <a href="https://cookbook.openai.com/">OpenAI cookbook</a></li>
 </ul>
-<p>and explore this <a href="../pages/activity-1-prompting-techniques.html">activity</a>.</p>
-</section></section>
-<section>
-<section id="advanced-llm-techniques" class="title-slide slide level1 center">
-<h1>Advanced LLM techniques</h1>
+<p><strong>Zum Ausprobieren:</strong>**</p>
+<ul>
+<li><i class="bi-brush " style="" role="img" aria-hidden="true"></i> <a href="../pages/activity-cas-hochschuldidaktik.html">Aktivität</a></li>
+</ul>
+</section>
+<section id="wofür-sind-llms-gut" class="slide level2">
+<h2>Wofür sind LLMs gut?</h2>
+<ul>
+<li>Korrigieren von Grammatik, schlechtem Stil, usw.</li>
+<li>Umschreiben/Paraphrasieren von Texten</li>
+<li>Analysieren von Texten (Argumentation, Stil, usw.)</li>
+<li>Übersetzen von Sprachen</li>
+<li>Erstellen von strukturiertem Output</li>
+<li>Schreiben von Computercode</li>
+<li>Beantworten von Fragen zu einer Wissensbasis</li>
+<li>Faktische Ausgabe nur mit RAG oder Websuche</li>
+</ul>
+</section>
+<section id="fortgeschrittene-llm-techniken" class="slide level2">
+<h2>Fortgeschrittene LLM-Techniken</h2>
 
 <img data-src="../assets/images/finetuning-vs-prompting.png" style="width:50.0%" class="r-stretch"></section>
 <section id="retrieval-augmented-generation-rag" class="slide level2">
-<h2>Retrieval-augmented generation (RAG)</h2>
+<h2>Retrieval-augmented Generation (RAG)</h2>
 
 <img data-src="../assets/images/rag-volvo.png" style="width:100.0%" class="r-stretch"><div class="attribution">
-<p>Figure courtesy of <a href="https://www.pinecone.io/learn/retrieval-augmented-generation/">Pinecone</a></p>
+<p>Abbildung von <a href="https://www.pinecone.io/learn/retrieval-augmented-generation/">Pinecone</a></p>
 </div>
 </section>
-<section id="web-search" class="slide level2">
-<h2>Web search</h2>
+<section id="websuche" class="slide level2">
+<h2>Websuche</h2>
 <ul>
-<li>Similar to retrieval-augmented generation, but with web search.</li>
-<li>LLMs can be instructed to use web search to find information.</li>
-<li>Copilot does this automatically - ChatGPT (paid version only) can be instructed to do this.</li>
+<li>Ähnlich wie die Retrieval-augmented Generation, aber mit Websuche.</li>
+<li>LLMs können angewiesen werden, die Websuche zur Informationsbeschaffung zu nutzen.</li>
+<li>LLM fasst die Informationen zusammen und benutzt sie als Referenztext zur Beantwortung der Frage.</li>
+<li>Copilot macht dies automatisch - ChatGPT (nur kostenpflichtige Version) kann angewiesen werden, dies zu tun.</li>
 </ul>
 </section>
-<section id="external-tools" class="slide level2">
-<h2>External tools</h2>
+<section id="externe-werkzeuge" class="slide level2">
+<h2>Externe Werkzeuge</h2>
 <ul>
-<li>LLMs can be instructed to use external tools to complete tasks.</li>
-<li>For example, an LLM can be instructed to use a calculator to perform arithmetic.</li>
-<li>OpenAI calls this approach <a href="https://platform.openai.com/docs/guides/function-calling/function-calling">function calling</a>.</li>
+<li>LLMs können angewiesen werden, externe Werkzeuge zur Aufgabenerfüllung zu nutzen.</li>
+<li>Zum Beispiel kann ein LLM angewiesen werden, einen Taschenrechner zur Durchführung von Rechenoperationen zu verwenden.</li>
+<li>OpenAI nennt diesen Ansatz <a href="https://platform.openai.com/docs/guides/function-calling/function-calling">Funktionsaufruf</a>.</li>
 </ul>
+<!-- ## Multi-agent conversations
+
+:::: {.columns}
+::: {.column width="50%"}
+
+![](../assets/images/multi-agent.excalidraw.svg){width=100%}
+:::
+
+::: {.column width="50%"}
+
+-  DEMO: haiku writing team
+:::
+:::: -->
 </section>
-<section id="multi-agent-conversations" class="slide level2">
-<h2>Multi-agent conversations</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="../assets/images/multi-agent.excalidraw.svg" style="width:100.0%"></p>
-</div><div class="column" style="width:50%;">
+<section id="lokale-modelle" class="slide level2">
+<h2>Lokale Modelle</h2>
 <ul>
-<li><i class="bi-arrow-right-circle " style="" role="img" aria-hidden="true"></i> DEMO: haiku writing team</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="local-models" class="slide level2">
-<h2>Local models</h2>
-<ul>
-<li>Download and run models, such as e.g.&nbsp;Llama 2 or Code Llama, locally.</li>
+<li>Laden Sie Modelle herunter und führen Sie sie lokal aus, wie z.B. Llama 2 oder Code Llama.</li>
 <li><a href="https://ollama.com/">Ollama</a></li>
 <li><a href="https://lmstudio.ai/">LM Studio</a></li>
 </ul>
-<p>Hardware requirements:</p>
+<p>Hardwareanforderungen:</p>
 <ul>
 <li>Apple Silicon Mac (M1/M2/M3) / Windows / Linux</li>
-<li>16GB+ of RAM is recommended</li>
-<li>NVIDIA/AMD GPUs supported</li>
-</ul>
-</section></section>
-<section id="what-are-llms-good-at" class="title-slide slide level1 center">
-<h1>What are LLMs good at?</h1>
-<ul>
-<li>Fixing grammar, bad writing, etc.</li>
-<li>Rephrasing</li>
-<li>Analyze texts</li>
-<li>Write computer code</li>
-<li>Answer questions about a knowledge base</li>
-<li>Translate languages</li>
-<li>Creating structured output</li>
-<li>Factual output only with RAG or web search</li>
+<li>Es wird empfohlen, 16GB+ RAM zu haben</li>
+<li>NVIDIA/AMD GPUs werden unterstützt</li>
 </ul>
 </section>
-
-<section id="references" class="title-slide slide level1 smaller scrollable" data-background-color="#D8DEE9">
-<h1>References</h1>
+<section id="references" class="slide level2 smaller scrollable" data-background-color="#D8DEE9">
+<h2>References</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-battagliaSimulationEnginePhysical2013" class="csl-entry" role="listitem">
-Battaglia, Peter W., Jessica B. Hamrick, and Joshua B. Tenenbaum. 2013. <span>“Simulation as an Engine of Physical Scene Understanding.”</span> <em>Proceedings of the National Academy of Sciences</em> 110 (45): 18327–32. <a href="https://doi.org/10.1073/pnas.1306572110">https://doi.org/10.1073/pnas.1306572110</a>.
-</div>
-<div id="ref-gerstenbergWhatWouldHave2022" class="csl-entry" role="listitem">
-Gerstenberg, Tobias. 2022. <span>“What Would Have Happened? <span>Counterfactuals</span>, Hypotheticals, and Causal Judgments.”</span> January 20, 2022. <a href="https://doi.org/10.31234/osf.io/rsb46">https://doi.org/10.31234/osf.io/rsb46</a>.
-</div>
-<div id="ref-shanahanTalkingLargeLanguage2023" class="csl-entry" role="listitem">
-Shanahan, Murray. 2023. <span>“Talking <span>About Large Language Models</span>.”</span> January 25, 2023. <a href="https://doi.org/10.48550/arXiv.2212.03551">https://doi.org/10.48550/arXiv.2212.03551</a>.
-</div>
-<div id="ref-shanahanRolePlayLargeLanguage2023" class="csl-entry" role="listitem">
-Shanahan, Murray, Kyle McDonell, and Laria Reynolds. 2023. <span>“Role-<span>Play</span> with <span>Large Language Models</span>.”</span> May 25, 2023. <a href="https://doi.org/10.48550/arXiv.2305.16367">https://doi.org/10.48550/arXiv.2305.16367</a>.
-</div>
-<div id="ref-weiEmergentAbilitiesLarge2022b" class="csl-entry" role="listitem">
-Wei, Jason, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeaud, Dani Yogatama, et al. 2022. <span>“Emergent <span>Abilities</span> of <span>Large Language Models</span>.”</span> October 26, 2022. <a href="https://doi.org/10.48550/arXiv.2206.07682">https://doi.org/10.48550/arXiv.2206.07682</a>.
-</div>
 <div id="ref-yangLargeLanguageModels2023" class="csl-entry" role="listitem">
 Yang, Chengrun, Xuezhi Wang, Yifeng Lu, Hanxiao Liu, Quoc V. Le, Denny Zhou, and Xinyun Chen. 2023. <span>“Large <span>Language Models</span> as <span>Optimizers</span>.”</span> September 6, 2023. <a href="http://arxiv.org/abs/2309.03409">http://arxiv.org/abs/2309.03409</a>.
 </div>
@@ -1109,9 +775,7 @@ Yang, Chengrun, Xuezhi Wang, Yifeng Lu, Hanxiao Liu, Quoc V. Le, Denny Zhou, and
 <p><a href="../index.html">back to website <i class="bi-box-arrow-up-left " style="" role="img" aria-hidden="true"></i> </a></p>
 </div>
 </div>
-</section>
-
-
+</section></section>
     </div>
   </div>
 
@@ -1166,7 +830,7 @@ Yang, Chengrun, Xuezhi Wang, Yifeng Lu, Hanxiao Liu, Quoc V. Le, Denny Zhou, and
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: 'h.v',
+        slideNumber: 'c/t',
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
@@ -1207,7 +871,7 @@ Yang, Chengrun, Xuezhi Wang, Yifeng Lu, Hanxiao Liu, Quoc V. Le, Denny Zhou, and
         rtl: false,
 
         // see https://revealjs.com/vertical-slides/#navigation-mode
-        navigationMode: 'default',
+        navigationMode: 'linear',
 
         // Randomizes the order of slides each time the presentation loads
         shuffle: false,
@@ -1325,44 +989,6 @@ Yang, Chengrun, Xuezhi Wang, Yifeng Lu, Hanxiao Liu, Quoc V. Le, Denny Zhou, and
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

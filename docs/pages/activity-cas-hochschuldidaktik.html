@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Andrew Ellis">
-<meta name="description" content="Programming a GPT model.">
+<meta name="description" content="Programming a large language model.">
 
-<title>Promptly Literate // - Activity 2: Basic Prompting Techniques</title>
+<title>Promptly Literate // - Activities: Learn Prompting</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -42,6 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/bootstrap-icons-1.11.1/all.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -82,12 +83,12 @@ ul.task-list li input[type="checkbox"] {
 </script>
 
 
-<meta property="og:title" content="Promptly Literate // - Activity 2: Basic Prompting Techniques">
-<meta property="og:description" content="Programming a GPT model.">
+<meta property="og:title" content="Promptly Literate // - Activities: Learn Prompting">
+<meta property="og:description" content="Programming a large language model.">
 <meta property="og:image" content="https://virtuelleakademie.github.io/promptly-literate/pages/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
 <meta property="og:site_name" content="Promptly Literate //">
-<meta name="twitter:title" content="Promptly Literate // - Activity 2: Basic Prompting Techniques">
-<meta name="twitter:description" content="Programming a GPT model.">
+<meta name="twitter:title" content="Promptly Literate // - Activities: Learn Prompting">
+<meta name="twitter:description" content="Programming a large language model.">
 <meta name="twitter:image" content="https://virtuelleakademie.github.io/promptly-literate/pages/data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==">
 <meta name="twitter:creator" content="@awellis">
 <meta name="twitter:card" content="summary_large_image">
@@ -252,24 +253,29 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#basic-techniques" id="toc-basic-techniques" class="nav-link active" data-scroll-target="#basic-techniques">Basic techniques</a></li>
-  <li><a href="#tasks" id="toc-tasks" class="nav-link" data-scroll-target="#tasks">Tasks</a></li>
-  <li><a href="#prompting-guides" id="toc-prompting-guides" class="nav-link" data-scroll-target="#prompting-guides">Prompting Guides</a></li>
-  <li><a href="#explore-prompting-guides" id="toc-explore-prompting-guides" class="nav-link" data-scroll-target="#explore-prompting-guides">Explore Prompting Guides</a></li>
+  <li><a href="#prompting-guidelines" id="toc-prompting-guidelines" class="nav-link active" data-scroll-target="#prompting-guidelines">Prompting Guidelines</a></li>
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a>
+  <ul class="collapse">
+  <li><a href="#adopt-a-persona" id="toc-adopt-a-persona" class="nav-link" data-scroll-target="#adopt-a-persona">Adopt a persona</a></li>
+  <li><a href="#reference-texts" id="toc-reference-texts" class="nav-link" data-scroll-target="#reference-texts">Reference texts</a></li>
+  <li><a href="#structured-output" id="toc-structured-output" class="nav-link" data-scroll-target="#structured-output">Structured output</a></li>
+  </ul></li>
+  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a></li>
+  <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further Resources</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Activity 2: Basic Prompting Techniques</h1>
+<h1 class="title">Activities: Learn Prompting</h1>
 </div>
 
 <div>
   <div class="description">
-    <p>Programming a GPT model.</p>
+    <p>Programming a large language model.</p>
   </div>
 </div>
 
@@ -295,7 +301,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">26 Oct, 2023</p>
+      <p class="date">05 Mar, 2024</p>
     </div>
   </div>
   
@@ -307,62 +313,35 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="basic-techniques" class="level2">
-<h2 class="anchored" data-anchor-id="basic-techniques">Basic techniques</h2>
-<p>In this activity, you can explore various prompting guides for GPT models. They more or less all converge on the same set of techniques.</p>
-</section>
-<section id="tasks" class="level2">
-<h2 class="anchored" data-anchor-id="tasks">Tasks</h2>
+<p>Designing effective prompts to instruct LLMS to generate a desired output is referred to as <em>prompt engineering</em>. This activity will guide you through the process of creating prompts for LLMs.</p>
+<section id="prompting-guidelines" class="level2">
+<h2 class="anchored" data-anchor-id="prompting-guidelines">Prompting Guidelines</h2>
+<p>In this activity, you can explore various prompting guides for LLMs. They more or less all converge on the same set of techniques. You can then use these techniques to write your own prompts</p>
+<p>OpenAI give a set of <a href="https://platform.openai.com/docs/guides/prompt-engineering/six-strategies-for-getting-better-results"><i class="bi-link " style="" role="img" aria-hidden="true"></i> strategies</a> for using their models.</p>
+<p>These include:</p>
 <ul>
-<li>Explore prompting, using both ChatGPT and the Playground.</li>
-<li>Try the PromptTools Playground.</li>
-<li>Try out SPARK. This is a good demonstration of using a knowledge base and document retrieval can allow you to create a QA tool.</li>
+<li>writing clear instructions</li>
+<li>providing reference texts</li>
+<li>splitting tasks into subtasks</li>
+<li>giving GPT ‘time to think’</li>
+<li>using external tools</li>
 </ul>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Prompts
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Try revisiting the prompts you created in the previous activity. Given you current knowledge, can you improve them?</p>
-</div>
-</div>
-</section>
-<section id="prompting-guides" class="level2">
-<h2 class="anchored" data-anchor-id="prompting-guides">Prompting Guides</h2>
-<p>The general techniques are:</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Prompting Techniques
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<p>Some general techniques are:</p>
 <ul>
-<li>Numbered Steps: For sequential tasks.</li>
-<li>Delimiters: To separate info (e.g.&nbsp;<code>"</code>, `,, <code>'</code>, <code>|</code>, <code>#</code>, …).</li>
-<li>Few-shot prompting: Use a few examples for guidance.</li>
-<li>Chain-of-thought: Interconnected prompts.</li>
-<li>Role-based: Make the model assume a role (e.g.&nbsp;act like a tutor or advisor).</li>
-<li>Success Tip: Iterate and refine prompts for peak performance.</li>
+<li><p><strong>Numbered Steps:</strong>: For sequential tasks, use numbered steps. This helps the model understand the sequence of actions.</p></li>
+<li><p><strong>Use delimiters:</strong> To separate various parts of the prompt (e.g.&nbsp;<code>"</code>, `,, <code>'</code>, <code>|</code>, <code>#</code>, …).</p></li>
+<li><p><strong>Few-shot prompting:</strong> Provide a few examples for guidance.</p></li>
+<li><p><strong>Give the LLM a role:</strong> Make the model assume a role. E.g. act instruct the model to <code>act like a tutor</code> or <code>you are an expert programmer.</code></p></li>
+<li><p><strong>Iterate and refine prompts:</strong> Often, you won’t get your desired result straight away. Improve your prompting strategy iteratively, and then once you are happy, choose your final prompt and use it in a new chat session.</p></li>
 </ul>
-</div>
-</div>
-<p>Combining these techniques, a template prompt for an LMM might look like this:</p>
-<div class="callout callout-style-default callout-note callout-titled">
+<p>Combining these techniques, a template prompt might look like this:</p>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Template
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -372,63 +351,490 @@ Note
 <li>Steps: what are the steps to complete the task?</li>
 <li>Context: what is the context of the task?</li>
 <li>Goal: what is the goal of the task?</li>
-<li>Format: what is the format of the output?</li>
+<li>Format: what is the format of the output? How long should it be?</li>
 </ol>
 </div>
 </div>
-<p>An example prompt for a chatbot might look like this:</p>
-<div class="callout callout-style-default callout-note callout-titled">
+<p>Remember to structure your prompt in a way that is clear and easy to understand. You can use markdown to format your prompt, and you instruct the mode to format its response using markdown.</p>
+</section>
+<section id="examples" class="level2">
+<h2 class="anchored" data-anchor-id="examples">Examples</h2>
+<section id="adopt-a-persona" class="level3">
+<h3 class="anchored">Adopt a persona</h3>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<i class="bi-person " style="" role="img" aria-hidden="true"></i> Prompt:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You are an expert on the topic of university education and didactics. Explain the concept of “flipped classroom” to a group of teachers. Use markdown to format your response. Keep you explanation concise and to the point.</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<i class="bi-robot " style="" role="img" aria-hidden="true"></i> Output
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>
+Certainly! The “flipped classroom” is an instructional strategy that inverts traditional teaching methods, delivering instructional content outside of the classroom and moving activities, including those that may have traditionally been considered homework, into the classroom. Below is a concise breakdown of this concept:
+</p>
+<h2 class="anchored" data-anchor-id="adopt-a-persona">
+Flipped Classroom: An Overview
+</h2>
+<h3 class="anchored">
+<strong>1. Pre-Class Learning:</strong>
+</h3>
+<ul>
+<li>
+<strong>Content Delivery</strong>: Instead of lecturing during class time, instructors provide students with materials (videos, readings, podcasts) to be accessed and understood before class.
+</li>
+<li>
+<strong>Student Engagement</strong>: Students engage with the content at their own pace, making notes and preparing questions.
+</li>
+</ul>
+<h3 class="anchored">
+<strong>2. In-Class Activities:</strong>
+</h3>
+<ul>
+<li>
+<strong>Active Learning</strong>: Classroom time is dedicated to exercises, projects, or discussions that deepen understanding.
+</li>
+<li>
+<strong>Teacher Role</strong>: Instructors act more as facilitators or coaches, guiding students as they apply concepts and engage critically with the material.
+</li>
+</ul>
+<h3 class="anchored">
+<strong>3. Benefits:</strong>
+</h3>
+<ul>
+<li>
+<strong>Enhanced Interaction</strong>: Increases interaction between students and teachers by freeing up class time for discussion and individual attention.
+</li>
+<li>
+<strong>Personalized Learning</strong>: Allows students to learn at their own pace outside of class, leading to a more personalized education experience.
+</li>
+<li>
+<strong>Critical Thinking</strong>: Encourages higher-order thinking skills as students apply, analyze, and evaluate content during in-class activities.
+</li>
+</ul>
+<h3 class="anchored">
+<strong>4. Implementation Tips:</strong>
+</h3>
+<ul>
+<li>
+<strong>Start Small</strong>: Begin by flipping a single lesson or topic to see how it works for you and your students.
+</li>
+<li>
+<strong>Provide Clear Instructions</strong>: Make sure students understand their responsibilities in the flipped classroom model.
+</li>
+<li>
+<strong>Feedback and Flexibility</strong>: Collect feedback from students and be prepared to adjust strategies as needed.
+</li>
+</ul>
+<h3 class="anchored">
+<strong>5. Challenges:</strong>
+</h3>
+<ul>
+<li>
+<strong>Access to Resources</strong>: Ensuring all students have access to pre-class materials and technology.
+</li>
+<li>
+<strong>Student Compliance</strong>: Making sure students come prepared to engage in class activities.
+</li>
+<li>
+<strong>Adapting Teaching Styles</strong>: Requires teachers to shift from traditional lecturing to facilitating and guiding.
+</li>
+</ul>
+<p>
+The flipped classroom model fosters a collaborative learning environment where students take more control of their learning, and teachers provide support and guidance rather than direct instruction. This approach can lead to more engaging and effective learning experiences when implemented thoughtfully.
+</p>
+</div>
+</div>
+</div>
+<p>Now let’s try a different persona:</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<i class="bi-person " style="" role="img" aria-hidden="true"></i> Prompt:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You are 13 year old high school student. Explain the concept of “flipped classroom” to your friends. Use markdown to format your response. Keep you explanation concise and to the point.</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<i class="bi-robot " style="" role="img" aria-hidden="true"></i> Output
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>
+Hey friends! 📚✨
+</p>
+<p>
+So, I learned about this cool concept called the <strong>“flipped classroom.”</strong> Let me break it down for you:
+</p>
+<h3 class="anchored">
+What’s a Flipped Classroom? 🔄
+</h3>
+<p>
+In a <strong>traditional classroom</strong>, we sit through a lecture at school, take notes, and then go home to do homework - you know, the exercises and practice problems.
+</p>
+<p>
+In a <strong>flipped classroom</strong>, it’s like everything is… well, flipped! 🙃
+</p>
+<ul>
+<li>
+<strong>At Home</strong>: You watch video lectures or read materials. Basically, you learn the new stuff on your own time, at your own pace.
+</li>
+<li>
+<strong>In School</strong>: Instead of listening to the teacher talk, you do activities, projects, or discussions. This is where you apply what you learned at home and get help on the tricky parts.
+</li>
+</ul>
+<h3 class="anchored">
+Why It’s Cool? 😎
+</h3>
+<ul>
+<li>
+<strong>Learn at Your Own Pace</strong>: You can pause or replay the video lectures as many times as you need.
+</li>
+<li>
+<strong>More Help When You Need It</strong>: Since you’re doing the “homework” in class, the teacher can help you right when you’re stuck.
+</li>
+<li>
+<strong>Interactive Classes</strong>: Class time is more fun and engaging because it’s all about doing stuff rather than just listening.
+</li>
+</ul>
+<h3 class="anchored">
+The Catch? 🤔
+</h3>
+<p>
+You gotta be disciplined. Since you’re learning new content at home, you need to make sure you actually watch the videos or do the readings before class.
+</p>
+<p>
+That’s pretty much it! The flipped classroom flips the way we learn, making it more interactive and personalized. Pretty neat, right?
+</p>
+<p>
+Catch you later! 🌟
+</p>
+</div>
+</div>
+</div>
+</section>
+<section id="reference-texts" class="level3">
+<h3 class="anchored" data-anchor-id="reference-texts">Reference texts</h3>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<i class="bi-person " style="" role="img" aria-hidden="true"></i> Prompt:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You will be provided with</p>
+<ul>
+<li>context: documents delimited by <strong>triple quotes</strong></li>
+<li>a question</li>
+</ul>
+<p>Your task is to provide a simplified answer to the question using only the provided document and to cite the passage(s) of the document used to answer the question. If the document does not contain the information needed to answer this question then simply write: “Insufficient information.” If an answer to the question is provided, it must be annotated with a citation. Use the following format for to cite relevant passages ({“citation”: …}). Cite only the relevant sentence(s) of the document, not the entire document.</p>
+<p><strong>Document 1</strong>: ’‘’The flipped classroom intentionally shifts instruction to a learner-centered model, in which students are often initially introduced to new topics outside of school, freeing up classroom time for the exploration of topics in greater depth, creating meaningful learning opportunities.’’’</p>
+<p><strong>Document 2</strong>:’‘’With a flipped classroom, ’content delivery’ may take a variety of forms, often featuring video lessons prepared by the teacher or third parties, although online collaborative discussions, digital research, and text readings may alternatively be used. The ideal length for a video lesson is widely cited as eight to twelve minutes.’’’</p>
+<p><strong>Question</strong>: What is a good length for a video?</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<i class="bi-robot " style="" role="img" aria-hidden="true"></i> Output
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>
+A good length for a video in a flipped classroom context is eight to twelve minutes (“SOURCE”: The ideal length for a video lesson is widely cited as eight to twelve minutes.).
+</p>
+</div>
+</div>
+</div>
+<p>Try asking a question that cannot be answered with the provided documents:</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<i class="bi-person " style="" role="img" aria-hidden="true"></i> Prompt:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You will be provided with</p>
+<ul>
+<li>context: documents delimited by <strong>triple quotes</strong></li>
+<li>a question</li>
+</ul>
+<p>Your task is to provide a simplified answer to the question using only the provided document and to cite the passage(s) of the document used to answer the question. If the document does not contain the information needed to answer this question then simply write: “Insufficient information.” If an answer to the question is provided, it must be annotated with a citation. Use the following format for to cite relevant passages (“SOURCE”: …). Cite only the relevant sentence(s) of the document, not the entire document.</p>
+<p><strong>Document 1</strong>:’‘’The flipped classroom intentionally shifts instruction to a learner-centered model, in which students are often initially introduced to new topics outside of school, freeing up classroom time for the exploration of topics in greater depth, creating meaningful learning opportunities.’’’</p>
+<p><strong>Document 2</strong>:’‘’With a flipped classroom, ’content delivery’ may take a variety of forms, often featuring video lessons prepared by the teacher or third parties, although online collaborative discussions, digital research, and text readings may alternatively be used. The ideal length for a video lesson is widely cited as eight to twelve minutes.’’’</p>
+<p><strong>Question</strong>: Can you recommend a good book on the topic of flipped classrooms?</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<i class="bi-robot " style="" role="img" aria-hidden="true"></i> Output
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>
+Insufficient information.
+</p>
+</div>
+</div>
+</div>
+</section>
+<section id="structured-output" class="level3">
+<h3 class="anchored" data-anchor-id="structured-output">Structured output</h3>
+<p>You can also use prompts to instruct the model to produce structured output. For example, you can ask the model to give you a table.</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<i class="bi-person " style="" role="img" aria-hidden="true"></i> Prompt:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You are a high school teacher. Give me a table containing Greek letters in one column, their pronunciation in the second column, and examples of usage in the third column. Give me a maximum of 6 rows.</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong><i class="bi-robot " style="" role="img" aria-hidden="true"></i> Output:</strong></p>
+</div>
+</div>
+</div>
+<p>
+Certainly! Here’s a simple table for your request:
+</p>
+<p>
+</p><table class="table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 30%">
+<col style="width: 42%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Greek Letter</th>
+<th>Pronunciation</th>
+<th>Examples of Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>α (Alpha)</td>
+<td>‘al-fuh’</td>
+<td>α particle, α decay</td>
+</tr>
+<tr class="even">
+<td>β (Beta)</td>
+<td>‘bay-tuh’</td>
+<td>β radiation, β sheet in proteins</td>
+</tr>
+<tr class="odd">
+<td>γ (Gamma)</td>
+<td>‘gam-uh’</td>
+<td>γ rays, Γ distribution in statistics</td>
+</tr>
+<tr class="even">
+<td>δ (Delta)</td>
+<td>‘del-tuh’</td>
+<td>Δ change, δ function in mathematics</td>
+</tr>
+<tr class="odd">
+<td>ε (Epsilon)</td>
+<td>‘ep-si-lon’</td>
+<td>ε neighborhood in calculus, ε in electromotive force</td>
+</tr>
+<tr class="even">
+<td>Ω (Omega)</td>
+<td>‘o-may-guh’</td>
+<td>Ω resistance in electronics, ω in angular velocity</td>
+</tr>
+</tbody>
+</table>
+<!-- ::: -->
+</section>
+</section>
+<section id="exercises" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
+<ol class="example" type="1">
+<li><strong>Write a prompt</strong> that will make ChatGPT or Copilot act as a writing critic.</li>
+</ol>
+<p>You can use this as your starting point, and then iteratively improve it.</p>
+
+<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<p>Your first step could be to translate this into German.</p>
+</div></div><div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 Feedback on a text
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><code>I want you to act as a harsh critic. Criticize what I give to you and show me where my argumentation is lacking. Start by asking me what text I would like feedback on. Then ask me questions about my context to create the best feedback possible. If you feel you have all the context necessary, think step by step when creating your feedback.</code></p>
+<p>I want you to act as a [harsh/constructive] critic. Criticize what I give to you and show me where my argumentation is lacking. Start by asking me what text I would like feedback on. Then give me your feedback.</p>
 </div>
 </div>
-</section>
-<section id="explore-prompting-guides" class="level2">
-<h2 class="anchored" data-anchor-id="explore-prompting-guides">Explore Prompting Guides</h2>
-<ul>
-<li><p><a href="https://learnprompting.org/docs/intro">Learn prompting</a>: An incredibly comprehensive (and free) guide aimed at non-technical users.</p></li>
-<li><p><a href="https://www.promptingguide.ai/">Prompting guide</a>: This is an excellent prompting guide by <strong>DAIR.AI</strong> (Democratizing Artificial Intelligence Research, Education, and Technologies). The guide is licensed under an MIT license.</p></li>
-<li><p><a href="https://prompttools.streamlit.app/">PromptTools Playground</a>: a web app that lets you play with various prompting techniques. You can use different LLMs, and even compare the results.</p></li>
-<li><p><a href="https://huggingface.co/spaces/amagastya/SPARK">SPARK: a retrieval-augmented chatbot</a>. It uses various prompting guides as its knowledge base.</p></li>
-</ul>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center">
+<p>If you need an essay, you can use this one. There should be plenty to criticize.</p>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Discussion 💬
+Essay
 </div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<ul>
-<li>What experiences did you have with prompting?</li>
-<li>Did you find any of the techniques particularly useful?</li>
-</ul>
+<p><strong>Sollten Schulnoten abgeschafft werden?</strong></p>
+<p>In unserer heutigen Bildungswelt gibt es viele verschiedene Methoden, um den Fortschritt und das Wissen eines Schülers zu messen. Eine der gebräuchlichsten Methoden sind Schulnoten. Aber sollten wir wirklich Noten verwenden, um den Wert eines Schülers zu bestimmen? Ich glaube, dass Noten in Schulen abgeschafft werden sollten, und hier sind meine Gründe dafür:</p>
+<p>Erstens, Noten sind oft subjektiv. Verschiedene Lehrer haben unterschiedliche Meinungen darüber, was eine “A” -Arbeit im Vergleich zu einer “B” -Arbeit ist. Ein Schüler könnte in einem Fach bei einem Lehrer eine “A” bekommen und bei einem anderen Lehrer eine “B”. Dies zeigt, dass Noten nicht immer ein genaues Bild von dem Wissen eines Schülers geben.</p>
+<p>Zweitens, Noten erzeugen unnötigen Druck. Viele Schüler fühlen sich durch die Noten, die sie bekommen, gestresst und überfordert. Dieser Druck kann zu Angstzuständen, Depressionen und anderen gesundheitlichen Problemen führen. Wenn es keine Noten gäbe, könnten sich die Schüler mehr auf das Lernen konzentrieren und weniger darauf, eine bestimmte Note zu bekommen.</p>
+<p>Drittens, durch die Abschaffung von Noten könnten Schüler mehr Freiheit in ihrer Bildung haben. Sie könnten Themen studieren, die sie wirklich interessieren, anstatt sich darauf zu konzentrieren, welche Themen ihnen die besten Noten bringen würden. Dies könnte zu einer besseren und umfassenderen Bildung führen.</p>
+<p>Einige könnten argumentieren, dass Noten notwendig sind, um den Fortschritt eines Schülers zu messen. Aber es gibt viele andere Möglichkeiten, den Fortschritt zu messen, wie zum Beispiel Portfolios, Präsentationen oder Projekte. Diese Methoden könnten ein genaueres Bild von dem Wissen und den Fähigkeiten eines Schülers geben.</p>
+<p>Abschliessend glaube ich, dass Schulnoten mehr Schaden als Nutzen bringen. Sie sind oft subjektiv, erzeugen unnötigen Druck und beschränken die Freiheit der Schüler. Es ist an der Zeit, dass wir ein neues System finden, um den Fortschritt und das Wissen unserer Schüler zu messen.</p>
 </div>
 </div>
+</div>
+<ol start="2" class="example" type="1">
+<li>What role should the model assume?</li>
+<li>What is the task? Try to have the essay critiqued, and then ask for suggestions for improvement.</li>
+<li>Have the model provide an improved version of the essay.</li>
+<li>Instruct the model to show you the changes it made to the essay (you can use markdown to format the output).</li>
+<li>Instruct the model to list the changes it made to the essay in a table, and to explain why it made each change.</li>
+<li>Reflection: Did your prompting strategies work? What worked well? What didn’t work well?</li>
+</ol>
+</section>
+<section id="further-resources" class="level2">
+<h2 class="anchored" data-anchor-id="further-resources">Further Resources</h2>
+<ol start="8" class="example" type="1">
+<li><strong>Explore these prompt guides</strong>. Use both/either ChatGPT and Copilot to try out new ideas.</li>
+</ol>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Learn prompting: An comprehensive (and free) guide aimed at non-technical users.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><i class="bi-link " style="" role="img" aria-hidden="true"></i> <a href="https://learnprompting.org/docs/intro">Learn prompting</a></p>
+<iframe src="https://learnprompting.org/docs/intro" width="100%" height="500px"></iframe>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Prompting guide: A more technical guide to prompting
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><i class="bi-link " style="" role="img" aria-hidden="true"></i> <a href="https://www.promptingguide.ai/">Prompting guide</a>: <strong>DAIR.AI</strong> (Democratizing Artificial Intelligence Research, Education, and Technologies). The guide is licensed under an MIT license.</p>
+<iframe src="https://www.promptingguide.ai/" width="100%" height="500px"></iframe>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+SPARK: A chatbot for prompting guides
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="https://huggingface.co/spaces/amagastya/SPARK"><i class="bi-link " style="" role="img" aria-hidden="true"></i> SPARK: a retrieval-augmented chatbot</a>: Chatbot that uses various prompting guides as its knowledge base.</p>
+<!-- ```{=html}
+<iframe src="https://huggingface.co/spaces/amagastya/SPARK" width="100%" height="500px"></iframe>
+```  -->
+</div>
+</div>
+</div>
+<!-- 
+:::{.callout-caution}
+## Discussion 💬 
+
+- What experiences did you have with prompting?
+- Did you find any of the techniques particularly useful?
+::: -->
 
 
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{ellis2023,
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{ellis2024,
   author = {Ellis, Andrew},
-  title = {Activity 2: {Basic} {Prompting} {Techniques}},
-  date = {2023-10-26},
-  url = {https://virtuelleakademie.github.io/promptly-literate/pages/activity-3-reflection.html},
+  title = {Activities: {Learn} {Prompting}},
+  date = {2024-03-05},
+  url = {https://virtuelleakademie.github.io/promptly-literate/pages/activity-cas-hochschuldidaktik.html},
   langid = {en}
 }
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-ellis2023" class="csl-entry quarto-appendix-citeas" role="listitem">
-Ellis, Andrew. 2023. <span>“Activity 2: Basic Prompting
-Techniques.”</span> October 26, 2023. <a href="https://virtuelleakademie.github.io/promptly-literate/pages/activity-3-reflection.html">https://virtuelleakademie.github.io/promptly-literate/pages/activity-3-reflection.html</a>.
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-ellis2024" class="csl-entry quarto-appendix-citeas" role="listitem">
+Ellis, Andrew. 2024. <span>“Activities: Learn Prompting.”</span> March
+5, 2024. <a href="https://virtuelleakademie.github.io/promptly-literate/pages/activity-cas-hochschuldidaktik.html">https://virtuelleakademie.github.io/promptly-literate/pages/activity-cas-hochschuldidaktik.html</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

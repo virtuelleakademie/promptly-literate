@@ -45,6 +45,8 @@ website:
         menu:
           - text: "The busy lecturer's guide to LLMs"
             file: slides/busy-lecturers-guide.qmd
+          - text: "CAS Hochschuldidaktik"
+            file: slides/cas-hochschuldidaktik.qmd
 
 
       - icon: brush #pencil-square
@@ -60,8 +62,8 @@ website:
             file: pages/activity-1-prompting-techniques.qmd 
           - text: "Prompting for educational settings"
             file: pages/activity-2-prompting-learning-teaching.qmd
-          # - text: "Activity 3: Reflection"
-          #   file: pages/activity-3-reflection.qmd
+          - text: "Activity: CAS"
+            file: pages/activity-cas-hochschuldidaktik.qmd
           # - text: "Activity 3: Add your prompt tricks to the Miro board"
           #   file: pages/activity-4-miro.qmd
           # - text: "Activity 4: Discussion"
@@ -79,7 +81,7 @@ website:
           - text: "Using the API: Prompting Programmatically"
             file: pages/prompting.qmd
           # - text: Dashboard
-          #   file: dashboards/dashboard-demo.qmd
+          #   file: dashboards/python-penguins.qmd
           # - text: "Prompts for teaching and learning"
           #   file: pages/about.qmd
       - icon: archive
