@@ -59,7 +59,7 @@ def get_response(prompt, model="gpt-4-turbo-preview", temperature=0.6):
     response = client.chat.completions.create(
         model=model,
         messages=messages,
-        temperature=temperature
+        temperature=temperature,
     )
     # response = response.choices[0].message.content
     response = markdown.markdown(response.choices[0].message.content)
@@ -92,7 +92,7 @@ Some general techniques are:
 - **Few-shot prompting:** Provide a few examples for guidance.
   
  
-- **Give the LLM a role:** Make the model assume a role. E.g. act instruct the model to `act like a tutor` or `you are an expert programmer.`
+- **Give the LLM a role:** Make the model assume a role. For example, instruct the model to `act like a tutor` or `you are an expert programmer.`
   
   
 - **Iterate and refine prompts:** Often, you won't get your desired result straight away. Improve your prompting strategy iteratively, and then once you are happy, choose your final prompt and use it in a new chat session.
