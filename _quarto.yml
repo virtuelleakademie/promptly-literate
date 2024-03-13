@@ -64,6 +64,8 @@ website:
             file: pages/activity-2-prompting-learning-teaching.qmd
           - text: "Activity: CAS"
             file: pages/activity-cas-hochschuldidaktik.qmd
+          - text: "Activity: Prompt Labor: Vertiefung"
+            file: pages/activity-prompt-labor-vertiefung.qmd
           # - text: "Activity 3: Add your prompt tricks to the Miro board"
           #   file: pages/activity-4-miro.qmd
           # - text: "Activity 4: Discussion"
