@@ -62,7 +62,7 @@ Some general techniques are:
 - **Few-shot prompting:** Provide a few examples for guidance.
   
  
-- **Give the LLM a role:** Make the model assume a role. E.g. act instruct the model to `act like a tutor` or `you are an expert programmer.`
+- **Give the LLM a role:** Make the model assume a role. For example, instruct the model to `act like a tutor` or `you are an expert programmer.`
   
   
 - **Iterate and refine prompts:** Often, you won't get your desired result straight away. Improve your prompting strategy iteratively, and then once you are happy, choose your final prompt and use it in a new chat session.
@@ -97,37 +97,47 @@ You are an expert on the topic of university education and didactics. Explain th
 :::{.callout-warning collapse="true"}
 ## {{< bi robot >}} Output
 
-<p>Certainly! The "flipped classroom" is an instructional strategy that inverts traditional teaching methods, delivering instructional content outside of the classroom and moving activities, including those that may have traditionally been considered homework, into the classroom. Below is a concise breakdown of this concept:</p>
-<h2>Flipped Classroom: An Overview</h2>
-<h3><strong>1. Pre-Class Learning:</strong></h3>
+<p>Certainly! Here's a concise explanation of the "flipped classroom" model, tailored for a group of teachers:</p>
+<hr />
+<h1><strong>Flipped Classroom: An Overview</strong></h1>
+<p>The <strong>flipped classroom</strong> is an innovative educational model that rethinks the traditional learning environment by reversing the roles of classwork and homework. This approach shifts direct instruction from the group learning space (the classroom) to the individual learning space (typically through digital means), allowing the classroom to transform into a dynamic, interactive learning environment where teachers guide students in applying concepts and engaging creatively in the subject matter.</p>
+<h2><strong>Key Components</strong></h2>
+<ol>
+<li><strong>Pre-Class Preparation</strong></li>
+<li><strong>Videos/Lectures</strong>: Students watch recorded lectures or engage with other instructional materials at home.</li>
+<li>
+<p><strong>Readings/Activities</strong>: Additional resources may be assigned to complement the video material.</p>
+</li>
+<li>
+<p><strong>In-Class Time</strong></p>
+</li>
+<li><strong>Active Learning</strong>: Class time is dedicated to exercises, projects, or discussions that deepen understanding.</li>
+<li>
+<p><strong>Personalized Support</strong>: Teachers provide one-on-one assistance, clarifying doubts and addressing individual needs.</p>
+</li>
+<li>
+<p><strong>Feedback &amp; Assessment</strong></p>
+</li>
+<li><strong>Continuous Feedback</strong>: Regular quizzes and interactive activities provide immediate feedback to students and teachers.</li>
+<li><strong>Formative Assessment</strong>: Emphasizes understanding and improvement, guiding future teaching and learning strategies.</li>
+</ol>
+<h2><strong>Benefits</strong></h2>
 <ul>
-<li><strong>Content Delivery</strong>: Instead of lecturing during class time, instructors provide students with materials (videos, readings, podcasts) to be accessed and understood before class.</li>
-<li><strong>Student Engagement</strong>: Students engage with the content at their own pace, making notes and preparing questions.</li>
+<li><strong>Enhanced Engagement</strong>: Encourages active participation and collaboration among students.</li>
+<li><strong>Personalized Learning</strong>: Allows students to learn at their own pace, reviewing materials as needed.</li>
+<li><strong>Critical Thinking</strong>: Fosters a deeper understanding by applying concepts during class activities.</li>
+<li><strong>Teacher-Student Interaction</strong>: Increases meaningful interactions, focusing on guiding rather than lecturing.</li>
 </ul>
-<h3><strong>2. In-Class Activities:</strong></h3>
+<h2><strong>Challenges</strong></h2>
 <ul>
-<li><strong>Active Learning</strong>: Classroom time is dedicated to exercises, projects, or discussions that deepen understanding.</li>
-<li><strong>Teacher Role</strong>: Instructors act more as facilitators or coaches, guiding students as they apply concepts and engage critically with the material.</li>
+<li><strong>Access to Technology</strong>: Requires that all students have access to necessary technology at home.</li>
+<li><strong>Student Motivation</strong>: Success depends on students' willingness to prepare outside of class.</li>
+<li><strong>Preparation Time</strong>: Developing materials and planning active learning sessions can be time-intensive for teachers.</li>
 </ul>
-<h3><strong>3. Benefits:</strong></h3>
-<ul>
-<li><strong>Enhanced Interaction</strong>: Increases interaction between students and teachers by freeing up class time for discussion and individual attention.</li>
-<li><strong>Personalized Learning</strong>: Allows students to learn at their own pace outside of class, leading to a more personalized education experience.</li>
-<li><strong>Critical Thinking</strong>: Encourages higher-order thinking skills as students apply, analyze, and evaluate content during in-class activities.</li>
-</ul>
-<h3><strong>4. Implementation Tips:</strong></h3>
-<ul>
-<li><strong>Start Small</strong>: Begin by flipping a single lesson or topic to see how it works for you and your students.</li>
-<li><strong>Provide Clear Instructions</strong>: Make sure students understand their responsibilities in the flipped classroom model.</li>
-<li><strong>Feedback and Flexibility</strong>: Collect feedback from students and be prepared to adjust strategies as needed.</li>
-</ul>
-<h3><strong>5. Challenges:</strong></h3>
-<ul>
-<li><strong>Access to Resources</strong>: Ensuring all students have access to pre-class materials and technology.</li>
-<li><strong>Student Compliance</strong>: Making sure students come prepared to engage in class activities.</li>
-<li><strong>Adapting Teaching Styles</strong>: Requires teachers to shift from traditional lecturing to facilitating and guiding.</li>
-</ul>
-<p>The flipped classroom model fosters a collaborative learning environment where students take more control of their learning, and teachers provide support and guidance rather than direct instruction. This approach can lead to more engaging and effective learning experiences when implemented thoughtfully.</p>
+<h2><strong>Conclusion</strong></h2>
+<p>The flipped classroom model represents a shift towards a more student-centered approach to learning. By reimagining the use of class time, it offers opportunities for deeper engagement and personalized support, preparing students more effectively for complex problem-solving and collaborative work. However, its success depends on careful planning, access to resources, and the motivation of both teachers and students.</p>
+<hr />
+<p>I hope this provides a clear and helpful overview of the flipped classroom concept for your teaching strategies!</p>
 
 
 :::
@@ -144,25 +154,21 @@ You are 13 year old high school student. Explain the concept of "flipped classro
 :::{.callout-warning collapse="true"}
 ## {{< bi robot >}} Output
 
-<p>Hey friends! 📚✨</p>
-<p>So, I learned about this cool concept called the <strong>"flipped classroom."</strong> Let me break it down for you:</p>
-<h3>What's a Flipped Classroom? 🔄</h3>
-<p>In a <strong>traditional classroom</strong>, we sit through a lecture at school, take notes, and then go home to do homework - you know, the exercises and practice problems.</p>
-<p>In a <strong>flipped classroom</strong>, it's like everything is... well, flipped! 🙃</p>
+<p>Hey friends! 🚀 So, I learned about this cool way of learning called a <strong>flipped classroom</strong>. Let me break it down for you:</p>
+<h3>What is a Flipped Classroom? 🤔</h3>
+<p>A <strong>flipped classroom</strong> is like turning our normal classes upside down. Instead of the teacher talking and us listening during class, we do the opposite.</p>
+<h3>How Does It Work? 🛠️</h3>
 <ul>
-<li><strong>At Home</strong>: You watch video lectures or read materials. Basically, you learn the new stuff on your own time, at your own pace.</li>
-<li><strong>In School</strong>: Instead of listening to the teacher talk, you do activities, projects, or discussions. This is where you apply what you learned at home and get help on the tricky parts.</li>
+<li><strong>At Home:</strong> We watch videos or go through materials on our own. This is usually the "lecture" part but done at home.</li>
+<li><strong>In Class:</strong> Instead of listening to the teacher, we do activities, projects, or discuss what we learned. It's all about applying what we know and asking questions.</li>
 </ul>
-<h3>Why It's Cool? 😎</h3>
+<h3>Why It's Cool 😎</h3>
 <ul>
-<li><strong>Learn at Your Own Pace</strong>: You can pause or replay the video lectures as many times as you need.</li>
-<li><strong>More Help When You Need It</strong>: Since you're doing the "homework" in class, the teacher can help you right when you're stuck.</li>
-<li><strong>Interactive Classes</strong>: Class time is more fun and engaging because it's all about doing stuff rather than just listening.</li>
+<li><strong>More Control:</strong> We can pause or rewatch the videos at home if we don't get something the first time.</li>
+<li><strong>Better Help:</strong> In class, the teacher helps us directly with what we're stuck on.</li>
+<li><strong>Fun Learning:</strong> Doing activities and projects in class is way more fun than just sitting and listening.</li>
 </ul>
-<h3>The Catch? 🤔</h3>
-<p>You gotta be disciplined. Since you're learning new content at home, you need to make sure you actually watch the videos or do the readings before class.</p>
-<p>That's pretty much it! The flipped classroom flips the way we learn, making it more interactive and personalized. Pretty neat, right?</p>
-<p>Catch you later! 🌟</p>
+<p>So, it's like we get the best of both worlds – learning at our own pace and then using class time for the fun and tough stuff! 🌟</p>
 
 
 :::
@@ -193,7 +199,7 @@ Your task is to provide a simplified answer to the question using only the provi
 :::{.callout-warning collapse="true"}
 ## {{< bi robot >}} Output
 
-<p>A good length for a video in a flipped classroom context is eight to twelve minutes ("SOURCE": The ideal length for a video lesson is widely cited as eight to twelve minutes.).</p>
+<p>A good length for a video in a flipped classroom is eight to twelve minutes. ("SOURCE": The ideal length for a video lesson is widely cited as eight to twelve minutes.)</p>
 
 
 :::
@@ -247,15 +253,16 @@ You are a high school teacher. Give me a table containing Greek letters in one c
 **{{< bi robot >}} Output:**
 :::
 
-<p>Certainly! Here's a simple table for your request:</p>
-<p>| Greek Letter | Pronunciation | Examples of Usage   |
-|--------------|---------------|---------------------|
-| α (Alpha)    | 'al-fuh'      | α particle, α decay |
-| β (Beta)     | 'bay-tuh'     | β radiation, β sheet in proteins |
-| γ (Gamma)    | 'gam-uh'      | γ rays, Γ distribution in statistics |
-| δ (Delta)    | 'del-tuh'     | Δ change, δ function in mathematics |
-| ε (Epsilon)  | 'ep-si-lon'   | ε neighborhood in calculus, ε in electromotive force |
-| Ω (Omega)    | 'o-may-guh'   | Ω resistance in electronics, ω in angular velocity |</p>
+<p>Certainly! Here's a table with Greek letters, their pronunciations, and examples of their usage:</p>
+<p>| Greek Letter | Pronunciation | Example of Usage                 |
+|--------------|---------------|----------------------------------|
+| α (Alpha)    | AL-fuh        | α particle, α decay in physics   |
+| β (Beta)     | BAY-tuh       | β sheet in biochemistry, β radiation |
+| γ (Gamma)    | GAM-uh        | γ rays in physics, Γ function in mathematics |
+| δ (Delta)    | DEL-tuh       | δ function in mathematics, Δ change in variables |
+| ε (Epsilon)  | EP-si-lon     | ε in calculus for limits, ε-nets in computational geometry |
+| θ (Theta)    | THAY-tuh      | θ angle in trigonometry, θ in spherical coordinates | </p>
+<p>This table provides an introduction to some of the Greek letters, how they're pronounced, and where they might commonly be found in scientific and mathematical contexts.</p>
 
 
 <!-- ::: -->

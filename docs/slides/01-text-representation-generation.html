@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.550">
+  <meta name="generator" content="quarto-1.4.551">
 
   <meta name="author" content="Andrew Ellis">
   <title>Promptly Literate // - LLMs: Text representation, training, and text generation</title>
@@ -711,7 +711,7 @@ Andrew Ellis
 <h1>References</h1>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-broschinskiGrafikenErklaertFunktioniert2023" class="csl-entry" role="listitem">
-Broschinski, Sebastian, Titus Plattner, Patrick Meier, and Patrick Vögeli. 2023. <span>“In 9 Grafiken erklärt – So funktioniert künstliche Intelligenz.”</span> <span>Der Bund</span>. June 10, 2023. <a href="https://www.derbund.ch/so-funktioniert-kuenstliche-intelligenz-599276436215">https://www.derbund.ch/so-funktioniert-kuenstliche-intelligenz-599276436215</a>.
+Broschinski, Sebastian, Titus Plattner, Patrick Meier, and Patrick Vögeli. 2023. <span>“In 9 Grafiken erklärt – So funktioniert künstliche Intelligenz.”</span> Der Bund. June 10, 2023. <a href="https://www.derbund.ch/so-funktioniert-kuenstliche-intelligenz-599276436215">https://www.derbund.ch/so-funktioniert-kuenstliche-intelligenz-599276436215</a>.
 </div>
 <div id="ref-shanahanRolePlayLargeLanguage2023" class="csl-entry" role="listitem">
 Shanahan, Murray, Kyle McDonell, and Laria Reynolds. 2023. <span>“Role-<span>Play</span> with <span>Large Language Models</span>.”</span> May 25, 2023. <a href="https://doi.org/10.48550/arXiv.2305.16367">https://doi.org/10.48550/arXiv.2305.16367</a>.
@@ -1053,6 +1053,24 @@ Sutton, Rich. 2019. <span>“The <span>Bitter Lesson</span>.”</span> 2019. <a 
         // clear code selection
         e.clearSelection();
       });
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp("https:\/\/virtuelleakademie\.github\.io\/promptly-literate");
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
@@ -1089,7 +1107,11 @@ Sutton, Rich. 2019. <span>“The <span>Bitter Lesson</span>.”</span> 2019. <a 
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {
