@@ -1,0 +1,182 @@
+---
+title: "Prompt Labor: Vertiefung"
+subtitle: "KI-Sprachmodelle in der Lehre nutzen"
+author: "Andrew Ellis & Kaspar Kaufmann"
+date: last-modified
+date-format: "DD MMMM, YYYY"
+bibliography: ../bibliography.bib
+# nocite: |
+#   @shanahanTalkingLargeLanguage2023, @shanahanRolePlayLargeLanguage2023, @weiEmergentAbilitiesLarge2022b
+format: 
+    revealjs:
+        theme: [simple, ../styles/custom-reveal.scss]
+      #   theme: default
+        title-slide-attributes:
+          # data-background-image: ../assets/background-purple.png
+          # data-background-size: contain
+          data-background-opacity: "1"
+        # logo: ../assets/robot.png
+        footer: <a href="../index.html">back to website {{< bi box-arrow-up-left >}} </a>
+        # navigation-mode: vertical
+        progress: true
+        scrollable: true
+        slide-number: true
+        slide-level: 2
+        show-slide-number: all
+        controls-layout: bottom-right
+        controls-tutorial: true
+        preview-links: auto
+        chalkboard: true
+        from: markdown+emoji
+        code-fold: true
+        code-summary: "Show code"
+        code-tools: true
+        menu: 
+          sticky: true
+          keyboard: true
+          autoOpen: true
+          width: normal
+          numbers: true
+          markers: true
+        callout-appearance: simple
+        callout-icon: false
+revealjs-plugins:
+  - attribution
+---
+
+
+
+## {{< bi bookmark-star >}} Orientierungshilfe für Lehrpersonen der BFH
+
+
+:::{.callout-note}
+
+- **Haltung der BFH**: Technologien, die den Lernprozess unterstützen und praxisrelevant sind, sollen in die Lehre einbezogen werden.
+
+- **Einsatz von KI in der Lehre**: Die Mehrheit der Studierenden wird KI-Tools nutzen. Studierende sollen lernen, Technologien kompetent einzusetzen und kritisch zu hinterfragen.
+
+:::
+
+<br> <br>
+
+[{{< bi link >}} Knowledge Base der Virtuellen Akademie](https://virtuelleakademie.ch/knowledge-base/ki-basierte-schreibtools-in-der-lehre-chatgpt-im-fokus/)
+
+[{{< bi link >}} PDF](https://bernerfachhochschule.sharepoint.com/sites/mybfh-BFH-News-de/SitePages/Nachrichten-K%C3%BCnstliche-Intelligenz-(KI)-in-der-Lehre.aspx)
+
+
+## Effective teaching strategies
+
+@mollickUsingAIImplement2023a: 5 teaching strategies that are supported by research but difficult to apply in practice.
+
+<!-- The paper provides guidelines for how AI can support each strategy, such as generating examples, diagnosing misconceptions, creating quizzes, providing feedback, and scheduling practice sessions.
+
+The paper also warns of the potential pitfalls of using AI in education, such as ethical, privacy, and quality issues, and argues that AI should be used cautiously and thoughtfully in service of evidence-based teaching practices. -->
+
+1)  Providing multiple examples and explanations.
+2)  Uncovering and addressing student misconceptions.
+3)  Frequent low-stakes testing.
+4)  Assessing student learning.
+5)  Distributed practice.
+
+
+
+## Providing multiple examples and explanations
+
+- Expose students to a variety of examples -- single examples may lead students to focus on superficial details instead of the core concept. 
+
+- Promotes deeper understanding, assist in recalling information, stimulate critical thinking.
+
+- Variety helps students generalize, enabling them to apply this learning in other contexts. 
+ 
+{{< bi cone-striped >}} Time constraints, need to consider factors like relevance, engagement, and the right level of detail. 
+
+
+## Tools
+
+- {{< bi magic >}} Prompt engineering: guide LLMs to produce desired behaviour
+- {{< bi chat-dots >}} Design custom chatbots
+- {{< bi database >}} Retrieval-augmented generation (RAG)
+- {{< bi robot >}} Multi-agent models
+
+
+
+## {{< bi magic >}} Prompt engineering
+
+<br> <br>
+![](../assets/images/magic.svg){width=80%}
+
+## Basics of prompting
+
+OpenAI give a set of strategies for
+{{< bi link >}} [ using their models effectively](https://platform.openai.com/docs/guides/prompt-engineering).
+
+These include:
+
+- writing clear instructions
+- providing reference texts
+- splitting tasks into subtasks
+- giving the LLM 'time to think'
+- using external tools
+
+##  Pros and cons
+
+::::{.columns}
+:::{.column width=50%}
+{{< bi plus-circle >}} Can guide the LLM to produce the desired behaviour.
+
+{{< bi plus-circle >}} Requires little technical expertise.
+:::
+:::{.column width=50%}
+{{< bi dash-circle >}} May require trial and error to find the right prompt.
+
+:::
+::::
+
+
+## {{< bi chat-dots >}} Custom chatbots
+
+- Custom conversational agents for specific use cases.
+
+<br> <br>
+
+{{< bi play-circle-fill >}} DEMO: [Socratic mentor for reflective writing](https://chat.mentor.virtuelleakademie.ch/login)
+
+- LTI integration with Moodle
+- Embedded within Moodle course
+
+
+## {{< bi database >}} Retrieval-augmented generation
+
+![](../assets/images/rag-volvo.png){width=100%}
+
+:::{.attribution}
+[Pinecone](https://www.pinecone.io/learn/retrieval-augmented-generation/)
+:::
+
+## {{< bi database >}} Retrieval-augmented generation
+
+<br> 
+<iframe
+	src="https://awellis-pdf-chatbot.hf.space"
+	frameborder="0"
+	width="850"
+	height="450"
+></iframe>
+
+{{< bi link >}} [Open PDF Chatbot externally](https://awellis-pdf-chatbot.hf.space)
+
+
+## {{< bi robot >}} Multi-agent models
+
+
+![](../assets/images/multi-agent.excalidraw.svg){width=100%}
+
+
+
+
+
+
+## References {background-color="#D8DEE9"}
+
+::: {#refs}
+:::
