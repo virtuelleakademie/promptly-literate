@@ -46,7 +46,7 @@ code-annotations: select
 
 ### 1.	Schritt: Wähle ein Thema
 
-Wähle aus deiner eigenen Lehre ein Thema, welches z.B. besonders komplex ist oder welches du deinen Studierenden besonders verständlich machen möchtest. Stelle sicher, dass du ein PDF hast, welches dieses Thema erläutert (z.B. Forschungspapier, Vorlesungsunterlagen)
+Wähle aus deiner eigenen Lehre ein Thema, welches z.B. besonders komplex ist oder welches du deinen Studierenden besonders verständlich machen möchtest. Stelle sicher, dass du ein PDF hast, welches dieses Thema erläutert (z.B. Forschungspapier, Vorlesungsunterlagen).
 
 ### 2. Schritt: Nutze Copilot/ChatGPT
 
@@ -112,6 +112,7 @@ Verwende dieses Vorgehen für deine Lehrveranstaltung! 😊
 ## Optional
 
 Zur Vertiefung und für weitere Anwendungsszenarien in der Lehre versuche Folgendes:
+
 - Wende diesen Ansatz auch auf die anderen Strategien von @mollickUsingAIImplement2023 an.
 
 ## References {#sec-references}
