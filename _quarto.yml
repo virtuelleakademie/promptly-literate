@@ -47,6 +47,8 @@ website:
             file: slides/busy-lecturers-guide.qmd
           - text: "CAS Hochschuldidaktik"
             file: slides/cas-hochschuldidaktik.qmd
+          - text: "Prompt Labor: Vertiefung"
+            file: slides/prompt-labor-vertiefung.qmd
 
 
       - icon: brush #pencil-square
