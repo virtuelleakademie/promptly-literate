@@ -83,7 +83,7 @@ I would like you to act as an example generator for students. When confronted wi
 
 Erstelle nun mit Hilfe vom [OpenAI Playground](https://platform.openai.com/playground) und den zuvor erläuterten Anweisungen zu dieser Plattform selbst einen Assistenten, der mit Hilfe von RAG die Inhalte in einem bereitgestellten PDF nachschlagen kann. Folge den gleichen Anweisungen wie in Schritt 2, aber passe den Prompt so an, dass der Assistent das PDF nach relevanten Inhalten durchsucht.
 
-Als Alternative kannst du auch den [PDF Chatbot](https://awellis-pdf-chatbot.hf.space) benutzen.
+Als Alternative kannst du auch den [PDF Chatbot](https://awellis-pdf-chatbot.hf.space) benutzen. Hier kannst du ein oder mehrere PDFs hochladen, und das open-source" LLMs konfigurieren. Bei diesem Schritt kannst du die _Temperatur_ für die Textgenerierung anpassen. Probiere verschiedene Werte aus!
 
 :::{.callout-note}
 ## Beantworte folgende Fragen
