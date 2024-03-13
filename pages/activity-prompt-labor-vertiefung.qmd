@@ -83,7 +83,7 @@ I would like you to act as an example generator for students. When confronted wi
 
 Erstelle nun mit Hilfe vom [OpenAI Playground](https://platform.openai.com/playground) und den zuvor erläuterten Anweisungen zu dieser Plattform selbst einen Assistenten, der mit Hilfe von RAG die Inhalte in einem bereitgestellten PDF nachschlagen kann. Folge den gleichen Anweisungen wie in Schritt 2, aber passe den Prompt so an, dass der Assistent das PDF nach relevanten Inhalten durchsucht.
 
-Als Alternative kannst du auch den [ragdemo](https://huggingface.co/spaces/awellis/ragdemo) Chatbot benutzen.
+Als Alternative kannst du auch den [PDF Chatbot](https://awellis-pdf-chatbot.hf.space) benutzen.
 
 :::{.callout-note}
 ## Beantworte folgende Fragen
