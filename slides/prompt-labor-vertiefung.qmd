@@ -143,7 +143,7 @@ These include:
 
 - LTI integration with Moodle
 - Embedded within Moodle course
-
+- Use Azure OpenAI (privacy concerns, hosted in CH)
 
 ## {{< bi database >}} Retrieval-augmented generation
 
@@ -168,9 +168,21 @@ These include:
 
 ## {{< bi robot >}} Multi-agent models
 
+::::{.columns}
+:::{.column width=50%}
 
 ![](../assets/images/multi-agent.excalidraw.svg){width=100%}
+:::
 
+:::{.column width=50%}
+
+**Use cases:** 
+
+- feedback form formative assessments
+- evaluating essay grading [@hacklGPT4ReliableRater2023]
+
+:::
+::::
 
 
 

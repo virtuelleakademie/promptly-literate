@@ -144,7 +144,7 @@
     "href": "slides/prompt-labor-vertiefung.html#custom-chatbots",
     "title": "Prompt Labor: Vertiefung",
     "section": " Custom chatbots",
-    "text": "Custom chatbots\n\nCustom conversational agents for specific use cases.\n\n \n DEMO: Socratic mentor for reflective writing\n\nLTI integration with Moodle\nEmbedded within Moodle course"
+    "text": "Custom chatbots\n\nCustom conversational agents for specific use cases.\n\n \n DEMO: Socratic mentor for reflective writing\n\nLTI integration with Moodle\nEmbedded within Moodle course\nUse Azure OpenAI (privacy concerns, hosted in CH)"
   },
   {
     "objectID": "slides/prompt-labor-vertiefung.html#retrieval-augmented-generation",
@@ -165,14 +165,14 @@
     "href": "slides/prompt-labor-vertiefung.html#multi-agent-models",
     "title": "Prompt Labor: Vertiefung",
     "section": " Multi-agent models",
-    "text": "Multi-agent models"
+    "text": "Multi-agent models\n\n\n\n\nUse cases:\n\nfeedback form formative assessments\nevaluating essay grading (Hackl et al. 2023)"
   },
   {
     "objectID": "slides/prompt-labor-vertiefung.html#references",
     "href": "slides/prompt-labor-vertiefung.html#references",
     "title": "Prompt Labor: Vertiefung",
     "section": "References",
-    "text": "References\n\n\nMollick, Ethan R., and Lilach Mollick. 2023. “Using AI to Implement Effective Teaching Strategies in Classrooms: Five Strategies, Including Prompts.” SSRN Scholarly Paper. Rochester, NY. March 17, 2023. https://doi.org/10.2139/ssrn.4391243.\n\n\n\n\n\nback to website"
+    "text": "References\n\n\nHackl, Veronika, Alexandra Elena Müller, Michael Granitzer, and Maximilian Sailer. 2023. “Is GPT-4 a Reliable Rater? Evaluating Consistency in GPT-4’s Text Ratings.” Frontiers in Education 8 (December). https://doi.org/10.3389/feduc.2023.1272229.\n\n\nMollick, Ethan R., and Lilach Mollick. 2023. “Using AI to Implement Effective Teaching Strategies in Classrooms: Five Strategies, Including Prompts.” SSRN Scholarly Paper. Rochester, NY. March 17, 2023. https://doi.org/10.2139/ssrn.4391243.\n\n\n\n\n\nback to website"
   },
   {
     "objectID": "slides/cas-hochschuldidaktik.html#orientierungshilfe-für-lehrpersonen-der-bfh",
