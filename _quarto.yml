@@ -43,12 +43,14 @@ website:
       - icon: file-slides
         text: "Slides" # {{< fa person-chalkboard >}}
         menu:
-          - text: "The busy lecturer's guide to LLMs"
-            file: slides/busy-lecturers-guide.qmd
-          - text: "CAS Hochschuldidaktik"
-            file: slides/cas-hochschuldidaktik.qmd
+          - text: "Prompt Labor: Basics"
+            file: slides/prompt-labor-basics.qmd
           - text: "Prompt Labor: Vertiefung"
             file: slides/prompt-labor-vertiefung.qmd
+          - text: "CAS Hochschuldidaktik"
+            file: slides/cas-hochschuldidaktik.qmd
+          - text: "The busy lecturer's guide to LLMs"
+            file: slides/busy-lecturers-guide.qmd
 
 
       - icon: brush #pencil-square
