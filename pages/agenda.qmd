@@ -14,11 +14,13 @@ lightbox: auto
 
 ## {{< bi file-slides >}} Slides
 
-{{< bi link >}} [The busy lecturer's guide to LLMs](../slides/busy-lecturers-guide.qmd)
+{{< bi link >}} [Prompt Labor: Basics](../slides/prompt-labor-basics.qmd)
 
 ## {{< bi brush >}} Activities
 
-{{< bi link >}} [Confabulations and prompting](../pages/activities-20240223.qmd)
+{{< bi link >}} [1. Prompting techniques](../pages/activity-cas-hochschuldidaktik.qmd)
+
+{{< bi link >}} [2. Confabulations and prompting](../pages/activities-20240223.qmd)
 
 
 ## {{< bi house-door >}} Take-home messages
