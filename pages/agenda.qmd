@@ -10,7 +10,7 @@ lightbox: auto
 - What are large language models (LLMs)? How do they generate text?
 - What tasks can LLMs perform? What are their limitations?
 - What are effective prompting techniques?
-- How can I use LLMs in educational settings?
+<!-- - How can I use LLMs in educational settings? -->
 
 ## {{< bi file-slides >}} Slides
 
