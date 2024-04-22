@@ -357,15 +357,6 @@ Abschliessend glaube ich, dass Schulnoten mehr Schaden als Nutzen bringen. Sie s
 :::
 
 
-:::{.callout-tip collapse="true"}
-## SPARK: A chatbot for prompting guides
-[{{< bi link >}} SPARK: a retrieval-augmented chatbot](https://huggingface.co/spaces/amagastya/SPARK): Chatbot that uses various prompting guides as its knowledge base.
-
-<!-- ```{=html}
-<iframe src="https://huggingface.co/spaces/amagastya/SPARK" width="100%" height="500px"></iframe>
-```  -->
-:::
-
 
 
 
