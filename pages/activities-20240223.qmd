@@ -59,7 +59,7 @@ Teilt eure Erkenntnisse kurz im Plenum.
  
 Wie du einen Prompt formulierst bestimmt massgeblich die Qualität und Form des Outputs. 
 
-Versuche nun mithilfe der gelernten Techniken (weitere findest du [hier](activity-1-prompting-techniques.qmd)) einen Prompt zu formulieren, der möglichst viele Techniken vereint. (⌛ 10 Minuten)
+Versuche nun mithilfe der gelernten Techniken (weitere findest du [hier](activity-cas-hochschuldidaktik.qmd)) einen Prompt zu formulieren, der möglichst viele Techniken vereint. (⌛ 10 Minuten)
  
 :::{.callout-note}
 Wähle dafür ein Thema, welches für deine Arbeit/Lehrtätigkeit relevant ist. Falls dir gerade keines in den Sinn kommt, kannst du dir vom Chatbot beispielsweise einen Plan für eine zweistündige Vorlesung zum Thema "Kognitive Verzerrungen" erstellen lassen.
