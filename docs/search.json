@@ -1754,7 +1754,7 @@
     "href": "slides/prompt-labor-basics.html#how-to-train-a-language-model-1",
     "title": "Prompt Labor: Basics",
     "section": "How to train a language model",
-    "text": "How to train a language model\n\n\nAn LLM learns to predict the next word in a sequence, given the previous words: \\[ P(word | context) \\]\nThink of as “fancy autocomplete” (but very very powerful and sopisticated)"
+    "text": "How to train a language model\n\nAn LLM learns to predict the next word in a sequence, given the previous words: \\[ P(word | context) \\]\nThink of as “fancy autocomplete” (but very very powerful and sopisticated)"
   },
   {
     "objectID": "slides/prompt-labor-basics.html#text-generation",
@@ -1943,7 +1943,7 @@
     "href": "slides/prompt-labor-basics.html#provide-reference-texts",
     "title": "Prompt Labor: Basics",
     "section": "Provide reference texts",
-    "text": "Provide reference texts\n\nProvide a model with trusted and relevant information.\nThen instruct the model to use the provided information to compose its answer.\n\n Instruct the model to answer using a reference text\n\n\nThis leads to retrieval-augmented generation (RAG). First create a database of documents, then retrieve the most relevant documents, based on a user’s query. These are then included in the prompt to the model. The model is instructed to use the information in the documents to compose its answer."
+    "text": "Provide reference texts\n\nProvide a model with trusted and relevant information.\nThen instruct the model to use the provided information to compose its answer.\n\n Instruct the model to answer using a reference text\n\n\n\nThis leads to retrieval-augmented generation (RAG). First create a database of documents, then retrieve the most relevant documents, based on a user’s query. These are then included in the prompt to the model. The model is instructed to use the information in the documents to compose its answer."
   },
   {
     "objectID": "slides/prompt-labor-basics.html#provide-reference-texts-1",

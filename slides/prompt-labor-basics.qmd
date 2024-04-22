@@ -84,12 +84,12 @@ A branch of computer science that aims to create machines that can perform tasks
 ::::
 
 
-## What is Generative AI?
+<!-- ## What is Generative AI?
 
 Generative AI uses machine learning to create complex statistical models of how data are generated.
 
 - Generative AI models learn from existing data.
-- Produce new data that resembles the original data: images, music, text, etc.
+- Produce new data that resembles the original data: images, music, text, etc. -->
 
 
 ## What is a Large Language Model?
@@ -138,13 +138,11 @@ An LLM is a type of generative AI model that is trained to predict the next word
 - Extracts knowledge from text: linguistic, factual, commonsense, etc. -->
 
 ## How to train a language model
-::: {.incremental}
+
 - An LLM learns to predict the next word in a sequence, given the previous words:
  $$ P(word | context) $$
 - Think of as "fancy autocomplete" (but very very powerful and sopisticated)
-:::
 
-. . .
 
 ![](../assets/images/ppl_full.gif){width=100%}
 
@@ -269,7 +267,7 @@ Figure courtesy of [Andrej Karpathy](https://karpathy.ai/)
 Figure courtesy of [Andrej Karpathy](https://karpathy.ai/)
 :::
 
-## Emergent abilities
+<!-- ## Emergent abilities
 
 LLMs are thought to show emergent abilities - abilities not explicitly taught. Instead, they emerge _as a result of text prediction_.
 
@@ -304,7 +302,7 @@ Similar to a straw, a tunnel can also be considered to have one hole. It's an el
 ::: {.column width="50%"}
 ![](../assets/images/straw-tunnel.png){width=100%}
 :::
-::::
+:::: -->
 
 
 
@@ -389,9 +387,9 @@ Model is **aligned** with the values of the fine-tuner.
 
 
 
-## Stochastic generation
+<!-- ## Stochastic generation
 
-![](../assets/images/simulator.png){width=100%}
+![](../assets/images/simulator.png){width=100%} -->
 
 
 
@@ -579,7 +577,7 @@ These include:
 This leads to **retrieval-augmented generation (RAG)**. First create a database of documents, then retrieve the most relevant documents, based on a user's query. These are then included in the prompt to the model. The model is instructed to use the information in the documents to compose its answer.
 :::
 
-## Provide reference texts {.scrollable}
+<!-- ## Provide reference texts {.scrollable}
 
 :::{.callout-note}
 {{< fa person >}}: You will be provided with a document delimited by triple quotes and a question. Your task is to provide a simplified answer to the question using only the provided document and to cite the passage(s) of the document used to answer the question. If the document does not contain the information needed to answer this question then simply write: "Insufficient information." If an answer to the question is provided, it must be annotated with a citation. Use the following format for to cite relevant passages ({"citation": …}). Cite only the relevant passage(s) of the document, not the entire document.
@@ -590,7 +588,7 @@ The flipped classroom intentionally shifts instruction to a learner-centered mod
 
 **Question**: What is flipped classroom?
 
-:::
+::: -->
 
 
 

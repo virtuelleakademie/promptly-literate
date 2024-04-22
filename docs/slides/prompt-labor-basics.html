@@ -455,14 +455,12 @@ Andrew Ellis
 <p>A branch of computer science that aims to create machines that can perform tasks that typically require human intelligence.</p>
 </div>
 </div>
-</section>
-<section id="what-is-generative-ai" class="slide level2">
-<h2>What is Generative AI?</h2>
-<p>Generative AI uses machine learning to create complex statistical models of how data are generated.</p>
-<ul>
-<li>Generative AI models learn from existing data.</li>
-<li>Produce new data that resembles the original data: images, music, text, etc.</li>
-</ul>
+<!-- ## What is Generative AI?
+
+Generative AI uses machine learning to create complex statistical models of how data are generated.
+
+- Generative AI models learn from existing data.
+- Produce new data that resembles the original data: images, music, text, etc. -->
 </section>
 <section id="what-is-a-large-language-model" class="slide level2">
 <h2>What is a Large Language Model?</h2>
@@ -496,16 +494,12 @@ Andrew Ellis
 <img data-src="../assets/images/pretraining.png" style="width:100.0%" class="r-stretch"></section>
 <section id="how-to-train-a-language-model-1" class="slide level2">
 <h2>How to train a language model</h2>
-<div>
 <ul>
-<li class="fragment">An LLM learns to predict the next word in a sequence, given the previous words: <span class="math display">\[ P(word | context) \]</span></li>
-<li class="fragment">Think of as “fancy autocomplete” (but very very powerful and sopisticated)</li>
+<li>An LLM learns to predict the next word in a sequence, given the previous words: <span class="math display">\[ P(word | context) \]</span></li>
+<li>Think of as “fancy autocomplete” (but very very powerful and sopisticated)</li>
 </ul>
-</div>
-<div class="fragment">
-<p><img data-src="../assets/images/ppl_full.gif" style="width:100.0%"></p>
-</div>
-</section>
+
+<img data-src="../assets/images/ppl_full.gif" style="width:100.0%" class="r-stretch"></section>
 <section id="text-generation" class="slide level2">
 <h2>Text Generation</h2>
 <div class="columns">
@@ -548,18 +542,11 @@ Andrew Ellis
 LLMs operate with tokens, not words. These are sub-words, and make working with text much easier for the model. A rule of thumb is that one token generally corresponds to ~4 characters of English text. This translates to roughly $\frac{3}{4}$ of a word (so 100 tokens is about 75 words).
 
 
-
 ::: {.cell}
-
-```{.r .cell-code}
-knitr::include_graphics("../assets/images/tokenization.png")
-```
-
 ::: {.cell-output-display}
 ![](../assets/images/tokenization.png){width=675}
 :::
 :::
-
 
 
 Feel free to try out the [OpenAI tokenizer](https://platform.openai.com/tokenizer). 
@@ -572,18 +559,11 @@ Feel free to try out the [OpenAI tokenizer](https://platform.openai.com/tokenize
 ::: {.column width="50%"}
 
 
-
 ::: {.cell}
-
-```{.r .cell-code}
-knitr::include_graphics("../assets/images/embedding.png")
-```
-
 ::: {.cell-output-display}
 ![](../assets/images/embedding.png){width=751}
 :::
 :::
-
 
 :::
 ::: {.column width="50%"}
@@ -623,37 +603,43 @@ In this 2-dimensional representation, concepts that are "related" lie close toge
 <img data-src="../assets/images/karpathy-training-process.png" style="width:100.0%" class="r-stretch"><div class="attribution">
 <p>Figure courtesy of <a href="https://karpathy.ai/">Andrej Karpathy</a></p>
 </div>
+<!-- ## Emergent abilities
+
+LLMs are thought to show emergent abilities - abilities not explicitly taught. Instead, they emerge _as a result of text prediction_.
+
+Abilities include:
+
+- performing arithmetic, answering questions, summarizing text, translating, etc.
+- zero-shot learning: LLMs can perform tasks without being trained on them.
+- few-shot learning: LLMs can perform tasks with few examples.
+
+## Emergent abilities
+
+What kind of knowledge does an LLM have to have to be able to write a continuation of the following text?^[Continue this conversation with [ChatGPT](https://chat.openai.com/share/2661773e-3bf6-4be3-b251-41f639bfc2a1).]
+
+::::{.columns}
+::: {.column width="50%"}
+
+:::{.callout-note}
+: 
+How many holes does a straw have?
+
+: 
+A straw has one hole. It's a cylindrical tunnel that runs through the entire length, creating a single continuous space from one end to the other.
+
+: 
+What about a tunnel?
+
+:
+Similar to a straw, a tunnel can also be considered to have one hole. It's an elongated pathway carved through an obstruction, allowing passage from one side to the other, thus creating a single continuous space or hole through the material.
+:::
+:::
+
+::: {.column width="50%"}
+![](../assets/images/straw-tunnel.png){width=100%}
+:::
+:::: -->
 </section>
-<section id="emergent-abilities" class="slide level2">
-<h2>Emergent abilities</h2>
-<p>LLMs are thought to show emergent abilities - abilities not explicitly taught. Instead, they emerge <em>as a result of text prediction</em>.</p>
-<p>Abilities include:</p>
-<ul>
-<li>performing arithmetic, answering questions, summarizing text, translating, etc.</li>
-<li>zero-shot learning: LLMs can perform tasks without being trained on them.</li>
-<li>few-shot learning: LLMs can perform tasks with few examples.</li>
-</ul>
-</section>
-<section id="emergent-abilities-1" class="slide level2">
-<h2>Emergent abilities</h2>
-<p>What kind of knowledge does an LLM have to have to be able to write a continuation of the following text?<sup>1</sup></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="callout callout-note no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p><i class="bi-person " style="" role="img" aria-hidden="true"></i>: How many holes does a straw have?</p>
-<p><i class="bi-robot " style="" role="img" aria-hidden="true"></i>: A straw has one hole. It’s a cylindrical tunnel that runs through the entire length, creating a single continuous space from one end to the other.</p>
-<p><i class="bi-person " style="" role="img" aria-hidden="true"></i>: What about a tunnel?</p>
-<p><i class="bi-robot " style="" role="img" aria-hidden="true"></i>: Similar to a straw, a tunnel can also be considered to have one hole. It’s an elongated pathway carved through an obstruction, allowing passage from one side to the other, thus creating a single continuous space or hole through the material.</p>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<p><img data-src="../assets/images/straw-tunnel.png" style="width:100.0%"></p>
-</div>
-</div>
-<aside><ol class="aside-footnotes"><li id="fn1"><p>Continue this conversation with <a href="https://chat.openai.com/share/2661773e-3bf6-4be3-b251-41f639bfc2a1">ChatGPT</a>.</p></li></ol></aside></section>
 <section id="assistant-models" class="slide level2">
 <h2>Assistant models</h2>
 <p>Trained (fine-tuned) to have conversations: turn-taking, question answering, not being [rude/sexist/racist].</p>
@@ -709,11 +695,10 @@ In this 2-dimensional representation, concepts that are "related" lie close toge
 </ul>
 </div>
 </div>
-</section>
-<section id="stochastic-generation" class="slide level2">
-<h2>Stochastic generation</h2>
+<!-- ## Stochastic generation
 
-<img data-src="../assets/images/simulator.png" style="width:100.0%" class="r-stretch"></section>
+![](../assets/images/simulator.png){width=100%} -->
+</section>
 <section id="hallucination" class="slide level2">
 <h2>Hallucination</h2>
 <div class="columns">
@@ -742,7 +727,7 @@ In this 2-dimensional representation, concepts that are "related" lie close toge
 </div>
 </div>
 <p>It looks like the LLM knows the capital of Uzbekistan<sup>1</sup>.</p>
-<aside><ol class="aside-footnotes"><li id="fn2"><p>What it is actually doing is responding with the most likely sequence following the question.</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>What it is actually doing is responding with the most likely sequence following the question.</p></li></ol></aside></section>
 <section id="knowledge-base" class="slide level2">
 <h2>Knowledge base</h2>
 <div class="columns">
@@ -896,21 +881,21 @@ Model learns and fits.</p>
 </ul>
 <p><a href="https://platform.openai.com/docs/guides/prompt-engineering/tactic-instruct-the-model-to-answer-using-a-reference-text"><i class="bi-link " style="" role="img" aria-hidden="true"></i> Instruct the model to answer using a reference text</a></p>
 
+<!-- ## Provide reference texts {.scrollable}
+
+:::{.callout-note}
+: You will be provided with a document delimited by triple quotes and a question. Your task is to provide a simplified answer to the question using only the provided document and to cite the passage(s) of the document used to answer the question. If the document does not contain the information needed to answer this question then simply write: "Insufficient information." If an answer to the question is provided, it must be annotated with a citation. Use the following format for to cite relevant passages ({"citation": …}). Cite only the relevant passage(s) of the document, not the entire document.
+
+"""
+The flipped classroom intentionally shifts instruction to a learner-centered model, in which students are often initially introduced to new topics outside of school, freeing up classroom time for the exploration of topics in greater depth, creating meaningful learning opportunities. With a flipped classroom, 'content delivery' may take a variety of forms, often featuring video lessons prepared by the teacher or third parties, although online collaborative discussions, digital research, and text readings may alternatively be used. The ideal length for a video lesson is widely cited as eight to twelve minutes.
+"""
+
+**Question**: What is flipped classroom?
+
+::: -->
 <aside><div>
 <p>This leads to <strong>retrieval-augmented generation (RAG)</strong>. First create a database of documents, then retrieve the most relevant documents, based on a user’s query. These are then included in the prompt to the model. The model is instructed to use the information in the documents to compose its answer.</p>
 </div></aside></section>
-<section id="provide-reference-texts-1" class="slide level2 scrollable">
-<h2>Provide reference texts</h2>
-<div class="callout callout-note no-icon callout-style-simple">
-<div class="callout-body">
-<div class="callout-content">
-<p><i class="fa-solid fa-person" aria-label="person"></i>: You will be provided with a document delimited by triple quotes and a question. Your task is to provide a simplified answer to the question using only the provided document and to cite the passage(s) of the document used to answer the question. If the document does not contain the information needed to answer this question then simply write: “Insufficient information.” If an answer to the question is provided, it must be annotated with a citation. Use the following format for to cite relevant passages ({“citation”: …}). Cite only the relevant passage(s) of the document, not the entire document.</p>
-<p>““” The flipped classroom intentionally shifts instruction to a learner-centered model, in which students are often initially introduced to new topics outside of school, freeing up classroom time for the exploration of topics in greater depth, creating meaningful learning opportunities. With a flipped classroom, ‘content delivery’ may take a variety of forms, often featuring video lessons prepared by the teacher or third parties, although online collaborative discussions, digital research, and text readings may alternatively be used. The ideal length for a video lesson is widely cited as eight to twelve minutes. ““”</p>
-<p><strong>Question</strong>: What is flipped classroom?</p>
-</div>
-</div>
-</div>
-</section>
 <section id="giving-gpt-time-to-think" class="slide level2">
 <h2>Giving GPT ‘time to think’</h2>
 <ul>
@@ -1291,6 +1276,44 @@ Yang, Chengrun, Xuezhi Wang, Yifeng Lu, Hanxiao Liu, Quoc V. Le, Denny Zhou, and
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
