@@ -16,11 +16,15 @@ lightbox: auto
 
 {{< bi link >}} [Prompt Labor: Basics](../slides/prompt-labor-basics.qmd)
 
+{{< bi link >}} [Prompt Labor: Vertiefung](../slides/prompt-labor-vertiefung.qmd)
+
 ## {{< bi brush >}} Activities
 
 {{< bi link >}} [1. Prompting techniques](../pages/activity-cas-hochschuldidaktik.qmd)
 
 {{< bi link >}} [2. Confabulations and prompting](../pages/activities-20240223.qmd)
+
+{{< bi link >}} [3. Prompt Labor: Vertiefung](../pages/activity-prompt-labor-vertiefung.qmd)
 
 
 ## {{< bi house-door >}} Take-home messages
