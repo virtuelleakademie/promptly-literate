@@ -63,6 +63,31 @@ revealjs-plugins:
 
 [{{< bi link >}} PDF](https://bernerfachhochschule.sharepoint.com/sites/mybfh-BFH-News-de/SitePages/Nachrichten-K%C3%BCnstliche-Intelligenz-(KI)-in-der-Lehre.aspx)
 
+## Competencies
+
+::::{.columns}
+:::{.column width=20%}
+:::
+:::{.column width=80%}
+
+![](../assets/images/competencies.svg){width=80%}
+:::
+::::
+
+
+## Deskilling vs. upskilling
+
+::::{.columns}
+:::{.column width=20%}
+:::
+:::{.column width=80%}
+
+![](../assets/images/deskilling.svg){width=80%}
+
+:::
+::::
+
+
 
 ## Effective teaching strategies
 
@@ -107,7 +132,7 @@ The paper also warns of the potential pitfalls of using AI in education, such as
 
 ## Basics of prompting
 
-OpenAI give a set of strategies for
+OpenAI's strategies for
 {{< bi link >}} [ using their models effectively](https://platform.openai.com/docs/guides/prompt-engineering).
 
 These include:
@@ -139,7 +164,7 @@ These include:
 
 <br> <br>
 
-{{< bi play-circle-fill >}} DEMO: [Socratic mentor for reflective writing](https://chat.mentor.virtuelleakademie.ch/login)
+{{< bi play-circle-fill >}} DEMO: [Socratic mentor for reflective writing](https://moodle.bfh.ch/mod/lti/view.php?id=2165051)
 
 - LTI integration with Moodle
 - Embedded within Moodle course
@@ -147,11 +172,20 @@ These include:
 
 ## {{< bi database >}} Retrieval-augmented generation
 
-![](../assets/images/rag-volvo.png){width=100%}
+::::{.columns}
+:::{.column width=20%}
+
+:::
+:::{.column width=80%}
+![](../assets/images/rag.svg){width=80%}
+:::
+::::
+
+<!-- ![](../assets/images/rag-volvo.png){width=100%}
 
 :::{.attribution}
 [Pinecone](https://www.pinecone.io/learn/retrieval-augmented-generation/)
-:::
+::: -->
 
 ## {{< bi database >}} Retrieval-augmented generation
 
@@ -178,8 +212,8 @@ These include:
 
 **Use cases:** 
 
-- feedback form formative assessments
-- evaluating essay grading [@hacklGPT4ReliableRater2023]
+- Feedback for formative assessments
+- Evaluation of essay grading [@hacklGPT4ReliableRater2023]
 
 :::
 ::::
