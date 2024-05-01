@@ -290,9 +290,8 @@ div.csl-indent {
   <ul class="collapse">
   <li><a href="#schritt-wähle-ein-thema" id="toc-schritt-wähle-ein-thema" class="nav-link" data-scroll-target="#schritt-wähle-ein-thema">1. Schritt: Wähle ein Thema</a></li>
   <li><a href="#schritt-nutze-copilotchatgpt" id="toc-schritt-nutze-copilotchatgpt" class="nav-link" data-scroll-target="#schritt-nutze-copilotchatgpt">2. Schritt: Nutze Copilot/ChatGPT</a></li>
-  <li><a href="#schritt-nutze-rag" id="toc-schritt-nutze-rag" class="nav-link" data-scroll-target="#schritt-nutze-rag">3. Schritt: Nutze RAG</a></li>
+  <li><a href="#schritt-optional-nutze-rag" id="toc-schritt-optional-nutze-rag" class="nav-link" data-scroll-target="#schritt-optional-nutze-rag">3. Schritt (optional): Nutze RAG</a></li>
   <li><a href="#schritt-teile-deine-erfahrungen" id="toc-schritt-teile-deine-erfahrungen" class="nav-link" data-scroll-target="#schritt-teile-deine-erfahrungen">4. Schritt: Teile deine Erfahrungen</a></li>
-  <li><a href="#schritt" id="toc-schritt" class="nav-link" data-scroll-target="#schritt">5. Schritt</a></li>
   </ul></li>
   <li><a href="#optional" id="toc-optional" class="nav-link" data-scroll-target="#optional">Optional</a></li>
   <li><a href="#sec-references" id="toc-sec-references" class="nav-link" data-scroll-target="#sec-references">References</a></li>
@@ -345,7 +344,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">17 Mar, 2024</p>
+      <p class="date">01 May, 2024</p>
     </div>
   </div>
   
@@ -359,14 +358,14 @@ div.csl-indent {
 
 <section id="ausgangslage" class="level2">
 <h2 class="anchored" data-anchor-id="ausgangslage">Ausgangslage</h2>
-<p><span class="citation" data-cites="mollickUsingAIImplement2023">Mollick and Mollick (<a href="#ref-mollickUsingAIImplement2023" role="doc-biblioref">2023</a>)</span> haben in ihrem Artikel fünf mögliche Strategien für die Verwendung von LLMs für die Lehre vorgestellt. Als erste Strategie nennen <span class="citation" data-cites="mollickUsingAIImplement2023">Mollick and Mollick (<a href="#ref-mollickUsingAIImplement2023" role="doc-biblioref">2023</a>)</span> die Möglichkeit, mit Hilfe von KI viele unterschiedliche Beispiele zu produzieren (Strategy 1: Using AI to Produce Many Varied Examples):</p>
+<p><span class="citation" data-cites="mollickUsingAIImplement2023">Mollick and Mollick (<a href="#ref-mollickUsingAIImplement2023" role="doc-biblioref">2023</a>)</span> haben in ihrem Artikel fünf mögliche Strategien für die Verwendung von LLMs für die Lehre vorgestellt. Als erste Strategie nennen <span class="citation" data-cites="mollickUsingAIImplement2023">Mollick and Mollick (<a href="#ref-mollickUsingAIImplement2023" role="doc-biblioref">2023</a>)</span> die Möglichkeit, mit Hilfe von Sprachmodellen viele unterschiedliche Beispiele zu produzieren (Strategy 1: Using AI to Produce Many Varied Examples):</p>
 <blockquote class="blockquote">
 <p>Students need many examples when learning complicated concepts <span class="citation" data-cites="kirschnerHowTeachingHappens2022">Kirschner, Hendrick, and Heal (<a href="#ref-kirschnerHowTeachingHappens2022" role="doc-biblioref">2022</a>)</span>]. When confronted with new and complex ideas, adding many and varied examples helps students better understand them. If students are presented with only one example, they may focus on the superficial details of that example and not get at the deeper concept. Multiple examples of a single concept can help students decontextualize the idea from the example, leading to better recall and understanding.</p>
 </blockquote>
 <blockquote class="blockquote">
 <p>Creating examples for instructional purposes can be a time-consuming and challenging task for educators, especially when they aim to produce diverse examples that effectively illustrate various aspects of a concept. Educators often have packed schedules and numerous responsibilities, which adds to the complexity of generating examples that meet specific criteria. When crafting examples, instructors need to contemplate several factors: Are the examples engaging and relevant to the students? For instance, incorporating real-world problems or issues can help tailor the examples to pique students’ interest. Do the examples strike the right balance between detail and clarity? Ensuring that examples are neither overly intricate nor excessively simple is vital. (S. 3)</p>
 </blockquote>
-<p><span class="citation" data-cites="mollickUsingAIImplement2023">Mollick and Mollick (<a href="#ref-mollickUsingAIImplement2023" role="doc-biblioref">2023</a>)</span> präsentieren Beispielprompts, wie man ein LLM anweisen kann, diese Strategie umzusetzen. Da wir jedoch wissen, dass LLMs gewisse Limitationen haben - Halluzinationen, Model Drift bzw. mangelnde zeitliche Konsistenz der Outputs, mangelnde Transparenz der Modelle - kann es sinnvoll sein, Retrieval Augmented Generation (RAG) zu verwenden. Im Rahmen dieser Aktivität wirst du sowohl das von <span class="citation" data-cites="mollickUsingAIImplement2023">Mollick and Mollick (<a href="#ref-mollickUsingAIImplement2023" role="doc-biblioref">2023</a>)</span> vorgeschlagene Vorgehen als auch ein Vorgehen mit RAG verwenden und reflektieren.</p>
+<p><span class="citation" data-cites="mollickUsingAIImplement2023">Mollick and Mollick (<a href="#ref-mollickUsingAIImplement2023" role="doc-biblioref">2023</a>)</span> präsentieren Beispielprompts, wie man ein LLM anweisen kann, diese Strategie umzusetzen. Da wir jedoch wissen, dass LLMs gewisse Limitationen haben - Halluzinationen, Model Drift bzw. mangelnde zeitliche Konsistenz der Outputs, mangelnde Transparenz der Modelle - kann es sinnvoll sein, Techniken wie z.B. Retrieval Augmented Generation (RAG) zu verwenden. Im Rahmen dieser Aktivität wirst du das von <span class="citation" data-cites="mollickUsingAIImplement2023">Mollick and Mollick (<a href="#ref-mollickUsingAIImplement2023" role="doc-biblioref">2023</a>)</span> vorgeschlagene Vorgehen verwenden und reflektieren.</p>
 </section>
 <section id="dein-auftrag" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="dein-auftrag">Dein Auftrag</h2>
@@ -379,10 +378,10 @@ div.csl-indent {
 <p>Nutze die Strategie von <span class="citation" data-cites="mollickUsingAIImplement2023">Mollick and Mollick (<a href="#ref-mollickUsingAIImplement2023" role="doc-biblioref">2023</a>)</span> und lasse viele verschiedene Beispiele von Copilot oder ChatGPT für das von dir gewählte Thema erstellen. Gehe dafür nach dem folgenden Vorgehen vor. Das Vorgehen basiert auf den Anweisungen im Artikel von <span class="citation" data-cites="mollickUsingAIImplement2023">Mollick and Mollick (<a href="#ref-mollickUsingAIImplement2023" role="doc-biblioref">2023</a>)</span>:</p>
 <ol type="1">
 <li>Wenn du einen mit dem Internet verbundenen Assistenten verwendest (z. B. Copilot): Weise den Assistenten an, das Konzept anhand der wichtigsten Werke auf diesem Gebiet nachzuschlagen.</li>
-<li>Sage dem Assistenten , was du brauchst (viele und unterschiedliche Beispiele für dieses eine Konzept).</li>
+<li>Sage dem Assistenten, was du brauchst (z.B. <em>“viele und unterschiedliche Beispiele für dieses eine Konzept”</em>).</li>
 <li>Beschreibe den von dir bevorzugten Schreibstil (klar, einfach, konkret, dynamisch, ansprechend).</li>
-<li>Beschreibe die Zielgruppe (meine Zielgruppe sind Hochschulstudierende, die von diesem Konzept noch nie gehört haben).</li>
-<li>Du kannst entweder selbst einen Prompt auf der Grundlage der obigen Informationen formulieren oder den folgenden Prompt von <span class="citation" data-cites="mollickUsingAIImplement2023">Mollick and Mollick (<a href="#ref-mollickUsingAIImplement2023" role="doc-biblioref">2023</a>)</span> verwenden:</li>
+<li>Beschreibe die Zielgruppe (z.B. <em>“meine Zielgruppe sind Hochschulstudierende, die von diesem Konzept noch nie gehört haben”</em>).</li>
+<li>Du kannst entweder selbst einen Prompt auf der Grundlage der obigen Informationen formulieren oder den folgenden Prompt von <span class="citation" data-cites="mollickUsingAIImplement2023">Mollick and Mollick (<a href="#ref-mollickUsingAIImplement2023" role="doc-biblioref">2023</a>)</span> als Ausgangspunkt verwenden:</li>
 </ol>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
@@ -421,10 +420,48 @@ Beantworte folgende Fragen:
 </div>
 </div>
 </section>
-<section id="schritt-nutze-rag" class="level3">
-<h3 class="anchored" data-anchor-id="schritt-nutze-rag">3. Schritt: Nutze RAG</h3>
+<section id="schritt-optional-nutze-rag" class="level3">
+<h3 class="anchored" data-anchor-id="schritt-optional-nutze-rag">3. Schritt (optional): Nutze RAG</h3>
 <p>Erstelle nun mit Hilfe vom <a href="https://platform.openai.com/playground">OpenAI Playground</a> und den zuvor erläuterten Anweisungen zu dieser Plattform selbst einen Assistenten, der mit Hilfe von RAG die Inhalte in einem bereitgestellten PDF nachschlagen kann. Folge den gleichen Anweisungen wie in Schritt 2, aber passe den Prompt so an, dass der Assistent das PDF nach relevanten Inhalten durchsucht.</p>
-<p>Als Alternative kannst du auch den <a href="https://awellis-pdf-chatbot.hf.space">PDF Chatbot</a> benutzen. Hier kannst du ein oder mehrere PDFs hochladen, und das open-source” LLMs konfigurieren. Bei diesem Schritt kannst du die <em>Temperatur</em> für die Textgenerierung anpassen. Probiere verschiedene Werte aus!</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+OpenAI Playground
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Es ist möglich, im Playground einen <a href="https://platform.openai.com/assistants/">Assistenten</a> zu erstellen, der auf ein PDF zugreifen kann. Dieser Service ist jedoch kostenpflichtig. Dies bedeutet, dass du eine Kreditkarte hinterlegen musst, um den Service zu nutzen.</p>
+<p>Im Playground kannst du den Assistenten so konfigurieren, dass er auf ein PDF zugreift. Per System Message (Instructions) kannst du den Assistenten anweisen, Antworten nur auf Basis der PDFs zu geben. Die <em>Temperatur</em> für die Textgenerierung kannst du hier auch anpassen.</p>
+</div>
+</div>
+</div>
+<p>Als Alternative kannst du auch den <a href="https://awellis-pdf-chatbot.hf.space">PDF Chatbot</a> auf HuggingFace Spaces benutzen. Hier kannst du ein oder mehrere PDFs hochladen, und “open-source” LLMs konfigurieren. Auch hier kannst du die <em>Temperatur</em> für die Textgenerierung anpassen.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hugging Face Spaces
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Um diesen PDF Chatbot zu verwenden, ist es sinnvoll, sich bei Hugging Face zu registrieren. Dies ermöglicht es dir, den Chatbot zu kopieren, selber zu konfigurieren und zu speichern.</p>
+<ol type="1">
+<li>In Hugging Face Settings einen <em>Access Token</em> mit “Write”-Rechten erstellen.</li>
+<li>Im <a href="https://huggingface.co/spaces/awellis/pdf-chatbot">PDF Chatbot</a> auf das Icon mit den vertikalen Punkten klicken und “Duplicate this Space” wählen.</li>
+<li>In den Einstellungen des Chatbots den <em>Access Token</em> einfügen.</li>
+</ol>
+</div>
+</div>
+</div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -459,10 +496,6 @@ Beantworte folgende Fragen
 <h3 class="anchored" data-anchor-id="schritt-teile-deine-erfahrungen">4. Schritt: Teile deine Erfahrungen</h3>
 <p>Tauscht euch in Kleingruppen (2-3) Personen zu eurem Vorgehen und euren Erkenntnissen aus.</p>
 </section>
-<section id="schritt" class="level3">
-<h3 class="anchored" data-anchor-id="schritt">5. Schritt</h3>
-<p>Verwende dieses Vorgehen für deine Lehrveranstaltung! 😊</p>
-</section>
 </section>
 <section id="optional" class="level2">
 <h2 class="anchored" data-anchor-id="optional">Optional</h2>
@@ -488,13 +521,13 @@ Mollick, Ethan R., and Lilach Mollick. 2023. <span>“Using <span>AI</span> to <
 </div></section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{ellis2024,
   author = {Ellis, Andrew and Kaufmann, Kaspar},
   title = {Activity: {Prompt-Labor} {Vertiefung}},
-  date = {2024-03-17},
+  date = {2024-05-01},
   url = {https://virtuelleakademie.github.io/promptly-literate/pages/activity-prompt-labor-vertiefung.html},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-ellis2024" class="csl-entry quarto-appendix-citeas" role="listitem">
 Ellis, Andrew, and Kaspar Kaufmann. 2024. <span>“Activity: Prompt-Labor
-Vertiefung.”</span> March 17, 2024. <a href="https://virtuelleakademie.github.io/promptly-literate/pages/activity-prompt-labor-vertiefung.html">https://virtuelleakademie.github.io/promptly-literate/pages/activity-prompt-labor-vertiefung.html</a>.
+Vertiefung.”</span> May 1, 2024. <a href="https://virtuelleakademie.github.io/promptly-literate/pages/activity-prompt-labor-vertiefung.html">https://virtuelleakademie.github.io/promptly-literate/pages/activity-prompt-labor-vertiefung.html</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
