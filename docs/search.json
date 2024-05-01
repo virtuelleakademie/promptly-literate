@@ -98,6 +98,20 @@
     "text": "Orientierungshilfe für Lehrpersonen der BFH\n\n\n\n\nHaltung der BFH: Technologien, die den Lernprozess unterstützen und praxisrelevant sind, sollen in die Lehre einbezogen werden.\nEinsatz von KI in der Lehre: Die Mehrheit der Studierenden wird KI-Tools nutzen. Studierende sollen lernen, Technologien kompetent einzusetzen und kritisch zu hinterfragen.\n\n\n\n\n \n Knowledge Base der Virtuellen Akademie\n PDF"
   },
   {
+    "objectID": "slides/prompt-labor-vertiefung.html#competencies",
+    "href": "slides/prompt-labor-vertiefung.html#competencies",
+    "title": "Prompt Labor: Vertiefung",
+    "section": "Competencies",
+    "text": "Competencies"
+  },
+  {
+    "objectID": "slides/prompt-labor-vertiefung.html#deskilling-vs.-upskilling",
+    "href": "slides/prompt-labor-vertiefung.html#deskilling-vs.-upskilling",
+    "title": "Prompt Labor: Vertiefung",
+    "section": "Deskilling vs. upskilling",
+    "text": "Deskilling vs. upskilling"
+  },
+  {
     "objectID": "slides/prompt-labor-vertiefung.html#effective-teaching-strategies",
     "href": "slides/prompt-labor-vertiefung.html#effective-teaching-strategies",
     "title": "Prompt Labor: Vertiefung",
@@ -1704,15 +1718,15 @@
     "objectID": "slides/prompt-labor-basics.html#assistant-menagerie",
     "href": "slides/prompt-labor-basics.html#assistant-menagerie",
     "title": "Prompt Labor: Basics",
-    "section": "",
-    "text": "Assistant\nProvider\nPrivacy\nLLM\nCapabilities\nPricing model\n\n\n\n\nChatGPT\nOpenAI\n👎🏼\nGPT-3.5, GPT-4\nWeb search, DALLE, GPTs, multimodal input\n💶\n\n\nCopilot\nMicrosoft\n👍🏼\nGPT-3.5, GPT-4\nWeb search, DALLE, multimodal input\n🆓 for BFH employees and students\n\n\nGemini\nGoogle\n👎🏼\nGemini Ultra, Gemini Pro, and Gemini Nano\nWeb search, multimodal input\n💶\n\n\nHuggingChat\n🤗 Hugging Face\n👍🏼\nVarious open models, e.g. CodeLlama, Llama 2, Mistral, Gemma\n\n🆓"
+    "section": "Assistant menagerie",
+    "text": "Assistant menagerie\n\n\n\nAssistant\nProvider\nPrivacy\nLLM\nCapabilities\nPricing model\n\n\n\n\nChatGPT\nOpenAI\n👎🏼\nGPT-3.5, GPT-4\nWeb search, DALLE, GPTs, multimodal input\n💶\n\n\nCopilot\nMicrosoft\n👍🏼\nGPT-3.5, GPT-4\nWeb search, DALLE, multimodal input\n🆓 for BFH employees and students\n\n\nGemini\nGoogle\n👎🏼\nGemini Ultra, Gemini Pro, and Gemini Nano\nWeb search, multimodal input\n💶\n\n\nHuggingChat\n🤗 Hugging Face\n👍🏼\nVarious open models, e.g. CodeLlama, Llama 2, Mistral, Gemma\n\n🆓"
   },
   {
     "objectID": "slides/prompt-labor-basics.html#orientierungshilfe-für-lehrpersonen-der-bfh",
     "href": "slides/prompt-labor-basics.html#orientierungshilfe-für-lehrpersonen-der-bfh",
     "title": "Prompt Labor: Basics",
     "section": " Orientierungshilfe für Lehrpersonen der BFH",
-    "text": "Orientierungshilfe für Lehrpersonen der BFH\n\n\n\n\n\n\nNote\n\n\n\n\nHaltung der BFH: Technologien, die den Lernprozess unterstützen und praxisrelevant sind, sollen in die Lehre einbezogen werden.\nEinsatz von KI in der Lehre: Die Mehrheit der Studierenden wird KI-Tools nutzen. Studierende sollen lernen, Technologien kompetent einzusetzen und kritisch zu hinterfragen.\n\n\n\n \n Knowledge Base der Virtuellen Akademie\n PDF"
+    "text": "Orientierungshilfe für Lehrpersonen der BFH\n\n\n\n\nHaltung der BFH: Technologien, die den Lernprozess unterstützen und praxisrelevant sind, sollen in die Lehre einbezogen werden.\nEinsatz von KI in der Lehre: Die Mehrheit der Studierenden wird KI-Tools nutzen. Studierende sollen lernen, Technologien kompetent einzusetzen und kritisch zu hinterfragen.\n\n\n\n\n \n Knowledge Base der Virtuellen Akademie\n PDF"
   },
   {
     "objectID": "slides/prompt-labor-basics.html#what-is-artifical-intelligence",
@@ -1720,13 +1734,6 @@
     "title": "Prompt Labor: Basics",
     "section": "What is Artifical Intelligence?",
     "text": "What is Artifical Intelligence?\n\n\n\n\nA branch of computer science that aims to create machines that can perform tasks that typically require human intelligence."
-  },
-  {
-    "objectID": "slides/prompt-labor-basics.html#what-is-generative-ai",
-    "href": "slides/prompt-labor-basics.html#what-is-generative-ai",
-    "title": "Prompt Labor: Basics",
-    "section": "What is Generative AI?",
-    "text": "What is Generative AI?\nGenerative AI uses machine learning to create complex statistical models of how data are generated.\n\nGenerative AI models learn from existing data.\nProduce new data that resembles the original data: images, music, text, etc."
   },
   {
     "objectID": "slides/prompt-labor-basics.html#what-is-a-large-language-model",
@@ -1796,7 +1803,7 @@
     "href": "slides/prompt-labor-basics.html#foundation-models",
     "title": "Prompt Labor: Basics",
     "section": "Foundation models",
-    "text": "Foundation models\nA foundation model, or large language model (LLM):\n\nis a type of machine learning model that is trained to predict the next word following the input (prompt).\nis trained “simply” to predict the next word following a sequence of words.\ndoes not necessarily produce human-like conversations.\n\n\n\n\n\n\n\nNote\n\n\n\n: What is the capital of France?\n: What is the capital of Germany? What is the capital of Italy? . .."
+    "text": "Foundation models\nA foundation model, or large language model (LLM):\n\nis a type of machine learning model that is trained to predict the next word following the input (prompt).\nis trained “simply” to predict the next word following a sequence of words.\ndoes not necessarily produce human-like conversations.\n\n\n\n\n: What is the capital of France?\n: What is the capital of Germany? What is the capital of Italy? . .."
   },
   {
     "objectID": "slides/prompt-labor-basics.html#training-data",
@@ -1811,20 +1818,6 @@
     "title": "Prompt Labor: Basics",
     "section": "Training process",
     "text": "Training process\n\n\nFigure courtesy of Andrej Karpathy"
-  },
-  {
-    "objectID": "slides/prompt-labor-basics.html#emergent-abilities",
-    "href": "slides/prompt-labor-basics.html#emergent-abilities",
-    "title": "Prompt Labor: Basics",
-    "section": "Emergent abilities",
-    "text": "Emergent abilities\nLLMs are thought to show emergent abilities - abilities not explicitly taught. Instead, they emerge as a result of text prediction.\nAbilities include:\n\nperforming arithmetic, answering questions, summarizing text, translating, etc.\nzero-shot learning: LLMs can perform tasks without being trained on them.\nfew-shot learning: LLMs can perform tasks with few examples."
-  },
-  {
-    "objectID": "slides/prompt-labor-basics.html#emergent-abilities-1",
-    "href": "slides/prompt-labor-basics.html#emergent-abilities-1",
-    "title": "Prompt Labor: Basics",
-    "section": "Emergent abilities",
-    "text": "Emergent abilities\nWhat kind of knowledge does an LLM have to have to be able to write a continuation of the following text?1\n\n\n\n\n\n: How many holes does a straw have?\n: A straw has one hole. It’s a cylindrical tunnel that runs through the entire length, creating a single continuous space from one end to the other.\n: What about a tunnel?\n: Similar to a straw, a tunnel can also be considered to have one hole. It’s an elongated pathway carved through an obstruction, allowing passage from one side to the other, thus creating a single continuous space or hole through the material.\n\n\n\n\n\n\n\nContinue this conversation with ChatGPT."
   },
   {
     "objectID": "slides/prompt-labor-basics.html#assistant-models",
@@ -1862,13 +1855,6 @@
     "text": "An assistant model is a role-play simulator\n\n\n\n\n\nAn assistant is trained to respond to user prompts in a human-like way.\nSimulates possible human conversations.\nHas no intentions. It is not an entity with its own goals.\nDoes not have a “personality” or “character” in the traditional sense. It can be thought of as a role-playing simulator.\nHas no concept of “truth” or “lying”. The model is not trying to deceive the user, it is simply trying to respond in a human-like way."
   },
   {
-    "objectID": "slides/prompt-labor-basics.html#stochastic-generation",
-    "href": "slides/prompt-labor-basics.html#stochastic-generation",
-    "title": "Prompt Labor: Basics",
-    "section": "Stochastic generation",
-    "text": "Stochastic generation"
-  },
-  {
     "objectID": "slides/prompt-labor-basics.html#hallucination",
     "href": "slides/prompt-labor-basics.html#hallucination",
     "title": "Prompt Labor: Basics",
@@ -1880,7 +1866,7 @@
     "href": "slides/prompt-labor-basics.html#can-an-llm-tell-the-truth",
     "title": "Prompt Labor: Basics",
     "section": "Can an LLM tell the truth?",
-    "text": "Can an LLM tell the truth?\n\nHow would you know if an LLM is able to give you factual information?\nHow would you test this?\n\n\n\n\n\n\n\nNote\n\n\n\n: What is the capital of Uzbekistan?\n: Tashkent\n\n\nIt looks like the LLM knows the capital of Uzbekistan1."
+    "text": "Can an LLM tell the truth?\n\nHow would you know if an LLM is able to give you factual information?\nHow would you test this?\n\n\n\n\n: What is the capital of Uzbekistan?\n: Tashkent\n\n\n\nIt looks like the LLM knows the capital of Uzbekistan1.\nWhat it is actually doing is responding with the most likely sequence following the question."
   },
   {
     "objectID": "slides/prompt-labor-basics.html#knowledge-base",
@@ -1908,7 +1894,7 @@
     "href": "slides/prompt-labor-basics.html#what-is-a-prompt",
     "title": "Prompt Labor: Basics",
     "section": "What is a prompt?",
-    "text": "What is a prompt?\n\nRemember: the goal of an LLM is complete text.\nA prompt is a piece of text (instruction) that is given to a language model to complete.\n\n\n\n\n\n\n\nNote\n\n\n\nPROMPT : Write a haiku about a workshop on large language models.\nASSISTANT : Whispers of circuits,\nKnowledge blooms in bytes and bits,\nModel learns and fits.\n\n\n\nThe response is generated as continuation of the prompt.\n\n\nMore technical definition: The output is generated by auto-regressively sampling from the probability distribution over the vocabulary, conditioned on the prompt."
+    "text": "What is a prompt?\n\nRemember: the goal of an LLM is complete text.\nA prompt is a piece of text (instruction) that is given to a language model to complete.\n\n\n\n\nPROMPT : Write a haiku about a workshop on large language models.\nASSISTANT : Whispers of circuits,\nKnowledge blooms in bytes and bits,\nModel learns and fits.\n\n\n\n\nThe response is generated as continuation of the prompt.\n\n\nMore technical definition: The output is generated by auto-regressively sampling from the probability distribution over the vocabulary, conditioned on the prompt."
   },
   {
     "objectID": "slides/prompt-labor-basics.html#unlocking-knowledge",
@@ -1929,14 +1915,14 @@
     "href": "slides/prompt-labor-basics.html#writing-clear-instructions",
     "title": "Prompt Labor: Basics",
     "section": "Writing clear instructions",
-    "text": "Writing clear instructions\n\n\n\nThink of an LLM as a role-playing conversation simulator.\nInstructions should be clear and unambiguous.\nIndicate which role the model (persona) should adopt.\n\n\n\n\n\n\n\n\nNote\n\n\n\n\nInclude details in your query to get more relevant answers\nAsk the model to adopt a persona\nUse delimiters to clearly indicate distinct parts of the input\nSpecify the steps required to complete a task\nProvide examples\nSpecify the desired length of the output"
+    "text": "Writing clear instructions\n\n\n\nThink of an LLM as a role-playing conversation simulator.\nInstructions should be clear and unambiguous.\nIndicate which role the model (persona) should adopt.\n\n\n\n\n\n\nInclude details in your query to get more relevant answers\nAsk the model to adopt a persona\nUse delimiters to clearly indicate distinct parts of the input\nSpecify the steps required to complete a task\nProvide examples\nSpecify the desired length of the output"
   },
   {
     "objectID": "slides/prompt-labor-basics.html#adopt-a-persona-role",
     "href": "slides/prompt-labor-basics.html#adopt-a-persona-role",
     "title": "Prompt Labor: Basics",
     "section": "Adopt a persona (role)",
-    "text": "Adopt a persona (role)\n\n\n\n\n\n\nNote\n\n\n\n: You are an expert on learning techniques. Explain the concept of ‘flipped classroom’ in one paragraph.\n\n\n\n\n\n\n\n\nNote\n\n\n\n: You are an expert financial derivatives. Explain the concept of ‘flipped classroom’ in one paragraph."
+    "text": "Adopt a persona (role)\n\n\n\n: You are an expert on learning techniques. Explain the concept of ‘flipped classroom’ in one paragraph.\n\n\n\n\n\n\n: You are an expert financial derivatives. Explain the concept of ‘flipped classroom’ in one paragraph."
   },
   {
     "objectID": "slides/prompt-labor-basics.html#provide-reference-texts",
@@ -1944,13 +1930,6 @@
     "title": "Prompt Labor: Basics",
     "section": "Provide reference texts",
     "text": "Provide reference texts\n\nProvide a model with trusted and relevant information.\nThen instruct the model to use the provided information to compose its answer.\n\n Instruct the model to answer using a reference text\n\n\n\nThis leads to retrieval-augmented generation (RAG). First create a database of documents, then retrieve the most relevant documents, based on a user’s query. These are then included in the prompt to the model. The model is instructed to use the information in the documents to compose its answer."
-  },
-  {
-    "objectID": "slides/prompt-labor-basics.html#provide-reference-texts-1",
-    "href": "slides/prompt-labor-basics.html#provide-reference-texts-1",
-    "title": "Prompt Labor: Basics",
-    "section": "Provide reference texts",
-    "text": "Provide reference texts\n\n\n\n: You will be provided with a document delimited by triple quotes and a question. Your task is to provide a simplified answer to the question using only the provided document and to cite the passage(s) of the document used to answer the question. If the document does not contain the information needed to answer this question then simply write: “Insufficient information.” If an answer to the question is provided, it must be annotated with a citation. Use the following format for to cite relevant passages ({“citation”: …}). Cite only the relevant passage(s) of the document, not the entire document.\n““” The flipped classroom intentionally shifts instruction to a learner-centered model, in which students are often initially introduced to new topics outside of school, freeing up classroom time for the exploration of topics in greater depth, creating meaningful learning opportunities. With a flipped classroom, ‘content delivery’ may take a variety of forms, often featuring video lessons prepared by the teacher or third parties, although online collaborative discussions, digital research, and text readings may alternatively be used. The ideal length for a video lesson is widely cited as eight to twelve minutes. ““”\nQuestion: What is flipped classroom?"
   },
   {
     "objectID": "slides/prompt-labor-basics.html#giving-gpt-time-to-think",
@@ -1964,21 +1943,21 @@
     "href": "slides/prompt-labor-basics.html#chain-of-thought-prompting",
     "title": "Prompt Labor: Basics",
     "section": "Chain-of-thought prompting",
-    "text": "Chain-of-thought prompting\n\nChain-of-thought prompting encourages the LLM to “explain” its intermediate reasoning steps.\nEnables complex reasoning and problem solving.\n\nInstead of this:\n\n\n\n\n\n\nNote\n\n\n\n: The odd numbers in this group add up to an even number: 4, 8, 9, 15, 12, 2, 1. Yes or no?\n\n\nDo this:\n\n\n\n\n\n\nNote\n\n\n\n: Is this statement correct? The odd numbers in this group add up to an even number: 4, 8, 9, 15, 12, 2, 1.\nReason through the problem step-by-step. Start by identifying the odd numbers. Next, add them up. Finally, determine if the sum is even or odd. Write down your reasoning steps in a numbered list.\n\n\n\nWhy does this work?"
+    "text": "Chain-of-thought prompting\n\nChain-of-thought prompting encourages the LLM to “explain” its intermediate reasoning steps.\nEnables complex reasoning and problem solving.\n\nInstead of this:\n\n\n\n: The odd numbers in this group add up to an even number: 4, 8, 9, 15, 12, 2, 1. Yes or no?\n\n\n\nDo this:\n\n\n\n: Is this statement correct? The odd numbers in this group add up to an even number: 4, 8, 9, 15, 12, 2, 1.\nReason through the problem step-by-step. Start by identifying the odd numbers. Next, add them up. Finally, determine if the sum is even or odd. Write down your reasoning steps in a numbered list.\n\n\n\n\nWhy does this work?"
   },
   {
     "objectID": "slides/prompt-labor-basics.html#zero-shot-chain-of-thought-prompting",
     "href": "slides/prompt-labor-basics.html#zero-shot-chain-of-thought-prompting",
     "title": "Prompt Labor: Basics",
     "section": "Zero-shot chain-of-thought prompting",
-    "text": "Zero-shot chain-of-thought prompting\n\n\n\n\n\n\nNote\n\n\n\n: The odd numbers in this group add up to an even number: 4, 8, 9, 15, 12, 2, 1. Take a deep breath and think step-by-step.\n\n\n\n\nWhen using GPT-4, ChatGPT and Copilot do this automatically."
+    "text": "Zero-shot chain-of-thought prompting\n\n\n\n: The odd numbers in this group add up to an even number: 4, 8, 9, 15, 12, 2, 1. Take a deep breath and think step-by-step.\n\n\n\n\n\nWhen using GPT-4, ChatGPT and Copilot do this automatically."
   },
   {
     "objectID": "slides/prompt-labor-basics.html#use-markdown-formatting",
     "href": "slides/prompt-labor-basics.html#use-markdown-formatting",
     "title": "Prompt Labor: Basics",
     "section": "Use Markdown formatting",
-    "text": "Use Markdown formatting\n\nUse Markdown to format your prompts.\nInstruct the LLM to format its output using Markdown.\n\n\n\n\n\n\n\nNote\n\n\n\n: Improve this haiku:\nWords weave through the air,\nMinds meld with machine’s deep thought,\nKnowledge blooms anew.\nIt is about about a workshop on large language models. I’m not happy with it.\nShow me all the text. Format your edits as **TEXT** and show the deleted text as ~~TEXT~~. Keep you review short (max 100 words).\n\n\nTry this example in ChatGPT."
+    "text": "Use Markdown formatting\n\nUse Markdown to format your prompts.\nInstruct the LLM to format its output using Markdown.\n\n\n\n\n: Improve this haiku:\nWords weave through the air,\nMinds meld with machine’s deep thought,\nKnowledge blooms anew.\nIt is about about a workshop on large language models. I’m not happy with it.\nShow me all the text. Format your edits as **TEXT** and show the deleted text as ~~TEXT~~. Keep you review short (max 100 words).\n\n\n\nTry this example in ChatGPT."
   },
   {
     "objectID": "slides/prompt-labor-basics.html#advanced-prompting-techniques",
@@ -2028,33 +2007,5 @@
     "title": "Fragen und Themen",
     "section": "Themen",
     "text": "Themen\n\n\nShow code\nimport matplotlib.pyplot as plt\nimport networkx as nx\nimport seaborn as sns\n\n# Create a new graph\nG = nx.Graph()\n\n# Define the categories/nodes\ncategories = [\"Unterricht & Bildung\", \"Sprache & Schreiben\", \"Technologie & Innovation\", \"Freizeit & Lifestyle\", \"Feedback & Repräsentation\"]\n\n# Add nodes to the graph\nG.add_nodes_from(categories)\n\n# Define the relationships/edges based on the interpretation\nrelationships = [\n    (\"Unterricht & Bildung\", \"Sprache & Schreiben\"),\n    (\"Unterricht & Bildung\", \"Technologie & Innovation\"),\n    (\"Sprache & Schreiben\", \"Technologie & Innovation\"),\n    (\"Technologie & Innovation\", \"Freizeit & Lifestyle\"),\n    (\"Unterricht & Bildung\", \"Feedback & Repräsentation\")\n]\n\n# Add edges to the graph\nG.add_edges_from(relationships)\n\n# Define the topics under each category\ntopics = {\n    \"Unterricht & Bildung\": [\n        \"MC Fragen Entwicklung\", \"Case Study entwickeln\", \"Unterrichtsvorbereitung\", \n        \"KI-Management in den Unterricht integrieren\", \"Grundlagen kennen lernen\", \n        \"Sinnvoller Einsatz für Lehre reflektieren\", \"Generieren von MC-Fragen\", \n        \"Brainstorming/Ideengenerierung (z.T. mit Studierenden)\", \"Akademisches und berufliches Schreiben unterrichten\", \n        \"Funktionsweise von KI-Schreibtools\", \"Einsatzszenarien für KI-Schreibtools\", \n        \"Reflektierter Umgang mit KI-Schreibtools\", \"Unterstützung für Schüler*innen mit sprachlichen Schwierigkeiten\", \n        \"Verständnis von Schreibtools\", \"Sinnvoller Einsatz von Schreibtools durch Studierende und Mitarbeitende\"\n    ],\n    \"Sprache & Schreiben\": [\n        \"Formulierungshilfe bei wissenschaftlichen Schreibarbeiten\", \"Übersetzungen oder Überprüfungen von Texten in Deutsch\", \n        \"Kreative Schreibübung\", \"Übersetzungen\", \"Ideensammlung\", \n        \"Textkorrekturen/-anpassungen\", \"Perspektivenwechsel\", \"Szenarien erfinden lassen\", \n        \"Mails verfassen\", \"Konzepte überprüfen\"\n    ],\n    \"Technologie & Innovation\": [\n        \"Diverses\", \"Zeitersparnis bei Vorbereitungen mithilfe neuer Technologien\", \n        \"Prüfungen mit KI\", \"Open Book Prüfungen\", \"Grenzen der KI ausloten\", \n        \"Interesse an Entwicklungen der Sprachmodelle\"\n    ],\n    \"Freizeit & Lifestyle\": [\n        \"Fragen für Freizeitaktivitäten, z.B. bei Regenwetter mit Kleinkindern\", \n        \"Ideensammlung für Ausflüge in der Freizeit\", \"Programmplanung der Ferien\", \"Vorschlag für einen Mailtest\"\n    ],\n    \"Feedback & Repräsentation\": [\"Rückmeldung an das Institut an der BFH\"]\n}\n\n# Add topics as nodes to the graph\nfor category, topic_list in topics.items():\n    G.add_nodes_from(topic_list)\n    for topic in topic_list:\n        G.add_edge(category, topic)\n\n# Get a color palette with as many colors as there are topics\ncolors = sns.color_palette(\"husl\", len(topics))\n\n# Map each category to a color\ncolor_map = {}\nfor idx, category in enumerate(topics):\n    for topic in topics[category]:\n        color_map[topic] = colors[idx]\n\n# Add colors for the categories themselves\ncategory_colors = [\"red\", \"green\", \"blue\", \"purple\", \"orange\"]\nfor idx, category in enumerate(categories):\n    color_map[category] = category_colors[idx]\n\n# Get the colors for each node in the order they are in the graph\nnode_colors = [color_map[node] for node in G.nodes()]\n\n\n\n\nShow code\n# Plotting the graph with different colors for each topic\nplt.figure(figsize=(20, 20)) #figsize=(20, 15)\npos = nx.spring_layout(G, seed=42, k=0.5, iterations=100)\nnx.draw(G, pos, with_labels=True, node_size=2000, node_color=node_colors, font_size=12, font_color='black', width=2, edge_color='gray', alpha=0.6)\nplt.title(\"Beziehungen zwischen den Bereichen und zugehörigen Themen\", fontsize=18)\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nShow code\n# Adjust the figure size to be wider\nplt.figure(figsize=(25, 10))\n\n# Adjust the layout to be more spread out horizontally\npos = nx.spring_layout(G, seed=42, k=0.7, iterations=150, scale=2)\n\n# Plotting the graph with the adjusted layout\nnx.draw(G, pos, with_labels=True, node_size=2000, node_color=node_colors, font_size=12, font_color='black', width=2, edge_color='gray', alpha=0.6)\nplt.title(\"Beziehungen zwischen den Bereichen und zugehörigen Themen\", fontsize=20)\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\nback to website ⤴️"
-  },
-  {
-    "objectID": "slides/prompt-labor-basics.html",
-    "href": "slides/prompt-labor-basics.html",
-    "title": "Prompt Labor: Basics",
-    "section": "",
-    "text": "Assistant\nProvider\nPrivacy\nLLM\nCapabilities\nPricing model\n\n\n\n\nChatGPT\nOpenAI\n👎🏼\nGPT-3.5, GPT-4\nWeb search, DALLE, GPTs, multimodal input\n💶\n\n\nCopilot\nMicrosoft\n👍🏼\nGPT-3.5, GPT-4\nWeb search, DALLE, multimodal input\n🆓 for BFH employees and students\n\n\nGemini\nGoogle\n👎🏼\nGemini Ultra, Gemini Pro, and Gemini Nano\nWeb search, multimodal input\n💶\n\n\nHuggingChat\n🤗 Hugging Face\n👍🏼\nVarious open models, e.g. CodeLlama, Llama 2, Mistral, Gemma\n\n🆓"
-  },
-  {
-    "objectID": "slides/prompt-labor-basics.html#footnotes",
-    "href": "slides/prompt-labor-basics.html#footnotes",
-    "title": "Prompt Labor: Basics",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nWhat it is actually doing is responding with the most likely sequence following the question.↩︎"
-  },
-  {
-    "objectID": "slides/prompt-labor-vertiefung.html#deskilling-vs.-upskilling",
-    "href": "slides/prompt-labor-vertiefung.html#deskilling-vs.-upskilling",
-    "title": "Prompt Labor: Vertiefung",
-    "section": "Deskilling vs. upskilling",
-    "text": "Deskilling vs. upskilling"
-  },
-  {
-    "objectID": "slides/prompt-labor-vertiefung.html#competencies",
-    "href": "slides/prompt-labor-vertiefung.html#competencies",
-    "title": "Prompt Labor: Vertiefung",
-    "section": "Competencies",
-    "text": "Competencies"
   }
 ]
