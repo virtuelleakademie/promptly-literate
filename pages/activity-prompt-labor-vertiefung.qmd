@@ -87,7 +87,7 @@ Erstelle nun mit Hilfe vom [OpenAI Playground](https://platform.openai.com/playg
 ## OpenAI Playground
 Es ist möglich, im Playground einen [Assistenten](https://platform.openai.com/assistants/) zu erstellen, der auf ein PDF zugreifen kann. Dieser Service ist jedoch kostenpflichtig. Dies bedeutet, dass du eine Kreditkarte hinterlegen musst, um den Service zu nutzen.
 
-Im Playground kannst du den Assistenten so konfigurieren, dass er auf ein PDF zugreift. Per System Message (Instructions) kannst du den Assistenten anweisen, Antworten nur auf Basis der PDFs zu geben. Die _Temperatur_ für die Textgenerierung kannst du hier auch anpassen.
+Im Playground kannst du den Assistenten so konfigurieren, dass er auf ein PDF zugreift. Per System Message (Instructions) kannst du den Assistenten anweisen, Antworten nur auf Basis der PDFs zu geben. Die _Temperatur_ für die Textgenerierung boukannst du hier auch anpassen.
 :::
 
 Als Alternative kannst du auch den [PDF Chatbot](https://awellis-pdf-chatbot.hf.space) auf HuggingFace Spaces benutzen. Hier kannst du ein oder mehrere PDFs hochladen, und "open-source" LLMs konfigurieren. Auch hier kannst du die _Temperatur_ für die Textgenerierung anpassen.
