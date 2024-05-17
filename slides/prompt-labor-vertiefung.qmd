@@ -157,6 +157,25 @@ These include:
 :::
 ::::
 
+## {{< bi chat-dots >}} ChatGPT with GPT-4o
+
+{{< bi link >}} [Introducing GPT-4o and more tools to ChatGPT free users](https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/)
+
+- Multimodal conversational agent
+- Web search
+- Upload documents
+- Use GPTs and the GPT Store
+
+## {{< bi chat-dots >}}  AI-powered virtual tutor
+
+{{< bi link >}} [Demo: Math problems with GPT-4o](https://x.com/OpenAI/status/1790089513387143469)
+
+- Creation of AI-powered virtual tutors or professors that can adapt to a student's individual learning needs, based on a set of guidelines and content provided by the educational institution and the educator.
+
+- Virtual tutors engage in natural language communication, both through voice and text, and maintain an adaptive capacity to evaluate and guide the student towards specific learning objectives. 
+
+- This level of personalized attention could revolutionize the way we approach education, ensuring that each student receives the support they need to succeed. 
+
 
 ## {{< bi chat-dots >}} Custom chatbots
 
