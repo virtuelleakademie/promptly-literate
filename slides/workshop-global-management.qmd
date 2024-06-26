@@ -5,7 +5,7 @@ date: "27 June, 2024"
 date-format: "DD MMMM, YYYY"
 bibliography: ../bibliography.bib
 nocite: |
-  @shanahanTalkingLargeLanguage2023, @shanahanRolePlayLargeLanguage2023, @weiEmergentAbilitiesLarge2022b
+  @bowenTeachingAI2024, @langCheatingLessons2013a, @schulhoffPromptReportSystematic2024
 format: 
     revealjs:
         theme: [simple, ../styles/custom-reveal.scss]
