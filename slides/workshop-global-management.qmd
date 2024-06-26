@@ -492,17 +492,36 @@ It looks like the LLM knows the capital of Uzbekistan^[What it is actually doing
 :::
 ::::
 
+## Biases
+
+| **Biases in LLMs**         | **Source**                                  | **Examples**                                           |
+|----------------------------|---------------------------------------------|--------------------------------------------------------|
+| Training data bias     | Text from internet, books, articles.        | Stereotypes reflecting gender, race, religion.         |
+| Representation bias    | Underrepresented groups/perspectives in data. | Less accurate responses for minority cultures.         |
+| Algorithmic bias       | Training and fine-tuning algorithms.        |  Optimizations for fluency and coherence may lead to preference for dominant cultural narratives.           |
+| User interaction bias  | Adaptation based on user interactions.      | Increased biased or harmful content generation.        |
+## Privacy concerns
+
+| **Privacy Concerns**       | **Issue**                                  | **Examples**                                          |
+|----------------------------|--------------------------------------------|-------------------------------------------------------|
+| Data memorization       | Memorizing sensitive information.          | Reproducing phone numbers, addresses.                 |
+| Training data leakage  | Unauthorized dissemination of confidential data. | Summarizing proprietary documents.                |
+| User query logging     | Storing sensitive user interactions.       | Exposing private queries if data is mishandled.       |
+| Queries used for training | User queries may be used for further training. | Personal data in queries could be inadvertently included in training data. |
+
+
 
 # Fundamentals of Prompting
 
 ## Prompting
 
+<br> <br>
 ![](../assets/images/magic.svg){width=66%}
 
 
 ## What is a prompt?
 
-- Remember: the goal of an LLM is complete text.
+- An LLM's task is to complete text.
 - A prompt is a piece of text (instruction) that is given to a language model to complete. 
 
 :::{.callout-note}
@@ -515,8 +534,7 @@ ASSISTANT {{< bi robot >}}:
 :::
 
 
-
-- The response is generated as continuation of the prompt. 
+- The response is generated as continuation of, and conditioned on, the prompt. 
 
 ::: {.notes}
 
@@ -741,11 +759,183 @@ and explore this [activity](../pages/activity-cas-hochschuldidaktik.qmd).
     a) Did you discover any useful GPTs?
     b) What are the benefits and limitations of using GPTs in the classroom?
 
-# Essential Skills
+
+## Extended cognition
+
+:::: {.columns}
+::: {.column width=50%}
+
+- According to @clarkExtendedMind1998, cognitive processes may extend to external objects.
+- @krakauerWillHarmUs2016 distinguishes between **complementary** and **competitive** cognitive artifacts.
+  - Complementary: numbers, abacus
+  - Competetive: calculator, GPS
+  
+- What kind of artefact will AI turn out to be? 
+:::
+
+::: {.column width=50%}
+![](../assets/images/artefacts.png){width=100%}
+
+:::
+::::
+
+## Deskilling vs. upskilling
+
+::::{.columns}
+:::{.column width=20%}
+:::
+:::{.column width=80%}
+
+![](../assets/images/deskilling.svg){width=80%}
+
+:::
+::::
+
+
+## Writing tasks in the AI era
+
+- Writing is a core skill: critical thinking, persuasion, argumentation, understanding.
+- Text creation is secondary in learning: focus is on underlying skills.
+- Learning objectives: Benefits of writing tasks should be clearly and convincingly conveyed.
+- Students should be equipped for effective (controlled) use of AI. 
+
+## AI can do my homework
+
+- We can think of this as cheating.
+- More useful: cheating means _bypassing useful cognition_ and therefore missing out on learning.
+- Cheating an ethics problem. 
+- Bypassing cognition is a learning problem.
+- Not a new problem: books, encyclopedias, calculators, spell checkers, etc.
+<!-- - Before AI tasks and exercises provoked students to do useful cognition that led to learning.
+- Now a machine can do some of that work for them. -->
+
+## Controlled use of LLMs
+
+| Task Category           | Specific Tasks                                  |
+|-------------------------|-------------------------------------------------|
+| Editing Tasks           | Create/Improve Different Versions of Sections.  |
+| Transitions             | Write and Compare Transitions.                  |
+| Improve Drafts          | Critique and Refine Drafts.                     |
+| Writing Styles          | Rewrite Sections for Different Audiences.       |
+| Controversial Statements| Identify Controversial Points and Strengthen Arguments. |
+| Research Journal        | Keep a Diary and Use LLM for Reflection.        |
+
+
+## Sport vs. writing {.smaller}
+
+:::: {.columns}
+::: {.column width=80%}
+- Technological advancements in sports: a useful analogy for learning?
+- Distinction between training and competition.
+
+:::
+::: {.column width=20%}
+
+![](../assets/images/lzr-racer.png){width=100%}
+:::
+::::
+
+|             | LZR Racer swim suit                                      | AI-base writing tools                                     |
+| ----------- | :------------------------------------------------------- | --------------------------------------------------------- |
+| Improvement | Reduced Resistance, Increased Buoyancy                   | Improved Grammar, Formulation, Content Creation           |
+| Fairness    | Provided an Unfair Advantage, Led to Record Performances | Considered Unfair in Academic Contexts                    |
+| Impact      | Banned to Maintain Competitive Integrity                 | Raises Questions of Originality and Skill Development<br> |
+   
+
+
+# Learning Environments
+
+## Understanding the value of effort
+- Cheating can be a symptom that learners do not understand or value the importance of their own work. 
+- Just like in sport: if we take shortcuts during training, we won’t get fit. 
+- Understanding the purpose is important to endure discomfort. 
+- Learners need to understand what they are supposed to learn, why it is valuable, and why effort and discomfort are necessary.
+
+## Fraud triangle
+
+![](../assets/images/fraud-triangle.svg){width=100%}
+
+
+## Learning Environments that promote cheating {.smaller}
+
+| Factors                   | Descriptions                                                                |
+|---------------------------|-----------------------------------------------------------------------------|
+| High pressure             | High stakes increase cheating. Fear of failure reinforces this.             |
+| Lack of intrinsic motivation | Engagement and relevance are important. Lacking these makes cheating more attractive. |
+| Perceived injustice       | Unfair grading leads to cheating.                                           |
+| Low fear of getting caught| Low risk encourages cheating.                                               |
+| Peer influence            | Widespread cheating among peers pressures students to join in.              |
+| Low self-efficacy         | Doubts about one’s own abilities increase cheating as the seemingly only option. |
+
+
+## Strategies to Reduce Cheating
+| Strategies                 | Descriptions                                                                 |
+|----------------------------|------------------------------------------------------------------------------|
+| Foster intrinsic motivation| Spark genuine interest. Provide choices and practical applications.           |
+| Mastery learning           | Clear learning objectives. Focus on mastery of content. Include constructive and corrective feedback in formative assessments. |
+| Reduce pressure            | Diversify assessment methods. Use portfolios and low-stress tests to reduce anxiety. |
+| Strengthen self-efficacy   | Provide constructive feedback and promote peer learning (peer tutoring, peer review). |
+| Create a culture of integrity | Open discussion about academic integrity. Set clear guidelines and promote community ethics. |
+
+
 
 # Academic integrity
 
-# Conclusion
+## Academic Integrity: Plagiarism
+
+| Types of Plagiarism           | Description                                                             |
+|-------------------------------|--------------------------------------------------------------------------|
+| Unattributed use              | Using the work or ideas of others without proper attribution.            |
+| Minor changes or translations | Using the work of others with minor changes or translations without attribution. |
+| Self-plagiarism               | Reusing substantial parts of one’s own work without proper citation.     |
+| Joint works                   | Reusing jointly written publications without proper acknowledgment.      |
+
+
+## Academic Integrity: Misconduct in authorship
+| Types of Plagiarism           | Description                                                            |
+|-------------------------------|--------------------------------------------------------------------------|
+| Unattributed use              | Using the work or ideas of others without proper attribution.            |
+| Minor changes or translations | Using the work of others with minor changes or translations without attribution. |
+| Self-plagiarism               | Reusing substantial parts of one’s own work without proper citation.     |
+| Joint works                   | Reusing jointly written publications without proper acknowledgment.      |
+
+## How to cite ChatGPT
+
+E.g. [APA](https://apastyle.apa.org/blog/how-to-cite-chatgpt) Style: Cite as software (not as personal communication).
+
+<br> <br>
+
+:::: {.columns}
+::: {.column width="50%"}
+![](../assets/images/cite-1.png){width=100%}
+:::
+::: {.column width="50%"}
+![](../assets/images/cite-2.png){width=100%}
+:::
+::::
+
+
+## Documentating AI use
+- Specifying prompts works well for inexperienced users, but inadequately reflects complex processes.
+- Experienced users work with dialogues and several tools, not monolithic prompts in ChatGPT.
+- Working with copilot (code): no traceable prompt input.
+- **Instead**: Document the process, including the tools used and the steps taken.
+  + Include used tools and steps in appendix, with optional graphical representation. 
+  + Serves both evaluation and self-reflection.
+
+- Is documentation meaningful in the long term, once the use of AI-based tools has become commonplace?
+
+## Detecting AI use
+
+-  Can be detected by the use of specific vocabulary and phrases: "delve", "vibrant", "embark", "it's important to note", " based on the data provided”.
+-  Detection tools are not very useful, and can be easily circumvented.
+
+- According to @fleckensteinTeachersSpotAI2024a
+  + Generative AI can write papers that are undetectable.
+  + Teachers overestimate their detection abilities.
+
+
+# Questions
 
 # References {background-color="#D8DEE9"}
 
