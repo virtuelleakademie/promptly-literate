@@ -381,70 +381,42 @@ Andrew Ellis
 
   <p class="date">27 June, 2024</p>
 </section>
-<section id="assistant-menagerie" class="slide level2 smaller">
-<h2>Assistant menagerie</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Assistant</th>
-<th>Provider</th>
-<th>Privacy</th>
-<th>LLM</th>
-<th>Capabilities</th>
-<th>Pricing model</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="https://chat.openai.com/">ChatGPT</a></td>
-<td>OpenAI</td>
-<td>👎🏼</td>
-<td>GPT-3.5, GPT-4</td>
-<td>Web search, DALLE, GPTs, multimodal input</td>
-<td>💶</td>
-</tr>
-<tr class="even">
-<td><a href="https://copilot.microsoft.com/">Copilot</a></td>
-<td>Microsoft</td>
-<td>👍🏼</td>
-<td>GPT-3.5, GPT-4</td>
-<td>Web search, DALLE, multimodal input</td>
-<td>🆓 for BFH employees and students</td>
-</tr>
-<tr class="odd">
-<td><a href="https://gemini.google.com/app">Gemini</a></td>
-<td>Google</td>
-<td>👎🏼</td>
-<td>Gemini Ultra, Gemini Pro, and Gemini Nano</td>
-<td>Web search, multimodal input</td>
-<td>💶</td>
-</tr>
-<tr class="even">
-<td><a href="https://huggingface.co/chat">HuggingChat</a></td>
-<td>🤗 Hugging Face</td>
-<td>👍🏼</td>
-<td>Various open models, e.g.&nbsp;<a href="https://about.fb.com/news/2023/08/code-llama-ai-for-coding/">CodeLlama</a>, <a href="https://huggingface.co/meta-llama/Llama-2-70b-chat-hf">Llama 2</a>, <a href="https://mistral.ai/news/announcing-mistral-7b/">Mistral</a>, <a href="https://blog.google/technology/developers/gemma-open-models/">Gemma</a></td>
-<td></td>
-<td>🆓</td>
-</tr>
-</tbody>
-</table>
+<section id="contents" class="title-slide slide level1 center">
+<h1><i class="bi-map " style="" role="img" aria-hidden="true"></i> Contents</h1>
+<!-- - [Go to Guide for Lecturers](#guide-for-lecturers) -->
+<ul>
+<li>What are LLMs?</li>
+<li>Understanding LLM capabilities and limitations</li>
+<li>Fundamentals of prompting</li>
+<li>Break</li>
+<li>LLMs in the classroom</li>
+<li>Essential skills</li>
+<li>Academic integrity</li>
+<li>Conclusion</li>
+</ul>
 </section>
-<section id="orientierungshilfe-für-lehrpersonen-der-bfh" class="slide level2">
-<h2><i class="bi-bookmark-star " style="" role="img" aria-hidden="true"></i> Orientierungshilfe für Lehrpersonen der BFH</h2>
+
+<section id="guide-for-lecturers-at-bfh" class="title-slide slide level1 center">
+<h1><a id="guide-for-lecturers"></a><i class="bi-bookmark-star " style="" role="img" aria-hidden="true"></i> Guide for Lecturers at BFH</h1>
 <div class="callout callout-note no-icon callout-style-simple">
 <div class="callout-body">
 <div class="callout-content">
 <ul>
-<li><p><strong>Haltung der BFH</strong>: Technologien, die den Lernprozess unterstützen und praxisrelevant sind, sollen in die Lehre einbezogen werden.</p></li>
-<li><p><strong>Einsatz von KI in der Lehre</strong>: Die Mehrheit der Studierenden wird KI-Tools nutzen. Studierende sollen lernen, Technologien kompetent einzusetzen und kritisch zu hinterfragen.</p></li>
+<li><strong>BFH’s Stance</strong>: Technologies that support the learning process and are relevant in practice should be integrated into teaching.</li>
+<li><strong>Use of AI in Teaching</strong>: The majority of students will use AI tools. Students should learn to use technologies competently and to critically question them.</li>
 </ul>
 </div>
 </div>
 </div>
 <p><br> <br></p>
-<p><a href="https://virtuelleakademie.ch/knowledge-base/ki-basierte-schreibtools-in-der-lehre-chatgpt-im-fokus/"><i class="bi-link " style="" role="img" aria-hidden="true"></i> Knowledge Base der Virtuellen Akademie</a></p>
+<p><a href="https://virtuelleakademie.ch/knowledge-base/ki-basierte-schreibtools-in-der-lehre-chatgpt-im-fokus/"><i class="bi-link " style="" role="img" aria-hidden="true"></i> Virtual Academy Knowledge Base</a> [more up-to-date than PDF]</p>
 <p><a href="https://bernerfachhochschule.sharepoint.com/sites/mybfh-BFH-News-de/SitePages/Nachrichten-K%C3%BCnstliche-Intelligenz-(KI)-in-der-Lehre.aspx"><i class="bi-link " style="" role="img" aria-hidden="true"></i> PDF</a></p>
+</section>
+
+<section>
+<section id="what-are-large-language-models-llms" class="title-slide slide level1 center">
+<h1>What are Large Language Models (LLMs)?</h1>
+
 </section>
 <section id="what-is-artifical-intelligence" class="slide level2">
 <h2>What is Artifical Intelligence?</h2>
@@ -471,45 +443,41 @@ Generative AI uses machine learning to create complex statistical models of how 
 <p>An LLM is a type of generative AI model that is trained to predict the next word following the input (prompt).</p>
 </div>
 </div>
-</section>
-<section id="training" class="slide level2">
-<h2>Training</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img data-src="../assets/images/LLM-Bookshelf.png" style="width:100.0%"></p>
-</div><div class="column" style="width:70%;">
-<p><img data-src="../assets/images/training-steps.svg" style="width:100.0%"></p>
-</div>
-</div>
-</section>
-<section id="how-to-train-a-language-model" class="slide level2">
-<h2>How to train a language model</h2>
-<p><br> <br></p>
-<!-- ![](../assets/images/llm-training.excalidraw.svg){width=80%} -->
+<!-- 
+## Training
+:::: {.columns}
 
+::: {.column width="30%"}
+![](../assets/images/LLM-Bookshelf.png){width=100%}
+:::
+
+::: {.column width="70%"}
+![](../assets/images/training-steps.svg){width=100%}
+:::
+:::: -->
 <!-- ## Generalization
 - The ability to apply knowledge to new, unseen data/situations
 - E.g. a language model should learn to generate rhymes
 - Extracts knowledge from text: linguistic, factual, commonsense, etc. -->
-<img data-src="../assets/images/pretraining.png" style="width:100.0%" class="r-stretch"></section>
-<section id="how-to-train-a-language-model-1" class="slide level2">
+</section>
+<section id="how-to-train-a-language-model" class="slide level2">
 <h2>How to train a language model</h2>
 <ul>
 <li>An LLM learns to predict the next word in a sequence, given the previous words: <span class="math display">\[ P(word | context) \]</span></li>
 <li>Think of as “fancy autocomplete” (but very very powerful and sopisticated)</li>
 </ul>
 
-<img data-src="../assets/images/ppl_full.gif" style="width:100.0%" class="r-stretch"></section>
-<section id="text-generation" class="slide level2">
-<h2>Text Generation</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
+<!-- ## Text Generation
+:::: {.columns}
 
-</div><div class="column" style="width:50%;">
-<p><img data-src="../assets/images/textgeneration.png" style="width:100.0%"></p>
-</div>
-</div>
-</section>
+::: {.column width="50%"}
+:::
+
+::: {.column width="50%"}
+![](../assets/images/textgeneration.png){width=100%}
+:::
+:::: -->
+<img data-src="../assets/images/ppl_full.gif" style="width:100.0%" class="r-stretch"></section>
 <section id="how-does-an-llm-generate-text" class="slide level2">
 <h2>How does an LLM generate text?</h2>
 
@@ -523,17 +491,39 @@ Generative AI uses machine learning to create complex statistical models of how 
 <p>Text is generated <strong>one word at a time</strong> (actually tokens, not words).</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<ol type="1">
-<li>Model predicts which word is likely to follow, given a sequence of tokens (words, punctuation, emojis, etc.).</li>
-<li>A word is sampled from the predicted distribution.</li>
-<li>The new word is added to the sequence of words (context) that is used to predict the next word.</li>
-</ol>
-<p><span class="math display">\[ P(w_{w+1} | w_1, w_2, ..., w_t) \]</span></p>
+<!-- 1. Model computes conditional distribution over all possible words: $P(w_{w+1} | w_1, w_2, ..., w_t)$
+2. Next word is sampled.
+3. Word is added to the sequence of words (context). 
+4. Back to Step 1. -->
+<p><img data-src="../assets/images/pseudocode.svg" style="width:60.0%"></p>
 </div><div class="column" style="width:50%;">
-<p><i class="bi-arrow-right-circle-fill " style="" role="img" aria-hidden="true"></i> Generated text is dependent on the context.</p>
-<p><i class="bi-arrow-right-circle-fill " style="" role="img" aria-hidden="true"></i> Every token is given an equal amount time (computation per token is constant).</p>
+<p><i class="bi-arrow-right-circle-fill " style="" role="img" aria-hidden="true"></i> Generated text depends on the <strong>generative model</strong> and the <strong>context</strong>.</p>
+<p><i class="bi-arrow-right-circle-fill " style="" role="img" aria-hidden="true"></i> Every word (token) is given an equal amount time (computation per token is constant).</p>
 </div>
 </div>
+<!-- 
+## Example
+Let's start with the initial phrase "The quick brown".
+
+### Iteration 1
+1. **Initial Context:** ["The", "quick", "brown"]
+2. **Compute Distribution:** Calculate probabilities for possible next words ("fox", "dog", "cat", etc.)
+3. **Sample Word:** Suppose "fox" is selected.
+4. **Update Context:** ["The", "quick", "brown", "fox"]
+
+### Iteration 2
+1. **Current Context:** ["The", "quick", "brown", "fox"]
+2. **Compute Distribution:** Calculate probabilities for possible next words ("jumps", "sits", "runs", etc.)
+3. **Sample Word:** Suppose "jumps" is selected.
+4. **Update Context:** ["The", "quick", "brown", "fox", "jumps"]
+
+### Iteration 3
+1. **Current Context:** ["The", "quick", "brown", "fox", "jumps"]
+2. **Compute Distribution:** Calculate probabilities for possible next words ("over", "under", "on", etc.)
+3. **Sample Word:** Suppose "over" is selected.
+4. **Update Context:** ["The", "quick", "brown", "fox", "jumps", "over"]
+
+This process continues until a stopping condition is met, such as reaching an end token or exceeding a maximum length. -->
 </section>
 <section id="auto-regressive-generation-1" class="slide level2">
 <h2>Auto-regressive generation</h2>
@@ -572,7 +562,7 @@ In this 2-dimensional representation, concepts that are "related" lie close toge
 :::
 
 :::: -->
-<img data-src="../assets/images/autoregressive.png" style="width:100.0%" class="r-stretch"></section>
+<img data-src="../assets/images/pangram.svg" style="width:100.0%" class="r-stretch"></section>
 <section id="foundation-models" class="slide level2">
 <h2>Foundation models</h2>
 <p>A foundation model, or large language model (LLM):</p>
@@ -589,13 +579,13 @@ In this 2-dimensional representation, concepts that are "related" lie close toge
 </div>
 </div>
 </div>
-</section>
-<section id="training-data" class="slide level2">
-<h2>Training data</h2>
+<!-- ## Training data
 
-<img data-src="../assets/images/karpathy-training-data.png" style="width:100.0%" class="r-stretch"><div class="attribution">
-<p>Figure courtesy of <a href="https://karpathy.ai/">Andrej Karpathy</a></p>
-</div>
+![](../assets/images/karpathy-training-data.png){width=100%}
+
+::: attribution
+Figure courtesy of [Andrej Karpathy](https://karpathy.ai/)
+::: -->
 </section>
 <section id="training-process" class="slide level2">
 <h2>Training process</h2>
@@ -642,7 +632,7 @@ Similar to a straw, a tunnel can also be considered to have one hole. It's an el
 </section>
 <section id="assistant-models" class="slide level2">
 <h2>Assistant models</h2>
-<p>Trained (fine-tuned) to have conversations: turn-taking, question answering, not being [rude/sexist/racist].</p>
+<p>Trained (fine-tuned) to have conversations: turn-taking, question answering, not being rude/sexist/racist.</p>
 <div class="columns">
 <div class="column" style="width:34%;">
 <p><img data-src="../assets/images/Chat.png" style="width:100.0%"></p>
@@ -650,18 +640,21 @@ Similar to a straw, a tunnel can also be considered to have one hole. It's an el
 </div><div class="column" style="width:66%;">
 <ul>
 <li>Foundation model has learned to predict all kinds of text, including both desirable and undesirable text.</li>
-<li>Fine-tuning is a process narrow down the space of all possible output to only desirable, human-like dialogue.</li>
+<li>Fine-tuning narrows down the space of all possible output to only desirable, human-like dialogue.</li>
+<li>Model is <strong>aligned</strong> with the values of the fine-tuner.</li>
 </ul>
 </div>
 </div>
 <!-- ## Instruction fine-tuning
 
 ![](../assets/images/finetuning.png){width=100%} -->
-</section>
-<section id="reinforcement-learning-from-human-feedback-rlhf" class="slide level2">
-<h2>Reinforcement learning from human feedback (RLHF)</h2>
+<!-- ## Reinforcement learning from human feedback (RLHF)
 
-<img data-src="../assets/images/RLHF.svg" style="width:100.0%" class="r-stretch"><p>Model is <strong>aligned</strong> with the values of the fine-tuner.</p>
+![](../assets/images/RLHF.svg){width=100%}
+
+
+Model is **aligned** with the values of the fine-tuner.
+ -->
 </section>
 <section id="how-do-chatbots-work" class="slide level2">
 <h2>How do Chatbots work?</h2>
@@ -680,8 +673,8 @@ Similar to a straw, a tunnel can also be considered to have one hole. It's an el
 </div>
 </div>
 </section>
-<section id="an-assistant-model-is-a-role-play-simulator" class="slide level2">
-<h2>An assistant model is a role-play simulator</h2>
+<section id="an-assistant-model-is-a-conversation-simulator" class="slide level2">
+<h2>An assistant model is a conversation simulator</h2>
 <div class="columns">
 <div class="column" style="width:34%;">
 <p><img data-src="../assets/images/live-action-role-play.png" style="width:100.0%"></p>
@@ -698,6 +691,37 @@ Similar to a straw, a tunnel can also be considered to have one hole. It's an el
 <!-- ## Stochastic generation
 
 ![](../assets/images/simulator.png){width=100%} -->
+</section></section>
+<section>
+<section id="understanding-llm-capabilities-and-limitations" class="title-slide slide level1 center">
+<h1>Understanding LLM capabilities and limitations</h1>
+
+</section>
+<section id="capabilities-and-limitations" class="slide level2">
+<h2>Capabilities and limitations</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>What are LLMs good at?</strong></p>
+<ul>
+<li>Fixing grammar, bad writing, etc.</li>
+<li>Rephrasing</li>
+<li>Analyzing texts</li>
+<li>Writing computer code</li>
+<li>Answering questions about a knowledge base</li>
+<li>Translating languages</li>
+<li>Creating structured output</li>
+<li>Factual output with external documents or web search</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Limitations</strong></p>
+<ul>
+<li>They make stuff up (hallucinate)</li>
+<li>They learn biases from the training data</li>
+<li>Weird vocabulary, e.g.&nbsp;delve</li>
+<li>(Chatbots have privacy issues)</li>
+</ul>
+</div>
+</div>
 </section>
 <section id="hallucination" class="slide level2">
 <h2>Hallucination</h2>
@@ -747,27 +771,97 @@ Similar to a straw, a tunnel can also be considered to have one hole. It's an el
 </div>
 </div>
 </section>
-<section id="what-are-llms-good-at" class="slide level2">
-<h2>What are LLMs good at?</h2>
-<ul>
-<li>Fixing grammar, bad writing, etc.</li>
-<li>Rephrasing</li>
-<li>Analyze texts</li>
-<li>Write computer code</li>
-<li>Answer questions about a knowledge base</li>
-<li>Translate languages</li>
-<li>Creating structured output</li>
-<li>Factual output only with external documents or web search</li>
-</ul>
+<section id="biases" class="slide level2">
+<h2>Biases</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 34%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Biases in LLMs</strong></th>
+<th><strong>Source</strong></th>
+<th><strong>Examples</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Training data bias</td>
+<td>Text from internet, books, articles.</td>
+<td>Stereotypes reflecting gender, race, religion.</td>
+</tr>
+<tr class="even">
+<td>Representation bias</td>
+<td>Underrepresented groups/perspectives in data.</td>
+<td>Less accurate responses for minority cultures.</td>
+</tr>
+<tr class="odd">
+<td>Algorithmic bias</td>
+<td>Training and fine-tuning algorithms.</td>
+<td>Optimizations for fluency and coherence may lead to preference for dominant cultural narratives.</td>
+</tr>
+<tr class="even">
+<td>User interaction bias</td>
+<td>Adaptation based on user interactions.</td>
+<td>Increased biased or harmful content generation.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="privacy-concerns" class="slide level2">
+<h2>Privacy concerns</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 34%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Privacy Concerns</strong></th>
+<th><strong>Issue</strong></th>
+<th><strong>Examples</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Data memorization</td>
+<td>Memorizing sensitive information.</td>
+<td>Reproducing phone numbers, addresses.</td>
+</tr>
+<tr class="even">
+<td>Training data leakage</td>
+<td>Unauthorized dissemination of confidential data.</td>
+<td>Summarizing proprietary documents.</td>
+</tr>
+<tr class="odd">
+<td>User query logging</td>
+<td>Storing sensitive user interactions.</td>
+<td>Exposing private queries if data is mishandled.</td>
+</tr>
+<tr class="even">
+<td>Queries used for training</td>
+<td>User queries may be used for further training.</td>
+<td>Personal data in queries could be inadvertently included in training data.</td>
+</tr>
+</tbody>
+</table>
+</section></section>
+<section>
+<section id="fundamentals-of-prompting" class="title-slide slide level1 center">
+<h1>Fundamentals of Prompting</h1>
+
 </section>
 <section id="prompting" class="slide level2">
 <h2>Prompting</h2>
-
-<img data-src="../assets/images/magic.svg" style="width:66.0%" class="r-stretch"></section>
+<p><br> <br> <img data-src="../assets/images/magic.svg" style="width:66.0%"></p>
+</section>
 <section id="what-is-a-prompt" class="slide level2">
 <h2>What is a prompt?</h2>
 <ul>
-<li>Remember: the goal of an LLM is complete text.</li>
+<li>An LLM’s task is to complete text.</li>
 <li>A prompt is a piece of text (instruction) that is given to a language model to complete.</li>
 </ul>
 <div class="callout callout-note no-icon callout-style-simple">
@@ -781,7 +875,7 @@ Model learns and fits.</p>
 </div>
 </div>
 <ul>
-<li>The response is generated as continuation of the prompt.</li>
+<li>The response is generated as continuation of, and conditioned on, the prompt.</li>
 </ul>
 <aside class="notes">
 <p>More technical definition: The output is generated by auto-regressively sampling from the probability distribution over the vocabulary, conditioned on the prompt.</p>
@@ -985,64 +1079,404 @@ Knowledge blooms anew.</p>
 <li><i class="bi-link " style="" role="img" aria-hidden="true"></i> <a href="https://cookbook.openai.com/">OpenAI cookbook</a></li>
 </ul>
 <p>and explore this <a href="../pages/activity-cas-hochschuldidaktik.html">activity</a>.</p>
-</section>
+</section></section>
 <section>
-<section id="advanced-llm-techniques" class="title-slide slide level1 center">
-<h1>Advanced LLM techniques</h1>
+<section id="llms-in-the-classroom" class="title-slide slide level1 center">
+<h1>LLMs in the Classroom</h1>
 
-<img data-src="../assets/images/finetuning-vs-prompting.png" style="width:50.0%" class="r-stretch"></section>
-<section id="retrieval-augmented-generation-rag" class="slide level2">
-<h2>Retrieval-augmented generation (RAG)</h2>
-
-<img data-src="../assets/images/rag-volvo.png" style="width:100.0%" class="r-stretch"><div class="attribution">
-<p>Figure courtesy of <a href="https://www.pinecone.io/learn/retrieval-augmented-generation/">Pinecone</a></p>
-</div>
 </section>
-<section id="web-search" class="slide level2">
-<h2>Web search</h2>
-<ul>
-<li>Similar to retrieval-augmented generation, but with web search.</li>
-<li>LLMs can be instructed to use web search to find information.</li>
-<li>Copilot does this automatically - ChatGPT (paid version only) can be instructed to do this.</li>
-</ul>
-</section>
-<section id="external-tools" class="slide level2">
-<h2>External tools</h2>
-<ul>
-<li>LLMs can be instructed to use external tools to complete tasks.</li>
-<li>For example, an LLM can be instructed to use a calculator to perform arithmetic.</li>
-<li>OpenAI calls this approach <a href="https://platform.openai.com/docs/guides/function-calling/function-calling">function calling</a>.</li>
-</ul>
-</section>
-<section id="multi-agent-conversations" class="slide level2">
-<h2>Multi-agent conversations</h2>
+<section id="chatgpt-edu" class="slide level2 smaller">
+<h2>ChatGPT Edu</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><img data-src="../assets/images/multi-agent.excalidraw.svg" style="width:100.0%"></p>
+<p><br> <br></p>
+<iframe src="https://openai.com/index/introducing-chatgpt-edu/" width="80%" height="400px">
+</iframe>
 </div><div class="column" style="width:50%;">
-<!-- -  DEMO: haiku writing team -->
+<ul>
+<li>Access to GPT-4o, excelling in text interpretation, coding, and mathematics</li>
+<li>Data analytics, web browsing, and document summarization</li>
+<li>Build GPTs, custom versions of ChatGPT, and share them within university workspaces</li>
+<li>Significantly higher message limits than the free version of ChatGPT</li>
+<li>Improved language capabilities across quality and speed, with over 50 languages supported</li>
+<li>Robust security, data privacy, and administrative controls</li>
+<li>Conversations and data are not used to train OpenAI models</li>
+</ul>
 </div>
 </div>
 </section>
-<section id="local-models" class="slide level2">
-<h2>Local models</h2>
+<section id="gpts" class="slide level2">
+<h2>GPTs</h2>
+
+<img data-src="../assets/images/gpt-store.png" style="width:66.0%" class="r-stretch"></section>
+<section id="hands-on-practice-gpts" class="slide level2">
+<h2>Hands-on practice: GPTs</h2>
+<ol type="1">
+<li>Try out custom GPTs from various categories in the <a href="https://chatgpt.com/gpts">GPT store</a>.</li>
+<li>Discuss with your neighbour
+<ol type="a">
+<li>Did you discover any useful GPTs?</li>
+<li>What are the benefits and limitations of using GPTs in the classroom?</li>
+</ol></li>
+</ol>
+</section>
+<section id="extended-cognition" class="slide level2">
+<h2>Extended cognition</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
 <ul>
-<li>Download and run models, such as e.g.&nbsp;Llama 2 or Code Llama, locally.</li>
-<li><a href="https://ollama.com/">Ollama</a></li>
-<li><a href="https://lmstudio.ai/">LM Studio</a></li>
+<li>According to <span class="citation" data-cites="clarkExtendedMind1998">Clark and Chalmers (<a href="#/references" role="doc-biblioref" onclick="">1998</a>)</span>, cognitive processes may extend to external objects.</li>
+<li><span class="citation" data-cites="krakauerWillHarmUs2016">Krakauer (<a href="#/references" role="doc-biblioref" onclick="">2016</a>)</span> distinguishes between <strong>complementary</strong> and <strong>competitive</strong> cognitive artifacts.
+<ul>
+<li>Complementary: numbers, abacus</li>
+<li>Competetive: calculator, GPS</li>
+</ul></li>
+<li>What kind of artefact will AI turn out to be?</li>
 </ul>
-<p>Hardware requirements:</p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="../assets/images/artefacts.png" style="width:100.0%"></p>
+</div>
+</div>
+</section>
+<section id="deskilling-vs.-upskilling" class="slide level2">
+<h2>Deskilling vs.&nbsp;upskilling</h2>
+<div class="columns">
+<div class="column" style="width:20%;">
+
+</div><div class="column" style="width:80%;">
+<p><img data-src="../assets/images/deskilling.svg" style="width:80.0%"></p>
+</div>
+</div>
+</section>
+<section id="writing-tasks-in-the-ai-era" class="slide level2">
+<h2>Writing tasks in the AI era</h2>
 <ul>
-<li>Apple Silicon Mac (M1/M2/M3) / Windows / Linux</li>
-<li>16GB+ of RAM is recommended</li>
-<li>NVIDIA/AMD GPUs supported</li>
+<li>Writing is a core skill: critical thinking, persuasion, argumentation, understanding.</li>
+<li>Text creation is secondary in learning: focus is on underlying skills.</li>
+<li>Learning objectives: Benefits of writing tasks should be clearly and convincingly conveyed.</li>
+<li>Students should be equipped for effective (controlled) use of AI.</li>
+</ul>
+</section>
+<section id="ai-can-do-my-homework" class="slide level2">
+<h2>AI can do my homework</h2>
+<ul>
+<li>We can think of this as cheating.</li>
+<li>More useful: cheating means <em>bypassing useful cognition</em> and therefore missing out on learning.</li>
+<li>Cheating an ethics problem.</li>
+<li>Bypassing cognition is a learning problem.</li>
+<li>Not a new problem: books, encyclopedias, calculators, spell checkers, etc. <!-- - Before AI tasks and exercises provoked students to do useful cognition that led to learning.
+- Now a machine can do some of that work for them. --></li>
+</ul>
+</section>
+<section id="controlled-use-of-llms" class="slide level2">
+<h2>Controlled use of LLMs</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 66%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Task Category</th>
+<th>Specific Tasks</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Editing Tasks</td>
+<td>Create/Improve Different Versions of Sections.</td>
+</tr>
+<tr class="even">
+<td>Transitions</td>
+<td>Write and Compare Transitions.</td>
+</tr>
+<tr class="odd">
+<td>Improve Drafts</td>
+<td>Critique and Refine Drafts.</td>
+</tr>
+<tr class="even">
+<td>Writing Styles</td>
+<td>Rewrite Sections for Different Audiences.</td>
+</tr>
+<tr class="odd">
+<td>Controversial Statements</td>
+<td>Identify Controversial Points and Strengthen Arguments.</td>
+</tr>
+<tr class="even">
+<td>Research Journal</td>
+<td>Keep a Diary and Use LLM for Reflection.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sport-vs.-writing" class="slide level2 smaller">
+<h2>Sport vs.&nbsp;writing</h2>
+<div class="columns">
+<div class="column" style="width:80%;">
+<ul>
+<li>Technological advancements in sports: a useful analogy for learning?</li>
+<li>Distinction between training and competition.</li>
+</ul>
+</div><div class="column" style="width:20%;">
+<p><img data-src="../assets/images/lzr-racer.png" style="width:100.0%"></p>
+</div>
+</div>
+<table class="caption-top">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 45%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: left;">LZR Racer swim suit</th>
+<th>AI-base writing tools</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Improvement</td>
+<td style="text-align: left;">Reduced Resistance, Increased Buoyancy</td>
+<td>Improved Grammar, Formulation, Content Creation</td>
+</tr>
+<tr class="even">
+<td>Fairness</td>
+<td style="text-align: left;">Provided an Unfair Advantage, Led to Record Performances</td>
+<td>Considered Unfair in Academic Contexts</td>
+</tr>
+<tr class="odd">
+<td>Impact</td>
+<td style="text-align: left;">Banned to Maintain Competitive Integrity</td>
+<td>Raises Questions of Originality and Skill Development<br></td>
+</tr>
+</tbody>
+</table>
+</section></section>
+<section>
+<section id="learning-environments" class="title-slide slide level1 center">
+<h1>Learning Environments</h1>
+
+</section>
+<section id="understanding-the-value-of-effort" class="slide level2">
+<h2>Understanding the value of effort</h2>
+<ul>
+<li>Cheating can be a symptom that learners do not understand or value the importance of their own work.</li>
+<li>Just like in sport: if we take shortcuts during training, we won’t get fit.</li>
+<li>Understanding the purpose is important to endure discomfort.</li>
+<li>Learners need to understand what they are supposed to learn, why it is valuable, and why effort and discomfort are necessary.</li>
+</ul>
+</section>
+<section id="fraud-triangle" class="slide level2">
+<h2>Fraud triangle</h2>
+
+<img data-src="../assets/images/fraud-triangle.svg" style="width:100.0%" class="r-stretch"></section>
+<section id="learning-environments-that-promote-cheating" class="slide level2 smaller">
+<h2>Learning Environments that promote cheating</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 74%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Factors</th>
+<th>Descriptions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>High pressure</td>
+<td>High stakes increase cheating. Fear of failure reinforces this.</td>
+</tr>
+<tr class="even">
+<td>Lack of intrinsic motivation</td>
+<td>Engagement and relevance are important. Lacking these makes cheating more attractive.</td>
+</tr>
+<tr class="odd">
+<td>Perceived injustice</td>
+<td>Unfair grading leads to cheating.</td>
+</tr>
+<tr class="even">
+<td>Low fear of getting caught</td>
+<td>Low risk encourages cheating.</td>
+</tr>
+<tr class="odd">
+<td>Peer influence</td>
+<td>Widespread cheating among peers pressures students to join in.</td>
+</tr>
+<tr class="even">
+<td>Low self-efficacy</td>
+<td>Doubts about one’s own abilities increase cheating as the seemingly only option.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="strategies-to-reduce-cheating" class="slide level2">
+<h2>Strategies to Reduce Cheating</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 73%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Strategies</th>
+<th>Descriptions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Foster intrinsic motivation</td>
+<td>Spark genuine interest. Provide choices and practical applications.</td>
+</tr>
+<tr class="even">
+<td>Mastery learning</td>
+<td>Clear learning objectives. Focus on mastery of content. Include constructive and corrective feedback in formative assessments.</td>
+</tr>
+<tr class="odd">
+<td>Reduce pressure</td>
+<td>Diversify assessment methods. Use portfolios and low-stress tests to reduce anxiety.</td>
+</tr>
+<tr class="even">
+<td>Strengthen self-efficacy</td>
+<td>Provide constructive feedback and promote peer learning (peer tutoring, peer review).</td>
+</tr>
+<tr class="odd">
+<td>Create a culture of integrity</td>
+<td>Open discussion about academic integrity. Set clear guidelines and promote community ethics.</td>
+</tr>
+</tbody>
+</table>
+</section></section>
+<section>
+<section id="academic-integrity" class="title-slide slide level1 center">
+<h1>Academic integrity</h1>
+
+</section>
+<section id="academic-integrity-plagiarism" class="slide level2">
+<h2>Academic Integrity: Plagiarism</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 70%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Types of Plagiarism</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Unattributed use</td>
+<td>Using the work or ideas of others without proper attribution.</td>
+</tr>
+<tr class="even">
+<td>Minor changes or translations</td>
+<td>Using the work of others with minor changes or translations without attribution.</td>
+</tr>
+<tr class="odd">
+<td>Self-plagiarism</td>
+<td>Reusing substantial parts of one’s own work without proper citation.</td>
+</tr>
+<tr class="even">
+<td>Joint works</td>
+<td>Reusing jointly written publications without proper acknowledgment.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="academic-integrity-misconduct-in-authorship" class="slide level2">
+<h2>Academic Integrity: Misconduct in authorship</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 70%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Types of Plagiarism</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Unattributed use</td>
+<td>Using the work or ideas of others without proper attribution.</td>
+</tr>
+<tr class="even">
+<td>Minor changes or translations</td>
+<td>Using the work of others with minor changes or translations without attribution.</td>
+</tr>
+<tr class="odd">
+<td>Self-plagiarism</td>
+<td>Reusing substantial parts of one’s own work without proper citation.</td>
+</tr>
+<tr class="even">
+<td>Joint works</td>
+<td>Reusing jointly written publications without proper acknowledgment.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="how-to-cite-chatgpt" class="slide level2">
+<h2>How to cite ChatGPT</h2>
+<p>E.g. <a href="https://apastyle.apa.org/blog/how-to-cite-chatgpt">APA</a> Style: Cite as software (not as personal communication).</p>
+<p><br> <br></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="../assets/images/cite-1.png" style="width:100.0%"></p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="../assets/images/cite-2.png" style="width:100.0%"></p>
+</div>
+</div>
+</section>
+<section id="documentating-ai-use" class="slide level2">
+<h2>Documentating AI use</h2>
+<ul>
+<li>Specifying prompts works well for inexperienced users, but inadequately reflects complex processes.</li>
+<li>Experienced users work with dialogues and several tools, not monolithic prompts in ChatGPT.</li>
+<li>Working with copilot (code): no traceable prompt input.</li>
+<li><strong>Instead</strong>: Document the process, including the tools used and the steps taken.
+<ul>
+<li>Include used tools and steps in appendix, with optional graphical representation.</li>
+<li>Serves both evaluation and self-reflection.</li>
+</ul></li>
+<li>Is documentation meaningful in the long term, once the use of AI-based tools has become commonplace?</li>
+</ul>
+</section>
+<section id="detecting-ai-use" class="slide level2">
+<h2>Detecting AI use</h2>
+<ul>
+<li><p>Can be detected by the use of specific vocabulary and phrases: “delve”, “vibrant”, “embark”, “it’s important to note”, ” based on the data provided”.</p></li>
+<li><p>Detection tools are not very useful, and can be easily circumvented.</p></li>
+<li><p>According to <span class="citation" data-cites="fleckensteinTeachersSpotAI2024a">Fleckenstein et al. (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span></p>
+<ul>
+<li>Generative AI can write papers that are undetectable.</li>
+<li>Teachers overestimate their detection abilities.</li>
+</ul></li>
 </ul>
 </section></section>
+<section id="questions" class="title-slide slide level1 center">
+<h1>Questions</h1>
+
+</section>
+
 <section id="references" class="title-slide slide level1 smaller scrollable" data-background-color="#D8DEE9">
 <h1>References</h1>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-bowenTeachingAI2024" class="csl-entry" role="listitem">
 Bowen, José Antonio, and C. Edward Watson. 2024. <em>Teaching with <span>AI</span></em>. Johns Hopkins University Press. <a href="https://doi.org/10.56021/9781421449227">https://doi.org/10.56021/9781421449227</a>.
+</div>
+<div id="ref-clarkExtendedMind1998" class="csl-entry" role="listitem">
+Clark, Andy, and David Chalmers. 1998. <span>“The <span>Extended Mind</span>.”</span> <em>Analysis</em> 58 (1): 7–19. <a href="https://www.jstor.org/stable/3328150">https://www.jstor.org/stable/3328150</a>.
+</div>
+<div id="ref-fleckensteinTeachersSpotAI2024a" class="csl-entry" role="listitem">
+Fleckenstein, Johanna, Jennifer Meyer, Thorben Jansen, Stefan D. Keller, Olaf Köller, and Jens Möller. 2024. <span>“Do Teachers Spot <span>AI</span>? <span>Evaluating</span> the Detectability of <span class="nocase">AI-generated</span> Texts Among Student Essays.”</span> <em>Computers and Education: Artificial Intelligence</em> 6 (June): 100209. <a href="https://doi.org/10.1016/j.caeai.2024.100209">https://doi.org/10.1016/j.caeai.2024.100209</a>.
+</div>
+<div id="ref-krakauerWillHarmUs2016" class="csl-entry" role="listitem">
+Krakauer, David. 2016. <span>“Will <span>A</span>.<span>I</span>. <span>Harm Us</span>? <span>Better</span> to <span>Ask How We</span>’ll <span>Reckon With Our Hybrid Nature</span>.”</span> Nautilus. September 6, 2016. <a href="https://nautil.us/will-ai-harm-us-better-to-ask-how-well-reckon-with-our-hybrid-nature-236098/">https://nautil.us/will-ai-harm-us-better-to-ask-how-well-reckon-with-our-hybrid-nature-236098/</a>.
 </div>
 <div id="ref-langCheatingLessons2013a" class="csl-entry" role="listitem">
 Lang, James M. 2013. <span>“Cheating <span>Lessons</span>.”</span> Harvard University Press. 2013. <a href="https://www.hup.harvard.edu/books/9780674724631">https://www.hup.harvard.edu/books/9780674724631</a>.
@@ -1117,7 +1551,7 @@ Yang, Chengrun, Xuezhi Wang, Yifeng Lu, Hanxiao Liu, Quoc V. Le, Denny Zhou, and
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: 'c/t',
+        slideNumber: 'h.v',
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
@@ -1158,7 +1592,7 @@ Yang, Chengrun, Xuezhi Wang, Yifeng Lu, Hanxiao Liu, Quoc V. Le, Denny Zhou, and
         rtl: false,
 
         // see https://revealjs.com/vertical-slides/#navigation-mode
-        navigationMode: 'linear',
+        navigationMode: 'default',
 
         // Randomizes the order of slides each time the presentation loads
         shuffle: false,
