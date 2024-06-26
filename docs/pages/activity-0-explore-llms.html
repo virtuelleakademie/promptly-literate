@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -143,6 +143,10 @@ div.csl-indent {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-slides">    
         <li>
+    <a class="dropdown-item" href="../slides/workshop-global-management.html">
+ <span class="dropdown-text">Workshop: Global Management</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../slides/prompt-labor-basics.html">
  <span class="dropdown-text">Prompt Labor: Basics</span></a>
   </li>  
@@ -167,6 +171,10 @@ div.csl-indent {
  <span class="menu-text">Activities</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-activities">    
+        <li>
+    <a class="dropdown-item" href="../pages/activity-global-management.html">
+ <span class="dropdown-text">Activity: Workshop Global Management</span></a>
+  </li>  
         <li>
     <a class="dropdown-item" href="../pages/activities-20240223.html">
  <span class="dropdown-text">Activity: Confabulations and prompting</span></a>
@@ -294,7 +302,7 @@ div.csl-indent {
 </nav>
     </div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -341,9 +349,9 @@ div.csl-indent {
 </header>
 
 
-<section id="tasks" class="level2 page-columns page-full">
+<section id="tasks" class="level2">
 <h2 class="anchored" data-anchor-id="tasks">Tasks</h2>
-<div class="page-columns page-full"><p>Use both ChatGPT and the Playground to perform the following tasks: </p><div class="no-row-height column-margin column-container"><span class="margin-aside">Feel free to use the other models (Bing, Bard, Llama2, GooseAI) as well.</span></div></div>
+<p>Use both ChatGPT and the Playground to perform the following tasks: <span class="margin-aside">Feel free to use the other models (Bing, Bard, Llama2, GooseAI) as well.</span></p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -365,7 +373,7 @@ Prompts
 </div>
 <p>In all of these examples, use the <strong>temperature</strong> parameter in the playground to control the randomness of the model’s output. Try different settings, and see how the output changes.</p>
 </section>
-<section id="models" class="level2 page-columns page-full">
+<section id="models" class="level2">
 <h2 class="anchored" data-anchor-id="models">Models</h2>
 <ul>
 <li><a href="https://chat.openai.com/">ChatGPT</a></li>
@@ -376,14 +384,14 @@ Prompts
 <li><a href="https://goose.ai/playground">Goose AI</a></li>
 </ul>
 <p>Now we will explore two different interfaces to the same underlying OpenAI language models. These are <strong>GPT-3.5-turbo</strong> and <strong>GPT-4</strong>. The first is a smaller model (fewer parameters), whereas the second is the most advanced model (more parameters).</p>
-<div class="page-columns page-full"><p></p><div class="no-row-height column-margin column-container"><span class="margin-aside">GPT-4 is only accessible to paid customers.</span></div></div>
+<p><span class="margin-aside">GPT-4 is only accessible to paid customers.</span></p>
 <p>Both of these models are trained on the same data, but the second is larger and more powerful. Both are optimized for conversations, and are capable of a wide variety of tasks. However, GPT-4 generally performs better, especially at tasks requiring more complex reasoning, and at following instructions. The differences between models are described in this <a href="https://openai.com/research/gpt-4">article</a>.</p>
 <p>One of the most important differences is the context length that the models can handle. GPT-4 can process much more context than GPT-3.5-turbo.</p>
 <ul>
 <li><p>GPT-3.5-turbo can process a context of 4097 tokens (~3073 words) or 16’000 tokens (~12’000 words).</p></li>
 <li><p>GPT-4 comes in two varieties: 8192 tokens (~6144 words ) or 32’768 tokens (~25’000 words).</p></li>
 </ul>
-<div class="page-columns page-full"><p></p><div class="no-row-height column-margin column-container"><span class="margin-aside">However: ChatGPT only allows shorter context lengths; to get the full context length, you have to use the API (or playground).</span></div></div>
+<p><span class="margin-aside">However: ChatGPT only allows shorter context lengths; to get the full context length, you have to use the API (or playground).</span></p>
 <p>General capabilities of the models include:</p>
 <ul>
 <li>LLMs are <em>few-shot</em> learners, meaning they can learn from a small number of examples.</li>
@@ -401,11 +409,11 @@ Prompts
 <p>This is a simple interface to the GPT-3.5-turbo and GPT-4 models. It does not offer any possibility of adjusting the parameters of the model, but it does allow you to enter a prompt, and then to interact with the model.</p>
 <p>Notable features: - In the paid version, you can choose between GPT-3.5-turbo and GPT-4. - GPT-4 offers plugins. These can give the assistant access to a wide variety of sources of information, including databases, APIs, and web scraping. A very useful plugin is the <em>Wolfram Alpha</em> plugin, which allows the assistant to compute answers based on facts and mathematical knowledge. - GPT-4 and <strong>Advanced Data Analysis</strong> plugin; this gives the model the ability to run python code and display the results.</p>
 </section>
-<section id="playground" class="level3 page-columns page-full">
+<section id="playground" class="level3">
 <h3 class="anchored" data-anchor-id="playground">Playground</h3>
 <p>This is a more advanced interface to the GPT-3.5-turbo and GPT-4 models. It allows you to adjust the parameters of the model, and to enter different types of prompts, and then to interact with the model. It also allows you to use the full context lengths (8k, 16k or 32k tokens), meaning that you can process much longer texts.</p>
 <p>Furthermore, it allows you to save your prompts as <strong>presets</strong> to reuse them or to share them with others.</p>
-<section id="parameters" class="level4 page-columns page-full">
+<section id="parameters" class="level4">
 <h4 class="anchored" data-anchor-id="parameters">Parameters</h4>
 <p>The playground offers the following parameters:</p>
 <ul>
@@ -420,7 +428,7 @@ Prompts
 </ul>
 <p>In general, the only parameters that you need to adjust are <strong>temperature</strong> and (possibly) <strong>maximum length</strong>.</p>
 <p>If you want to read more about the temperature parameter, see the following article <a href="https://docs.cohere.com/docs/temperature">👉 Temperature</a>.</p>
-<div class="page-columns page-full"><p></p><div class="no-row-height column-margin column-container"><span class="margin-aside"><a href="https://www.prompthub.us/blog/understanding-openai-parameters-how-to-optimize-your-prompts-for-better-outputs">1</a> and <a href="https://shivammehta25.github.io/posts/temperature-in-language-models-open-ai-whisper-probabilistic-machine-learning/">2</a> are also interesting.</span></div></div>
+<p><span class="margin-aside"><a href="https://www.prompthub.us/blog/understanding-openai-parameters-how-to-optimize-your-prompts-for-better-outputs">1</a> and <a href="https://shivammehta25.github.io/posts/temperature-in-language-models-open-ai-whisper-probabilistic-machine-learning/">2</a> are also interesting.</span></p>
 </section>
 <section id="system-and-user-messages" class="level4">
 <h4 class="anchored" data-anchor-id="system-and-user-messages">System and user messages</h4>

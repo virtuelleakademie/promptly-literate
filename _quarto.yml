@@ -43,6 +43,8 @@ website:
       - icon: file-slides
         text: "Slides" # {{< fa person-chalkboard >}}
         menu:
+          - text: "Workshop: Global Management"
+            file: slides/workshop-global-management.qmd
           - text: "Prompt Labor: Basics"
             file: slides/prompt-labor-basics.qmd
           - text: "Prompt Labor: Vertiefung"
@@ -58,6 +60,8 @@ website:
         menu:
           # - text: "Activities"
           #   file: pages/activities.qmd
+          - text: "Activity: Workshop Global Management"
+            file: pages/activity-global-management.qmd
           - text: "Activity: Confabulations and prompting"
             file: pages/activities-20240223.qmd
           - text: "Activity: CAS"
