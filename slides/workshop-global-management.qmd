@@ -16,7 +16,7 @@ format:
           data-background-opacity: "1"
         # logo: ../assets/robot.png
         footer: <a href="../index.html">back to website {{< bi box-arrow-up-left >}} </a>
-        # navigation-mode: vertical
+        navigation-mode: vertical
         progress: true
         scrollable: false
         slide-number: true
@@ -43,33 +43,33 @@ revealjs-plugins:
   - attribution
 ---
 
-## Assistant menagerie {.smaller}
 
-| Assistant                                  | Provider         | Privacy | LLM                                                                                                                                                                                                                                                                                                     | Capabilities                              | Pricing model    |
-| ------------------------------------------ | ---------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ---------- |
-| [ChatGPT](https://chat.openai.com/)        | OpenAI           | 👎🏼  | GPT-3.5, GPT-4                                                                                                                                                                                                                                                                                          | Web search, DALLE, GPTs, multimodal input | 💶        |
-| [Copilot](https://copilot.microsoft.com/)  | Microsoft        | 👍🏼  | GPT-3.5, GPT-4                                                                                                                                                                                                                                                                                          | Web search, DALLE, multimodal input       | 🆓 for BFH employees and students|
-| [Gemini](https://gemini.google.com/app)    | Google           | 👎🏼  | Gemini Ultra, Gemini Pro, and Gemini Nano                                                                                                                                                                                                                                                               | Web search, multimodal input              | 💶        |
-| [HuggingChat](https://huggingface.co/chat) | 🤗 Hugging Face | 👍🏼  | Various open models, e.g. [CodeLlama](https://about.fb.com/news/2023/08/code-llama-ai-for-coding/), [Llama 2](https://huggingface.co/meta-llama/Llama-2-70b-chat-hf),  [Mistral](https://mistral.ai/news/announcing-mistral-7b/), [Gemma](https://blog.google/technology/developers/gemma-open-models/) |                                           | 🆓         |
+## {{< bi map >}} Contents
 
+<!-- - [Go to Guide for Lecturers](#guide-for-lecturers) -->
+- What are LLMs?
+- Understanding LLM capabilities and limitations
+- Fundamentals of prompting
+- Break
+- LLMs in the classroom
+- Essential skills
+- Academic integrity
+- Conclusion
 
-
-## {{< bi bookmark-star >}} Orientierungshilfe für Lehrpersonen der BFH
-
+## <a id="guide-for-lecturers"></a>{{< bi bookmark-star >}} Guide for Lecturers at BFH
 
 :::{.callout-note}
-
-- **Haltung der BFH**: Technologien, die den Lernprozess unterstützen und praxisrelevant sind, sollen in die Lehre einbezogen werden.
-
-- **Einsatz von KI in der Lehre**: Die Mehrheit der Studierenden wird KI-Tools nutzen. Studierende sollen lernen, Technologien kompetent einzusetzen und kritisch zu hinterfragen.
-
+- **BFH’s Stance**: Technologies that support the learning process and are relevant in practice should be integrated into teaching.
+- **Use of AI in Teaching**: The majority of students will use AI tools. Students should learn to use technologies competently and to critically question them.
 :::
 
 <br> <br>
 
-[{{< bi link >}} Knowledge Base der Virtuellen Akademie](https://virtuelleakademie.ch/knowledge-base/ki-basierte-schreibtools-in-der-lehre-chatgpt-im-fokus/)
+[{{< bi link >}} Virtual Academy Knowledge Base](https://virtuelleakademie.ch/knowledge-base/ki-basierte-schreibtools-in-der-lehre-chatgpt-im-fokus/) [more up-to-date than PDF]
 
 [{{< bi link >}} PDF](https://bernerfachhochschule.sharepoint.com/sites/mybfh-BFH-News-de/SitePages/Nachrichten-K%C3%BCnstliche-Intelligenz-(KI)-in-der-Lehre.aspx)
+
+
 
 ## What is Artifical Intelligence?
 
@@ -109,7 +109,7 @@ An LLM is a type of generative AI model that is trained to predict the next word
 
 
 
-
+<!-- 
 ## Training
 :::: {.columns}
 
@@ -120,17 +120,10 @@ An LLM is a type of generative AI model that is trained to predict the next word
 ::: {.column width="70%"}
 ![](../assets/images/training-steps.svg){width=100%}
 :::
-::::
+:::: -->
 
 
 
-## How to train a language model
-
-<br> <br>
-
-<!-- ![](../assets/images/llm-training.excalidraw.svg){width=80%} -->
-
-![](../assets/images/pretraining.png){width=100%}
 
 <!-- ## Generalization
 - The ability to apply knowledge to new, unseen data/situations
@@ -151,7 +144,7 @@ An LLM is a type of generative AI model that is trained to predict the next word
 
 
 
-## Text Generation
+<!-- ## Text Generation
 :::: {.columns}
 
 ::: {.column width="50%"}
@@ -160,10 +153,11 @@ An LLM is a type of generative AI model that is trained to predict the next word
 ::: {.column width="50%"}
 ![](../assets/images/textgeneration.png){width=100%}
 :::
-::::
+:::: -->
 
 
 ## How does an LLM generate text?
+
 
 ![](../assets/images/text-generation-output.excalidraw.svg){width=100%}
 
@@ -180,25 +174,48 @@ Text is generated __one word at a time__ (actually tokens, not words).
 :::: {.columns}
 ::: {.column width="50%"}
 
-1. Model predicts which word is likely to follow, given a sequence of tokens (words, punctuation, emojis, etc.). 
-2. A word is sampled from the predicted distribution.
-3. The new word is added to the sequence of words (context) that is used to predict the next word.
-
-$$ P(w_{w+1} | w_1, w_2, ..., w_t) $$
-
+<!-- 1. Model computes conditional distribution over all possible words: $P(w_{w+1} | w_1, w_2, ..., w_t)$
+2. Next word is sampled.
+3. Word is added to the sequence of words (context). 
+4. Back to Step 1. -->
+![](../assets/images/pseudocode.svg){width=60%}
 :::
 ::: {.column width="50%"}
 
 
-{{< bi arrow-right-circle-fill >}} Generated text is dependent on the context.
+{{< bi arrow-right-circle-fill >}} Generated text depends on the **generative model** and the **context**.
 
-{{< bi arrow-right-circle-fill >}} Every token is given an equal amount time (computation per token is constant). 
+{{< bi arrow-right-circle-fill >}} Every word (token) is given an equal amount time (computation per token is constant). 
 :::
 ::::
 
+<!-- 
+## Example
+Let's start with the initial phrase "The quick brown".
+
+### Iteration 1
+1. **Initial Context:** ["The", "quick", "brown"]
+2. **Compute Distribution:** Calculate probabilities for possible next words ("fox", "dog", "cat", etc.)
+3. **Sample Word:** Suppose "fox" is selected.
+4. **Update Context:** ["The", "quick", "brown", "fox"]
+
+### Iteration 2
+1. **Current Context:** ["The", "quick", "brown", "fox"]
+2. **Compute Distribution:** Calculate probabilities for possible next words ("jumps", "sits", "runs", etc.)
+3. **Sample Word:** Suppose "jumps" is selected.
+4. **Update Context:** ["The", "quick", "brown", "fox", "jumps"]
+
+### Iteration 3
+1. **Current Context:** ["The", "quick", "brown", "fox", "jumps"]
+2. **Compute Distribution:** Calculate probabilities for possible next words ("over", "under", "on", etc.)
+3. **Sample Word:** Suppose "over" is selected.
+4. **Update Context:** ["The", "quick", "brown", "fox", "jumps", "over"]
+
+This process continues until a stopping condition is met, such as reaching an end token or exceeding a maximum length. -->
+
 ## Auto-regressive generation
 
-![](../assets/images/autoregressive.png){width=100%}
+![](../assets/images/pangram.svg){width=100%}
 
 
 
@@ -251,13 +268,13 @@ What is the capital of Italy? .
 :::
 
 
-## Training data
+<!-- ## Training data
 
 ![](../assets/images/karpathy-training-data.png){width=100%}
 
 ::: attribution
 Figure courtesy of [Andrej Karpathy](https://karpathy.ai/)
-:::
+::: -->
 
 ## Training process
 
@@ -308,7 +325,7 @@ Similar to a straw, a tunnel can also be considered to have one hole. It's an el
 
 ## Assistant models
 
-Trained (fine-tuned) to have conversations: turn-taking, question answering, not being [rude/sexist/racist].
+Trained (fine-tuned) to have conversations: turn-taking, question answering, not being rude/sexist/racist.
 
 :::: {.columns}
 
@@ -322,8 +339,8 @@ Trained (fine-tuned) to have conversations: turn-taking, question answering, not
 ::: {.column width="66%"}
 
 - Foundation model has learned to predict all kinds of text, including both desirable and undesirable text.
-- Fine-tuning is a process narrow down the space of all possible output to only desirable, human-like dialogue.
-
+- Fine-tuning narrows down the space of all possible output to only desirable, human-like dialogue.
+- Model is **aligned** with the values of the fine-tuner.
 :::
 ::::
 
@@ -332,13 +349,13 @@ Trained (fine-tuned) to have conversations: turn-taking, question answering, not
 
 ![](../assets/images/finetuning.png){width=100%} -->
 
-## Reinforcement learning from human feedback (RLHF)
+<!-- ## Reinforcement learning from human feedback (RLHF)
 
 ![](../assets/images/RLHF.svg){width=100%}
 
 
 Model is **aligned** with the values of the fine-tuner.
-
+ -->
 
 
 
@@ -365,7 +382,7 @@ Model is **aligned** with the values of the fine-tuner.
 
 
 
-## An assistant model is a role-play simulator
+## An assistant model is a conversation simulator
 
 :::: {.columns}
 
@@ -391,6 +408,33 @@ Model is **aligned** with the values of the fine-tuner.
 
 ![](../assets/images/simulator.png){width=100%} -->
 
+## Understanding LLM capabilities and limitations
+
+:::: {.columns}
+::: {.column width="50%"}
+
+**What are LLMs good at?**
+
+- Fixing grammar, bad writing, etc.
+- Rephrasing
+- Analyzing texts
+- Writing computer code
+- Answering questions about a knowledge base
+- Translating languages
+- Creating structured output
+- Factual output with external documents or web search
+
+:::
+::: {.column width="50%"}
+
+**Limitations**
+
+- They make stuff up (hallucinate)
+- They learn biases from the training data
+- Weird vocabulary, e.g. delve
+- (Chatbots have privacy issues)
+:::
+::::
 
 
 ## Hallucination
@@ -445,19 +489,6 @@ It looks like the LLM knows the capital of Uzbekistan^[What it is actually doing
 
 :::
 ::::
-
-
-## What are LLMs good at?
-
-- Fixing grammar, bad writing, etc.
-- Rephrasing
-- Analyze texts
-- Write computer code
-- Answer questions about a knowledge base
-- Translate languages
-- Creating structured output
-- Factual output only with external documents or web search
-
 
 
 
