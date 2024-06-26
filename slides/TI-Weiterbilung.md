@@ -131,7 +131,8 @@ Here are the extracted slides translated into English and converted into markdow
 
 ## Avoiding Cheating or Useful Cognition
 
-- Controlled Use of LLMs
+## Controlled Use of LLMs
+
   - Editing Tasks
     - Create/Improve Different Versions of Sections.
   - Transitions
@@ -245,6 +246,8 @@ Here are the extracted slides translated into English and converted into markdow
 ## Example APA Style: How to Cite Software, Not Personal Communication.
 
 - How to Cite ChatGPT
+
+
   - Specifying Prompt Works Well Only for Inexperienced Users.
   - Experienced Users Work with Dialogues, Not Monolithic Prompts.
   - Working with Copilot (Code): No Traceable Prompt Input.
@@ -266,7 +269,8 @@ Here are the extracted slides translated into English and converted into markdow
 
 ---
 
-## According to Fleckenstein et al. (2024)
+## Overconfident AI detectors
+According to @fleckensteinTeachersSpotAI2024a
 
 - Generative AI Can Write Papers That Are Undetectable.
 - Teachers Overestimate Their Detection Abilities.
