@@ -44,7 +44,7 @@ revealjs-plugins:
 ---
 
 
-## {{< bi map >}} Contents
+# {{< bi map >}} Contents
 
 <!-- - [Go to Guide for Lecturers](#guide-for-lecturers) -->
 - What are LLMs?
@@ -56,7 +56,7 @@ revealjs-plugins:
 - Academic integrity
 - Conclusion
 
-## <a id="guide-for-lecturers"></a>{{< bi bookmark-star >}} Guide for Lecturers at BFH
+# <a id="guide-for-lecturers"></a>{{< bi bookmark-star >}} Guide for Lecturers at BFH
 
 :::{.callout-note}
 - **BFH’s Stance**: Technologies that support the learning process and are relevant in practice should be integrated into teaching.
@@ -70,6 +70,7 @@ revealjs-plugins:
 [{{< bi link >}} PDF](https://bernerfachhochschule.sharepoint.com/sites/mybfh-BFH-News-de/SitePages/Nachrichten-K%C3%BCnstliche-Intelligenz-(KI)-in-der-Lehre.aspx)
 
 
+# What are Large Language Models (LLMs)?
 
 ## What is Artifical Intelligence?
 
@@ -408,8 +409,9 @@ Model is **aligned** with the values of the fine-tuner.
 
 ![](../assets/images/simulator.png){width=100%} -->
 
-## Understanding LLM capabilities and limitations
+# Understanding LLM capabilities and limitations
 
+## Capabilities and limitations 
 :::: {.columns}
 ::: {.column width="50%"}
 
@@ -491,6 +493,7 @@ It looks like the LLM knows the capital of Uzbekistan^[What it is actually doing
 ::::
 
 
+# Fundamentals of Prompting
 
 ## Prompting
 
@@ -703,61 +706,46 @@ For more advanced prompting techniques, see these websites:
 and explore this [activity](../pages/activity-cas-hochschuldidaktik.qmd).
 
 
-# Advanced LLM techniques
+# LLMs in the Classroom
 
-![](../assets/images/finetuning-vs-prompting.png){width=50%}
-
-## Retrieval-augmented generation (RAG)
-
-![](../assets/images/rag-volvo.png){width=100%}
-
-:::{.attribution}
-
-Figure courtesy of [Pinecone](https://www.pinecone.io/learn/retrieval-augmented-generation/)
-:::
-
-## Web search
-
-- Similar to retrieval-augmented generation, but with web search.
-- LLMs can be instructed to use web search to find information.
-- Copilot does this automatically - ChatGPT (paid version only) can be instructed to do this.
-  
-
-
-## External tools
-
-- LLMs can be instructed to use external tools to complete tasks.
-- For example, an LLM can be instructed to use a calculator to perform arithmetic.
-- OpenAI calls this approach [function calling](https://platform.openai.com/docs/guides/function-calling/function-calling).
-
-## Multi-agent conversations
+## ChatGPT Edu {.smaller}
 
 :::: {.columns}
 ::: {.column width="50%"}
+<br> <br>
 
-![](../assets/images/multi-agent.excalidraw.svg){width=100%}
+<iframe src="https://openai.com/index/introducing-chatgpt-edu/" width="80%" height="400px"></iframe>
 :::
-
 ::: {.column width="50%"}
 
-<!-- - {{< bi arrow-right-circle >}} DEMO: haiku writing team -->
+- Access to GPT-4o, excelling in text interpretation, coding, and mathematics
+- Data analytics, web browsing, and document summarization
+- Build GPTs, custom versions of ChatGPT, and share them within university workspaces
+- Significantly higher message limits than the free version of ChatGPT
+- Improved language capabilities across quality and speed, with over 50 languages supported
+- Robust security, data privacy, and administrative controls
+- Conversations and data are not used to train OpenAI models
 :::
 ::::
 
-## Local models
 
-- Download and run models, such as e.g. Llama 2 or Code Llama, locally.
-- [Ollama](https://ollama.com/)
-- [LM Studio](https://lmstudio.ai/)
+## GPTs
 
-Hardware requirements:
-
-- Apple Silicon Mac (M1/M2/M3) / Windows / Linux
-- 16GB+ of RAM is recommended
-- NVIDIA/AMD GPUs supported
+![](../assets/images/gpt-store.png){width=66%}
 
 
+## Hands-on practice: GPTs
 
+1) Try out custom GPTs from various categories in the [GPT store](https://chatgpt.com/gpts).
+2) Discuss with your neighbour
+    a) Did you discover any useful GPTs?
+    b) What are the benefits and limitations of using GPTs in the classroom?
+
+# Essential Skills
+
+# Academic integrity
+
+# Conclusion
 
 # References {background-color="#D8DEE9"}
 
