@@ -155,3 +155,5 @@ slides/empty.qmd
 docs/slides/empty.html
 
 .vscode/
+config.yaml
+pages/config.yaml
