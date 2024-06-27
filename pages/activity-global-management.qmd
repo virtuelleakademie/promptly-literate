@@ -207,7 +207,7 @@ Now, let's address each step in detail, providing specific strategies and method
 
 # Exercise: Essay writing
 
-The goal of this exercise is to develop prompting skills. Focusing on structuring and guiding the model to generate coherent and informative responses. Use as many of the techniques you have learned so far as you can.
+The goal of this exercise is to develop prompting skills. Focusing on structuring and guiding the model to generate coherent and informative responses. Use  the techniques that you have learned so far, including providing reference texts.
 
 :::{.callout-important}
 1. Use ChatGPT to write an (short) essay on the pros and cons of the introduction of a universal basic income (UBI). 
@@ -221,7 +221,7 @@ The goal of this exercise is to develop prompting skills. Focusing on structurin
 
 # Further Resources
 
-(@) **Explore these prompt guides**. Use both/either ChatGPT and Copilot to try out new ideas.
+(@) **Explore these prompt guides**. Use ChatGPT to try out new ideas.
 
 :::{.callout-tip collapse="true"}
 ## Learn prompting: An comprehensive (and free) guide aimed at non-technical users.
