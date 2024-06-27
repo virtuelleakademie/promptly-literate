@@ -39,7 +39,7 @@ Designing effective prompts to instruct LLMs to generate a desired output is ref
 
 
 
-## Prompting Guidelines
+## General tips
 
 OpenAI give a set of [{{< bi link >}} strategies](https://platform.openai.com/docs/guides/prompt-engineering/six-strategies-for-getting-better-results)  for using their models. If you need examples, this might be a good place to start. 
 
