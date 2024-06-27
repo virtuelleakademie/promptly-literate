@@ -133,7 +133,7 @@ Now summarize this new abstract:
 
 :::{.callout-important}
 ## Hands-on Exercise
-1. Choose a topic you're interested in.
+1. Choose a topic you're interested in. If you would like to use an AI-based tool for literature research, you can use [Elicit](https://elicit.com/).
 2. Create zero-shot and few-shot prompts to extract the research question, methodology, and main findings from the abstracts of three research papers.
 :::
 
