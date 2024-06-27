@@ -2,7 +2,8 @@
 title: "Activities: Learn Prompting"
 description: |
   Basic programming techniques.
-date: last-modified
+# date: last-modified
+date: 27 June, 2024
 date-format: "DD MMM, YYYY"
 author: 
   - name: Andrew Ellis
@@ -22,40 +23,28 @@ format:
         callout-icon: false
 ---
 
-Designing effective prompts to instruct LLMS to generate a desired output is referred to as _prompt engineering_. This activity will guide you through the process of creating prompts for LLMs.
+Designing effective prompts to instruct LLMs to generate a desired output is referred to as _prompt engineering_. This activity will guide you through the process of creating prompts for LLMs.
 
+:::{.callout-tip}
+- In general, it is advisable to improve your prompting strategy by **iterating**. 
 
+- Start with a simple prompt, see what the model generates, and then refine. Repeat this process until you are satisfied with the results. 
 
+- Once you have a good prompt, you can use it in a new chat session - in this way, the "failed" attempts will not be part of the context.
 
-
+:::
 
 # Prompting
 
-## Practice basic techniques
-
-
-
-# Assignments
-
-## Summarize research paper
-Search for literature and summarize on {topic}
-
-## Write essay
-
-Essay on the pros and cons of the introduction of a universal basic income (UBI)
 
 
 
 ## Prompting Guidelines
 
+OpenAI give a set of [{{< bi link >}} strategies](https://platform.openai.com/docs/guides/prompt-engineering/six-strategies-for-getting-better-results)  for using their models. If you need examples, this might be a good place to start. 
 
 
-In this activity, you can explore various prompting guides for LLMs. They more or less all converge on the same set of techniques. You can then use these techniques to write your own prompts
-
-OpenAI give a set of [{{< bi link >}} strategies](https://platform.openai.com/docs/guides/prompt-engineering/six-strategies-for-getting-better-results)  for using their models.
-
-
-These include:
+The strategies include:
 
 - writing clear instructions
 - providing reference texts
@@ -70,15 +59,7 @@ Some general techniques are:
 
 - **Use delimiters:** To separate various parts of the prompt (e.g. `"`, \`,, `'`, `|`, `#`, ...).
 
-
 - **Few-shot prompting:** Provide a few examples for guidance.
-  
- 
-- **Give the LLM a role:** Make the model assume a role. For example, instruct the model to `act like a tutor` or `you are an expert programmer.`
-  
-  
-- **Iterate and refine prompts:** Often, you won't get your desired result straight away. Improve your prompting strategy iteratively, and then once you are happy, choose your final prompt and use it in a new chat session.
-
 
 Combining these techniques, a template prompt might look like this:
 
@@ -94,11 +75,7 @@ Combining these techniques, a template prompt might look like this:
 
 Remember to structure your prompt in a way that is clear and easy to understand. You can use markdown to format your prompt, and you instruct the mode to format its response using markdown.
 
-
-## Examples
-
-### Adopt a persona
-
+### Example
 
 :::{.callout-note}
 ## {{< bi person >}} Prompt:
@@ -106,7 +83,7 @@ You are an expert on the topic of university education and didactics. Explain th
 :::
 
 
-Now let's try a different persona:
+Different persona:
 
 
 :::{.callout-note}
@@ -114,56 +91,7 @@ Now let's try a different persona:
 You are 13 year old high school student. Explain the concept of "flipped classroom" to your friends. Use markdown to format your response. Keep you explanation concise and to the point.
 :::
 
-
-
-
-
-### Reference texts
-
-:::{.callout-note}
-## {{< bi person >}} Prompt:
-You will be provided with 
-
-- context: documents delimited by **triple quotes**
-- a question 
-
-Your task is to provide a simplified answer to the question using only the provided document and to cite the passage(s) of the document used to answer the question. If the document does not contain the information needed to answer this question then simply write: "Insufficient information." If an answer to the question is provided, it must be annotated with a citation. Use the following format for to cite relevant passages ({"citation": …}). Cite only the relevant sentence(s) of the document, not the entire document.
-
-**Document 1**: '''The flipped classroom intentionally shifts instruction to a learner-centered model, in which students are often initially introduced to new topics outside of school, freeing up classroom time for the exploration of topics in greater depth, creating meaningful learning opportunities.'''
-
-**Document 2**:'''With a flipped classroom, 'content delivery' may take a variety of forms, often featuring video lessons prepared by the teacher or third parties, although online collaborative discussions, digital research, and text readings may alternatively be used. The ideal length for a video lesson is widely cited as eight to twelve minutes.'''
-
-
-**Question**: What is a good length for a video?
-:::
-
-
-
-
-Try asking a question that cannot be answered with the provided documents:
-
-:::{.callout-note}
-## {{< bi person >}} Prompt:
-You will be provided with 
-
-- context: documents delimited by **triple quotes**
-- a question 
-
-Your task is to provide a simplified answer to the question using only the provided document and to cite the passage(s) of the document used to answer the question. If the document does not contain the information needed to answer this question then simply write: "Insufficient information." If an answer to the question is provided, it must be annotated with a citation. Use the following format for to cite relevant passages ("SOURCE": …). Cite only the relevant sentence(s) of the document, not the entire document.
-
-**Document 1**:'''The flipped classroom intentionally shifts instruction to a learner-centered model, in which students are often initially introduced to new topics outside of school, freeing up classroom time for the exploration of topics in greater depth, creating meaningful learning opportunities.'''
-
-**Document 2**:'''With a flipped classroom, 'content delivery' may take a variety of forms, often featuring video lessons prepared by the teacher or third parties, although online collaborative discussions, digital research, and text readings may alternatively be used. The ideal length for a video lesson is widely cited as eight to twelve minutes.'''
-
-
-**Question**: Can you recommend a good book on the topic of flipped classrooms?
-:::
-
-
-
-### Structured output
-
-You can also use prompts to instruct the model to produce structured output. For example, you can ask the model to give you a table.
+Ask the model to output a table:
 
 :::{.callout-note}
 ## {{< bi person >}} Prompt:
@@ -171,13 +99,127 @@ You are a high school teacher. Give me a table containing Greek letters in one c
 :::
 
 
+## Structured prompting techniques
+
+### In-Context Learning: Provide examples within the prompt
+
+#### Explanation
+In-Context Learning involves providing the language model with examples or context within the prompt itself. This technique helps guide the model's responses by demonstrating the desired output format or type of information.
+
+#### Techniques
+
+- **Few-Shot Prompting**: Provide a few examples of the desired output before asking for a new response.
+
+- **Zero-Shot Prompting**: Ask the model to perform a task without any examples, relying on its pre-trained knowledge.
+
+  
+#### Example
+
+:::{.callout-note}
+## {{< bi person >}} Few-Shot Prompting:
+Summarize the main findings of these research paper abstracts:
+
+1. Abstract: [Insert first abstract]
+   Summary: The study found that increased physical activity is associated with improved cognitive function in older adults.
+
+2. Abstract: [Insert second abstract]
+   Summary: The research demonstrated a positive correlation between employee satisfaction and productivity in remote work environments.
+
+Now summarize this new abstract:
+[Insert new abstract to be summarized]
+
+:::
 
 
-## Exercises
+:::{.callout-important}
+## Hands-on Exercise
+1. Choose a topic you're interested in.
+2. Create zero-shot and few-shot prompts to extract the research question, methodology, and main findings from the abstracts of three research papers.
+:::
 
 
 
-## Further Resources
+
+
+
+
+
+
+###  Thought Generation: Instruct the model to think step-by-step
+
+
+
+
+
+
+#### Explanation
+Thought generation techniques encourage the model to show its reasoning process, making the output more transparent and often more accurate.
+
+#### Techniques
+Chain-of-Thought (CoT) Prompting: Ask the model to break down its thinking into steps.
+
+- **Zero-Shot CoT**: Request step-by-step reasoning without providing examples.
+- **Few-Shot CoT**: Provide examples of step-by-step reasoning before asking for a new response.
+
+#### Example Prompt (Chain-of-Thought):
+
+:::{.callout-note}
+## {{< bi person >}} Prompt:
+Analyze the methodology of the following research study. Think through this step-by-step:
+1. Identify the research design.
+2. Evaluate the appropriateness of the chosen methods.
+3. Assess potential limitations or biases.
+4. Consider alternative approaches that could have been used.
+
+[Insert methodology section of a research paper]
+:::
+
+
+
+### Decomposition Techniques: Break down tasks into subtasks
+
+
+#### Explanation
+Decomposition techniques involve breaking down complex tasks into smaller, more manageable subtasks. This approach can lead to more accurate and comprehensive responses.
+
+#### Techniques
+
+- Least-to-Most Prompting: Start with the simplest subtask and gradually increase complexity. More info here: {{< bi link >}} [Least-to-Most Prompting](https://learnprompting.org/docs/intermediate/least_to_most)
+- Plan-and-Solve Prompting: Separate the task into a planning phase and an execution phase.
+
+#### Example Prompt (Plan-and-Solve):
+
+
+:::{.callout-note}
+## {{< bi person >}} Prompt:
+
+We need to conduct a systematic literature review on [specific topic]. Let's approach this in two phases:
+
+Planning Phase:
+1. Outline the main steps needed for this systematic review.
+2. For each step, briefly describe what needs to be considered.
+
+Solving Phase:
+Now, let's address each step in detail, providing specific strategies and methodologies.
+:::
+
+
+
+# Exercise: Essay writing
+
+The goal of this exercise is to develop prompting skills. Focusing on structuring and guiding the model to generate coherent and informative responses. Use as many of the techniques you have learned so far as you can.
+
+:::{.callout-important}
+1. Use ChatGPT to write an (short) essay on the pros and cons of the introduction of a universal basic income (UBI). 
+2. Exchange your essay with your neighbour and provide feedback (using ChatGPT) on the clarity and coherence of the essay.
+:::
+
+
+
+
+
+
+# Further Resources
 
 (@) **Explore these prompt guides**. Use both/either ChatGPT and Copilot to try out new ideas.
 

@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/activity-global-management.html</loc>
-    <lastmod>2024-06-27T01:11:26.337Z</lastmod>
-  </url>
-  <url>
     <loc>https://virtuelleakademie.github.io/promptly-literate/slides/zz-00-introduction.html</loc>
     <lastmod>2023-10-25T23:44:19.002Z</lastmod>
   </url>
@@ -65,6 +61,46 @@
     <lastmod>2024-05-16T14:45:23.704Z</lastmod>
   </url>
   <url>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/activity-cas-hochschuldidaktik.html</loc>
+    <lastmod>2024-04-22T02:22:33.441Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/activity-4-discussion.html</loc>
+    <lastmod>2023-10-27T08:50:06.553Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/activity-2-prompting-learning-teaching.html</loc>
+    <lastmod>2023-10-27T08:41:20.564Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/activity-0-explore-llms.html</loc>
+    <lastmod>2023-10-27T07:59:01.908Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/about.html</loc>
+    <lastmod>2024-05-16T14:46:11.526Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/activities-20240223.html</loc>
+    <lastmod>2024-04-22T02:32:13.081Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/activity-1-prompting-techniques.html</loc>
+    <lastmod>2024-03-05T02:02:42.849Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/activity-3-reflection.html</loc>
+    <lastmod>2023-10-25T23:44:18.997Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/activity-4-miro.html</loc>
+    <lastmod>2023-10-27T08:39:53.434Z</lastmod>
+  </url>
+  <url>
+    <loc>https://virtuelleakademie.github.io/promptly-literate/pages/activity-global-management.html</loc>
+    <lastmod>2024-06-27T02:03:33.667Z</lastmod>
+  </url>
+  <url>
     <loc>https://virtuelleakademie.github.io/promptly-literate/pages/agenda.html</loc>
     <lastmod>2024-04-30T09:35:51.092Z</lastmod>
   </url>
@@ -114,6 +150,6 @@
   </url>
   <url>
     <loc>https://virtuelleakademie.github.io/promptly-literate/slides/workshop-global-management.html</loc>
-    <lastmod>2024-06-27T00:36:53.612Z</lastmod>
+    <lastmod>2024-06-27T02:03:44.870Z</lastmod>
   </url>
 </urlset>

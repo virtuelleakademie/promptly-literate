@@ -275,22 +275,19 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#prompting" id="toc-prompting" class="nav-link active" data-scroll-target="#prompting">Prompting</a>
   <ul class="collapse">
-  <li><a href="#practice-basic-techniques" id="toc-practice-basic-techniques" class="nav-link" data-scroll-target="#practice-basic-techniques">Practice basic techniques</a></li>
-  </ul></li>
-  <li><a href="#assignments" id="toc-assignments" class="nav-link" data-scroll-target="#assignments">Assignments</a>
+  <li><a href="#prompting-guidelines" id="toc-prompting-guidelines" class="nav-link" data-scroll-target="#prompting-guidelines">Prompting Guidelines</a>
   <ul class="collapse">
-  <li><a href="#summarize-research-paper" id="toc-summarize-research-paper" class="nav-link" data-scroll-target="#summarize-research-paper">Summarize research paper</a></li>
-  <li><a href="#write-essay" id="toc-write-essay" class="nav-link" data-scroll-target="#write-essay">Write essay</a></li>
-  <li><a href="#prompting-guidelines" id="toc-prompting-guidelines" class="nav-link" data-scroll-target="#prompting-guidelines">Prompting Guidelines</a></li>
-  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a>
-  <ul class="collapse">
-  <li><a href="#adopt-a-persona" id="toc-adopt-a-persona" class="nav-link" data-scroll-target="#adopt-a-persona">Adopt a persona</a></li>
-  <li><a href="#reference-texts" id="toc-reference-texts" class="nav-link" data-scroll-target="#reference-texts">Reference texts</a></li>
-  <li><a href="#structured-output" id="toc-structured-output" class="nav-link" data-scroll-target="#structured-output">Structured output</a></li>
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
   </ul></li>
-  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a></li>
+  <li><a href="#structured-prompting-techniques" id="toc-structured-prompting-techniques" class="nav-link" data-scroll-target="#structured-prompting-techniques">Structured prompting techniques</a>
+  <ul class="collapse">
+  <li><a href="#in-context-learning-provide-examples-within-the-prompt" id="toc-in-context-learning-provide-examples-within-the-prompt" class="nav-link" data-scroll-target="#in-context-learning-provide-examples-within-the-prompt">In-Context Learning: Provide examples within the prompt</a></li>
+  <li><a href="#thought-generation-instruct-the-model-to-think-step-by-step" id="toc-thought-generation-instruct-the-model-to-think-step-by-step" class="nav-link" data-scroll-target="#thought-generation-instruct-the-model-to-think-step-by-step">Thought Generation: Instruct the model to think step-by-step</a></li>
+  <li><a href="#decomposition-techniques-break-down-tasks-into-subtasks" id="toc-decomposition-techniques-break-down-tasks-into-subtasks" class="nav-link" data-scroll-target="#decomposition-techniques-break-down-tasks-into-subtasks">Decomposition Techniques: Break down tasks into subtasks</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#exercise-essay-writing" id="toc-exercise-essay-writing" class="nav-link" data-scroll-target="#exercise-essay-writing">Exercise: Essay writing</a></li>
   <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further Resources</a></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
@@ -342,28 +339,27 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Designing effective prompts to instruct LLMS to generate a desired output is referred to as <em>prompt engineering</em>. This activity will guide you through the process of creating prompts for LLMs.</p>
+<p>Designing effective prompts to instruct LLMs to generate a desired output is referred to as <em>prompt engineering</em>. This activity will guide you through the process of creating prompts for LLMs.</p>
+<div class="callout callout-style-simple callout-tip no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<ul>
+<li><p>In general, it is advisable to improve your prompting strategy by <strong>iterating</strong>.</p></li>
+<li><p>Start with a simple prompt, see what the model generates, and then refine. Repeat this process until you are satisfied with the results.</p></li>
+<li><p>Once you have a good prompt, you can use it in a new chat session - in this way, the “failed” attempts will not be part of the context.</p></li>
+</ul>
+</div>
+</div>
+</div>
 <section id="prompting" class="level1">
 <h1>Prompting</h1>
-<section id="practice-basic-techniques" class="level2">
-<h2 class="anchored" data-anchor-id="practice-basic-techniques">Practice basic techniques</h2>
-</section>
-</section>
-<section id="assignments" class="level1">
-<h1>Assignments</h1>
-<section id="summarize-research-paper" class="level2">
-<h2 class="anchored" data-anchor-id="summarize-research-paper">Summarize research paper</h2>
-<p>Search for literature and summarize on {topic}</p>
-</section>
-<section id="write-essay" class="level2">
-<h2 class="anchored" data-anchor-id="write-essay">Write essay</h2>
-<p>Essay on the pros and cons of the introduction of a universal basic income (UBI)</p>
-</section>
 <section id="prompting-guidelines" class="level2">
 <h2 class="anchored" data-anchor-id="prompting-guidelines">Prompting Guidelines</h2>
-<p>In this activity, you can explore various prompting guides for LLMs. They more or less all converge on the same set of techniques. You can then use these techniques to write your own prompts</p>
-<p>OpenAI give a set of <a href="https://platform.openai.com/docs/guides/prompt-engineering/six-strategies-for-getting-better-results"><i class="bi-link " style="" role="img" aria-hidden="true"></i> strategies</a> for using their models.</p>
-<p>These include:</p>
+<p>OpenAI give a set of <a href="https://platform.openai.com/docs/guides/prompt-engineering/six-strategies-for-getting-better-results"><i class="bi-link " style="" role="img" aria-hidden="true"></i> strategies</a> for using their models. If you need examples, this might be a good place to start.</p>
+<p>The strategies include:</p>
 <ul>
 <li>writing clear instructions</li>
 <li>providing reference texts</li>
@@ -376,8 +372,6 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Numbered Steps:</strong>: For sequential tasks, use numbered steps. This helps the model understand the sequence of actions.</p></li>
 <li><p><strong>Use delimiters:</strong> To separate various parts of the prompt (e.g.&nbsp;<code>"</code>, `,, <code>'</code>, <code>|</code>, <code>#</code>, …).</p></li>
 <li><p><strong>Few-shot prompting:</strong> Provide a few examples for guidance.</p></li>
-<li><p><strong>Give the LLM a role:</strong> Make the model assume a role. For example, instruct the model to <code>act like a tutor</code> or <code>you are an expert programmer.</code></p></li>
-<li><p><strong>Iterate and refine prompts:</strong> Often, you won’t get your desired result straight away. Improve your prompting strategy iteratively, and then once you are happy, choose your final prompt and use it in a new chat session.</p></li>
 </ul>
 <p>Combining these techniques, a template prompt might look like this:</p>
 <div class="callout callout-style-simple callout-tip no-icon callout-titled">
@@ -401,11 +395,8 @@ Template
 </div>
 </div>
 <p>Remember to structure your prompt in a way that is clear and easy to understand. You can use markdown to format your prompt, and you instruct the mode to format its response using markdown.</p>
-</section>
-<section id="examples" class="level2">
-<h2 class="anchored" data-anchor-id="examples">Examples</h2>
-<section id="adopt-a-persona" class="level3">
-<h3 class="anchored" data-anchor-id="adopt-a-persona">Adopt a persona</h3>
+<section id="example" class="level3">
+<h3 class="anchored" data-anchor-id="example">Example</h3>
 <div class="callout callout-style-simple callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -419,7 +410,7 @@ Template
 <p>You are an expert on the topic of university education and didactics. Explain the concept of “flipped classroom” to a group of teachers. Use markdown to format your response. Keep you explanation concise and to the point.</p>
 </div>
 </div>
-<p>Now let’s try a different persona:</p>
+<p>Different persona:</p>
 <div class="callout callout-style-simple callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -433,56 +424,7 @@ Template
 <p>You are 13 year old high school student. Explain the concept of “flipped classroom” to your friends. Use markdown to format your response. Keep you explanation concise and to the point.</p>
 </div>
 </div>
-</section>
-<section id="reference-texts" class="level3">
-<h3 class="anchored" data-anchor-id="reference-texts">Reference texts</h3>
-<div class="callout callout-style-simple callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<i class="bi-person " style="" role="img" aria-hidden="true"></i> Prompt:
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>You will be provided with</p>
-<ul>
-<li>context: documents delimited by <strong>triple quotes</strong></li>
-<li>a question</li>
-</ul>
-<p>Your task is to provide a simplified answer to the question using only the provided document and to cite the passage(s) of the document used to answer the question. If the document does not contain the information needed to answer this question then simply write: “Insufficient information.” If an answer to the question is provided, it must be annotated with a citation. Use the following format for to cite relevant passages ({“citation”: …}). Cite only the relevant sentence(s) of the document, not the entire document.</p>
-<p><strong>Document 1</strong>: ’‘’The flipped classroom intentionally shifts instruction to a learner-centered model, in which students are often initially introduced to new topics outside of school, freeing up classroom time for the exploration of topics in greater depth, creating meaningful learning opportunities.’’’</p>
-<p><strong>Document 2</strong>:’‘’With a flipped classroom, ’content delivery’ may take a variety of forms, often featuring video lessons prepared by the teacher or third parties, although online collaborative discussions, digital research, and text readings may alternatively be used. The ideal length for a video lesson is widely cited as eight to twelve minutes.’’’</p>
-<p><strong>Question</strong>: What is a good length for a video?</p>
-</div>
-</div>
-<p>Try asking a question that cannot be answered with the provided documents:</p>
-<div class="callout callout-style-simple callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<i class="bi-person " style="" role="img" aria-hidden="true"></i> Prompt:
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>You will be provided with</p>
-<ul>
-<li>context: documents delimited by <strong>triple quotes</strong></li>
-<li>a question</li>
-</ul>
-<p>Your task is to provide a simplified answer to the question using only the provided document and to cite the passage(s) of the document used to answer the question. If the document does not contain the information needed to answer this question then simply write: “Insufficient information.” If an answer to the question is provided, it must be annotated with a citation. Use the following format for to cite relevant passages (“SOURCE”: …). Cite only the relevant sentence(s) of the document, not the entire document.</p>
-<p><strong>Document 1</strong>:’‘’The flipped classroom intentionally shifts instruction to a learner-centered model, in which students are often initially introduced to new topics outside of school, freeing up classroom time for the exploration of topics in greater depth, creating meaningful learning opportunities.’’’</p>
-<p><strong>Document 2</strong>:’‘’With a flipped classroom, ’content delivery’ may take a variety of forms, often featuring video lessons prepared by the teacher or third parties, although online collaborative discussions, digital research, and text readings may alternatively be used. The ideal length for a video lesson is widely cited as eight to twelve minutes.’’’</p>
-<p><strong>Question</strong>: Can you recommend a good book on the topic of flipped classrooms?</p>
-</div>
-</div>
-</section>
-<section id="structured-output" class="level3">
-<h3 class="anchored" data-anchor-id="structured-output">Structured output</h3>
-<p>You can also use prompts to instruct the model to produce structured output. For example, you can ask the model to give you a table.</p>
+<p>Ask the model to output a table:</p>
 <div class="callout callout-style-simple callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -498,16 +440,149 @@ Template
 </div>
 </section>
 </section>
-<section id="exercises" class="level2">
-<h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
+<section id="structured-prompting-techniques" class="level2">
+<h2 class="anchored" data-anchor-id="structured-prompting-techniques">Structured prompting techniques</h2>
+<section id="in-context-learning-provide-examples-within-the-prompt" class="level3">
+<h3 class="anchored" data-anchor-id="in-context-learning-provide-examples-within-the-prompt">In-Context Learning: Provide examples within the prompt</h3>
+<section id="explanation" class="level4">
+<h4 class="anchored" data-anchor-id="explanation">Explanation</h4>
+<p>In-Context Learning involves providing the language model with examples or context within the prompt itself. This technique helps guide the model’s responses by demonstrating the desired output format or type of information.</p>
 </section>
-<section id="further-resources" class="level2">
-<h2 class="anchored" data-anchor-id="further-resources">Further Resources</h2>
+<section id="techniques" class="level4">
+<h4 class="anchored" data-anchor-id="techniques">Techniques</h4>
+<ul>
+<li><p><strong>Few-Shot Prompting</strong>: Provide a few examples of the desired output before asking for a new response.</p></li>
+<li><p><strong>Zero-Shot Prompting</strong>: Ask the model to perform a task without any examples, relying on its pre-trained knowledge.</p></li>
+</ul>
+</section>
+<section id="example-1" class="level4">
+<h4 class="anchored" data-anchor-id="example-1">Example</h4>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<i class="bi-person " style="" role="img" aria-hidden="true"></i> Few-Shot Prompting:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Summarize the main findings of these research paper abstracts:</p>
+<ol type="1">
+<li><p>Abstract: [Insert first abstract] Summary: The study found that increased physical activity is associated with improved cognitive function in older adults.</p></li>
+<li><p>Abstract: [Insert second abstract] Summary: The research demonstrated a positive correlation between employee satisfaction and productivity in remote work environments.</p></li>
+</ol>
+<p>Now summarize this new abstract: [Insert new abstract to be summarized]</p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-important no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hands-on Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Choose a topic you’re interested in.</li>
+<li>Create zero-shot and few-shot prompts to extract the research question, methodology, and main findings from the abstracts of three research papers.</li>
+</ol>
+</div>
+</div>
+</section>
+</section>
+<section id="thought-generation-instruct-the-model-to-think-step-by-step" class="level3">
+<h3 class="anchored" data-anchor-id="thought-generation-instruct-the-model-to-think-step-by-step">Thought Generation: Instruct the model to think step-by-step</h3>
+<section id="explanation-1" class="level4">
+<h4 class="anchored" data-anchor-id="explanation-1">Explanation</h4>
+<p>Thought generation techniques encourage the model to show its reasoning process, making the output more transparent and often more accurate.</p>
+</section>
+<section id="techniques-1" class="level4">
+<h4 class="anchored" data-anchor-id="techniques-1">Techniques</h4>
+<p>Chain-of-Thought (CoT) Prompting: Ask the model to break down its thinking into steps.</p>
+<ul>
+<li><strong>Zero-Shot CoT</strong>: Request step-by-step reasoning without providing examples.</li>
+<li><strong>Few-Shot CoT</strong>: Provide examples of step-by-step reasoning before asking for a new response.</li>
+</ul>
+</section>
+<section id="example-prompt-chain-of-thought" class="level4">
+<h4 class="anchored" data-anchor-id="example-prompt-chain-of-thought">Example Prompt (Chain-of-Thought):</h4>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<i class="bi-person " style="" role="img" aria-hidden="true"></i> Prompt:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Analyze the methodology of the following research study. Think through this step-by-step: 1. Identify the research design. 2. Evaluate the appropriateness of the chosen methods. 3. Assess potential limitations or biases. 4. Consider alternative approaches that could have been used.</p>
+<p>[Insert methodology section of a research paper]</p>
+</div>
+</div>
+</section>
+</section>
+<section id="decomposition-techniques-break-down-tasks-into-subtasks" class="level3">
+<h3 class="anchored" data-anchor-id="decomposition-techniques-break-down-tasks-into-subtasks">Decomposition Techniques: Break down tasks into subtasks</h3>
+<section id="explanation-2" class="level4">
+<h4 class="anchored" data-anchor-id="explanation-2">Explanation</h4>
+<p>Decomposition techniques involve breaking down complex tasks into smaller, more manageable subtasks. This approach can lead to more accurate and comprehensive responses.</p>
+</section>
+<section id="techniques-2" class="level4">
+<h4 class="anchored" data-anchor-id="techniques-2">Techniques</h4>
+<ul>
+<li>Least-to-Most Prompting: Start with the simplest subtask and gradually increase complexity. More info here: <i class="bi-link " style="" role="img" aria-hidden="true"></i> <a href="https://learnprompting.org/docs/intermediate/least_to_most">Least-to-Most Prompting</a></li>
+<li>Plan-and-Solve Prompting: Separate the task into a planning phase and an execution phase.</li>
+</ul>
+</section>
+<section id="example-prompt-plan-and-solve" class="level4">
+<h4 class="anchored" data-anchor-id="example-prompt-plan-and-solve">Example Prompt (Plan-and-Solve):</h4>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<i class="bi-person " style="" role="img" aria-hidden="true"></i> Prompt:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We need to conduct a systematic literature review on [specific topic]. Let’s approach this in two phases:</p>
+<p>Planning Phase: 1. Outline the main steps needed for this systematic review. 2. For each step, briefly describe what needs to be considered.</p>
+<p>Solving Phase: Now, let’s address each step in detail, providing specific strategies and methodologies.</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+</section>
+<section id="exercise-essay-writing" class="level1">
+<h1>Exercise: Essay writing</h1>
+<p>The goal of this exercise is to develop prompting skills. Focusing on structuring and guiding the model to generate coherent and informative responses. Use as many of the techniques you have learned so far as you can.</p>
+<div class="callout callout-style-simple callout-important no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<ol type="1">
+<li>Use ChatGPT to write an (short) essay on the pros and cons of the introduction of a universal basic income (UBI).</li>
+<li>Exchange your essay with your neighbour and provide feedback (using ChatGPT) on the clarity and coherence of the essay.</li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section id="further-resources" class="level1">
+<h1>Further Resources</h1>
 <ol class="example" type="1">
 <li><strong>Explore these prompt guides</strong>. Use both/either ChatGPT and Copilot to try out new ideas.</li>
 </ol>
 <div class="callout callout-style-simple callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -516,7 +591,7 @@ Learn prompting: An comprehensive (and free) guide aimed at non-technical users.
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><i class="bi-link " style="" role="img" aria-hidden="true"></i> <a href="https://learnprompting.org/docs/intro">Learn prompting</a></p>
 <iframe src="https://learnprompting.org/docs/intro" width="100%" height="500px"></iframe>
@@ -524,7 +599,7 @@ Learn prompting: An comprehensive (and free) guide aimed at non-technical users.
 </div>
 </div>
 <div class="callout callout-style-simple callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -533,7 +608,7 @@ Prompting guide: A more technical guide to prompting
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><i class="bi-link " style="" role="img" aria-hidden="true"></i> <a href="https://www.promptingguide.ai/">Prompting guide</a>: <strong>DAIR.AI</strong> (Democratizing Artificial Intelligence Research, Education, and Technologies). The guide is licensed under an MIT license.</p>
 <iframe src="https://www.promptingguide.ai/" width="100%" height="500px"></iframe>
@@ -549,7 +624,6 @@ Prompting guide: A more technical guide to prompting
 ::: -->
 
 
-</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{ellis2024,

@@ -732,7 +732,7 @@ Try this example in [ChatGPT](https://chat.openai.com/share/c2230c3c-04cc-4aa5-b
 {{< bi pencil-fill >}} Open this [activity](../pages/activity-global-management.qmd). 
 
 1) Practice writing prompts for different tasks ({{< bi stopwatch >}} 20 minutes).
-2) Summarize a research article and write an essay using an LLM 
+2) Write an essay using an LLM, and then critique someone else's essay
    ({{< bi stopwatch >}} 30 minutes).
 
 
