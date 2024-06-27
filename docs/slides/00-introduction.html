@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.555">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Andrew Ellis">
+
+<title>Promptly Literate // - What is ChatGPT?</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="..//assets/robot.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "theme": "clean"
+}
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
+
+
+<meta property="og:title" content="Promptly Literate // - What is ChatGPT?">
+<meta property="og:description" content="">
+<meta property="og:site_name" content="Promptly Literate //">
+<meta name="twitter:title" content="Promptly Literate // - What is ChatGPT?">
+<meta name="twitter:description" content="">
+<meta name="twitter:creator" content="@awellis">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Promptly Literate //</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../pages/agenda.html"> <i class="bi bi-calendar-event" role="img">
+</i> 
+<span class="menu-text">Agenda</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-slides" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-file-slides" role="img">
+</i> 
+ <span class="menu-text">Slides</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-slides">    
+        <li>
+    <a class="dropdown-item" href="../slides/workshop-global-management.html">
+ <span class="dropdown-text">Workshop: Global Management</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../slides/prompt-labor-basics.html">
+ <span class="dropdown-text">Prompt Labor: Basics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../slides/prompt-labor-vertiefung.html">
+ <span class="dropdown-text">Prompt Labor: Vertiefung</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../slides/cas-hochschuldidaktik.html">
+ <span class="dropdown-text">CAS Hochschuldidaktik</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../slides/busy-lecturers-guide.html">
+ <span class="dropdown-text">The busy lecturer’s guide to LLMs</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-activities" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-brush" role="img">
+</i> 
+ <span class="menu-text">Activities</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-activities">    
+        <li>
+    <a class="dropdown-item" href="../pages/activity-global-management.html">
+ <span class="dropdown-text">Activity: Workshop Global Management</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pages/activities-20240223.html">
+ <span class="dropdown-text">Activity: Confabulations and prompting</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pages/activity-cas-hochschuldidaktik.html">
+ <span class="dropdown-text">Activity: CAS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pages/activity-prompt-labor-vertiefung.html">
+ <span class="dropdown-text">Activity: Prompt Labor: Vertiefung</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pages/activity-0-explore-llms.html">
+ <span class="dropdown-text">Exploring LLMs</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pages/activity-1-prompting-techniques.html">
+ <span class="dropdown-text">Prompting techniques</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pages/activity-2-prompting-learning-teaching.html">
+ <span class="dropdown-text">Prompting for educational settings</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tutorials" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-book" role="img">
+</i> 
+ <span class="menu-text">Tutorials</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tutorials">    
+        <li>
+    <a class="dropdown-item" href="../pages/text-representation.html">
+ <span class="dropdown-text">Text representation: embeddings</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pages/prompting.html">
+ <span class="dropdown-text">Using the API: Prompting Programmatically</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-archive" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-archive" role="img">
+</i> 
+ <span class="menu-text">Archive</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-archive">    
+        <li>
+    <a class="dropdown-item" href="../slides/00-introduction.html">
+ <span class="dropdown-text">Part 1: What is ChatGPT?</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../slides/01-text-representation-generation.html">
+ <span class="dropdown-text">Further info: Text representation, training and text generation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../slides/02-prompting-techniques.html">
+ <span class="dropdown-text">Part 2: Prompting techniques</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../slides/03-prompting-learning-teaching.html">
+ <span class="dropdown-text">Part 3: Prompting for learning and teaching</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-wrench-adjustable" role="img">
+</i> 
+ <span class="menu-text">Resources</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
+        <li>
+    <a class="dropdown-item" href="../pages/resources.html">
+ <span class="dropdown-text">Guides</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../pages/tools.html">
+ <span class="dropdown-text">Tools</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+    <a href="https://virtuelleakademie.ch/knowledge-base/" title="Knowledge Base" class="quarto-navigation-tool px-1" aria-label="Knowledge Base"><i class="bi bi-lightbulb-fill"></i></a>
+    <div class="dropdown">
+      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label=""><i class="bi bi-github"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://github.com/virtuelleakademie/promptly-literate/">
+            Source Code
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://github.com/virtuelleakademie/promptly-literate/issues">
+            Report a Bug
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#take-home-messages" id="toc-take-home-messages" class="nav-link active" data-scroll-target="#take-home-messages">🏠 Take-home messages</a></li>
+  <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link" data-scroll-target="#learning-outcomes">🎯 Learning outcomes</a></li>
+  <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule">⏱️ Schedule</a></li>
+  <li><a href="#contents" id="toc-contents" class="nav-link" data-scroll-target="#contents">Contents</a></li>
+  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">20 questions</a></li>
+  <li><a href="#what-is-chatgpt" id="toc-what-is-chatgpt" class="nav-link" data-scroll-target="#what-is-chatgpt">What is ChatGPT?</a></li>
+  <li><a href="#base-model-text-prediction" id="toc-base-model-text-prediction" class="nav-link" data-scroll-target="#base-model-text-prediction">Base model: text prediction</a></li>
+  <li><a href="#base-model" id="toc-base-model" class="nav-link" data-scroll-target="#base-model">Base model</a></li>
+  <li><a href="#base-model-emergent-properties" id="toc-base-model-emergent-properties" class="nav-link" data-scroll-target="#base-model-emergent-properties">Base model: emergent properties</a></li>
+  <li><a href="#assistant-model-alignment" id="toc-assistant-model-alignment" class="nav-link" data-scroll-target="#assistant-model-alignment">Assistant model: alignment</a></li>
+  <li><a href="#chatbot" id="toc-chatbot" class="nav-link" data-scroll-target="#chatbot">Chatbot</a></li>
+  <li><a href="#knowledge-base" id="toc-knowledge-base" class="nav-link" data-scroll-target="#knowledge-base">Knowledge base</a></li>
+  <li><a href="#knowledge-base-1" id="toc-knowledge-base-1" class="nav-link" data-scroll-target="#knowledge-base-1">Knowledge base</a></li>
+  <li><a href="#knowledge-base-2" id="toc-knowledge-base-2" class="nav-link" data-scroll-target="#knowledge-base-2">Knowledge base</a></li>
+  <li><a href="#an-llm-is-a-role-play-simulator" id="toc-an-llm-is-a-role-play-simulator" class="nav-link" data-scroll-target="#an-llm-is-a-role-play-simulator">An LLM is a role-play simulator</a></li>
+  <li><a href="#an-llm-is-a-role-play-simulator-1" id="toc-an-llm-is-a-role-play-simulator-1" class="nav-link" data-scroll-target="#an-llm-is-a-role-play-simulator-1">An LLM is a role-play simulator</a></li>
+  <li><a href="#an-llm-is-a-role-play-simulator-2" id="toc-an-llm-is-a-role-play-simulator-2" class="nav-link" data-scroll-target="#an-llm-is-a-role-play-simulator-2">An LLM is a role-play simulator</a></li>
+  <li><a href="#an-llm-is-a-role-play-simulator-3" id="toc-an-llm-is-a-role-play-simulator-3" class="nav-link" data-scroll-target="#an-llm-is-a-role-play-simulator-3">An LLM is a role-play simulator</a></li>
+  <li><a href="#what-are-llms-good-at" id="toc-what-are-llms-good-at" class="nav-link" data-scroll-target="#what-are-llms-good-at">What are LLMs good at?</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="00-introduction.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">What is ChatGPT?</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Andrew Ellis </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">22 February, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<!-- ## 📖 Themen {.scrollable}
+
+| Kategorie | Themen |
+|---|---|
+| Unterricht & Bildung | <small>- MC Fragen Entwicklung<br>- Case Study entwickeln<br>- Unterrichtsvorbereitung<br>- KI-Management in den Unterricht integrieren<br>- Grundlagen kennen lernen<br>- Sinnvoller Einsatz für Lehre reflektieren<br>- Generieren von MC-Fragen<br>- Brainstorming/Ideengenerierung (z.T. mit Studierenden)<br>- Akademisches und berufliches Schreiben unterrichten<br>- Funktionsweise von KI-Schreibtools<br>- Einsatzszenarien für KI-Schreibtools<br>- Reflektierter Umgang mit KI-Schreibtools<br>- Unterstützung für Schüler*innen mit sprachlichen Schwierigkeiten<br>- Verständnis von Schreibtools<br>- Sinnvoller Einsatz von Schreibtools durch Studierende und Mitarbeitende</small> |
+| Sprache & Schreiben | <small>- Formulierungshilfe bei wissenschaftlichen Schreibarbeiten<br>- Übersetzungen oder Überprüfungen von Texten in Deutsch<br>- Kreative Schreibübung<br>- Übersetzungen<br>- Ideensammlung<br>- Textkorrekturen/-anpassungen<br>- Perspektivenwechsel<br>- Szenarien erfinden lassen<br>- Mails verfassen<br>- Konzepte überprüfen</small> |
+| Technologie & Innovation | <small>- Diverses<br>- Zeitersparnis bei Vorbereitungen mithilfe neuer Technologien<br>- Prüfungen mit KI<br>- Open Book Prüfungen<br>- Grenzen der KI ausloten<br>- Interesse an Entwicklungen der Sprachmodelle</small> |
+| Freizeit & Lifestyle | <small>- Fragen für Freizeitaktivitäten, z.B. bei Regenwetter mit Kleinkindern<br>- Ideensammlung für Ausflüge in der Freizeit<br>- Programmplanung der Ferien<br>- Vorschlag für einen Mailtest</small> |
+| Feedback & Repräsentation | <small>- Rückmeldung an das Institut an der BFH</small> |
+ -->
+<!-- 
+## 📖 Themen
+![](../assets/images/topics.png){width=100%}
+
+
+:::aside
+👉 [ChatGPT Dialog öffnen](https://chat.openai.com/share/5109a0b4-0510-46a9-974d-31954241820b)
+:::
+
+## 🙋 Fragen {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+1. **Bildungs-KI:**
+   - KI in Lehre?
+   - KI im Schreibdidaktik-Bereich?
+   - Übungen mit ChatGPT?
+   - ChatGPT zum Lernen?
+
+2. **Ethik & KI:**
+   - Ethischer Umgang?
+   - Datenüberwachung?
+   - Wahrheitsgehalt von ChatGPT?
+
+3. **KI-Funktionalität:**
+   - KI-Gefahren?
+   - Alles von ChatGPT beantwortbar?
+   - Effektives "prompten"?
+
+:::
+::: {.column width="50%"}
+
+4. **KI-Bedienung:**
+   - KI nutzen?
+   - Informationen eingeben?
+
+5. **KI-Optimierung:**
+   - Sinnvolle Nutzung?
+   - Aufsätze optimieren?
+
+6. **KI-Wahrnehmung:**
+   - Zögerliche Nutzung?
+
+7. **Zukunft & Sprachmodelle:**
+   - Prognosen?
+   - Weiterentwicklung?
+
+8. **Qualitätscheck:**
+   - KI-Ergebnisse prüfen?
+
+
+:::
+:::: -->
+<!-- 👉 [ChatGPT Dialog öffnen](https://chat.openai.com/share/5babaf97-e64b-4ae2-a233-f028047f66f9) -->
+<section id="take-home-messages" class="level2">
+<h2 class="anchored" data-anchor-id="take-home-messages">🏠 Take-home messages</h2>
+<ul>
+<li>Use LLMs yourself! It’s important to gain an intuition for their capabilities and limitations.</li>
+<li>Combine domain knowledge of the “thing” you are working on, an understanding of how LLMs work, and an understanding of how to prompt them.</li>
+<li>Use LLMs with students in a classroom setting. This will help students to develop their own understanding of LLMs and become AI-literate.</li>
+<li>Always (critically 👩‍🔬) check an LLM’s output. They are language models, not knowledge bases. Keep a human in the loop.</li>
+</ul>
+</section>
+<section id="learning-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="learning-outcomes">🎯 Learning outcomes</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+After this workshop, you will be able to:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Explain what large language models and conversational agents, such as ChatGPT, can be used for, and what they shouldn’t be used for.</li>
+<li>Create effective prompts for LLMs.</li>
+<li>Design your own LLM-based educational activities.</li>
+<li>Critically evaluate LLM-based educational activities.</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="schedule" class="level2">
+<h2 class="anchored" data-anchor-id="schedule">⏱️ Schedule</h2>
+<p><img src="../assets/schedule.svg" class="img-fluid" style="width:100.0%"></p>
+</section>
+<section id="contents" class="level2">
+<h2 class="anchored" data-anchor-id="contents">Contents</h2>
+<ul>
+<li>Example: 20 questions</li>
+<li>What is ChatGPT?
+<ul>
+<li>Base model</li>
+<li>Assistant model</li>
+</ul></li>
+<li>What is it not?</li>
+<li>ChatGPT as a role-play simulator</li>
+</ul>
+<!-- ## Key messages
+
+1) 👩‍⚖️ Keep a human in the loop: LLMs should be used to augment human writing, not to replace it.
+
+2) This workshop is mainly about prompting. We can think about prompting as a way of "programming" LLMs, i.e. getting LLMs to do what we want them to do. -->
+</section>
+<section id="questions" class="level2">
+<h2 class="anchored" data-anchor-id="questions">20 questions</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe width="600" height="600" src="https://chat.openai.com/share/a4daa92d-4631-4d7e-bfe6-ef9b3b5eb0a0" title="Once upon a time"></iframe>
+
+</div><div class="column" style="width:50%;">
+<ul>
+<li>🤷‍♂️ What is ChatGPT doing here?</li>
+<li>How does this work?</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="what-is-chatgpt" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-chatgpt">What is ChatGPT?</h2>
+<div class="columns">
+<div class="column" style="width:34%;">
+<p><img src="../assets/images/Language Model.png" class="img-fluid" style="width:100.0%"></p>
+</div><div class="column" style="width:66%;">
+<ul>
+<li>Consists of a <strong>base</strong> model and an <strong>assistant</strong> model.</li>
+<li><strong>Base or foundation</strong> model: probabilistic model of how language is generated.</li>
+<li><strong>Assistant</strong>: able to create human-like dialogue.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="base-model-text-prediction" class="level2">
+<h2 class="anchored" data-anchor-id="base-model-text-prediction">Base model: text prediction</h2>
+<div class="columns">
+<div class="column" style="width:34%;">
+<p><img src="../assets/images/LLM-Bookshelf.png" class="img-fluid" style="width:100.0%"></p>
+</div><div class="column" style="width:66%;">
+<!-- - Is trained to predict text.  -->
+<p><img src="../assets/images/pretraining.png" class="img-fluid" style="width:100.0%"></p>
+<ul>
+<li>Extracts knowledge from text: linguistic, factual, commonsense, etc. <!-- - Does not know how to have a conversation. --></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="base-model" class="level2">
+<h2 class="anchored" data-anchor-id="base-model">Base model</h2>
+<p>Produces text that most likely follows the input (prompt).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><i class="fa-solid fa-person" aria-label="person"></i>: What is the capital of France?</p>
+<p><i class="fa-solid fa-robot" aria-label="robot"></i>: What is the capital of Germany? What is the capital of Italy? …</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><i class="fa-solid fa-person" aria-label="person"></i>: The first person to walk on the Moon was</p>
+<p><i class="fa-solid fa-robot" aria-label="robot"></i>: Neil Armstrong</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Does an LLM know facts?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>What we are really asking: Given what it learned during training, what words are most likely to follow <em>“The first person to walk on the Moon was”</em>? A good reply to this question is <em>“Neil Armstrong”</em>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="base-model-emergent-properties" class="level2">
+<h2 class="anchored" data-anchor-id="base-model-emergent-properties">Base model: emergent properties</h2>
+<p>LLMs are thought to show emergent properties - abilities not explicitly programmed into the model, but emerge as a result of text prediction.</p>
+<ul>
+<li>performing arithmetic, answering questions, summarizing text, translating, etc.</li>
+<li>zero-shot learning: LLMs can perform tasks without being trained on them.</li>
+<li>few-shot learning: LLMs can perform tasks with few examples.</li>
+</ul>
+</section>
+<section id="assistant-model-alignment" class="level2">
+<h2 class="anchored" data-anchor-id="assistant-model-alignment">Assistant model: alignment</h2>
+<div class="columns">
+<div class="column" style="width:34%;">
+<p><img src="../assets/images/Chat.png" class="img-fluid" style="width:100.0%"></p>
+<!-- ![](../assets/images/RLHF.svg){width=100%} -->
+</div><div class="column" style="width:66%;">
+<p><img src="../assets/images/RLHF.svg" class="img-fluid" style="width:100.0%"> <!-- - Is trained to create human-like dialogue.  --> - Trained to have conversations: turn-taking, question answering, not being [rude/sexist/racist], etc.</p>
+</div>
+</div>
+</section>
+<section id="chatbot" class="level2">
+<h2 class="anchored" data-anchor-id="chatbot">Chatbot</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img src="../assets/images/chatbot.svg" class="img-fluid" style="width:100.0%"></p>
+</div><div class="column" style="width:50%;">
+<p><img src="../assets/images/chatbot-2.svg" class="img-fluid" style="width:100.0%"></p>
+<!-- :::{.callout-caution appearance="simple"}
+<!-- ## How it actually works -->
+<p><strong>Prompt:</strong> System message: You are a helpful assistant. User message: Tell me a joke.</p>
+<p><i class="fa-solid fa-robot" aria-label="robot"></i>: Why don’t scientists trust atoms? Because they make up everything!</p>
+<p><strong>Prompt:</strong> System message: You are a helpful assistant. User message: Tell me a joke. Assistant message: Why don’t scientists trust atoms? Because they make up everything! User message: Tell me another one.</p>
+<p><i class="fa-solid fa-robot" aria-label="robot"></i>: Why did the scarecrow win an award? Because he was outstanding in his field! ::: –&gt;</p>
+</div>
+</div>
+</section>
+<section id="knowledge-base" class="level2">
+<h2 class="anchored" data-anchor-id="knowledge-base">Knowledge base</h2>
+<div class="columns">
+<div class="column" style="width:34%;">
+<p><img src="../assets/images/KnowledgeBase.png" class="img-fluid" style="width:100.0%"></p>
+</div><div class="column" style="width:66%;">
+<ul>
+<li>A knowledge base is a collection of facts about the world.</li>
+<li><code>Ask</code> and <code>Tell</code></li>
+<li>I can ask but I can’t tell.</li>
+<li>It cannot give me verifiable facts.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="knowledge-base-1" class="level2">
+<h2 class="anchored" data-anchor-id="knowledge-base-1">Knowledge base</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Rilke.png" class="img-fluid figure-img" style="width:75.0%"></p>
+<figcaption>Am Strande von Rainer Maria Rilke <br> 👉 <a href="https://chat.openai.com/share/027179f2-a82b-46d7-9cd3-318d55209331">Open in ChatGPT</a></figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Hesse.png" class="img-fluid figure-img" style="width:75.0%"></p>
+<figcaption>Kennst du dieses Gedicht? <br> 👉 <a href="https://chat.openai.com/share/37698510-9047-4d4f-8a6b-00f054d06457">Open in ChatGPT</a></figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>. . .</p>
+<p>What can we learn from this?</p>
+</section>
+<section id="knowledge-base-2" class="level2">
+<h2 class="anchored" data-anchor-id="knowledge-base-2">Knowledge base</h2>
+<div class="columns">
+<div class="column" style="width:34%;">
+<p><img src="../assets/images/Pothole.png" class="img-fluid" style="width:100.0%"></p>
+</div><div class="column" style="width:64%;">
+<ul>
+<li>Can’t tell me where it got its information from.</li>
+<li>LLMs are models of knowledge bases, but not knowledge bases themselves.</li>
+<li>Expensive/difficult to update with new knowledge.</li>
+<li>Produce ethically questionable results.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="an-llm-is-a-role-play-simulator" class="level2">
+<h2 class="anchored" data-anchor-id="an-llm-is-a-role-play-simulator">An LLM is a role-play simulator</h2>
+<div class="columns">
+<div class="column" style="width:34%;">
+<p><img src="../assets/images/live-action-role-play.png" class="img-fluid" style="width:100.0%"></p>
+</div><div class="column" style="width:64%;">
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We can think of an LLM as a non-deterministic simulator capable of role-playing an infinity of characters, or, to put it another way, capable of stochastically generating an infinity of simulacra <span class="citation" data-cites="shanahanRolePlayLargeLanguage2023">(<a href="#ref-shanahanRolePlayLargeLanguage2023" role="doc-biblioref">Shanahan, McDonell, and Reynolds 2023</a>)</span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="an-llm-is-a-role-play-simulator-1" class="level2">
+<h2 class="anchored" data-anchor-id="an-llm-is-a-role-play-simulator-1">An LLM is a role-play simulator</h2>
+<ul>
+<li>An assistant is trained to respond to user prompts in a human-like way.</li>
+<li>A simulator of <strong>possible</strong> human conversation.</li>
+<li>Has no intentions. It is not an entity with its own goals.</li>
+<li>Does not have a “personality” or “character” in the traditional sense. It can be thought of as a role-playing simulator.</li>
+<li>Has no concept of “truth” or “lying”. The model is not trying to deceive the user, it is simply trying to respond in a human-like way.</li>
+</ul>
+</section>
+<section id="an-llm-is-a-role-play-simulator-2" class="level2">
+<h2 class="anchored" data-anchor-id="an-llm-is-a-role-play-simulator-2">An LLM is a role-play simulator</h2>
+<p><img src="../assets/images/simulator.png" class="img-fluid" style="width:100.0%"></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>The dialogue agent will do its best to role-play a character in a dialogue.</li>
+<li>At every step, the model is trying to generate text that is most likely to follow the input.</li>
+<li>It can take many different paths. Your interaction is just one of those possible paths.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="an-llm-is-a-role-play-simulator-3" class="level2">
+<h2 class="anchored" data-anchor-id="an-llm-is-a-role-play-simulator-3">An LLM is a role-play simulator</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<iframe width="600" height="600" src="https://chat.openai.com/share/0e2b648c-a5c5-48ca-b434-e7aefc6dfd6d" title="Once upon a time"></iframe>
+
+</div><div class="column" style="width:34%;">
+<ul>
+<li>You can open this conversation in ChatGPT.</li>
+<li>Try re-generating the conversation after the initial prompt.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="what-are-llms-good-at" class="level2">
+<h2 class="anchored" data-anchor-id="what-are-llms-good-at">What are LLMs good at?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Fixing grammar, bad writing, etc.</li>
+<li>Rephrasing</li>
+<li>Analyze texts</li>
+<li>Write computer code</li>
+<li>Answer questions about a knowledge base</li>
+<li>Translate languages</li>
+<li>Creating structured output</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<iframe width="600" height="600" src="https://chat.openai.com/share/49f95bd5-58de-466c-9323-5118fa83685e" title="Email addresses in a comma-separated list"></iframe>
+</div>
+</div>
+</section>
+<section id="references" class="level2" data-background-color="#2e3440">
+<h2 data-background-color="#2e3440" class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-shanahanTalkingLargeLanguage2023" class="csl-entry" role="listitem">
+Shanahan, Murray. 2023. <span>“Talking <span>About Large Language Models</span>.”</span> January 25, 2023. <a href="https://doi.org/10.48550/arXiv.2212.03551">https://doi.org/10.48550/arXiv.2212.03551</a>.
+</div>
+<div id="ref-shanahanRolePlayLargeLanguage2023" class="csl-entry" role="listitem">
+Shanahan, Murray, Kyle McDonell, and Laria Reynolds. 2023. <span>“Role-<span>Play</span> with <span>Large Language Models</span>.”</span> May 25, 2023. <a href="https://doi.org/10.48550/arXiv.2305.16367">https://doi.org/10.48550/arXiv.2305.16367</a>.
+</div>
+<div id="ref-weiEmergentAbilitiesLarge2022b" class="csl-entry" role="listitem">
+Wei, Jason, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeaud, Dani Yogatama, et al. 2022. <span>“Emergent <span>Abilities</span> of <span>Large Language Models</span>.”</span> October 26, 2022. <a href="https://doi.org/10.48550/arXiv.2206.07682">https://doi.org/10.48550/arXiv.2206.07682</a>.
+</div>
+</div>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/virtuelleakademie\.github\.io\/promptly-literate");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

@@ -20,51 +20,14 @@ format:
         code-link: true
         callout-appearance: simple
         callout-icon: false
-jupyter: python3
-execute: 
-  cache: true
-  keep-ipynb: true
-  keep-md: true
-  output: asis
-  echo: false
-code-annotations: select
 ---
 
 Designing effective prompts to instruct LLMS to generate a desired output is referred to as _prompt engineering_. This activity will guide you through the process of creating prompts for LLMs.
 
 
 
-```{python}
-#| echo: false
-import openai
-from openai import OpenAI
-client = OpenAI()
-import os
-import markdown
-
-from dotenv import load_dotenv
-load_dotenv()
-
-openai.api_key  = os.getenv('OPENAI_API_KEY')
-
-from IPython.display import display, Markdown, Latex, HTML, JSON
-```
 
 
-
-```{python}
-#| echo: false
-def get_response(prompt, model="gpt-4o", temperature=0.6):
-    messages = [{"role": "user", "content": prompt}]
-    response = client.chat.completions.create(
-        model=model,
-        messages=messages,
-        temperature=temperature,
-    )
-    # response = response.choices[0].message.content
-    response = markdown.markdown(response.choices[0].message.content)
-    return response
-```
 
 # Prompting
 
@@ -135,45 +98,23 @@ Remember to structure your prompt in a way that is clear and easy to understand.
 ## Examples
 
 ### Adopt a persona
-```{python}
-#| output: asis
-response = get_response("""You are an expert on the topic of university education and didactics. Explain the concept of "flipped classroom" to a group of teachers. Use markdown to format your response. Keep your explanation concise and to the point.""")
-```
+
 
 :::{.callout-note}
 ## {{< bi person >}} Prompt:
 You are an expert on the topic of university education and didactics. Explain the concept of "flipped classroom" to a group of teachers. Use markdown to format your response. Keep you explanation concise and to the point.
 :::
 
-:::{.callout-warning collapse="true"}
-## {{< bi robot >}} Output
-```{python}
-#| output: asis
-
-display(Markdown(response))
-```
-:::
 
 Now let's try a different persona:
 
-```{python}
-#| output: asis
-response = get_response("""You are 13 year old high school student. Explain the concept of "flipped classroom" to your friends. Use markdown to format your response. Keep your explanation concise and to the point.""")
-```
 
 :::{.callout-note}
 ## {{< bi person >}} Prompt:
 You are 13 year old high school student. Explain the concept of "flipped classroom" to your friends. Use markdown to format your response. Keep you explanation concise and to the point.
 :::
 
-:::{.callout-warning collapse="true"}
-## {{< bi robot >}} Output
-```{python}
-#| output: asis
 
-display(Markdown(response))
-```
-:::
 
 
 
@@ -197,56 +138,9 @@ Your task is to provide a simplified answer to the question using only the provi
 :::
 
 
-```{python}
-#| output: asis
-response = get_response("""
-You will be provided with 
-
-- context: documents delimited by **triple quotes**
-- a question 
-
-Your task is to provide a simplified answer to the question using only the provided document and to cite the passage(s) of the document used to answer the question. If the document does not contain the information needed to answer this question then simply write: "Insufficient information." If an answer to the question is provided, it must be annotated with a citation. Use the following format for to cite relevant passages ("SOURCE": …). Cite only the relevant sentence(s) of the document, not the entire document.
-
-**Document 1**:'''The flipped classroom intentionally shifts instruction to a learner-centered model, in which students are often initially introduced to new topics outside of school, freeing up classroom time for the exploration of topics in greater depth, creating meaningful learning opportunities.'''
-
-**Document 2**:'''With a flipped classroom, 'content delivery' may take a variety of forms, often featuring video lessons prepared by the teacher or third parties, although online collaborative discussions, digital research, and text readings may alternatively be used. The ideal length for a video lesson is widely cited as eight to twelve minutes.'''
-
-
-**Question**: What is a good length for a video?
-"""
-)
-```
-
-:::{.callout-warning collapse="true"}
-## {{< bi robot >}} Output
-```{python}
-#| output: asis
-display(Markdown(response))
-```
-:::
 
 
 Try asking a question that cannot be answered with the provided documents:
-
-
-```{python}
-#| output: asis
-response = get_response("""
-You will be provided with 
-
-- context: documents delimited by **triple quotes**
-- a question 
-
-Your task is to provide a simplified answer to the question using only the provided document and to cite the passage(s) of the document used to answer the question. If the document does not contain the information needed to answer this question then simply write: "Insufficient information." If an answer to the question is provided, it must be annotated with a citation. Use the following format for to cite relevant passages ("SOURCE": …). Cite only the relevant sentence(s) of the document, not the entire document.
-
-**Document 1**:'''The flipped classroom intentionally shifts instruction to a learner-centered model, in which students are often initially introduced to new topics outside of school, freeing up classroom time for the exploration of topics in greater depth, creating meaningful learning opportunities.'''
-
-**Document 2**:'''With a flipped classroom, 'content delivery' may take a variety of forms, often featuring video lessons prepared by the teacher or third parties, although online collaborative discussions, digital research, and text readings may alternatively be used. The ideal length for a video lesson is widely cited as eight to twelve minutes.'''
-
-
-**Question**: Can you recommend a good book on the topic of flipped classrooms?
-""")
-```
 
 :::{.callout-note}
 ## {{< bi person >}} Prompt:
@@ -263,14 +157,6 @@ Your task is to provide a simplified answer to the question using only the provi
 
 
 **Question**: Can you recommend a good book on the topic of flipped classrooms?
-:::
-
-:::{.callout-warning collapse="true"}
-## {{< bi robot >}} Output
-```{python}
-#| output: asis
-display(Markdown(response))
-```
 :::
 
 
@@ -279,11 +165,6 @@ display(Markdown(response))
 
 You can also use prompts to instruct the model to produce structured output. For example, you can ask the model to give you a table.
 
-```{python}
-#| output: asis
-response = get_response("You are a high school teacher. Give me a table containing Greek letters in one column, their pronunciation in the second column, and examples of usage in the third column. Give me a maximum of 6 rows. DO NOT USE ::: in the table.")
-```
-
 :::{.callout-note}
 ## {{< bi person >}} Prompt:
 You are a high school teacher. Give me a table containing Greek letters in one column, their pronunciation in the second column, and examples of usage in the third column. Give me a maximum of 6 rows.
@@ -291,64 +172,8 @@ You are a high school teacher. Give me a table containing Greek letters in one c
 
 
 
-:::{.callout-warning collapse="true"}
-**{{< bi robot >}} Output:**
-:::
-
-```{python}
-#| output: asis
-display(Markdown(response))
-```
-<!-- ::: -->
-
-
-
-
 
 ## Exercises
-
-
-(@) **Write a prompt** that will make ChatGPT or Copilot act as a writing critic.
-
-You can use this as your starting point, and then iteratively improve it.
-
-:::aside
-Your first step could be to translate this into German.
-:::
-
-:::{.callout-note}
-## Feedback on a text
-I want you to act as a [harsh/constructive] critic. Criticize what I give to you and show me where my argumentation is lacking. Start by asking me what text I would like feedback on. Then give me your feedback.
-:::
-
-
-If you need an essay, you can use this one. There should be plenty to criticize.
-
-:::{.callout-note collapse="true"}
-## Essay
-
-**Sollten Schulnoten abgeschafft werden?**
-
-In unserer heutigen Bildungswelt gibt es viele verschiedene Methoden, um den Fortschritt und das Wissen eines Schülers zu messen. Eine der gebräuchlichsten Methoden sind Schulnoten. Aber sollten wir wirklich Noten verwenden, um den Wert eines Schülers zu bestimmen? Ich glaube, dass Noten in Schulen abgeschafft werden sollten, und hier sind meine Gründe dafür:
-
-Erstens, Noten sind oft subjektiv. Verschiedene Lehrer haben unterschiedliche Meinungen darüber, was eine "A" -Arbeit im Vergleich zu einer "B" -Arbeit ist. Ein Schüler könnte in einem Fach bei einem Lehrer eine "A" bekommen und bei einem anderen Lehrer eine "B". Dies zeigt, dass Noten nicht immer ein genaues Bild von dem Wissen eines Schülers geben.
-
-Zweitens, Noten erzeugen unnötigen Druck. Viele Schüler fühlen sich durch die Noten, die sie bekommen, gestresst und überfordert. Dieser Druck kann zu Angstzuständen, Depressionen und anderen gesundheitlichen Problemen führen. Wenn es keine Noten gäbe, könnten sich die Schüler mehr auf das Lernen konzentrieren und weniger darauf, eine bestimmte Note zu bekommen.
-
-Drittens, durch die Abschaffung von Noten könnten Schüler mehr Freiheit in ihrer Bildung haben. Sie könnten Themen studieren, die sie wirklich interessieren, anstatt sich darauf zu konzentrieren, welche Themen ihnen die besten Noten bringen würden. Dies könnte zu einer besseren und umfassenderen Bildung führen.
-
-Einige könnten argumentieren, dass Noten notwendig sind, um den Fortschritt eines Schülers zu messen. Aber es gibt viele andere Möglichkeiten, den Fortschritt zu messen, wie zum Beispiel Portfolios, Präsentationen oder Projekte. Diese Methoden könnten ein genaueres Bild von dem Wissen und den Fähigkeiten eines Schülers geben.
-
-Abschliessend glaube ich, dass Schulnoten mehr Schaden als Nutzen bringen. Sie sind oft subjektiv, erzeugen unnötigen Druck und beschränken die Freiheit der Schüler. Es ist an der Zeit, dass wir ein neues System finden, um den Fortschritt und das Wissen unserer Schüler zu messen.
-:::
-
-
-(@) What role should the model assume?
-(@) What is the task? Try to have the essay critiqued, and then ask for suggestions for improvement.
-(@) Have the model provide an improved version of the essay.
-(@) Instruct the model to show you the changes it made to the essay (you can use markdown to format the output).
-(@) Instruct the model to list the changes it made to the essay in a table, and to explain why it made each change.
-(@) Reflection: Did your prompting strategies work? What worked well? What didn't work well? 
 
 
 
