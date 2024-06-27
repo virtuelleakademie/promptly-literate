@@ -492,7 +492,7 @@ It looks like the LLM knows the capital of Uzbekistan^[What it is actually doing
 :::
 ::::
 
-## Biases
+## Biases {.smaller}
 
 | **Biases in LLMs**         | **Source**                                  | **Examples**                                           |
 |----------------------------|---------------------------------------------|--------------------------------------------------------|
@@ -500,7 +500,8 @@ It looks like the LLM knows the capital of Uzbekistan^[What it is actually doing
 | Representation bias    | Underrepresented groups/perspectives in data. | Less accurate responses for minority cultures.         |
 | Algorithmic bias       | Training and fine-tuning algorithms.        |  Optimizations for fluency and coherence may lead to preference for dominant cultural narratives.           |
 | User interaction bias  | Adaptation based on user interactions.      | Increased biased or harmful content generation.        |
-## Privacy concerns
+
+## Privacy concerns {.smaller}
 
 | **Privacy Concerns**       | **Issue**                                  | **Examples**                                          |
 |----------------------------|--------------------------------------------|-------------------------------------------------------|
