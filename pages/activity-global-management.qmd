@@ -1,7 +1,7 @@
 ---
-title: "Activities: Learn Prompting"
+title: "Hands-On Practice: Prompting"
 description: |
-  Basic programming techniques.
+  Basic prompting techniques.
 # date: last-modified
 date: 27 June, 2024
 date-format: "DD MMM, YYYY"
