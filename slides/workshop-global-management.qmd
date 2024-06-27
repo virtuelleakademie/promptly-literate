@@ -641,6 +641,13 @@ The flipped classroom intentionally shifts instruction to a learner-centered mod
 
 ::: -->
 
+## Create structured output
+
+- **Explanation**: Instruct the model to generate structured output.
+- E.g. provide a table, a list, a diagram, etc.
+- Use delimiters to indicate distinct parts of the input.
+- *Example*: Extract information from a text and present it in a table.
+  
 ## Structured prompting techniques
 
 
@@ -700,7 +707,8 @@ Why does this work?
 
 
 
-## Use Markdown formatting
+
+<!-- ## Use Markdown formatting
 
 - Use [Markdown](https://www.markdownguide.org/) to format your prompts.
 - Instruct the LLM to format its output using Markdown.
@@ -717,13 +725,15 @@ It is about about a workshop on large language models. I'm not happy with it.
 Show me all the text. Format your edits as `**TEXT**` and show the deleted text as `~~TEXT~~`. Keep you review short (max 100 words).
 :::
 
-Try this example in [ChatGPT](https://chat.openai.com/share/c2230c3c-04cc-4aa5-b802-9646496aadbd).
+Try this example in [ChatGPT](https://chat.openai.com/share/c2230c3c-04cc-4aa5-b802-9646496aadbd). -->
 
 ## Hands-on practice: Prompting
 
-{{< bi pencil-fill >}} Open this [activity](../pages/activity-global-management.qmd).
+{{< bi pencil-fill >}} Open this [activity](../pages/activity-global-management.qmd). 
 
-{{< bi stopwatch >}} 45 minutes
+1) Practice writing prompts for different tasks ({{< bi stopwatch >}} 20 minutes).
+2) Summarize a research article and write an essay using an LLM 
+   ({{< bi stopwatch >}} 30 minutes).
 
 
 <br> <br>
@@ -824,12 +834,12 @@ If you need further help with prompting techniques, see these websites:
 
 | Task Category           | Specific Tasks                                  |
 |-------------------------|-------------------------------------------------|
-| Editing Tasks           | Create/Improve Different Versions of Sections.  |
-| Transitions             | Write and Compare Transitions.                  |
-| Improve Drafts          | Critique and Refine Drafts.                     |
-| Writing Styles          | Rewrite Sections for Different Audiences.       |
-| Controversial Statements| Identify Controversial Points and Strengthen Arguments. |
-| Research Journal        | Keep a Diary and Use LLM for Reflection.        |
+| Editing tasks           | Create/improve different versions of sections.  |
+| Transitions             | Write and compare transitions.                  |
+| Improve drafts          | Critique and refine drafts.                     |
+| Writing styles          | Rewrite sections for different audiences.       |
+| Controversial statements| Identify controversial points and strengthen arguments. |
+| Research journal        | Keep a diary and use LLM for reflection.        |
 
 
 ## Sport vs. writing {.smaller}
@@ -946,7 +956,7 @@ E.g. [APA](https://apastyle.apa.org/blog/how-to-cite-chatgpt) Style: Cite as sof
   + Teachers overestimate their detection abilities.
 
 
-# Questions
+# Questions / Discussion {{< bi chat-dots >}}
 
 # References {background-color="#D8DEE9"}
 
