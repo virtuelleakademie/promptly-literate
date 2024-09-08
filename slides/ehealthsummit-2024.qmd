@@ -1,0 +1,971 @@
+---
+title: "Engineering Health: The Power of Prompts"
+author: "Andrew Ellis"
+date: "11 September, 2024"
+date-format: "DD MMMM, YYYY"
+bibliography: ../bibliography.bib
+nocite: |
+  @bowenTeachingAI2024, @langCheatingLessons2013a, @schulhoffPromptReportSystematic2024
+format: 
+    revealjs:
+        theme: [simple, ../styles/custom-reveal.scss]
+      #   theme: default
+        title-slide-attributes:
+          # data-background-image: ../assets/background-purple.png
+          # data-background-size: contain
+          data-background-opacity: "1"
+        # logo: ../assets/robot.png
+        header-logo: ../assets/bfh-logo.png
+        header: Berner Fachhochschule | Bern University of Applied Sciences
+        footer: <a href="../index.html">back to website {{< bi box-arrow-up-left >}} </a>
+        navigation-mode: vertical
+        progress: true
+        scrollable: false
+        slide-number: true
+        slide-level: 2
+        show-slide-number: all
+        controls-layout: bottom-right
+        controls-tutorial: true
+        preview-links: auto
+        chalkboard: true
+        from: markdown+emoji
+        code-fold: true
+        code-summary: "Show code"
+        code-tools: true
+        toc: true
+        toc-depth: 1
+        menu: 
+          sticky: true
+          keyboard: true
+          autoOpen: true
+          width: normal
+          numbers: true
+          markers: true
+        callout-appearance: simple
+        callout-icon: false
+revealjs-plugins:
+  - attribution
+filters:
+  - reveal-header
+---
+
+
+<!-- # {{< bi map >}} Contents
+
+<!-- - [Go to Guide for Lecturers](#guide-for-lecturers) -->
+- What are LLMs?
+- Understanding LLM capabilities and limitations
+- Fundamentals of prompting
+- Break
+- LLMs in the classroom
+- Essential skills
+- Academic integrity
+- Conclusion -->
+
+# <a id="guide-for-lecturers"></a>{{< bi bookmark-star >}} Guide for Lecturers at BFH
+
+:::{.callout-note}
+- **BFH’s Stance**: Technologies that support the learning process and are relevant in practice should be integrated into teaching.
+- **Use of AI in Teaching**: The majority of students will use AI tools. Students should learn to use technologies competently and to critically question them.
+:::
+
+<br> <br>
+
+[{{< bi link >}} Virtual Academy Knowledge Base](https://virtuelleakademie.ch/knowledge-base/ki-basierte-schreibtools-in-der-lehre-chatgpt-im-fokus/) [more up-to-date than PDF]
+
+[{{< bi link >}} PDF](https://bernerfachhochschule.sharepoint.com/sites/mybfh-BFH-News-de/SitePages/Nachrichten-K%C3%BCnstliche-Intelligenz-(KI)-in-der-Lehre.aspx)
+
+
+# What are Large Language Models (LLMs)?
+
+## What is Artifical Intelligence?
+
+:::: {.columns}
+::: {.column width="50%"}
+![](../assets/images/what-is-AI.svg){width=100%}
+:::
+
+::: {.column width="50%"}
+A branch of computer science that aims to create machines that can perform tasks that typically require human intelligence.
+:::
+::::
+
+
+<!-- ## What is Generative AI?
+
+Generative AI uses machine learning to create complex statistical models of how data are generated.
+
+- Generative AI models learn from existing data.
+- Produce new data that resembles the original data: images, music, text, etc. -->
+
+
+## What is a Large Language Model?
+
+:::: {.columns}
+::: {.column width="50%"}
+![](../assets/images/LLM.svg){width=100%}
+:::
+
+::: {.column width="50%"}
+An LLM is a type of generative AI model that is trained to predict the next word following the input (prompt).
+:::
+::::
+
+
+
+
+
+
+<!-- 
+## Training
+:::: {.columns}
+
+::: {.column width="30%"}
+![](../assets/images/LLM-Bookshelf.png){width=100%}
+:::
+
+::: {.column width="70%"}
+![](../assets/images/training-steps.svg){width=100%}
+:::
+:::: -->
+
+
+
+
+<!-- ## Generalization
+- The ability to apply knowledge to new, unseen data/situations
+- E.g. a language model should learn to generate rhymes
+- Extracts knowledge from text: linguistic, factual, commonsense, etc. -->
+
+## How to train a language model
+
+- An LLM learns to predict the next word in a sequence, given the previous words:
+ $$ P(word | context) $$
+- Think of as "fancy autocomplete" (but very very powerful and sopisticated)
+
+
+![](../assets/images/ppl_full.gif){width=100%}
+
+
+
+
+
+
+<!-- ## Text Generation
+:::: {.columns}
+
+::: {.column width="50%"}
+:::
+
+::: {.column width="50%"}
+![](../assets/images/textgeneration.png){width=100%}
+:::
+:::: -->
+
+
+## How does an LLM generate text?
+
+
+![](../assets/images/text-generation-output.excalidraw.svg){width=100%}
+
+
+## Sampling
+
+![](../assets/images/sampling.excalidraw.svg){width=100%}
+
+
+## Auto-regressive generation
+
+Text is generated __one word at a time__ (actually tokens, not words).
+
+:::: {.columns}
+::: {.column width="50%"}
+
+<!-- 1. Model computes conditional distribution over all possible words: $P(w_{w+1} | w_1, w_2, ..., w_t)$
+2. Next word is sampled.
+3. Word is added to the sequence of words (context). 
+4. Back to Step 1. -->
+![](../assets/images/pseudocode.svg){width=60%}
+:::
+::: {.column width="50%"}
+
+
+{{< bi arrow-right-circle-fill >}} Generated text depends on the **generative model** and the **context**.
+
+{{< bi arrow-right-circle-fill >}} Every word (token) is given an equal amount time (computation per token is constant). 
+:::
+::::
+
+<!-- 
+## Example
+Let's start with the initial phrase "The quick brown".
+
+### Iteration 1
+1. **Initial Context:** ["The", "quick", "brown"]
+2. **Compute Distribution:** Calculate probabilities for possible next words ("fox", "dog", "cat", etc.)
+3. **Sample Word:** Suppose "fox" is selected.
+4. **Update Context:** ["The", "quick", "brown", "fox"]
+
+### Iteration 2
+1. **Current Context:** ["The", "quick", "brown", "fox"]
+2. **Compute Distribution:** Calculate probabilities for possible next words ("jumps", "sits", "runs", etc.)
+3. **Sample Word:** Suppose "jumps" is selected.
+4. **Update Context:** ["The", "quick", "brown", "fox", "jumps"]
+
+### Iteration 3
+1. **Current Context:** ["The", "quick", "brown", "fox", "jumps"]
+2. **Compute Distribution:** Calculate probabilities for possible next words ("over", "under", "on", etc.)
+3. **Sample Word:** Suppose "over" is selected.
+4. **Update Context:** ["The", "quick", "brown", "fox", "jumps", "over"]
+
+This process continues until a stopping condition is met, such as reaching an end token or exceeding a maximum length. -->
+
+## Auto-regressive generation
+
+![](../assets/images/pangram.svg){width=100%}
+
+
+
+<!-- ## Tokenization
+LLMs operate with tokens, not words. These are sub-words, and make working with text much easier for the model. A rule of thumb is that one token generally corresponds to ~4 characters of English text. This translates to roughly $\frac{3}{4}$ of a word (so 100 tokens is about 75 words).
+
+```{r}
+knitr::include_graphics("../assets/images/tokenization.png")
+```
+
+Feel free to try out the [OpenAI tokenizer](https://platform.openai.com/tokenizer). 
+
+## Embeddings
+- The next step is to represent tokens as vectors. 
+- This is called "embedding" the tokens. The vectors are high-dimensional, and the **distance** between vectors measures the similarity between tokens.
+
+:::: {.columns}
+::: {.column width="50%"}
+
+```{r}
+knitr::include_graphics("../assets/images/embedding.png")
+```
+:::
+::: {.column width="50%"}
+In this 2-dimensional representation, concepts that are "related" lie close together. Read about embeddings [in this tutorial](../pages/text-representation.qmd).
+
+:::
+
+:::: -->
+
+
+
+
+## Foundation models
+
+A foundation model, or large language model (LLM):
+
+- is a type of machine learning model that is trained to predict the next word following the input (prompt).
+- is trained "simply" to predict the next word following a sequence of words. 
+- does not necessarily produce human-like conversations.
+
+:::{.callout-note}
+{{< bi person >}}: 
+What is the capital of France?
+
+{{< bi robot >}}: 
+What is the capital of Germany? 
+What is the capital of Italy? .
+..
+:::
+
+
+<!-- ## Training data
+
+![](../assets/images/karpathy-training-data.png){width=100%}
+
+::: attribution
+Figure courtesy of [Andrej Karpathy](https://karpathy.ai/)
+::: -->
+
+## Training process
+
+![](../assets/images/karpathy-training-process.png){width=100%}
+
+::: attribution
+Figure courtesy of [Andrej Karpathy](https://karpathy.ai/)
+:::
+
+<!-- ## Emergent abilities
+
+LLMs are thought to show emergent abilities - abilities not explicitly taught. Instead, they emerge _as a result of text prediction_.
+
+Abilities include:
+
+- performing arithmetic, answering questions, summarizing text, translating, etc.
+- zero-shot learning: LLMs can perform tasks without being trained on them.
+- few-shot learning: LLMs can perform tasks with few examples.
+
+## Emergent abilities
+
+What kind of knowledge does an LLM have to have to be able to write a continuation of the following text?^[Continue this conversation with [ChatGPT](https://chat.openai.com/share/2661773e-3bf6-4be3-b251-41f639bfc2a1).]
+
+::::{.columns}
+::: {.column width="50%"}
+
+:::{.callout-note}
+{{< bi person >}}: 
+How many holes does a straw have?
+
+{{< bi robot >}}: 
+A straw has one hole. It's a cylindrical tunnel that runs through the entire length, creating a single continuous space from one end to the other.
+
+{{< bi person >}}: 
+What about a tunnel?
+
+{{< bi robot >}}:
+Similar to a straw, a tunnel can also be considered to have one hole. It's an elongated pathway carved through an obstruction, allowing passage from one side to the other, thus creating a single continuous space or hole through the material.
+:::
+:::
+
+::: {.column width="50%"}
+![](../assets/images/straw-tunnel.png){width=100%}
+:::
+:::: -->
+
+
+
+## Assistant models
+
+Trained (fine-tuned) to have conversations: turn-taking, question answering, not being rude/sexist/racist.
+
+:::: {.columns}
+
+::: {.column width="34%"}
+![](../assets/images/Chat.png){width=100%}
+
+
+<!-- ![](../assets/images/RLHF.svg){width=100%} -->
+:::
+
+::: {.column width="66%"}
+
+- Foundation model has learned to predict all kinds of text, including both desirable and undesirable text.
+- Fine-tuning narrows down the space of all possible output to only desirable, human-like dialogue.
+- Model is **aligned** with the values of the fine-tuner.
+:::
+::::
+
+
+<!-- ## Instruction fine-tuning
+
+![](../assets/images/finetuning.png){width=100%} -->
+
+<!-- ## Reinforcement learning from human feedback (RLHF)
+
+![](../assets/images/RLHF.svg){width=100%}
+
+
+Model is **aligned** with the values of the fine-tuner.
+ -->
+
+
+
+## How do Chatbots work?
+
+![](../assets/images/chatbotexcalidraw.svg){width=100%}
+
+- Designed to present the illusion of a conversation between two entities.
+
+## How do chatbots actually work?
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](../assets/images/chatbot.svg){width=100%}
+:::
+
+::: {.column width="50%"}
+![](../assets/images/chatbot-2.svg){width=100%}
+
+
+:::
+::::
+
+
+
+## An assistant model is a conversation simulator
+
+:::: {.columns}
+
+::: {.column width="34%"}
+![](../assets/images/live-action-role-play.png){width=100%}
+
+:::
+
+::: {.column width="64%"}
+
+- An assistant is trained to respond to user prompts in a human-like way.
+- Simulates **possible** human conversations.
+- Has no intentions. It is not an entity with its own goals.
+- Does not have a "personality" or "character" in the traditional sense. It can be thought of as a role-playing simulator.
+- Has no concept of "truth" or "lying". The model is not trying to deceive the user, it is simply trying to respond in a human-like way.
+  
+:::
+::::
+
+
+
+<!-- ## Stochastic generation
+
+![](../assets/images/simulator.png){width=100%} -->
+
+# Understanding LLM capabilities and limitations
+
+## Capabilities and limitations 
+:::: {.columns}
+::: {.column width="50%"}
+
+**What are LLMs good at?**
+
+- Fixing grammar, bad writing, etc.
+- Rephrasing
+- Analyzing texts
+- Writing computer code
+- Answering questions about a knowledge base
+- Translating languages
+- Creating structured output
+- Factual output with external documents or web search
+
+:::
+::: {.column width="50%"}
+
+**Limitations**
+
+- They make stuff up (hallucinate)
+- They learn biases from the training data
+- Weird vocabulary, e.g. delve
+- (Chatbots have privacy issues)
+:::
+::::
+
+
+## Hallucination
+
+:::: {.columns}
+
+::: {.column width="34%"}
+![](../assets/images/confabulating.png){width=100%}
+
+:::
+
+::: {.column width="64%"}
+- LLMs can generate text that is not true, or not based on any real-world knowledge.
+- This is known as "hallucination". A better term would be "confabulation".
+
+:::
+::::
+
+## Can an LLM tell the truth?
+
+- How would you know if an LLM is able to give you factual information?
+- How would you test this?
+
+:::{.callout-note}
+{{< bi person >}}: 
+What is the capital of Uzbekistan?
+
+{{< bi robot >}}: 
+Tashkent
+:::
+
+ 
+
+It looks like the LLM knows the capital of Uzbekistan^[What it is actually doing is responding with the most likely sequence following the question.].
+
+
+## Knowledge base
+
+:::: {.columns}
+
+::: {.column width="66%"}
+
+- A knowledge base is a collection of facts about the world.
+  - You can `ask` (retrieve) and `tell` (store) facts.
+- An LLM is not a knowledge base.
+  - LLMs generate text based on on how probable the next word is given the context, not based on stored facts.
+:::
+
+::: {.column width="34%"}
+
+![](../assets/images/KnowledgeBase.png){width=100%}
+
+:::
+::::
+
+## Biases {.smaller}
+
+| **Biases in LLMs**         | **Source**                                  | **Examples**                                           |
+|----------------------------|---------------------------------------------|--------------------------------------------------------|
+| Training data bias     | Text from internet, books, articles.        | Stereotypes reflecting gender, race, religion.         |
+| Representation bias    | Underrepresented groups/perspectives in data. | Less accurate responses for minority cultures.         |
+| Algorithmic bias       | Training and fine-tuning algorithms.        |  Optimizations for fluency and coherence may lead to preference for dominant cultural narratives.           |
+| User interaction bias  | Adaptation based on user interactions.      | Increased biased or harmful content generation.        |
+
+## Privacy concerns {.smaller}
+
+| **Privacy Concerns**       | **Issue**                                  | **Examples**                                          |
+|----------------------------|--------------------------------------------|-------------------------------------------------------|
+| Data memorization       | Memorizing sensitive information.          | Reproducing phone numbers, addresses.                 |
+| Training data leakage  | Unauthorized dissemination of confidential data. | Summarizing proprietary documents.                |
+| User query logging     | Storing sensitive user interactions.       | Exposing private queries if data is mishandled.       |
+| Queries used for training | User queries may be used for further training. | Personal data in queries could be inadvertently included in training data. |
+
+
+
+# Fundamentals of Prompting
+
+## Prompting
+
+<br> <br>
+![](../assets/images/magic.svg){width=66%}
+
+
+## What is a prompt?
+
+- An LLM's task is to complete text.
+- A prompt is a piece of text (instruction) that is given to a language model to complete. 
+
+:::{.callout-note}
+PROMPT {{< bi person >}}: Write a haiku about a workshop on large language models.
+
+ASSISTANT {{< bi robot >}}: 
+    Whispers of circuits,  
+    Knowledge blooms in bytes and bits,  
+    Model learns and fits.
+:::
+
+
+- The response is generated as continuation of, and conditioned on, the prompt. 
+
+::: {.notes}
+
+More technical definition: The output is generated by auto-regressively sampling from the probability distribution over the vocabulary, conditioned on the prompt.
+:::
+
+
+## Prompt engineering
+:::: {.columns}
+::: {.column width="50%"}
+![](../assets/images/unlock.svg)
+
+<!-- ::: {.incremental} -->
+- LLMs learn to do things they were not explicitly trained to do: translation, reasoning, etc.
+<!-- - They can solve logic puzzles and perform complex multistep reasoning.  -->
+- Often, these capabilities need to be "unlocked" by the right prompt.
+<!-- ::: -->
+
+:::
+
+::: {.column width="50%"}
+- But what is the right prompt?
+- The answer is very similar to what you would tell a human dialogue partner/assistant.
+- You can increase the probability of getting the desired output by providing context and examples.
+:::
+::::
+
+
+## Basics of prompting
+
+OpenAI give a set of strategies for using their models effectively: 
+
+{{< bi link >}} [Prompt engineering](https://platform.openai.com/docs/guides/prompt-engineering) 
+
+
+These include:
+
+- writing clear instructions
+- providing reference texts
+- splitting tasks into subtasks
+- giving the LLM 'time to think'
+- using external tools
+
+
+## Writing clear instructions
+
+
+:::: {.columns}
+::: {.column width="50%"}
+- Instructions should be clear and unambiguous.
+- Think of an LLM as a role-playing conversation simulator: Indicate which role the model (persona) should adopt.
+
+:::
+
+::: {.column width="50%"}
+:::{.callout-note}
+- [Include details in your query to get more relevant answers](https://platform.openai.com/docs/guides/prompt-engineering/tactic-include-details-in-your-query-to-get-more-relevant-answers)
+- [Ask the model to adopt a persona](https://platform.openai.com/docs/guides/prompt-engineering/tactic-ask-the-model-to-adopt-a-persona)
+- [Use delimiters to clearly indicate distinct parts of the input](https://platform.openai.com/docs/guides/prompt-engineering/tactic-use-delimiters-to-clearly-indicate-distinct-parts-of-the-input)
+- [Specify the steps required to complete a task](https://platform.openai.com/docs/guides/prompt-engineering/tactic-specify-the-steps-required-to-complete-a-task)
+- [Provide examples](https://platform.openai.com/docs/guides/prompt-engineering/tactic-provide-examples)
+- [Specify the desired length of the output](https://platform.openai.com/docs/guides/prompt-engineering/tactic-specify-the-desired-length-of-the-output)
+
+:::
+:::
+::::
+
+
+## Adopt a persona (role)
+
+:::{.callout-note}
+{{< bi person >}}: You are an expert on learning techniques. Explain the concept of 'flipped classroom' in one paragraph.
+:::
+
+:::{.callout-note}
+{{< bi person >}}: You are an expert financial derivatives. Explain the concept of 'flipped classroom' in one paragraph.
+:::
+
+
+
+## Provide reference texts
+
+
+- Provide a model with trusted and relevant information. 
+- Then instruct the model to use the provided information to compose its answer.
+
+
+[{{< bi link >}} Instruct the model to answer using a reference text](https://platform.openai.com/docs/guides/prompt-engineering/tactic-instruct-the-model-to-answer-using-a-reference-text)
+
+:::aside
+This can be extended to **retrieval-augmented generation (RAG)**. First create a database of documents, then retrieve the most relevant documents, based on a user's query. These are then included in the prompt to the model. The model is instructed to use the information in the documents to compose its answer.
+:::
+
+<!-- ## Provide reference texts {.scrollable}
+
+:::{.callout-note}
+{{< fa person >}}: You will be provided with a document delimited by triple quotes and a question. Your task is to provide a simplified answer to the question using only the provided document and to cite the passage(s) of the document used to answer the question. If the document does not contain the information needed to answer this question then simply write: "Insufficient information." If an answer to the question is provided, it must be annotated with a citation. Use the following format for to cite relevant passages ({"citation": …}). Cite only the relevant passage(s) of the document, not the entire document.
+
+"""
+The flipped classroom intentionally shifts instruction to a learner-centered model, in which students are often initially introduced to new topics outside of school, freeing up classroom time for the exploration of topics in greater depth, creating meaningful learning opportunities. With a flipped classroom, 'content delivery' may take a variety of forms, often featuring video lessons prepared by the teacher or third parties, although online collaborative discussions, digital research, and text readings may alternatively be used. The ideal length for a video lesson is widely cited as eight to twelve minutes.
+"""
+
+**Question**: What is flipped classroom?
+
+::: -->
+
+## Create structured output
+
+- **Explanation**: Instruct the model to generate structured output.
+- E.g. provide a table, a list, a diagram, etc.
+- Use delimiters to indicate distinct parts of the input.
+- *Example*: Extract information from a text and present it in a table.
+  
+## Structured prompting techniques
+
+
+- In-Context Learning: Provide examples within the prompt.
+- Thought Generation: Instruct the model to think step-by-step.
+- Decomposition Techniques: Break down tasks into subtasks.
+
+[@schulhoffPromptReportSystematic2024]
+
+## In-Context learning 
+- **Explanation**: Providing examples or context within the prompt itself.
+- **Few-shot prompting**: Give a few examples.
+  - *Example*: Translate the following sentences: 
+    - English: 'What time is it?' -> French: 'Quelle heure est-il?'
+    - English: 'Where is the library?' -> French: 
+- **Zero-shot prompting**: No examples, relies on pre-trained knowledge.
+  - *Example*: Translate the following sentence...
+
+## Thought generation
+- **Explanation**: Encourages the model to show its reasoning process.
+- **Chain-of-Thought (CoT) prompting**: encourages the LLM to "explain" its intermediate reasoning steps.
+- Can often be induced by simply instructing the model to _think step-by-step_ or _Take a deep breath and work on this problem step-by-step_ [@yangLargeLanguageModels2023].
+
+
+
+
+
+## Chain-of-Thought example
+
+Instead of this:
+
+:::{.callout-note}
+{{< bi person >}}: The odd numbers in this group add up to an even number: 4, 8, 9, 15, 12, 2, 1. Yes or no?
+:::
+
+Do this:
+
+:::{.callout-note}
+{{< bi person >}}: Is this statement correct? The odd numbers in this group add up to an even number: 4, 8, 9, 15, 12, 2, 1. 
+
+Reason through the problem step-by-step. Start by identifying the odd numbers. Next, add them up. Finally, determine if the sum is even or odd. Write down your reasoning steps in a numbered list.
+
+:::
+
+:::{.notes}
+Why does this work?
+:::
+
+
+## Decomposition techniques
+
+- **Explanation**: Force the LLM to break down complex tasks into manageable subtasks.
+- **Least-to-Most Prompting**: Start simple, increase complexity.
+  - *Example*: List items, calculate cost...
+- **Plan-and-Solve Prompting**: Separate planning and execution phases.
+  - *Example*: Understand the problem, devise a plan...
+
+
+
+
+<!-- ## Use Markdown formatting
+
+- Use [Markdown](https://www.markdownguide.org/) to format your prompts.
+- Instruct the LLM to format its output using Markdown.
+
+:::{.callout-note}
+{{< bi person >}}: Improve this haiku:
+
+Words weave through the air,  
+Minds meld with machine's deep thought,  
+Knowledge blooms anew.  
+
+It is about about a workshop on large language models. I'm not happy with it.
+
+Show me all the text. Format your edits as `**TEXT**` and show the deleted text as `~~TEXT~~`. Keep you review short (max 100 words).
+:::
+
+Try this example in [ChatGPT](https://chat.openai.com/share/c2230c3c-04cc-4aa5-b802-9646496aadbd). -->
+
+## Hands-on practice: Prompting
+
+{{< bi pencil-fill >}} Open this [activity](../pages/activity-global-management.qmd). 
+
+1) Practice writing prompts for different tasks ({{< bi stopwatch >}} 20 minutes).
+2) Write an essay using an LLM, and then critique someone else's essay
+   ({{< bi stopwatch >}} 30 minutes).
+
+
+<br> <br>
+If you need further help with prompting techniques, see these websites:
+
+- {{< bi link >}} [Learn prompting](https://learnprompting.org/docs/intro)
+- {{< bi link >}} [Prompting guide](https://www.promptingguide.ai/)
+- {{< bi link >}} [OpenAI cookbook](https://cookbook.openai.com/)
+
+
+
+# LLMs in the Classroom
+
+## ChatGPT Edu {.smaller}
+
+:::: {.columns}
+::: {.column width="50%"}
+<br> <br>
+
+<iframe src="https://openai.com/index/introducing-chatgpt-edu/" width="80%" height="400px"></iframe>
+:::
+::: {.column width="50%"}
+
+- Access to GPT-4o, excelling in text interpretation, coding, and mathematics
+- Data analytics, web browsing, and document summarization
+- Build GPTs, custom versions of ChatGPT, and share them within university workspaces
+- Significantly higher message limits than the free version of ChatGPT
+- Improved language capabilities across quality and speed, with over 50 languages supported
+- Robust security, data privacy, and administrative controls
+- Conversations and data are not used to train OpenAI models
+:::
+::::
+
+
+## GPTs
+
+![](../assets/images/gpt-store.png){width=66%}
+
+
+## Hands-on practice: GPTs
+
+1) Try out custom GPTs from various categories in the [GPT store](https://chatgpt.com/gpts).
+2) Discuss with your neighbour
+    a) Did you discover any useful GPTs?
+    b) What are the benefits and limitations of using GPTs in the classroom?
+
+
+## Extended cognition
+
+:::: {.columns}
+::: {.column width=50%}
+
+- According to @clarkExtendedMind1998, cognitive processes may extend to external objects.
+- @krakauerWillHarmUs2016 distinguishes between **complementary** and **competitive** cognitive artifacts.
+  - Complementary: numbers, abacus
+  - Competetive: calculator, GPS
+  
+- What kind of artefact will AI turn out to be? 
+:::
+
+::: {.column width=50%}
+![](../assets/images/artefacts.png){width=100%}
+
+:::
+::::
+
+## Deskilling vs. upskilling
+
+::::{.columns}
+:::{.column width=20%}
+:::
+:::{.column width=80%}
+
+![](../assets/images/deskilling.svg){width=80%}
+
+:::
+::::
+
+
+## Writing tasks in the AI era
+
+- Writing is a core skill: critical thinking, persuasion, argumentation, understanding.
+- Text creation is secondary in learning: focus is on underlying skills.
+- Learning objectives: Benefits of writing tasks should be clearly and convincingly conveyed.
+- Students should be equipped for effective (controlled) use of AI. 
+
+## AI can do my homework
+
+- We can think of this as cheating.
+- More useful: cheating means _bypassing useful cognition_ and therefore missing out on learning.
+- Cheating an ethics problem. 
+- Bypassing cognition is a learning problem.
+- Not a new problem: books, encyclopedias, calculators, spell checkers, etc.
+<!-- - Before AI tasks and exercises provoked students to do useful cognition that led to learning.
+- Now a machine can do some of that work for them. -->
+
+## Controlled use of LLMs
+
+| Task Category           | Specific Tasks                                  |
+|-------------------------|-------------------------------------------------|
+| Editing tasks           | Create/improve different versions of sections.  |
+| Transitions             | Write and compare transitions.                  |
+| Improve drafts          | Critique and refine drafts.                     |
+| Writing styles          | Rewrite sections for different audiences.       |
+| Controversial statements| Identify controversial points and strengthen arguments. |
+| Research journal        | Keep a diary and use LLM for reflection.        |
+
+
+## Sport vs. writing {.smaller}
+
+:::: {.columns}
+::: {.column width=80%}
+- Technological advancements in sports: a useful analogy for learning?
+- Distinction between training and competition.
+
+:::
+::: {.column width=20%}
+
+![](../assets/images/lzr-racer.png){width=100%}
+:::
+::::
+
+|             | LZR Racer swim suit                                      | AI-base writing tools                                     |
+| ----------- | :------------------------------------------------------- | --------------------------------------------------------- |
+| Improvement | Reduced Resistance, Increased Buoyancy                   | Improved Grammar, Formulation, Content Creation           |
+| Fairness    | Provided an Unfair Advantage, Led to Record Performances | Considered Unfair in Academic Contexts                    |
+| Impact      | Banned to Maintain Competitive Integrity                 | Raises Questions of Originality and Skill Development<br> |
+   
+
+
+# Learning Environments
+
+## Understanding the value of effort
+- Cheating can be a symptom that learners do not understand or value the importance of their own work. 
+- Just like in sport: if we take shortcuts during training, we won’t get fit. 
+- Understanding the purpose is important to endure discomfort. 
+- Learners need to understand what they are supposed to learn, why it is valuable, and why effort and discomfort are necessary.
+
+## Fraud triangle
+
+![](../assets/images/fraud-triangle.svg){width=100%}
+
+
+## Learning Environments that promote cheating {.smaller}
+
+| Factors                   | Descriptions                                                                |
+|---------------------------|-----------------------------------------------------------------------------|
+| High pressure             | High stakes increase cheating. Fear of failure reinforces this.             |
+| Lack of intrinsic motivation | Engagement and relevance are important. Lacking these makes cheating more attractive. |
+| Perceived injustice       | Unfair grading leads to cheating.                                           |
+| Low fear of getting caught| Low risk encourages cheating.                                               |
+| Peer influence            | Widespread cheating among peers pressures students to join in.              |
+| Low self-efficacy         | Doubts about one’s own abilities increase cheating as the seemingly only option. |
+
+
+## Strategies to Reduce Cheating
+| Strategies                 | Descriptions                                                                 |
+|----------------------------|------------------------------------------------------------------------------|
+| Foster intrinsic motivation| Spark genuine interest. Provide choices and practical applications.           |
+| Mastery learning           | Clear learning objectives. Focus on mastery of content. Include constructive and corrective feedback in formative assessments. |
+| Reduce pressure            | Diversify assessment methods. Use portfolios and low-stress tests to reduce anxiety. |
+| Strengthen self-efficacy   | Provide constructive feedback and promote peer learning (peer tutoring, peer review). |
+| Create a culture of integrity | Open discussion about academic integrity. Set clear guidelines and promote community ethics. |
+
+
+
+# Academic integrity
+
+## Academic Integrity: Plagiarism
+
+| Types of Plagiarism           | Description                                                             |
+|-------------------------------|--------------------------------------------------------------------------|
+| Unattributed use              | Using the work or ideas of others without proper attribution.            |
+| Minor changes or translations | Using the work of others with minor changes or translations without attribution. |
+| Self-plagiarism               | Reusing substantial parts of one’s own work without proper citation.     |
+| Joint works                   | Reusing jointly written publications without proper acknowledgment.      |
+
+
+## Academic Integrity: Misconduct in authorship
+| Types of Plagiarism           | Description                                                            |
+|-------------------------------|--------------------------------------------------------------------------|
+| Unattributed use              | Using the work or ideas of others without proper attribution.            |
+| Minor changes or translations | Using the work of others with minor changes or translations without attribution. |
+| Self-plagiarism               | Reusing substantial parts of one’s own work without proper citation.     |
+| Joint works                   | Reusing jointly written publications without proper acknowledgment.      |
+
+## How to cite ChatGPT
+
+E.g. [APA](https://apastyle.apa.org/blog/how-to-cite-chatgpt) Style: Cite as software (not as personal communication).
+
+<br> <br>
+
+:::: {.columns}
+::: {.column width="50%"}
+![](../assets/images/cite-1.png){width=100%}
+:::
+::: {.column width="50%"}
+![](../assets/images/cite-2.png){width=100%}
+:::
+::::
+
+
+## Documentating AI use
+- Specifying prompts works well for inexperienced users, but inadequately reflects complex processes.
+- Experienced users work with dialogues and several tools, not monolithic prompts in ChatGPT.
+- Working with copilot (code): no traceable prompt input.
+- **Instead**: Document the process, including the tools used and the steps taken.
+  + Include used tools and steps in appendix, with optional graphical representation. 
+  + Serves both evaluation and self-reflection.
+
+- Is documentation meaningful in the long term, once the use of AI-based tools has become commonplace?
+
+## Detecting AI use
+
+-  Can be detected by the use of specific vocabulary and phrases: "delve", "vibrant", "embark", "it's important to note", " based on the data provided”.
+-  Detection tools are not very useful, and can be easily circumvented.
+
+- According to @fleckensteinTeachersSpotAI2024a
+  + Generative AI can write papers that are undetectable.
+  + Teachers overestimate their detection abilities.
+
+
+# Questions / Discussion {{< bi chat-dots >}}
+
+# References {background-color="#D8DEE9"}
+
+::: {#refs}
+:::
