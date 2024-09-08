@@ -317,7 +317,8 @@
   abstract = {Large Language Models (LLMs) have demonstrated remarkable problem-solving and basic mathematics abilities. However, their efficacy is highly contingent on the formulation of the prompt. This study endeavors to quantify the influence of incorporating "positive thinking" into the system message of the prompt, then compare that to systematic prompt optimization. We assess the performance of 60 combinations of system message snippets, tested with and without Chain of Thought prompting, across three models with parameters ranging from 7 to 70 billion on the GSM8K dataset. Our findings reveal that results do not universally generalize across models. In most instances, the inclusion of "positive thinking" prompts positively affected model performance. Notably, however, Llama2-70B exhibited an exception when not utilizing Chain of Thought, as the optimal system message was found to be none at all. Given the combinatorial complexity, and thus computation time, of experimenting with hand-tuning prompts for large black-box models, we then compared the performance of the best "positive thinking" prompt against the output of systematic prompt optimization. We show that employing an automated prompt optimizer emerges as the most effective method for enhancing performance, even when working with smaller open-source models. Additionally, our findings reveal that the highest-scoring, automatically-optimized prompt exhibits a degree of peculiarity far beyond expectations.},
   pubstate = {prepublished},
   version = {2},
-  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning}
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning},
+  file = {/Users/andrew/Zotero/storage/NPCN4SRY/Battle and Gollapudi - 2024 - The Unreasonable Effectiveness of Eccentric Automatic Prompts.pdf}
 }
 
 @online{bellerCounterfactualSimulationModel2023,
@@ -3648,6 +3649,22 @@
   file = {/Users/andrew/Zotero/storage/MB6DETH5/Shao et al. - 2024 - Assisting in Writing Wikipedia-like Articles From Scratch with Large Language Models.pdf;/Users/andrew/Zotero/storage/FTYDC8XB/2402.html}
 }
 
+@online{sharmaUnderstandingSycophancyLanguage2023,
+  title = {Towards {{Understanding Sycophancy}} in {{Language Models}}},
+  author = {Sharma, Mrinank and Tong, Meg and Korbak, Tomasz and Duvenaud, David and Askell, Amanda and Bowman, Samuel R. and Cheng, Newton and Durmus, Esin and Hatfield-Dodds, Zac and Johnston, Scott R. and Kravec, Shauna and Maxwell, Timothy and McCandlish, Sam and Ndousse, Kamal and Rausch, Oliver and Schiefer, Nicholas and Yan, Da and Zhang, Miranda and Perez, Ethan},
+  date = {2023-10-27},
+  eprint = {2310.13548},
+  eprinttype = {arXiv},
+  eprintclass = {cs, stat},
+  doi = {10.48550/arXiv.2310.13548},
+  url = {http://arxiv.org/abs/2310.13548},
+  urldate = {2024-09-08},
+  abstract = {Human feedback is commonly utilized to finetune AI assistants. But human feedback may also encourage model responses that match user beliefs over truthful ones, a behaviour known as sycophancy. We investigate the prevalence of sycophancy in models whose finetuning procedure made use of human feedback, and the potential role of human preference judgments in such behavior. We first demonstrate that five state-of-the-art AI assistants consistently exhibit sycophancy across four varied free-form text-generation tasks. To understand if human preferences drive this broadly observed behavior, we analyze existing human preference data. We find that when a response matches a user's views, it is more likely to be preferred. Moreover, both humans and preference models (PMs) prefer convincingly-written sycophantic responses over correct ones a non-negligible fraction of the time. Optimizing model outputs against PMs also sometimes sacrifices truthfulness in favor of sycophancy. Overall, our results indicate that sycophancy is a general behavior of state-of-the-art AI assistants, likely driven in part by human preference judgments favoring sycophantic responses.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning,I.2.6,Statistics - Machine Learning},
+  file = {/Users/andrew/Zotero/storage/W3PV4TMS/Sharma et al. - 2023 - Towards Understanding Sycophancy in Language Models.pdf;/Users/andrew/Zotero/storage/DIYLTKRG/2310.html}
+}
+
 @unpublished{spannagelRulesTools2023,
   title = {Rules for {{Tools}}},
   author = {Spannagel, Christian},
@@ -4547,7 +4564,7 @@
   abstract = {Language models are increasingly being deployed for general problem solving across a wide range of tasks, but are still confined to token-level, left-to-right decision-making processes during inference. This means they can fall short in tasks that require exploration, strategic lookahead, or where initial decisions play a pivotal role. To surmount these challenges, we introduce a new framework for language model inference, Tree of Thoughts (ToT), which generalizes over the popular Chain of Thought approach to prompting language models, and enables exploration over coherent units of text (thoughts) that serve as intermediate steps toward problem solving. ToT allows LMs to perform deliberate decision making by considering multiple different reasoning paths and self-evaluating choices to decide the next course of action, as well as looking ahead or backtracking when necessary to make global choices. Our experiments show that ToT significantly enhances language models' problem-solving abilities on three novel tasks requiring non-trivial planning or search: Game of 24, Creative Writing, and Mini Crosswords. For instance, in Game of 24, while GPT-4 with chain-of-thought prompting only solved 4\% of tasks, our method achieved a success rate of 74\%. Code repo with all prompts: https://github.com/ysymyth/tree-of-thought-llm.},
   pubstate = {prepublished},
   keywords = {/unread,Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning},
-  file = {/Users/andrew/Zotero/storage/QVACSS9L/Yao et al. - 2023 - Tree of Thoughts Deliberate Problem Solving with .pdf;/Users/andrew/Zotero/storage/Q545MW3W/2305.html}
+  file = {/Users/andrew/Zotero/storage/WNZX2YN8/Yao et al. - 2023 - Tree of Thoughts Deliberate Problem Solving with Large Language Models.pdf;/Users/andrew/Zotero/storage/Q545MW3W/2305.html}
 }
 
 @article{yildirimTaskStructuresWorld2024,
